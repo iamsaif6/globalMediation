@@ -6,6 +6,11 @@ import FeedbackCarousel from '@/components/home/FeedbackCarousel';
 import ServiceCarousel from '@/components/home/ServiceCarousel';
 import TeamCarousel from '@/components/home/TeamCarousel';
 import Serving from '@/components/home/Serving';
+import MediationCalculation from '@/components/home/MediationCalculation';
+import betterWay from '/public/A Better Way.jpg';
+import Image from 'next/image';
+import LearnMore from '@/components/home/LearnMore';
+import CTA from '@/components/shared/CTA';
 
 export default function Home() {
   return (
@@ -30,7 +35,9 @@ export default function Home() {
             </Link>
           </button>
         </div>
-        <div className="col-span-2 md:col-span-1 bg-gray-500 rounded-3xl">ok</div>
+        <div className="col-span-2  overflow-hidden md:col-span-1 bg-gray-500 rounded-3xl">
+          <Image className="object-cover h-full w-full" alt="A Better Way" src={betterWay} />
+        </div>
       </section>
       {/*End Learn About Mediation */}
       <FeedbackCarousel title={'What Our Clients Say'} />
@@ -41,6 +48,16 @@ export default function Home() {
         <TeamCarousel />
       </section>
       <Serving />
+      <MediationCalculation />
+      <LearnMore />
+      <CTA
+        title={'Ready to Resolve Your Dispute?'}
+        subTitle={'Your trusted partner in conflict resolution'}
+        Button1Text={'Schedule a Free Consultation Today'}
+        Button1Link={'#'}
+        Button2Text={'Contact us'}
+        Button2Link={'#'}
+      />
     </div>
   );
 }
