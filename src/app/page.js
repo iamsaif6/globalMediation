@@ -5,6 +5,7 @@ import Link from 'next/link';
 import FeedbackCarousel from '@/components/home/FeedbackCarousel';
 import ServiceCarousel from '@/components/home/ServiceCarousel';
 import TeamCarousel from '@/components/home/TeamCarousel';
+import Serving from '@/components/home/Serving';
 
 export default function Home() {
   return (
@@ -39,6 +40,7 @@ export default function Home() {
         <h1 className="text-4xl md:text-5xl mb-12 md:mb-[70px] text-white text-center px-4 font-medium">Meet Our Team</h1>
         <TeamCarousel />
       </section>
+      <Serving />
     </div>
   );
 }
