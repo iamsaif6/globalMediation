@@ -41,12 +41,12 @@ const FeedbackCarousel = ({ title, subTitle }) => {
         <Slider {...settings}>
           <div className="px-[15px] mb-[40px]">
             <div className=" rounded-3xl  my-9 py-6 px-5 md:p-[42px] shadow-xl">
-              <p className="text-[#656565] leading-[150%] text-xs md:text-lg mb-5 lg:mb-[100px]">
+              <p className="text-[#656565] leading-[150%] text-sm md:text-lg mb-5 lg:mb-[100px]">
                 Meeting was very easy going. Mediator made it simple and welcome. Kept my nerves calm at all times. Meeting was very easy
                 going. Mediator made it simple and welcome. Kept my nerves calm at all times.Meeting was very easy going. Mediator made it
                 simple and welcome. Kept my nerves calm at all times.
               </p>
-              <p className="text-xs md:text-2xl font-semibold text-[#1C1C1C]">Jenny Wilson - Customer</p>
+              <p className="text-sm md:text-2xl font-semibold text-[#1C1C1C]">Jenny Wilson - Customer</p>
             </div>
           </div>
           <div className="px-[15px]">
