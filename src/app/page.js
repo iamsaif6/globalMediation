@@ -35,8 +35,8 @@ export default function Home() {
       <FeedbackCarousel title={'What Our Clients Say'} />
       <ServiceCarousel />
       {/* Team Carousel */}
-      <section className="bg-secondary py-[80px] mt-[80px]">
-        <h1 className="text-5xl mb-[70px] text-white text-center px-4 font-medium">Meet Our Team</h1>
+      <section className="bg-secondary py-16 md:py-[80px] mt-[60px] md:mt-[80px]">
+        <h1 className="text-4xl md:text-5xl mb-12 md:mb-[70px] text-white text-center px-4 font-medium">Meet Our Team</h1>
         <TeamCarousel />
       </section>
     </div>
