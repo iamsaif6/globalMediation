@@ -7,6 +7,7 @@ import Button from '../shared/Button';
 const FeedbackCarousel = ({ title, subTitle }) => {
   const settings = {
     dots: true,
+    arrows: false,
     infinite: true,
     speed: 500,
     slidesToShow: 2,
@@ -32,7 +33,7 @@ const FeedbackCarousel = ({ title, subTitle }) => {
     customPaging: i => <div className=" w-[50px]  h-1 rounded-xl bg-[#EBEBEB]"></div>,
   };
   return (
-    <section className="py-[80px] slick-bar overflow-hidden">
+    <section className="py-[80px] slick-bar ">
       <div className="mb-[70px] px-4">
         <h1 className=" text-4xl md:text-5xl font-medium text-center">{title}</h1>
         {subTitle && <p className=" text-[#667085] font-normal text-lg">{subTitle}</p>}

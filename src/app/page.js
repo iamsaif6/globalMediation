@@ -3,6 +3,8 @@ import Marque from '@/components/home/Marque';
 import MediationCards from '@/components/home/MediationCards';
 import Link from 'next/link';
 import FeedbackCarousel from '@/components/home/FeedbackCarousel';
+import ServiceCarousel from '@/components/home/ServiceCarousel';
+import TeamCarousel from '@/components/home/TeamCarousel';
 
 export default function Home() {
   return (
@@ -31,6 +33,12 @@ export default function Home() {
       </section>
       {/*End Learn About Mediation */}
       <FeedbackCarousel title={'What Our Clients Say'} />
+      <ServiceCarousel />
+      {/* Team Carousel */}
+      <section className="bg-secondary py-[80px] mt-[80px]">
+        <h1 className="text-5xl mb-[70px] text-white text-center px-4 font-medium">Meet Our Team</h1>
+        <TeamCarousel />
+      </section>
     </div>
   );
 }
