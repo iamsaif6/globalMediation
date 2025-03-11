@@ -106,15 +106,13 @@ const MediationCalculation = () => {
             <p className=" text-[20px] leading-[140%]  font-semibold">Resolving your dispute in just X weeks instead of X months</p>
           </div>
           <div className="bg-[#EAE8FE] col-span-3 md:col-span-1 flex items-center p-[29px] md:p-[37px] flex-col gap-[30px] justify-between text-secondary rounded-[20px] p">
-            <h3 className="font-semibold flex items-center">
-              <span className="text-sm md:text-lg">Mediation</span>{' '}
-              <span className="text-4xl md:text-5xl inline-block mr-[10px] ml-[35px]">90%</span>{' '}
+            <h3 className="font-semibold flex items-center gap-6 md:gap-2">
+              <span className="text-sm  md:text-lg">Mediation</span> <span className="text-4xl md:text-5xl inline-block ">90%</span>{' '}
               <span className="text-xs md:text-base font-normal">success Rate</span>
             </h3>
             <p className="font-semibold text-[20px] md:text-2xl text-secondary">VS</p>
-            <h3 className="font-semibold flex items-center">
-              <span className="text-sm md:text-lg">Litigation</span>{' '}
-              <span className="text-4xl md:text-5xl inline-block mr-[10px] ml-[35px]">80%</span>{' '}
+            <h3 className="font-semibold flex items-center gap-6 md:gap-2">
+              <span className="text-sm md:text-lg">Litigation</span> <span className="text-4xl md:text-5xl inline-block ">80%</span>{' '}
               <span className="text-xs md:text-base font-normal">success Rate</span>
             </h3>
           </div>
