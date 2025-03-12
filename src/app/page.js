@@ -19,6 +19,8 @@ export default function Home() {
       <Header
         title={'Replacing Conflict with Harmony'}
         subTitle={'Professional mediation services to foster understanding and resolve disputes with care.'}
+        Button1Text={'Learn About Our Services'}
+        Button1Link={'#'}
       />
       <Marque />
       <MediationCards />

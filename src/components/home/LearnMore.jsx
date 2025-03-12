@@ -4,7 +4,7 @@ import React from 'react';
 
 const LearnMore = () => {
   return (
-    <section className="md:px-[64px] px-5 py-16 md:py-[80px] mt-[60px] md:mt-[80px]">
+    <section className="md:px-[64px] px-5 py-16 md:py-[80px]">
       <h1 className="text-4xl md:text-5xl mb-12 md:mb-[70px] e text-center px-4 font-medium">Learn More About Mediation</h1>
       <div className="grid grid-cols-4 gap-3">
         <div className="border flex flex-col col-span-4 border-[#EBE5E5] md:col-span-2 hover:border-[#DAD3FF] lg:col-span-1  rounded-3xl py-[34px]">

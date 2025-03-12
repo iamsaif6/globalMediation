@@ -9,7 +9,7 @@ const navLinks = [
     title: 'Home',
   },
   {
-    href: '/services',
+    href: '/main-services',
     title: 'Services',
     hasMegaMenu: true,
     megaMenuItems: [
