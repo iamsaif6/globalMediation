@@ -3,6 +3,12 @@ import React from 'react';
 import aboutUSHeader from '/public/aboutUsHeader.png';
 import ExperiencedLeader from '@/components/aboutUs/ExperiencedLeader';
 import TimeLine from '@/components/aboutUs/TimeLine';
+import Colabration from '@/components/aboutUs/Colabration';
+import TeamMember from '@/components/aboutUs/TeamMember';
+import Accredited from '@/components/aboutUs/Accredited';
+import JoinGlobalTeam from '@/components/aboutUs/JoinGlobalTeam';
+import FeedbackCarousel from '@/components/home/FeedbackCarousel';
+import CTA from '@/components/shared/CTA';
 
 const AboutUs = () => {
   return (
@@ -20,6 +26,17 @@ const AboutUs = () => {
       />
       <ExperiencedLeader />
       <TimeLine />
+      <Colabration />
+      <TeamMember />
+      <Accredited />
+      <JoinGlobalTeam />
+      <FeedbackCarousel title={'What Our Clients Say'} />
+      <CTA
+        title={'Learn More About Global Mediation'}
+        subTitle={'For more information about our services, team, training programs, or career opportunities, get in touch with us:'}
+        Button1Link={'#'}
+        Button1Text={'Contact us today'}
+      />
     </div>
   );
 };

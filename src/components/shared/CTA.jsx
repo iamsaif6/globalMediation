@@ -12,7 +12,7 @@ const CTA = ({ title, subTitle, Button1Text, Button1Link, Button2Text, Button2Li
             <p className=" text-base md:text-lg">{subTitle}</p>
             <div className="mt-8 flex flex-col md:flex-row justify-center items-center gap-4">
               {Button1Text && (
-                <button className="w-full md:w-auto  bg-primary font-normal  text-[#FCFCFD] px-[24px] py-3 rounded-[40px] text-base md:text-lg  ">
+                <button className="w-full md:w-auto  bg-primary font-normal  text-[#FCFCFD] px-12 py-3 rounded-[40px] text-base md:text-lg  ">
                   <Link className="w-full  " href={Button1Link}>
                     {Button1Text}
                   </Link>

@@ -58,3 +58,7 @@ body {
 .team-caousel .slick-dots li.slick-active div {
   background: #00a49f;
 }
+
+.about .team-caousel .slick-dots li.slick-active div {
+  background: #43006a;
+}
