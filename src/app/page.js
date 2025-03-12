@@ -11,6 +11,7 @@ import betterWay from '/public/A Better Way.jpg';
 import Image from 'next/image';
 import LearnMore from '@/components/home/LearnMore';
 import CTA from '@/components/shared/CTA';
+import WhyMediation from '@/components/home/WhyMediation';
 
 export default function Home() {
   return (
@@ -41,6 +42,7 @@ export default function Home() {
       </section>
       {/*End Learn About Mediation */}
       <FeedbackCarousel title={'What Our Clients Say'} />
+      <WhyMediation />
       <ServiceCarousel />
       {/* Team Carousel */}
       <section className="bg-secondary py-16 md:py-[80px] mt-[60px] md:mt-[80px]">
