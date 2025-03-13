@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 
 const TeamCarousel = ({ darkText = false }) => {
-  function SampleNextArrow(props) {
+  function SamplePrevArrow(props) {
     const { onClick } = props;
     return (
       <div
@@ -20,7 +20,7 @@ const TeamCarousel = ({ darkText = false }) => {
     );
   }
 
-  function SamplePrevArrow(props) {
+  function SampleNextArrow(props) {
     const { onClick } = props;
     return (
       <div

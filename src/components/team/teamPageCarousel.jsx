@@ -6,7 +6,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
 
 const TeamPageCarousel = () => {
-  function SampleNextArrow(props) {
+  function SamplePrevArrow(props) {
     const { onClick } = props;
     return (
       <div
@@ -18,7 +18,7 @@ const TeamPageCarousel = () => {
     );
   }
 
-  function SamplePrevArrow(props) {
+  function SampleNextArrow(props) {
     const { onClick } = props;
     return (
       <div
