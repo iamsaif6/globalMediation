@@ -4,7 +4,7 @@ import Button from '../shared/Button';
 
 const TimeLine = () => {
   return (
-    <section className="py-16 px-5 md:px-16 md:py-[80px]">
+    <section className="py-16 bg-[#F9F8FF] px-5 md:px-16 md:py-[80px]">
       <SectionHeading
         title={'Our Journey to Becoming Mediation Experts'}
         subTitle={

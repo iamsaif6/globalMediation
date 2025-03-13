@@ -34,14 +34,14 @@ const Service = () => {
       />
       <Map />
       <FAQ />
-      <CTA
-        title={'Start Your Mediation Training Journey Today'}
-        subTitle={'Take the first step toward becoming a qualified mediator or enhancing your existing mediation skills.'}
-        Button1Link={'#'}
-        Button1Text={'Enrol in a Mediation Training Program Today'}
-        Button2Link={'#'}
-        Button2Text={'Contact Us for Upcoming Course Dates'}
-      />
+      <div className="bg-[#F9F8FF]">
+        <CTA
+          title={'Learn More About Global Mediation'}
+          subTitle={'For more information about our services, team, training programs, or career opportunities, get in touch with us:'}
+          Button1Link={'#'}
+          Button1Text={'Contact us today'}
+        />
+      </div>
     </div>
   );
 };

@@ -12,7 +12,7 @@ import CTA from '@/components/shared/CTA';
 
 const AboutUs = () => {
   return (
-    <div>
+    <div className="bg-[#F9F8FF]">
       <Header
         title={'About Global Mediation'}
         subTitle={

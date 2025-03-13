@@ -84,9 +84,9 @@ const services = [
 
 const MainServiesCard = () => {
   return (
-    <div className="mb-[40px]">
+    <div className="mb-[40px] ">
       {services.map((item, index) => (
-        <div key={item + index} className={`${index % 2 != 0 ? 'bg-[#F3F1FF]' : ''} py-16 md:py-[80px] px-5 md:px-[60px]`}>
+        <div key={item + index} className={`${index % 2 != 0 ? 'bg-[#F3F1FF]' : 'bg-[#F9F8FF]'} py-16 md:py-[80px] px-5 md:px-[60px]`}>
           <h1 className="max-w-[600px] font-medium text-4xl md:text-5xl leading-[120%] mb-[42px] md:mb-[80px]">{item.title}</h1>
           <div className="grid grid-cols-2 items-center  gap-8 md:gap-[100px]">
             <div className={`${index % 2 != 0 ? 'order-2' : ''} col-span-2 md:col-span-1`}>

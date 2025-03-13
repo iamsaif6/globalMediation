@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const ExperiencedLeader = () => {
   return (
-    <div className=" py-16 px-5 md:px-16 md:py-[80px] grid grid-cols-2 gap-[80px]">
+    <div className="bg-[#F9F8FF] py-16 px-5 md:px-16 md:py-[80px] grid grid-cols-2 gap-[80px]">
       <div className="relative  hidden md:block col-span-2 md:col-span-1 rounded-3xl overflow-hidden">
         <div className={`from-[rgba(67,0,106,0.1)] to-[#43006aa3] absolute inset-0 bg-gradient-to-b  z-10`}></div>
         <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={service1} />
