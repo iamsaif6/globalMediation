@@ -10,6 +10,27 @@ import Map from '@/components/service/Map';
 import FAQ from '@/components/service/FAQ';
 import CTA from '@/components/shared/CTA';
 
+const faqData = [
+  {
+    key: 1,
+    question: 'How long does workplace mediation take?',
+    answer:
+      'The potential for success is high. Mediation provides an opportunity for cases to be looked at in detail and considered with greater care than usual. Face to face meetings provide the opportunity to clarify positions and understand other points of view; to explore creative and imaginative solutions that may not have been considered previously. It gives parties the opportunity to rebuild trust and re-establish a working relationship.',
+  },
+  {
+    key: 2,
+    question: 'Is workplace mediation legally binding?',
+    answer:
+      'The potential for success is high. Mediation provides an opportunity for cases to be looked at in detail and considered with greater care than usual. Face to face meetings provide the opportunity to clarify positions and understand other points of view; to explore creative and imaginative solutions that may not have been considered previously. It gives parties the opportunity to rebuild trust and re-establish a working relationship.',
+  },
+  {
+    key: 3,
+    question: 'What types of conflicts are best suited for workplace mediation?',
+    answer:
+      'The potential for success is high. Mediation provides an opportunity for cases to be looked at in detail and considered with greater care than usual. Face to face meetings provide the opportunity to clarify positions and understand other points of view; to explore creative and imaginative solutions that may not have been considered previously. It gives parties the opportunity to rebuild trust and re-establish a working relationship.',
+  },
+];
+
 const Service = () => {
   return (
     <div>

@@ -1,5 +1,8 @@
+import CTA from '@/components/shared/CTA';
 import Header from '@/components/shared/Header';
+import Apply from '@/components/trainning/Apply';
 import ExploreItem from '@/components/trainning/ExploreItem';
+import FaqTrainning from '@/components/trainning/FaqTrainning';
 import Introduction from '@/components/trainning/Introduction';
 import WhyTrain from '@/components/trainning/WhyTrain';
 import React from 'react';
@@ -26,6 +29,16 @@ const Training = () => {
         <ExploreItem />
       </section>
       <WhyTrain />
+      <Apply />
+      <FaqTrainning />
+      <CTA
+        title={'Start Your Mediation Training Journey Today'}
+        subTitle={'Take the first step toward becoming a qualified mediator or enhancing your existing mediation skills.'}
+        Button1Link={'#'}
+        Button1Text={'Enrol in a Mediation Training Program Today'}
+        Button2Link={'#'}
+        Button2Text={'Contact Us for Upcoming Course Dates'}
+      />
     </div>
   );
 };
