@@ -34,9 +34,9 @@ const FeedbackCarousel = ({ title, subTitle }) => {
   };
   return (
     <section className="py-[80px] slick-bar ">
-      <div className="mb-10 md:mb-[70px] px-4">
-        <h1 className=" text-4xl md:text-5xl font-medium text-center">{title}</h1>
-        {subTitle && <p className=" text-[#667085] font-normal text-lg">{subTitle}</p>}
+      <div className="mb-10 px-5 md:px-16 text-center md:mb-[70px] ">
+        <h1 className=" text-4xl md:text-5xl font-medium leading-[120%] ">{title}</h1>
+        {subTitle && <p className=" text-[#667085] font-normal text-lg mt-6">{subTitle}</p>}
       </div>
       <div className="slider-container">
         <Slider {...settings}>

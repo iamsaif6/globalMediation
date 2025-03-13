@@ -7,6 +7,7 @@ const Button = ({ title, href = '#', padding = 'default' }) => {
     default: 'px-6',
     large: 'px-8',
     xlarge: 'px-12',
+    xxlarge: 'px-[80px]',
   };
 
   const paddingClass = paddingClasses[padding] || paddingClasses.default;

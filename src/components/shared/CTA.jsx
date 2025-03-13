@@ -6,11 +6,13 @@ const CTA = ({ title, subTitle, Button1Text, Button1Link, Button2Text, Button2Li
   return (
     <div className="md:px-16 px-5">
       <div className="py-[84px] overflow-hidden px-8 relative md:p-16 bg-secondary rounded-3xl">
-        <div className="max-w-[650px] z-10 py-10 mx-auto text-white text-center">
+        <div className="z-10 py-10 mx-auto text-white text-center">
           <div className="z-40 relative">
-            <h1 className="font-medium text-4xl md:text-[54px] leading-[120%] mb-[20px] md:mb-6">{title}</h1>
-            <p className=" text-base md:text-lg">{subTitle}</p>
-            <div className="mt-8 flex flex-col md:flex-row justify-center items-center gap-4">
+            <div className="max-w-[650px] mx-auto">
+              <h1 className="font-medium text-4xl md:text-[54px] leading-[120%] mb-[20px] md:mb-6">{title}</h1>
+              <p className=" text-base md:text-lg">{subTitle}</p>
+            </div>
+            {/* <div className="mt-8 flex flex-col md:flex-row justify-center items-center gap-4">
               {Button1Text && (
                 <button className="w-full md:w-auto  bg-primary font-normal  text-[#FCFCFD] px-12 py-3 rounded-[40px] text-base md:text-lg  ">
                   <Link className="w-full  " href={Button1Link}>
@@ -21,6 +23,22 @@ const CTA = ({ title, subTitle, Button1Text, Button1Link, Button2Text, Button2Li
               {Button2Text && (
                 <button className="w-full md:w-auto font-normal border border-white text-base md:text-lg text-white px-[24px] py-3 rounded-[40px] ">
                   <Link className="w-full  " href={Button2Link}>
+                    {Button2Text}
+                  </Link>
+                </button>
+              )}
+            </div> */}
+            <div className={`mt-8 md:max-w-[950px] ${Button2Text ? 'grid grid-cols-1 md:grid-cols-2' : 'md:grid-cols-1'}  gap-4  mx-auto`}>
+              {Button1Text && (
+                <button className="bg-primary font-normal text-[#FCFCFD] px-10 py-3 rounded-[40px] text-base md:text-lg">
+                  <Link className="block w-full text-center" href={Button1Link}>
+                    {Button1Text}
+                  </Link>
+                </button>
+              )}
+              {Button2Text && (
+                <button className="font-normal border border-white text-base md:text-lg text-white px-6 py-3 rounded-[40px]">
+                  <Link className="block w-full text-center" href={Button2Link}>
                     {Button2Text}
                   </Link>
                 </button>

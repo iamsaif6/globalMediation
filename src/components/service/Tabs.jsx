@@ -206,7 +206,7 @@ const Tabs = () => {
                 data-tab={tab.id}
                 onClick={() => handleBtnClick(tab.id)}
                 className={`${
-                  active === tab.id ? 'bg-[#F3F1FF] text-secondary' : 'bg-[#F2F1FB] text-[#8D8D8D]'
+                  active === tab.id ? 'bg-[#F3F1FF] text-secondary opacity-100' : 'bg-[#F2F1FB] text-[#8D8D8D] opacity-60'
                 } text-sm md:text-lg cursor-pointer leading-[150%] py-2 md:py-3 px-[34px] md:px-12 rounded-[24px] flex-shrink-0`}
               >
                 {tab.label}
