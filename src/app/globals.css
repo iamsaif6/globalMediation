@@ -44,6 +44,10 @@ body {
   background-color: #43006a;
 }
 
+.slick-bar.case .slick-dots li.slick-active div {
+  background-color: #00a49f;
+}
+
 /* Team Carousel */
 .team-caousel .slick-dots {
   width: auto;
