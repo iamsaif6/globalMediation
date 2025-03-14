@@ -52,16 +52,16 @@ const ContactUs = () => {
               <path
                 d="M12.5786 21.25C17.6861 21.25 21.8086 17.1075 21.8086 11.98C21.8086 6.8725 17.6861 2.75 12.5786 2.75M12.5786 21.25C7.45109 21.25 3.30859 17.1075 3.30859 11.98C3.30859 6.8725 7.45109 2.75 12.5786 2.75M12.5786 21.25V2.75M20.5846 7.375H4.53859M20.6361 16.5125H4.48709M3.35859 12H21.7586"
                 stroke="#43006A"
-                stroke-width="0.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="0.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
               <path
                 d="M12.5686 21.25C15.1226 21.25 17.1836 17.1075 17.1836 11.98C17.1836 6.8725 15.1226 2.75 12.5686 2.75C10.0046 2.75 7.93359 6.8725 7.93359 11.98C7.93359 17.1075 10.0046 21.25 12.5686 21.25Z"
                 stroke="#43006A"
-                stroke-width="0.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="0.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
             </svg>
           </div>
