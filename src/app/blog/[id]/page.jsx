@@ -180,7 +180,7 @@ const SingleBlogPost = ({ params }) => {
           </div>
           <div className="flex items-center flex-col">
             <div className="w-12 h-12 rounded-full mb-4 overflow-hidden">
-              <Image className="w-full h-full object-cover" src={user} />
+              <Image alt="user name" className="w-full h-full object-cover" src={user} />
             </div>
             <p className="text-sm font-semibold">John Doe</p>
             <p className="font-sm">Job title, Company name</p>
@@ -193,7 +193,7 @@ const SingleBlogPost = ({ params }) => {
         <div className="grid my-12 md:my-[80px] grid-cols-3 gap-8">
           {[1, 2, 3].map(item => (
             <div key={item} className="col-span-4 md:col-span-2 lg:col-span-1 mb-[48px] md:mb-[60px]">
-              <div className="w-full min-h-[220px] max-h-[290px] bg-gray-600 rounded-xl"></div>
+              <div className="w-full min-h-[300px] max-h-[290px] bg-gray-600 rounded-xl"></div>
               <h3 className={`text-black leading-[140%] mt-6 md:mt-6 mb-4 text-lg md:text-[24px] font-semibold `}>
                 Can my child have a voice in Family Mediation
               </h3>

@@ -63,7 +63,7 @@ const Posts = () => {
                 <div className="grid grid-cols-4 gap-8">
                   {[1, 2, 3, 4, 5, 6, 7, 8].map(item => (
                     <div key={item} className="col-span-4 md:col-span-2 lg:col-span-1 mb-[48px] md:mb-[60px]">
-                      <div className="w-full min-h-[220px] max-h-[290px] bg-gray-600 rounded-xl"></div>
+                      <div className="w-full min-h-[300px] max-h-[290px] bg-gray-600 rounded-xl"></div>
                       <h3 className={`text-black leading-[140%] mt-6 md:mt-6 mb-4 text-lg md:text-[24px] font-semibold `}>
                         Can my child have a voice in Family Mediation
                       </h3>
@@ -71,7 +71,7 @@ const Posts = () => {
                         Can my child have a voice in Family Mediation? Whether your child has the opportunity to have their say in…
                       </p>
                       <Link
-                        href={'#'}
+                        href={'/blog/1'}
                         className="flex w-max pb-1 border-b border-secondary  gap-1 items-center text-secondary font-medium text-sm"
                       >
                         <span>Read more</span>
