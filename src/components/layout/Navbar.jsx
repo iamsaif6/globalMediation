@@ -168,7 +168,7 @@ const Navbar = () => {
           onMouseLeave={() => setActiveMenu(false)}
           className={`bg-white left-0 w-full bg-lavender-50 border-t-[0.5px] border-[#E2DEDE] overflow-hidden transition-all duration-300 ease-in-out`}
           style={{
-            maxHeight: activeMenu ? `${menuHeight}px` : '0',
+            maxHeight: activeMenu ? `${menuHeight + 100}px` : '0',
             opacity: activeMenu ? 1 : 0,
             visibility: activeMenu ? 'visible' : 'hidden',
           }}
