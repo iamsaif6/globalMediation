@@ -26,8 +26,8 @@ export default function Home() {
       <MediationCards />
       {/*Start Learn About Mediation */}
       <section className="grid grid-cols-2 gap-4 my-[64px] md:my-[80px] px-5 md:px-[60px]">
-        <div className="col-span-2 md:col-span-1 text-white bg-primary rounded-3xl px-6 md:px-[58px] py-[34px] md:py-[121px]">
-          <h2 className="font-medium leading-[120%] text-[32px] md:text-5xl mb-[18px]">A Better Way to Resolve Disputes</h2>
+        <div className="col-span-2 lg:col-span-1 text-white bg-primary rounded-3xl px-6 lg:px-[58px] py-[34px] lg:py-[121px]">
+          <h2 className="font-medium leading-[120%] text-[32px] lg:text-5xl mb-[18px]">A Better Way to Resolve Disputes</h2>
           <p className=" text-[10px] md:text-lg mb-5 md:mb-6">
             Mediation offers a cost-effective, efficient, and collaborative path to resolving disputes without the stress of litigation. At
             Global Mediation, we specialise in empowering individuals and organisations with impartial and tailored solutions that work.
@@ -38,7 +38,7 @@ export default function Home() {
             </Link>
           </button>
         </div>
-        <div className="col-span-2  overflow-hidden md:col-span-1 bg-gray-500 rounded-3xl">
+        <div className="col-span-2  overflow-hidden lg:col-span-1 bg-gray-500 rounded-3xl">
           <Image className="object-cover h-full w-full" alt="A Better Way" src={betterWay} />
         </div>
       </section>

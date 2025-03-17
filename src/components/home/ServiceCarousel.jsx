@@ -17,11 +17,11 @@ const ServiceCarousel = () => {
     initialSlide: 1,
     responsive: [
       {
-        breakpoint: 600,
+        breakpoint: 900,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 2,
-          initialSlide: 1,
+          initialSlide: 2,
         },
       },
       {
@@ -44,7 +44,7 @@ const ServiceCarousel = () => {
       </div>
       <div className="slider-container">
         <Slider {...settings}>
-          <div className="px-[15px] mb-[90px] h-[350px] md:h-[400px]">
+          <div className="px-[15px] mb-[90px] h-[400px] md:h-[400px]">
             <div className="rounded-[20px]  group hover:bg-secondary hover:text-white duration-200 md:rounded-3xl border bg-[#F3F1FF] border-[#D4DBEA] my-9 py-10 md:py-[49px] px-5 md:px-6 h-full flex flex-col">
               <div className="mb-[54px] group-hover:text-white text-secondary">
                 <svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43" fill="none">
@@ -55,7 +55,7 @@ const ServiceCarousel = () => {
                 </svg>
               </div>
               <div className="flex flex-col flex-grow">
-                <h3 className="text-lg md:text-2xl group-hover:text-white duration-200 leading-[140%] mb-[6px] md:mb-2 font-semibold text-secondary">
+                <h3 className="text-lg lg:text-2xl group-hover:text-white duration-200 leading-[140%] mb-[6px] md:mb-2 font-semibold text-secondary">
                   Workplace and Employment Mediation
                 </h3>
                 <p className="text-sm md:text-lg duration-200 leading-[150%] font-normal mb-[26px] flex-grow">
@@ -70,7 +70,7 @@ const ServiceCarousel = () => {
               </div>
             </div>
           </div>
-          <div className="px-[15px] mb-[90px] h-[350px] md:h-[400px]">
+          <div className="px-[15px] mb-[90px] h-[400px] md:h-[400px]">
             <div className="rounded-[20px] group hover:bg-secondary hover:text-white duration-200 md:rounded-3xl border bg-[#F3F1FF] border-[#D4DBEA] my-9 py-10 md:py-[49px] px-5 md:px-6 h-full flex flex-col">
               <div className="mb-[54px] group-hover:text-white text-secondary">
                 <svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43" fill="none">
@@ -81,7 +81,7 @@ const ServiceCarousel = () => {
                 </svg>
               </div>
               <div className="flex flex-col flex-grow">
-                <h3 className="text-lg md:text-2xl group-hover:text-white duration-200 leading-[140%] mb-[6px] md:mb-2 font-semibold text-secondary">
+                <h3 className="text-lg lg:text-2xl group-hover:text-white duration-200 leading-[140%] mb-[6px] md:mb-2 font-semibold text-secondary">
                   Business and Commercial Mediation
                 </h3>
                 <p className="text-sm md:text-lg duration-200 leading-[150%] font-normal mb-[26px] flex-grow">
@@ -96,7 +96,7 @@ const ServiceCarousel = () => {
               </div>
             </div>
           </div>
-          <div className="px-[15px] mb-[90px] h-[350px] md:h-[400px]">
+          <div className="px-[15px] mb-[90px] h-[400px] md:h-[400px]">
             <div className="rounded-[20px] group hover:bg-secondary hover:text-white duration-200 md:rounded-3xl border bg-[#F3F1FF] border-[#D4DBEA] my-9 py-10 md:py-[49px] px-5 md:px-6 h-full flex flex-col">
               <div className="mb-[54px] group-hover:text-white text-secondary">
                 <svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43" fill="none">
@@ -107,7 +107,7 @@ const ServiceCarousel = () => {
                 </svg>
               </div>
               <div className="flex flex-col flex-grow">
-                <h3 className="text-lg md:text-2xl group-hover:text-white duration-200 leading-[140%] mb-[6px] md:mb-2 font-semibold text-secondary">
+                <h3 className="text-lg lg:text-2xl group-hover:text-white duration-200 leading-[140%] mb-[6px] md:mb-2 font-semibold text-secondary">
                   Send Mediation
                 </h3>
                 <p className="text-sm md:text-lg duration-200 leading-[150%] font-normal mb-[26px] flex-grow">

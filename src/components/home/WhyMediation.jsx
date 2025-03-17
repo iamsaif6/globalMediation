@@ -12,8 +12,13 @@ const items = [
 const WhyMediation = () => {
   return (
     <section className="py-16 md:py-[80px] mb-16 md:mb-[80px] pr-5 md:pr-16 pl-5 md:pl-[49px] bg-secondary grid grid-cols-2 gap-[90px]">
-      <div className="relative col-span-2 md:col-span-1">
-        <svg className=" w-full h-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 594 610" fill="none">
+      <div className="relative col-span-2 lg:col-span-1">
+        <svg
+          className=" w-full max-w-[300px] md:max-w-[500px] mx-auto h-full"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 594 610"
+          fill="none"
+        >
           <path
             d="M292.801 609.069H593.853V311.785C593.929 308.851 593.951 306.241 593.951 303.826C594.118 262.989 586.217 222.522 570.7 184.748C555.225 147.322 533.881 114.693 507.371 87.7935C480.861 60.8937 448.828 39.3328 412.269 23.6412C375.668 7.94148 336.243 -0.103562 296.418 0.00100643C242.575 0.00100643 192.349 13.4401 147.061 39.9175C101.773 66.395 65.506 103.409 39.3751 149.921C13.2441 196.432 0 248.153 0 303.826C0 359.499 13.255 411.414 39.3751 458.077C65.4952 504.74 101.719 541.971 147.039 568.665C191.342 594.742 240.366 608.257 292.801 608.863V609.069Z"
             fill="#00A49F"
@@ -23,7 +28,7 @@ const WhyMediation = () => {
           25 <span className="block text-[41px] md:text-[73px]">years</span>
         </p>
       </div>
-      <div className="text-white col-span-2 md:col-span-1">
+      <div className="text-white col-span-2 lg:col-span-1">
         <h1 className="leading-[120%] font-medium text-4xl md:text-5xl mb-5 md:mb-8">Why Global Mediation</h1>
         <p className="font-normal text-base md:text-lg leading-[150%]">
           Global Mediation is your trusted partner for impartial and effective conflict resolution. For over two decades, we’ve empowered

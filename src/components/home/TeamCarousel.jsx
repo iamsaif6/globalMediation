@@ -46,7 +46,7 @@ const TeamCarousel = ({ darkText = false }) => {
     prevArrow: <SamplePrevArrow />,
     responsive: [
       {
-        breakpoint: 600,
+        breakpoint: 900,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,

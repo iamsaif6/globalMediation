@@ -40,7 +40,7 @@ const Tabs = () => {
       case 'Workplace':
         return (
           <div className=" grid grid-cols-2 gap-[80px]">
-            <div className="col-span-2 md:col-span-1">
+            <div className="col-span-2 lg:col-span-1">
               <h1 className="font-medium text-4xl md:text-5xl leading-[120%]">Workplace and Employment Disputes</h1>
               <p className="text-[#667085] text-base md:text-lg leading-[150%] my-10">
                 Conflicts between colleagues, teams, or management can cause inefficiencies and strain relationships. Our mediators provide
@@ -71,7 +71,7 @@ const Tabs = () => {
                 </div>
               </div>
             </div>
-            <div className="relative  hidden md:block col-span-2 md:col-span-1 rounded-3xl overflow-hidden">
+            <div className="relative  hidden lg:block col-span-2 md:col-span-1 rounded-3xl overflow-hidden">
               <div className={`from-[rgba(0, 164, 159, 0.20)] to-[#006863a3] absolute inset-0 bg-gradient-to-b  z-10`}></div>
               <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={service1} />
             </div>
@@ -80,11 +80,11 @@ const Tabs = () => {
       case 'Harassment':
         return (
           <div className=" grid grid-cols-2 gap-[80px]">
-            <div className="relative  hidden md:block col-span-2 md:col-span-1 rounded-3xl overflow-hidden">
+            <div className="relative  hidden md:block col-span-2 lg:col-span-1 rounded-3xl overflow-hidden">
               <div className={`from-[rgba(0, 164, 159, 0.20)] to-[#006863a3] absolute inset-0 bg-gradient-to-b  z-10`}></div>
               <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={service1} />
             </div>
-            <div className="col-span-2 md:col-span-1">
+            <div className="col-span-2 lg:col-span-1">
               <h1 className="font-medium text-4xl md:text-5xl leading-[120%]">Harassment and Bullying Complaints</h1>
               <p className="text-[#667085] text-base md:text-lg leading-[150%] my-10">
                 Conflicts between colleagues, teams, or management can cause inefficiencies and strain relationships. Our mediators provide
@@ -120,11 +120,11 @@ const Tabs = () => {
       case 'Team':
         return (
           <div className=" grid grid-cols-2 gap-[80px]">
-            <div className="relative  hidden md:block col-span-2 md:col-span-1 rounded-3xl overflow-hidden">
+            <div className="relative  hidden md:block col-span-2 lg:col-span-1 rounded-3xl overflow-hidden">
               <div className={`from-[rgba(0, 164, 159, 0.20)] to-[#006863a3] absolute inset-0 bg-gradient-to-b  z-10`}></div>
               <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={service1} />
             </div>
-            <div className="col-span-2 md:col-span-1">
+            <div className="col-span-2 lg:col-span-1">
               <h1 className="font-medium text-4xl md:text-5xl leading-[120%]">Team Conflicts and Collaboration Issues</h1>
               <p className="text-[#667085] text-base md:text-lg leading-[150%] my-10">
                 Conflicts between colleagues, teams, or management can cause inefficiencies and strain relationships. Our mediators provide

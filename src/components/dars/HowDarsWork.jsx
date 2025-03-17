@@ -6,7 +6,7 @@ const HowDarsWork = () => {
     <section className="py-16 px-5 md:px-16 md:py-[80px]">
       <SectionHeading title={'How DARS Works'} center={true} />
       <div className="grid grid-cols-4 gap-[18px] md:gap-8 my-10 md:my-[54px]">
-        <div className="bg-[#F3F1FF] rounded-xl py-[37px] md:py-[46px] px-[19px] md:px-6  col-span-4 md:col-span-1">
+        <div className="bg-[#F3F1FF] rounded-xl py-[37px] md:py-[46px] px-[19px] md:px-6  col-span-4 md:col-span-2 lg:col-span-1">
           <p className="font-medium text-2xl leading-[140%] mb-[42px] flex items-center justify-center w-[54px] h-[54px] text-white  bg-secondary rounded-xl">
             1
           </p>
@@ -16,7 +16,7 @@ const HowDarsWork = () => {
           </p>
         </div>
 
-        <div className="bg-[#F3F1FF] rounded-xl py-[37px] md:py-[46px] px-[19px] md:px-6  col-span-4 md:col-span-1">
+        <div className="bg-[#F3F1FF] rounded-xl py-[37px] md:py-[46px] px-[19px] md:px-6  col-span-4 md:col-span-2 lg:col-span-1">
           <p className="font-medium text-2xl leading-[140%] mb-[42px] flex items-center justify-center w-[54px] h-[54px] text-white  bg-secondary rounded-xl">
             2
           </p>
@@ -27,7 +27,7 @@ const HowDarsWork = () => {
             </span>
           </p>
         </div>
-        <div className="bg-[#F3F1FF] rounded-xl py-[37px] md:py-[46px] px-[19px] md:px-6  col-span-4 md:col-span-1">
+        <div className="bg-[#F3F1FF] rounded-xl py-[37px] md:py-[46px] px-[19px] md:px-6  col-span-4 md:col-span-2 lg:col-span-1">
           <p className="font-medium text-2xl leading-[140%] mb-[42px] flex items-center justify-center w-[54px] h-[54px] text-white  bg-secondary rounded-xl">
             3
           </p>
@@ -39,7 +39,7 @@ const HowDarsWork = () => {
             </span>
           </p>
         </div>
-        <div className="bg-[#F3F1FF] rounded-xl py-[37px] md:py-[46px] px-[19px] md:px-6  col-span-4 md:col-span-1">
+        <div className="bg-[#F3F1FF] rounded-xl py-[37px] md:py-[46px] px-[19px] md:px-6  col-span-4 md:col-span-2 lg:col-span-1">
           <p className="font-medium text-2xl leading-[140%] mb-[42px] flex items-center justify-center w-[54px] h-[54px] text-white  bg-secondary rounded-xl">
             4
           </p>

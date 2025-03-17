@@ -12,7 +12,7 @@ const Apply = () => {
         center={true}
       />
       <div className="grid grid-cols-3 gap-[18px] md:gap-8 my-10 md:my-[54px]">
-        <div className="bg-[#F3F1FF] rounded-xl py-[37px] md:py-[46px] px-[19px] md:px-6 col-span-3 md:col-span-1">
+        <div className="bg-[#F3F1FF] rounded-xl py-[37px] md:py-[46px] px-[19px] md:px-6 col-span-3 lg:col-span-1">
           <p className="font-medium text-2xl leading-[140%] mb-[42px] flex items-center justify-center w-[54px] h-[54px] text-white  bg-secondary rounded-xl">
             1
           </p>
@@ -46,7 +46,7 @@ const Apply = () => {
           </p>
         </div>
 
-        <div className="bg-[#F3F1FF] rounded-xl py-[37px] md:py-[46px] px-[19px] md:px-6 col-span-3 md:col-span-1">
+        <div className="bg-[#F3F1FF] rounded-xl py-[37px] md:py-[46px] px-[19px] md:px-6 col-span-3 lg:col-span-1">
           <p className="font-medium text-2xl leading-[140%] mb-[42px] flex items-center justify-center w-[54px] h-[54px] text-white  bg-secondary rounded-xl">
             2
           </p>
@@ -55,7 +55,7 @@ const Apply = () => {
             <span className="">Complete the application form provided by our team</span>
           </p>
         </div>
-        <div className="bg-[#F3F1FF] rounded-xl py-[37px] md:py-[46px] px-[19px] md:px-6 col-span-3 md:col-span-1">
+        <div className="bg-[#F3F1FF] rounded-xl py-[37px] md:py-[46px] px-[19px] md:px-6 col-span-3 lg:col-span-1">
           <p className="font-medium text-2xl leading-[140%] mb-[42px] flex items-center justify-center w-[54px] h-[54px] text-white  bg-secondary rounded-xl">
             3
           </p>

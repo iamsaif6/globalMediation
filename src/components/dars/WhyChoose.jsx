@@ -7,7 +7,7 @@ const WhyChoose = () => {
   return (
     <section className="my-0  mx-0 md:mx-16 md:my-[80px]">
       <div className="bg-primary text-white md:rounded-3xl px-5 md:px-[49px] py-[50px] md:py-[46px] grid grid-cols-2 gap-[30px]">
-        <div className="col-span-2 md:col-span-1">
+        <div className="col-span-2 lg:col-span-1">
           <h1 className="text-4xl md:text-5xl font-medium leading-[120%] mb-8">Why Choose DARS?</h1>
           <p className="pb-8 text-base md:text-lg border-b-[0.5px] border-white">
             DARS provides a trusted, results-driven approach to dispute resolution in Northern Ireland. With a strong focus on impartiality,
@@ -56,7 +56,7 @@ const WhyChoose = () => {
             </button>
           </div>
         </div>
-        <div className="mt-5 md:mt-0 rounded-[13px] md:rounded-3xl col-span-2 md:col-span-1 overflow-hidden">
+        <div className="mt-5 md:mt-0 rounded-[13px] md:rounded-3xl col-span-2 lg:col-span-1 overflow-hidden">
           <Image className="w-full h-full object-cover" alt="Why choose cover" src={choose} />
         </div>
       </div>

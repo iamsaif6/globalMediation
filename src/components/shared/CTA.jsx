@@ -12,22 +12,6 @@ const CTA = ({ title, subTitle, Button1Text, Button1Link, Button2Text, Button2Li
               <h1 className="font-medium text-4xl md:text-[54px] leading-[120%] mb-[20px] md:mb-6">{title}</h1>
               <p className=" text-base md:text-lg">{subTitle}</p>
             </div>
-            {/* <div className="mt-8 flex flex-col md:flex-row justify-center items-center gap-4">
-              {Button1Text && (
-                <button className="w-full md:w-auto  bg-primary font-normal  text-[#FCFCFD] px-12 py-3 rounded-[40px] text-base md:text-lg  ">
-                  <Link className="w-full  " href={Button1Link}>
-                    {Button1Text}
-                  </Link>
-                </button>
-              )}
-              {Button2Text && (
-                <button className="w-full md:w-auto font-normal border border-white text-base md:text-lg text-white px-[24px] py-3 rounded-[40px] ">
-                  <Link className="w-full  " href={Button2Link}>
-                    {Button2Text}
-                  </Link>
-                </button>
-              )}
-            </div> */}
             <div className={`mt-8 md:max-w-[950px] ${Button2Text ? 'grid grid-cols-1 md:grid-cols-2' : 'md:grid-cols-1'}  gap-4  mx-auto`}>
               {Button1Text && (
                 <button className="bg-primary font-normal text-[#FCFCFD] px-10 py-3 rounded-[40px] text-base md:text-lg">

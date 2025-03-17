@@ -15,7 +15,7 @@ const JoinGlobalTeam = () => {
       className="px-5 md:px-16 py-[80px] md:py-[137px]"
     >
       <div className="grid grid-cols-2 text-white gap-[80px]">
-        <div className="col-span-2 md:col-span-1">
+        <div className="col-span-2 lg:col-span-1">
           <p className="text-base font-medium">Careers</p>
           <h1 className="text-4xl md:text-5xl font-medium my-4">Join the Global Mediation Team</h1>
           <p className="text-base md:text-lg leading-[150%]">
@@ -23,7 +23,7 @@ const JoinGlobalTeam = () => {
             administrative professionals. Join us and contribute to creating peaceful resolutions for individuals and organisations.
           </p>
         </div>
-        <div className="col-span-2 md:col-span-1">
+        <div className="col-span-2 lg:col-span-1">
           <h3 className="text-2xl font-medium mb-8">Current Opportunities:</h3>
           <ul className="text-white text-base md:text-lg">
             <li>

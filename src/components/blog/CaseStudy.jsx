@@ -67,10 +67,10 @@ const CaseStudy = () => {
         <Slider ref={sliderRef} {...settings}>
           {[1, 2].map(item => (
             <div className=" rounded-xl overflow-hidden !grid grid-cols-12" key={item}>
-              <div className="col-span-12 h-[290px] md:h-full min-h-[290px] md:min-h-[500px] md:col-span-5">
+              <div className="col-span-12 h-[290px] md:h-full min-h-[290px] lg:min-h-[500px] lg:col-span-5">
                 <Image className="object-cover w-full h-full" alt="Cover" src={cover} />
               </div>
-              <div className="col-span-12  bg-white md:col-span-7 py-[42px] md:py-[66px] px-6 md:pr-[74px] md:pl-[90px]">
+              <div className="col-span-12  bg-white lg:col-span-7 py-[42px] md:py-[66px] px-6 md:pr-[74px] md:pl-[90px]">
                 <h3 className="mb-8 text-[#1C1C1C] font-normal text-4xl md:text-5xl leading-[120%]">Case study 1</h3>
                 <p className="text-[#667085] mb-12 font-normal text-sm md:text-lg leading-[150%]">
                   Unlock the skills needed to mediate disputes effectively with Global Mediation’s comprehensive training programs. Whether

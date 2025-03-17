@@ -4,7 +4,7 @@ import React from 'react';
 const Map = () => {
   return (
     <section className="py-16 px-5 items-center md:px-16 md:py-[80px] grid grid-cols-2 gap-7 md:gap-[80px]">
-      <div className="pr-0 col-span-2 md:col-span-1 md:pr-10">
+      <div className="pr-0 col-span-2 lg:col-span-1 lg:pr-10">
         <h1 className="text-[#393D4E] leading-[120%] text-4xl md:text-5xl font-medium ">Start Resolving Conflicts Today</h1>
         <p className=" md:text-lg mb-6 md:mb-[52px] text-base mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
         <div className=" rounded-xl  overflow-hidden">
@@ -19,7 +19,7 @@ const Map = () => {
           ></iframe>
         </div>
       </div>
-      <div className="col-span-2 md:col-span-1">
+      <div className="col-span-2 lg:col-span-1">
         <form className="md:space-y-4 space-y-6">
           <div>
             <label className="text-base font-normal md:text-[20px] block mb-2.5 text-[#393D4E]" htmlFor="name">

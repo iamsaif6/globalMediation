@@ -10,7 +10,7 @@ const ContactUs = () => {
       <Header title={'Contact us'} subTitle={'Direct users to reach out for consultations or general inquiries'} cover={contactUsCover} />
       {/* Contact us steps */}
       <div className="grid bg-[#F9F8FF] grid-cols-3 gap-12 py-16 px-5 md:px-16 md:py-[80px] ">
-        <div className="col-span-3 md:col-span-1">
+        <div className="col-span-3 lg:col-span-1">
           <div className="mb-6 border border-secondary w-[40px] h-[40px] rounded-full flex items-center justify-center">
             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
               <path
@@ -28,7 +28,7 @@ const ContactUs = () => {
           </a>
         </div>
 
-        <div className="col-span-3 md:col-span-1">
+        <div className="col-span-3 lg:col-span-1">
           <div className="mb-6 border border-secondary w-[40px] h-[40px] rounded-full flex items-center justify-center">
             <svg xmlns="http://www.w3.org/2000/svg" width="23" height="24" viewBox="0 0 23 24" fill="none">
               <path
@@ -46,7 +46,7 @@ const ContactUs = () => {
           </a>
         </div>
 
-        <div className="col-span-3 md:col-span-1">
+        <div className="col-span-3 lg:col-span-1">
           <div className="mb-6 border border-secondary w-[40px] h-[40px] rounded-full flex items-center justify-center">
             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
               <path

@@ -55,8 +55,8 @@ const TimeLine = () => {
 
           <div className="absolute top-6 left-0 right-0 z-0">
             <div className="hidden md:block absolute left-[12%] right-[12%] top-0">
-              <div className="absolute w-[37%] left-23 top-8 border-t-2 border-dashed border-secondary transform rotate-[11deg]"></div>
-              <div className="absolute w-[37%] right-23 top-8 border-t-2 border-dashed border-secondary transform -rotate-[11deg]"></div>
+              <div className="absolute w-[40%] lg:w-[39%] left-9 lg:left-23 top-9 border-t-2 border-dashed border-secondary transform md:rotate-[17deg] lg:rotate-[10deg]"></div>
+              <div className="absolute w-[40%] lg:w-[39%] right-9 lg:right-23 top-9 border-t-2 border-dashed border-secondary transform md:-rotate-[17deg]  lg:-rotate-[10deg]"></div>
             </div>
           </div>
         </div>

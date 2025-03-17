@@ -12,7 +12,7 @@ const MediationCalculation = () => {
         center={true}
       />
       <div className="grid grid-cols-2 gap-[33px] mt-[60px]">
-        <div className="bg-[#F9F8FF] col-span-2 md:col-span-1 rounded-[20px] p-8">
+        <div className="bg-[#F9F8FF] col-span-2 lg:col-span-1 rounded-[20px] p-8">
           <h3 className="text-sm md:text-[27px] text-[#393D4E] font-semibold leading-[140%]">User Inputs</h3>
           <div className="mt-5 space-y-[10px]">
             <div className="grid grid-cols-2 text-[10px] md:text-[20px] items-center gap-2">
@@ -46,7 +46,7 @@ const MediationCalculation = () => {
             </div>
           </div>
         </div>
-        <div className="bg-[#F9F8FF] col-span-2 md:col-span-1 rounded-[20px] p-8">
+        <div className="bg-[#F9F8FF] col-span-2 lg:col-span-1 rounded-[20px] p-8">
           <h3 className="text-sm md:text-[27px] text-[#393D4E] font-semibold leading-[140%]">Outputs</h3>
           <div className="mt-5 space-y-[10px]">
             <div className="grid text-[10px] md:text-[20px] grid-cols-2 items-center gap-2">
@@ -89,7 +89,7 @@ const MediationCalculation = () => {
           Based on your inputs, mediation could save you:
         </h2>
         <div className="grid grid-cols-3 gap-7.5 leading-[140%]">
-          <div className="bg-[#EAE8FE] col-span-3 md:col-span-1 flex flex-col gap-[30px] justify-between text-secondary rounded-[20px] px-7 md:px-[35px] pt-[22px] pb-[42px]">
+          <div className="bg-[#EAE8FE] col-span-3 lg:col-span-1 flex flex-col gap-[30px] justify-between text-secondary rounded-[20px] px-7 md:px-[35px] pt-[22px] pb-[42px]">
             <h3 className="leading-[140%] flex items-center gap-2.5 text-[42px] md:text-[54px] font-semibold">
               90% <span className="font-semibold text-base md:text-[20px]">in cost</span>
             </h3>
@@ -98,14 +98,14 @@ const MediationCalculation = () => {
               £X,XXX - £X,XXX
             </p>
           </div>
-          <div className="bg-[#EAE8FE] col-span-3 md:col-span-1 flex flex-col gap-[30px] justify-between text-secondary rounded-[20px] px-7 md:px-[35px] pt-[22px] pb-[42px]">
+          <div className="bg-[#EAE8FE] col-span-3 lg:col-span-1 flex flex-col gap-[30px] justify-between text-secondary rounded-[20px] px-7 md:px-[35px] pt-[22px] pb-[42px]">
             <h3 className="leading-[140%] flex flex-col  gap-2.5  text-[42px] md:text-[54px] font-semibold">
               80%
               <span className="font-semibold leading-0 text-base md:text-[20px]">of your time</span>
             </h3>
             <p className=" text-[20px] leading-[140%]  font-semibold">Resolving your dispute in just X weeks instead of X months</p>
           </div>
-          <div className="bg-[#EAE8FE] col-span-3 md:col-span-1 flex items-center p-[29px] md:p-[37px] flex-col gap-[30px] justify-between text-secondary rounded-[20px] p">
+          <div className="bg-[#EAE8FE] col-span-3 lg:col-span-1 flex items-center p-[29px] md:p-[37px] flex-col gap-[30px] justify-between text-secondary rounded-[20px] p">
             <h3 className="font-semibold flex items-center gap-6 md:gap-2">
               <span className="text-sm  md:text-lg">Mediation</span> <span className="text-4xl md:text-5xl inline-block ">90%</span>{' '}
               <span className="text-xs md:text-base font-normal">success Rate</span>

@@ -192,7 +192,7 @@ const SingleBlogPost = ({ params }) => {
         <SectionHeading center={true} title={'Related Posts'} subTitle={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '} />
         <div className="grid my-12 md:my-[80px] grid-cols-3 gap-8">
           {[1, 2, 3].map(item => (
-            <div key={item} className="col-span-4 md:col-span-2 lg:col-span-1 mb-[48px] md:mb-[60px]">
+            <div key={item} className="col-span-4  lg:col-span-1 mb-[48px] md:mb-[60px]">
               <div className="w-full min-h-[300px] max-h-[290px] bg-gray-600 rounded-xl"></div>
               <h3 className={`text-black leading-[140%] mt-6 md:mt-6 mb-4 text-lg md:text-[24px] font-semibold `}>
                 Can my child have a voice in Family Mediation

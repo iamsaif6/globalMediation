@@ -71,12 +71,12 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="fixed z-50 md:max-w-[1380px] border border-primary left-1/2 -translate-x-1/2 w-full mx-auto bg-white max-w-[90%] top-5 rounded-4xl overflow-hidden">
-        <div className="flex items-center justify-between  md:pl-9 px-[18px] md:px-3">
+      <nav className="fixed z-50 lg:max-w-[1380px] border border-primary left-1/2 -translate-x-1/2 w-full mx-auto bg-white max-w-[90%] top-5 rounded-4xl overflow-hidden">
+        <div className="flex items-center justify-between  lg:pl-9 px-[18px] lg:px-3">
           <div className="flex items-center gap-10 relative">
             <Link href="/" className="flex items-center">
               <svg
-                className="w-[56px] h-[26px] md:w-[132px] md:h-[59px]"
+                className="w-[56px] h-[26px] lg:w-[80px] lg:h-auto lg:w-[132px] lg:h-[59px]"
                 xmlns="http://www.w3.org/2000/svg"
                 width="132"
                 height="59"
@@ -118,13 +118,13 @@ const Navbar = () => {
                 </defs>
               </svg>
             </Link>
-            <ul className="md:flex relative hidden gap-6 text-secondary font-normal text-lg items-center">
+            <ul className="lg:flex relative hidden gap-6 text-secondary font-normal text-lg items-center">
               {navLinks.map(link => {
                 return (
                   <li key={link.href}>
                     <Link
                       href={link?.href}
-                      className={`px-2 py-[20px] md:py-7 flex items-center ${link?.hasMegaMenu ? 'gap-1' : ''}`}
+                      className={`px-2 py-[20px] lg:py-7 flex items-center ${link?.hasMegaMenu ? 'gap-1' : ''}`}
                       onMouseEnter={() => link?.hasMegaMenu && setActiveMenu(true)}
                       onMouseLeave={() => link?.hasMegaMenu && setActiveMenu(false)}
                     >
@@ -147,11 +147,11 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="flex items-center">
-            <div className="hidden md:block">
+            <div className="hidden lg:block">
               <Button href="/contact-us" title="Contact Us" />
             </div>
             <button
-              className="md:hidden flex items-center justify-center w-12 h-12 focus:outline-none"
+              className="lg:hidden flex items-center justify-center w-12 h-12 focus:outline-none"
               onClick={toggleMobileMenu}
               aria-label="Toggle mobile menu"
             >
@@ -255,7 +255,7 @@ const Navbar = () => {
 
       {/* Mobile Menu Overlay */}
       <div
-        className={`fixed inset-0 bg-white z-50 overflow-y-auto md:hidden flex flex-col transition-all duration-300 ease-in-out ${
+        className={`fixed inset-0 bg-white z-50 overflow-y-auto lg:hidden flex flex-col transition-all duration-300 ease-in-out ${
           mobileMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
         }`}
       >
