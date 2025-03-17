@@ -20,7 +20,7 @@ export default function Home() {
         title={'Replacing Conflict with Harmony'}
         subTitle={'Professional mediation services to foster understanding and resolve disputes with care.'}
         Button1Text={'Learn About Our Services'}
-        Button1Link={'#'}
+        Button1Link={'/service'}
       />
       <Marque />
       <MediationCards />
@@ -33,7 +33,7 @@ export default function Home() {
             Global Mediation, we specialise in empowering individuals and organisations with impartial and tailored solutions that work.
           </p>
           <button className=" bg-white font-normal text-xs md:text-lg text-black px-6 md:px-[48px] md:py-3 py-2 rounded-[40px] ">
-            <Link className="w-full  " href="#">
+            <Link className="w-full  " href="/about-us">
               Learn About Mediation
             </Link>
           </button>
@@ -60,7 +60,7 @@ export default function Home() {
         Button1Text={'Schedule a Free Consultation Today'}
         Button1Link={'#'}
         Button2Text={'Contact us'}
-        Button2Link={'#'}
+        Button2Link={'/contact-us'}
       />
     </div>
   );

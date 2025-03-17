@@ -1,11 +1,15 @@
+// Blog.jsx - Server Component
 import CaseStudy from '@/components/blog/CaseStudy';
 import Download from '@/components/blog/Download';
 import Posts from '@/components/blog/Posts';
 import CTA from '@/components/shared/CTA';
 import Header from '@/components/shared/Header';
+import { fetchArticles } from '@/utils/api';
 import React from 'react';
 
-const Blog = () => {
+const Blog = async () => {
+  const articles = await fetchArticles();
+
   return (
     <div className="">
       <Header
@@ -14,7 +18,7 @@ const Blog = () => {
         Button1Text={'Learn More'}
         Button1Link="#"
       />
-      <Posts />
+      <Posts articles={articles} />
       <CaseStudy />
       <Download />
       <CTA

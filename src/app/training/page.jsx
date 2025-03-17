@@ -18,7 +18,7 @@ const Training = () => {
         Button1Text={'Enroll in a Mediation Training Program Today'}
         Button1Link="#"
         Button2Text={'Contact Us for Upcoming Course Dates'}
-        Button2Link="#"
+        Button2Link="/contact-us"
       />
       <Introduction />
       {/* Explore */}
@@ -36,7 +36,7 @@ const Training = () => {
         subTitle={'Take the first step toward becoming a qualified mediator or enhancing your existing mediation skills.'}
         Button1Link={'#'}
         Button1Text={'Enrol in a Mediation Training Program Today'}
-        Button2Link={'#'}
+        Button2Link={'/contact-us'}
         Button2Text={'Contact Us for Upcoming Course Dates'}
       />
     </div>

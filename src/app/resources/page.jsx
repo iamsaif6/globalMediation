@@ -1,7 +1,7 @@
-import React from 'react';
+import { redirect } from 'next/navigation';
 
 const Resources = () => {
-  return <div>Resources</div>;
+  redirect('/blogs');
 };
 
 export default Resources;

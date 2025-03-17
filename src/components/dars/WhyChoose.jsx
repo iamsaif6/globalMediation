@@ -50,7 +50,7 @@ const WhyChoose = () => {
           </div>
           <div className="">
             <button className={`bg-secondary border border-secondary font-normal text-lg text-[#FCFCFD] px-7 py-2 rounded-[40px]`}>
-              <Link className="w-full" href={'#'}>
+              <Link className="w-full" href={'/contact-us'}>
                 Contact US
               </Link>
             </button>

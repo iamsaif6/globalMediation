@@ -1,4 +1,5 @@
 @import 'tailwindcss';
+@plugin "@tailwindcss/typography";
 
 /* Custom Class */
 @layer utilities {
@@ -65,4 +66,42 @@ body {
 
 .about .team-caousel .slick-dots li.slick-active div {
   background: #43006a;
+}
+
+/* For Rich Text */
+/* Rich Text */
+.richText {
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.richText h2 {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.richText h3 {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.richText p {
+  margin-bottom: 1rem;
+}
+
+.richText ul,
+.richText ol {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.richText a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.richText a:hover {
+  text-decoration: underline;
 }

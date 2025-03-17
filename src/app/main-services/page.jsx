@@ -10,7 +10,7 @@ const MainServices = () => {
         title={'Global Mediation Services'}
         subTitle={'Professional mediation services to resolve disputes with empathy, expertise, and efficiency.'}
         Button1Text={'Contact Us Today'}
-        Button1Link="#"
+        Button1Link="/contact-us"
       />
       <MainServiesCard />
       <CTA
@@ -19,7 +19,7 @@ const MainServices = () => {
         Button1Text={'Schedule a Free Consultation Today'}
         Button1Link={'#'}
         Button2Text={'Contact us'}
-        Button2Link={'#'}
+        Button2Link={'/contact-us'}
       />
     </div>
   );

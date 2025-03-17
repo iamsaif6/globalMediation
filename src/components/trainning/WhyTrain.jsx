@@ -112,7 +112,7 @@ const WhyTrain = () => {
         </div>
       </div>
       <div className="flex justify-center mt-16 md:mt-[80px]">
-        <Button title={'Contact Us to Learn More About Our Training Programs'} href="#" />
+        <Button title={'Contact Us to Learn More About Our Training Programs'} href="/contact-us" />
       </div>
     </section>
   );

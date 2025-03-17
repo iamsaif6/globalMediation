@@ -46,7 +46,7 @@ const WhyMediation = () => {
           ))}
         </ul>
         <button className=" bg-white w-full md:w-auto font-normal text-lg text-secondary px-12 py-3 rounded-[40px] ">
-          <Link className="w-full  " href="#">
+          <Link className="w-full  " href="/about-us">
             Learn More About Us
           </Link>
         </button>

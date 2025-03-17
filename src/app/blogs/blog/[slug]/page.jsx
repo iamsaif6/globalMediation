@@ -7,9 +7,34 @@ import user from '/public/Placeholder Image 2.png';
 import SectionHeading from '@/components/shared/SectionHeading';
 import Button from '@/components/shared/Button';
 import CTA from '@/components/shared/CTA';
+import { fetchArticleBySlug } from '@/utils/api';
+import { notFound } from 'next/navigation';
+import { BlockRenderer } from '@/components/shared/BlockRenderer';
+import BLockWrapper from '@/components/blocks/BlockWrapper';
 
-const SingleBlogPost = ({ params }) => {
-  const { id } = params;
+export async function generateMetadata({ params }) {
+  const article = await fetchArticleBySlug(params.slug);
+
+  if (!article) {
+    return {
+      title: 'Article Not Found',
+    };
+  }
+
+  return {
+    title: article?.title,
+    description: article?.description,
+  };
+}
+
+const SingleBlogPost = async ({ params }) => {
+  const article = await fetchArticleBySlug(params.slug);
+  if (!article) {
+    notFound();
+  }
+
+  console.log(article);
+
   return (
     <div>
       <Header
@@ -20,13 +45,15 @@ const SingleBlogPost = ({ params }) => {
       <section className="py-16 px-5 md:py-[80px] md:px-[144px]">
         <div className="flex flex-col md:flex-row mb-[68px] gap-6 md:items-center justify-between">
           <div className=" text-base font-normal flex items-center gap-2">
-            <Link className="text-secondary" href={'/blog'}>
-              Blog
+            <Link className="text-secondary" href={'/blogs'}>
+              Blogs
             </Link>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-              <path d="M6 3L11 8L6 13" stroke="#43006A" strokeWidth="1.5" />
-            </svg>
-            <span>Category</span>
+            {article?.category?.name && (
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M6 3L11 8L6 13" stroke="#43006A" strokeWidth="1.5" />
+              </svg>
+            )}
+            {article?.category?.name && <span>{article?.category?.name}</span>}
           </div>
           <ul className="flex items-center gap-2">
             <li>
@@ -75,20 +102,43 @@ const SingleBlogPost = ({ params }) => {
           </ul>
         </div>
         <article className="md:text-lg text-base leading-[150%]">
-          <h1 className="md:text-[40px] text-4xl font-medium md:font-semibold mb-5 md:mb-8">Introduction</h1>
-          <p>
-            Mi tincidunt elit, id quisque ligula ac diam, amet. Vel etiam suspendisse morbi eleifend faucibus eget vestibulum felis. Dictum
-            quis montes, sit sit. Tellus aliquam enim urna, etiam. Mauris posuere vulputate arcu amet, vitae nisi, tellus tincidunt. At
-            feugiat sapien varius id. <br className="mb-4" />
-            Eget quis mi enim, leo lacinia pharetra, semper. Eget in volutpat mollis at volutpat lectus velit, sed auctor. Porttitor fames
-            arcu quis fusce augue enim. Quis at habitant diam at. Suscipit tristique risus, at donec. In turpis vel et quam imperdiet. Ipsum
-            molestie aliquet sodales id est ac volutpat.
-          </p>
-          <figure className="h-[370px] rounded-xl md:h-[630px] py-10 ">
-            <Image className="w-full rounded-xl h-full max-h-[630px] object-cover" alt="Demo Image" src={demoImg}></Image>
-            <figcaption className="mt-4 text-sm pl-2 border-l-2">Image caption goes here</figcaption>
-          </figure>
-          <p className="text-lg leading-[140%]  mt-5">
+          <h1 className="md:text-[40px] text-4xl font-medium md:font-semibold mb-5 md:mb-8">{article.title}</h1>
+          <p>{article?.description}</p>
+          {article.cover && (
+            <figure className="h-[370px] rounded-xl md:h-[630px] py-10 mb-10 ">
+              {(article?.cover?.formats?.large?.url && (
+                <Image
+                  width={article?.cover.width}
+                  height={article?.cover.height}
+                  className="w-full rounded-xl h-full max-h-[630px] object-cover"
+                  alt="Demo Image"
+                  src={`${process.env.NEXT_PUBLIC_API_URL}${article?.cover?.formats?.large?.url || article?.cover?.formats?.medium?.url}`}
+                />
+              )) ||
+                (article?.cover?.formats?.medium?.url && (
+                  <Image
+                    width={article?.cover.width}
+                    height={article?.cover.height}
+                    className="w-full rounded-xl h-full max-h-[630px] object-cover"
+                    alt="Demo Image"
+                    src={`${process.env.NEXT_PUBLIC_API_URL}${article?.cover?.formats?.medium?.url}`}
+                  />
+                )) ||
+                (article?.cover?.formats?.small?.url && (
+                  <Image
+                    width={article?.cover.width}
+                    height={article?.cover.height}
+                    className="w-full rounded-xl h-full max-h-[630px] object-cover"
+                    alt="Demo Image"
+                    src={`${process.env.NEXT_PUBLIC_API_URL}${article?.cover?.formats?.small?.url}`}
+                  />
+                ))}
+              {article?.cover?.caption && <figcaption className="mt-4 text-sm pl-2 border-l-2">{article?.cover?.caption}</figcaption>}
+            </figure>
+          )}
+
+          <BLockWrapper article={article} />
+          {/* <p className="text-lg leading-[140%]  mt-5">
             <strong className="text-base md:text-[20px] block mb-4">
               Dolor enim eu tortor urna sed duis nulla. Aliquam vestibulum, nulla odio nisl vitae. In aliquet pellentesque aenean hac
               vestibulum turpis mi bibendum diam. Tempor integer aliquam in vitae malesuada fringilla.
@@ -97,14 +147,14 @@ const SingleBlogPost = ({ params }) => {
             dignissim adipiscing faucibus consequat, urna. Viverra purus et erat auctor aliquam. Risus, volutpat vulputate posuere purus sit
             congue convallis aliquet. Arcu id augue ut feugiat donec porttitor neque. Mauris, neque ultricies eu vestibulum, bibendum quam
             lorem id. Dolor lacus, eget nunc lectus in tellus, pharetra, porttitor.
-          </p>
-          <blockquote className="py-[36px] my-4 px-3 leading-[150%] md:px-8 italic text-[20px] bg-[#F3F1FF] text-secondary">
+          </p> */}
+          {/* <blockquote className="py-[36px] my-4 px-3 leading-[150%] md:px-8 italic text-[20px] bg-[#F3F1FF] text-secondary">
             <span className="block pl-5 border-l-3 border-secondary">
               "Ipsum sit mattis nulla quam nulla. Gravida id gravida ac enim mauris id. Non pellentesque congue eget consectetur turpis.
               Sapien, dictum molestie sem tempor. Diam elit, orci, tincidunt aenean tempus."
             </span>
-          </blockquote>
-          <p>
+          </blockquote> */}
+          {/* <p>
             Tristique odio senectus nam posuere ornare leo metus, ultricies. Blandit duis ultricies vulputate morbi feugiat cras placerat
             elit. Aliquam tellus lorem sed ac. Montes, sed mattis pellentesque suscipit accumsan. Cursus viverra aenean magna risus
             elementum faucibus molestie pellentesque. Arcu ultricies sed mauris vestibulum.
@@ -122,7 +172,7 @@ const SingleBlogPost = ({ params }) => {
               id morbi eget ipsum. Aliquam senectus neque ut id eget consectetur dictum. Donec posuere pharetra odio consequat scelerisque
               et, nunc tortor.Nulla adipiscing erat a erat. Condimentum lorem posuere gravida enim posuere cursus diam.
             </p>
-          </div>
+          </div> */}
           <div className="flex pb-12 border-b-[0.5px] border-secondary mb-12 items-center flex-col mt-16">
             <p className="font-semibold text-lg mb-4">Share this post</p>
             <ul className="flex mb-12 items-center gap-2">
@@ -182,8 +232,10 @@ const SingleBlogPost = ({ params }) => {
             <div className="w-12 h-12 rounded-full mb-4 overflow-hidden">
               <Image alt="user name" className="w-full h-full object-cover" src={user} />
             </div>
-            <p className="text-sm font-semibold">John Doe</p>
-            <p className="font-sm">Job title, Company name</p>
+            <p className="text-sm font-semibold">{article?.author?.name || 'Unknown'}</p>
+            <p className="font-sm">
+              {article?.author?.job_title}, {article?.author?.company}
+            </p>
           </div>
         </article>
       </section>
