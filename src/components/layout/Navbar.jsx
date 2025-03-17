@@ -46,6 +46,7 @@ const Navbar = () => {
   const [activeSubmenu, setActiveSubmenu] = useState('Service');
   const [menuHeight, setMenuHeight] = useState(0);
   const menuRef = React.useRef(null);
+  const mobileMenuRef = React.useRef(null);
 
   // Calculate the height of the menu when it's opened
   React.useEffect(() => {
@@ -55,6 +56,15 @@ const Navbar = () => {
       setMenuHeight(0);
     }
   }, [activeMenu, activeSubmenu]);
+
+  // Calculate the height of the menu when it's opened
+  React.useEffect(() => {
+    if (mobileMenuRef.current && mobileMenuOpen) {
+      setMenuHeight(menuRef.current.scrollHeight);
+    } else {
+      setMenuHeight(0);
+    }
+  }, [mobileMenuOpen]);
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
@@ -151,7 +161,7 @@ const Navbar = () => {
               <Button href="/contact-us" title="Contact Us" />
             </div>
             <button
-              className="lg:hidden flex items-center justify-center w-12 h-12 focus:outline-none"
+              className="lg:hidden cursor-pointer flex items-center justify-center w-12 h-12 focus:outline-none"
               onClick={toggleMobileMenu}
               aria-label="Toggle mobile menu"
             >
@@ -251,84 +261,91 @@ const Navbar = () => {
             </div>
           </div>
         </div>
+
+        <div
+          ref={mobileMenuRef}
+          style={{
+            maxHeight: mobileMenuOpen ? `${menuHeight + 100}px` : '0',
+            opacity: mobileMenuOpen ? 1 : 0,
+            visibility: mobileMenuOpen ? 'visible' : 'hidden',
+          }}
+          className={` inset-0 bg-white z-50 overflow-y-auto lg:hidden flex flex-col transition-all duration-300 ease-in-out ${
+            mobileMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
+          }`}
+        >
+          <div className="flex items-center justify-between p-5 border-b">
+            <a href="/" className="flex items-center">
+              <img src="/logo.svg" alt="Global Mediation" className="h-12" />
+            </a>
+            <button onClick={toggleMobileMenu} className="p-2" aria-label="Close menu">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+
+          <div className="flex-1 flex flex-col p-5 space-y-2">
+            <Link href="/" className="py-4 px-4 text-lg rounded-lg bg-lavender-50 hover:bg-lavender-100 transition-colors duration-200">
+              Home
+            </Link>
+
+            {navLinks
+              .filter(link => link.title !== 'Home')
+              .map(link => (
+                <div key={link.href} className="flex flex-col">
+                  {link.hasMegaMenu ? (
+                    <>
+                      <button
+                        onClick={() => toggleMobileSubmenu(link.title)}
+                        className="py-4 px-4 text-lg font-normal flex justify-between items-center bg-lavender-50 hover:bg-lavender-100 rounded-lg transition-colors duration-200"
+                      >
+                        {link.title}
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className={`h-4 w-4 transition-transform duration-300 ${mobileSubmenuOpen === link.title ? 'rotate-180' : ''}`}
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                        </svg>
+                      </button>
+
+                      <div
+                        className={`mt-2 pl-4 overflow-hidden transition-all duration-300 ease-in-out ${
+                          mobileSubmenuOpen === link.title ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                        }`}
+                      >
+                        {link.megaMenuItems.map((item, index) => (
+                          <Link
+                            key={index}
+                            href={item.href}
+                            className="block py-3 px-4 text-gray-600 hover:text-primary border-b border-gray-100 transition-colors duration-200"
+                          >
+                            {item.title}
+                          </Link>
+                        ))}
+                      </div>
+                    </>
+                  ) : (
+                    <Link
+                      href={link.href}
+                      className="py-4 px-4 text-lg font-normal bg-lavender-50 hover:bg-lavender-100 rounded-lg transition-colors duration-200"
+                    >
+                      {link.title}
+                    </Link>
+                  )}
+                </div>
+              ))}
+          </div>
+
+          <div className="p-5">
+            <Button href="/contact-us" title="Contact Us" className="w-full" />
+          </div>
+        </div>
       </nav>
 
       {/* Mobile Menu Overlay */}
-      <div
-        className={`fixed inset-0 bg-white z-50 overflow-y-auto lg:hidden flex flex-col transition-all duration-300 ease-in-out ${
-          mobileMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
-        }`}
-      >
-        <div className="flex items-center justify-between p-5 border-b">
-          <a href="/" className="flex items-center">
-            <img src="/logo.svg" alt="Global Mediation" className="h-12" />
-          </a>
-          <button onClick={toggleMobileMenu} className="p-2" aria-label="Close menu">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          </button>
-        </div>
-
-        <div className="flex-1 flex flex-col p-5 space-y-2">
-          <Link href="/" className="py-4 px-4 text-lg rounded-lg bg-lavender-50 hover:bg-lavender-100 transition-colors duration-200">
-            Home
-          </Link>
-
-          {navLinks
-            .filter(link => link.title !== 'Home')
-            .map(link => (
-              <div key={link.href} className="flex flex-col">
-                {link.hasMegaMenu ? (
-                  <>
-                    <button
-                      onClick={() => toggleMobileSubmenu(link.title)}
-                      className="py-4 px-4 text-lg font-normal flex justify-between items-center bg-lavender-50 hover:bg-lavender-100 rounded-lg transition-colors duration-200"
-                    >
-                      {link.title}
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className={`h-4 w-4 transition-transform duration-300 ${mobileSubmenuOpen === link.title ? 'rotate-180' : ''}`}
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                      </svg>
-                    </button>
-
-                    <div
-                      className={`mt-2 pl-4 overflow-hidden transition-all duration-300 ease-in-out ${
-                        mobileSubmenuOpen === link.title ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
-                      }`}
-                    >
-                      {link.megaMenuItems.map((item, index) => (
-                        <Link
-                          key={index}
-                          href={item.href}
-                          className="block py-3 px-4 text-gray-600 hover:text-primary border-b border-gray-100 transition-colors duration-200"
-                        >
-                          {item.title}
-                        </Link>
-                      ))}
-                    </div>
-                  </>
-                ) : (
-                  <Link
-                    href={link.href}
-                    className="py-4 px-4 text-lg font-normal bg-lavender-50 hover:bg-lavender-100 rounded-lg transition-colors duration-200"
-                  >
-                    {link.title}
-                  </Link>
-                )}
-              </div>
-            ))}
-        </div>
-
-        <div className="p-5">
-          <Button href="/contact-us" title="Contact Us" className="w-full" />
-        </div>
-      </div>
     </>
   );
 };
