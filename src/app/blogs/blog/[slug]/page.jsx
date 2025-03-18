@@ -11,6 +11,10 @@ import { fetchArticleBySlug } from '@/utils/api';
 import { notFound } from 'next/navigation';
 import { BlockRenderer } from '@/components/shared/BlockRenderer';
 import BLockWrapper from '@/components/blocks/BlockWrapper';
+import CopyButton from '@/components/blog/CopyButton';
+import LinkedinBtn from '@/components/blog/LinkedinBtn';
+import TwitterBtn from '@/components/blog/TwitterBtn';
+import FacebookBtn from '@/components/blog/FacebookBtn';
 
 export async function generateMetadata({ params }) {
   const article = await fetchArticleBySlug(params.slug);
@@ -57,47 +61,16 @@ const SingleBlogPost = async ({ params }) => {
           </div>
           <ul className="flex items-center gap-2">
             <li>
-              <button className="w-[32px] flex items-center justify-center h-[32px] rounded-full bg-[#F3F1FF]">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path
-                    d="M4.22172 19.778C4.68559 20.2425 5.23669 20.6108 5.84334 20.8617C6.44999 21.1126 7.10023 21.2411 7.75672 21.24C8.41335 21.2411 9.06374 21.1125 9.67054 20.8617C10.2774 20.6108 10.8286 20.2425 11.2927 19.778L14.1207 16.949L12.7067 15.535L9.87872 18.364C9.31519 18.925 8.55239 19.2399 7.75722 19.2399C6.96205 19.2399 6.19925 18.925 5.63572 18.364C5.07422 17.8007 4.75892 17.0378 4.75892 16.2425C4.75892 15.4471 5.07422 14.6842 5.63572 14.121L8.46472 11.293L7.05072 9.87896L4.22172 12.707C3.28552 13.6454 2.75977 14.9169 2.75977 16.2425C2.75977 17.568 3.28552 18.8395 4.22172 19.778ZM19.7777 11.293C20.7134 10.3542 21.2388 9.08288 21.2388 7.75746C21.2388 6.43204 20.7134 5.16068 19.7777 4.22196C18.8393 3.28577 17.5678 2.76001 16.2422 2.76001C14.9166 2.76001 13.6452 3.28577 12.7067 4.22196L9.87872 7.05096L11.2927 8.46496L14.1207 5.63596C14.6842 5.07495 15.447 4.75999 16.2422 4.75999C17.0374 4.75999 17.8002 5.07495 18.3637 5.63596C18.9252 6.19923 19.2405 6.96213 19.2405 7.75746C19.2405 8.55279 18.9252 9.31569 18.3637 9.87896L15.5347 12.707L16.9487 14.121L19.7777 11.293Z"
-                    fill="#43006A"
-                  />
-                  <path d="M8.46371 16.95L7.04871 15.536L15.5357 7.05005L16.9497 8.46505L8.46371 16.95Z" fill="#43006A" />
-                </svg>
-              </button>
+              <CopyButton />
             </li>
             <li>
-              <button className="w-[32px] flex items-center justify-center h-[32px] rounded-full bg-[#F3F1FF]">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    d="M4.5 3.24268C3.67157 3.24268 3 3.91425 3 4.74268V19.7427C3 20.5711 3.67157 21.2427 4.5 21.2427H19.5C20.3284 21.2427 21 20.5711 21 19.7427V4.74268C21 3.91425 20.3284 3.24268 19.5 3.24268H4.5ZM8.52076 7.2454C8.52639 8.20165 7.81061 8.79087 6.96123 8.78665C6.16107 8.78243 5.46357 8.1454 5.46779 7.24681C5.47201 6.40165 6.13998 5.72243 7.00764 5.74212C7.88795 5.76181 8.52639 6.40728 8.52076 7.2454ZM12.2797 10.0044H9.75971H9.7583V18.5643H12.4217V18.3646C12.4217 17.9847 12.4214 17.6047 12.4211 17.2246C12.4203 16.2108 12.4194 15.1959 12.4246 14.1824C12.426 13.9363 12.4372 13.6804 12.5005 13.4455C12.7381 12.568 13.5271 12.0013 14.4074 12.1406C14.9727 12.2291 15.3467 12.5568 15.5042 13.0898C15.6013 13.423 15.6449 13.7816 15.6491 14.129C15.6605 15.1766 15.6589 16.2242 15.6573 17.2719C15.6567 17.6417 15.6561 18.0117 15.6561 18.3815V18.5629H18.328V18.3576C18.328 17.9056 18.3278 17.4537 18.3275 17.0018C18.327 15.8723 18.3264 14.7428 18.3294 13.6129C18.3308 13.1024 18.276 12.599 18.1508 12.1054C17.9638 11.3713 17.5771 10.7638 16.9485 10.3251C16.5027 10.0129 16.0133 9.81178 15.4663 9.78928C15.404 9.78669 15.3412 9.7833 15.2781 9.77989C14.9984 9.76477 14.7141 9.74941 14.4467 9.80334C13.6817 9.95662 13.0096 10.3068 12.5019 10.9241C12.4429 10.9949 12.3852 11.0668 12.2991 11.1741L12.2797 11.1984V10.0044ZM5.68164 18.5671H8.33242V10.01H5.68164V18.5671Z"
-                    fill="#43006A"
-                  />
-                </svg>
-              </button>
+              <LinkedinBtn />
             </li>
             <li>
-              <button className="w-[32px] flex items-center justify-center h-[32px] rounded-full bg-[#F3F1FF]">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path
-                    d="M17.1761 4.24268H19.9362L13.9061 11.0201L21 20.2427H15.4456L11.0951 14.6493L6.11723 20.2427H3.35544L9.80517 12.9935L3 4.24268H8.69545L12.6279 9.3553L17.1761 4.24268ZM16.2073 18.6181H17.7368L7.86441 5.78196H6.2232L16.2073 18.6181Z"
-                    fill="#43006A"
-                  />
-                </svg>
-              </button>
+              <TwitterBtn />
             </li>
             <li>
-              <button className="w-[32px] flex items-center justify-center h-[32px] rounded-full bg-[#F3F1FF]">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path
-                    d="M22 12.3038C22 6.74719 17.5229 2.24268 12 2.24268C6.47715 2.24268 2 6.74719 2 12.3038C2 17.3255 5.65684 21.4879 10.4375 22.2427V15.2121H7.89844V12.3038H10.4375V10.0872C10.4375 7.56564 11.9305 6.1728 14.2146 6.1728C15.3088 6.1728 16.4531 6.36931 16.4531 6.36931V8.84529H15.1922C13.95 8.84529 13.5625 9.6209 13.5625 10.4166V12.3038H16.3359L15.8926 15.2121H13.5625V22.2427C18.3432 21.4879 22 17.3257 22 12.3038Z"
-                    fill="#43006A"
-                  />
-                </svg>
-              </button>
+              <FacebookBtn />
             </li>
           </ul>
         </div>
@@ -112,7 +85,7 @@ const SingleBlogPost = async ({ params }) => {
                   height={article?.cover.height}
                   className="w-full rounded-xl h-full max-h-[630px] object-cover"
                   alt="Demo Image"
-                  src={`${process.env.NEXT_PUBLIC_API_URL}${article?.cover?.formats?.large?.url || article?.cover?.formats?.medium?.url}`}
+                  src={`${article?.cover?.formats?.large?.url || article?.cover?.formats?.medium?.url}`}
                 />
               )) ||
                 (article?.cover?.formats?.medium?.url && (
@@ -121,7 +94,7 @@ const SingleBlogPost = async ({ params }) => {
                     height={article?.cover.height}
                     className="w-full rounded-xl h-full max-h-[630px] object-cover"
                     alt="Demo Image"
-                    src={`${process.env.NEXT_PUBLIC_API_URL}${article?.cover?.formats?.medium?.url}`}
+                    src={`${article?.cover?.formats?.medium?.url}`}
                   />
                 )) ||
                 (article?.cover?.formats?.small?.url && (
@@ -130,102 +103,36 @@ const SingleBlogPost = async ({ params }) => {
                     height={article?.cover.height}
                     className="w-full rounded-xl h-full max-h-[630px] object-cover"
                     alt="Demo Image"
-                    src={`${process.env.NEXT_PUBLIC_API_URL}${article?.cover?.formats?.small?.url}`}
+                    src={`${article?.cover?.formats?.small?.url}`}
                   />
                 ))}
               {article?.cover?.caption && <figcaption className="mt-4 text-sm pl-2 border-l-2">{article?.cover?.caption}</figcaption>}
             </figure>
           )}
-
           <BLockWrapper article={article} />
-          {/* <p className="text-lg leading-[140%]  mt-5">
-            <strong className="text-base md:text-[20px] block mb-4">
-              Dolor enim eu tortor urna sed duis nulla. Aliquam vestibulum, nulla odio nisl vitae. In aliquet pellentesque aenean hac
-              vestibulum turpis mi bibendum diam. Tempor integer aliquam in vitae malesuada fringilla.
-            </strong>
-            Elit nisi in eleifend sed nisi. Pulvinar at orci, proin imperdiet commodo consectetur convallis risus. Sed condimentum enim
-            dignissim adipiscing faucibus consequat, urna. Viverra purus et erat auctor aliquam. Risus, volutpat vulputate posuere purus sit
-            congue convallis aliquet. Arcu id augue ut feugiat donec porttitor neque. Mauris, neque ultricies eu vestibulum, bibendum quam
-            lorem id. Dolor lacus, eget nunc lectus in tellus, pharetra, porttitor.
-          </p> */}
-          {/* <blockquote className="py-[36px] my-4 px-3 leading-[150%] md:px-8 italic text-[20px] bg-[#F3F1FF] text-secondary">
-            <span className="block pl-5 border-l-3 border-secondary">
-              "Ipsum sit mattis nulla quam nulla. Gravida id gravida ac enim mauris id. Non pellentesque congue eget consectetur turpis.
-              Sapien, dictum molestie sem tempor. Diam elit, orci, tincidunt aenean tempus."
-            </span>
-          </blockquote> */}
-          {/* <p>
-            Tristique odio senectus nam posuere ornare leo metus, ultricies. Blandit duis ultricies vulputate morbi feugiat cras placerat
-            elit. Aliquam tellus lorem sed ac. Montes, sed mattis pellentesque suscipit accumsan. Cursus viverra aenean magna risus
-            elementum faucibus molestie pellentesque. Arcu ultricies sed mauris vestibulum.
-          </p>
-          <div>
-            <h3 className="text-[32px] mt-10 font-semibold mb-5">Conclusion</h3>
-            <p>
-              Morbi sed imperdiet in ipsum, adipiscing elit dui lectus. Tellus id scelerisque est ultricies ultricies. Duis est sit sed leo
-              nisl, blandit elit sagittis. Quisque tristique consequat quam sed. Nisl at scelerisque amet nulla purus habitasse.{' '}
-              <br className="mb-4" />
-              Nunc sed faucibus bibendum feugiat sed interdum. Ipsum egestas condimentum mi massa. In tincidunt pharetra consectetur sed
-              duis facilisis metus. Etiam egestas in nec sed et. Quis lobortis at sit dictum eget nibh tortor commodo cursus.
-              <br className="mb-4" />
-              Odio felis sagittis, morbi feugiat tortor vitae feugiat fusce aliquet. Nam elementum urna nisi aliquet erat dolor enim. Ornare
-              id morbi eget ipsum. Aliquam senectus neque ut id eget consectetur dictum. Donec posuere pharetra odio consequat scelerisque
-              et, nunc tortor.Nulla adipiscing erat a erat. Condimentum lorem posuere gravida enim posuere cursus diam.
-            </p>
-          </div> */}
           <div className="flex pb-12 border-b-[0.5px] border-secondary mb-12 items-center flex-col mt-16">
             <p className="font-semibold text-lg mb-4">Share this post</p>
+
             <ul className="flex mb-12 items-center gap-2">
-              <li>
-                <button className="w-[32px] flex items-center justify-center h-[32px] rounded-full bg-[#F3F1FF]">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <path
-                      d="M4.22172 19.778C4.68559 20.2425 5.23669 20.6108 5.84334 20.8617C6.44999 21.1126 7.10023 21.2411 7.75672 21.24C8.41335 21.2411 9.06374 21.1125 9.67054 20.8617C10.2774 20.6108 10.8286 20.2425 11.2927 19.778L14.1207 16.949L12.7067 15.535L9.87872 18.364C9.31519 18.925 8.55239 19.2399 7.75722 19.2399C6.96205 19.2399 6.19925 18.925 5.63572 18.364C5.07422 17.8007 4.75892 17.0378 4.75892 16.2425C4.75892 15.4471 5.07422 14.6842 5.63572 14.121L8.46472 11.293L7.05072 9.87896L4.22172 12.707C3.28552 13.6454 2.75977 14.9169 2.75977 16.2425C2.75977 17.568 3.28552 18.8395 4.22172 19.778ZM19.7777 11.293C20.7134 10.3542 21.2388 9.08288 21.2388 7.75746C21.2388 6.43204 20.7134 5.16068 19.7777 4.22196C18.8393 3.28577 17.5678 2.76001 16.2422 2.76001C14.9166 2.76001 13.6452 3.28577 12.7067 4.22196L9.87872 7.05096L11.2927 8.46496L14.1207 5.63596C14.6842 5.07495 15.447 4.75999 16.2422 4.75999C17.0374 4.75999 17.8002 5.07495 18.3637 5.63596C18.9252 6.19923 19.2405 6.96213 19.2405 7.75746C19.2405 8.55279 18.9252 9.31569 18.3637 9.87896L15.5347 12.707L16.9487 14.121L19.7777 11.293Z"
-                      fill="#43006A"
-                    />
-                    <path d="M8.46371 16.95L7.04871 15.536L15.5357 7.05005L16.9497 8.46505L8.46371 16.95Z" fill="#43006A" />
-                  </svg>
-                </button>
+              <li title="Copy">
+                <CopyButton />
               </li>
               <li>
-                <button className="w-[32px] flex items-center justify-center h-[32px] rounded-full bg-[#F3F1FF]">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M4.5 3.24268C3.67157 3.24268 3 3.91425 3 4.74268V19.7427C3 20.5711 3.67157 21.2427 4.5 21.2427H19.5C20.3284 21.2427 21 20.5711 21 19.7427V4.74268C21 3.91425 20.3284 3.24268 19.5 3.24268H4.5ZM8.52076 7.2454C8.52639 8.20165 7.81061 8.79087 6.96123 8.78665C6.16107 8.78243 5.46357 8.1454 5.46779 7.24681C5.47201 6.40165 6.13998 5.72243 7.00764 5.74212C7.88795 5.76181 8.52639 6.40728 8.52076 7.2454ZM12.2797 10.0044H9.75971H9.7583V18.5643H12.4217V18.3646C12.4217 17.9847 12.4214 17.6047 12.4211 17.2246C12.4203 16.2108 12.4194 15.1959 12.4246 14.1824C12.426 13.9363 12.4372 13.6804 12.5005 13.4455C12.7381 12.568 13.5271 12.0013 14.4074 12.1406C14.9727 12.2291 15.3467 12.5568 15.5042 13.0898C15.6013 13.423 15.6449 13.7816 15.6491 14.129C15.6605 15.1766 15.6589 16.2242 15.6573 17.2719C15.6567 17.6417 15.6561 18.0117 15.6561 18.3815V18.5629H18.328V18.3576C18.328 17.9056 18.3278 17.4537 18.3275 17.0018C18.327 15.8723 18.3264 14.7428 18.3294 13.6129C18.3308 13.1024 18.276 12.599 18.1508 12.1054C17.9638 11.3713 17.5771 10.7638 16.9485 10.3251C16.5027 10.0129 16.0133 9.81178 15.4663 9.78928C15.404 9.78669 15.3412 9.7833 15.2781 9.77989C14.9984 9.76477 14.7141 9.74941 14.4467 9.80334C13.6817 9.95662 13.0096 10.3068 12.5019 10.9241C12.4429 10.9949 12.3852 11.0668 12.2991 11.1741L12.2797 11.1984V10.0044ZM5.68164 18.5671H8.33242V10.01H5.68164V18.5671Z"
-                      fill="#43006A"
-                    />
-                  </svg>
-                </button>
+                <LinkedinBtn />
               </li>
               <li>
-                <button className="w-[32px] flex items-center justify-center h-[32px] rounded-full bg-[#F3F1FF]">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <path
-                      d="M17.1761 4.24268H19.9362L13.9061 11.0201L21 20.2427H15.4456L11.0951 14.6493L6.11723 20.2427H3.35544L9.80517 12.9935L3 4.24268H8.69545L12.6279 9.3553L17.1761 4.24268ZM16.2073 18.6181H17.7368L7.86441 5.78196H6.2232L16.2073 18.6181Z"
-                      fill="#43006A"
-                    />
-                  </svg>
-                </button>
+                <TwitterBtn />
               </li>
               <li>
-                <button className="w-[32px] flex items-center justify-center h-[32px] rounded-full bg-[#F3F1FF]">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <path
-                      d="M22 12.3038C22 6.74719 17.5229 2.24268 12 2.24268C6.47715 2.24268 2 6.74719 2 12.3038C2 17.3255 5.65684 21.4879 10.4375 22.2427V15.2121H7.89844V12.3038H10.4375V10.0872C10.4375 7.56564 11.9305 6.1728 14.2146 6.1728C15.3088 6.1728 16.4531 6.36931 16.4531 6.36931V8.84529H15.1922C13.95 8.84529 13.5625 9.6209 13.5625 10.4166V12.3038H16.3359L15.8926 15.2121H13.5625V22.2427C18.3432 21.4879 22 17.3257 22 12.3038Z"
-                      fill="#43006A"
-                    />
-                  </svg>
-                </button>
+                <FacebookBtn />
               </li>
             </ul>
-
             <ul className=" text-secondary flex items-center gap-2 text-sm  font-normal">
-              <li className="px-3 py-1 bg-[#F3F1FF] rounded-xl">Tag one</li>
-              <li className="px-3 py-1 bg-[#F3F1FF] rounded-xl">Tag one</li>
-              <li className="px-3 py-1 bg-[#F3F1FF] rounded-xl">Tag one</li>
-              <li className="px-3 py-1 bg-[#F3F1FF] rounded-xl">Tag one</li>
+              {article?.tags?.map(item => (
+                <li key={item.id} className="px-3 py-1 bg-[#F3F1FF] rounded-xl">
+                  {item.name}
+                </li>
+              ))}
             </ul>
           </div>
           <div className="flex items-center flex-col">
@@ -233,8 +140,9 @@ const SingleBlogPost = async ({ params }) => {
               <Image alt="user name" className="w-full h-full object-cover" src={user} />
             </div>
             <p className="text-sm font-semibold">{article?.author?.name || 'Unknown'}</p>
-            <p className="font-sm">
-              {article?.author?.job_title}, {article?.author?.company}
+            <p className="text-sm ">
+              {article?.author?.job_title}
+              {article?.author?.company && ','} {article?.author?.company}
             </p>
           </div>
         </article>

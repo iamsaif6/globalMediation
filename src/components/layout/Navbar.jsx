@@ -1,6 +1,6 @@
 'use client';
 import Link from 'next/link';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Button from '../shared/Button';
 
 const navLinks = [
@@ -47,6 +47,7 @@ const Navbar = () => {
   const [menuHeight, setMenuHeight] = useState(0);
   const menuRef = React.useRef(null);
   const mobileMenuRef = React.useRef(null);
+  const [currentPath, setCurrentPath] = useState('');
 
   // Calculate the height of the menu when it's opened
   React.useEffect(() => {
@@ -66,8 +67,9 @@ const Navbar = () => {
     }
   }, [mobileMenuOpen]);
 
-  const toggleMobileMenu = () => {
-    setMobileMenuOpen(!mobileMenuOpen);
+  const toggleMobileMenu = e => {
+    e.stopPropagation();
+    setMobileMenuOpen(prev => !prev);
     setMobileSubmenuOpen(false);
   };
 
@@ -81,12 +83,12 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="fixed z-50 lg:max-w-[1380px] border border-primary left-1/2 -translate-x-1/2 w-full mx-auto bg-white max-w-[90%] top-5 rounded-4xl overflow-hidden">
+      <nav className="fixed z-50 lg:max-w-[1380px] rounded-[20px] border border-primary left-1/2 -translate-x-1/2 w-full mx-auto bg-white max-w-[90%] top-5 lg:rounded-4xl overflow-hidden">
         <div className="flex items-center justify-between  lg:pl-9 px-[18px] lg:px-3">
           <div className="flex items-center gap-10 relative">
             <Link href="/" className="flex items-center">
               <svg
-                className="w-[56px] h-[26px] lg:w-[80px] lg:h-auto lg:w-[132px] lg:h-[59px]"
+                className="w-[56px] h-[26px] md:w-[80px] md:h-auto lg:w-[132px] lg:h-[59px]"
                 xmlns="http://www.w3.org/2000/svg"
                 width="132"
                 height="59"
@@ -161,13 +163,22 @@ const Navbar = () => {
               <Button href="/contact-us" title="Contact Us" />
             </div>
             <button
-              className="lg:hidden cursor-pointer flex items-center justify-center w-12 h-12 focus:outline-none"
+              className="lg:hidden  cursor-pointer flex items-center justify-center w-12 h-12 focus:outline-none"
               onClick={toggleMobileMenu}
               aria-label="Toggle mobile menu"
             >
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
+              {mobileMenuOpen ? (
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 25 24" fill="none">
+                  <path
+                    d="M16.692 6.34424L12.449 10.5862L8.20697 6.34424L6.79297 7.75824L11.035 12.0002L6.79297 16.2422L8.20697 17.6562L12.449 13.4142L16.692 17.6562L18.106 16.2422L13.864 12.0002L18.106 7.75824L16.692 6.34424Z"
+                    fill="black"
+                  />
+                </svg>
+              ) : (
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              )}
             </button>
           </div>
         </div>
@@ -273,19 +284,12 @@ const Navbar = () => {
             mobileMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
           }`}
         >
-          <div className="flex items-center justify-between p-5 border-b">
-            <a href="/" className="flex items-center">
-              <img src="/logo.svg" alt="Global Mediation" className="h-12" />
-            </a>
-            <button onClick={toggleMobileMenu} className="p-2" aria-label="Close menu">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
-
           <div className="flex-1 flex flex-col p-5 space-y-2">
-            <Link href="/" className="py-4 px-4 text-lg rounded-lg bg-lavender-50 hover:bg-lavender-100 transition-colors duration-200">
+            <Link
+              onClick={() => setMobileMenuOpen(false)}
+              href="/"
+              className="p-3 text-lg rounded-lg bg-lavender-50 hover:bg-lavender-100 transition-colors duration-200"
+            >
               Home
             </Link>
 
@@ -297,7 +301,7 @@ const Navbar = () => {
                     <>
                       <button
                         onClick={() => toggleMobileSubmenu(link.title)}
-                        className="py-4 px-4 text-lg font-normal flex justify-between items-center bg-lavender-50 hover:bg-lavender-100 rounded-lg transition-colors duration-200"
+                        className="p-3 text-lg font-normal flex justify-between items-center bg-lavender-50 hover:bg-lavender-100 rounded-lg transition-colors duration-200"
                       >
                         {link.title}
                         <svg
@@ -330,6 +334,7 @@ const Navbar = () => {
                   ) : (
                     <Link
                       href={link.href}
+                      onClick={() => setMobileMenuOpen(false)}
                       className="py-4 px-4 text-lg font-normal bg-lavender-50 hover:bg-lavender-100 rounded-lg transition-colors duration-200"
                     >
                       {link.title}
@@ -339,8 +344,12 @@ const Navbar = () => {
               ))}
           </div>
 
-          <div className="p-5">
-            <Button href="/contact-us" title="Contact Us" className="w-full" />
+          <div className="p-5 pt-1">
+            <button className={`bg-primary w-full border border-primary font-normal text-lg text-[#FCFCFD] px-6 py-3 rounded-[40px]`}>
+              <Link className="w-full" href="/contact-us">
+                Contact US
+              </Link>
+            </button>
           </div>
         </div>
       </nav>

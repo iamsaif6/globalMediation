@@ -74,7 +74,7 @@ const Posts = ({ articles }) => {
                               alt={article.title}
                               width={400}
                               height={400}
-                              src={`${process.env.NEXT_PUBLIC_API_URL}${article?.cover?.formats?.small?.url}`}
+                              src={`${article?.cover?.formats?.small?.url}`}
                             />
                           )}
                         </div>
