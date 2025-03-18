@@ -101,13 +101,10 @@ const Posts = ({ articles }) => {
                       </Link>
                     </div>
                   ))}
-                  {/* If this slide has fewer than 8 articles, fill empty spaces */}
                   {slideIndex === Math.ceil(articleData.length / 8) - 1 &&
                     articleData.length % 8 !== 0 &&
                     Array.from({ length: 8 - (articleData.length % 8) }).map((_, emptyIndex) => (
-                      <div key={`empty-${emptyIndex}`} className="col-span-4 md:col-span-2 lg:col-span-1 mb-[48px] md:mb-[60px]">
-                        {/* Empty div to maintain grid structure */}
-                      </div>
+                      <div key={`empty-${emptyIndex}`} className="col-span-4 md:col-span-2 lg:col-span-1 mb-[48px] md:mb-[60px]"></div>
                     ))}
                 </div>
               </div>

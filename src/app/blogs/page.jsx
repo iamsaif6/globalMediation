@@ -10,6 +10,8 @@ import React from 'react';
 const Blog = async () => {
   const articles = await fetchArticles();
 
+  console.log(articles);
+
   return (
     <div className="">
       <Header

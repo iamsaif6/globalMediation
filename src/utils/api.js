@@ -24,18 +24,32 @@ export async function fetchArticles() {
 // Fethc article by slug
 export async function fetchArticleBySlug(slug) {
   try {
-    const response = await fetch(`${API_URL}/api/articles?filters[slug][$eq]=${slug}&populate=*`, {
+    // First attempt: Try to find by slug
+    let response = await fetch(`${API_URL}/api/articles?filters[slug][$eq]=${slug}&populate=*&sort=updatedAt:desc`, {
       cache: 'no-store',
       next: { revalidate: 0 },
     });
 
-    if (!response.ok) {
-      throw new Error(`Failed to fetch article: ${response.status}`);
+    let result = await response.json();
+    if (!result.data || result.data.length === 0) {
+      const possibleId = parseInt(slug, 10);
+
+      if (!isNaN(possibleId)) {
+        response = await fetch(`${API_URL}/api/articles?filters[id][$eq]=${possibleId}&populate=*&sort=updatedAt:desc`, {
+          cache: 'no-store',
+          next: { revalidate: 0 },
+        });
+
+        if (response.ok) {
+          result = await response.json();
+          return result.data && result.data.length > 0 ? result.data[0] : null;
+        }
+      }
+      return null;
     }
-    const result = await response.json();
-    return result.data && result.data.length > 0 ? result.data[0] : null;
+    return result.data[0];
   } catch (error) {
-    console.error('Error fetching article by slug:', error);
+    console.error('Error fetching article:', error);
     return null;
   }
 }
