@@ -173,7 +173,7 @@ const SingleBlogPost = async ({ params }) => {
           ))}
         </div>
         <div className="flex justify-center">
-          <Button title={'View All'} href="#" />
+          <Button title={'View All'} href="/blogs" />
         </div>
       </section>
       <CTA
