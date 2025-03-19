@@ -7,7 +7,7 @@ import user from '/public/Placeholder Image 2.png';
 import SectionHeading from '@/components/shared/SectionHeading';
 import Button from '@/components/shared/Button';
 import CTA from '@/components/shared/CTA';
-import { fetchArticleBySlug } from '@/utils/api';
+import { fetchArticleBySlug, fetchAuthors } from '@/utils/api';
 import { notFound } from 'next/navigation';
 import { BlockRenderer } from '@/components/shared/BlockRenderer';
 import BLockWrapper from '@/components/blocks/BlockWrapper';
@@ -33,11 +33,11 @@ export async function generateMetadata({ params }) {
 
 const SingleBlogPost = async ({ params }) => {
   const article = await fetchArticleBySlug(params.slug);
+  const authors = await fetchAuthors();
+  const authorsPhoto = authors?.data?.find(item => item.email == article?.author?.email)?.avatar?.url;
   if (!article) {
     notFound();
   }
-
-  console.log(article);
 
   return (
     <div>
@@ -136,9 +136,15 @@ const SingleBlogPost = async ({ params }) => {
             </ul>
           </div>
           <div className="flex items-center flex-col">
-            <div className="w-12 h-12 rounded-full mb-4 overflow-hidden">
-              <Image alt="user name" className="w-full h-full object-cover" src={user} />
-            </div>
+            {authorsPhoto ? (
+              <div className="w-12 h-12 bg-gray-300 rounded-full mb-4 overflow-hidden">
+                <Image width={100} height={100} alt="user name" className="w-full h-full object-cover" src={authorsPhoto} />
+              </div>
+            ) : (
+              <div className="w-12 flex items-center justify-center font-bold text-2xl text-gray-600 h-12 bg-gray-300 rounded-full mb-4 overflow-hidden">
+                <p>{article?.author?.name[0]}</p>
+              </div>
+            )}
             <p className="text-sm font-semibold">{article?.author?.name || 'Unknown'}</p>
             <p className="text-sm ">
               {article?.author?.job_title}

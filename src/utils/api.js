@@ -53,3 +53,24 @@ export async function fetchArticleBySlug(slug) {
     return null;
   }
 }
+
+// Fetch Author Info
+export async function fetchAuthors() {
+  try {
+    const response = await fetch(`${API_URL}/api/authors?populate=*`, {
+      cache: 'no-store',
+      next: { revalidate: 0 },
+    });
+
+    if (!response.ok) {
+      throw new Error(`Failed to fetch articles: ${response.status}`);
+    }
+    const result = await response.json();
+    console.log('API response structure:', Object.keys(result));
+
+    return result;
+  } catch (error) {
+    console.error('Error fetching articles:', error);
+    return { data: [] };
+  }
+}
