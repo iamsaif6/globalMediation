@@ -4,6 +4,28 @@ import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
 import Link from 'next/link';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
+import adam from '/public/Adam Gersch.png';
+import martha from '/public/Martha Monday.png';
+import jeff from '/public/Jeff Lermer.png';
+import Image from 'next/image';
+
+const members = [
+  {
+    name: 'Adam Gersch',
+    text: '‘He is committed to delivering first-rate services to clients and his sparkling personality always shines through and brings a smile.’',
+    image: adam,
+  },
+  {
+    name: 'Martha Monday',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.,',
+    image: martha,
+  },
+  {
+    name: 'Jeff Lermer',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.,',
+    image: jeff,
+  },
+];
 
 const TeamCarousel = ({ darkText = false }) => {
   function SamplePrevArrow(props) {
@@ -67,16 +89,15 @@ const TeamCarousel = ({ darkText = false }) => {
     <div className="team-caousel">
       <div className="slider-container">
         <Slider {...settings}>
-          {[1, 2, 3, 4].map(item => (
+          {members.map(item => (
             <div className="px-[15px] mb-[80px]">
-              <div className="w-full h-[390px] bg-gray-600 rounded-3xl"></div>
+              <div className="w-full h-[285px] lg:h-[390px] bg-gray-600 rounded-3xl overflow-hidden">
+                <Image className="w-full h-full object-cover" alt={item.name} src={item.image} />
+              </div>
               <h3 className={`${darkText ? 'text-black' : 'text-white'} my-3 md:my-6 text-2xl md:text-[32px] font-semibold `}>
-                Adam Gersch
+                {item.name}
               </h3>
-              <p className={`${darkText ? 'text-black' : 'text-white'} leading-[150%] text-base md:text-lg font-normal `}>
-                ‘He is committed to delivering first-rate services to clients and his sparkling personality always shines through and brings
-                a smile.’
-              </p>
+              <p className={`${darkText ? 'text-black' : 'text-white'} leading-[150%] text-base md:text-lg font-normal `}>{item.text}</p>
               {darkText && (
                 <ul className="mt-6 flex items-center gap-[14px]">
                   <li>

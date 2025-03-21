@@ -23,7 +23,7 @@ const Training = () => {
       <Introduction />
       {/* Explore */}
       <section className="py-16 px-5 md:px-16 md:py-[80px] ">
-        <h1 className="font-medium max-w-[880px] mx-auto text-center text-4xl md:text-5xl leading-[120%]">
+        <h1 className="font-medium mb-[40px] lg:mb-[80px] max-w-[880px] mx-auto text-center text-4xl md:text-5xl leading-[120%]">
           Explore Our Mediation Training Courses
         </h1>
         <ExploreItem />

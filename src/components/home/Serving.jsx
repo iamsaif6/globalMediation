@@ -1,5 +1,7 @@
 import React from 'react';
 import SectionHeading from '../shared/SectionHeading';
+import Image from 'next/image';
+import serving_image from '/public/Serving Communities Across the UK.png';
 
 const Serving = () => {
   return (
@@ -12,7 +14,8 @@ const Serving = () => {
         center={true}
       />
       <div className="py-[40px] pb-0 md:pb-[40px]">
-        <div className="flex items-center justify-center gap-[136px] mb-[54px]">
+        <Image alt="Serving Communities Across the UK" src={serving_image} />
+        {/* <div className="flex items-center justify-center gap-[136px] mb-[54px]">
           <div className="w-[75px] h-[90px] bg-gray-500"></div>
           <div className="w-[75px] h-[90px] bg-gray-500"></div>
           <div className="w-[75px] h-[90px] bg-gray-500"></div>
@@ -26,7 +29,7 @@ const Serving = () => {
           <div className="w-[75px] h-[90px] bg-gray-500"></div>
           <div className="w-[75px] h-[90px] bg-gray-500"></div>
           <div className="w-[75px] h-[90px] bg-gray-500"></div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

@@ -1,14 +1,14 @@
 import Image from 'next/image';
 import React from 'react';
-import service1 from '/public/A Better Way.jpg';
+import service1 from '/public/Placeholder Image 3.png';
 import Button from '../shared/Button';
 
 const Introduction = () => {
   return (
     <section>
       <div className=" py-16 px-5 md:px-16 md:py-[80px] grid grid-cols-2 gap-[80px]">
-        <div className="relative lg:max-w-max max-w-[600px] mx-auto  hidden md:block col-span-2 lg:col-span-1 rounded-3xl overflow-hidden">
-          <div className={`from-[rgba(67,0,106,0.1)] to-[#43006aa3] absolute inset-0 bg-gradient-to-b  z-10`}></div>
+        <div className="relative mx-auto w-full lg:max-w-auto max-w-[600px] hidden md:block col-span-2 lg:col-span-1 rounded-3xl overflow-hidden">
+          <div className={`from-[rgba(67,0,106,0.1)] to-[#00a49e9b] absolute inset-0 bg-gradient-to-b  z-10`}></div>
           <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={service1} />
         </div>
         <div className="col-span-2 lg:col-span-1">
@@ -19,7 +19,7 @@ const Introduction = () => {
             opportunities delivered by experienced trainers.
           </p>
           <div className="relative my-10 block md:hidden  rounded-3xl overflow-hidden">
-            <div className={`from-[rgba(67,0,106,0.1)] to-[#43006aa3] absolute inset-0 bg-gradient-to-b  z-10`}></div>
+            <div className={`from-[rgba(67,0,106,0.1)] to-[#00a49e9b] absolute inset-0 bg-gradient-to-b  z-10`}></div>
             <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={service1} />
           </div>
           <div>

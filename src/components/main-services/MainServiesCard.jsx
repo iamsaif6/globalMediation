@@ -3,6 +3,8 @@ import service1 from '/public/service1.jpg';
 import service2 from '/public/service2.jpg';
 import service3 from '/public/service3.jpg';
 import service4 from '/public/service4.jpg';
+import service5 from '/public/Family Mediation.png';
+import service6 from '/public/Frame Civil and Legal Dispute Mediation.png';
 import Image from 'next/image';
 import Button from '../shared/Button';
 
@@ -66,7 +68,7 @@ const services = [
       'Inheritance and Probate Disputes',
       'Elderly Care and Family Estate Planning Mediation',
     ],
-    image: service1,
+    image: service5,
   },
   {
     title: 'Civil and Legal Dispute Mediation',
@@ -78,7 +80,7 @@ const services = [
       'Professional Negligence Cases',
       'Other Civil Litigation Avoidance Mediation',
     ],
-    image: service2,
+    image: service6,
   },
 ];
 

@@ -2,7 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 import service2 from '/public/service2.jpg';
 import service3 from '/public/explore.png';
-import Button from '../shared/Button';
+import service4 from '/public/Frame 1707479811.png';
 import Link from 'next/link';
 
 const exlopreItem = [
@@ -41,7 +41,7 @@ const exlopreItem = [
       'Personalised coaching and constructive feedback.',
       'Advanced skills development for professional growth.',
     ],
-    cover: service2,
+    cover: service4,
     buttonText: 'Advance Your SEND Mediation Skills Today',
     buttonLink: '#',
   },
@@ -94,7 +94,7 @@ const ExploreItem = () => {
             </div>
           </div>
           <div className="relative  hidden md:block col-span-2 lg:col-span-1 rounded-3xl overflow-hidden">
-            <div className={`from-[rgba(0, 164, 159, 0.15)] to-[#00a49ebe] absolute inset-0 bg-gradient-to-b  z-10`}></div>
+            <div className={`from-[rgba(0, 164, 159, 0.15)] to-[#00a49e8b] absolute inset-0 bg-gradient-to-b  z-10`}></div>
             <Image width={900} height={900} className="object-cover w-full h-full relative z-0" alt={item.title} src={item.cover.src} />
           </div>
         </div>

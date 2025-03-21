@@ -1,14 +1,26 @@
 import React from 'react';
 import Marquee from 'react-fast-marquee';
+import img1 from '/public/Layer_2.png';
+import img2 from '/public/ISO 27001_2013 1.png';
+import img3 from '/public/image 15.png';
+import Image from 'next/image';
 
 const Marque = () => {
   return (
     <div className="py-6">
       <Marquee autoFill>
-        <div className="bg-red-500 h-24 mx-[70px] w-24">ok</div>
-        <div className="bg-red-500 h-24 mx-[70px] w-24">ok</div>
-        <div className="bg-red-500 h-24 mx-[70px] w-24">ok</div>
-        <div className="bg-red-500 h-24 mx-[70px] w-24">ok</div>
+        <div className=" h-24 mx-[30px] lg:mx-[70px] w-24">
+          <Image className="w-full h-full object-contain" src={img1} alt="Living Wadge Company" />
+        </div>
+        <div className="  h-24  mx-[30px] lg:mx-[70px] w-24">
+          <Image className="w-full h-full object-contain" src={img2} alt="ISO" />
+        </div>
+        <div className="  h-24  mx-[30px] lg:mx-[70px] w-24">
+          <Image className="w-full h-full object-contain" src={img3} alt="College of mediator" />
+        </div>
+        <div className="  h-24  mx-[30px] lg:mx-[70px] w-24">
+          <Image className="w-full h-full object-contain" src={img2} alt="ISO" />
+        </div>
       </Marquee>
     </div>
   );
