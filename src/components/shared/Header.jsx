@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const Header = ({ title, subTitle, Button1Text, Button1Link = '#', Button2Text, Button2Link = '#', cover, isHomePage }) => {
   return (
-    <header className="pt-[187px] md:pt-[238px] pb-[176px] md:pb-[203px] px-5 md:px-[60px] relative overflow-hidden bg-amber-700">
+    <header className="pt-[187px] md:pt-[238px] pb-[176px] md:pb-[203px] px-5 md:px-[60px] relative overflow-hidden ">
       {isHomePage ? (
         <>
           <video playsInline autoPlay muted loop className="absolute top-0 left-0 w-full h-full object-cover z-0">
