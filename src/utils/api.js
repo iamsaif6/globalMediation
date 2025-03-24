@@ -4,7 +4,6 @@ const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:1337';
 export async function fetchArticles() {
   try {
     const response = await fetch(`${API_URL}/api/articles?populate=*`, {
-      cache: 'no-store',
       next: { revalidate: 300 },
     });
 
@@ -26,7 +25,6 @@ export async function fetchArticleBySlug(slug) {
   try {
     // First attempt: Try to find by slug
     let response = await fetch(`${API_URL}/api/articles?filters[slug][$eq]=${slug}&populate=*&sort=updatedAt:desc`, {
-      cache: 'no-store',
       next: { revalidate: 300 },
     });
 
@@ -58,7 +56,6 @@ export async function fetchArticleBySlug(slug) {
 export async function fetchAuthors() {
   try {
     const response = await fetch(`${API_URL}/api/authors?populate=*`, {
-      cache: 'no-store',
       next: { revalidate: 300 },
     });
 
