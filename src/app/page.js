@@ -21,6 +21,7 @@ export default function Home() {
         subTitle={'Professional mediation services to foster understanding and resolve disputes with care.'}
         Button1Text={'Learn About Our Services'}
         Button1Link={'/service'}
+        isHomePage={true}
       />
       <Marque />
       <MediationCards />
