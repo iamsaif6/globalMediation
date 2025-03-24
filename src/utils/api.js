@@ -5,7 +5,7 @@ export async function fetchArticles() {
   try {
     const response = await fetch(`${API_URL}/api/articles?populate=*`, {
       cache: 'no-store',
-      next: { revalidate: 0 },
+      next: { revalidate: 300 },
     });
 
     if (!response.ok) {
@@ -27,7 +27,7 @@ export async function fetchArticleBySlug(slug) {
     // First attempt: Try to find by slug
     let response = await fetch(`${API_URL}/api/articles?filters[slug][$eq]=${slug}&populate=*&sort=updatedAt:desc`, {
       cache: 'no-store',
-      next: { revalidate: 0 },
+      next: { revalidate: 300 },
     });
 
     let result = await response.json();
@@ -37,7 +37,7 @@ export async function fetchArticleBySlug(slug) {
       if (!isNaN(possibleId)) {
         response = await fetch(`${API_URL}/api/articles?filters[id][$eq]=${possibleId}&populate=*&sort=updatedAt:desc`, {
           cache: 'no-store',
-          next: { revalidate: 0 },
+          next: { revalidate: 300 },
         });
 
         if (response.ok) {
@@ -59,7 +59,7 @@ export async function fetchAuthors() {
   try {
     const response = await fetch(`${API_URL}/api/authors?populate=*`, {
       cache: 'no-store',
-      next: { revalidate: 0 },
+      next: { revalidate: 300 },
     });
 
     if (!response.ok) {
