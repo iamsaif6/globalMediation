@@ -9,7 +9,7 @@ const Serving = () => {
       <SectionHeading
         title={'Serving Communities Across the UK'}
         subTitle={
-          'Global Mediation offers cost-effective, efficient and confidential mediation and disagreement resolution services for a broad range of personal or professional disputes.'
+          'Global Mediation delivers impartial and accessible services to communities throughout the UK. We work across public, private and voluntary sectors, helping people from all walks of life approach conflict with confidence, and work toward solutions that feel fair, respectful and lasting'
         }
         center={true}
       />

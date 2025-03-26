@@ -1,12 +1,17 @@
 import { ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 import React from 'react';
+import SectionHeading from '../shared/SectionHeading';
+import Button from '../shared/Button';
 
 const LearnMore = () => {
   return (
     <section className="md:px-[64px] px-5 py-16 md:py-[80px]">
-      <h1 className="text-4xl md:text-5xl mb-12 md:mb-[70px] e text-center px-4 font-medium">Learn More About Mediation</h1>
-      <div className="grid grid-cols-4 gap-3">
+      <SectionHeading
+        title={'Learn More About Mediation'}
+        subTitle={'Explore resources to help you prepare for mediation or learn more about how it works:'}
+      />
+      <div className="grid grid-cols-4 gap-3 mt-16">
         <div className="border flex flex-col col-span-4 border-[#EBE5E5] md:col-span-2 hover:border-[#DAD3FF] lg:col-span-1  rounded-3xl py-[34px]">
           <div className="p-[38px] pt-0 flex justify-end">
             <svg xmlns="http://www.w3.org/2000/svg" width="69" height="69" viewBox="0 0 69 69" fill="none">
@@ -47,7 +52,7 @@ const LearnMore = () => {
           <div className="p-6 flex-grow flex flex-col">
             <div className="flex flex-col flex-grow mb-8">
               <h4 className="text-[#101828] font-medium mb-2 text-2xl">FAQ</h4>
-              <p className="text-[#101828] text-lg font-normal">Find answers to common questions about our services and policies here</p>
+              <p className="text-[#101828] text-lg font-normal">Find answers to common questions</p>
             </div>
             <Link
               className="text-sm text-secondary md:text-lg duration-300 hover:gap-4 border-b-[2px] pb-1.5 w-max flex items-center gap-2 font-semibold mt-auto"
@@ -101,7 +106,7 @@ const LearnMore = () => {
           <div className="p-6 flex-grow flex flex-col">
             <div className="flex flex-col flex-grow mb-8">
               <h4 className="text-[#101828] font-medium mb-2 text-2xl">Case Studies</h4>
-              <p className="text-[#101828] text-lg font-normal">Real-world examples of successful mediations</p>
+              <p className="text-[#101828] text-lg font-normal">Real examples of successful mediation</p>
             </div>
             <Link
               className="text-sm text-secondary md:text-lg duration-300 hover:gap-4 border-b-[2px] pb-1.5 w-max flex items-center gap-2 font-semibold mt-auto"
@@ -154,7 +159,7 @@ const LearnMore = () => {
           <div className="p-6 flex-grow flex flex-col">
             <div className="flex flex-col flex-grow mb-8">
               <h4 className="text-[#101828] font-medium mb-2 text-2xl">Guides</h4>
-              <p className="text-[#101828] text-lg font-normal">Downloadable resources like “How to Prepare for Mediation”</p>
+              <p className="text-[#101828] text-lg font-normal">Downloadable prep and tips</p>
             </div>
             <Link
               className="text-sm text-secondary md:text-lg duration-300 hover:gap-4 border-b-[2px] pb-1.5 w-max flex items-center gap-2 font-semibold mt-auto"
@@ -175,8 +180,8 @@ const LearnMore = () => {
           </div>
           <div className="p-6 flex-grow flex flex-col">
             <div className="flex flex-col flex-grow mb-8">
-              <h4 className="text-[#101828] font-medium mb-2 text-2xl">Our Blog</h4>
-              <p className="text-[#101828] text-lg font-normal">Downloadable resources like “How to Prepare for Mediation”</p>
+              <h4 className="text-[#101828] font-medium mb-2 text-2xl">Blog</h4>
+              <p className="text-[#101828] text-lg font-normal">Insights, advice and real-world stories</p>
             </div>
             <Link
               className="text-sm text-secondary md:text-lg duration-300 hover:gap-4 border-b-[2px] pb-1.5 w-max flex items-center gap-2 font-semibold mt-auto"
@@ -186,6 +191,9 @@ const LearnMore = () => {
             </Link>
           </div>
         </div>
+      </div>
+      <div className="flex mt-16 items-center justify-center">
+        <Button title={'Visit the Resource Hub'} href="#" />
       </div>
     </section>
   );

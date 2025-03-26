@@ -6,17 +6,15 @@ const MediationCards = () => {
   return (
     <section className="px-5 md:px-[58px] py-[80px]">
       <SectionHeading
-        title={'Mediation that Works for You'}
+        title={'Mediation That Works For You'}
         subTitle={
-          'Global Mediation delivers impartial, confidential, and cost-effective solutions to help you navigate disputes and achieve lasting resolutions.'
+          'No matter the conflict, resolution starts with listening. At Global Mediation, we believe that understanding and perspective can shift even the most challenging conversations. We do not take sides, we create safe, supportive spaces where every voice is heard and respected. Through open dialogue and impartial guidance, we help people find common ground and work toward outcomes that benefit everyone involved.'
         }
       />
       <div className=" mt-12 md:mt-20 grid grid-cols-4 md:flex-row gap-6 md:gap-4">
         <MediationCard
           title={'Voluntary'}
-          subTitle={
-            'Mediation empowers all parties to choose their path forward. Participation is always by mutual agreement, fostering trust and collaboration.'
-          }
+          subTitle={'Mediation is always by mutual agreement, empowering everyone involved to shape their own outcome.'}
           icon={
             <svg xmlns="http://www.w3.org/2000/svg" width="61" height="60" viewBox="0 0 61 60" fill="none">
               <g clipPath="url(#clip0_6164_7910)">
@@ -35,7 +33,7 @@ const MediationCards = () => {
         />
         <MediationCard
           title={'Confidential'}
-          subTitle={'All discussions in mediation are private and protected, creating a safe space for open communication and resolution.'}
+          subTitle={'Conversations are private and protected, creating space for open dialogue and trust.'}
           icon={
             <svg xmlns="http://www.w3.org/2000/svg" width="61" height="60" viewBox="0 0 61 60" fill="none">
               <path
@@ -71,7 +69,7 @@ const MediationCards = () => {
         />
         <MediationCard
           title={'Neutral'}
-          subTitle={'Mediation takes place in a balanced and impartial setting, ensuring fairness and respect for all involved.'}
+          subTitle={'Our mediators stay impartial, ensuring fairness and respect for all parties.'}
           icon={
             <svg xmlns="http://www.w3.org/2000/svg" width="63" height="62" viewBox="0 0 63 62" fill="none">
               <path
@@ -85,7 +83,7 @@ const MediationCards = () => {
         />
         <MediationCard
           title={'Efficient'}
-          subTitle={'Our mediators remain unbiased throughout the process, guiding discussions to achieve mutually beneficial outcomes.'}
+          subTitle={'Mediation helps you resolve disputes faster and more affordably than litigation.'}
           icon={
             <svg xmlns="http://www.w3.org/2000/svg" width="61" height="60" viewBox="0 0 61 60" fill="none">
               <path

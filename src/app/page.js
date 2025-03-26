@@ -17,9 +17,9 @@ export default function Home() {
   return (
     <div id="root">
       <Header
-        title={'Replacing Conflict with Harmony'}
-        subTitle={'Professional mediation services to foster understanding and resolve disputes with care.'}
-        Button1Text={'Learn About Our Services'}
+        title={'Helping People Move Forward'}
+        subTitle={'Impartial, professional mediation that helps you resolve disputes and rebuild trust, at your pace, on your terms'}
+        Button1Text={'Explore Our Services'}
         Button1Link={'/service'}
         isHomePage={true}
       />
@@ -30,8 +30,9 @@ export default function Home() {
         <div className="col-span-2 lg:col-span-1 text-white bg-primary rounded-3xl px-6 lg:px-[58px] py-[34px] lg:py-[121px]">
           <h2 className="font-medium leading-[120%] text-[32px] lg:text-5xl mb-[18px]">A Better Way to Resolve Disputes</h2>
           <p className=" text-[10px] md:text-lg mb-5 md:mb-6">
-            Mediation offers a cost-effective, efficient, and collaborative path to resolving disputes without the stress of litigation. At
-            Global Mediation, we specialise in empowering individuals and organisations with impartial and tailored solutions that work.
+            Mediation offers a cost-effective, faster alternative to going to court. It gives people a way to move forward without the
+            emotional and financial strain of litigation. Whether you’re navigating a workplace issue, family disagreement or commercial
+            dispute, mediation brings clarity, structure and a chance to be heard.
           </p>
           <button className=" bg-white font-normal text-xs md:text-lg text-black px-6 md:px-[48px] md:py-3 py-2 rounded-[40px] ">
             <Link className="w-full  " href="/about-us">
@@ -57,7 +58,7 @@ export default function Home() {
       <LearnMore />
       <CTA
         title={'Ready to Resolve Your Dispute?'}
-        subTitle={'Your trusted partner in conflict resolution'}
+        subTitle={'We are here to help. Let’s talk'}
         Button1Text={'Schedule a Free Consultation Today'}
         Button1Link={'#'}
         Button2Text={'Contact us'}

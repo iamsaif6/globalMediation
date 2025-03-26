@@ -3,10 +3,10 @@ import React from 'react';
 
 const items = [
   'Expertise across a wide range of disputes',
-  'Accessible service across the UK',
+  'Accessible services throughout the UK',
   'Personalised support from a dedicated case manager',
-  'Accredited mediators with proven experience',
-  '95% success rate, achieving full or partial resolution in mediation',
+  'Accredited mediators with real-world experience',
+  '95% success rate in achieving full or partial resolution',
 ];
 
 const WhyMediation = () => {
@@ -31,8 +31,10 @@ const WhyMediation = () => {
       <div className="text-white col-span-2 lg:col-span-1">
         <h1 className="leading-[120%] font-medium text-4xl md:text-5xl mb-5 md:mb-8">Why Global Mediation</h1>
         <p className="font-normal text-base md:text-lg leading-[150%]">
-          Global Mediation is your trusted partner for impartial and effective conflict resolution. For over two decades, we’ve empowered
-          individuals and organisations to resolve disputes through understanding, collaboration and professionalism.
+          Every situation is different. That’s why our mediators bring more than expertise, they bring empathy, curiosity and real-world
+          experience. With over 25 years of supporting people through conflict, we’ve helped individuals, families and organisations
+          navigate difficult conversations and reach lasting outcomes. Our diverse team creates a sense of belonging, ensuring that every
+          voice is heard, valued and respected.
         </p>
         <ul className="mt-6 mb-[42px] md:my-8 text-lg font-normal">
           {items.map(item => (
