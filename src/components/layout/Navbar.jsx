@@ -13,12 +13,12 @@ const navLinks = [
     title: 'Services',
     hasMegaMenu: true,
     megaMenuItems: [
-      { title: 'Workplace and Employment Mediation', href: '/services/workplace-employment' },
-      { title: 'Business and Commercial Mediation', href: '/services/business-commercial' },
-      { title: 'SEND (Special Educational Needs and Disability) Mediation', href: '/services/send' },
-      { title: 'Community Mediation', href: '/services/community' },
-      { title: 'Family Mediation', href: '/services/family' },
-      { title: 'Civil and Legal Dispute Mediation', href: '/services/civil-legal' },
+      { title: 'Workplace and Employment Mediation', href: '/Workplace-and-Employment-Mediation' },
+      { title: 'Business and Commercial Mediation', href: '/Business-and-Commercial-Mediation' },
+      { title: 'SEND (Special Educational Needs and Disability) Mediation', href: '/send-mediation' },
+      { title: 'Community Mediation', href: '/Community-Mediation' },
+      { title: 'Family Mediation', href: '/Family-Mediation' },
+      { title: 'Civil and Legal Dispute Mediation', href: '/Civil-and-Legal-Dispute-Mediation' },
     ],
   },
   {
@@ -47,7 +47,6 @@ const Navbar = () => {
   const [menuHeight, setMenuHeight] = useState(0);
   const menuRef = React.useRef(null);
   const mobileMenuRef = React.useRef(null);
-  const [currentPath, setCurrentPath] = useState('');
 
   // Calculate the height of the menu when it's opened
   React.useEffect(() => {
@@ -253,17 +252,17 @@ const Navbar = () => {
               ) : (
                 <ul className="space-y-3 text-sm text-[#98A2B3]">
                   <li className="hover:text-secondary duration-200">
-                    <Link title="Workplace and Employment Mediation" href={'#'}>
+                    <Link title="Workplace and Employment Mediation" href={'/Foundation-Course-in-Mediation'}>
                       Foundation Course in Mediation
                     </Link>
                   </li>
                   <li className="hover:text-secondary duration-200">
-                    <Link title="Workplace and Employment Mediation" href={'#'}>
+                    <Link title="Workplace and Employment Mediation" href={'/SEND-Mediation-Training-Course'}>
                       SEND Mediation Training Course
                     </Link>
                   </li>
                   <li className="hover:text-secondary duration-200">
-                    <Link title="Workplace and Employment Mediation" href={'#'}>
+                    <Link title="Workplace and Employment Mediation" href={'/SEND-Mediation-Professional-Practice'}>
                       SEND Mediation Professional Practice
                     </Link>
                   </li>
