@@ -15,7 +15,7 @@ import WhyMediation from '@/components/home/WhyMediation';
 
 export default function Home() {
   return (
-    <div>
+    <div id="root">
       <Header
         title={'Replacing Conflict with Harmony'}
         subTitle={'Professional mediation services to foster understanding and resolve disputes with care.'}
