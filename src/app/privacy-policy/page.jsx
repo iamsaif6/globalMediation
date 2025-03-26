@@ -1,7 +1,6 @@
 import Header from '@/components/shared/Header';
 import React from 'react';
 import header from '/public/privary-policy.jpg';
-import SectionHeading from '@/components/shared/SectionHeading';
 
 const PrivacyPolicy = () => {
   return (
@@ -45,7 +44,7 @@ const PrivacyPolicy = () => {
             <p className="font-semibold">
               We will collect and store information that you give us when you do the following things on our website or in writing:
             </p>
-            <ul className="list-disc pl-6 my-7 space-y-2 capitalize">
+            <ul className="list-disc pl-6 my-7 space-y-1 capitalize">
               <li>make an enquiry</li>
               <li>register for a workshop, course or training</li>
               <li>give us feedback or make a complaint</li>
@@ -70,7 +69,7 @@ const PrivacyPolicy = () => {
               tablet, etc.). Cookies are used to help us to provide you with a smooth experience while you browse. We use cookies in the
               following way:
             </p>
-            <ul className="list-disc pl-6 my-7 space-y-2 capitalize">
+            <ul className="list-disc pl-6 my-7 space-y-1 capitalize">
               <li>to make our website work</li>
               <li>to collect anonymous data to gain insight into how visitors use our website</li>
               <li>to help us show advertisements about our services to those people who might be interested in them</li>
@@ -101,7 +100,7 @@ const PrivacyPolicy = () => {
             <h3 className=" font-semibold mb-2 text-4xl text-secondary">Use of personal information</h3>
             <span className=" ">We will use your personal information to do the following:</span>
           </div>
-          <ul className="list-disc pl-6 my-7 space-y-2 capitalize">
+          <ul className="list-disc pl-6 my-7 space-y-1 capitalize">
             <li>provide you with information or services you’ve requested or that we feel might be of interest to you</li>
             <li>respond to direct requests where you contact us with a query</li>
             <li>carry out general administrative tasks like essential record-keeping, as well as complaints and feedback</li>
@@ -188,7 +187,7 @@ const PrivacyPolicy = () => {
               will ask you for proof of identity and upon this being successfully verified, you are entitled to obtain the following
               information about the personal data we hold:
             </p>
-            <ul className="list-disc pl-6 my-7 space-y-2 capitalize">
+            <ul className="list-disc pl-6 my-7 space-y-1 capitalize">
               <li>The purposes of the collection, processing, use and storage of your personal data.</li>
               <li>The source(s) of the personal information, if it was not obtained from you.</li>
               <li>The categories of personal data stored about you.</li>

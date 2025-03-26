@@ -119,6 +119,9 @@ const Footer = () => {
           <Link className="underline" href={'/privacy-policy'}>
             Privacy Policy
           </Link>
+          <Link className="underline" href={'/Compliment-Policy'}>
+            Complaints, Comments & Compliments Policy
+          </Link>
           <Link className="underline" href={'#'}>
             Terms of Service
           </Link>
