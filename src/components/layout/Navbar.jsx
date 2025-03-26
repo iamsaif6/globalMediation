@@ -83,7 +83,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="fixed z-50 lg:max-w-[1380px] rounded-[20px] border border-primary left-1/2 -translate-x-1/2 w-full mx-auto bg-white max-w-[90%] top-5 lg:rounded-4xl overflow-hidden">
+      <nav className="fixed z-[99] lg:max-w-[1380px] rounded-[20px] border border-primary left-1/2 -translate-x-1/2 w-full mx-auto bg-white max-w-[90%] top-5 lg:rounded-4xl overflow-hidden">
         <div className="flex items-center justify-between  lg:pl-9 px-[18px] lg:px-3">
           <div className="flex items-center gap-10 relative">
             <Link href="/" className="flex items-center">
@@ -187,7 +187,7 @@ const Navbar = () => {
           ref={menuRef}
           onMouseEnter={() => setActiveMenu(true)}
           onMouseLeave={() => setActiveMenu(false)}
-          className={`bg-white left-0 w-full bg-lavender-50 border-t-[0.5px] border-[#E2DEDE] overflow-hidden transition-all duration-300 ease-in-out`}
+          className={`bg-white z-[99] relative left-0 w-full bg-lavender-50 border-t-[0.5px] border-[#E2DEDE] overflow-hidden transition-all duration-300 ease-in-out`}
           style={{
             maxHeight: activeMenu ? `${menuHeight + 100}px` : '0',
             opacity: activeMenu ? 1 : 0,
