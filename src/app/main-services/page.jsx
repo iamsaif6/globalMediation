@@ -10,7 +10,7 @@ const MainServices = () => {
       <Header
         cover={heaerImage}
         title={'Global Mediation Services'}
-        subTitle={'Professional mediation services to resolve disputes with empathy, expertise, and efficiency.'}
+        subTitle={'Professional mediation services to resolve disputes with empathy, clarity and care.'}
         Button1Text={'Contact Us Today'}
         Button1Link="/contact-us"
       />

@@ -11,8 +11,9 @@ import Button from '../shared/Button';
 const services = [
   {
     title: 'Workplace and Employment Mediation',
+    subtitle:
+      'Workplace disputes can affect morale, productivity and wellbeing — for teams and individuals alike. Our mediators support both employees and employers to resolve conflict collaboratively and confidentially, creating space for honest conversations and practical solutions.',
     service: [
-      'Workplace and Employment Disputes',
       'Harassment and Bullying Complaints',
       'Team Conflicts and Collaboration Issues',
       'Grievance and Disciplinary Mediation',
@@ -23,8 +24,9 @@ const services = [
   },
   {
     title: 'Business and Commercial Mediation',
+    subtitle:
+      'Disputes in business can damage relationships, stall progress and increase costs. Our mediation service supports companies and professionals to resolve commercial disagreements quickly and confidentially, protecting reputations and preserving working relationships wherever possible.',
     service: [
-      'Business Disputes',
       'Contract Dispute',
       'Shareholder and Partnership Conflicts',
       'Supplier and Client Disputes',
@@ -36,51 +38,49 @@ const services = [
     image: service2,
   },
   {
-    title: 'SEND (Special Educational Needs and Disability) Mediation',
+    title: 'SEND Mediation',
+    subtitle:
+      'When disagreements arise around special educational needs or disabilities, emotions can run high. Our SEND mediation service supports families, schools and local authorities to work together in a calm, constructive way. We create space for clear communication, mutual understanding and better outcomes for the children and young people at the heart of every decision.',
     service: [
-      'Educational Health and Care Plan (EHCP) Disputes',
-      'Resource Allocation Conflicts',
-      'School Placement Disputes',
-      'Grievance and Disciplinary Mediation',
-      'Communication Breakdowns Between Parents and Schools',
-      'SEND Appeals Mediation',
+      'EHCP Needs Assessments',
+      'EHCP Content Disputes',
+      'School Placement Disagreements',
+      'Tribunal Appeals',
+      'Mediation Advice Certificate Appointments',
+      'Annual Review Disputes',
+      'Preparing for Adulthood Discussions',
     ],
     image: service3,
   },
   {
-    title: 'Community Mediation',
+    title: 'Community and Family Mediation',
+    subtitle:
+      'Conflict in personal or community relationships can feel deeply personal and emotionally draining. Our mediators help individuals, neighbours and families navigate difficult conversations with empathy, impartiality and care. We provide a safe, neutral space to rebuild trust, improve communication and move forward with dignity and mutual understanding.',
     service: [
-      'Business Neighbourhood Disputes (Noise, Boundaries, etc.)',
-      'Local Government Mediation',
-      'Nonprofit and Charity Group Disputes',
-      'Tenant-Association Conflicts',
-      'Community Group Disagreements',
+      'Neighbour Disputes',
+      'Intergenerational Family Conflict',
+      'Housing and Tenancy Issues',
+      'Co-parenting or Extended Family Communication Challenges',
+      'Community Group Tensions',
+      'Relationship Breakdown Mediation (non-legal)',
     ],
     image: service4,
   },
   {
-    title: 'Family Mediation',
+    title: 'CIVIL AND LEGAL DISPUTE MEDIATION',
+    subtitle:
+      'Mediation offers a calm, cost-effective alternative to court. We help individuals, professionals and organisations resolve a wide range of civil and legal disputes quickly and fairly. Our impartial mediators guide the process with clarity and respect, helping people reach balanced outcomes without the delays, cost or stress of litigation.',
     service: [
-      'Divorce and Separation Mediation',
-      'Child Custody and Parenting Agreements',
-      'Financial Settlement Mediation for Divorcing Couples',
-      'Grievance and Disciplinary Mediation',
-      'Inheritance and Probate Disputes',
-      'Elderly Care and Family Estate Planning Mediation',
+      'Boundary and Neighbour Disputes',
+      'Consumer Complaints',
+      'Landlord and Tenant Issues',
+      'Wills and Probate Disputes',
+      'Insurance and Financial Conflicts',
+      'Small Claims',
+      'Professional Negligence',
+      'Contract Disputes',
     ],
     image: service5,
-  },
-  {
-    title: 'Civil and Legal Dispute Mediation',
-    service: [
-      'Property Disputes (Landlord-Tenant, Boundary Issues)',
-      'Small Claims Disputes',
-      'Consumer Rights Disputes',
-      'Personal Injury Mediation',
-      'Professional Negligence Cases',
-      'Other Civil Litigation Avoidance Mediation',
-    ],
-    image: service6,
   },
 ];
 
@@ -89,7 +89,8 @@ const MainServiesCard = () => {
     <div className="mb-[40px] ">
       {services.map((item, index) => (
         <div key={item + index} className={`${index % 2 != 0 ? 'bg-[#F3F1FF]' : 'bg-[#F9F8FF]'} py-16 md:py-[80px] px-5 md:px-[60px]`}>
-          <h1 className="max-w-[600px] font-medium text-4xl md:text-5xl leading-[120%] mb-[42px] md:mb-[80px]">{item.title}</h1>
+          <h1 className="w-full md:max-w-[600px] mb-10 font-medium text-4xl md:text-5xl leading-[120%] ">{item.title}</h1>
+          <p className="mb-[32px] md:mb-[60px]">{item.subtitle}</p>
           <div className="grid grid-cols-2 items-center  gap-8 md:gap-[100px]">
             <div className={`${index % 2 != 0 ? 'order-2' : ''} col-span-2 lg:col-span-1`}>
               {item.service.map(li => (
