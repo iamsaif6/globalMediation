@@ -5,12 +5,13 @@ const Map = () => {
   return (
     <section className="py-16 px-5 items-center md:px-16 md:py-[80px] grid grid-cols-2 gap-7 md:gap-[80px]">
       <div className="pr-0 col-span-2 lg:col-span-1 lg:pr-10">
-        <h1 className="text-[#393D4E] leading-[120%] text-4xl md:text-5xl font-medium ">Start Resolving Conflicts Today</h1>
-        <p className=" md:text-lg mb-6 md:mb-[52px] text-base mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+        <h1 className="text-[#393D4E] mb-6 md:mb-[52px] leading-[120%] text-4xl md:text-5xl font-medium ">
+          Start Resolving Conflicts Today
+        </h1>
         <div className=" rounded-xl  overflow-hidden">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9582586.552593486!2d-15.035877914596911!3d54.10036344966766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x25a3b1142c791a9%3A0xc4f8a0433288257a!2sUnited%20Kingdom!5e0!3m2!1sen!2sbd!4v1741855507918!5m2!1sen!2sbd"
-            width="100%"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2478.296628053736!2d-0.1977913882050758!3d51.599453303857395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487617534e13e1fb%3A0xf4f8bfe7deeed958!2sMolteno%20House%2C%20302%20Regents%20Park%20Rd%2C%20London%20N3%202JX%2C%20UK!5e0!3m2!1sen!2sbd!4v1742977399771!5m2!1sen!2sbd"
+            width="600"
             height="450"
             style={{ border: 0 }}
             allowFullScreen=""
