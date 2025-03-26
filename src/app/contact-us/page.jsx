@@ -23,8 +23,8 @@ const ContactUs = () => {
           <p className="text-[#667085] mb-6 font-normal text-[20px]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in ero.
           </p>
-          <a className="text-secondary font-semibold text-[20px]" href="mailto:DARS@globalmediation.co.uk">
-            DARS@globalmediation.co.uk
+          <a className="text-secondary font-semibold text-[20px]" href="mailto:sen@globalmediaiton.co.uk">
+            sen@globalmediaiton.co.uk
           </a>
         </div>
 

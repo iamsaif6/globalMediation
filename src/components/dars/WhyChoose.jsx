@@ -34,7 +34,7 @@ const WhyChoose = () => {
                 </a>
               </li>
               <li>
-                <a className="flex text-lg text-white leading-[140%] items-center gap-4" href="mailto:DARS@globalmediation.co.uk">
+                <a className="flex text-lg text-white leading-[140%] items-center gap-4" href="mailto:sen@globalmediaiton.co.uk">
                   <span className="h-8 w-8 border border-white rounded-full flex items-center justify-center">
                     <svg xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18" fill="none">
                       <path
@@ -43,7 +43,7 @@ const WhyChoose = () => {
                       />
                     </svg>
                   </span>
-                  <span>DARS@globalmediation.co.uk</span>
+                  <span>sen@globalmediaiton.co.uk</span>
                 </a>
               </li>
             </ul>
