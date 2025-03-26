@@ -220,32 +220,32 @@ const Navbar = () => {
               {activeSubmenu == 'Service' ? (
                 <ul className="space-y-3 text-sm text-[#98A2B3]">
                   <li className="hover:text-secondary duration-200">
-                    <Link title="Workplace and Employment Mediation" href={'#'}>
+                    <Link title="Workplace and Employment Mediation" href={'/Workplace-and-Employment-Mediation'}>
                       Workplace and Employment Mediation
                     </Link>
                   </li>
                   <li className="hover:text-secondary duration-200">
-                    <Link title="Workplace and Employment Mediation" href={'#'}>
+                    <Link title="Workplace and Employment Mediation" href={'/Business-and-Commercial-Mediation'}>
                       Business and Commercial Mediation
                     </Link>
                   </li>
                   <li className="hover:text-secondary duration-200">
-                    <Link title="Workplace and Employment Mediation" href={'#'}>
+                    <Link title="Workplace and Employment Mediation" href={'/send-mediation'}>
                       SEND (Special Educational Needs and Disability) Mediation
                     </Link>
                   </li>
                   <li className="hover:text-secondary duration-200">
-                    <Link title="Workplace and Employment Mediation" href={'#'}>
+                    <Link title="Workplace and Employment Mediation" href={'/Community-Mediation'}>
                       Community Mediation
                     </Link>
                   </li>
                   <li className="hover:text-secondary duration-200">
-                    <Link title="Workplace and Employment Mediation" href={'#'}>
+                    <Link title="Workplace and Employment Mediation" href={'/Family-Mediation'}>
                       Family Mediation
                     </Link>
                   </li>
                   <li className="hover:text-secondary duration-200">
-                    <Link title="Workplace and Employment Mediation" href={'#'}>
+                    <Link title="Workplace and Employment Mediation" href={'/Civil-and-Legal-Dispute-Mediation'}>
                       Civil and Legal Dispute Mediation
                     </Link>
                   </li>
