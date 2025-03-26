@@ -116,7 +116,7 @@ const Footer = () => {
       <div className="mt-8 font-normal relative z-10 gap-8  text-sm flex flex-col-reverse md:flex-row items-center justify-between">
         <p>© 2025 Global Mediation. All rights reserved.</p>
         <div className="flex flex-col md:flex-row items-center gap-4 md:gap-6">
-          <Link className="underline" href={'#'}>
+          <Link className="underline" href={'/privacy-policy'}>
             Privacy Policy
           </Link>
           <Link className="underline" href={'#'}>
