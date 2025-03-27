@@ -12,12 +12,13 @@ const OverView = () => {
         <div className="col-span-2 lg:col-span-1">
           <h1 className="font-medium text-4xl md:text-5xl leading-[120%]">Overview : Dispute Adjudication and Resolution Service (DARS)</h1>
           <p className="text-[#667085] text-base md:text-lg leading-[150%] my-6">
-            The Dispute Adjudication and Resolution Service (DARS) is a specialized mediation and adjudication service exclusively available
-            in Northern Ireland. DARS offers impartial and professional conflict resolution, designed to help parties reach agreements
-            without the need for lengthy legal proceedings.
-            <br className="mb-2" />
-            Whether addressing workplace disputes, community conflicts, or other civil disagreements, DARS provides a confidential and
-            collaborative platform to resolve issues efficiently.
+            The Dispute Adjudication and Resolution Service (DARS) is a formal process designed to help people resolve complex
+            disagreements, particularly where mediation hasn’t been possible or successful. <br /> <br /> DARS offers a structured,
+            impartial service that allows both parties to present their perspectives in writing. A neutral decision is then made based on
+            the information submitted.
+            <br /> <br />
+            Often used in SEND, education, workplace or civil matters, DARS is especially valuable when legal action would be
+            disproportionate or distressing.
           </p>
           <div className="relative my-10 block md:hidden  rounded-3xl overflow-hidden">
             <div className={`from-[rgba(67,0,106,0.1)] to-[#43006aa3] absolute inset-0 bg-gradient-to-b  z-10`}></div>

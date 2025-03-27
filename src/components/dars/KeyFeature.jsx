@@ -18,7 +18,7 @@ const KeyFeature = () => {
               </svg>
             </div>
             <p className="font-medium text-white text-2xl">Exclusive to Northern Ireland</p>
-            <p className=" text-lg text-white   mt-6 font-normal">Tailored to the unique needs of the region</p>
+            <p className=" text-lg text-white   mt-6 font-normal">Tailored to the specific needs and frameworks of the region.</p>
           </div>
           <div className="p-6 col-span-4 md:col-span-2 lg:col-span-1 border duration-200 hover:bg-primary hover:border-primary border-[#624A70] rounded-3xl">
             <div className="mt-3 mb-4">
@@ -49,9 +49,9 @@ const KeyFeature = () => {
                 />
               </svg>
             </div>
-            <p className="font-medium text-white text-2xl">Professional Mediators</p>
+            <p className="font-medium text-white text-2xl">Professional Adjudicators</p>
             <p className=" text-lg text-white   mt-6 font-normal">
-              Accredited and experienced professionals committed to achieving fair outcomes
+              Accredited specialists with experience in complex and sensitive disputes.
             </p>
           </div>
           <div className="p-6 col-span-4 md:col-span-2 lg:col-span-1 border duration-200 hover:bg-primary hover:border-primary border-[#624A70] rounded-3xl">
@@ -64,7 +64,9 @@ const KeyFeature = () => {
               </svg>
             </div>
             <p className="font-medium text-white text-2xl">Impartial and Confidential</p>
-            <p className=" text-lg text-white   mt-6 font-normal">Neutral ground to foster open communication and mutual understanding</p>
+            <p className=" text-lg text-white   mt-6 font-normal">
+              Every decision is made independently, based solely on the evidence provided.
+            </p>
           </div>
           <div className="p-6 col-span-4 md:col-span-2 lg:col-span-1 border duration-200 hover:bg-primary hover:border-primary border-[#624A70] rounded-3xl">
             <div className="mt-3 mb-4">
@@ -147,7 +149,7 @@ const KeyFeature = () => {
               </svg>
             </div>
             <p className="font-medium text-white text-2xl">Cost-Effective Alternative</p>
-            <p className=" text-lg text-white   mt-9 font-normal">Avoid the expense and stress of legal battles</p>
+            <p className=" text-lg text-white   mt-9 font-normal">Avoid the stress, delay and cost of lengthy legal proceedings.</p>
           </div>
         </div>
       </div>

@@ -9,7 +9,7 @@ const faqData = [
     key: 1,
     question: 'Who can enrol in mediation training?',
     answer:
-      'The potential for success is high. Mediation provides an opportunity for cases to be looked at in detail and considered with greater care than usual. Face to face meetings provide the opportunity to clarify positions and understand other points of view; to explore creative and imaginative solutions that may not have been considered previously. It gives parties the opportunity to rebuild trust and re-establish a working relationship.',
+      'Anyone with an interest in helping people resolve disputes calmly and fairly. Whether you’re a professional looking to expand your skills or brand new to mediation, our courses are open, practical and supportive.',
   },
   {
     key: 2,

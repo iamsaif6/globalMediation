@@ -10,15 +10,16 @@ const WhyChoose = () => {
         <div className="col-span-2 lg:col-span-1">
           <h1 className="text-4xl md:text-5xl font-medium leading-[120%] mb-8">Why Choose DARS?</h1>
           <p className="pb-8 text-base md:text-lg border-b-[0.5px] border-white">
-            DARS provides a trusted, results-driven approach to dispute resolution in Northern Ireland. With a strong focus on impartiality,
-            confidentiality, and professionalism, DARS has become a valuable resource for resolving conflicts quickly and collaboratively.
+            DARS offers a calm, independent space for people to resolve disputes when other options haven’t worked.
             <br className="mb-3" />
-            Take the first step toward resolution today—reach out to our dedicated team.
+            With a strong focus on clarity, confidentiality, and fairness, it’s a trusted alternative to litigation or prolonged conflict.
+            <br className="mb-3" />
+            We’re here to help you move forward — with transparency, professionalism, and care.
           </p>
 
           <div className="my-10 md:my-[21px]">
             <h3 className=" text-2xl mb-5">Contact DARS</h3>
-            <p className="mb-8 text-lg">For more information or to schedule a session, contact the DARS team:</p>
+            <p className="mb-8 text-lg">For more information or to begin the process:</p>
             <ul className="space-y-3">
               <li>
                 <a className="flex text-lg text-white leading-[140%] items-center gap-4" href="tel:(028) 9072 6060">
@@ -34,7 +35,7 @@ const WhyChoose = () => {
                 </a>
               </li>
               <li>
-                <a className="flex text-lg text-white leading-[140%] items-center gap-4" href="mailto:sen@globalmediaiton.co.uk">
+                <a className="flex text-lg text-white leading-[140%] items-center gap-4" href="mailto:DARS@globalmediation.co.uk">
                   <span className="h-8 w-8 border border-white rounded-full flex items-center justify-center">
                     <svg xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18" fill="none">
                       <path
@@ -43,7 +44,7 @@ const WhyChoose = () => {
                       />
                     </svg>
                   </span>
-                  <span>sen@globalmediaiton.co.uk</span>
+                  <span>DARS@globalmediation.co.uk</span>
                 </a>
               </li>
             </ul>

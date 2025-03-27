@@ -9,40 +9,40 @@ const exlopreItem = [
   {
     title: 'Foundation Course in Mediation',
     description:
-      'A six-day program designed to equip participants with the skills and knowledge needed to qualify as accredited mediators. This interactive course covers all aspects of the mediation process, from theory to practical application.',
+      'A six-day course designed to equip you with the knowledge and skills to qualify as an accredited mediator.This programme blends theory with live practice, from the core stages of mediation to professional ethics and resolution strategies.',
     key: [
-      'Practical exercises, role plays, and discussions led by experienced trainers.',
-      'Certification to apply for membership with the Civil Mediation Council and College of Mediators.',
-      'Suitable for professionals entering the field of mediation.',
+      'Practical exercises, role plays and guided discussion',
+      'Certification to apply for Civil Mediation Council membership',
+      'Ideal for professionals entering the field of mediation',
     ],
     cover: service2,
-    buttonText: 'Enroll in the Foundation Mediation Course Today',
+    buttonText: 'Enrol in the Foundation Course Today',
     buttonLink: '#',
   },
   {
     title: 'SEND Mediation Training Course',
     description:
-      'An advanced program for qualified mediators specialising in Special Educational Needs and Disability (SEND) mediation. This course focuses on SEND legislation, local authority processes, and specific mediation techniques.',
+      'An advanced course for accredited mediators looking to specialise in Special Educational Needs and Disability (SEND).You’ll explore legal frameworks, local authority processes and SEND-specific mediation approaches.',
     key: [
-      'Deep understanding of SEND-specific disputes and legislation.',
-      'Certification to register as a specialist SEND mediator.',
-      'Approved by the Civil Mediation Council and the College of Mediators.',
+      'Deep understanding of SEND law and systems',
+      'Specialist certification as a SEND mediator',
+      'Approved by the Civil Mediation Council and the College of Mediators',
     ],
     cover: service3,
     buttonText: 'Specialise in SEND Mediation.',
     buttonLink: '#',
   },
   {
-    title: 'SEND Mediation Professional Practice',
+    title: 'SEND Mediation: Professional Practice Day',
     description:
-      'A participatory training day designed for accredited SEND mediators to practise and refine their skills. Engage in authentic role-play scenarios, mediate disputes, and receive feedback from experienced trainers.',
+      'Designed for practising SEND mediators who want to grow their skills.Engage in live role plays, structured feedback and peer discussion — all led by experienced trainers.',
     key: [
-      'Hands-on experience with real-world scenarios.',
-      'Personalised coaching and constructive feedback.',
-      'Advanced skills development for professional growth.',
+      'Real-world scenarios and supervised practise',
+      'Personalised coaching and feedback',
+      'Advanced development for experienced mediators',
     ],
     cover: service4,
-    buttonText: 'Advance Your SEND Mediation Skills Today',
+    buttonText: 'Advance Your SEND Skills Today',
     buttonLink: '#',
   },
 ];

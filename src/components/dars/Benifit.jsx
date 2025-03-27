@@ -20,7 +20,7 @@ const Benifit = () => {
           <div>
             <h3 className="leading-[140%] text-secondary text-[20px] md:text-[32px] font-semibold mb-4">Efficient Resolution</h3>
             <p className="leading-[150%] text-base md:text-lg text-[#667085]">
-              Achieve timely solutions without the delays associated with formal legal proceedings.
+              Achieve timely outcomes without the delays of formal legal routes.
             </p>
           </div>
         </div>
@@ -48,7 +48,7 @@ const Benifit = () => {
           <div>
             <h3 className="leading-[140%] text-secondary text-[20px] md:text-[32px] font-semibold mb-4">Flexibility</h3>
             <p className="leading-[150%] text-base md:text-lg text-[#667085]">
-              Sessions are tailored to meet the unique needs of the dispute and the parties involved.
+              Adaptable to different situations and needs, with clear communication throughout.
             </p>
           </div>
         </div>
@@ -77,9 +77,7 @@ const Benifit = () => {
           </div>
           <div>
             <h3 className="leading-[140%] text-secondary text-[20px] md:text-[32px] font-semibold mb-4">Preserves Relationships</h3>
-            <p className="leading-[150%] text-base md:text-lg text-[#667085]">
-              Encourages collaboration and mutual respect, reducing the likelihood of future disputes.
-            </p>
+            <p className="leading-[150%] text-base md:text-lg text-[#667085]">Reduces hostility and supports respectful outcomes.</p>
           </div>
         </div>
 
@@ -108,7 +106,7 @@ const Benifit = () => {
           <div>
             <h3 className="leading-[140%] text-secondary text-[20px] md:text-[32px] font-semibold mb-4">Neutral Expertise</h3>
             <p className="leading-[150%] text-base md:text-lg text-[#667085]">
-              DARS mediators are skilled in guiding complex conversations toward resolution.
+              Decisions made by experienced adjudicators, not influenced by either party.
             </p>
           </div>
         </div>
