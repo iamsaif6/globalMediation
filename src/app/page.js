@@ -7,7 +7,7 @@ import ServiceCarousel from '@/components/home/ServiceCarousel';
 import TeamCarousel from '@/components/home/TeamCarousel';
 import Serving from '@/components/home/Serving';
 import MediationCalculation from '@/components/home/MediationCalculation';
-import betterWay from '/public/A Better Way.jpg';
+import betterWay from '/public/a betterway 2.jpeg';
 import Image from 'next/image';
 import LearnMore from '@/components/home/LearnMore';
 import CTA from '@/components/shared/CTA';
