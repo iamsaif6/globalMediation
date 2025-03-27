@@ -1,4 +1,3 @@
-import Header from '@/components/shared/Header';
 import Marque from '@/components/home/Marque';
 import MediationCards from '@/components/home/MediationCards';
 import Link from 'next/link';
@@ -12,17 +11,12 @@ import Image from 'next/image';
 import LearnMore from '@/components/home/LearnMore';
 import CTA from '@/components/shared/CTA';
 import WhyMediation from '@/components/home/WhyMediation';
+import Header from '@/components/home/Header';
 
 export default function Home() {
   return (
     <div id="root">
-      <Header
-        title={'Helping People Move Forward'}
-        subTitle={'Impartial, professional mediation that helps you resolve disputes and rebuild trust, at your pace, on your terms'}
-        Button1Text={'Explore Our Services'}
-        Button1Link={'/service'}
-        isHomePage={true}
-      />
+      <Header />
       <Marque />
       <MediationCards />
       {/*Start Learn About Mediation */}

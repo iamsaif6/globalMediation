@@ -12,7 +12,7 @@ const Header = ({ title, subTitle, Button1Text, Button1Link = '#', Button2Text, 
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}
-      className="pt-[187px] relative md:pt-[238px] pb-[176px] md:pb-[203px] px-5 md:px-[60px]"
+      className=" pt-[187px] relative md:pt-[238px] pb-[176px] md:pb-[203px] px-5 md:px-[60px]"
     >
       {isHomePage && (
         <div>
