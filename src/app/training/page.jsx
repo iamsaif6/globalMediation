@@ -11,7 +11,7 @@ const Training = () => {
   return (
     <div className="bg-[#F9F8FF]">
       <Header
-        title={'Mediation Training: Learn, Qualify, and Specialize'}
+        title={'Mediation Training: Learn, Qualify, and Specialise'}
         subTitle={
           'Explore accredited mediation training programmes designed for aspiring mediators and professionals looking to build their skills in conflict resolution.Our hands-on courses help you grow with confidence, guided by expert trainers and real-world practice.'
         }

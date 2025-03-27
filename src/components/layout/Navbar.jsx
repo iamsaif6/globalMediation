@@ -97,11 +97,9 @@ const Navbar = () => {
     }
   };
 
-  console.log(pathname);
-
   return (
     <>
-      <nav className="fixed z-[99] lg:max-w-[1380px] rounded-[20px] border border-primary left-1/2 -translate-x-1/2 w-full mx-auto bg-white max-w-[90%] top-5 lg:rounded-4xl overflow-hidden">
+      <nav className="fixed z-[99] lg:max-w-[1380px] rounded-[20px] border-[0.5px] border-primary left-1/2 -translate-x-1/2 w-full mx-auto bg-white max-w-[90%] top-5 lg:rounded-4xl overflow-hidden">
         <div className="flex items-center justify-between  lg:pl-9 px-[18px] lg:px-3">
           <div className="flex items-center gap-10 relative">
             <Link href="/" className="flex items-center">
@@ -215,7 +213,7 @@ const Navbar = () => {
           <div className="grid grid-cols-12">
             <div className="col-span-5 p-8 space-y-4">
               <button
-                onClick={() => setActiveSubmenu('Service')}
+                onMouseEnter={() => setActiveSubmenu('Service')}
                 className={` ${
                   activeSubmenu == 'Service' ? 'bg-[#DAD3FF]' : ''
                 } flex cursor-pointer items-start flex-col w-full p-6 rounded-xl text-secondary transition-colors duration-200`}
@@ -224,7 +222,7 @@ const Navbar = () => {
                 <span className="text-sm">A Comprehensive Guide to Alternative Dispute Resolution</span>
               </button>
               <button
-                onClick={() => setActiveSubmenu('Training')}
+                onMouseEnter={() => setActiveSubmenu('Training')}
                 className={` ${
                   activeSubmenu == 'Training' ? 'bg-[#DAD3FF]' : ''
                 } flex cursor-pointer items-start flex-col w-full p-6 rounded-xl text-secondary transition-colors duration-200`}

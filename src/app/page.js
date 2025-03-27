@@ -35,7 +35,7 @@ export default function Home() {
           </button>
         </div>
         <div className="col-span-2  overflow-hidden lg:col-span-1 bg-gray-500 rounded-3xl">
-          <Image className="object-cover h-full w-full" alt="A Better Way" src={betterWay} />
+          <Image className="object-cover object-left h-full w-full" alt="A Better Way" src={betterWay} />
         </div>
       </section>
       {/*End Learn About Mediation */}

@@ -28,7 +28,7 @@ const MediationCalculation = () => {
       />
       <div>
         <div className="grid grid-cols-2 gap-[33px] mt-[60px]">
-          <div className="bg-[#F9F8FF] col-span-2 lg:col-span-1 rounded-[20px] p-8">
+          <div className="bg-[#efedfc] col-span-2 lg:col-span-1 rounded-[20px] p-8">
             <h3 className="text-sm md:text-[27px] text-[#393D4E] font-semibold leading-[140%]">User Inputs</h3>
             <div className="mt-5 space-y-[10px]">
               <div className="grid grid-cols-2 text-[10px] md:text-[20px] items-center gap-2">
@@ -62,7 +62,7 @@ const MediationCalculation = () => {
               </div>
             </div>
           </div>
-          <div className="bg-[#F9F8FF] col-span-2 lg:col-span-1 rounded-[20px] p-8">
+          <div className="bg-[#efedfc] col-span-2 lg:col-span-1 rounded-[20px] p-8">
             <h3 className="text-sm md:text-[27px] text-[#393D4E] font-semibold leading-[140%]">Outputs</h3>
             <div className="mt-5 space-y-[10px]">
               <div className="grid text-[10px] md:text-[20px] grid-cols-2 items-center gap-2">
