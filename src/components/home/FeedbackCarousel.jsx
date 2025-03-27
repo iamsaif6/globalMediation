@@ -6,12 +6,30 @@ import Button from '../shared/Button';
 
 const clientReview = [
   {
-    review: 'Meeting was very easy-going. The mediator made it simple and welcoming, and kept my nerves calm at all times.',
-    name: 'Jenny Wilson, Customer',
+    review: 'Extremely useful, impartial and a calm environment in which to discuss concerns',
+    name: '',
   },
   {
-    review: 'I felt heard, supported and understood. Mediation helped us reach a fair outcome without going to court.',
-    name: 'Client name, Sector (TBC)',
+    review: 'Absolutely essential! Supports positive relationships. Thank you – very approachable and efficient. Impartial and fair.',
+    name: '',
+  },
+  {
+    review:
+      'Very helpful and explained all that we needed to know, very well. We also felt that we were listened too throughout this process. Extremely well managed meeting.',
+    name: '',
+  },
+  {
+    review:
+      'Informal and easy talk to clarify issues. A good chance to discuss and clarify issues face to face and also to put a plan together that might not have been available to do in the first place',
+    name: '',
+  },
+  {
+    review: 'Meeting was very easy going. Mediator made it simple and welcome. Kept my nerves calm at all times.',
+    name: '',
+  },
+  {
+    review: 'This was really useful to identify gaps information and find out what information was needed. Very professional and impartial',
+    name: '',
   },
 ];
 
@@ -53,8 +71,8 @@ const FeedbackCarousel = ({ title, subTitle }) => {
         <Slider {...settings}>
           {clientReview.map(item => {
             return (
-              <div className="px-[15px] mb-[40px]">
-                <div className=" rounded-[10px] bg-white md:rounded-3xl  my-9 py-6 px-5 lg:p-[42px] shadow-[10px_10px_55px_0px_rgba(175,172,172,0.25)]">
+              <div className="px-[15px]  mb-[40px]">
+                <div className=" rounded-[10px] bg-white md:rounded-3xl  h-auto lg:h-[330px]  my-9 py-6 px-5 lg:p-[42px] shadow-[10px_10px_55px_0px_rgba(175,172,172,0.25)]">
                   <svg
                     className="w-[30px] h-[30px] lg:w-[61px] lg:h-[61px]"
                     xmlns="http://www.w3.org/2000/svg"
@@ -74,8 +92,8 @@ const FeedbackCarousel = ({ title, subTitle }) => {
                     </defs>
                   </svg>
                   <div className="mt-3 md:mt-[38px] pl-3 md:pl-10 md:pr-5">
-                    <p className="text-[#656565] leading-[150%] text-sm lg:text-lg mb-5 lg:mb-[100px]">{item.review}</p>
-                    <p className="text-sm lg:text-2xl font-semibold text-[#1C1C1C]"> - {item.name}</p>
+                    <p className="text-[#656565] leading-[150%] text-sm lg:text-lg mb-5">{item.review}</p>
+                    {item.name && <p className="text-sm lg:text-2xl font-semibold text-[#1C1C1C]"> - {item.name}</p>}
                   </div>
                 </div>
               </div>
