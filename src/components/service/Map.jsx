@@ -21,30 +21,30 @@ const Map = () => {
         </div>
       </div>
       <div className="col-span-2 lg:col-span-1">
-        <form className="md:space-y-4 space-y-6">
+        <form className="md:space-y-4 space-y-6 ">
           <div>
             <label className="text-base font-normal md:text-[20px] block mb-2.5 text-[#393D4E]" htmlFor="name">
               Name
             </label>
-            <input className="w-full p-3 rounded-xl bg-[#F8F8F8]" type="text" name="name" id="name" />
+            <input className="w-full outline-0  p-3 rounded-xl bg-[#F8F8F8]" type="text" name="name" id="name" />
           </div>
           <div>
             <label className="text-base font-normal md:text-[20px] block mb-2.5 text-[#393D4E]" htmlFor="email">
               Email
             </label>
-            <input required className="w-full p-3 rounded-xl bg-[#F8F8F8]" type="email" name="email" id="email" />
+            <input required className="w-full outline-0 p-3 rounded-xl bg-[#F8F8F8]" type="email" name="email" id="email" />
           </div>
           <div>
             <label className="text-base font-normal md:text-[20px] block mb-2.5 text-[#393D4E]" htmlFor="company">
               Company name
             </label>
-            <input className="w-full p-3 rounded-xl bg-[#F8F8F8]" type="text" name="company" id="company" />
+            <input className="w-full outline-0 p-3 rounded-xl bg-[#F8F8F8]" type="text" name="company" id="company" />
           </div>
           <div>
             <label className="text-base font-normal md:text-[20px] block mb-2.5 text-[#393D4E]" htmlFor="conflict">
               Type of conflict
             </label>
-            <input className="w-full p-3 rounded-xl bg-[#F8F8F8]" type="text" name="conflict" id="conflict" />
+            <input className="w-full outline-0 p-3 rounded-xl bg-[#F8F8F8]" type="text" name="conflict" id="conflict" />
           </div>
           <div>
             <label className="text-base font-normal md:text-[20px] block mb-2.5 text-[#393D4E]" htmlFor="conflict">
@@ -52,7 +52,7 @@ const Map = () => {
             </label>
             <textarea
               placeholder="Type your message..."
-              className="w-full placeholder:text-[20px] placeholder:text-[#C5C0C9] p-3 rounded-xl bg-[#F8F8F8]"
+              className="w-full outline-0 placeholder:text-[20px] placeholder:text-[#C5C0C9] p-3 rounded-xl bg-[#F8F8F8]"
               type="text"
               name="conflict"
               id="conflict"
