@@ -1,7 +1,23 @@
 'use client';
 import Link from 'next/link';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Button from '../shared/Button';
+import { usePathname } from 'next/navigation';
+
+const serviceSubmenu = [
+  { title: 'Workplace and Employment Mediation', href: '/Workplace-and-Employment-Mediation' },
+  { title: 'Business and Commercial Mediation', href: '/Business-and-Commercial-Mediation' },
+  { title: 'SEND (Special Educational Needs and Disability) Mediation', href: '/send-mediation' },
+  { title: 'Community Mediation', href: '/Community-Mediation' },
+  { title: 'Family Mediation', href: '/Family-Mediation' },
+  { title: 'Civil and Legal Dispute Mediation', href: '/Civil-and-Legal-Dispute-Mediation' },
+];
+
+const traiingSubmenu = [
+  { title: 'Foundation Course in Mediation', href: '/Foundation-Course-in-Mediation' },
+  { title: 'SEND Mediation Training Course', href: '/SEND-Mediation-Training-Course' },
+  { title: 'SEND Mediation Professional Practice', href: '/SEND-Mediation-Professional-Practice' },
+];
 
 const navLinks = [
   {
@@ -47,6 +63,7 @@ const Navbar = () => {
   const [menuHeight, setMenuHeight] = useState(0);
   const menuRef = React.useRef(null);
   const mobileMenuRef = React.useRef(null);
+  const pathname = usePathname();
 
   // Calculate the height of the menu when it's opened
   React.useEffect(() => {
@@ -79,6 +96,8 @@ const Navbar = () => {
       setMobileSubmenuOpen(linkTitle);
     }
   };
+
+  console.log(pathname);
 
   return (
     <>
@@ -217,55 +236,28 @@ const Navbar = () => {
             <div className="col-span-7 leading-[150%] p-8 bg-[#F3F1FF]">
               <h3 className="text-[20px] font-semibold mb-4">{activeSubmenu == 'Service' ? 'Mediation Services' : 'Mediation Training'}</h3>
               {activeSubmenu == 'Service' ? (
-                <ul className="space-y-3 text-sm text-[#98A2B3]">
-                  <li className="hover:text-secondary duration-200">
-                    <Link title="Workplace and Employment Mediation" href={'/Workplace-and-Employment-Mediation'}>
-                      Workplace and Employment Mediation
-                    </Link>
-                  </li>
-                  <li className="hover:text-secondary duration-200">
-                    <Link title="Workplace and Employment Mediation" href={'/Business-and-Commercial-Mediation'}>
-                      Business and Commercial Mediation
-                    </Link>
-                  </li>
-                  <li className="hover:text-secondary duration-200">
-                    <Link title="Workplace and Employment Mediation" href={'/send-mediation'}>
-                      SEND (Special Educational Needs and Disability) Mediation
-                    </Link>
-                  </li>
-                  <li className="hover:text-secondary duration-200">
-                    <Link title="Workplace and Employment Mediation" href={'/Community-Mediation'}>
-                      Community Mediation
-                    </Link>
-                  </li>
-                  <li className="hover:text-secondary duration-200">
-                    <Link title="Workplace and Employment Mediation" href={'/Family-Mediation'}>
-                      Family Mediation
-                    </Link>
-                  </li>
-                  <li className="hover:text-secondary duration-200">
-                    <Link title="Workplace and Employment Mediation" href={'/Civil-and-Legal-Dispute-Mediation'}>
-                      Civil and Legal Dispute Mediation
-                    </Link>
-                  </li>
+                <ul className="space-y-3 text-sm ">
+                  {serviceSubmenu.map(item => {
+                    return (
+                      <li className={` ${item.href === pathname ? 'text-secondary' : 'text-[#98A2B3]'} hover:text-secondary duration-200`}>
+                        <Link title="Workplace and Employment Mediation" href={item.href}>
+                          {item.title}
+                        </Link>
+                      </li>
+                    );
+                  })}
                 </ul>
               ) : (
                 <ul className="space-y-3 text-sm text-[#98A2B3]">
-                  <li className="hover:text-secondary duration-200">
-                    <Link title="Workplace and Employment Mediation" href={'/Foundation-Course-in-Mediation'}>
-                      Foundation Course in Mediation
-                    </Link>
-                  </li>
-                  <li className="hover:text-secondary duration-200">
-                    <Link title="Workplace and Employment Mediation" href={'/SEND-Mediation-Training-Course'}>
-                      SEND Mediation Training Course
-                    </Link>
-                  </li>
-                  <li className="hover:text-secondary duration-200">
-                    <Link title="Workplace and Employment Mediation" href={'/SEND-Mediation-Professional-Practice'}>
-                      SEND Mediation Professional Practice
-                    </Link>
-                  </li>
+                  {traiingSubmenu.map(item => {
+                    return (
+                      <li className={` ${item.href === pathname ? 'text-secondary' : 'text-[#98A2B3]'} hover:text-secondary duration-200`}>
+                        <Link title="Workplace and Employment Mediation" href={item.href}>
+                          {item.title}
+                        </Link>
+                      </li>
+                    );
+                  })}
                 </ul>
               )}
             </div>
