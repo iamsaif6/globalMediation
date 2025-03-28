@@ -8,7 +8,7 @@ const WhyChoose = () => {
       <h1 className="text-4xl md:text-5xl font-medium text-center max-w-[760px] mx-auto leading-[120%] mb-8 md:mb-[78px]">
         Why Choose Global Mediation for Workplace Conflicts?
       </h1>
-      <p className=" text-lg md:text-[24px] leading-[150%] mb-[56px] md:mb-[78px]">
+      <p className=" text-lg md:text-[20px] leading-[150%] mb-[56px] md:mb-[78px]">
         At Global Mediation, we understand the complexities of workplace dynamics. Our expert mediators bring a wealth of experience to
         address conflicts in a neutral, confidential, and impartial manner. By fostering open communication, we help organisations achieve
         long-term resolutions that strengthen relationships and improve productivity.
