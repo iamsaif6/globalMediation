@@ -50,7 +50,7 @@ const WhyChoose = () => {
             </ul>
           </div>
           <div className="">
-            <button className={`bg-secondary border border-secondary font-normal text-lg text-[#FCFCFD] px-7 py-2 rounded-[40px]`}>
+            <button className={`bg-white  font-normal text-lg text-black px-12 py-2 rounded-[40px]`}>
               <Link className="w-full" href={'/contact-us'}>
                 Contact US
               </Link>

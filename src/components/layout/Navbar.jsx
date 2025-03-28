@@ -100,7 +100,7 @@ const Navbar = () => {
   return (
     <>
       <nav className="fixed z-[99] lg:max-w-[1380px] rounded-[20px] border-[0.5px] border-primary left-1/2 -translate-x-1/2 w-full mx-auto bg-white max-w-[90%] top-5 lg:rounded-4xl overflow-hidden">
-        <CrispWithNoSSR />
+        {/* <CrispWithNoSSR /> */}
         <div className="flex items-center justify-between  lg:pl-9 px-[18px] lg:px-3">
           <div className="flex items-center gap-10 relative">
             <Link href="/" className="flex items-center">
@@ -219,7 +219,7 @@ const Navbar = () => {
                   activeSubmenu == 'Service' ? 'bg-[#DAD3FF]' : ''
                 } flex cursor-pointer items-start flex-col w-full p-6 rounded-xl text-secondary transition-colors duration-200`}
               >
-                <span className="text-lg block font-semibold">Service</span>
+                <span className="text-lg block font-semibold">Services</span>
                 <span className="text-sm">A Comprehensive Guide to Alternative Dispute Resolution</span>
               </button>
               <button
