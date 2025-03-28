@@ -178,7 +178,10 @@ const Navbar = () => {
                     <Link
                       href={link?.href}
                       className={`px-2 py-[20px] lg:py-7 flex items-center ${link?.hasMegaMenu ? 'gap-1' : ''}`}
-                      onMouseEnter={() => (link?.hasMegaMenu && link.title == 'Resources' ? setActiveMenu2(true) : setActiveMenu(true))}
+                      onMouseEnter={() =>
+                        (link?.hasMegaMenu && link.title == 'Resources' && setActiveMenu2(true)) ||
+                        (link.title == 'Services' && setActiveMenu(true))
+                      }
                       onMouseLeave={() => (link?.hasMegaMenu && link.title == 'Resources' ? setActiveMenu2(false) : setActiveMenu(false))}
                     >
                       {link?.title}
@@ -317,7 +320,10 @@ const Navbar = () => {
                 <ul className="space-y-3 text-sm ">
                   {resourceSubMenu.map(item => {
                     return (
-                      <li className={` ${item.href === pathname ? 'text-secondary' : 'text-[#98A2B3]'} hover:text-secondary duration-200`}>
+                      <li
+                        key={item.href}
+                        className={` ${item.href === pathname ? 'text-secondary' : 'text-[#98A2B3]'} hover:text-secondary duration-200`}
+                      >
                         <Link title={item.title} href={`${item.href}`}>
                           {item.title}
                         </Link>
@@ -329,7 +335,10 @@ const Navbar = () => {
                 <ul className="space-y-3 text-sm text-[#98A2B3]">
                   {traiingSubmenu.map(item => {
                     return (
-                      <li className={` ${item.href === pathname ? 'text-secondary' : 'text-[#98A2B3]'} hover:text-secondary duration-200`}>
+                      <li
+                        key={item.href}
+                        className={` ${item.href === pathname ? 'text-secondary' : 'text-[#98A2B3]'} hover:text-secondary duration-200`}
+                      >
                         <Link title="Workplace and Employment Mediation" href={`/services${item.href}`}>
                           {item.title}
                         </Link>
