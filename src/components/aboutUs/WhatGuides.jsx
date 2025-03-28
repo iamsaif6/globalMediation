@@ -12,7 +12,7 @@ const WhatGuides = () => {
         <h4 className="text-2xl font-medium text-center    mb-10">Core Values</h4>
         <div className="grid grid-cols-3 gap-6 md:gap-8">
           <div className="p-6 col-span-3   lg:col-span-1 bg-[#F3F1FF] rounded-3xl">
-            <div className="mt-3 mb-4">
+            <div className="mt-3">
               <svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43" fill="none">
                 <path
                   d="M20.3633 35.3525C20.0851 35.3525 19.8594 35.1268 19.8594 34.8486V13.2959C19.8594 13.0177 20.0851 12.792 20.3633 12.792C20.6415 12.792 20.8672 13.0177 20.8672 13.2959V34.8486C20.8672 35.1268 20.6415 35.3525 20.3633 35.3525Z"
@@ -88,11 +88,11 @@ const WhatGuides = () => {
                 />
               </svg>
             </div>
-            <p className="font-medium    text-2xl">Guided Conversations</p>
-            <p className=" text-lg    mb-[25px] mt-9 font-normal">Structured, impartial discussions led by experienced mediators.</p>
+            <p className="font-medium my-[30px] lg:my-[40px] text-secondary   text-2xl">Authenticity</p>
+            <p className=" text-lg    mb-[25px]  font-normal">We act with honesty and integrity in every conversation</p>
           </div>
           <div className="p-6 col-span-3   lg:col-span-1 bg-[#F3F1FF] rounded-3xl">
-            <div className="mt-3 mb-4">
+            <div className="mt-3">
               <svg xmlns="http://www.w3.org/2000/svg" width="42" height="43" viewBox="0 0 42 43" fill="none">
                 <g clipPath="url(#clip0_6446_1385)">
                   <path
@@ -107,11 +107,11 @@ const WhatGuides = () => {
                 </defs>
               </svg>
             </div>
-            <p className="font-medium    text-2xl">Expert-Led Mediation</p>
-            <p className=" text-lg    mb-[25px] mt-9 font-normal">Matching people with the right mediator for their needs and situation.</p>
+            <p className="font-medium my-[30px] lg:my-[40px] text-secondary   text-2xl">Dependability</p>
+            <p className=" text-lg    mb-[25px] font-normal">We bring consistency, calm and clarity to challenging situations.</p>
           </div>
           <div className="p-6 col-span-3   lg:col-span-1 bg-[#F3F1FF] rounded-3xl">
-            <div className="mt-3 mb-4">
+            <div className="mt-3 ">
               <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42" fill="none">
                 <path
                   fillRule="evenodd"
@@ -121,9 +121,9 @@ const WhatGuides = () => {
                 />
               </svg>
             </div>
-            <p className="font-medium    text-2xl">Transformational Training</p>
-            <p className=" text-lg    mb-[25px] mt-9 font-normal">
-              Helping professionals and organisations learn how to manage conflict constructively.
+            <p className="font-medium  text-secondary my-[30px] lg:my-[40px] text-2xl">Belonging</p>
+            <p className=" text-lg  mb-[25px]  font-normal">
+              We create safe, inclusive spaces where people feel heard, respected and supported.
             </p>
           </div>
         </div>
