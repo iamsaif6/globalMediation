@@ -324,10 +324,7 @@ const Navbar = () => {
                 <ul className="space-y-3 text-sm ">
                   {resourceSubMenu.map(item => {
                     return (
-                      <li
-                        key={item.href}
-                        className={` ${item.href === pathname ? 'text-secondary' : 'text-[#98A2B3]'} hover:text-secondary duration-200`}
-                      >
+                      <li key={item.href} className={` ${pathname.includes(item.href) ? 'font-semibold' : ''} text-secondary `}>
                         <Link title={item.title} href={`${item.href}`}>
                           {item.title}
                         </Link>
