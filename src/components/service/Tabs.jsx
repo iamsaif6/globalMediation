@@ -42,7 +42,7 @@ const Tabs = ({ title, subtitle, services }) => {
         return (
           <div className=" grid grid-cols-2 gap-[80px]">
             <div className="col-span-2 lg:col-span-1">
-              <h1 className="font-medium text-4xl md:text-5xl leading-[120%]">{title}</h1>
+              <h1 className="font-medium text-4xl md:text-[42px] leading-[120%]">{title}</h1>
               <p className="text-[#667085] capitalize text-base md:text-lg leading-[150%] my-10">{subtitle}</p>
               <div className="relative my-10 block md:hidden  rounded-3xl overflow-hidden">
                 <div className={`from-[rgba(67,0,106,0.1)] to-[#43006aa3] absolute inset-0 bg-gradient-to-b  z-10`}></div>
