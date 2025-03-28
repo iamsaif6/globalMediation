@@ -21,13 +21,7 @@ const data = [
     slug: 'Workplace-and-Employment-Mediation',
     subtitle:
       'Workplace disputes can affect morale, productivity and wellbeing — for teams and individuals alike. Our mediators support both employees and employers to resolve conflict collaboratively and confidentially, creating space for honest conversations and practical solutions.',
-    service: [
-      'Harassment and Bullying Complaints',
-      'Team Conflicts and Collaboration Issues',
-      'Grievance and Disciplinary Mediation',
-      'Organisational Restructuring Disputes',
-      'Redundancy Mediation',
-    ],
+    service: ['Harassment and Bullying Complaints', 'Team Conflicts and Collaboration Issues', 'Grievance and Disciplinary Mediation'],
     image: service1,
   },
   {

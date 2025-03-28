@@ -77,7 +77,7 @@ const Tabs = ({ title, subtitle, services }) => {
                 </div>
               </div>
             </div>
-            <div className="relative  hidden lg:block col-span-2 md:col-span-1 rounded-3xl overflow-hidden">
+            <div className="relative  max-h-[600px]  hidden lg:block col-span-2 md:col-span-1 rounded-3xl overflow-hidden">
               <div className={`from-[rgba(0, 164, 159, 0.20)] to-[#006863a3] absolute inset-0 bg-gradient-to-b  z-10`}></div>
               <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={service1} />
             </div>
@@ -195,7 +195,7 @@ const Tabs = ({ title, subtitle, services }) => {
 
   return (
     <section className="py-16 md:py-[80px]">
-      <div className="px-5 md:px-16 mb-[80px] ">
+      <div className="px-5 md:px-16 mb-[120px] ">
         <SectionHeading title={'Comprehensive workplace and employment mediation services'} />
       </div>
       <div className="mt-[42px] md:mt-[54px]">
