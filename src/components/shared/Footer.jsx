@@ -67,7 +67,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="#">
+                <Link target="_blank" href="#">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
                     <path
                       fillRule="evenodd"
@@ -79,7 +79,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="https://www.linkedin.com/in/global-mediation-63b4b6136/">
+                <Link target="_blank" href="https://www.linkedin.com/in/global-mediation-63b4b6136/">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
                     <path
                       fillRule="evenodd"
