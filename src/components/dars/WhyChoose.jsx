@@ -1,5 +1,5 @@
 import React from 'react';
-import choose from '/public/service2.jpg';
+import choose from '/public/Dars 2.png';
 import Link from 'next/link';
 import Image from 'next/image';
 

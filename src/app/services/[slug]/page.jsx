@@ -9,11 +9,11 @@ import FeedbackCarousel from '@/components/home/FeedbackCarousel';
 import Map from '@/components/service/Map';
 import FAQ from '@/components/service/FAQ';
 import CTA from '@/components/shared/CTA';
-import service1 from '/public/service1.jpg';
-import service2 from '/public/service2.jpg';
-import service3 from '/public/service3.jpg';
-import service4 from '/public/service4.jpg';
-import service5 from '/public/Family Mediation.png';
+import service1 from '/public/Main Services workplace.png';
+import service2 from '/public/Main Services Business.png';
+import service3 from '/public/Main Sevices SEND.jpg';
+import service4 from '/public/Main Services Community.jpg';
+import service5 from '/public/main services civil and legal.jpg';
 
 const data = [
   {
@@ -136,7 +136,7 @@ const Service = ({ params }) => {
         Button2Link="#"
         cover={service.image}
       />
-      <Introduction title={service.title} subtitle={service.subtitle} />
+      <Introduction title={service.title} image={service.image} subtitle={service.subtitle} />
       <Tabs title={service.title} subtitle={service.subtitle} services={service.service} />
       <WhyChoose />
       <MediationCalculation />

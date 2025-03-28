@@ -1,5 +1,5 @@
 import React from 'react';
-import service1 from '/public/service1.jpg';
+import service1 from '/public/DARS 1.jpg';
 import Image from 'next/image';
 const OverView = () => {
   return (

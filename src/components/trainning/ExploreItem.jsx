@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import React from 'react';
-import service2 from '/public/service2.jpg';
-import service3 from '/public/explore.png';
-import service4 from '/public/Frame 1707479811.png';
+import service2 from '/public/Training foundation.jpg';
+import service3 from '/public/training send.png';
+import service4 from '/public/training send practice day.png';
 import Link from 'next/link';
 
 const exlopreItem = [

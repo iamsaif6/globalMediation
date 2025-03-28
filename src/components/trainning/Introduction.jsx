@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import service1 from '/public/Placeholder Image 3.png';
+import service1 from '/public/Training 1.png';
 import Button from '../shared/Button';
 
 const Introduction = () => {

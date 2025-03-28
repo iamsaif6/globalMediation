@@ -1,10 +1,10 @@
 import React from 'react';
-import service1 from '/public/service1.jpg';
-import service2 from '/public/service2.jpg';
-import service3 from '/public/service3.jpg';
-import service4 from '/public/service4.jpg';
+import service1 from '/public/Main Services Business.png';
+import service2 from '/public/Main Services workplace.png';
+import service3 from '/public/Main Sevices SEND.jpg';
+import service4 from '/public/Main Services Community.jpg';
 import service5 from '/public/Family Mediation.png';
-import service6 from '/public/Frame Civil and Legal Dispute Mediation.png';
+import service6 from '/public/main services civil and legal.jpg';
 import Image from 'next/image';
 import Button from '../shared/Button';
 
@@ -20,7 +20,7 @@ const services = [
       'Organisational Restructuring Disputes',
       'Redundancy Mediation',
     ],
-    image: service1,
+    image: service2,
   },
   {
     title: 'Business and Commercial Mediation',
@@ -35,7 +35,7 @@ const services = [
       'Construction Disputes',
       'Tax and Accounting Disputes',
     ],
-    image: service2,
+    image: service1,
   },
   {
     title: 'SEND Mediation',
@@ -80,7 +80,7 @@ const services = [
       'Professional Negligence',
       'Contract Disputes',
     ],
-    image: service5,
+    image: service6,
   },
 ];
 
