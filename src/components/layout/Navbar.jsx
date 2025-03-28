@@ -4,6 +4,13 @@ import React, { useState } from 'react';
 import Button from '../shared/Button';
 import { usePathname } from 'next/navigation';
 
+const resourceSubMenu = [
+  { title: 'Blog', href: '/blogs' },
+  { title: 'FAQ', href: '/faq' },
+  { title: 'Case Studies', href: '/case-studies' },
+  { title: 'Guides', href: '/guides' },
+];
+
 const serviceSubmenu = [
   { title: 'Workplace and Employment Mediation', href: '/Workplace-and-Employment-Mediation' },
   { title: 'Business and Commercial Mediation', href: '/Business-and-Commercial-Mediation' },
@@ -66,12 +73,24 @@ const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [mobileSubmenuOpen, setMobileSubmenuOpen] = useState(false);
   const [activeSubmenu, setActiveSubmenu] = useState('Service');
+  const [activeSubmenu2, setActiveSubmenu2] = useState('Resources');
   const [menuHeight, setMenuHeight] = useState(0);
+  const [menuHeight2, setMenuHeight2] = useState(0);
   const menuRef = React.useRef(null);
+  const menuRef2 = React.useRef(null);
   const mobileMenuRef = React.useRef(null);
   const pathname = usePathname();
 
   // Calculate the height of the menu when it's opened
+
+  React.useEffect(() => {
+    if (menuRef2.current && activeMenu2) {
+      setMenuHeight2(menuRef.current.scrollHeight);
+    } else {
+      setMenuHeight2(0);
+    }
+  }, [activeMenu2]);
+
   React.useEffect(() => {
     if (menuRef.current && activeMenu) {
       setMenuHeight(menuRef.current.scrollHeight);
@@ -159,14 +178,16 @@ const Navbar = () => {
                     <Link
                       href={link?.href}
                       className={`px-2 py-[20px] lg:py-7 flex items-center ${link?.hasMegaMenu ? 'gap-1' : ''}`}
-                      onMouseEnter={() => link?.hasMegaMenu && setActiveMenu(true)}
-                      onMouseLeave={() => link?.hasMegaMenu && setActiveMenu(false)}
+                      onMouseEnter={() => (link?.hasMegaMenu && link.title == 'Resources' ? setActiveMenu2(true) : setActiveMenu(true))}
+                      onMouseLeave={() => (link?.hasMegaMenu && link.title == 'Resources' ? setActiveMenu2(false) : setActiveMenu(false))}
                     >
                       {link?.title}
                       {link?.hasMegaMenu && (
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          className={`h-4 ml-1.5 w-4 transition-transform duration-300 ${activeMenu ? 'rotate-180' : ''}`}
+                          className={`h-4 ml-1.5 w-4 transition-transform duration-300 ${
+                            link.title == 'Resources' && activeMenu2 ? 'rotate-180' : ''
+                          }   ${link.title == 'Services' && activeMenu ? 'rotate-180' : ''}`}
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor"
@@ -245,6 +266,59 @@ const Navbar = () => {
                     return (
                       <li className={` ${item.href === pathname ? 'text-secondary' : 'text-[#98A2B3]'} hover:text-secondary duration-200`}>
                         <Link title={item.title} href={`/services${item.href}`}>
+                          {item.title}
+                        </Link>
+                      </li>
+                    );
+                  })}
+                </ul>
+              ) : (
+                <ul className="space-y-3 text-sm text-[#98A2B3]">
+                  {traiingSubmenu.map(item => {
+                    return (
+                      <li className={` ${item.href === pathname ? 'text-secondary' : 'text-[#98A2B3]'} hover:text-secondary duration-200`}>
+                        <Link title="Workplace and Employment Mediation" href={`/services${item.href}`}>
+                          {item.title}
+                        </Link>
+                      </li>
+                    );
+                  })}
+                </ul>
+              )}
+            </div>
+          </div>
+        </div>
+
+        <div
+          ref={menuRef2}
+          onMouseEnter={() => setActiveMenu2(true)}
+          onMouseLeave={() => setActiveMenu2(false)}
+          className={`bg-white z-[99] relative left-0 w-full bg-lavender-50 border-t-[0.5px] border-[#E2DEDE] overflow-hidden transition-all duration-300 ease-in-out`}
+          style={{
+            maxHeight: activeMenu2 ? `${menuHeight2 + 100}px` : '0',
+            opacity: activeMenu2 ? 1 : 0,
+            visibility: activeMenu2 ? 'visible' : 'hidden',
+          }}
+        >
+          <div className="grid grid-cols-12">
+            <div className="col-span-5 p-8 space-y-4">
+              <button
+                // onMouseEnter={() => setActiveSubmenu('Service')}
+                className={` ${
+                  activeSubmenu2 == 'Resources' ? 'bg-[#DAD3FF]' : ''
+                } flex cursor-pointer items-start flex-col w-full p-6 rounded-xl text-secondary transition-colors duration-200`}
+              >
+                <span className="text-lg block font-semibold">Our Resources</span>
+                <span className="text-sm">A Comprehensive Guide to Alternative Dispute Resolution</span>
+              </button>
+            </div>
+            <div className="col-span-7 leading-[150%] p-8 bg-[#F3F1FF]">
+              {activeSubmenu2 == 'Resources' ? (
+                <ul className="space-y-3 text-sm ">
+                  {resourceSubMenu.map(item => {
+                    return (
+                      <li className={` ${item.href === pathname ? 'text-secondary' : 'text-[#98A2B3]'} hover:text-secondary duration-200`}>
+                        <Link title={item.title} href={`${item.href}`}>
                           {item.title}
                         </Link>
                       </li>
