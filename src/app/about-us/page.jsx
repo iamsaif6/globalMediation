@@ -25,7 +25,7 @@ const AboutUs = () => {
         Button1Link={'#'}
         Button2Text={'Learn About Mediation Training'}
         Button2Link="#"
-        cover={aboutUSHeader.src}
+        cover={null}
       />
       <ExperiencedLeader />
       <TimeLine />
