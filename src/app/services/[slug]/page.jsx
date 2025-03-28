@@ -134,7 +134,7 @@ const Service = ({ params }) => {
         Button1Link="#"
         Button2Text={'Learn About Mediation Training'}
         Button2Link="#"
-        cover={service.image}
+        cover={null}
       />
       <Introduction title={service.title} image={service.image} subtitle={service.subtitle} />
       <Tabs title={service.title} subtitle={service.subtitle} services={service.service} />
