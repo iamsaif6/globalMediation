@@ -14,7 +14,7 @@ const WhyChoose = () => {
         long-term resolutions that strengthen relationships and improve productivity.
       </p>
       <div className="grid grid-cols-2 gap-8">
-        <div className="hidden md:block md:col-span-2 lg:col-span-1 rounded-3xl h-[327px] w-full lg:max-w-[420px] bg-blue-900">
+        <div className="hidden md:block md:col-span-2 lg:col-span-1 rounded-3xl h-[327px] w-full  lg:max-w-[420px] bg-blue-900">
           <Image alt="Why Choose Global Mediation for Workplace Conflicts" className="object-cover h-full w-full" src={wayChoose} />
         </div>
         <div className="col-span-2 lg:col-span-1">
