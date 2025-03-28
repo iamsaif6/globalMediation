@@ -8,8 +8,7 @@ const serviceSubmenu = [
   { title: 'Workplace and Employment Mediation', href: '/Workplace-and-Employment-Mediation' },
   { title: 'Business and Commercial Mediation', href: '/Business-and-Commercial-Mediation' },
   { title: 'SEND (Special Educational Needs and Disability) Mediation', href: '/send-mediation' },
-  { title: 'Community Mediation', href: '/Community-Mediation' },
-  { title: 'Family Mediation', href: '/Family-Mediation' },
+  { title: 'Community and Family Mediation', href: '/Community-Family-Mediation' },
   { title: 'Civil and Legal Dispute Mediation', href: '/Civil-and-Legal-Dispute-Mediation' },
 ];
 
@@ -25,16 +24,15 @@ const navLinks = [
     title: 'Home',
   },
   {
-    href: '/main-services',
+    href: '/services',
     title: 'Services',
     hasMegaMenu: true,
     megaMenuItems: [
-      { title: 'Workplace and Employment Mediation', href: '/Workplace-and-Employment-Mediation' },
-      { title: 'Business and Commercial Mediation', href: '/Business-and-Commercial-Mediation' },
-      { title: 'SEND (Special Educational Needs and Disability) Mediation', href: '/send-mediation' },
-      { title: 'Community Mediation', href: '/Community-Mediation' },
-      { title: 'Family Mediation', href: '/Family-Mediation' },
-      { title: 'Civil and Legal Dispute Mediation', href: '/Civil-and-Legal-Dispute-Mediation' },
+      { title: 'Workplace and Employment Mediation', href: 'services/Workplace-and-Employment-Mediation' },
+      { title: 'Business and Commercial Mediation', href: 'services/Business-and-Commercial-Mediation' },
+      { title: 'SEND (Special Educational Needs and Disability) Mediation', href: 'services/send-mediation' },
+      { title: 'Community and Family Mediation', href: 'services/Community-Family-Mediation' },
+      { title: 'Civil and Legal Dispute Mediation', href: 'services/Civil-and-Legal-Dispute-Mediation' },
     ],
   },
   {
@@ -238,7 +236,7 @@ const Navbar = () => {
                   {serviceSubmenu.map(item => {
                     return (
                       <li className={` ${item.href === pathname ? 'text-secondary' : 'text-[#98A2B3]'} hover:text-secondary duration-200`}>
-                        <Link title="Workplace and Employment Mediation" href={item.href}>
+                        <Link title={item.title} href={`services${item.href}`}>
                           {item.title}
                         </Link>
                       </li>
@@ -250,7 +248,7 @@ const Navbar = () => {
                   {traiingSubmenu.map(item => {
                     return (
                       <li className={` ${item.href === pathname ? 'text-secondary' : 'text-[#98A2B3]'} hover:text-secondary duration-200`}>
-                        <Link title="Workplace and Employment Mediation" href={item.href}>
+                        <Link title="Workplace and Employment Mediation" href={`services${item.href}`}>
                           {item.title}
                         </Link>
                       </li>

@@ -33,7 +33,7 @@ const MediationCalculation = () => {
             <div className="mt-5 space-y-[10px]">
               <div className="grid grid-cols-2 text-[10px] md:text-[20px] items-center gap-2">
                 <p className="text-[#393D4E] ">Type of Dispute</p>
-                <select className="bg-[#F6F1F9] rounded-[10px] px-4 py-3" name="" id="">
+                <select className="bg-white rounded-[10px] px-4 py-3" name="" id="">
                   <option value="workplace">Workplace</option>
                 </select>
               </div>
@@ -41,12 +41,12 @@ const MediationCalculation = () => {
                 <p className="text-[#393D4E] ">Estimated Litigation Duration </p>
                 <div className="grid grid-cols-2 gap-[10px]">
                   <input
-                    className="bg-[#F6F1F9] outline-0 placeholder:text-black placeholder:opacity-100 text-[#000] rounded-[10px] px-4 py-3"
+                    className="bg-white outline-0 placeholder:text-black placeholder:opacity-100 text-[#000] rounded-[10px] px-4 py-3"
                     placeholder="DD"
                     type="text"
                   />
                   <input
-                    className="bg-[#F6F1F9] outline-0 placeholder:text-black placeholder:opacity-100 text-[#000] rounded-[10px] px-4 py-3"
+                    className="bg-white outline-0 placeholder:text-black placeholder:opacity-100 text-[#000] rounded-[10px] px-4 py-3"
                     placeholder="YY"
                     type="text"
                   />
@@ -55,7 +55,7 @@ const MediationCalculation = () => {
               <div className="grid grid-cols-2 text-[10px] md:text-[20px] items-center gap-2">
                 <p className="text-[#393D4E] ">Estimated Litigation Cost (£)</p>
                 <input
-                  className="bg-[#F6F1F9] outline-0 placeholder:text-black placeholder:opacity-100 text-[#000] rounded-[10px] px-4 py-3"
+                  className="bg-white outline-0 placeholder:text-black placeholder:opacity-100 text-[#000] rounded-[10px] px-4 py-3"
                   placeholder="£"
                   type="text"
                 />
@@ -68,7 +68,7 @@ const MediationCalculation = () => {
               <div className="grid text-[10px] md:text-[20px] grid-cols-2 items-center gap-2">
                 <p className="text-[#393D4E] ">Time Saved</p>
                 <input
-                  className="bg-[#F6F1F9] outline-0 placeholder:text-black placeholder:opacity-100 text-[#000] rounded-[10px] px-4 py-3"
+                  className="bg-white outline-0 placeholder:text-black placeholder:opacity-100 text-[#000] rounded-[10px] px-4 py-3"
                   placeholder="0%"
                   type="text"
                 />
@@ -77,12 +77,12 @@ const MediationCalculation = () => {
                 <p className="text-[#393D4E] ">Cost Saved</p>
                 <div className="grid grid-cols-2 gap-[10px]">
                   <input
-                    className="bg-[#F6F1F9] outline-0 placeholder:text-black placeholder:opacity-100 text-[#000] rounded-[10px] px-4 py-3"
+                    className="bg-white outline-0 placeholder:text-black placeholder:opacity-100 text-[#000] rounded-[10px] px-4 py-3"
                     placeholder="£0"
                     type="text"
                   />
                   <input
-                    className="bg-[#F6F1F9] outline-0 placeholder:text-black placeholder:opacity-100 text-[#000] rounded-[10px] px-4 py-3"
+                    className="bg-white outline-0 placeholder:text-black placeholder:opacity-100 text-[#000] rounded-[10px] px-4 py-3"
                     placeholder="0%"
                     type="text"
                   />
@@ -91,7 +91,7 @@ const MediationCalculation = () => {
               <div className="grid grid-cols-2 text-[10px] md:text-[20px] items-center gap-2">
                 <p className="text-[#393D4E] ">Success Rate Comparison</p>
                 <input
-                  className="bg-[#F6F1F9] outline-0 placeholder:text-black placeholder:opacity-100 text-[#000] rounded-[10px] px-4 py-3"
+                  className="bg-white outline-0 placeholder:text-black placeholder:opacity-100 text-[#000] rounded-[10px] px-4 py-3"
                   placeholder="0%"
                   type="text"
                 />

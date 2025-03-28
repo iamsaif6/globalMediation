@@ -5,7 +5,7 @@ import service1 from '/public/service1.jpg';
 import Image from 'next/image';
 import Button from '../shared/Button';
 
-const Tabs = () => {
+const Tabs = ({ title, subtitle }) => {
   const [active, setActive] = useState('Workplace');
   const [contentVisible, setContentVisible] = useState(true);
   const [displayedContent, setDisplayedContent] = useState('Workplace');
@@ -189,13 +189,13 @@ const Tabs = () => {
 
   return (
     <section className="py-16 md:py-[80px]">
-      <div className="px-5 md:px-16 ">
+      <div className="px-5 md:px-16 mb-16 ">
         <SectionHeading title={'Comprehensive workplace and employment mediation services'} />
       </div>
       <div className="mt-[42px] md:mt-[54px]">
         {/* Buttons */}
         <div className="flex flex-col w-full">
-          <div
+          {/* <div
             ref={scrollContainerRef}
             className="flex items-center gap-4 md:gap-6 mb-[42px] md:mb-16 overflow-x-auto py-4 px-2 scrollbar-hide"
             style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
@@ -212,7 +212,7 @@ const Tabs = () => {
                 {tab.label}
               </button>
             ))}
-          </div>
+          </div> */}
 
           <div className=" px-5 md:px-16 ">
             <div className={` transition-opacity duration-300 ${contentVisible ? 'opacity-100' : 'opacity-0'}`}>
