@@ -13,9 +13,9 @@ const Accredited = () => {
   return (
     <section className="py-16 px-5 md:px-16 md:py-[80px] ">
       <SectionHeading
-        title={'Accredited and Trusted by Leading Organisations'}
+        title={'Recognised and Trusted Across the UK'}
         subTitle={
-          'Global Mediation is proud to be accredited by the Civil Mediation Council and the College of Mediators. Our partnerships with local authorities, educational institutions, and community groups demonstrate our commitment to providing exceptional mediation services.'
+          'We are proud to be accredited by the Civil Mediation Council, and trusted by leading organisations across the UK, from public sector bodies to national charities and corporate clients.'
         }
       />
       <div className="grid gap-[30px] mt-8 mb-16  md:my-[80px] grid-cols-2">

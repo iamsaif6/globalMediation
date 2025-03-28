@@ -1,20 +1,17 @@
 import React from 'react';
 import SectionHeading from '../shared/SectionHeading';
 
-const Colabration = () => {
+const WhatGuides = () => {
   return (
-    <section className="py-16 px-5 md:px-16 md:py-[80px] bg-secondary">
+    <section className="py-16 px-5 md:px-16 md:py-[80px] ">
       <SectionHeading
-        title={'How Mediation with Global Supports You'}
-        subTitle={
-          'We are here to guide, not to judge. Mediation is always voluntary and confidential, and designed to give everyone a voice.We do this through:'
-        }
-        light={true}
+        title={'What Guides Our Work'}
+        subTitle={'Ready to take the next step in your mediation career? Applying is simple:'}
       />
       <div className="mt-[80px]">
-        <h4 className="text-2xl font-medium text-center text-white mb-10">Core Values</h4>
+        <h4 className="text-2xl font-medium text-center    mb-10">Core Values</h4>
         <div className="grid grid-cols-3 gap-6 md:gap-8">
-          <div className="p-6 col-span-3   lg:col-span-1 border duration-200 hover:bg-primary hover:border-primary border-[#624A70] rounded-3xl">
+          <div className="p-6 col-span-3   lg:col-span-1 bg-[#F3F1FF] rounded-3xl">
             <div className="mt-3 mb-4">
               <svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43" fill="none">
                 <path
@@ -91,12 +88,10 @@ const Colabration = () => {
                 />
               </svg>
             </div>
-            <p className="font-medium text-white text-2xl">Guided Conversations</p>
-            <p className=" text-lg text-white mb-[25px] mt-9 font-normal">
-              Structured, impartial discussions led by experienced mediators.
-            </p>
+            <p className="font-medium    text-2xl">Guided Conversations</p>
+            <p className=" text-lg    mb-[25px] mt-9 font-normal">Structured, impartial discussions led by experienced mediators.</p>
           </div>
-          <div className="p-6 col-span-3   lg:col-span-1 border duration-200 hover:bg-primary hover:border-primary border-[#624A70] rounded-3xl">
+          <div className="p-6 col-span-3   lg:col-span-1 bg-[#F3F1FF] rounded-3xl">
             <div className="mt-3 mb-4">
               <svg xmlns="http://www.w3.org/2000/svg" width="42" height="43" viewBox="0 0 42 43" fill="none">
                 <g clipPath="url(#clip0_6446_1385)">
@@ -112,12 +107,10 @@ const Colabration = () => {
                 </defs>
               </svg>
             </div>
-            <p className="font-medium text-white text-2xl">Expert-Led Mediation</p>
-            <p className=" text-lg text-white mb-[25px] mt-9 font-normal">
-              Matching people with the right mediator for their needs and situation.
-            </p>
+            <p className="font-medium    text-2xl">Expert-Led Mediation</p>
+            <p className=" text-lg    mb-[25px] mt-9 font-normal">Matching people with the right mediator for their needs and situation.</p>
           </div>
-          <div className="p-6 col-span-3   lg:col-span-1 border duration-200 hover:bg-primary hover:border-primary border-[#624A70] rounded-3xl">
+          <div className="p-6 col-span-3   lg:col-span-1 bg-[#F3F1FF] rounded-3xl">
             <div className="mt-3 mb-4">
               <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42" fill="none">
                 <path
@@ -128,8 +121,8 @@ const Colabration = () => {
                 />
               </svg>
             </div>
-            <p className="font-medium text-white text-2xl">Transformational Training</p>
-            <p className=" text-lg text-white mb-[25px] mt-9 font-normal">
+            <p className="font-medium    text-2xl">Transformational Training</p>
+            <p className=" text-lg    mb-[25px] mt-9 font-normal">
               Helping professionals and organisations learn how to manage conflict constructively.
             </p>
           </div>
@@ -139,4 +132,4 @@ const Colabration = () => {
   );
 };
 
-export default Colabration;
+export default WhatGuides;

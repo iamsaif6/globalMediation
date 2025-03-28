@@ -6,9 +6,9 @@ const TimeLine = () => {
   return (
     <section className="py-16 bg-[#F9F8FF] px-5 md:px-16 md:py-[80px]">
       <SectionHeading
-        title={'Our Journey to Becoming Mediation Experts'}
+        title={'Trusted, Experienced and People-First'}
         subTitle={
-          'Founded to provide a cost-effective and collaborative alternative to litigation, Global Mediation has grown into one of the UK’s most trusted mediation providers. Over the years, we’ve expanded to offer specialised services in workplace mediation, SEND mediation, family disputes, '
+          'Global Mediation is an independent provider of professional mediation services, trusted by individuals, families, businesses and public bodies across the UK.We create safe, impartial spaces for people to communicate, rebuild trust and find lasting outcomes. With over 25 years of experience, our team of accredited mediators and trainers bring deep understanding, sector-specific knowledge and a commitment to fairness, accessibility and respect.'
         }
       />
       <div className="my-[42px] md:my-[80px]">

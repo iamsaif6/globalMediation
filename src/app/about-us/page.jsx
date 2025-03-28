@@ -9,6 +9,9 @@ import Accredited from '@/components/aboutUs/Accredited';
 import JoinGlobalTeam from '@/components/aboutUs/JoinGlobalTeam';
 import FeedbackCarousel from '@/components/home/FeedbackCarousel';
 import CTA from '@/components/shared/CTA';
+import Progress from '@/components/aboutUs/Progress';
+import Origins from '@/components/aboutUs/Origins';
+import WhatGuides from '@/components/aboutUs/WhatGuides';
 
 const AboutUs = () => {
   return (
@@ -26,16 +29,19 @@ const AboutUs = () => {
       />
       <ExperiencedLeader />
       <TimeLine />
+      <Progress />
       <Colabration />
+      <Origins />
+      <WhatGuides />
       <TeamMember />
       <Accredited />
       <JoinGlobalTeam />
       <FeedbackCarousel title={'What Our Clients Say'} />
       <CTA
-        title={'Learn More About Global Mediation'}
+        title={'Let’s find a way forward, together'}
         subTitle={'For more information about our services, team, training programs, or career opportunities, get in touch with us:'}
         Button1Link={'#'}
-        Button1Text={'Contact us today'}
+        Button1Text={'Contact us'}
       />
     </div>
   );

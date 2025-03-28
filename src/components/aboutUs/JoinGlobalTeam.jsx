@@ -16,11 +16,11 @@ const JoinGlobalTeam = () => {
     >
       <div className="grid grid-cols-2 text-white gap-[80px]">
         <div className="col-span-2 lg:col-span-1">
-          <p className="text-base font-medium">Careers</p>
-          <h1 className="text-4xl md:text-5xl font-medium my-4">Join the Global Mediation Team</h1>
+          <p className="text-base  font-medium">Careers</p>
+          <h1 className="text-4xl md:text-5xl font-medium my-4">Careers at Global Mediation</h1>
           <p className="text-base md:text-lg leading-[150%]">
-            Are you passionate about conflict resolution? Global Mediation offers exciting career opportunities for mediators, trainers, and
-            administrative professionals. Join us and contribute to creating peaceful resolutions for individuals and organisations.
+            Want to help people navigate conflict with confidence and compassion? We are always looking for skilled, empathetic
+            professionals to join our growing team of mediators and trainers.
           </p>
         </div>
         <div className="col-span-2 lg:col-span-1">
