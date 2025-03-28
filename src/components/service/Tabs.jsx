@@ -1,7 +1,7 @@
 'use client';
 import React, { useEffect, useState, useRef } from 'react';
 import SectionHeading from '../shared/SectionHeading';
-import service1 from '/public/service1.jpg';
+import service1 from '/public/About Us 2.png';
 import Image from 'next/image';
 import Button from '../shared/Button';
 
