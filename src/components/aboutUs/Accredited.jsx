@@ -76,7 +76,7 @@ const Accredited = () => {
         </div>
       </div>
       {/* Partner */}
-      <div className="flex items-center justify-between flex-wrap gap-3 md:gap-8">
+      {/* <div className="flex items-center justify-between flex-wrap gap-3 md:gap-8">
         <Image alt="Partner" src={image1} />
         <Image alt="Partner" src={image2} />
         <Image alt="Partner" src={image3} />
@@ -84,7 +84,7 @@ const Accredited = () => {
         <Image alt="Partner" src={image5} />
         <Image alt="Partner" src={image1} />
         <Image alt="Partner" src={image2} />
-      </div>
+      </div> */}
     </section>
   );
 };

@@ -156,8 +156,8 @@ const TeamPageCarousel = () => {
                         <div className="w-full h-[290px] bg-gray-600 rounded-xl overflow-hidden">
                           <Image alt={item.name} src={item.img} className="w-full h-full object-cover" />
                         </div>
-                        <h3 className={`text-black' mt-6 md:mt-6 mb-4 text-lg md:text-[20px] font-semibold `}>{item.name}</h3>
-                        <p className={`text-black' leading-[150%] text-sm font-normal `}>{item.description}</p>
+                        <h3 className={`text-black mt-6 md:mt-6 mb-4 text-lg md:text-[20px] font-semibold `}>{item.name}</h3>
+                        <p className={`text-black leading-[150%] text-[14px] font-normal `}>{item.description}</p>
                       </div>
                     ))}
                   </div>
