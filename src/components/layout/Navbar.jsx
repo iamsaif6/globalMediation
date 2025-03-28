@@ -267,7 +267,7 @@ const Navbar = () => {
                 <ul className="space-y-3 text-sm ">
                   {serviceSubmenu.map(item => {
                     return (
-                      <li className={` ${item.href === pathname ? 'text-secondary' : 'text-[#98A2B3]'} hover:text-secondary duration-200`}>
+                      <li className={` ${pathname.includes(item.href) ? 'font-semibold' : ''} hover:text-secondary text-secondary `}>
                         <Link title={item.title} href={`/services${item.href}`}>
                           {item.title}
                         </Link>
@@ -279,7 +279,11 @@ const Navbar = () => {
                 <ul className="space-y-3 text-sm text-[#98A2B3]">
                   {traiingSubmenu.map(item => {
                     return (
-                      <li className={` ${item.href === pathname ? 'text-secondary' : 'text-[#98A2B3]'} hover:text-secondary duration-200`}>
+                      <li
+                        className={` ${
+                          pathname.includes(item.href) ? 'font-semibold' : ''
+                        } hover:text-secondary text-secondary duration-200`}
+                      >
                         <Link title="Workplace and Employment Mediation" href={`/services${item.href}`}>
                           {item.title}
                         </Link>
