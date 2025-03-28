@@ -22,7 +22,7 @@ const TeamMember = () => {
             Our team includes accredited, experienced mediators from a wide range of backgrounds. We are committed to building connection,
             understanding and resolution through every conversation we lead.
           </p>
-          <div>
+          {/* <div>
             <h3 className="md:text-2xl text-lg font-medium text-secondary mt-8 mb-8 ">Key benefits:</h3>
             <ul className="text-[#667085] text-lg space-y-4">
               <li className="flex items-center  gap-[26px] ">
@@ -38,7 +38,7 @@ const TeamMember = () => {
                 <span>Committed to delivering impartial and empathetic support.</span>
               </li>
             </ul>
-          </div>
+          </div> */}
         </div>
       </div>
       <TeamCarousel darkText={true} />

@@ -6,7 +6,7 @@ const WhatGuides = () => {
     <section className="py-16 px-5 md:px-16 md:py-[80px] ">
       <SectionHeading
         title={'What Guides Our Work'}
-        subTitle={'Ready to take the next step in your mediation career? Applying is simple:'}
+        subTitle={'Everything we do is shaped by the values that define our approach, and the way we support people through conflict.'}
       />
       <div className="mt-[80px]">
         <h4 className="text-2xl font-medium text-center    mb-10">Core Values</h4>
