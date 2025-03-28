@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, useScroll } from 'framer-motion';
 import SectionHeading from '../shared/SectionHeading';
 import MediationCard from './MediationCard';
+import { VoluntaryIcon } from './Mediation Icon/Voluntary';
 
 const MediationCards = () => {
   const [activeCardIndex, setActiveCardIndex] = useState(0);
@@ -11,7 +12,7 @@ const MediationCards = () => {
 
   useEffect(() => {
     const checkMobile = () => {
-      setIsMobile(window.innerWidth < 768); // Adjust breakpoint as needed
+      setIsMobile(window.innerWidth < 768);
     };
 
     checkMobile();
@@ -50,6 +51,7 @@ const MediationCards = () => {
     {
       title: 'Voluntary',
       subTitle: 'Mediation is always by mutual agreement, empowering everyone involved to shape their own outcome.',
+      icon: VoluntaryIcon,
     },
     {
       title: 'Confidential',
@@ -76,7 +78,7 @@ const MediationCards = () => {
         />
         <div className="mt-12 md:mt-20 grid grid-cols-1 md:grid-cols-4 gap-6">
           {mediationCards.map((card, index) => (
-            <MediationCard key={index} title={card.title} subTitle={card.subTitle} icon={null} active={false} />
+            <MediationCard key={index} title={card.title} subTitle={card.subTitle} icon={card.icon} active={false} />
           ))}
         </div>
       </section>

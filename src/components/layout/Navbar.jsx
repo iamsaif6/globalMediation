@@ -3,6 +3,7 @@ import Link from 'next/link';
 import React, { useState } from 'react';
 import Button from '../shared/Button';
 import { usePathname } from 'next/navigation';
+import dynamic from 'next/dynamic';
 
 const serviceSubmenu = [
   { title: 'Workplace and Employment Mediation', href: '/Workplace-and-Employment-Mediation' },
@@ -54,6 +55,7 @@ const navLinks = [
 ];
 
 const Navbar = () => {
+  const CrispWithNoSSR = dynamic(() => import('../../components/crisp'));
   const [activeMenu, setActiveMenu] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [mobileSubmenuOpen, setMobileSubmenuOpen] = useState(false);
@@ -98,6 +100,7 @@ const Navbar = () => {
   return (
     <>
       <nav className="fixed z-[99] lg:max-w-[1380px] rounded-[20px] border-[0.5px] border-primary left-1/2 -translate-x-1/2 w-full mx-auto bg-white max-w-[90%] top-5 lg:rounded-4xl overflow-hidden">
+        <CrispWithNoSSR />
         <div className="flex items-center justify-between  lg:pl-9 px-[18px] lg:px-3">
           <div className="flex items-center gap-10 relative">
             <Link href="/" className="flex items-center">
