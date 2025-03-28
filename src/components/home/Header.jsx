@@ -18,10 +18,10 @@ const Header = () => {
     >
       <div className="w-full text-center relative z-10 lg:max-w-[700px] mx-auto">
         <h1 className="font-semibold tracking-[-4%] leading-[120%] text-5xl md:[65px] lg:text-[72px] text-white">
-          Replacing Conflict with Harmony
+          Helping People Move Forward
         </h1>
         <p className="text-white mt-[18px] md:mt-6 mb-[26px] mx-auto md:mb-8 w-[70%] font-normal text-sm md:text-lg">
-          Professional mediation services to foster understanding and resolve disputes with care.
+          Impartial, professional mediation that helps you resolve disputes and rebuild trust, at your pace, on your terms.
         </p>
         <div className="flex md:flex-row flex-col justify-center items-center gap-4">
           <button
