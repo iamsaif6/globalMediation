@@ -1,5 +1,5 @@
 import React from 'react';
-import service1 from '/public/Placeholder Image 3.png';
+import service1 from '/public/progress.png';
 import Image from 'next/image';
 
 const Progress = () => {

@@ -2,6 +2,7 @@ import { Poppins } from 'next/font/google';
 import './globals.css';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/shared/Footer';
+import dynamic from 'next/dynamic';
 
 const poppins = Poppins({
   variable: '--font-poppins',
@@ -15,8 +16,10 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  const CrispWithNoSSR = dynamic(() => import('../components/crisp'));
   return (
     <html lang="en">
+      <CrispWithNoSSR />
       <body id="root" className={`${poppins.variable} antialiased`}>
         <Navbar />
         {children}
