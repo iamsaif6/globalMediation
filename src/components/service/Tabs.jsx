@@ -5,11 +5,12 @@ import service1 from '/public/service1.jpg';
 import Image from 'next/image';
 import Button from '../shared/Button';
 
-const Tabs = ({ title, subtitle }) => {
+const Tabs = ({ title, subtitle, services }) => {
   const [active, setActive] = useState('Workplace');
   const [contentVisible, setContentVisible] = useState(true);
   const [displayedContent, setDisplayedContent] = useState('Workplace');
   const scrollContainerRef = useRef(null);
+  console.log('serives', services);
 
   const tabs = [
     { id: 'Workplace', label: 'Workplace and Employment Disputes' },
@@ -41,11 +42,8 @@ const Tabs = ({ title, subtitle }) => {
         return (
           <div className=" grid grid-cols-2 gap-[80px]">
             <div className="col-span-2 lg:col-span-1">
-              <h1 className="font-medium text-4xl md:text-5xl leading-[120%]">Workplace and Employment Disputes</h1>
-              <p className="text-[#667085] text-base md:text-lg leading-[150%] my-10">
-                Conflicts between colleagues, teams, or management can cause inefficiencies and strain relationships. Our mediators provide
-                a neutral environment to address these issues, rebuild trust, and foster collaboration.
-              </p>
+              <h1 className="font-medium text-4xl md:text-5xl leading-[120%]">{title}</h1>
+              <p className="text-[#667085] capitalize text-base md:text-lg leading-[150%] my-10">{subtitle}</p>
               <div className="relative my-10 block md:hidden  rounded-3xl overflow-hidden">
                 <div className={`from-[rgba(67,0,106,0.1)] to-[#43006aa3] absolute inset-0 bg-gradient-to-b  z-10`}></div>
                 <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={service1} />
@@ -53,7 +51,15 @@ const Tabs = ({ title, subtitle }) => {
               <div>
                 <h3 className="md:text-2xl text-lg font-medium text-secondary mb-8 md:mb-6">Key benefits:</h3>
                 <ul className="text-[#667085] text-lg">
-                  <li className="flex items-center py-6 pl-[7px] gap-[26px] border-t-[0.5px] border-[#DAD3FF]">
+                  {services.map(item => {
+                    return (
+                      <li className="flex items-center py-6 pl-[7px] gap-[26px] border-t-[0.5px] border-[#DAD3FF]">
+                        <span className="inline-block flex-shrink-0 h-[10px] w-[10px] bg-primary rounded-full"></span>
+                        <span>{item}</span>
+                      </li>
+                    );
+                  })}
+                  {/* <li className="flex items-center py-6 pl-[7px] gap-[26px] border-t-[0.5px] border-[#DAD3FF]">
                     <span className="inline-block flex-shrink-0 h-[10px] w-[10px] bg-primary rounded-full"></span>
                     <span>Enhanced workplace morale</span>
                   </li>
@@ -64,7 +70,7 @@ const Tabs = ({ title, subtitle }) => {
                   <li className="flex items-center py-6 pl-[7px] gap-[26px] border-b-[0.5px] border-t-[0.5px] border-[#DAD3FF]">
                     <span className="inline-block flex-shrink-0 h-[10px] w-[10px] bg-primary rounded-full"></span>
                     <span>Strengthen collaboration and communication.</span>
-                  </li>
+                  </li> */}
                 </ul>
                 <div className="mt-9">
                   <Button title={'Resolve Workplace Disputes Today'} href="#" />
@@ -189,7 +195,7 @@ const Tabs = ({ title, subtitle }) => {
 
   return (
     <section className="py-16 md:py-[80px]">
-      <div className="px-5 md:px-16 mb-16 ">
+      <div className="px-5 md:px-16 mb-[80px] ">
         <SectionHeading title={'Comprehensive workplace and employment mediation services'} />
       </div>
       <div className="mt-[42px] md:mt-[54px]">

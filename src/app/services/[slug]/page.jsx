@@ -137,7 +137,7 @@ const Service = ({ params }) => {
         cover={service.image}
       />
       <Introduction title={service.title} subtitle={service.subtitle} />
-      <Tabs title={service.title} subtitle={service.subtitle} />
+      <Tabs title={service.title} subtitle={service.subtitle} services={service.service} />
       <WhyChoose />
       <MediationCalculation />
       <FeedbackCarousel
