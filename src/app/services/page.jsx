@@ -8,7 +8,7 @@ const MainServices = () => {
   return (
     <div>
       <Header
-        cover={heaerImage}
+        cover={null}
         title={'Global Mediation Services'}
         subTitle={'Professional mediation services to resolve disputes with empathy, clarity and care.'}
         Button1Text={'Contact Us Today'}

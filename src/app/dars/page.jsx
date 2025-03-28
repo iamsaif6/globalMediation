@@ -11,7 +11,7 @@ const Dars = () => {
   return (
     <div>
       <Header
-        cover={dars}
+        cover={null}
         title={'Dispute Adjudication and Resolution Service (DARS)'}
         subTitle={'A fair, impartial, and efficient way to resolve disputes when mediation is not suitable or has not led to agreement.'}
       />

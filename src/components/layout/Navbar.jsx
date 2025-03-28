@@ -262,12 +262,14 @@ const Navbar = () => {
               </button>
             </div>
             <div className="col-span-7 leading-[150%] p-8 bg-[#F3F1FF]">
-              <h3 className="text-[20px] font-semibold mb-4">{activeSubmenu == 'Service' ? 'Mediation Services' : 'Mediation Training'}</h3>
+              <h3 className="text-[20px] text-[#330051] font-semibold mb-4">
+                {activeSubmenu == 'Service' ? 'Mediation Services' : 'Mediation Training'}
+              </h3>
               {activeSubmenu == 'Service' ? (
                 <ul className="space-y-3 text-sm ">
                   {serviceSubmenu.map(item => {
                     return (
-                      <li className={` ${pathname.includes(item.href) ? 'font-semibold' : ''} hover:text-secondary text-secondary `}>
+                      <li className={` ${pathname.includes(item.href) ? 'text-secondary' : 'text-[#98A2B3]'} hover:text-secondary `}>
                         <Link title={item.title} href={`/services${item.href}`}>
                           {item.title}
                         </Link>
@@ -281,8 +283,8 @@ const Navbar = () => {
                     return (
                       <li
                         className={` ${
-                          pathname.includes(item.href) ? 'font-semibold' : ''
-                        } hover:text-secondary text-secondary duration-200`}
+                          pathname.includes(item.href) ? 'text-secondary' : 'text-[#98A2B3]'
+                        } hover:text-secondary  duration-200`}
                       >
                         <Link title="Workplace and Employment Mediation" href={`/services${item.href}`}>
                           {item.title}
@@ -324,7 +326,7 @@ const Navbar = () => {
                 <ul className="space-y-3 text-sm ">
                   {resourceSubMenu.map(item => {
                     return (
-                      <li key={item.href} className={` ${pathname.includes(item.href) ? 'font-semibold' : ''} text-secondary `}>
+                      <li key={item.href} className={` ${pathname.includes(item.href) ? ' text-secondary' : 'text-[#98A2B3]'} `}>
                         <Link title={item.title} href={`${item.href}`}>
                           {item.title}
                         </Link>
