@@ -1,11 +1,35 @@
 import React from 'react';
 
-const MediationCard = ({ title, subTitle, icon }) => {
+const MediationCard = ({ title, subTitle, icon, active = false }) => {
   return (
-    <div className="px-[25px] col-span-4 md:col-span-2 lg:col-span-1 hover:border-primary group cursor-pointer duration-300 hover:bg-primary pb-12 pt-[40px] md:pt-16 border border-[#43006A] rounded-3xl">
-      <div className="text-secondary group-hover:text-white">{icon}</div>
-      <h3 className="text-[#393D4E] group-hover:text-white font-semibold text-2xl my-16">{title}</h3>
-      <p className="text-[#9C9C9C] group-hover:text-white font-arial text-base md:text-lg font-normal">{subTitle}</p>
+    <div
+      className={`
+        px-[25px] 
+        col-span-4 md:col-span-2 lg:col-span-1 
+        group cursor-pointer 
+        pb-12 pt-[40px] md:pt-16 
+        border rounded-3xl
+        transition-all duration-300 ease-in-out
+        ${active ? 'border-primary bg-primary text-white  ' : 'border-gray-300 bg-white text-gray-700 '}
+      `}
+    >
+      <div className="text-secondary">{icon}</div>
+      <h3
+        className={`
+          font-semibold text-2xl my-16
+          ${active ? 'text-white' : 'text-gray-700'}
+        `}
+      >
+        {title}
+      </h3>
+      <p
+        className={`
+          font-arial text-base md:text-lg font-normal
+          ${active ? 'text-white/80' : 'text-gray-500'}
+        `}
+      >
+        {subTitle}
+      </p>
     </div>
   );
 };
