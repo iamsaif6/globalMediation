@@ -21,8 +21,8 @@ const MediationCalculation = () => {
       dispute: 'SEND',
       litigationDuration: '',
       litigationCost: '',
-      mediationDuration: '',
-      mediationCost: '',
+      mediationDuration: 1,
+      mediationCost: 2000,
     },
   });
 
@@ -137,8 +137,8 @@ const MediationCalculation = () => {
                   </div>
                 </div>
 
-                {/* Mediation Duration - NEW FIELD */}
-                <div className="grid grid-cols-2 text-[10px] md:text-[20px] items-center gap-2">
+                {/* Mediation Duration  */}
+                <div className="grid hidden grid-cols-2 text-[10px] md:text-[20px] items-center gap-2">
                   <p className="text-[#393D4E]">Estimated Mediation Duration (days)</p>
                   <div>
                     <input
@@ -153,13 +153,15 @@ const MediationCalculation = () => {
                       className="bg-white outline-0 placeholder:text-black placeholder:opacity-100 text-[#000] rounded-[10px] px-4 py-3 w-full"
                       placeholder="Enter number of days"
                       type="text"
+                      value={1}
+                      readOnly
                     />
                     {errors.mediationDuration && <p className="text-red-500 text-xs mt-1">{errors.mediationDuration.message}</p>}
                   </div>
                 </div>
 
-                {/* Mediation Cost - NEW FIELD */}
-                <div className="grid grid-cols-2 text-[10px] md:text-[20px] items-center gap-2">
+                {/* Mediation Cost  */}
+                <div className="grid hidden grid-cols-2 text-[10px] md:text-[20px] items-center gap-2">
                   <p className="text-[#393D4E]">Estimated Mediation Cost (£)</p>
                   <div>
                     <input
@@ -173,6 +175,8 @@ const MediationCalculation = () => {
                       className="bg-white outline-0 placeholder:text-black placeholder:opacity-100 text-[#000] rounded-[10px] px-4 py-3 w-full"
                       placeholder="£"
                       type="text"
+                      value={2000}
+                      readOnly
                     />
                     {errors.mediationCost && <p className="text-red-500 text-xs mt-1">{errors.mediationCost.message}</p>}
                   </div>
