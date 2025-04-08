@@ -56,7 +56,7 @@ const LearnMore = () => {
             </div>
             <Link
               className="text-sm text-secondary md:text-lg duration-300 hover:gap-4 border-b-[2px] pb-1.5 w-max flex items-center gap-2 font-semibold mt-auto"
-              href={'#'}
+              href={'/faq'}
             >
               <span>Read more</span> <ArrowRight strokeWidth={1.5} size={20} />
             </Link>
@@ -110,7 +110,7 @@ const LearnMore = () => {
             </div>
             <Link
               className="text-sm text-secondary md:text-lg duration-300 hover:gap-4 border-b-[2px] pb-1.5 w-max flex items-center gap-2 font-semibold mt-auto"
-              href={'#'}
+              href={'/case-studies'}
             >
               <span>Read more</span> <ArrowRight strokeWidth={1.5} size={20} />
             </Link>
@@ -163,7 +163,7 @@ const LearnMore = () => {
             </div>
             <Link
               className="text-sm text-secondary md:text-lg duration-300 hover:gap-4 border-b-[2px] pb-1.5 w-max flex items-center gap-2 font-semibold mt-auto"
-              href={'#'}
+              href={'/guides'}
             >
               <span>Read more</span> <ArrowRight strokeWidth={1.5} size={20} />
             </Link>
@@ -185,7 +185,7 @@ const LearnMore = () => {
             </div>
             <Link
               className="text-sm text-secondary md:text-lg duration-300 hover:gap-4 border-b-[2px] pb-1.5 w-max flex items-center gap-2 font-semibold mt-auto"
-              href={'#'}
+              href={'/blogs'}
             >
               <span>Read more</span> <ArrowRight strokeWidth={1.5} size={20} />
             </Link>
@@ -193,7 +193,7 @@ const LearnMore = () => {
         </div>
       </div>
       <div className="flex mt-16 items-center justify-center">
-        <Button title={'Visit the Resource Hub'} href="#" />
+        <Button title={'Visit the Resource Hub'} href="/blogs" />
       </div>
     </section>
   );

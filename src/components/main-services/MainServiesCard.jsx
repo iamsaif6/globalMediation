@@ -21,6 +21,7 @@ const services = [
       'Redundancy Mediation',
     ],
     image: service2,
+    link: '/services/Workplace-and-Employment-Mediation',
   },
   {
     title: 'Business and Commercial Mediation',
@@ -36,6 +37,7 @@ const services = [
       'Tax and Accounting Disputes',
     ],
     image: service1,
+    link: '/services/Business-and-Commercial-Mediation',
   },
   {
     title: 'SEND Mediation',
@@ -51,6 +53,7 @@ const services = [
       'Preparing for Adulthood Discussions',
     ],
     image: service3,
+    link: '/services/send-mediation',
   },
   {
     title: 'Community and Family Mediation',
@@ -65,6 +68,7 @@ const services = [
       'Relationship Breakdown Mediation (non-legal)',
     ],
     image: service4,
+    link: '/services/Community-Mediation',
   },
   {
     title: 'CIVIL AND LEGAL DISPUTE MEDIATION',
@@ -81,6 +85,7 @@ const services = [
       'Contract Disputes',
     ],
     image: service6,
+    link: '/services/Civil-and-Legal-Dispute-Mediation',
   },
 ];
 
@@ -115,7 +120,7 @@ const MainServiesCard = () => {
                 </div>
               ))}
               <div className="mt-8">
-                <Button padding="xlarge" href="#" title={'Learn more'} />
+                <Button padding="xlarge" href={item.link} title={'Learn more'} />
               </div>
             </div>
             <div className="col-span-2 order-1 lg:col-span-1 overflow-hidden   max-h-[353px] lg:max-h-[603px] rounded-[40px] relative">

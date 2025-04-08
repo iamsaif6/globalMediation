@@ -213,7 +213,9 @@ const Navbar = () => {
                           xmlns="http://www.w3.org/2000/svg"
                           className={`h-4 ml-1.5 w-4 transition-transform duration-300 ${
                             link.title == 'Resources' && activeMenu2 ? 'rotate-180' : ''
-                          }   ${link.title == 'Services' && activeMenu ? 'rotate-180' : ''}`}
+                          }   ${link.title == 'Services' && activeMenu ? 'rotate-180' : ''}  ${
+                            link.title == 'Training' && activeMenu3 ? 'rotate-180' : ''
+                          }`}
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor"

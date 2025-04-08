@@ -63,7 +63,7 @@ const ServiceCarousel = () => {
                 </p>
                 <Link
                   className="text-sm md:text-lg duration-300 hover:gap-4 border-b-[2px] pb-1.5 w-max flex items-center gap-2 font-semibold mt-auto"
-                  href={'/service'}
+                  href={'/services/Workplace-and-Employment-Mediation'}
                 >
                   <span>Learn more</span> <ArrowRight strokeWidth={1.5} size={20} />
                 </Link>
@@ -89,7 +89,7 @@ const ServiceCarousel = () => {
                 </p>
                 <Link
                   className="text-sm md:text-lg duration-300 hover:gap-4 border-b-[2px] pb-1.5 w-max flex items-center gap-2 font-semibold mt-auto"
-                  href={'/service'}
+                  href={'/services/Business-and-Commercial-Mediation'}
                 >
                   <span>Learn more</span> <ArrowRight strokeWidth={1.5} size={20} />
                 </Link>
@@ -115,7 +115,7 @@ const ServiceCarousel = () => {
                 </p>
                 <Link
                   className="text-sm md:text-lg duration-300 hover:gap-4 border-b-[2px] pb-1.5 w-max flex items-center gap-2 font-semibold mt-auto"
-                  href={'/service'}
+                  href={'/services/send-mediation'}
                 >
                   <span>Learn more</span> <ArrowRight strokeWidth={1.5} size={20} />
                 </Link>
@@ -142,7 +142,7 @@ const ServiceCarousel = () => {
                 </p>
                 <Link
                   className="text-sm md:text-lg duration-300 hover:gap-4 border-b-[2px] pb-1.5 w-max flex items-center gap-2 font-semibold mt-auto"
-                  href={'/service'}
+                  href={'/services/Civil-and-Legal-Dispute-Mediation'}
                 >
                   <span>Learn more</span> <ArrowRight strokeWidth={1.5} size={20} />
                 </Link>
