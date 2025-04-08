@@ -47,11 +47,17 @@ const navLinks = [
   {
     href: '/training',
     title: 'Training',
+    hasMegaMenu: true,
+    megaMenuItems: [
+      { title: 'Foundation Course in Mediation', href: '/Foundation-Course-in-Mediation' },
+      { title: 'SEND Mediation Training Course', href: '/SEND-Mediation-Training-Course' },
+      { title: 'SEND Mediation Professional Practice', href: '/SEND-Mediation-Professional-Practice' },
+    ],
   },
-  {
-    href: '/dars',
-    title: 'DARS',
-  },
+  // {
+  //   href: '/dars',
+  //   title: 'DARS',
+  // },
   {
     href: '/resources',
     title: 'Resources',
@@ -72,22 +78,32 @@ const navLinks = [
 const Navbar = () => {
   const [activeMenu, setActiveMenu] = useState(false);
   const [activeMenu2, setActiveMenu2] = useState(false);
+  const [activeMenu3, setActiveMenu3] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [mobileSubmenuOpen, setMobileSubmenuOpen] = useState(false);
   const [activeSubmenu, setActiveSubmenu] = useState('Service');
   const [activeSubmenu2, setActiveSubmenu2] = useState('Resources');
+  const [activeSubmenu3, setActiveSubmenu3] = useState('Training');
   const [menuHeight, setMenuHeight] = useState(0);
   const [menuHeight2, setMenuHeight2] = useState(0);
+  const [menuHeight3, setMenuHeight3] = useState(0);
   const menuRef = React.useRef(null);
   const menuRef2 = React.useRef(null);
+  const menuRef3 = React.useRef(null);
   const mobileMenuRef = React.useRef(null);
   const pathname = usePathname();
 
-  // Calculate the height of the menu when it's opened
+  React.useEffect(() => {
+    if (menuRef3.current && activeMenu2) {
+      setMenuHeight3(menuRef3.current.scrollHeight);
+    } else {
+      setMenuHeight3(0);
+    }
+  }, [activeMenu3]);
 
   React.useEffect(() => {
     if (menuRef2.current && activeMenu2) {
-      setMenuHeight2(menuRef.current.scrollHeight);
+      setMenuHeight2(menuRef2.current.scrollHeight);
     } else {
       setMenuHeight2(0);
     }
@@ -182,9 +198,14 @@ const Navbar = () => {
                       className={`px-2 py-[20px] lg:py-7 flex items-center ${link?.hasMegaMenu ? 'gap-1' : ''}`}
                       onMouseEnter={() =>
                         (link?.hasMegaMenu && link.title == 'Resources' && setActiveMenu2(true)) ||
-                        (link.title == 'Services' && setActiveMenu(true))
+                        (link.title == 'Services' && setActiveMenu(true)) ||
+                        (link.title == 'Training' && setActiveMenu3(true))
                       }
-                      onMouseLeave={() => (link?.hasMegaMenu && link.title == 'Resources' ? setActiveMenu2(false) : setActiveMenu(false))}
+                      onMouseLeave={() =>
+                        (link.title == 'Resources' && setActiveMenu2(false)) ||
+                        (link.title == 'Services' && setActiveMenu(false)) ||
+                        (link.title == 'Training' && setActiveMenu3(false))
+                      }
                     >
                       {link?.title}
                       {link?.hasMegaMenu && (
@@ -245,7 +266,6 @@ const Navbar = () => {
           <div className="grid grid-cols-12">
             <div className="col-span-5 p-8 space-y-4">
               <button
-                onMouseEnter={() => setActiveSubmenu('Service')}
                 className={` ${
                   activeSubmenu == 'Service' ? 'bg-[#DAD3FF]' : ''
                 } flex cursor-pointer items-start flex-col w-full p-6 rounded-xl text-secondary transition-colors duration-200`}
@@ -253,7 +273,7 @@ const Navbar = () => {
                 <span className="text-lg block font-semibold">Services</span>
                 <span className="text-sm">A Comprehensive Guide to Alternative Dispute Resolution</span>
               </button>
-              <button
+              {/* <button
                 onMouseEnter={() => setActiveSubmenu('Training')}
                 className={` ${
                   activeSubmenu == 'Training' ? 'bg-[#DAD3FF]' : ''
@@ -261,7 +281,7 @@ const Navbar = () => {
               >
                 <span className="text-lg block font-semibold">Training</span>
                 <span className="text-sm">A Comprehensive Guide to Alternative Dispute Resolution</span>
-              </button>
+              </button> */}
             </div>
             <div className="col-span-7 leading-[150%] p-8 bg-[#F3F1FF]">
               <h3 className="text-[20px] text-[#330051] font-semibold mb-4">
@@ -314,7 +334,6 @@ const Navbar = () => {
           <div className="grid grid-cols-12">
             <div className="col-span-5 p-8 space-y-4">
               <button
-                // onMouseEnter={() => setActiveSubmenu('Service')}
                 className={` ${
                   activeSubmenu2 == 'Resources' ? 'bg-[#DAD3FF]' : ''
                 } flex cursor-pointer items-start flex-col w-full p-6 rounded-xl text-secondary transition-colors duration-200`}
@@ -359,6 +378,50 @@ const Navbar = () => {
           </div>
         </div>
 
+        <div
+          ref={menuRef3}
+          onMouseEnter={() => setActiveMenu3(true)}
+          onMouseLeave={() => setActiveMenu3(false)}
+          className={`bg-white z-[99] relative left-0 w-full bg-lavender-50 border-t-[0.5px] border-[#E2DEDE] overflow-hidden transition-all duration-300 ease-in-out`}
+          style={{
+            maxHeight: activeMenu3 ? `${menuHeight3 + 400}px` : '0',
+            opacity: activeMenu3 ? 1 : 0,
+            visibility: activeMenu3 ? 'visible' : 'hidden',
+          }}
+        >
+          <div className="grid grid-cols-12">
+            <div className="col-span-5 p-8 space-y-4">
+              <button
+                className={` ${
+                  activeSubmenu3 == 'Training' ? 'bg-[#DAD3FF]' : ''
+                } flex cursor-pointer items-start flex-col w-full p-6 rounded-xl text-secondary transition-colors duration-200`}
+              >
+                <span className="text-lg block font-semibold">Training</span>
+                <span className="text-sm">A Comprehensive Guide to Alternative Dispute Resolution</span>
+              </button>
+            </div>
+            <div className="col-span-7 leading-[150%] p-8 bg-[#F3F1FF]">
+              <ul className="space-y-3 text-sm ">
+                <ul className="space-y-3 text-sm text-[#98A2B3]">
+                  {traiingSubmenu.map(item => {
+                    return (
+                      <li
+                        key={item.href}
+                        className={` ${item.href === pathname ? 'text-secondary' : 'text-[#98A2B3]'} hover:text-secondary duration-200`}
+                      >
+                        <Link title="Workplace and Employment Mediation" href={`/services${item.href}`}>
+                          {item.title}
+                        </Link>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* For Mobile Menu */}
         <div
           ref={mobileMenuRef}
           style={{
