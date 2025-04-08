@@ -15,7 +15,8 @@ const serviceSubmenu = [
   { title: 'Workplace and Employment Mediation', href: '/Workplace-and-Employment-Mediation' },
   { title: 'Business and Commercial Mediation', href: '/Business-and-Commercial-Mediation' },
   { title: 'SEND (Special Educational Needs and Disability) Mediation', href: '/send-mediation' },
-  { title: 'Community and Family Mediation', href: '/Community-Family-Mediation' },
+  { title: 'Family Mediation', href: '/Family-Mediation' },
+  { title: 'Community Mediation', href: '/Community-Mediation' },
   { title: 'Civil and Legal Dispute Mediation', href: '/Civil-and-Legal-Dispute-Mediation' },
 ];
 
@@ -38,7 +39,8 @@ const navLinks = [
       { title: 'Workplace and Employment Mediation', href: '/Workplace-and-Employment-Mediation' },
       { title: 'Business and Commercial Mediation', href: '/Business-and-Commercial-Mediation' },
       { title: 'SEND (Special Educational Needs and Disability) Mediation', href: '/send-mediation' },
-      { title: 'Community and Family Mediation', href: '/Community-Family-Mediation' },
+      { title: 'Family Mediation', href: '/Family-Mediation' },
+      { title: 'Community Mediation', href: '/Community-Mediation' },
       { title: 'Civil and Legal Dispute Mediation', href: '/Civil-and-Legal-Dispute-Mediation' },
     ],
   },

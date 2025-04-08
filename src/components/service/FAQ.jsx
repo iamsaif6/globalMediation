@@ -4,27 +4,6 @@ import SectionHeading from '../shared/SectionHeading';
 import Link from 'next/link';
 import Button from '../shared/Button';
 
-const faqData = [
-  {
-    key: 1,
-    question: 'How long does workplace mediation take?',
-    answer:
-      'The potential for success is high. Mediation provides an opportunity for cases to be looked at in detail and considered with greater care than usual. Face to face meetings provide the opportunity to clarify positions and understand other points of view; to explore creative and imaginative solutions that may not have been considered previously. It gives parties the opportunity to rebuild trust and re-establish a working relationship.',
-  },
-  {
-    key: 2,
-    question: 'Is workplace mediation legally binding?',
-    answer:
-      'The potential for success is high. Mediation provides an opportunity for cases to be looked at in detail and considered with greater care than usual. Face to face meetings provide the opportunity to clarify positions and understand other points of view; to explore creative and imaginative solutions that may not have been considered previously. It gives parties the opportunity to rebuild trust and re-establish a working relationship.',
-  },
-  {
-    key: 3,
-    question: 'What types of conflicts are best suited for workplace mediation?',
-    answer:
-      'The potential for success is high. Mediation provides an opportunity for cases to be looked at in detail and considered with greater care than usual. Face to face meetings provide the opportunity to clarify positions and understand other points of view; to explore creative and imaginative solutions that may not have been considered previously. It gives parties the opportunity to rebuild trust and re-establish a working relationship.',
-  },
-];
-
 const FaqItem = ({ question, answer, isActive, onClick }) => {
   return (
     <article
@@ -58,14 +37,14 @@ const FaqItem = ({ question, answer, isActive, onClick }) => {
   );
 };
 
-const FAQ = () => {
+const FAQ = ({ faqData, buttonText, buttonLink, title }) => {
   const [activeIndex, setActiveIndex] = useState(1);
   const handleItemClick = index => {
     setActiveIndex(prevIndex => (prevIndex === index ? null : index));
   };
   return (
     <section className="py-16 bg-[#F9F8FF] px-5 items-center md:px-16 md:py-[80px]">
-      <SectionHeading center={true} title={'FAQs about  workplace and employment mediation'} />
+      <SectionHeading center={true} title={title} />
       <div className=" mt-[80px] md:my-10">
         {faqData.map(faq => (
           <FaqItem
@@ -81,7 +60,7 @@ const FAQ = () => {
         <Link href={'#'} className="text-lg mb-[30px]">
           Have More Questions?
         </Link>
-        <Button title={'Contact'} href="#" padding="xxlarge" />
+        <Button title={buttonText} href={buttonLink} padding="xxlarge" />
       </div>
     </section>
   );

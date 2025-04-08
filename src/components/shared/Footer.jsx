@@ -95,7 +95,7 @@ const Footer = () => {
         </div>
         <div className="w-[240px] space-y-[6px] flex flex-col text-sm md:text-2xl font-medium">
           <Link href="/">Home</Link>
-          <Link className="py-[6px] block" href="/service">
+          <Link className="py-[6px] block" href="/services">
             Services
           </Link>
           <Link className="py-[6px] block" href="/training">

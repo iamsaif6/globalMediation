@@ -14,7 +14,7 @@ const Serving = () => {
         center={true}
       />
       <div className="py-[40px] pb-0 md:pb-[40px]">
-        <Image alt="Serving Communities Across the UK" src={serving_image} />
+        <Image className="mx-auto" alt="Serving Communities Across the UK" src={serving_image} />
         {/* <div className="flex items-center justify-center gap-[136px] mb-[54px]">
           <div className="w-[75px] h-[90px] bg-gray-500"></div>
           <div className="w-[75px] h-[90px] bg-gray-500"></div>

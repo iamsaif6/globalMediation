@@ -22,15 +22,15 @@ const WhyChoose = () => {
           <ul className="space-y-6 text-base md:text-[20px]">
             <li className="flex items-center gap-6 py-4 px-[18px] md:px-6 rounded-xl border border-[#624A70]">
               <span className="w-[10px] flex-shrink-0 h-[10px] rounded-full bg-primary block"></span>
-              <p className=" font-normal leading-[140%]">Experienced mediators with a deep understanding of workplace issues.</p>
+              <p className=" font-normal leading-[140%]">Experienced mediators with deep understanding of workplace challenges</p>
             </li>
             <li className="flex items-center gap-6 py-4 px-[18px] md:px-6 rounded-xl border border-[#624A70]">
               <span className="w-[10px] flex-shrink-0 h-[10px] rounded-full bg-primary block"></span>
-              <p className="font-normal leading-[140%]">Tailored solutions to suit your business needs.</p>
+              <p className="font-normal leading-[140%]">Tailored solutions for your organisation’s structure and culture</p>
             </li>
             <li className="flex items-center gap-6 py-4 px-[18px] md:px-6 rounded-xl border border-[#624A70]">
               <span className="w-[10px] flex-shrink-0 h-[10px] rounded-full bg-primary block"></span>
-              <p className=" font-normal leading-[140%]">A proven track record of successful outcomes.</p>
+              <p className=" font-normal leading-[140%]">Proven success resolving workplace disputes across the UK</p>
             </li>
           </ul>
         </div>

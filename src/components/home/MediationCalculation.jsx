@@ -187,7 +187,7 @@ const MediationCalculation = () => {
           <div className="flex items-center justify-center mt-16">
             <button
               type="submit"
-              className="hover:bg-primary hover:text-white hover:border-primary cursor-pointer duration-300 font-normal border border-[#393D4E] text-lg text-[#393D4E] px-9 py-3 rounded-[40px]"
+              className="bg-primary duration-300 hover:scale-105 text-white border-primary cursor-pointer  font-normal border text-lg  px-9 py-3 rounded-[40px]"
             >
               Calculate
             </button>
