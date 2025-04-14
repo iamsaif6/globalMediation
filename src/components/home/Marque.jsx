@@ -12,33 +12,33 @@ import Image from 'next/image';
 
 const Marque = () => {
   return (
-    <div className="py-6">
-      <Marquee autoFill>
-        <div className=" h-24 mx-[30px] lg:mx-[70px] w-24">
+    <div className="py-6 lg:mb-[0]  md:mb-[100px]">
+      <div className="flex items-center flex-wrap justify-center">
+        <div className=" h-24 mx-[30px]   w-24">
           <Image className="w-full h-full object-contain" src={img7} alt="confident" />
         </div>
-        <div className=" h-24 mx-[30px] lg:mx-[70px] w-24">
+        <div className=" h-24 mx-[30px]   w-24">
           <Image className="w-full h-full object-contain" src={img1} alt="Living Wadge Company" />
         </div>
-        <div className="  h-24  mx-[30px] lg:mx-[70px] w-24">
+        <div className="  h-24  mx-[30px]   w-24">
           <Image className="w-full h-full object-contain" src={img2} alt="ISO" />
         </div>
-        <div className="  h-24  mx-[30px] lg:mx-[70px] w-24">
+        <div className="  h-24  mx-[30px]   w-24">
           <Image className="w-full h-full object-contain" src={img3} alt="College of mediator" />
         </div>
-        <div className="  h-24  mx-[30px] lg:mx-[70px] w-24">
+        <div className="  h-24  mx-[30px]   w-24">
           <Image className="w-full h-full object-contain" src={img6} alt="CMC" />
         </div>
-        <div className="  h-24  mx-[30px] lg:mx-[70px] w-24">
+        <div className="  h-24  mx-[30px]   w-24">
           <Image className="w-full h-full object-contain" src={img2} alt="ISO" />
         </div>
-        <div className="  h-24  mx-[30px] lg:mx-[70px] w-24">
+        <div className="  h-24  mx-[30px]   w-24">
           <Image className="w-full h-full object-contain" src={img4} alt="Cyber" />
         </div>
-        <div className="  h-24  mx-[30px] lg:mx-[70px] w-24">
+        <div className="  h-24  mx-[30px]   w-24">
           <Image className="w-full h-full object-contain" src={img5} alt="Cyber" />
         </div>
-      </Marquee>
+      </div>
     </div>
   );
 };
