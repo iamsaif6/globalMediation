@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import SectionHeading from '../shared/SectionHeading';
 import Button from '../shared/Button';
@@ -14,6 +14,7 @@ const MediationCalculation = () => {
   const {
     register,
     handleSubmit,
+    setValue,
     formState: { errors },
     watch,
   } = useForm({
@@ -25,6 +26,19 @@ const MediationCalculation = () => {
       mediationCost: 2000,
     },
   });
+
+  const litigationCost = watch('litigationCost');
+  useEffect(() => {
+    if (litigationCost) {
+      const numericValue = litigationCost.replace(/,/g, '');
+      if (!isNaN(numericValue)) {
+        const formatted = Number(numericValue).toLocaleString('en-UK');
+        if (formatted !== litigationCost) {
+          setValue('litigationCost', formatted);
+        }
+      }
+    }
+  }, [litigationCost, setValue]);
 
   function openModal(data) {
     const litigationCost = parseFloat(data.litigationCost);
@@ -62,8 +76,6 @@ const MediationCalculation = () => {
   function afterCloseModal() {
     closeModal();
   }
-
-  console.log(calculationResults);
 
   return (
     <section className="py-[64px] md:py-[80px] px-5 md:px-[60px]">
@@ -124,10 +136,7 @@ const MediationCalculation = () => {
                     <input
                       {...register('litigationCost', {
                         required: 'Cost is required',
-                        pattern: {
-                          value: /^[0-9]*\.?[0-9]*$/,
-                          message: 'Please enter a valid number',
-                        },
+                        validate: value => /^(\d{1,3}(,\d{3})*|\d+)(\.\d+)?$/.test(value) || 'Please enter a valid number',
                       })}
                       className="bg-white outline-0 placeholder:text-black placeholder:opacity-100 text-[#000] rounded-[10px] px-4 py-3 w-full"
                       placeholder="£"
@@ -138,7 +147,7 @@ const MediationCalculation = () => {
                 </div>
 
                 {/* Mediation Duration  */}
-                <div className="grid hidden grid-cols-2 text-[10px] md:text-[20px] items-center gap-2">
+                <div className=" hidden grid-cols-2 text-[10px] md:text-[20px] items-center gap-2">
                   <p className="text-[#393D4E]">Estimated Mediation Duration (days)</p>
                   <div>
                     <input
@@ -161,7 +170,7 @@ const MediationCalculation = () => {
                 </div>
 
                 {/* Mediation Cost  */}
-                <div className="grid hidden grid-cols-2 text-[10px] md:text-[20px] items-center gap-2">
+                <div className=" hidden grid-cols-2 text-[10px] md:text-[20px] items-center gap-2">
                   <p className="text-[#393D4E]">Estimated Mediation Cost (£)</p>
                   <div>
                     <input
