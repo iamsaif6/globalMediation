@@ -17,7 +17,7 @@ const AboutUs = () => {
   return (
     <div className="bg-[#F9F8FF]">
       <Header
-        title={'About Global Mediation'}
+        title={'Helping People Find a Way Forward , Together'}
         subTitle={
           'Discover how Global Mediation resolves conflicts, empowers individuals, and fosters collaboration through professional mediation services and training.'
         }
