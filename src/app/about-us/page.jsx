@@ -12,6 +12,7 @@ import CTA from '@/components/shared/CTA';
 import Progress from '@/components/aboutUs/Progress';
 import Origins from '@/components/aboutUs/Origins';
 import WhatGuides from '@/components/aboutUs/WhatGuides';
+import headerBG from '/public/aboutus_header.jpg';
 
 const AboutUs = () => {
   return (
@@ -25,7 +26,7 @@ const AboutUs = () => {
         Button1Link={'#'}
         Button2Text={'Learn About Mediation Training'}
         Button2Link="#"
-        cover={null}
+        cover={headerBG}
       />
       <ExperiencedLeader />
       <TimeLine />
