@@ -1,5 +1,5 @@
 import React from 'react';
-import service1 from '/public/About Us 2.png';
+import service1 from '/public/about-2.jpg';
 import Image from 'next/image';
 
 const ExperiencedLeader = () => {
