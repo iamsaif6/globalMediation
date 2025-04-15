@@ -1,9 +1,8 @@
 import React from 'react';
-import service1 from '/public/Main Services Business.png';
-import service2 from '/public/Main Services workplace.png';
-import service3 from '/public/Main Sevices SEND.jpg';
+import service1 from '/public/business.jpeg';
+import service2 from '/public/workspace.jpeg';
+import service3 from '/public/send.jpg';
 import service4 from '/public/Main Services Community.jpg';
-import service5 from '/public/Family Mediation.png';
 import service6 from '/public/main services civil and legal.jpg';
 import Image from 'next/image';
 import Button from '../shared/Button';
@@ -123,12 +122,14 @@ const MainServiesCard = () => {
                 <Button padding="xlarge" href={item.link} title={'Learn more'} />
               </div>
             </div>
-            <div className="col-span-2 order-1 lg:col-span-1 overflow-hidden   max-h-[353px] lg:max-h-[603px] rounded-[40px] relative">
-              <div
-                className={`${
-                  index % 2 != 0 ? 'from-[rgba(0, 164, 159, 0.1)] to-[#00a49ed0]' : 'from-[rgba(67,0,106,0.1)] to-[#43006aa3]'
-                } absolute inset-0 bg-gradient-to-b  z-10`}
-              ></div>
+            <div className="col-span-2 order-1 lg:col-span-1 overflow-hidden   max-h-[353px] lg:max-h-[403px] rounded-[40px] relative">
+              {index == 4 && (
+                <div
+                  className={`${
+                    index % 2 != 0 ? 'from-[rgba(0, 164, 159, 0.1)] to-[#00a49ed0]' : 'from-[rgba(67,0,106,0.1)] to-[#43006aa3]'
+                  } absolute inset-0 bg-gradient-to-b  z-10`}
+                ></div>
+              )}
               {item?.image && <Image className="object-cover w-full h-full relative z-0" alt={item.title} src={item?.image} />}
             </div>
           </div>

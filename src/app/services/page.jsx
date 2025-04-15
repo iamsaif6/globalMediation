@@ -2,13 +2,13 @@ import MainServiesCard from '@/components/main-services/MainServiesCard';
 import CTA from '@/components/shared/CTA';
 import Header from '@/components/shared/Header';
 import React from 'react';
-import heaerImage from '/public/Global Mediation Services (Header).png';
+import heaerImage from '/public/service_header.jpeg';
 
 const MainServices = () => {
   return (
     <div>
       <Header
-        cover={null}
+        cover={heaerImage}
         title={'Global Mediation Services'}
         subTitle={'Professional mediation services to resolve disputes with empathy, clarity and care.'}
         Button1Text={'Contact Us Today'}
