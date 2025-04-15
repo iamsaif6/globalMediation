@@ -20,10 +20,16 @@ const serviceSubmenu = [
   { title: 'Civil and Legal Dispute Mediation', href: '/Civil-and-Legal-Dispute-Mediation' },
 ];
 
+// const traiingSubmenu = [
+//   { title: 'Foundation Course in Mediation', href: '/Foundation-Course-in-Mediation' },
+//   { title: 'SEND Mediation Training Course', href: '/SEND-Mediation-Training-Course' },
+//   { title: 'SEND Mediation Professional Practice', href: '/SEND-Mediation-Professional-Practice' },
+// ];
+
 const traiingSubmenu = [
-  { title: 'Foundation Course in Mediation', href: '/Foundation-Course-in-Mediation' },
-  { title: 'SEND Mediation Training Course', href: '/SEND-Mediation-Training-Course' },
-  { title: 'SEND Mediation Professional Practice', href: '/SEND-Mediation-Professional-Practice' },
+  { title: 'Foundation Course in Mediation', href: '/training' },
+  { title: 'SEND Mediation Training Course', href: '/training' },
+  { title: 'SEND Mediation Professional Practice', href: '/training' },
 ];
 
 const navLinks = [
@@ -368,7 +374,7 @@ const Navbar = () => {
                         key={item.href}
                         className={` ${item.href === pathname ? 'text-secondary' : 'text-[#98A2B3]'} hover:text-secondary duration-200`}
                       >
-                        <Link title="Workplace and Employment Mediation" href={`/services${item.href}`}>
+                        <Link title="Workplace and Employment Mediation" href={`${item.href}`}>
                           {item.title}
                         </Link>
                       </li>
@@ -411,7 +417,7 @@ const Navbar = () => {
                         key={item.href}
                         className={` ${item.href === pathname ? 'text-secondary' : 'text-[#98A2B3]'} hover:text-secondary duration-200`}
                       >
-                        <Link title="Workplace and Employment Mediation" href={`/services${item.href}`}>
+                        <Link title="Workplace and Employment Mediation" href={`${item.href}`}>
                           {item.title}
                         </Link>
                       </li>
