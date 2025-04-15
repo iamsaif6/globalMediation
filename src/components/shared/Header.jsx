@@ -10,7 +10,7 @@ const Header = ({ title, subTitle, Button1Text, Button1Link = '#', Button2Text, 
         }'), linear-gradient(to right, rgba(62,0,101,0.60) 1.68%, rgba(62,0,101,0.15) 69.4%)`,
         backgroundBlendMode: 'overlay',
         backgroundSize: 'cover',
-        backgroundPosition: 'center',
+        backgroundPosition: 'top center',
       }}
       className=" pt-[187px] h-screen relative md:pt-[238px] pb-[176px] md:pb-[203px] px-5 md:px-[60px]"
     >
