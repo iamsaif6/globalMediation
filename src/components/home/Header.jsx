@@ -7,10 +7,9 @@ const Header = () => {
     <header
       style={{
         backgroundImage: `linear-gradient(to bottom, rgba(62, 0, 101, 0.80) 15.68%, rgba(62, 0, 101, 0.15) 69.4%), url('/home_header.jpeg')`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
       }}
-      className="pt-[187px] relative md:pt-[238px] pb-[176px] md:pb-[203px] px-5 md:px-[60px]"
+      className="pt-[187px] bg-cover bg-top relative md:pt-[238px] pb-[176px] md:pb-[203px] px-5 md:px-[60px]"
     >
       <div className="w-full text-left relative z-10 lg:max-w-[700px] mr-auto">
         <h1 className="font-semibold tracking-[-4%] leading-[120%] text-5xl md:[65px] lg:text-[72px] text-white">
