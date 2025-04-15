@@ -7,7 +7,7 @@ const Origins = () => {
         <h1 className="leading-[120%] z-20  font-medium text-4xl md:text-4xl lg:text-5xl">The Origins of Global Mediation</h1>
       </div>
       <div className="col-span-2 lg:col-span-1 mt-[0px] lg:mt-[200px]">
-        <p className="leading-[150%] text-base">
+        <p className="leading-[150%] text-bas relative z-40">
           Founded by barrister and mediator Adam Gersch, Global Mediation began with a simple idea: that people deserve better ways to
           resolve conflict. Over two decades later, we have grown into a national team working across sectors, from education to healthcare,
           workplaces to families, still driven by that same purpose.
@@ -15,7 +15,7 @@ const Origins = () => {
       </div>
 
       <svg
-        className="z-0 absolute hidden lg:block -translate-y-full md:-translate-y-0 bottom-5 md:top-2 -rotate-6 md:bottom-auto left-[18%]"
+        className="z-0 rotate-45 absolute hidden lg:block -translate-y-full md:-translate-y-0 bottom-5 md:top-2  md:bottom-auto left-[18%]"
         xmlns="http://www.w3.org/2000/svg"
         width="230"
         height="248"
@@ -28,7 +28,7 @@ const Origins = () => {
         />
       </svg>
       <svg
-        className=" absolute hidden lg:block -rotate-6 z-0 -bottom-5 translate-x-full left-[15%]"
+        className=" absolute hidden lg:block rotate-45 z-0 -bottom-5 translate-x-full left-[15%]"
         xmlns="http://www.w3.org/2000/svg"
         width="230"
         height="248"
