@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header
       style={{
-        backgroundImage: `linear-gradient(to right, rgba(62, 0, 101, 1.80) 5.68%, rgba(191, 159, 174, 0.286) 79.4%), url('/home_header.jpeg')`,
+        backgroundImage: ` url('/image.jpg')`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
         backgroundPosition: 'top center',

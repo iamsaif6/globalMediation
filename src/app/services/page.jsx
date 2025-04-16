@@ -17,11 +17,11 @@ const MainServices = () => {
         }}
         className=" pt-[187px] h-screen relative md:pt-[238px] pb-[176px] md:pb-[203px] px-5 md:px-[60px]"
       >
-        <div className="w-full relative z-10 lg:max-w-[80%]">
-          <h1 className="font-semibold tracking-[-4%] leading-[120%] text-5xl md:[55px] lg:text-[65px] text-white">
+        <div className="w-full relative z-10 lg:max-w-[1318px] mx-auto">
+          <h1 className="font-semibold tracking-[-4%] max-w-[800px] leading-[120%] text-5xl md:[55px] lg:text-[65px] text-white">
             Global Mediation Services
           </h1>
-          <p className="text-white mt-[18px] md:mt-6 mb-[26px] md:mb-8 w-[70%] font-normal text-sm md:text-lg">
+          <p className="text-white max-w-[700px] mt-[18px] md:mt-6 mb-[26px] md:mb-8 w-[70%] font-normal text-sm md:text-lg">
             Professional mediation services to resolve disputes with empathy, clarity and care.
           </p>
           <div className="flex md:flex-row flex-col items-center gap-4">

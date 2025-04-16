@@ -23,9 +23,9 @@ const Header = ({ title, subTitle, Button1Text, Button1Link = '#', Button2Text, 
           <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-[rgba(62,0,101,0.80)] via-[rgba(62,0,101,0.4)] to-[rgba(62,0,101,0.15)] z-10"></div>
         </div>
       )}
-      <div className="w-full relative z-10 lg:max-w-[80%]">
-        <h1 className="font-semibold tracking-[-4%] leading-[120%] text-5xl md:[55px] lg:text-[65px] text-white">{title}</h1>
-        <p className="text-white mt-[18px] md:mt-6 mb-[26px] md:mb-8 w-[70%] font-normal text-sm md:text-lg">{subTitle}</p>
+      <div className="w-full relative z-10 lg:max-w-[1318px] mx-auto">
+        <h1 className="font-semibold tracking-[-4%] max-w-[900px] leading-[120%] text-5xl md:[55px] lg:text-[65px] text-white">{title}</h1>
+        <p className="text-white mt-[18px] max-w-[700px] md:mt-6 mb-[26px] md:mb-8 w-[70%] font-normal text-sm md:text-lg">{subTitle}</p>
         <div className="flex md:flex-row flex-col items-center gap-4">
           {Button1Text && (
             <button
