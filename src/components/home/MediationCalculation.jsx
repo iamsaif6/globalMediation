@@ -53,7 +53,7 @@ const MediationCalculation = () => {
     setCalculationResults({
       costSavings: {
         percentage: costSavingsPercentage,
-        range: `£ ${costSavingsAmount}`,
+        range: `${costSavingsAmount}`,
       },
       timeSavings: {
         percentage: timeSavingsPercentage,
@@ -227,42 +227,42 @@ const MediationCalculation = () => {
           {calculationResults && (
             <div>
               <div className="mt-8">
-                <h2 className="text-[#393D4E] font-medium md:font-semibold text-2xl md:text-[32px] mb-[53px] text-center">
+                <h2 className=" font-medium md:font-semibold text-2xl md:text-[32px] mb-[53px] text-center">
                   Based on your inputs, mediation could save you:
                 </h2>
                 <div className="grid grid-cols-3 gap-7.5 leading-[140%]">
-                  <div className="bg-[#EAE8FE] col-span-3 lg:col-span-1 flex flex-col gap-[30px] justify-between text-secondary rounded-[20px] px-7 md:px-[35px] pt-[22px] pb-[42px]">
-                    <h3 className="leading-[140%] flex items-center gap-2.5 text-[42px] md:text-[54px] font-semibold">
-                      {calculationResults.costSavings.percentage.toFixed(2)}%{' '}
-                      <span className="font-semibold text-base md:text-[20px]">in cost</span>
+                  <div className="bg-[#EAE8FE] text-center col-span-3 lg:col-span-1 flex flex-col gap-[30px] justify-between  rounded-[20px] px-7 md:px-[35px] pt-[22px] pb-[42px]">
+                    <h3 className="leading-[140%] flex items-center gap-2.5 text-[38px] md:text-[45px] font-semibold">
+                      {calculationResults.costSavings.percentage.toFixed(2)}% <span className="font-semibold text-base">in cost</span>
                     </h3>
-                    <p className="text-[20px] md:text-2xl font-semibold">
-                      Potential savings: <br />
-                      {calculationResults.costSavings.range}
+                    <p className="text-[20px] md:text-xl font-semibold">
+                      Potential savings: £ {Number(calculationResults.costSavings.range).toLocaleString()}
                     </p>
+                    <p>{calculationResults.costSavings.percentage.toFixed(2)}% in cost savings</p>
                   </div>
-                  <div className="bg-[#EAE8FE] col-span-3 lg:col-span-1 flex flex-col gap-[30px] justify-between text-secondary rounded-[20px] px-7 md:px-[35px] pt-[22px] pb-[42px]">
-                    <h3 className="leading-[140%] flex flex-col gap-2.5 text-[42px] md:text-[54px] font-semibold">
+                  <div className="bg-[#EAE8FE] col-span-3 text-center lg:col-span-1 flex flex-col gap-[30px] justify-between  rounded-[20px] px-7 md:px-[35px] pt-[22px] pb-[42px]">
+                    <h3 className="leading-[140%] flex flex-col gap-2.5  text-[38px] md:text-[45px] font-semibold">
                       {calculationResults.timeSavings.percentage.toFixed(2)}%
-                      <span className="font-semibold leading-0 text-base md:text-[20px]">of your time</span>
+                      <span className="font-semibold leading-0 text-base ">of your time</span>
                     </h3>
                     <p className="text-[20px] leading-[140%] font-semibold">
                       Resolving your dispute in just {calculationResults.timeSavings.newDuration} days instead of{' '}
                       {calculationResults.timeSavings.originalDuration} days
                     </p>
                   </div>
-                  <div className="bg-[#EAE8FE] col-span-3 lg:col-span-1 flex items-center p-[29px] md:p-[37px] flex-col gap-[30px] justify-between text-secondary rounded-[20px] p">
+                  <div className="bg-[#EAE8FE] col-span-3 lg:col-span-1 flex items-center p-[29px] md:p-[37px] flex-col gap-[30px] justify-between  rounded-[20px]">
                     <h3 className="font-semibold flex items-center gap-6 md:gap-2">
-                      <span className="text-sm md:text-lg">Mediation</span>
-                      <span className="text-4xl md:text-5xl inline-block">{calculationResults.successRates.mediation}%</span>
-                      <span className="text-xs md:text-base font-normal">success Rate</span>
+                      <span className="text-sm">Mediation</span>
+                      <span className="text-[38px] md:text-[45px] inline-block">{calculationResults.successRates.mediation}%</span>
+                      <span className="text-xs  font-normal">Success Rate</span>
                     </h3>
-                    <p className="font-semibold text-[20px] md:text-2xl text-secondary">VS</p>
+                    <p className="font-semibold text-[20px] md:text-2xl ">VS</p>
                     <h3 className="font-semibold flex items-center gap-6 md:gap-2">
-                      <span className="text-sm md:text-lg">Litigation</span>
+                      <span className="text-sm ">Litigation</span>
                       <span className="text-4xl md:text-5xl inline-block">{calculationResults.successRates.litigation}%</span>
-                      <span className="text-xs md:text-base font-normal">success Rate</span>
+                      <span className="text-xs  font-normal">Success Rate</span>
                     </h3>
+                    <p>36% success rate increase</p>
                   </div>
                 </div>
               </div>

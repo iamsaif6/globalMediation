@@ -148,7 +148,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="fixed z-[99] lg:max-w-[1380px] rounded-[20px] border-[0.5px] border-primary left-1/2 -translate-x-1/2 w-full mx-auto bg-white max-w-[90%] top-5 lg:rounded-4xl overflow-hidden">
+      <nav className="fixed z-[99] lg:max-w-[1318px] rounded-[20px] border-[0.5px] border-primary left-1/2 -translate-x-1/2 w-full mx-auto bg-white max-w-[90%] top-5 lg:rounded-4xl overflow-hidden">
         <div className="flex items-center justify-between  lg:pl-9 px-[18px] lg:px-3">
           <div className="flex items-center gap-10 relative">
             <Link href="/" className="flex items-center">
@@ -237,7 +237,13 @@ const Navbar = () => {
           </div>
           <div className="flex items-center">
             <div className="hidden lg:block">
-              <Button href="/contact-us" title="Contact Us" />
+              <button
+                className={`bg-primary border leading-[140%] border-primary font-medium text-lg text-[#FCFCFD] px-[42px] py-3 rounded-[40px]`}
+              >
+                <Link className="w-full" href="/contact-us">
+                  Contact Us
+                </Link>
+              </button>
             </div>
             <button
               className="lg:hidden  cursor-pointer flex items-center justify-center w-12 h-12 focus:outline-none"
