@@ -6,7 +6,7 @@ import FaqTrainning from '@/components/trainning/FaqTrainning';
 import Introduction from '@/components/trainning/Introduction';
 import WhyTrain from '@/components/trainning/WhyTrain';
 import React from 'react';
-import banner from '/public/mediation_hero.jpeg';
+import banner from '/public/trainning_banner.jpeg';
 
 const Training = () => {
   return (
