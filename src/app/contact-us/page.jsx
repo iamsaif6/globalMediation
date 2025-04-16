@@ -13,7 +13,7 @@ const ContactUs = () => {
       <div className="grid  grid-cols-12 gap-6 py-16 px-5 md:px-16 md:py-[80px]">
         <div className="col-span-12 lg:col-span-7">
           <div className="mb-[100px]">
-            <h1 className="text-7xl font-bold mb-4">Contact Us</h1>
+            <h1 className="text-6xl font-semibold mb-4">Contact Us</h1>
             <p className="text-lg opacity-70">Direct users to reach out for consultations or general inquiries</p>
             <div className="my-8 text-base">
               <a className=" my-2 block " href="mailto:sen@globalmediaiton.co.uk">
