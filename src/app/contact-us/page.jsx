@@ -19,8 +19,8 @@ const ContactUs = () => {
               <a className=" my-2 block " href="mailto:sen@globalmediaiton.co.uk">
                 sen@globalmediaiton.co.uk
               </a>
-              <a className="my-2 block " href="tel:+1 (555) 000-0000">
-                +1 (555) 000-0000
+              <a className="my-2 block " href="tel:020 8441 1355">
+                020 8441 1355
               </a>
               <a target="_blank" className="my-2 block " href="http://www.globalmediation.co.uk">
                 www.globalmediation.co.uk
