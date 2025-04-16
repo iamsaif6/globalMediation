@@ -3,7 +3,7 @@ import service1 from '/public/business.jpeg';
 import service2 from '/public/workspace.jpeg';
 import service3 from '/public/send.jpg';
 import service4 from '/public/Main Services Community.jpg';
-import service6 from '/public/main services civil and legal.jpg';
+import service6 from '/public/civil.jpg';
 import Image from 'next/image';
 import Button from '../shared/Button';
 
