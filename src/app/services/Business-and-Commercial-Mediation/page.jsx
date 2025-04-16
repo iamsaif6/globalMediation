@@ -23,7 +23,13 @@ const item = {
 const page = () => {
   return (
     <div>
-      <Header title={'Business and Commercial Mediation'} />
+      <Header
+        Button1Text={'Book a mediation session'}
+        Button1Link="/contact-us"
+        Button2Text={'Book a Mediation Session'}
+        Button2Link="/contact-us"
+        title={'Business and Commercial Mediation'}
+      />
       <div className={` py-16 md:py-[80px] px-5 md:px-[60px]`}>
         <h1 className="w-full md:max-w-[600px] mb-10 font-medium text-4xl md:text-5xl leading-[120%] ">{item.title}</h1>
         <p className="mb-[32px] md:mb-[60px]">{item.subtitle}</p>

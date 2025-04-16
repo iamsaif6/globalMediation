@@ -6,6 +6,7 @@ import FaqTrainning from '@/components/trainning/FaqTrainning';
 import Introduction from '@/components/trainning/Introduction';
 import WhyTrain from '@/components/trainning/WhyTrain';
 import React from 'react';
+import banner from '/public/mediation_hero.jpeg';
 
 const Training = () => {
   return (
@@ -19,6 +20,7 @@ const Training = () => {
         Button1Link="#"
         Button2Text={'Contact Us for Upcoming Course Dates'}
         Button2Link="/contact-us"
+        cover={banner}
       />
       <Introduction />
       {/* Explore */}

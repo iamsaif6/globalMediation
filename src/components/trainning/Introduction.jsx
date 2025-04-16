@@ -8,7 +8,7 @@ const Introduction = () => {
     <section>
       <div className=" py-16 px-5 md:px-16 md:py-[80px] grid grid-cols-2 gap-[80px]">
         <div className="relative mx-auto w-full lg:max-w-auto max-w-[600px] hidden md:block col-span-2 lg:col-span-1 rounded-3xl overflow-hidden">
-          <div className={`from-[rgba(67,0,106,0.1)] to-[#00a49e9b] absolute inset-0 bg-gradient-to-b  z-10`}></div>
+          {/* <div className={`from-[rgba(67,0,106,0.1)] to-[#00a49e9b] absolute inset-0 bg-gradient-to-b  z-10`}></div> */}
           <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={service1} />
         </div>
         <div className="col-span-2 lg:col-span-1">
@@ -19,7 +19,7 @@ const Introduction = () => {
             Delivered by experienced trainers, each course offers expert insight, immersive practice, and tailored support.
           </p>
           <div className="relative my-10 block md:hidden  rounded-3xl overflow-hidden">
-            <div className={`from-[rgba(67,0,106,0.1)] to-[#00a49e9b] absolute inset-0 bg-gradient-to-b  z-10`}></div>
+            {/* <div className={`from-[rgba(67,0,106,0.1)] to-[#00a49e9b] absolute inset-0 bg-gradient-to-b  z-10`}></div> */}
             <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={service1} />
           </div>
           <div>

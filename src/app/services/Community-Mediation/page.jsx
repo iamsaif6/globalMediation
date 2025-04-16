@@ -42,7 +42,7 @@ const page = () => {
         }
         Button1Text={'Speak to a Community Mediator'}
         Button1Link="/contact-us"
-        Button2Text={'Book a Mediation Session]'}
+        Button2Text={'Book a Mediation Session'}
         Button2Link="/contact-us"
         cover={null}
       />

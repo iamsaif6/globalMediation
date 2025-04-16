@@ -13,6 +13,7 @@ import FAQ from '@/components/service/FAQ';
 import CTA from '@/components/shared/CTA';
 import SectionHeading from '@/components/shared/SectionHeading';
 import wayChoose from '/public/Training 1.png';
+import banner from '/public/family-mediation-header.jpeg';
 
 const faqData = [
   {
@@ -44,7 +45,7 @@ const page = () => {
         Button1Link="/contact-us"
         Button2Text={'Book a Confidential Mediation Session'}
         Button2Link="/contact-us"
-        cover={null}
+        cover={banner}
       />
       <Introduction
         title={'of Family Mediation'}

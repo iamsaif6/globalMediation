@@ -94,7 +94,7 @@ const ExploreItem = () => {
             </div>
           </div>
           <div className="relative  hidden md:block col-span-2 lg:col-span-1 rounded-3xl overflow-hidden">
-            <div className={`from-[rgba(0, 164, 159, 0.15)] to-[#00a49e8b] absolute inset-0 bg-gradient-to-b  z-10`}></div>
+            {/* <div className={`from-[rgba(0, 164, 159, 0.15)] to-[#00a49e8b] absolute inset-0 bg-gradient-to-b  z-10`}></div> */}
             <Image width={900} height={900} className="object-cover w-full h-full relative z-0" alt={item.title} src={item.cover.src} />
           </div>
         </div>
