@@ -5,12 +5,18 @@ import Button from '../shared/Button';
 const TimeLine = () => {
   return (
     <section className="py-16 bg-[#F9F8FF] px-5 md:px-16 md:py-[80px]">
-      <SectionHeading
-        title={'Trusted, Experienced and People-First'}
-        subTitle={
-          'Global Mediation is an independent provider of professional mediation services, trusted by individuals, families, businesses and public bodies across the UK.We create safe, impartial spaces for people to communicate, rebuild trust and find lasting outcomes. With over 25 years of experience, our team of accredited mediators and trainers bring deep understanding, sector-specific knowledge and a commitment to fairness, accessibility and respect.'
-        }
-      />
+      <div className={` max-w-[850px] mx-auto text-center  md:text-center`}>
+        <h1 className="font-medium leading-[120%] tracking-[-4%] text-4xl md:text-[40px] lg:text-5xl mb-5 md:mb-6">
+          Trusted, Experienced and <br /> People-First
+        </h1>
+        <p className={`text-[#9C9C9C] text-base md:text-lg font-normal`}>
+          Global Mediation is an independent provider of professional mediation services, trusted by individuals, families, businesses and
+          public bodies across the UK.We create safe, impartial spaces for people to communicate, rebuild trust and find lasting outcomes.
+          With over 25 years of experience, our team of accredited mediators and trainers bring deep understanding, sector-specific
+          knowledge and a commitment to fairness, accessibility and respect.
+        </p>
+      </div>
+
       <div className="my-[42px] md:my-[80px]">
         <h1 className="md:text-center text-secondary text-lg md:text-2xl font-semibold mb-10">Key Milestones</h1>
 

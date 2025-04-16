@@ -12,12 +12,15 @@ import Image from 'next/image';
 const Accredited = () => {
   return (
     <section className="py-16 px-5 md:px-16 md:py-[80px] ">
-      <SectionHeading
-        title={'Recognised and Trusted Across the UK'}
-        subTitle={
-          'We are proud to be accredited by the Civil Mediation Council, and trusted by leading organisations across the UK, from public sector bodies to national charities and corporate clients.'
-        }
-      />
+      <div className={` max-w-[850px] mx-auto text-center  md:text-center`}>
+        <h1 className="font-medium  leading-[120%] tracking-[-4%] text-4xl md:text-[40px] lg:text-5xl mb-5 md:mb-6">
+          Recognised and Trusted <br /> Across the UK
+        </h1>
+        <p className={`text-[#9C9C9C] text-base md:text-lg font-normal`}>
+          We are proud to be accredited by the Civil Mediation Council, and trusted by leading organisations across the UK, from public
+          sector bodies to national charities and corporate clients.
+        </p>
+      </div>
       <div className="grid gap-[30px] mt-8 mb-16  md:my-[80px] grid-cols-2">
         <div className="col-span-2 md:col-span-1">
           <h2 className="text-[20px] md:text-[32px] font-medium mb-6 md:mb-8">Partners Include:</h2>
