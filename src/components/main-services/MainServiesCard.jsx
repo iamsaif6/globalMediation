@@ -102,20 +102,20 @@ const MainServiesCard = () => {
                   key={li}
                   className={`${
                     index % 2 != 0 ? 'hover:bg-[#fff]' : 'hover:bg-[#F3F1FF]'
-                  } border-b-[0.5px] group flex gap-3 items-center justify-between border-[#DAD3FF]  text-lg font-normal p-3 md:p-6`}
+                  } border-b-[0.5px] group flex gap-3 rounded-xl items-center justify-between border-[#DAD3FF]  text-lg font-normal p-3 md:p-6`}
                 >
                   <div className="flex  items-center gap-[26px]">
                     <span className="w-[10px] flex-shrink-0 h-[10px] bg-primary rounded-full inline-block"></span>
                     <p>{li}</p>
                   </div>
-                  <span className="w-8 flex-shrink-0 group-hover:opacity-100 opacity-0 duration-300  h-8 rounded-full bg-secondary  items-center justify-center flex">
+                  {/* <span className="w-8 flex-shrink-0 group-hover:opacity-100 opacity-0 duration-300  h-8 rounded-full bg-secondary  items-center justify-center flex">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                       <path
                         d="M8.00033 2.66675L7.06033 3.60675L10.7803 7.33342H2.66699V8.66675H10.7803L7.06033 12.3934L8.00033 13.3334L13.3337 8.00008L8.00033 2.66675Z"
                         fill="white"
                       />
                     </svg>
-                  </span>
+                  </span> */}
                 </div>
               ))}
               <div className="mt-8">

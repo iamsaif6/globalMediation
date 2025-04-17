@@ -1,11 +1,8 @@
 import Header from '@/components/shared/Header';
 import React from 'react';
-import service1 from '/public/service1.jpg';
 import Button from '@/components/shared/Button';
 import Image from 'next/image';
 import Introduction from '@/components/service/Introduction';
-import Tabs from '@/components/service/Tabs';
-import WhyChoose from '@/components/service/WhyChoose';
 import MediationCalculation from '@/components/home/MediationCalculation';
 import FeedbackCarousel from '@/components/home/FeedbackCarousel';
 import Map from '@/components/service/Map';
@@ -13,7 +10,10 @@ import FAQ from '@/components/service/FAQ';
 import CTA from '@/components/shared/CTA';
 import SectionHeading from '@/components/shared/SectionHeading';
 import wayChoose from '/public/Training 1.png';
-import banner from '/public/family-mediation-header.jpeg';
+import banner from '/public/family-banner.jpg';
+import overview from '/public/family-overview.jpg';
+import dispute from '/public/family-dispute.jpg';
+import works from '/public/family-works.jpg';
 
 const faqData = [
   {
@@ -49,7 +49,7 @@ const page = () => {
       />
       <Introduction
         title={'of Family Mediation'}
-        image={service1}
+        image={overview}
         subtitle={
           'Family mediation provides a safe, structured space for people to talk through difficult issues and reach a positive way forward.Whether you’re navigating separation, working out parenting arrangements or resolving a financial disagreement, we’re here to help.Mediation avoids the stress and cost of going to court, offering families a better way to move forward with dignity, understanding and care.'
         }
@@ -79,7 +79,7 @@ const page = () => {
                     </p> */}
                     <div className="relative my-10 block md:hidden  rounded-3xl overflow-hidden">
                       <div className={`from-[rgba(67,0,106,0.1)] to-[#43006aa3] absolute inset-0 bg-gradient-to-b  z-10`}></div>
-                      <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={service1} />
+                      <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={dispute} />
                     </div>
                     <div>
                       <h3 className="md:text-2xl text-lg font-medium text-secondary mb-8 md:mb-6">
@@ -114,7 +114,7 @@ const page = () => {
                   </div>
                   <div className="relative  max-h-[600px]  hidden lg:block col-span-2 md:col-span-1 rounded-3xl overflow-hidden">
                     <div className={`from-[rgba(0, 164, 159, 0.20)] to-[#006863a3] absolute inset-0 bg-gradient-to-b  z-10`}></div>
-                    <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={service1} />
+                    <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={dispute} />
                   </div>
                 </div>
               </div>
@@ -143,7 +143,7 @@ const page = () => {
                     </p>
                     <div className="relative my-10 block md:hidden  rounded-3xl overflow-hidden">
                       <div className={`from-[rgba(67,0,106,0.1)] to-[#43006aa3] absolute inset-0 bg-gradient-to-b  z-10`}></div>
-                      <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={service1} />
+                      <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={works} />
                     </div>
                     <div>
                       <h3 className="md:text-2xl text-lg font-medium text-secondary mb-8 md:mb-6">The family mediation process:</h3>
@@ -187,7 +187,7 @@ const page = () => {
                   </div>
                   <div className="relative  max-h-[600px]  hidden lg:block col-span-2 md:col-span-1 rounded-3xl overflow-hidden">
                     <div className={`from-[rgba(0, 164, 159, 0.20)] to-[#006863a3] absolute inset-0 bg-gradient-to-b  z-10`}></div>
-                    <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={service1} />
+                    <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={works} />
                   </div>
                 </div>
               </div>

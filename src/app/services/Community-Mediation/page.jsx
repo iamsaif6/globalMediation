@@ -1,11 +1,6 @@
-import Header from '@/components/shared/Header';
 import React from 'react';
-import service1 from '/public/service1.jpg';
-import Button from '@/components/shared/Button';
 import Image from 'next/image';
 import Introduction from '@/components/service/Introduction';
-import Tabs from '@/components/service/Tabs';
-import WhyChoose from '@/components/service/WhyChoose';
 import MediationCalculation from '@/components/home/MediationCalculation';
 import FeedbackCarousel from '@/components/home/FeedbackCarousel';
 import Map from '@/components/service/Map';
@@ -13,6 +8,11 @@ import FAQ from '@/components/service/FAQ';
 import CTA from '@/components/shared/CTA';
 import SectionHeading from '@/components/shared/SectionHeading';
 import wayChoose from '/public/Training 1.png';
+import headerImage from '/public/community-banner.jpg';
+import Link from 'next/link';
+import overview from '/public/community-Overview.jpg';
+import dispute from '/public/community-dispute.jpg';
+import works from '/public/community-works.jpg';
 
 const faqData = [
   {
@@ -35,20 +35,42 @@ const faqData = [
 const page = () => {
   return (
     <div>
-      <Header
-        title={'Community Mediation'}
-        subTitle={
-          'Supportive, impartial mediation to help neighbours and local residents resolve disputes fairly, calmly and constructively — before things escalate.'
-        }
-        Button1Text={'Speak to a Community Mediator'}
-        Button1Link="/contact-us"
-        Button2Text={'Book a Mediation Session'}
-        Button2Link="/contact-us"
-        cover={null}
-      />
+      <header
+        style={{
+          backgroundImage: `url('${headerImage.src}'), linear-gradient(to right, rgba(62,0,101,0.60) 1.68%, rgba(62,0,101,0.15) 69.4%)`,
+          backgroundBlendMode: 'overlay',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center center',
+        }}
+        className=" pt-[187px] h-screen relative md:pt-[238px] pb-[176px] md:pb-[203px] px-5 md:px-[60px]"
+      >
+        <div className="w-full relative z-10 lg:max-w-[1318px] mx-auto">
+          <h1 className="font-semibold tracking-[-4%] max-w-[900px] leading-[120%] text-5xl md:[55px] lg:text-[65px] text-white">
+            Community Mediation
+          </h1>
+          <p className="text-white mt-[18px] max-w-[700px] md:mt-6 mb-[26px] md:mb-8 w-[70%] font-normal text-sm md:text-lg">
+            Supportive, impartial mediation to help neighbours and local residents resolve disputes fairly, calmly and constructively —
+            before things escalate.
+          </p>
+          <div className="flex md:flex-row flex-col items-center gap-4">
+            <button
+              className={`bg-primary border w-full md:w-auto border-primary font-normal text-lg text-[#FCFCFD] px-12 py-3 rounded-[40px]`}
+            >
+              <Link className="w-full" href={'/contact-us'}>
+                Speak to a Community Mediator
+              </Link>
+            </button>
+            <button className=" w-full md:w-auto bg-transparent font-normal border border-white text-lg text-[#FCFCFD] px-[48px] py-3 rounded-[40px] ">
+              <Link className="w-full  " href={'/contact-us'}>
+                Book a Mediation Session
+              </Link>
+            </button>
+          </div>
+        </div>
+      </header>
       <Introduction
         title={'of Community Disputes & Mediation'}
-        image={service1}
+        image={overview}
         subtitle={
           'Disagreements in our communities can have a big impact — on wellbeing, relationships and daily life.Global Mediation provides a calm, neutral space to talk things through and find a positive way forward.Whether you’re dealing with a neighbour issue, noise complaint or local dispute, we’ll support you with care, fairness and respect.'
         }
@@ -72,13 +94,9 @@ const page = () => {
               <div className={` transition-opacity duration-300 `}>
                 <div className=" grid grid-cols-2 gap-[80px]">
                   <div className="col-span-2 lg:col-span-1">
-                    {/* <h1 className="font-medium text-4xl md:text-[42px] leading-[120%]">{title}</h1> */}
-                    {/* <p className="text-[#667085] capitalize text-base md:text-base leading-[180%] my-10">
-                      SEND mediation can help resolve disagreements around:
-                    </p> */}
                     <div className="relative my-10 block md:hidden  rounded-3xl overflow-hidden">
                       <div className={`from-[rgba(67,0,106,0.1)] to-[#43006aa3] absolute inset-0 bg-gradient-to-b  z-10`}></div>
-                      <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={service1} />
+                      <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={dispute} />
                     </div>
                     <div>
                       <h3 className="md:text-2xl text-lg font-medium text-secondary mb-8 md:mb-6">
@@ -106,14 +124,11 @@ const page = () => {
                           <span>Conflicts between tenants and housing services</span>
                         </li>
                       </ul>
-                      {/* <div className="mt-9">
-                        <Button title={'Resolve Workplace Disputes Today'} href="#" />
-                      </div> */}
                     </div>
                   </div>
                   <div className="relative  max-h-[600px]  hidden lg:block col-span-2 md:col-span-1 rounded-3xl overflow-hidden">
                     <div className={`from-[rgba(0, 164, 159, 0.20)] to-[#006863a3] absolute inset-0 bg-gradient-to-b  z-10`}></div>
-                    <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={service1} />
+                    <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={dispute} />
                   </div>
                 </div>
               </div>
@@ -142,7 +157,7 @@ const page = () => {
                     </p>
                     <div className="relative my-10 block md:hidden  rounded-3xl overflow-hidden">
                       <div className={`from-[rgba(67,0,106,0.1)] to-[#43006aa3] absolute inset-0 bg-gradient-to-b  z-10`}></div>
-                      <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={service1} />
+                      <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={works} />
                     </div>
                     <div>
                       <h3 className="md:text-2xl text-lg font-medium text-secondary mb-8 md:mb-6">The process:</h3>
@@ -186,7 +201,7 @@ const page = () => {
                   </div>
                   <div className="relative  max-h-[600px]  hidden lg:block col-span-2 md:col-span-1 rounded-3xl overflow-hidden">
                     <div className={`from-[rgba(0, 164, 159, 0.20)] to-[#006863a3] absolute inset-0 bg-gradient-to-b  z-10`}></div>
-                    <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={service1} />
+                    <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={works} />
                   </div>
                 </div>
               </div>
