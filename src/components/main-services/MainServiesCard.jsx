@@ -1,5 +1,5 @@
 import React from 'react';
-import service1 from '/public/business.jpeg';
+import service1 from '/public/main-service-block-2.jpg';
 import service2 from '/public/workspace.jpeg';
 import service3 from '/public/send.jpg';
 import service4 from '/public/Main Services Community.jpg';
@@ -122,7 +122,7 @@ const MainServiesCard = () => {
                 <Button padding="xlarge" href={item.link} title={'Learn more'} />
               </div>
             </div>
-            <div className="col-span-2 order-1 lg:col-span-1 overflow-hidden   max-h-[353px] lg:max-h-[403px] rounded-[40px] relative">
+            <div className="col-span-2 order-1 lg:col-span-1 overflow-hidden   h-[353px] lg:h-[403px] rounded-[40px] relative">
               {/* {index == 4 && (
                 <div
                   className={`${

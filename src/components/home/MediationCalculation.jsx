@@ -78,7 +78,7 @@ const MediationCalculation = () => {
   }
 
   return (
-    <section className="py-[64px] md:py-[80px] px-5 md:px-[60px]">
+    <section className="py-[64px] md:py-[50px] px-5 md:px-[60px]">
       <SectionHeading
         title={'See How Much Mediation Can Save You'}
         subTitle={'Try our Mediation Savings Calculator to discover how much time and cost you could save compared to going to court.'}

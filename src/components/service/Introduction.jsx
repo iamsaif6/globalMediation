@@ -9,7 +9,7 @@ const Introduction = ({ title, subtitle, image, items }) => {
           <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={image} />
         </div>
         <div className="col-span-2 flex justify-center flex-col lg:col-span-1">
-          <h1 className="font-medium text-4xl md:text-5xl leading-[120%]">Introduction: Overview of {title}</h1>
+          <h1 className="font-medium text-4xl md:text-5xl leading-[120%]">Overview of {title}</h1>
           <p className="text-[#667085  text-base md:text-lg leading-[150%] my-6">{subtitle}</p>
           <div className="relative h-[303px] mb-8 mt-4 lg:h-[403px]  block md:hidden col-span-2 md:col-span-1 rounded-3xl overflow-hidden">
             <Image className="object-cover object-bottom  w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={image} />

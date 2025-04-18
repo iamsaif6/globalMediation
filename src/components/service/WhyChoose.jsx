@@ -5,15 +5,15 @@ import Image from 'next/image';
 const WhyChoose = () => {
   return (
     <section className="py-16 px-5 md:px-16 md:py-[80px] text-white bg-secondary">
-      <h1 className="text-4xl md:text-5xl font-medium text-center max-w-[760px] mx-auto leading-[120%] mb-8 md:mb-[78px]">
+      <h1 className="text-4xl md:text-5xl font-medium text-center max-w-[760px] mx-auto leading-[120%] mb-8 md:mb-[38px]">
         Why Choose Global Mediation for Workplace Conflicts?
       </h1>
-      <p className=" text-lg md:text-[20px] leading-[150%] mb-[56px] md:mb-[78px]">
+      <p className=" text-lg text-center md:text-[20px] leading-[150%] mb-[56px] md:mb-[78px]">
         At Global Mediation, we understand the complexities of workplace dynamics. Our expert mediators bring a wealth of experience to
         address conflicts in a neutral, confidential, and impartial manner. By fostering open communication, we help organisations achieve
         long-term resolutions that strengthen relationships and improve productivity.
       </p>
-      <div className="grid grid-cols-2 gap-8">
+      <div className="grid grid-cols-2 gap-8 items-center">
         <div className="hidden md:block md:col-span-2 lg:col-span-1 rounded-3xl overflow-hidden h-[327px] w-full  lg:max-w-[420px] bg-blue-900">
           <Image alt="Why Choose Global Mediation for Workplace Conflicts" className="object-cover h-full w-full" src={wayChoose} />
         </div>
