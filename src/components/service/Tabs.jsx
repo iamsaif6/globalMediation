@@ -1,11 +1,11 @@
 'use client';
 import React, { useEffect, useState, useRef } from 'react';
 import SectionHeading from '../shared/SectionHeading';
-import service1 from '/public/About Us 2.png';
+import service1 from '/public/workspace-service.jpg';
 import Image from 'next/image';
 import Button from '../shared/Button';
 
-const Tabs = ({ title, subtitle, services }) => {
+const Tabs = ({ title, subtitle, services, image }) => {
   const [active, setActive] = useState('Workplace');
   const [contentVisible, setContentVisible] = useState(true);
   const [displayedContent, setDisplayedContent] = useState('Workplace');
@@ -45,7 +45,7 @@ const Tabs = ({ title, subtitle, services }) => {
               <p className="text-[#667085] capitalize text-base md:text-base leading-[180%] my-10">{subtitle}</p>
               <div className="relative h-[353px] max-w-[600px] mx-auto lg:h-[403px] my-10 block lg:hidden  rounded-3xl overflow-hidden">
                 {/* <div className={`from-[rgba(67,0,106,0.1)] to-[#43006aa3] absolute inset-0 bg-gradient-to-b  z-10`}></div> */}
-                <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={service1} />
+                <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={image} />
               </div>
               <div>
                 <h3 className="md:text-2xl text-lg font-medium text-secondary mb-8 md:mb-6">Key benefits:</h3>
@@ -66,11 +66,7 @@ const Tabs = ({ title, subtitle, services }) => {
             </div>
             <div className="relative h-[303px] lg:h-[403px]  hidden lg:block col-span-2 md:col-span-1 rounded-3xl overflow-hidden">
               {/* <div className={`from-[rgba(0, 164, 159, 0.20)] to-[#006863a3] absolute inset-0 bg-gradient-to-b  z-10`}></div> */}
-              <Image
-                className="w-full h-full object-cover object-bottom relative z-0"
-                alt="Experienced Leader In Mediation"
-                src={service1}
-              />
+              <Image className="w-full h-full object-cover object-bottom relative z-0" alt="Experienced Leader In Mediation" src={image} />
             </div>
           </div>
         );
@@ -78,7 +74,7 @@ const Tabs = ({ title, subtitle, services }) => {
         return (
           <div className=" grid grid-cols-2 gap-[80px]">
             <div className="relative  hidden md:block col-span-2 lg:col-span-1 rounded-3xl overflow-hidden">
-              <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={service1} />
+              <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={image} />
             </div>
             <div className="col-span-2 lg:col-span-1">
               <h1 className="font-medium text-4xl md:text-5xl leading-[120%]">Harassment and Bullying Complaints</h1>
@@ -88,7 +84,7 @@ const Tabs = ({ title, subtitle, services }) => {
               </p>
               <div className="relative my-10 block md:hidden  rounded-3xl overflow-hidden">
                 {/* <div className={`from-[rgba(67,0,106,0.1)] to-[#43006aa3] absolute inset-0 bg-gradient-to-b  z-10`}></div> */}
-                <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={service1} />
+                <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={image} />
               </div>
               <div>
                 <h3 className="md:text-2xl text-lg font-medium text-secondary mb-8 md:mb-6">Key benefits:</h3>

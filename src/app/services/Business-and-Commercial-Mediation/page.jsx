@@ -1,6 +1,6 @@
 import Header from '@/components/shared/Header';
 import React from 'react';
-import service1 from '/public/service2.jpg';
+import service1 from '/public/business-1.jpg';
 import Button from '@/components/shared/Button';
 import Image from 'next/image';
 

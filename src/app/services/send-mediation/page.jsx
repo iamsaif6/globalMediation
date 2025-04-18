@@ -1,6 +1,8 @@
 import Header from '@/components/shared/Header';
 import React from 'react';
-import service1 from '/public/service1.jpg';
+import service1 from '/public/send-1.jpg';
+import send2 from '/public/send-2.jpg';
+import send3 from '/public/send3.jpg';
 import Button from '@/components/shared/Button';
 import Image from 'next/image';
 import Introduction from '@/components/service/Introduction';
@@ -73,7 +75,7 @@ const page = () => {
                 <div className=" grid grid-cols-2 items-center gap-[80px]">
                   <div className="col-span-2 lg:col-span-1">
                     <div className="relative my-10 h-[303px] lg:h-[403px] block md:hidden  rounded-3xl overflow-hidden">
-                      <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={service1} />
+                      <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={send2} />
                     </div>
                     <div>
                       <h3 className="md:text-2xl text-lg font-medium text-secondary mb-8 md:mb-6">
@@ -108,7 +110,7 @@ const page = () => {
                   </div>
                   <div className="relative  h-[303px] lg:h-[403px]  hidden lg:block col-span-2 md:col-span-1 rounded-3xl overflow-hidden">
                     {/* <div className={`from-[rgba(0, 164, 159, 0.20)] to-[#006863a3] absolute inset-0 bg-gradient-to-b  z-10`}></div> */}
-                    <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={service1} />
+                    <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={send2} />
                   </div>
                 </div>
               </div>
@@ -137,7 +139,7 @@ const page = () => {
                     </p>
                     <div className="relative h-[303px] lg:h-[403px] my-10 block md:hidden  rounded-3xl overflow-hidden">
                       {/* <div className={`from-[rgba(67,0,106,0.1)] to-[#43006aa3] absolute inset-0 bg-gradient-to-b  z-10`}></div> */}
-                      <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={service1} />
+                      <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={send3} />
                     </div>
                     <div>
                       <h3 className="md:text-2xl text-lg font-medium text-secondary mb-8 md:mb-6">How SEND mediation works:</h3>
@@ -179,7 +181,7 @@ const page = () => {
                   </div>
                   <div className="relative  h-[303px] lg:h-[403px]  hidden lg:block col-span-2 md:col-span-1 rounded-3xl overflow-hidden">
                     {/* <div className={`from-[rgba(0, 164, 159, 0.20)] to-[#006863a3] absolute inset-0 bg-gradient-to-b  z-10`}></div> */}
-                    <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={service1} />
+                    <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={send3} />
                   </div>
                 </div>
               </div>

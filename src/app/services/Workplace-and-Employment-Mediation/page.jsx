@@ -1,6 +1,5 @@
 import Header from '@/components/shared/Header';
 import React from 'react';
-import service1 from '/public/service1.jpg';
 import Button from '@/components/shared/Button';
 import Image from 'next/image';
 import Introduction from '@/components/service/Introduction';
@@ -11,6 +10,8 @@ import FeedbackCarousel from '@/components/home/FeedbackCarousel';
 import Map from '@/components/service/Map';
 import FAQ from '@/components/service/FAQ';
 import CTA from '@/components/shared/CTA';
+import service1 from '/public/workspace-service.jpg';
+import service2 from '/public/mediation-service-2.jpg';
 
 const faqData = [
   {
@@ -66,6 +67,7 @@ const page = () => {
           'Organisational restructuring disputes',
           'Redundancy-related concerns',
         ]}
+        image={service1}
       />
 
       <Tabs
@@ -78,6 +80,7 @@ const page = () => {
           'Encourages early resolution before escalation',
           'Helps foster respectful and inclusive workplace culture',
         ]}
+        image={service2}
       />
       <WhyChoose />
       <MediationCalculation />

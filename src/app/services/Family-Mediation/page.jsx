@@ -10,7 +10,7 @@ import FAQ from '@/components/service/FAQ';
 import CTA from '@/components/shared/CTA';
 import SectionHeading from '@/components/shared/SectionHeading';
 import wayChoose from '/public/Training 1.png';
-import banner from '/public/family-banner.jpg';
+import banner from '/public/family-banner2.jpg';
 import overview from '/public/family-overview.jpg';
 import dispute from '/public/family-dispute.jpg';
 import works from '/public/family-works.jpg';
