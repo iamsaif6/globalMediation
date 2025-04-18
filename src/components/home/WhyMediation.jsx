@@ -14,7 +14,7 @@ const WhyMediation = () => {
     <section className="py-16 md:py-[80px] mb-16 md:mb-[80px] pr-5 md:pr-16 pl-5 md:pl-[49px] bg-secondary grid grid-cols-2 gap-[90px]">
       <div className="relative col-span-2 lg:col-span-1">
         <svg
-          className=" w-full max-w-[300px] rotate-45 md:max-w-[500px] mx-auto h-full"
+          className=" w-full max-w-[300px] md:max-w-[500px] mx-auto h-full"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 594 610"
           fill="none"
