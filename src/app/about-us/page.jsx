@@ -36,13 +36,13 @@ const AboutUs = () => {
             <button
               className={`bg-primary border w-full md:w-auto border-primary font-normal text-lg text-[#FCFCFD] px-12 py-3 rounded-[40px]`}
             >
-              <Link className="w-full" href={'#'}>
+              <Link className="w-full" href={'/contact-us'}>
                 Contact Us Today
               </Link>
             </button>
 
             <button className=" w-full md:w-auto bg-transparent font-normal border border-white text-lg text-[#FCFCFD] px-[48px] py-3 rounded-[40px] ">
-              <Link className="w-full  " href={'#'}>
+              <Link className="w-full  " href={'/training'}>
                 Learn About Mediation Training
               </Link>
             </button>
@@ -62,7 +62,7 @@ const AboutUs = () => {
       <CTA
         title={'Let’s find a way forward, together'}
         subTitle={'For more information about our services, team, training programs, or career opportunities, get in touch with us:'}
-        Button1Link={'#'}
+        Button1Link={'/contact-us'}
         Button1Text={'Contact us'}
       />
     </div>

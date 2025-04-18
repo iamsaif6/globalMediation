@@ -28,7 +28,7 @@ const Origins = () => {
         />
       </svg>
       <svg
-        className=" absolute hidden lg:block -rotate-[137deg] z-0 -bottom-5 translate-x-full left-[12%]"
+        className=" absolute hidden lg:block rotate-[45deg] z-0 -bottom-5 translate-x-full left-[12%]"
         xmlns="http://www.w3.org/2000/svg"
         width="230"
         height="248"

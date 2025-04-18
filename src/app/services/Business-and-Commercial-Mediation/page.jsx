@@ -58,8 +58,8 @@ const page = () => {
               <Button padding="xlarge" href="#" title={'Learn more'} />
             </div>
           </div>
-          <div className="col-span-2 order-1 lg:col-span-1 overflow-hidden   max-h-[353px] lg:max-h-[603px] rounded-[40px] relative">
-            <div className={`absolute inset-0 bg-gradient-to-b  z-10`}></div>
+          <div className="col-span-2 order-1 lg:col-span-1 overflow-hidden   max-h-[303px] lg:max-h-[403px] rounded-[40px] relative">
+            <div className={`absolute inset-0  z-10`}></div>
             {item?.image && <Image className="object-cover w-full h-full relative z-0" alt={item.title} src={item?.image} />}
           </div>
         </div>

@@ -12,7 +12,7 @@ const TeamMember = () => {
           <button
             className={`bg-primary border border-primary font-normal text-lg text-[#FCFCFD] w-full  md:w-auto px-12 py-3 rounded-[40px]`}
           >
-            <Link className="w-full" href={'#'}>
+            <Link className="w-full" href={'/team'}>
               Meet our team
             </Link>
           </button>

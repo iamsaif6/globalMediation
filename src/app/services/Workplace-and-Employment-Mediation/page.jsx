@@ -41,7 +41,7 @@ const page = () => {
         Button1Text={'Book a mediation session'}
         Button1Link="/contact-us"
         Button2Text={'Learn About Mediation Training'}
-        Button2Link="/about-us"
+        Button2Link="/training"
         cover={null}
       />
       <Introduction
@@ -91,7 +91,7 @@ const page = () => {
         <CTA
           title={'Learn More About Global Mediation'}
           subTitle={'For more information about our services, team, training programs, or career opportunities, get in touch with us:'}
-          Button1Link={'#'}
+          Button1Link={'/contact-us'}
           Button1Text={'Contact us today'}
         />
       </div>

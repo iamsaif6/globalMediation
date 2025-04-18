@@ -18,7 +18,7 @@ const Blog = async () => {
         title={'What is Mediation? '}
         subTitle={'A Comprehensive Guide to Alternative Dispute Resolution'}
         Button1Text={'Learn More'}
-        Button1Link="#"
+        Button1Link="/about-us"
       />
       <Posts articles={articles} />
       <CaseStudy />

@@ -39,11 +39,11 @@ const Tabs = ({ title, subtitle, services }) => {
     switch (tabId) {
       case 'Workplace':
         return (
-          <div className=" grid grid-cols-2 gap-[80px]">
+          <div className=" grid grid-cols-2 items-center gap-[80px]">
             <div className="col-span-2 lg:col-span-1">
               {/* <h1 className="font-medium text-4xl md:text-[42px] leading-[120%]">{title}</h1> */}
               <p className="text-[#667085] capitalize text-base md:text-base leading-[180%] my-10">{subtitle}</p>
-              <div className="relative my-10 block md:hidden  rounded-3xl overflow-hidden">
+              <div className="relative h-[353px] max-w-[600px] mx-auto lg:h-[403px] my-10 block lg:hidden  rounded-3xl overflow-hidden">
                 {/* <div className={`from-[rgba(67,0,106,0.1)] to-[#43006aa3] absolute inset-0 bg-gradient-to-b  z-10`}></div> */}
                 <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={service1} />
               </div>
@@ -64,9 +64,13 @@ const Tabs = ({ title, subtitle, services }) => {
                 </div>
               </div>
             </div>
-            <div className="relative  max-h-[600px]  hidden lg:block col-span-2 md:col-span-1 rounded-3xl overflow-hidden">
+            <div className="relative h-[303px] lg:h-[403px]  hidden lg:block col-span-2 md:col-span-1 rounded-3xl overflow-hidden">
               {/* <div className={`from-[rgba(0, 164, 159, 0.20)] to-[#006863a3] absolute inset-0 bg-gradient-to-b  z-10`}></div> */}
-              <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={service1} />
+              <Image
+                className="w-full h-full object-cover object-bottom relative z-0"
+                alt="Experienced Leader In Mediation"
+                src={service1}
+              />
             </div>
           </div>
         );
@@ -74,7 +78,6 @@ const Tabs = ({ title, subtitle, services }) => {
         return (
           <div className=" grid grid-cols-2 gap-[80px]">
             <div className="relative  hidden md:block col-span-2 lg:col-span-1 rounded-3xl overflow-hidden">
-              {/* <div className={`from-[rgba(0, 164, 159, 0.20)] to-[#006863a3] absolute inset-0 bg-gradient-to-b  z-10`}></div> */}
               <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={service1} />
             </div>
             <div className="col-span-2 lg:col-span-1">
@@ -182,10 +185,10 @@ const Tabs = ({ title, subtitle, services }) => {
 
   return (
     <section className="py-16 md:py-[80px]">
-      <div className="px-5 md:px-16 mb-[120px] ">
+      <div className="px-5 md:px-16 mb-[30px] lg:mb-[120px] ">
         <SectionHeading title={title} />
       </div>
-      <div className="mt-[42px] md:mt-[54px]">
+      <div className="mt-[22px] md:mt-[54px]">
         {/* Buttons */}
         <div className="flex flex-col w-full">
           {/* <div

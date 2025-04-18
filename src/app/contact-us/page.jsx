@@ -30,23 +30,17 @@ const ContactUs = () => {
           <div className="grid grid-cols-3 gap-4 ">
             <div className="col-span-3 lg:col-span-1">
               <h4 className="font-semibold text-[20px] mb-4">Email</h4>
-              <p className="text-[#667085] mb-6 font-normal text-[16px]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in ero.
-              </p>
+              <p className="text-[#667085] mb-6 font-normal text-[16px]">sen@globalmediaiton.co.uk</p>
             </div>
 
             <div className="col-span-3 lg:col-span-1">
               <h4 className="font-semibold text-[20px] mb-4">Phone</h4>
-              <p className="text-[#667085] mb-6 font-normal text-[16px]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in ero.
-              </p>
+              <p className="text-[#667085] mb-6 font-normal text-[16px]">020 8441 1355</p>
             </div>
 
             <div className="col-span-3 lg:col-span-1">
               <h4 className="font-semibold text-[20px] mb-4">Website</h4>
-              <p className="text-[#667085] mb-6 font-normal text-[16px]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in ero.
-              </p>
+              <p className="text-[#667085] mb-6 font-normal text-[16px]">www.globalmediation.co.uk</p>
             </div>
           </div>
         </div>
@@ -121,9 +115,9 @@ const ContactUs = () => {
       <CTA
         title={'Start Your Mediation Training Journey Today'}
         subTitle={'Take the first step toward becoming a qualified mediator or enhancing your existing mediation skills.'}
-        Button1Link={'#'}
+        Button1Link={'/training'}
         Button1Text={'Enrol in a Mediation Training Program Today'}
-        Button2Link={'#'}
+        Button2Link={'/contact-us'}
         Button2Text={'Contact Us for Upcoming Course Dates'}
       />
     </div>

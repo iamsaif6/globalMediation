@@ -6,8 +6,8 @@ import Button from '../shared/Button';
 const Introduction = () => {
   return (
     <section>
-      <div className=" py-16 px-5 md:px-16 md:py-[80px] grid grid-cols-2 gap-[80px]">
-        <div className="relative mx-auto w-full lg:max-w-auto max-w-[600px] hidden md:block col-span-2 lg:col-span-1 rounded-3xl overflow-hidden">
+      <div className=" py-16 px-5 md:px-16 md:py-[80px] items-center grid grid-cols-2 gap-[80px]">
+        <div className="relative mx-auto w-full lg:max-w-auto h-[303px] lg:h-[403px] max-w-[600px] hidden md:block col-span-2 lg:col-span-1 rounded-3xl overflow-hidden">
           {/* <div className={`from-[rgba(67,0,106,0.1)] to-[#00a49e9b] absolute inset-0 bg-gradient-to-b  z-10`}></div> */}
           <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={service1} />
         </div>
@@ -18,7 +18,7 @@ const Introduction = () => {
             designed to give you the practical tools and confidence to mediate with clarity, care and professionalism. <br /> <br />{' '}
             Delivered by experienced trainers, each course offers expert insight, immersive practice, and tailored support.
           </p>
-          <div className="relative my-10 block md:hidden  rounded-3xl overflow-hidden">
+          <div className="relative h-[303px] lg:h-[403px] my-10 block md:hidden  rounded-3xl overflow-hidden">
             {/* <div className={`from-[rgba(67,0,106,0.1)] to-[#00a49e9b] absolute inset-0 bg-gradient-to-b  z-10`}></div> */}
             <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={service1} />
           </div>
@@ -39,7 +39,7 @@ const Introduction = () => {
               </li>
             </ul>
             <div className="mt-6">
-              <Button title={'Start Your Mediation Journey Today'} href="#" />
+              <Button title={'Start Your Mediation Journey Today'} href="/contact-us" />
             </div>
           </div>
         </div>

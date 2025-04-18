@@ -17,7 +17,7 @@ const Training = () => {
           'Explore accredited mediation training programmes designed for aspiring mediators and professionals looking to build their skills in conflict resolution.Our hands-on courses help you grow with confidence, guided by expert trainers and real-world practice.'
         }
         Button1Text={'Enroll in a Mediation Training Program Today'}
-        Button1Link="#"
+        Button1Link="/contact-us"
         Button2Text={'Contact Us for Upcoming Course Dates'}
         Button2Link="/contact-us"
         cover={banner}
