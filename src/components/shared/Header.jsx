@@ -1,19 +1,20 @@
 import React from 'react';
 import Link from 'next/link';
-
+import overlay from '/public/Overlay.png';
+import Image from 'next/image';
+// , linear-gradient(to right, rgba(62,0,101,0.80) 15.68%, rgba(62,0,101,0.15) 69.4%)
 const Header = ({ title, subTitle, Button1Text, Button1Link = '#', Button2Text, Button2Link = '#', cover, isHomePage = false }) => {
   return (
     <header
       style={{
-        backgroundImage: `url('${
-          typeof cover === 'string' ? cover : cover?.src
-        }'), linear-gradient(to right, rgba(62,0,101,0.80) 15.68%, rgba(62,0,101,0.15) 69.4%)`,
+        backgroundImage: `url('${typeof cover === 'string' ? cover : cover?.src}')`,
         backgroundBlendMode: 'overlay',
         backgroundSize: 'cover',
         backgroundPosition: 'top center',
       }}
-      className=" pt-[187px] h-screen relative md:pt-[238px] pb-[176px] md:pb-[203px] px-5 md:px-[60px]"
+      className=" pt-[187px] relative h-screen md:pt-[238px] pb-[176px] md:pb-[203px] px-5 md:px-[60px]"
     >
+      <Image src={overlay} className=" absolute top-0 left-0 w-full h-full object-cover" />
       {isHomePage && (
         <div>
           <video playsInline autoPlay muted loop className="absolute top-0 left-0 w-full h-full object-cover z-0">
