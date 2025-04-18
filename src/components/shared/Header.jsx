@@ -7,7 +7,7 @@ const Header = ({ title, subTitle, Button1Text, Button1Link = '#', Button2Text, 
       style={{
         backgroundImage: `url('${
           typeof cover === 'string' ? cover : cover?.src
-        }'), linear-gradient(to right, rgba(62,0,101,0.60) 1.68%, rgba(62,0,101,0.15) 69.4%)`,
+        }'), linear-gradient(to right, rgba(62,0,101,0.80) 15.68%, rgba(62,0,101,0.15) 69.4%)`,
         backgroundBlendMode: 'overlay',
         backgroundSize: 'cover',
         backgroundPosition: 'top center',

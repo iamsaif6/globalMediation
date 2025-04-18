@@ -6,6 +6,7 @@ import CTA from '@/components/shared/CTA';
 import Header from '@/components/shared/Header';
 import { fetchArticles } from '@/utils/api';
 import React from 'react';
+import banner from '/public/trainning_banner.jpeg';
 
 const Blog = async () => {
   const articles = await fetchArticles();
@@ -19,6 +20,7 @@ const Blog = async () => {
         subTitle={'A Comprehensive Guide to Alternative Dispute Resolution'}
         Button1Text={'Learn More'}
         Button1Link="/about-us"
+        cover={banner}
       />
       <Posts articles={articles} />
       <CaseStudy />
