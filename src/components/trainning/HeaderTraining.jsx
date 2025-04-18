@@ -23,7 +23,7 @@ export const HeaderTraining = () => {
   return (
     <header
       style={{
-        backgroundImage: `url('${banner.src}'), linear-gradient(to right, rgba(62,0,101,0.60) 1.68%, rgba(62,0,101,0.15) 69.4%)`,
+        backgroundImage: `url('${banner.src}'), linear-gradient(to right, rgba(62, 0, 101, 0.9) 1.68%, rgba(62,0,101,0.35) 69.4%)`,
         backgroundBlendMode: 'overlay',
         backgroundSize: 'cover',
         backgroundPosition: 'top center',
