@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
-import service2 from '/public/Training foundation.jpg';
-import service3 from '/public/training send.png';
+import service2 from '/public/training-2.jpg';
+import service3 from '/public/training-3.jpg';
 import service4 from '/public/training send practice day.png';
 import Link from 'next/link';
 

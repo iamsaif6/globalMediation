@@ -1,7 +1,7 @@
 'use client';
 import Image from 'next/image';
 import React, { useState } from 'react';
-import service1 from '/public/Training 1.png';
+import service1 from '/public/training-1.jpg';
 import Button from '../shared/Button';
 import Link from 'next/link';
 import Modal from 'react-modal';
