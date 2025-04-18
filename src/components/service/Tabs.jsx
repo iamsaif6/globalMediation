@@ -44,7 +44,7 @@ const Tabs = ({ title, subtitle, services }) => {
               {/* <h1 className="font-medium text-4xl md:text-[42px] leading-[120%]">{title}</h1> */}
               <p className="text-[#667085] capitalize text-base md:text-base leading-[180%] my-10">{subtitle}</p>
               <div className="relative my-10 block md:hidden  rounded-3xl overflow-hidden">
-                <div className={`from-[rgba(67,0,106,0.1)] to-[#43006aa3] absolute inset-0 bg-gradient-to-b  z-10`}></div>
+                {/* <div className={`from-[rgba(67,0,106,0.1)] to-[#43006aa3] absolute inset-0 bg-gradient-to-b  z-10`}></div> */}
                 <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={service1} />
               </div>
               <div>
@@ -65,7 +65,7 @@ const Tabs = ({ title, subtitle, services }) => {
               </div>
             </div>
             <div className="relative  max-h-[600px]  hidden lg:block col-span-2 md:col-span-1 rounded-3xl overflow-hidden">
-              <div className={`from-[rgba(0, 164, 159, 0.20)] to-[#006863a3] absolute inset-0 bg-gradient-to-b  z-10`}></div>
+              {/* <div className={`from-[rgba(0, 164, 159, 0.20)] to-[#006863a3] absolute inset-0 bg-gradient-to-b  z-10`}></div> */}
               <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={service1} />
             </div>
           </div>
@@ -74,7 +74,7 @@ const Tabs = ({ title, subtitle, services }) => {
         return (
           <div className=" grid grid-cols-2 gap-[80px]">
             <div className="relative  hidden md:block col-span-2 lg:col-span-1 rounded-3xl overflow-hidden">
-              <div className={`from-[rgba(0, 164, 159, 0.20)] to-[#006863a3] absolute inset-0 bg-gradient-to-b  z-10`}></div>
+              {/* <div className={`from-[rgba(0, 164, 159, 0.20)] to-[#006863a3] absolute inset-0 bg-gradient-to-b  z-10`}></div> */}
               <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={service1} />
             </div>
             <div className="col-span-2 lg:col-span-1">
@@ -84,7 +84,7 @@ const Tabs = ({ title, subtitle, services }) => {
                 a neutral environment to address these issues, rebuild trust, and foster collaboration.
               </p>
               <div className="relative my-10 block md:hidden  rounded-3xl overflow-hidden">
-                <div className={`from-[rgba(67,0,106,0.1)] to-[#43006aa3] absolute inset-0 bg-gradient-to-b  z-10`}></div>
+                {/* <div className={`from-[rgba(67,0,106,0.1)] to-[#43006aa3] absolute inset-0 bg-gradient-to-b  z-10`}></div> */}
                 <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={service1} />
               </div>
               <div>

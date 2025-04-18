@@ -6,14 +6,14 @@ const Introduction = ({ title, subtitle, image, items }) => {
     <section>
       <div className=" py-16 px-5 md:px-16 md:py-[80px] items-center grid grid-cols-2 gap-[80px]">
         <div className="relative h-[600px] mx-auto w-full lg:max-w-auto max-w-[600px] hidden md:block col-span-2 lg:col-span-1 rounded-3xl overflow-hidden">
-          <div className={`from-[rgba(67,0,106,0.1)] to-[#43006a8e] absolute inset-0 bg-gradient-to-b  z-10`}></div>
+          {/* <div className={`from-[rgba(67,0,106,0.1)] to-[#43006a8e] absolute inset-0 bg-gradient-to-b  z-10`}></div> */}
           <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={image} />
         </div>
         <div className="col-span-2 flex justify-center flex-col lg:col-span-1">
           <h1 className="font-medium text-4xl md:text-5xl leading-[120%]">Introduction: Overview of {title}</h1>
           <p className="text-[#667085] text-base md:text-lg leading-[150%] my-6">{subtitle}</p>
           <div className="relative my-10 block md:hidden  rounded-3xl overflow-hidden">
-            <div className={`from-[rgba(67,0,106,0.1)] to-[#43006aa3] absolute inset-0 bg-gradient-to-b  z-10`}></div>
+            {/* <div className={`from-[rgba(67,0,106,0.1)] to-[#43006aa3] absolute inset-0 bg-gradient-to-b  z-10`}></div> */}
             <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={image} />
           </div>
           {items && (
