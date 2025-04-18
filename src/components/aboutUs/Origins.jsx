@@ -15,7 +15,7 @@ const Origins = () => {
       </div>
 
       <svg
-        className="z-0 rotate-45 absolute hidden lg:block -translate-y-full md:-translate-y-0 bottom-5 md:top-2  md:bottom-auto left-[18%]"
+        className="z-0  absolute hidden lg:block -translate-y-full md:-translate-y-0 bottom-5 md:top-2  md:bottom-auto left-[18%]"
         xmlns="http://www.w3.org/2000/svg"
         width="230"
         height="248"
@@ -28,7 +28,7 @@ const Origins = () => {
         />
       </svg>
       <svg
-        className=" absolute hidden lg:block rotate-[45deg] z-0 -bottom-5 translate-x-full left-[12%]"
+        className=" absolute hidden lg:block rotate-[180deg] z-0 -bottom-15 translate-x-full left-[8%]"
         xmlns="http://www.w3.org/2000/svg"
         width="230"
         height="248"
