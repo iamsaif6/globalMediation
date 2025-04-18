@@ -6,22 +6,12 @@ import FaqTrainning from '@/components/trainning/FaqTrainning';
 import Introduction from '@/components/trainning/Introduction';
 import WhyTrain from '@/components/trainning/WhyTrain';
 import React from 'react';
-import banner from '/public/trainning_banner.jpeg';
+import { HeaderTraining } from '@/components/trainning/HeaderTraining';
 
 const Training = () => {
   return (
     <div className="bg-[#F9F8FF]">
-      <Header
-        title={'Mediation Training: Learn, Qualify, and Specialise'}
-        subTitle={
-          'Explore accredited mediation training programmes designed for aspiring mediators and professionals looking to build their skills in conflict resolution.Our hands-on courses help you grow with confidence, guided by expert trainers and real-world practice.'
-        }
-        Button1Text={'Enroll in a Mediation Training Program Today'}
-        Button1Link="/contact-us"
-        Button2Text={'Contact Us for Upcoming Course Dates'}
-        Button2Link="/contact-us"
-        cover={banner}
-      />
+      <HeaderTraining />
       <Introduction />
       {/* Explore */}
       <section className="py-16 px-5 md:px-16 md:py-[80px] ">
