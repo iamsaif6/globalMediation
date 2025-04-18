@@ -4,6 +4,8 @@ import banner from '/public/trainning_banner.jpeg';
 import Link from 'next/link';
 import Modal from 'react-modal';
 // Modal.setAppElement('#root');
+import overlay from '/public/Overlay.png';
+import Image from 'next/image';
 
 export const HeaderTraining = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -20,16 +22,19 @@ export const HeaderTraining = () => {
     closeModal();
   }
 
+  // linear-gradient(to right, rgba(62, 0, 101, 0.9) 1.68%, rgba(62,0,101,0.15) 69.4%)
+
   return (
     <header
       style={{
-        backgroundImage: `url('${banner.src}'), linear-gradient(to right, rgba(62, 0, 101, 0.9) 1.68%, rgba(62,0,101,0.15) 69.4%)`,
+        backgroundImage: `url('${banner.src}')`,
         backgroundBlendMode: 'overlay',
         backgroundSize: 'cover',
         backgroundPosition: 'top center',
       }}
       className=" pt-[187px] h-screen relative md:pt-[238px] pb-[176px] md:pb-[203px] px-5 md:px-[60px]"
     >
+      <Image src={overlay} className=" absolute top-0 left-0 w-full h-full object-cover" />
       <div className="w-full relative z-10 lg:max-w-[1318px] mx-auto">
         <h1 className="font-semibold tracking-[-4%] max-w-[900px] leading-[120%] text-5xl md:[55px] lg:text-[65px] text-white">
           Mediation Training: Learn, Qualify, and Specialise
