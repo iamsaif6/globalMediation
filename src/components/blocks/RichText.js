@@ -1,11 +1,11 @@
 import React from 'react';
-import Markdown from 'react-markdown';
-import remarkGfm from 'remark-gfm';
+import ReactMarkdown from 'react-markdown';
+import rehypeRaw from 'rehype-raw';
 
 export function RichText({ content }) {
   return (
     <div className="md:prose-xl leading-[160%] prose max-w-full">
-      <Markdown remarkPlugins={[remarkGfm]}>{content}</Markdown>
+      <ReactMarkdown rehypePlugins={[rehypeRaw]}>{content}</ReactMarkdown>
     </div>
   );
 }

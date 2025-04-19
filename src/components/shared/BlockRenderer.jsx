@@ -13,8 +13,6 @@ import { TwoColumns } from '../blocks/TwoColumns';
 export function BlockRenderer({ block }) {
   if (!block) return null;
 
-  console.log('block', block);
-
   // Check the block type (this depends on your Strapi structure)
   const type = block.__component;
 

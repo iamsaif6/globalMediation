@@ -72,7 +72,7 @@ const SingleBlogPost = async ({ params }) => {
           </ul>
         </div>
         <article className="md:text-lg text-base leading-[150%]">
-          <h1 className="md:text-[40px] text-4xl font-medium md:font-semibold mb-5 md:mb-8">{article.title}</h1>
+          <h2 className="md:text-[40px] text-4xl font-medium md:font-semibold mb-5 md:mb-8">{article.title}</h2>
           <p>{article?.description}</p>
           {article.cover && (
             <figure className="h-[370px] rounded-xl md:h-[630px] py-10 mb-10 ">
@@ -81,7 +81,7 @@ const SingleBlogPost = async ({ params }) => {
                   width={article?.cover.width}
                   height={article?.cover.height}
                   className="w-full rounded-xl h-full max-h-[630px] object-cover"
-                  alt="Demo Image"
+                  alt={article?.cover?.alternativeText}
                   src={`${article?.cover?.formats?.large?.url || article?.cover?.formats?.medium?.url}`}
                 />
               )) ||
@@ -90,7 +90,7 @@ const SingleBlogPost = async ({ params }) => {
                     width={article?.cover.width}
                     height={article?.cover.height}
                     className="w-full rounded-xl h-full max-h-[630px] object-cover"
-                    alt="Demo Image"
+                    alt={article?.cover?.alternativeText}
                     src={`${article?.cover?.formats?.medium?.url}`}
                   />
                 )) ||
@@ -99,7 +99,7 @@ const SingleBlogPost = async ({ params }) => {
                     width={article?.cover.width}
                     height={article?.cover.height}
                     className="w-full rounded-xl h-full max-h-[630px] object-cover"
-                    alt="Demo Image"
+                    alt={article?.cover?.alternativeText}
                     src={`${article?.cover?.formats?.small?.url}`}
                   />
                 ))}
