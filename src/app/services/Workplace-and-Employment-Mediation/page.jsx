@@ -55,7 +55,7 @@ const page = () => {
               {/* <br className="mb-3" /> */}
               Global Mediation provides a supportive and impartial route to resolving these challenges, helping people move forward with
               confidence.
-              {/* <br className="mb-3" /> */}
+              <br className="mb-3" />
               Our workplace mediators work sensitively with everyone involved, creating a safe space for honest conversation, rebuilding
               communication, and reaching outcomes that benefit employees, teams, and organisations.
             </p>
