@@ -11,8 +11,6 @@ import banner from '/public/trainning_banner.jpeg';
 const Blog = async () => {
   const articles = await fetchArticles();
 
-  console.log(articles);
-
   return (
     <div className="">
       <Header

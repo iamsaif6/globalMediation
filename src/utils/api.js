@@ -7,6 +7,8 @@ export async function fetchArticles() {
       next: { revalidate: 300 },
     });
 
+    console.log(response);
+
     if (!response.ok) {
       throw new Error(`Failed to fetch articles: ${response.status}`);
     }
