@@ -3,11 +3,9 @@ const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:1337';
 // Fetch All Article
 export async function fetchArticles() {
   try {
-    const response = await fetch(`${API_URL}/api/articles?populate=*`, {
+    const response = await fetch(`${API_URL}/api/articles?populate=*&pagination[page]=1&pagination[pageSize]=100`, {
       next: { revalidate: 300 },
     });
-
-    console.log(response);
 
     if (!response.ok) {
       throw new Error(`Failed to fetch articles: ${response.status}`);
