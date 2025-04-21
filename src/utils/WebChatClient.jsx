@@ -52,9 +52,10 @@ export default function WebChatClient() {
           border: 'none',
           boxShadow: '0 4px 14px rgba(0,0,0,0.15)',
           cursor: 'pointer',
+          zIndex: '999',
         }}
       >
-        {isChatVisible ? 'Close Chat' : 'Chat'}
+        {isChatVisible ? 'Close' : 'Chat'}
       </button>
     </>
   );
