@@ -125,6 +125,11 @@ const page = () => {
                         </li>
                       </ul>
                     </div>
+                    <button className=" bg-primary  mt-10 w-full md:w-auto font-normal text-lg text-white px-12 py-3 rounded-[40px] ">
+                      <Link className="w-full  " href="/contact-us">
+                        Book Community Mediation
+                      </Link>
+                    </button>
                   </div>
                   <div className="relative  h-[303px] lg:h-[403px]  hidden lg:block col-span-2 md:col-span-1 rounded-3xl overflow-hidden">
                     {/* <div className={`from-[rgba(0, 164, 159, 0.20)] to-[#006863a3] absolute inset-0 bg-gradient-to-b  z-10`}></div> */}

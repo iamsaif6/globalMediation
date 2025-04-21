@@ -101,9 +101,9 @@ const FeedbackCarousel = ({ title, subTitle }) => {
           })}
         </Slider>
       </div>
-      <div className="text-center mt-[70px]">
+      {/* <div className="text-center mt-[70px]">
         <Button href="/case-studies" title={'Read More Client Stories'} />
-      </div>
+      </div> */}
     </section>
   );
 };

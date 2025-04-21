@@ -13,6 +13,7 @@ import FAQ from '@/components/service/FAQ';
 import CTA from '@/components/shared/CTA';
 import SectionHeading from '@/components/shared/SectionHeading';
 import wayChoose from '/public/Training 1.png';
+import Link from 'next/link';
 
 const faqData = [
   {
@@ -101,6 +102,11 @@ const page = () => {
                         </li>
                       </ul>
                     </div>
+                    <button className=" bg-primary  mt-10 w-full md:w-auto font-normal text-lg text-white px-12 py-3 rounded-[40px] ">
+                      <Link className="w-full  " href="/contact-us">
+                        Book Send Mediation
+                      </Link>
+                    </button>
                   </div>
                   <div className="relative  h-[303px] lg:h-[403px]  hidden lg:block col-span-2 md:col-span-1 rounded-3xl overflow-hidden">
                     <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={send2} />

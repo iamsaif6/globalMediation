@@ -3,6 +3,29 @@ import React from 'react';
 import service1 from '/public/business-1.jpg';
 import Button from '@/components/shared/Button';
 import Image from 'next/image';
+import MediationCalculation from '@/components/home/MediationCalculation';
+import FeedbackCarousel from '@/components/home/FeedbackCarousel';
+import CTA from '@/components/shared/CTA';
+import FAQ from '@/components/service/FAQ';
+import Link from 'next/link';
+
+const faqData = [
+  {
+    key: 1,
+    question: 'Is family mediation legally binding?',
+    answer: 'No, but written agreements can be made into formal court orders if both parties agree.',
+  },
+  {
+    key: 2,
+    question: 'Can children be involved in the mediation?',
+    answer: 'Yes — with parental agreement, older children can be consulted as part of the process.',
+  },
+  {
+    key: 3,
+    question: 'How many sessions will we need?',
+    answer: 'Most disputes can be addressed in one to three sessions, depending on complexity.',
+  },
+];
 
 const item = {
   title: 'Business and Commercial Mediation',
@@ -54,11 +77,22 @@ const page = () => {
             {item?.image && <Image className="object-cover w-full h-full relative z-0" alt={item.title} src={item?.image} />}
           </div>
         </div>
-        <div>
-          <div className="mt-10">
-            <Button padding="xlarge" href="#" title={'Learn more'} />
-          </div>
-        </div>
+        <button className=" bg-primary  mt-10 w-full md:w-auto font-normal text-lg text-white px-12 py-3 rounded-[40px] ">
+          <Link className="w-full  " href="/contact-us">
+            Book Business and Commercial Mediation
+          </Link>
+        </button>
+      </div>
+      <MediationCalculation />
+
+      <FAQ title={'FAQs About Workplace Mediation'} buttonText={'Contact Us'} buttonLink={'/contat-us'} faqData={faqData} />
+      <div className="bg-[#F9F8FF]">
+        <CTA
+          title={'Learn More About Global Mediation'}
+          subTitle={'For more information about our services, team, training programs, or career opportunities, get in touch with us:'}
+          Button1Link={'/contact-us'}
+          Button1Text={'Contact us today'}
+        />
       </div>
     </div>
   );

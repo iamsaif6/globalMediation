@@ -49,20 +49,17 @@ const navLinks = [
       { title: 'Civil and Legal Dispute Mediation', href: '/Civil-and-Legal-Dispute-Mediation' },
     ],
   },
-  {
-    href: '/training',
-    title: 'Training',
-    hasMegaMenu: true,
-    megaMenuItems: [
-      { title: 'Foundation Course in Mediation', href: '/Foundation-Course-in-Mediation' },
-      { title: 'SEND Mediation Training Course', href: '/SEND-Mediation-Training-Course' },
-      { title: 'SEND Mediation Professional Practice', href: '/SEND-Mediation-Professional-Practice' },
-    ],
-  },
   // {
-  //   href: '/dars',
-  //   title: 'DARS',
+  //   href: '/training',
+  //   title: 'Training',
+  //   hasMegaMenu: true,
+  //   megaMenuItems: [
+  //     { title: 'Foundation Course in Mediation', href: '/Foundation-Course-in-Mediation' },
+  //     { title: 'SEND Mediation Training Course', href: '/SEND-Mediation-Training-Course' },
+  //     { title: 'SEND Mediation Professional Practice', href: '/SEND-Mediation-Professional-Practice' },
+  //   ],
   // },
+
   {
     href: '/resources',
     title: 'Resources',
@@ -235,15 +232,23 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="flex items-center">
-            <div className="hidden lg:block">
+            <div className="flex flex-1 items-center gap-2">
               <button
-                className={`bg-primary border leading-[140%] border-primary font-medium text-lg text-[#FCFCFD] px-[42px] py-3 rounded-[40px]`}
+                className={`bg-primary  border leading-[140%] border-primary font-medium text-lg text-[#FCFCFD] px-6 py-3 rounded-[40px]`}
+              >
+                <Link className="w-full" href="/contact-us">
+                  Login
+                </Link>
+              </button>
+              <button
+                className={`bg-primary  border leading-[140%] border-primary font-medium text-lg text-[#FCFCFD] px-6 py-3 rounded-[40px]`}
               >
                 <Link className="w-full" href="/contact-us">
                   Contact Us
                 </Link>
               </button>
             </div>
+
             <button
               className="lg:hidden  cursor-pointer flex items-center justify-center w-12 h-12 focus:outline-none"
               onClick={toggleMobileMenu}
@@ -279,6 +284,7 @@ const Navbar = () => {
           <div className="grid grid-cols-12">
             <div className="col-span-5 p-8 space-y-4">
               <button
+                onMouseEnter={() => setActiveSubmenu('Service')}
                 className={` ${
                   activeSubmenu == 'Service' ? 'bg-[#DAD3FF]' : ''
                 } flex cursor-pointer items-start flex-col w-full p-6 rounded-xl text-secondary transition-colors duration-200`}
@@ -286,7 +292,8 @@ const Navbar = () => {
                 <span className="text-lg block font-semibold">Services</span>
                 <span className="text-sm">A Comprehensive Guide to Alternative Dispute Resolution</span>
               </button>
-              {/* <button
+
+              <button
                 onMouseEnter={() => setActiveSubmenu('Training')}
                 className={` ${
                   activeSubmenu == 'Training' ? 'bg-[#DAD3FF]' : ''
@@ -294,7 +301,7 @@ const Navbar = () => {
               >
                 <span className="text-lg block font-semibold">Training</span>
                 <span className="text-sm">A Comprehensive Guide to Alternative Dispute Resolution</span>
-              </button> */}
+              </button>
             </div>
             <div className="col-span-7 leading-[150%] p-8 bg-[#F3F1FF]">
               <h3 className="text-[20px] text-[#330051] font-semibold mb-4">
@@ -304,7 +311,7 @@ const Navbar = () => {
                 <ul className="space-y-3 text-sm ">
                   {serviceSubmenu.map(item => {
                     return (
-                      <li className={` ${pathname.includes(item.href) ? 'text-secondary' : 'text-[#98A2B3]'} hover:text-secondary `}>
+                      <li className={` ${pathname.includes(item.href) ? 'text-secondary' : 'text-black'} hover:text-secondary `}>
                         <Link title={item.title} href={`/services${item.href}`}>
                           {item.title}
                         </Link>
@@ -317,9 +324,7 @@ const Navbar = () => {
                   {traiingSubmenu.map(item => {
                     return (
                       <li
-                        className={` ${
-                          pathname.includes(item.href) ? 'text-secondary' : 'text-[#98A2B3]'
-                        } hover:text-secondary  duration-200`}
+                        className={` ${pathname.includes(item.href) ? 'text-secondary' : 'text-black'} hover:text-secondary  duration-200`}
                       >
                         <Link title="Workplace and Employment Mediation" href={`/services${item.href}`}>
                           {item.title}
@@ -362,7 +367,7 @@ const Navbar = () => {
                     return (
                       <li
                         key={item.href}
-                        className={` ${pathname.includes(item.href) ? ' text-secondary' : 'text-[#98A2B3]'}  hover:text-secondary`}
+                        className={` ${pathname.includes(item.href) ? ' text-secondary' : 'text-black'}  hover:text-secondary`}
                       >
                         <Link title={item.title} href={`${item.href}`}>
                           {item.title}
@@ -506,10 +511,15 @@ const Navbar = () => {
               ))}
           </div>
 
-          <div className="p-5 pt-1">
+          <div className="p-5 pt-1 flex items-center gap-2">
             <button className={`bg-primary w-full border border-primary font-normal text-lg text-[#FCFCFD] px-6 py-3 rounded-[40px]`}>
               <Link className="w-full" href="/contact-us">
                 Contact US
+              </Link>
+            </button>
+            <button className={`bg-primary w-full border border-primary font-normal text-lg text-[#FCFCFD] px-6 py-3 rounded-[40px]`}>
+              <Link className="w-full" href="/contact-us">
+                Login
               </Link>
             </button>
           </div>
