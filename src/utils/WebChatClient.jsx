@@ -24,10 +24,6 @@ export default function WebChatClient() {
           showPoweredBy: false,
           showCloseButton: true,
           hideWidget: true,
-          enableConversationDeletion: true, // May help with cookie issues
-          useSessionStorage: true, // Try using session storage instead of cookies
-          disableAnimations: true, // Simplify to avoid potential issues
-          composerPlaceholder: 'Chat with us', // Optional
         });
 
         // Add event listener to know when botpress is ready
