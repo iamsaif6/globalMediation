@@ -65,7 +65,7 @@ const FeedbackCarousel = ({ title, subTitle }) => {
     <section className="py-[40px] slick-bar ">
       <div className="mb-10 px-5 md:px-16 text-center md:mb-[70px] ">
         <h1 className=" text-4xl md:text-5xl font-medium leading-[120%] ">{title}</h1>
-        {subTitle && <p className=" text-[#667085] font-normal text-lg mt-6">{subTitle}</p>}
+        {subTitle && <p className=" font-normal text-lg mt-6">{subTitle}</p>}
       </div>
       <div className="slider-container">
         <Slider {...settings}>
@@ -92,7 +92,7 @@ const FeedbackCarousel = ({ title, subTitle }) => {
                     </defs>
                   </svg>
                   <div className="mt-3 md:mt-[38px] pl-3 md:pl-10 md:pr-5">
-                    <p className="text-[#656565] leading-[150%] text-sm lg:text-lg mb-5">{item.review}</p>
+                    <p className="leading-[150%] text-sm lg:text-lg mb-5">{item.review}</p>
                     {item.name && <p className="text-sm lg:text-2xl font-semibold text-[#1C1C1C]"> - {item.name}</p>}
                   </div>
                 </div>

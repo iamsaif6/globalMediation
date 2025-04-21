@@ -5,7 +5,7 @@ import serving_image from '/public/Serving Communities Across the UK.png';
 
 const Serving = () => {
   return (
-    <section className="py-[64px] md:py-[60px] px-5 md:px-[60px]">
+    <section className="py-[64px] md:pb-[60px] md:pt-[120px] px-5 md:px-[60px]">
       <SectionHeading
         title={'Serving Communities Across the UK'}
         subTitle={

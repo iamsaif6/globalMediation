@@ -12,7 +12,7 @@ import Image from 'next/image';
 
 const Marque = () => {
   return (
-    <div className="py-6 lg:mb-[0]  md:mb-[100px]">
+    <div className="py-16 lg:mb-[0]  md:mb-[100px]">
       <div className="flex items-center flex-wrap justify-center">
         <div className=" h-24 mx-[30px]   w-24">
           <Image className="w-full h-full object-contain" src={img7} alt="confident" />

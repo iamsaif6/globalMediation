@@ -69,7 +69,7 @@ const MediationCards = () => {
 
   if (isMobile) {
     return (
-      <section className="px-5 py-10 lg:px-16">
+      <section className="px-5 pb-10 lg:px-16">
         <SectionHeading
           title={'Mediation That Works For You'}
           subTitle={
@@ -86,7 +86,7 @@ const MediationCards = () => {
   }
 
   return (
-    <div ref={sectionRef} className="relative py-16 h-[400vh]">
+    <div ref={sectionRef} className="relative pb-16 h-[400vh]">
       <div className="sticky -top-[10%] h-screen flex items-center justify-center">
         <div className="w-full px-5 lg:px-16">
           <SectionHeading
