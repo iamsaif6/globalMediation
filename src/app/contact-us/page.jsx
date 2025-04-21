@@ -5,138 +5,103 @@ import Map from '@/components/service/Map';
 import CTA from '@/components/shared/CTA';
 import Link from 'next/link';
 import { Check, Mail, Phone } from 'lucide-react';
+import Image from 'next/image';
+import overlay from '/public/Overlay.png';
 
 const ContactUs = () => {
   return (
-    <div className="pt-[50px] bg-gray-100">
-      {/* <Header title={'Contact us'} subTitle={'Direct users to reach out for consultations or general inquiries'} cover={contactUsCover} /> */}
+    <div className=" bg-gray-100">
       {/* Contact us steps */}
-      <div className="grid  grid-cols-12 gap-6 pt-16 px-5 md:px-16 md:pt-[80px]">
-        <div className="col-span-12 lg:col-span-7">
-          <div className="lg:mb-[100px] mb-10">
-            <h1 className="leading-[120%] text-5xl md:[55px] lg:text-[65px] capitalize font-bold mb-4">Let’s Resolve Things – Together</h1>
-            <p className="text-base lg:text-lg opacity-70">
-              Get in touch to speak with a specialist about your situation. Whether you're navigating a conflict, booking mediation, or
-              exploring training, we're here to help
-            </p>
-            {/* <div className="my-8 text-base">
-              <a className=" my-2 block " href="mailto:sen@globalmediaiton.co.uk">
-                sen@globalmediaiton.co.uk
-              </a>
-              <a className="my-2 block " href="tel:020 8441 1355">
-                020 8441 1355
-              </a>
-              <a target="_blank" className="my-2 block " href="http://www.globalmediation.co.uk">
-                www.globalmediation.co.uk
-              </a>
-            </div> */}
-            {/* <form className="bg-white max-w-[500px] border-[#E7E7F1] mt-5 border rounded-4xl relative">
-              <Mail size={20} className="text-gray-600 absolute left-6 top-1/2 -translate-y-1/2" />
-              <input placeholder="Your email address" type="email" required className="py-5  pr-6 pl-14 outline-0 w-full " />
-              <button
-                className=" py-3 cursor-pointer font-bold px-6 border-[#E7E7F1] rounded-4xl absolute top-1/2 right-3 -translate-y-1/2 border"
-                type="submit"
-              >
-                Get Started
-              </button>
-            </form> */}
+      <div
+        style={{
+          backgroundImage: `url('${overlay.src}')`,
+          backgroundBlendMode: 'overlay',
+          backgroundSize: 'cover',
+          backgroundPosition: 'top center',
+        }}
+        className="flex text-white pt-[50px] bg-cover bg-no-repeat  flex-col  h-auto lg:h-screen"
+      >
+        <div className="grid flex-1 grid-cols-12 gap-6 pt-16 px-5 md:px-16 md:pt-[80px]">
+          <div className="col-span-12 lg:col-span-7">
+            <div className="lg:mb-[100px] text-center mb-10">
+              <h1 className="leading-[120%] text-5xl md:[55px] lg:text-[65px] capitalize font-bold mb-4">
+                Let’s Resolve Things – Together
+              </h1>
+              <p className="text-base lg:text-lg opacity-70">
+                Get in touch to speak with a specialist about your situation. Whether you're navigating a conflict, booking mediation, or
+                exploring training, we're here to help
+              </p>
+            </div>
           </div>
-          {/* <div className="grid  grid-cols-2 gap-6 pb-10 px-5 md:px-16 ">
-            <div className="col-span-2 lg:col-span-1 flex gap-5 items-center">
-              <Mail className="text-primary" />
+          <div className="col-span-12 lg:col-span-5">
+            <form className="md:space-y-4 text-black  rounded-3xl border-2 border-[#E7E7F1] py-5 px-4 lg:px-8 bg-white space-y-3 ">
+              <h2 className="text-3xl text-center font-semibold mb-6 opacity-80">Get in Touch</h2>
               <div>
-                <h4 className="font-semibold text-[20px] mb-2">Email</h4>
-                <p className="text-[#667085] font-normal text-[16px]">sen@globalmediaiton.co.uk</p>
+                <input
+                  placeholder="Full Name"
+                  className="w-full outline-0  py-3 px-6 rounded-4xl  border border-[#E7E7F1] bg-[#F8F9FD]"
+                  type="text"
+                  name="name"
+                  id="name"
+                />
               </div>
-            </div>
-
-            <div className="col-span-2 lg:col-span-1 flex gap-5 items-center">
-              <Phone className="text-primary" />
               <div>
-                <h4 className="font-semibold text-[20px] mb-2">Phone</h4>
-                <p className="text-[#667085] font-normal text-[16px]">020 8441 1355</p>
+                <input
+                  placeholder="Email Address"
+                  required
+                  className="w-full outline-0  py-3 px-6 rounded-4xl  border border-[#E7E7F1] bg-[#F8F9FD]"
+                  type="email"
+                  name="email"
+                  id="email"
+                />
               </div>
-            </div>
-          </div> */}
-        </div>
-        <div className="col-span-12 lg:col-span-5">
-          <form className="md:space-y-4  rounded-3xl border-2 border-[#E7E7F1] py-5 px-4 lg:px-8 bg-white space-y-3 ">
-            <h2 className="text-3xl text-center font-semibold mb-6 opacity-80">Get in Touch</h2>
-            <div>
-              <input
-                placeholder="Full Name"
-                className="w-full outline-0  py-3 px-6 rounded-4xl  border border-[#E7E7F1] bg-[#F8F9FD]"
-                type="text"
-                name="name"
-                id="name"
-              />
-            </div>
-            <div>
-              <input
-                placeholder="Email Address"
-                required
-                className="w-full outline-0  py-3 px-6 rounded-4xl  border border-[#E7E7F1] bg-[#F8F9FD]"
-                type="email"
-                name="email"
-                id="email"
-              />
-            </div>
-            <div>
-              <input
-                placeholder="Company Name"
-                className="w-full outline-0  py-3 px-6 rounded-4xl  border border-[#E7E7F1] bg-[#F8F9FD]"
-                type="text"
-                name="company"
-                id="company"
-              />
-            </div>
-            <div>
-              <input
-                placeholder=" Type of Conflict"
-                className="w-full outline-0  py-3 px-6 rounded-4xl  border border-[#E7E7F1] bg-[#F8F9FD]"
-                type="text"
-                name="conflict"
-                id="conflict"
-              />
-            </div>
-            {/* <div>
-              <textarea
-                placeholder="Type your message..."
-                className="w-full outline-0  py-4 px-6 rounded-4xl  border border-[#E7E7F1] bg-[#F8F9FD]"
-                type="text"
-                name="conflict"
-                id="conflict"
-                rows={1}
-              />
-            </div> */}
-            <button className="bg-primary w-full cursor-pointer mt-1 py-2 px-8 text-white font-normal text-lg rounded-3xl" type="submit">
-              Submit
-            </button>
-          </form>
-        </div>
-      </div>
-
-      <div className="grid mt-7 grid-cols-3 gap-6 pb-16 px-5 md:px-16 md:pb-[80px] ">
-        <div className="col-span-3 lg:col-span-1 flex gap-5 items-center">
-          <Check className="text-primary flex-shrink-0" />
-          <p className="text-black font-normal text-[15px]">
-            Free, no-obligation consultation to understand your needs and explain how we can help.
-          </p>
+              <div>
+                <input
+                  placeholder="Company Name"
+                  className="w-full outline-0  py-3 px-6 rounded-4xl  border border-[#E7E7F1] bg-[#F8F9FD]"
+                  type="text"
+                  name="company"
+                  id="company"
+                />
+              </div>
+              <div>
+                <input
+                  placeholder=" Type of Conflict"
+                  className="w-full outline-0  py-3 px-6 rounded-4xl  border border-[#E7E7F1] bg-[#F8F9FD]"
+                  type="text"
+                  name="conflict"
+                  id="conflict"
+                />
+              </div>
+              <button className="bg-primary w-full cursor-pointer mt-1 py-2 px-8 text-white font-normal text-lg rounded-3xl" type="submit">
+                Submit
+              </button>
+            </form>
+          </div>
         </div>
 
-        <div className="col-span-3 lg:col-span-1 flex gap-5 items-center">
-          <Check className="text-primary flex-shrink-0" />
-          <p className="text-black font-normal text-[15px]">
-            Tailored support from real experts — every inquiry is reviewed by an experienced case manager.
-          </p>
-        </div>
+        <div className="grid text-white mt-7 grid-cols-3 gap-6 pb-16 px-5 md:px-16 md:pb-[80px] ">
+          <div className="col-span-3 lg:col-span-1 flex gap-5 items-center">
+            <Check className="text-primary flex-shrink-0" />
+            <p className=" font-normal text-[15px]">
+              <strong>Free</strong> , no-obligation consultation to understand your needs and explain how we can help.
+            </p>
+          </div>
 
-        <div className="col-span-3 lg:col-span-1 flex gap-5 items-center">
-          <Check className="text-primary flex-shrink-0" />
-          <p className="text-black font-normal text-[15px]">
-            Trusted by Thousands . We’ve helped resolve over 20,000 disputes across the UK — from families and businesses to government
-            bodies.
-          </p>
+          <div className="col-span-3 lg:col-span-1 flex gap-5 items-center">
+            <Check className="text-primary flex-shrink-0" />
+            <p className=" font-normal text-[15px]">
+              <strong> Tailored support from real experts</strong> — every inquiry is reviewed by an experienced case manager.
+            </p>
+          </div>
+
+          <div className="col-span-3 lg:col-span-1 flex gap-5 items-center">
+            <Check className="text-primary flex-shrink-0" />
+            <p className=" font-normal text-[15px]">
+              <strong> Trusted by Thousands</strong> . We’ve helped resolve over 20,000 disputes across the UK — from families and
+              businesses to government bodies.
+            </p>
+          </div>
         </div>
       </div>
 
