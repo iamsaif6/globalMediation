@@ -11,7 +11,7 @@ import wayChoose from '/public/Training 1.png';
 import headerImage from '/public/community-banner.jpg';
 import Link from 'next/link';
 import overview from '/public/community-Overview.jpg';
-import dispute from '/public/community-dispute.jpg';
+import dispute from '/public/community-dispute.jpeg';
 import works from '/public/community-works.jpg';
 
 const faqData = [
