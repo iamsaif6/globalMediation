@@ -107,24 +107,24 @@ const page = () => {
                         Our trained mediators help resolve a wide range of civil and legal disputes, including:
                       </h3>
                       <ul className=" text-lg">
-                        <li className="flex items-center py-6 pl-[7px] gap-[26px] border-t-[0.5px] border-[#DAD3FF]">
-                          <span className="inline-block flex-shrink-0 h-[10px] w-[10px] bg-primary rounded-full"></span>
+                        <li className="flex items-center py-6 hover:text-black hover:bg-white hover:rounded-2xl group pl-[20px] gap-[26px] border-t-[0.5px] border-[#DAD3FF]">
+                          <span className="inline-block flex-shrink-0 h-[10px] group-hover:bg-primary w-[10px]  bg-white rounded-full"></span>
                           <span>Property or tenancy disagreements</span>
                         </li>
-                        <li className="flex items-center py-6 pl-[7px] gap-[26px] border-t-[0.5px] border-[#DAD3FF]">
-                          <span className="inline-block flex-shrink-0 h-[10px] w-[10px] bg-primary rounded-full"></span>
+                        <li className="flex items-center py-6 hover:text-black hover:bg-white hover:rounded-2xl group pl-[20px] gap-[26px] border-t-[0.5px] border-[#DAD3FF]">
+                          <span className="inline-block flex-shrink-0 h-[10px] group-hover:bg-primary w-[10px]  bg-white rounded-full"></span>
                           <span>Contract or commercial disputes</span>
                         </li>
-                        <li className="flex items-center py-6 pl-[7px] gap-[26px] border-t-[0.5px] border-[#DAD3FF]">
-                          <span className="inline-block flex-shrink-0 h-[10px] w-[10px] bg-primary rounded-full"></span>
+                        <li className="flex items-center py-6 hover:text-black hover:bg-white hover:rounded-2xl group pl-[20px] gap-[26px] border-t-[0.5px] border-[#DAD3FF]">
+                          <span className="inline-block flex-shrink-0 h-[10px] group-hover:bg-primary w-[10px]  bg-white rounded-full"></span>
                           <span>Consumer complaints and service issues</span>
                         </li>
-                        <li className="flex items-center py-6 pl-[7px] gap-[26px] border-t-[0.5px] border-[#DAD3FF]">
-                          <span className="inline-block flex-shrink-0 h-[10px] w-[10px] bg-primary rounded-full"></span>
+                        <li className="flex items-center py-6 hover:text-black hover:bg-white hover:rounded-2xl group pl-[20px] gap-[26px] border-t-[0.5px] border-[#DAD3FF]">
+                          <span className="inline-block flex-shrink-0 h-[10px] group-hover:bg-primary w-[10px]  bg-white rounded-full"></span>
                           <span>Neighbourhood or boundary conflicts</span>
                         </li>
-                        <li className="flex items-center py-6 pl-[7px] gap-[26px] border-t-[0.5px] border-[#DAD3FF]">
-                          <span className="inline-block flex-shrink-0 h-[10px] w-[10px] bg-primary rounded-full"></span>
+                        <li className="flex items-center py-6 hover:text-black hover:bg-white hover:rounded-2xl group pl-[20px] gap-[26px] border-t-[0.5px] border-[#DAD3FF]">
+                          <span className="inline-block flex-shrink-0 h-[10px] group-hover:bg-primary w-[10px]  bg-white rounded-full"></span>
                           <span>Will, trust, or inheritance disagreements</span>
                         </li>
                       </ul>
@@ -132,7 +132,7 @@ const page = () => {
                         <Button title={'Resolve Workplace Disputes Today'} href="#" />
                       </div> */}
                     </div>
-                    <button className=" bg-primary  mt-10 w-full md:w-auto font-normal text-lg text-white px-12 py-3 rounded-[40px] ">
+                    <button className=" bg-white  mt-10 w-full md:w-auto font-normal text-lg text-black px-12 py-3 rounded-[40px] ">
                       <Link className="w-full  " href="/contact-us">
                         Book Civil Mediation
                       </Link>

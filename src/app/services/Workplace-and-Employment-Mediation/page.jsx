@@ -118,27 +118,27 @@ const page = () => {
 
               <div>
                 <ul className=" text-lg">
-                  <li className="flex hover:bg-white hover:text-black items-center py-6 pl-[20px] gap-[26px] border-t-[0.5px] border-[#DAD3FF]">
-                    <span className="inline-block flex-shrink-0 h-[10px] w-[10px] bg-primary rounded-full"></span>
+                  <li className="flex hover:bg-white  hover:rounded-2xl group hover:text-black items-center py-6 pl-[20px] gap-[26px] border-t-[0.5px] border-[#DAD3FF]">
+                    <span className="inline-block flex-shrink-0 h-[10px] group-hover:bg-primary w-[10px]  bg-white rounded-full"></span>
                     <span>Harassment and bullying complaints</span>
                   </li>
 
-                  <li className="flex hover:bg-white hover:text-black items-center py-6 pl-[20px] gap-[26px] border-t-[0.5px] border-[#DAD3FF]">
-                    <span className="inline-block flex-shrink-0 h-[10px] w-[10px] bg-primary rounded-full"></span>
+                  <li className="flex hover:bg-white  hover:text-black hover:rounded-2xl group items-center py-6 pl-[20px] gap-[26px] border-t-[0.5px] border-[#DAD3FF]">
+                    <span className="inline-block flex-shrink-0 h-[10px] w-[10px] group-hover:bg-primary bg-white rounded-full"></span>
                     <span>Team conflict and collaboration issues</span>
                   </li>
-                  <li className="flex hover:bg-white hover:text-black items-center py-6 pl-[20px] gap-[26px] border-t-[0.5px] border-[#DAD3FF]">
-                    <span className="inline-block flex-shrink-0 h-[10px] w-[10px] bg-primary rounded-full"></span>
+                  <li className="flex hover:bg-white hover:text-black hover:rounded-2xl group items-center py-6 pl-[20px] gap-[26px] border-t-[0.5px] border-[#DAD3FF]">
+                    <span className="inline-block flex-shrink-0 h-[10px] w-[10px] group-hover:bg-primary bg-white rounded-full"></span>
                     <span>Grievance and disciplinary mediation</span>
                   </li>
 
-                  <li className="flex hover:bg-white hover:text-black items-center py-6 pl-[20px] gap-[26px] border-t-[0.5px] border-[#DAD3FF]">
-                    <span className="inline-block flex-shrink-0 h-[10px] w-[10px] bg-primary rounded-full"></span>
+                  <li className="flex hover:bg-white hover:text-black hover:rounded-2xl group items-center py-6 pl-[20px] gap-[26px] border-t-[0.5px] border-[#DAD3FF]">
+                    <span className="inline-block flex-shrink-0 h-[10px] w-[10px] group-hover:bg-primary bg-white rounded-full"></span>
                     <span>Organisational restructuring disputes</span>
                   </li>
 
-                  <li className="flex hover:bg-white hover:text-black items-center py-6 pl-[20px] gap-[26px] border-t-[0.5px] border-[#DAD3FF]">
-                    <span className="inline-block flex-shrink-0 h-[10px] w-[10px] bg-primary rounded-full"></span>
+                  <li className="flex hover:bg-white hover:text-black hover:rounded-2xl group items-center py-6 pl-[20px] gap-[26px] border-t-[0.5px] border-[#DAD3FF]">
+                    <span className="inline-block flex-shrink-0 h-[10px] w-[10px] group-hover:bg-primary bg-white rounded-full"></span>
                     <span>Redundancy-related concerns</span>
                   </li>
                 </ul>

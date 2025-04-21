@@ -233,10 +233,8 @@ const Navbar = () => {
           </div>
           <div className="flex items-center">
             <div className="hidden lg:flex flex-1 items-center gap-2">
-              <button
-                className={`bg-primary  border leading-[140%] border-primary font-medium text-lg text-[#FCFCFD] px-6 py-3 rounded-[40px]`}
-              >
-                <Link className="w-full" href="/contact-us">
+              <button>
+                <Link className={`px-6 py-[20px] lg:py-7 flex items-center`} href="/contact-us">
                   Login
                 </Link>
               </button>
@@ -283,7 +281,8 @@ const Navbar = () => {
         >
           <div className="grid grid-cols-12">
             <div className="col-span-5 p-8 space-y-4">
-              <button
+              <Link
+                href={'/services'}
                 onMouseEnter={() => setActiveSubmenu('Service')}
                 className={` ${
                   activeSubmenu == 'Service' ? 'bg-[#DAD3FF]' : ''
@@ -291,9 +290,10 @@ const Navbar = () => {
               >
                 <span className="text-lg block font-semibold">Services</span>
                 <span className="text-sm">A Comprehensive Guide to Alternative Dispute Resolution</span>
-              </button>
+              </Link>
 
-              <button
+              <Link
+                href={'/training'}
                 onMouseEnter={() => setActiveSubmenu('Training')}
                 className={` ${
                   activeSubmenu == 'Training' ? 'bg-[#DAD3FF]' : ''
@@ -301,7 +301,7 @@ const Navbar = () => {
               >
                 <span className="text-lg block font-semibold">Training</span>
                 <span className="text-sm">A Comprehensive Guide to Alternative Dispute Resolution</span>
-              </button>
+              </Link>
             </div>
             <div className="col-span-7 leading-[150%] p-8 bg-[#F3F1FF]">
               <h3 className="text-[20px] text-[#330051] font-semibold mb-4">
@@ -517,8 +517,8 @@ const Navbar = () => {
                 Contact US
               </Link>
             </button>
-            <button className={`bg-primary w-full border border-primary font-normal text-lg text-[#FCFCFD] px-6 py-3 rounded-[40px]`}>
-              <Link className="w-full" href="/contact-us">
+            <button>
+              <Link className={`px-6 py-[20px] lg:py-7 flex items-center`} href="/contact-us">
                 Login
               </Link>
             </button>

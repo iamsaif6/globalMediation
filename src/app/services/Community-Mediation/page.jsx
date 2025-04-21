@@ -103,29 +103,29 @@ const page = () => {
                         We work with individuals, landlords, housing providers and councils to resolve:
                       </h3>
                       <ul className=" text-lg">
-                        <li className="flex items-center py-6 pl-[7px] gap-[26px] border-t-[0.5px] border-[#DAD3FF]">
-                          <span className="inline-block flex-shrink-0 h-[10px] w-[10px] bg-primary rounded-full"></span>
+                        <li className="flex items-center py-6 hover:text-black hover:bg-white hover:rounded-2xl group pl-[20px]  gap-[26px] border-t-[0.5px] border-[#DAD3FF]">
+                          <span className="inline-block flex-shrink-0 h-[10px] group-hover:bg-primary w-[10px]  bg-white rounded-full"></span>
                           <span>Noise or anti-social behaviour complaints</span>
                         </li>
-                        <li className="flex items-center py-6 pl-[7px] gap-[26px] border-t-[0.5px] border-[#DAD3FF]">
-                          <span className="inline-block flex-shrink-0 h-[10px] w-[10px] bg-primary rounded-full"></span>
+                        <li className="flex items-center py-6 hover:text-black hover:bg-white hover:rounded-2xl group  pl-[20px]  gap-[26px] border-t-[0.5px] border-[#DAD3FF]">
+                          <span className="inline-block flex-shrink-0 h-[10px] group-hover:bg-primary w-[10px]  bg-white rounded-full"></span>
                           <span>Disputes between neighbours or households</span>
                         </li>
-                        <li className="flex items-center py-6 pl-[7px] gap-[26px] border-t-[0.5px] border-[#DAD3FF]">
-                          <span className="inline-block flex-shrink-0 h-[10px] w-[10px] bg-primary rounded-full"></span>
+                        <li className="flex items-center py-6 hover:text-black hover:bg-white hover:rounded-2xl group  pl-[20px]  gap-[26px] border-t-[0.5px] border-[#DAD3FF]">
+                          <span className="inline-block flex-shrink-0 h-[10px] group-hover:bg-primary w-[10px]  bg-white rounded-full"></span>
                           <span>Property, boundary or shared space issues</span>
                         </li>
-                        <li className="flex items-center py-6 pl-[7px] gap-[26px] border-t-[0.5px] border-[#DAD3FF]">
-                          <span className="inline-block flex-shrink-0 h-[10px] w-[10px] bg-primary rounded-full"></span>
+                        <li className="flex items-center py-6 hover:text-black hover:bg-white hover:rounded-2xl group  pl-[20px]  gap-[26px] border-t-[0.5px] border-[#DAD3FF]">
+                          <span className="inline-block flex-shrink-0 h-[10px] group-hover:bg-primary w-[10px]  bg-white rounded-full"></span>
                           <span>Breakdowns in community or resident relationships</span>
                         </li>
-                        <li className="flex items-center py-6 pl-[7px] gap-[26px] border-t-[0.5px] border-[#DAD3FF]">
-                          <span className="inline-block flex-shrink-0 h-[10px] w-[10px] bg-primary rounded-full"></span>
+                        <li className="flex items-center py-6 hover:text-black hover:bg-white hover:rounded-2xl group  pl-[20px]  gap-[26px] border-t-[0.5px] border-[#DAD3FF]">
+                          <span className="inline-block flex-shrink-0 h-[10px] group-hover:bg-primary w-[10px]  bg-white rounded-full"></span>
                           <span>Conflicts between tenants and housing services</span>
                         </li>
                       </ul>
                     </div>
-                    <button className=" bg-primary  mt-10 w-full md:w-auto font-normal text-lg text-white px-12 py-3 rounded-[40px] ">
+                    <button className=" bg-white  mt-10 w-full md:w-auto font-normal text-lg text-black px-12 py-3 rounded-[40px] ">
                       <Link className="w-full  " href="/contact-us">
                         Book Community Mediation
                       </Link>
@@ -277,15 +277,15 @@ const page = () => {
             <p className="mb-6 font-semibold text-lg md:text-2xl">Why people trust us:</p>
             <ul className="space-y-6 text-base md:text-[20px]">
               <li className="flex items-center gap-6 py-4 px-[18px] md:px-6 rounded-xl border border-[#624A70]">
-                <span className="w-[10px] flex-shrink-0 h-[10px] rounded-full bg-primary block"></span>
+                <span className="w-[10px] flex-shrink-0 h-[10px] rounded-full group-hover:bg-primary  bg-white block"></span>
                 <p className=" font-normal leading-[140%]">Approachable mediators who understand local issues</p>
               </li>
               <li className="flex items-center gap-6 py-4 px-[18px] md:px-6 rounded-xl border border-[#624A70]">
-                <span className="w-[10px] flex-shrink-0 h-[10px] rounded-full bg-primary block"></span>
+                <span className="w-[10px] flex-shrink-0 h-[10px] rounded-full group-hover:bg-primary  bg-white block"></span>
                 <p className="font-normal leading-[140%]">Supportive, down-to-earth approach</p>
               </li>
               <li className="flex items-center gap-6 py-4 px-[18px] md:px-6 rounded-xl border border-[#624A70]">
-                <span className="w-[10px] flex-shrink-0 h-[10px] rounded-full bg-primary block"></span>
+                <span className="w-[10px] flex-shrink-0 h-[10px] rounded-full group-hover:bg-primary  bg-white block"></span>
                 <p className=" font-normal leading-[140%]">Trusted by housing associations and councils across the UK</p>
               </li>
               <li className="flex items-center gap-6 py-4 px-[18px] md:px-6 rounded-xl border border-[#624A70]">
@@ -299,7 +299,6 @@ const page = () => {
 
       <MediationCalculation />
       <FeedbackCarousel title={'What People Say'} subTitle={null} />
-      <Map />
       <div className="bg-[#F9F8FF]">
         <CTA
           title={'Ready to Resolve a Dispute?'}
