@@ -40,7 +40,7 @@ const page = () => {
             {item.service.map(li => (
               <div
                 key={li}
-                className={` border-b-[0.5px] group flex gap-3 items-center justify-between border-[#DAD3FF]  text-lg font-normal p-3 md:p-6`}
+                className={` border-b-[0.5px] text-[#667085] group flex gap-3 items-center justify-between border-[#DAD3FF]  text-lg font-normal p-3 md:p-6`}
               >
                 <div className="flex  items-center gap-[26px]">
                   <span className="w-[10px] flex-shrink-0 h-[10px] bg-primary rounded-full inline-block"></span>
