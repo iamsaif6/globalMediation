@@ -2,7 +2,7 @@ import MainServiesCard from '@/components/main-services/MainServiesCard';
 import CTA from '@/components/shared/CTA';
 import Header from '@/components/shared/Header';
 import React from 'react';
-import heaerImage from '/public/service_header.jpeg';
+import heaerImage from '/public/services-final-header.png';
 import Link from 'next/link';
 
 const MainServices = () => {

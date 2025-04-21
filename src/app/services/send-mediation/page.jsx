@@ -61,7 +61,7 @@ const page = () => {
       />
       {/*  */}
 
-      <section className="py-16 md:py-[80px]">
+      <section className="py-16 md:py-[80px] bg-secondary text-white">
         <div className="px-5 md:px-16 mb-[120px] ">
           <SectionHeading title={'Types of SEND Disputes We Support'} />
         </div>
@@ -76,10 +76,10 @@ const page = () => {
                       <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={send2} />
                     </div>
                     <div>
-                      <h3 className="md:text-2xl text-lg font-medium text-black mb-8 md:mb-6">
+                      <h3 className="md:text-2xl text-lg font-medium  mb-8 md:mb-6">
                         SEND mediation can help resolve disagreements around:
                       </h3>
-                      <ul className="text-[#667085] text-lg">
+                      <ul className=" text-lg">
                         <li className="flex items-center py-6 pl-[7px] gap-[26px] border-t-[0.5px] border-[#DAD3FF]">
                           <span className="inline-block flex-shrink-0 h-[10px] w-[10px] bg-primary rounded-full"></span>
                           <span>Educational Health and Care Plan (EHCP) decisions</span>

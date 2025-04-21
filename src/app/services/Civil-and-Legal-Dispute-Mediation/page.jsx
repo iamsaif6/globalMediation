@@ -15,6 +15,7 @@ import Link from 'next/link';
 import overview from '/public/civil-overview.jpg';
 import support from '/public/civil-support.jpg';
 import works from '/public/civil-works.jpg';
+import overlay from '/public/Overlay.png';
 
 const faqData = [
   {
@@ -46,6 +47,7 @@ const page = () => {
         }}
         className=" pt-[187px] h-screen relative md:pt-[238px] pb-[176px] md:pb-[203px] px-5 md:px-[60px]"
       >
+        <Image src={overlay} className=" absolute top-0 left-0 w-full h-full object-cover" />
         <div className="w-full relative z-10 lg:max-w-[1318px] mx-auto">
           <h1 className="font-semibold tracking-[-4%] max-w-[900px] leading-[120%] text-5xl md:[55px] lg:text-[65px] text-white">
             Civil & Legal Dispute Mediation
