@@ -2,6 +2,7 @@ import { Poppins } from 'next/font/google';
 import './globals.css';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/shared/Footer';
+import WebChatClient from '@/utils/WebChatClient';
 
 const poppins = Poppins({
   variable: '--font-poppins',
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body id="root" className={`${poppins.variable} antialiased`}>
+        <WebChatClient />
         <Navbar />
         {children}
         <Footer />

@@ -96,16 +96,11 @@ const page = () => {
               <div className={` transition-opacity duration-300 `}>
                 <div className=" grid grid-cols-2 items-center gap-[80px]">
                   <div className="col-span-2 lg:col-span-1">
-                    {/* <h1 className="font-medium text-4xl md:text-[42px] leading-[120%]">{title}</h1> */}
-                    {/* <p className="text-[#667085] capitalize text-base md:text-base leading-[180%] my-10">
-                      SEND mediation can help resolve disagreements around:
-                    </p> */}
                     <div className="relative h-[303px] lg:h-[403px] my-10 block md:hidden  rounded-3xl overflow-hidden">
-                      {/* <div className={`from-[rgba(67,0,106,0.1)] to-[#43006aa3] absolute inset-0 bg-gradient-to-b  z-10`}></div> */}
                       <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={support} />
                     </div>
                     <div>
-                      <h3 className="md:text-2xl text-lg font-medium text-secondary mb-8 md:mb-6">
+                      <h3 className="md:text-2xl text-lg font-medium text-black mb-8 md:mb-6">
                         Our trained mediators help resolve a wide range of civil and legal disputes, including:
                       </h3>
                       <ul className="text-[#667085] text-lg">
@@ -150,7 +145,12 @@ const page = () => {
 
       <section className="py-16 md:py-[80px]">
         <div className="px-5 md:px-16 mb-[120px] ">
-          <SectionHeading title={'How Civil Mediation Works'} />
+          <SectionHeading
+            subTitle={
+              ' We provide a fair, impartial process that allows both parties to be heard and work toward a resolution, without going to court.'
+            }
+            title={'How Civil Mediation Works'}
+          />
         </div>
         <div className="mt-[42px] md:mt-[54px]">
           {/* Buttons */}
@@ -160,10 +160,7 @@ const page = () => {
                 <div className=" grid items-center grid-cols-2 gap-[80px]">
                   <div className="col-span-2 lg:col-span-1">
                     {/* <h1 className="font-medium text-4xl md:text-[42px] leading-[120%]">{title}</h1> */}
-                    <p className="text-[#667085] capitalize text-base md:text-base leading-[180%] my-10">
-                      We provide a fair, impartial process that allows both parties to be heard and work toward a resolution, without going
-                      to court.
-                    </p>
+
                     <div className="relative h-[303px] lg:h-[403px] my-10 block md:hidden  rounded-3xl overflow-hidden">
                       {/* <div className={`from-[rgba(67,0,106,0.1)] to-[#43006aa3] absolute inset-0 bg-gradient-to-b  z-10`}></div> */}
                       <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={works} />
@@ -218,13 +215,15 @@ const page = () => {
       {/* Why Choose */}
 
       <section className="py-16 px-5 md:px-16 md:py-[80px] text-white bg-secondary">
-        <h1 className="text-4xl md:text-5xl font-medium text-center max-w-[760px] mx-auto leading-[120%] mb-8 md:mb-[78px]">
-          Why Choose Global Mediation?
-        </h1>
-        <p className=" text-lg md:text-[20px] leading-[150%] mb-[56px] md:mb-[78px]">
-          We’ve helped resolve thousands of civil and legal disputes, with a calm, professional approach that saves time, reduces stress,
-          and restores control.
-        </p>
+        <div className="text-center">
+          <h1 className="text-4xl md:text-5xl font-medium text-center max-w-[760px] mx-auto leading-[120%] mb-8 md:mb-[40px]">
+            Why Choose Global Mediation?
+          </h1>
+          <p className=" text-lg md:text-[20px] leading-[150%] mb-[56px] md:mb-[78px]">
+            We’ve helped resolve thousands of civil and legal disputes, with a calm, professional approach that saves time, reduces stress,
+            and restores control.
+          </p>
+        </div>
         <div className="grid grid-cols-2 items-center gap-8">
           <div className="hidden md:block md:col-span-2 lg:col-span-1 rounded-3xl overflow-hidden h-[303px] lg:h-[403px] w-full  lg:max-w-[420px] bg-blue-900">
             <Image alt="Why Choose Global Mediation for Workplace Conflicts" className="object-cover h-full w-full" src={wayChoose} />

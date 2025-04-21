@@ -6,8 +6,6 @@ import send3 from '/public/send3.jpg';
 import Button from '@/components/shared/Button';
 import Image from 'next/image';
 import Introduction from '@/components/service/Introduction';
-import Tabs from '@/components/service/Tabs';
-import WhyChoose from '@/components/service/WhyChoose';
 import MediationCalculation from '@/components/home/MediationCalculation';
 import FeedbackCarousel from '@/components/home/FeedbackCarousel';
 import Map from '@/components/service/Map';
@@ -78,7 +76,7 @@ const page = () => {
                       <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={send2} />
                     </div>
                     <div>
-                      <h3 className="md:text-2xl text-lg font-medium text-secondary mb-8 md:mb-6">
+                      <h3 className="md:text-2xl text-lg font-medium text-black mb-8 md:mb-6">
                         SEND mediation can help resolve disagreements around:
                       </h3>
                       <ul className="text-[#667085] text-lg">
@@ -123,7 +121,12 @@ const page = () => {
 
       <section className="py-16 md:py-[80px]">
         <div className="px-5 md:px-16 mb-[120px] ">
-          <SectionHeading title={'Understanding the SEND Mediation Process'} />
+          <SectionHeading
+            subTitle={
+              'Our role is to support everyone involved in reaching a fair outcome, one that respects the voices of the child, their family, and the professionals supporting them.'
+            }
+            title={'Understanding the SEND Mediation Process'}
+          />
         </div>
         <div className="mt-[42px] md:mt-[54px]">
           {/* Buttons */}
@@ -133,16 +136,13 @@ const page = () => {
                 <div className=" grid items-center grid-cols-2 gap-[80px]">
                   <div className="col-span-2 lg:col-span-1">
                     {/* <h1 className="font-medium text-4xl md:text-[42px] leading-[120%]">{title}</h1> */}
-                    <p className="text-[#667085] capitalize text-base md:text-base leading-[180%] my-10">
-                      Our role is to support everyone involved in reaching a fair outcome, one that respects the voices of the child, their
-                      family, and the professionals supporting them.
-                    </p>
+
                     <div className="relative h-[303px] lg:h-[403px] my-10 block md:hidden  rounded-3xl overflow-hidden">
                       {/* <div className={`from-[rgba(67,0,106,0.1)] to-[#43006aa3] absolute inset-0 bg-gradient-to-b  z-10`}></div> */}
                       <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={send3} />
                     </div>
                     <div>
-                      <h3 className="md:text-2xl text-lg font-medium text-secondary mb-8 md:mb-6">How SEND mediation works:</h3>
+                      <h3 className="md:text-2xl text-lg font-medium text-black mb-8 md:mb-6">How SEND mediation works:</h3>
                       <ol className="text-[#667085] text-lg">
                         <li className="flex items-center py-6 pl-[7px] gap-[26px] border-t-[0.5px] border-[#DAD3FF]">
                           <span className="inline-block flex-shrink-0 h-[10px] w-[10px] bg-primary rounded-full"></span>

@@ -73,18 +73,11 @@ const page = () => {
               <div className={` transition-opacity duration-300 `}>
                 <div className=" grid items-center grid-cols-2 gap-[80px]">
                   <div className="col-span-2 lg:col-span-1">
-                    {/* <h1 className="font-medium text-4xl md:text-[42px] leading-[120%]">{title}</h1> */}
-                    {/* <p className="text-[#667085] capitalize text-base md:text-base leading-[180%] my-10">
-                      SEND mediation can help resolve disagreements around:
-                    </p> */}
                     <div className="relative h-[303px] lg:h-[403px] my-10 block md:hidden  rounded-3xl overflow-hidden">
-                      {/* <div className={`from-[rgba(67,0,106,0.1)] to-[#43006aa3] absolute inset-0 bg-gradient-to-b  z-10`}></div> */}
                       <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={dispute} />
                     </div>
                     <div>
-                      <h3 className="md:text-2xl text-lg font-medium text-secondary mb-8 md:mb-6">
-                        Family mediation can support you with:
-                      </h3>
+                      <h3 className="md:text-2xl text-lg font-medium text-black mb-8 md:mb-6">Family mediation can support you with:</h3>
                       <ul className="text-[#667085] text-lg">
                         <li className="flex items-center py-6 pl-[7px] gap-[26px] border-t-[0.5px] border-[#DAD3FF]">
                           <span className="inline-block flex-shrink-0 h-[10px] w-[10px] bg-primary rounded-full"></span>
@@ -127,7 +120,12 @@ const page = () => {
 
       <section className="py-16 md:py-[80px]">
         <div className="px-5 md:px-16 mb-[120px] ">
-          <SectionHeading title={'How Family Mediation Works'} />
+          <SectionHeading
+            subTitle={
+              ' Our mediators offer structured, compassionate guidance — helping you have difficult conversations in a safe and supportive way.'
+            }
+            title={'How Family Mediation Works'}
+          />
         </div>
         <div className="mt-[42px] md:mt-[54px]">
           {/* Buttons */}
@@ -136,17 +134,12 @@ const page = () => {
               <div className={` transition-opacity duration-300 `}>
                 <div className=" grid items-center grid-cols-2 gap-[80px]">
                   <div className="col-span-2 lg:col-span-1">
-                    {/* <h1 className="font-medium text-4xl md:text-[42px] leading-[120%]">{title}</h1> */}
-                    <p className="text-[#667085] capitalize text-base md:text-base leading-[180%] my-10">
-                      Our mediators offer structured, compassionate guidance — helping you have difficult conversations in a safe and
-                      supportive way.
-                    </p>
                     <div className="relative h-[303px] lg:h-[403px] my-10 block md:hidden  rounded-3xl overflow-hidden">
                       {/* <div className={`from-[rgba(67,0,106,0.1)] to-[#43006aa3] absolute inset-0 bg-gradient-to-b  z-10`}></div> */}
                       <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={works} />
                     </div>
                     <div>
-                      <h3 className="md:text-2xl text-lg font-medium text-secondary mb-8 md:mb-6">The family mediation process:</h3>
+                      <h3 className="md:text-2xl text-lg font-medium text-black mb-8 md:mb-6">The family mediation process:</h3>
                       <ol className="text-[#667085] text-lg">
                         <li className="flex items-center py-6 pl-[7px] gap-[26px] border-t-[0.5px] border-[#DAD3FF]">
                           <span className="inline-block flex-shrink-0 h-[10px] w-[10px] bg-primary rounded-full"></span>
@@ -199,15 +192,16 @@ const page = () => {
       {/* Why Choose */}
 
       <section className="py-16 px-5 md:px-16 md:py-[80px] text-white bg-secondary">
-        <h1 className="text-4xl md:text-5xl font-medium text-center max-w-[760px] mx-auto leading-[120%] mb-8 md:mb-[78px]">
-          Why Choose Global Mediation?
-        </h1>
-        <p className=" text-lg md:text-[20px] leading-[150%] mb-[56px] md:mb-[78px]">
-          We’ve worked with families across the UK for more than 25 years, supporting them through some of life’s most complex and
-          emotionally charged moments. <br /> <br />
-          Whether you’re dealing with parenting, financial, or communication breakdowns, our mediators offer calm, expert support without
-          judgement.
-        </p>
+        <div className="text-center">
+          <h1 className="text-4xl md:text-5xl font-medium text-center max-w-[900px] mx-auto leading-[120%] mb-8 md:mb-[40px]">
+            Why Choose Global Mediation?
+          </h1>
+          <p className=" text-base md:text-lg leading-[150%] mb-[56px] md:mb-[78px]">
+            We’ve worked with families across the UK for more than 25 years, supporting them through some of life’s most complex and
+            emotionally charged moments . Whether you’re dealing with parenting, financial, or communication breakdowns, our mediators offer
+            calm, expert support without judgement.
+          </p>
+        </div>
         <div className="grid grid-cols-2 gap-8">
           <div className="hidden md:block md:col-span-2 lg:col-span-1 rounded-3xl overflow-hidden h-[303px] lg:h-[403px] w-full  lg:max-w-[420px] bg-blue-900">
             <Image alt="Why Choose Global Mediation for Workplace Conflicts" className="object-cover h-full w-full" src={wayChoose} />
