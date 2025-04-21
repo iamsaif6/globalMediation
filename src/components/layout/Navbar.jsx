@@ -232,7 +232,7 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="flex items-center">
-            <div className="flex flex-1 items-center gap-2">
+            <div className="hidden lg:flex flex-1 items-center gap-2">
               <button
                 className={`bg-primary  border leading-[140%] border-primary font-medium text-lg text-[#FCFCFD] px-6 py-3 rounded-[40px]`}
               >
