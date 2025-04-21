@@ -8,13 +8,13 @@ import { Check, Mail, Phone } from 'lucide-react';
 
 const ContactUs = () => {
   return (
-    <div className="pt-[120px] bg-gray-100">
+    <div className="pt-[50px] bg-gray-100">
       {/* <Header title={'Contact us'} subTitle={'Direct users to reach out for consultations or general inquiries'} cover={contactUsCover} /> */}
       {/* Contact us steps */}
-      <div className="grid  grid-cols-12 gap-6 py-16 px-5 md:px-16 md:py-[80px]">
+      <div className="grid  grid-cols-12 gap-6 pt-16 px-5 md:px-16 md:pt-[80px]">
         <div className="col-span-12 lg:col-span-7">
           <div className="mb-[100px]">
-            <h1 className="text-6xl uppercase font-bold mb-4">Let’s Resolve Things – Together</h1>
+            <h1 className="leading-[120%] text-5xl md:[55px] lg:text-[65px] capitalize font-bold mb-4">Let’s Resolve Things – Together</h1>
             <p className="text-base lg:text-lg opacity-70">
               Get in touch to speak with a specialist about your situation. Whether you're navigating a conflict, booking mediation, or
               exploring training, we're here to help
@@ -30,7 +30,7 @@ const ContactUs = () => {
                 www.globalmediation.co.uk
               </a>
             </div> */}
-            <form className="bg-white max-w-[500px] border-[#E7E7F1] mt-5 border rounded-4xl relative">
+            {/* <form className="bg-white max-w-[500px] border-[#E7E7F1] mt-5 border rounded-4xl relative">
               <Mail size={20} className="text-gray-600 absolute left-6 top-1/2 -translate-y-1/2" />
               <input placeholder="Your email address" type="email" required className="py-5  pr-6 pl-14 outline-0 w-full " />
               <button
@@ -39,9 +39,9 @@ const ContactUs = () => {
               >
                 Get Started
               </button>
-            </form>
+            </form> */}
           </div>
-          <div className="grid  grid-cols-2 gap-6 pb-10 px-5 md:px-16 ">
+          {/* <div className="grid  grid-cols-2 gap-6 pb-10 px-5 md:px-16 ">
             <div className="col-span-2 lg:col-span-1 flex gap-5 items-center">
               <Mail className="text-primary" />
               <div>
@@ -57,15 +57,15 @@ const ContactUs = () => {
                 <p className="text-[#667085] font-normal text-[16px]">020 8441 1355</p>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="col-span-12 lg:col-span-5">
-          <form className="md:space-y-4  rounded-3xl border-2 border-[#E7E7F1] py-10 px-8 bg-white space-y-6 ">
-            <h2 className="text-4xl text-center font-semibold mb-6 opacity-80">Get in Touch</h2>
+          <form className="md:space-y-4  rounded-3xl border-2 border-[#E7E7F1] py-5 px-8 bg-white space-y-0 ">
+            <h2 className="text-3xl text-center font-semibold mb-6 opacity-80">Get in Touch</h2>
             <div>
               <input
                 placeholder="Full Name"
-                className="w-full outline-0  py-4 px-6 rounded-4xl  border border-[#E7E7F1] bg-[#F8F9FD]"
+                className="w-full outline-0  py-3 px-6 rounded-4xl  border border-[#E7E7F1] bg-[#F8F9FD]"
                 type="text"
                 name="name"
                 id="name"
@@ -75,7 +75,7 @@ const ContactUs = () => {
               <input
                 placeholder="Email Address"
                 required
-                className="w-full outline-0  py-4 px-6 rounded-4xl  border border-[#E7E7F1] bg-[#F8F9FD]"
+                className="w-full outline-0  py-3 px-6 rounded-4xl  border border-[#E7E7F1] bg-[#F8F9FD]"
                 type="email"
                 name="email"
                 id="email"
@@ -84,7 +84,7 @@ const ContactUs = () => {
             <div>
               <input
                 placeholder="Company Name"
-                className="w-full outline-0  py-4 px-6 rounded-4xl  border border-[#E7E7F1] bg-[#F8F9FD]"
+                className="w-full outline-0  py-3 px-6 rounded-4xl  border border-[#E7E7F1] bg-[#F8F9FD]"
                 type="text"
                 name="company"
                 id="company"
@@ -93,13 +93,13 @@ const ContactUs = () => {
             <div>
               <input
                 placeholder=" Type of Conflict"
-                className="w-full outline-0  py-4 px-6 rounded-4xl  border border-[#E7E7F1] bg-[#F8F9FD]"
+                className="w-full outline-0  py-3 px-6 rounded-4xl  border border-[#E7E7F1] bg-[#F8F9FD]"
                 type="text"
                 name="conflict"
                 id="conflict"
               />
             </div>
-            <div>
+            {/* <div>
               <textarea
                 placeholder="Type your message..."
                 className="w-full outline-0  py-4 px-6 rounded-4xl  border border-[#E7E7F1] bg-[#F8F9FD]"
@@ -108,24 +108,15 @@ const ContactUs = () => {
                 id="conflict"
                 rows={1}
               />
-            </div>
-            {/* <div className="flex gap-1.5 items-center">
-              <input required type="checkbox" />
-              <label className="text-base font-normal md:text-[16px] block  text-[#393D4E]" htmlFor="conflict">
-                I accept the{' '}
-                <Link href={'#'} className="underline">
-                  Terms
-                </Link>
-              </label>
             </div> */}
-            <button className="bg-primary w-full cursor-pointer mt-3 py-3 px-8 text-white font-normal text-lg rounded-3xl" type="submit">
+            <button className="bg-primary w-full cursor-pointer mt-1 py-2 px-8 text-white font-normal text-lg rounded-3xl" type="submit">
               Submit
             </button>
           </form>
         </div>
       </div>
 
-      <div className="grid  grid-cols-3 gap-6 pb-16 px-5 md:px-16 md:pb-[80px] ">
+      <div className="grid mt-7 grid-cols-3 gap-6 pb-16 px-5 md:px-16 md:pb-[80px] ">
         <div className="col-span-3 lg:col-span-1 flex gap-5 items-center">
           <Check className="text-primary flex-shrink-0" />
           <p className="text-black font-normal text-[15px]">
