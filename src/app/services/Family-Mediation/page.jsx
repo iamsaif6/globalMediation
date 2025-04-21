@@ -62,7 +62,7 @@ const page = () => {
       />
       {/*  */}
 
-      <section className="py-16 md:py-[80px]">
+      <section className="py-16 bg-secondary text-white md:py-[80px]">
         <div className="px-5 md:px-16 mb-[120px] ">
           <SectionHeading title={'Common Family Disputes We Help With'} />
         </div>
@@ -77,8 +77,8 @@ const page = () => {
                       <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={dispute} />
                     </div>
                     <div>
-                      <h3 className="md:text-2xl text-lg font-medium text-black mb-8 md:mb-6">Family mediation can support you with:</h3>
-                      <ul className="text-[#667085] text-lg">
+                      <h3 className="md:text-2xl text-lg font-medium  mb-8 md:mb-6">Family mediation can support you with:</h3>
+                      <ul className=" text-lg">
                         <li className="flex items-center py-6 pl-[7px] gap-[26px] border-t-[0.5px] border-[#DAD3FF]">
                           <span className="inline-block flex-shrink-0 h-[10px] w-[10px] bg-primary rounded-full"></span>
                           <span>Child contact and living arrangements</span>
@@ -118,7 +118,7 @@ const page = () => {
 
       {/*  */}
 
-      <section className="py-16 md:py-[80px]">
+      {/* <section className="py-16 md:py-[80px]">
         <div className="px-5 md:px-16 mb-[120px] ">
           <SectionHeading
             subTitle={
@@ -128,14 +128,13 @@ const page = () => {
           />
         </div>
         <div className="mt-[42px] md:mt-[54px]">
-          {/* Buttons */}
+
           <div className="flex flex-col w-full">
             <div className=" px-5 md:px-16 ">
               <div className={` transition-opacity duration-300 `}>
                 <div className=" grid items-center grid-cols-2 gap-[80px]">
                   <div className="col-span-2 lg:col-span-1">
                     <div className="relative h-[303px] lg:h-[403px] my-10 block md:hidden  rounded-3xl overflow-hidden">
-                      {/* <div className={`from-[rgba(67,0,106,0.1)] to-[#43006aa3] absolute inset-0 bg-gradient-to-b  z-10`}></div> */}
                       <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={works} />
                     </div>
                     <div>
@@ -179,13 +178,61 @@ const page = () => {
                     </div>
                   </div>
                   <div className="relative  h-[303px] lg:h-[403px]  hidden lg:block col-span-2 md:col-span-1 rounded-3xl overflow-hidden">
-                    {/* <div className={`from-[rgba(0, 164, 159, 0.20)] to-[#006863a3] absolute inset-0 bg-gradient-to-b  z-10`}></div> */}
                     <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={works} />
                   </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+      </section> */}
+
+      <section className="py-16 px-5 md:px-16 md:py-[80px]">
+        <SectionHeading
+          title={'How Family Mediation Works'}
+          subTitle={
+            'Our mediators offer structured, compassionate guidance — helping you have difficult conversations in a safe and supportive way.'
+          }
+          center={true}
+        />
+        <div className="grid grid-cols-4 gap-[18px] md:gap-8 my-10 md:my-[54px]">
+          <div className="bg-[#F3F1FF] rounded-xl py-[37px] md:py-[46px] px-[19px] md:px-6 col-span-4 lg:col-span-1">
+            <p className="font-medium text-2xl leading-[140%] mb-[42px] flex items-center justify-center w-[54px] h-[54px] text-white  bg-secondary rounded-xl">
+              1
+            </p>
+            <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">Get in touch </p>
+            <p>We’ll answer your questions and explain how mediation works</p>
+          </div>
+
+          <div className="bg-[#F3F1FF] rounded-xl py-[37px] md:py-[46px] px-[19px] md:px-6 col-span-4 lg:col-span-1">
+            <p className="font-medium text-2xl leading-[140%] mb-[42px] flex items-center justify-center w-[54px] h-[54px] text-white  bg-secondary rounded-xl">
+              2
+            </p>
+            <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">Schedule a session</p>
+            <p>Meet online or in person with a trained family mediator</p>
+          </div>
+          <div className="bg-[#F3F1FF] rounded-xl py-[37px] md:py-[46px] px-[19px] md:px-6 col-span-4 lg:col-span-1">
+            <p className="font-medium text-2xl leading-[140%] mb-[42px] flex items-center justify-center w-[54px] h-[54px] text-white  bg-secondary rounded-xl">
+              3
+            </p>
+            <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">Share your views</p>
+            <p className="font-normal text-base md:text-lg">
+              <span className="">Each person has space to speak openly and be heard</span>
+            </p>
+          </div>
+
+          <div className="bg-[#F3F1FF] rounded-xl py-[37px] md:py-[46px] px-[19px] md:px-6 col-span-4 lg:col-span-1">
+            <p className="font-medium text-2xl leading-[140%] mb-[42px] flex items-center justify-center w-[54px] h-[54px] text-white  bg-secondary rounded-xl">
+              4
+            </p>
+            <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">Work toward an agreement</p>
+            <p className="font-normal text-base md:text-lg">
+              <span className="">Our mediator helps guide the conversation toward solutions</span>
+            </p>
+          </div>
+        </div>
+        <div className="flex justify-center">
+          <Button title={'Request a Family Mediation Appointment'} href="/about-us" />
         </div>
       </section>
 
