@@ -19,6 +19,8 @@ export default function WebChatClient() {
         hostUrl: 'https://cdn.botpress.cloud/webchat/v1',
         botName: 'Mediation Training Bot',
         stylesheet: 'https://webchat-styling-css.botpress.app/base.css',
+        useSessionStorage: true,
+        disableWebsockets: true,
       });
     };
 
