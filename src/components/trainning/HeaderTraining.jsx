@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import banner from '/public/trainning_banner.jpeg';
+import banner from '/public/Hero Training Page with Layer.png';
 import Link from 'next/link';
 import Modal from 'react-modal';
 // Modal.setAppElement('#root');

@@ -1,7 +1,6 @@
 'use client';
 import Link from 'next/link';
 import React, { useState } from 'react';
-import Button from '../shared/Button';
 import { usePathname } from 'next/navigation';
 
 const resourceSubMenu = [

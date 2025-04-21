@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@botpress/webchat": "^2.4.1",
     "crisp-sdk-web": "^1.0.25",
     "framer-motion": "^12.6.2",
     "lucide-react": "^0.479.0",
