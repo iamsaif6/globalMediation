@@ -13,6 +13,7 @@ import service1 from '/public/workspace-service.jpg';
 import service2 from '/public/mediation-service-2.jpg';
 import service3 from '/public/workspace-intro.jpg';
 import Link from 'next/link';
+import overlay from '/public/Overlay.png';
 
 const faqData = [
   {
@@ -210,6 +211,76 @@ const page = () => {
         subTitle={'Real testimonials from clients who benefited from this service.'}
       />
       <Map />
+
+      <div
+        style={{
+          backgroundImage: `url('${overlay.src}')`,
+          backgroundBlendMode: 'overlay',
+          backgroundSize: 'cover',
+          backgroundPosition: 'top center',
+        }}
+        className="flex text-white pt-[60px] bg-cover bg-no-repeat  flex-col  h-auto lg:h-screen"
+      >
+        <div className="grid flex-1 grid-cols-12 gap-6 pt-16 px-5 md:px-16 md:pt-[80px]">
+          <div className="col-span-12 lg:col-span-7">
+            <div className="lg:mb-[100px] text-center mb-10">
+              <h1 className="leading-[120%] text-5xl md:[55px] lg:text-[65px] capitalize font-semibold mb-4">
+                Start Resolving Conflicts Today
+              </h1>
+              <p className="text-base lg:text-lg opacity-70">
+                Get in touch to speak with a specialist about your situation. Whether you're navigating a conflict, booking mediation, or
+                exploring training, we're here to help
+              </p>
+            </div>
+          </div>
+          <div className="col-span-12 lg:col-span-5">
+            <form className="md:space-y-4 text-black  rounded-3xl border-2 border-[#E7E7F1] py-5 px-4 lg:px-8 bg-white space-y-3 ">
+              <h2 className="text-3xl text-center font-semibold mb-6 opacity-80">Get in Touch</h2>
+              <div>
+                <input
+                  placeholder="Full Name"
+                  className="w-full outline-0  py-3 px-6 rounded-4xl  border border-[#E7E7F1] bg-[#F8F9FD]"
+                  type="text"
+                  name="name"
+                  id="name"
+                />
+              </div>
+              <div>
+                <input
+                  placeholder="Email Address"
+                  required
+                  className="w-full outline-0  py-3 px-6 rounded-4xl  border border-[#E7E7F1] bg-[#F8F9FD]"
+                  type="email"
+                  name="email"
+                  id="email"
+                />
+              </div>
+              <div>
+                <input
+                  placeholder="Company Name"
+                  className="w-full outline-0  py-3 px-6 rounded-4xl  border border-[#E7E7F1] bg-[#F8F9FD]"
+                  type="text"
+                  name="company"
+                  id="company"
+                />
+              </div>
+              <div>
+                <input
+                  placeholder=" Type of Conflict"
+                  className="w-full outline-0  py-3 px-6 rounded-4xl  border border-[#E7E7F1] bg-[#F8F9FD]"
+                  type="text"
+                  name="conflict"
+                  id="conflict"
+                />
+              </div>
+              <button className="bg-primary w-full cursor-pointer mt-1 py-2 px-8 text-white font-normal text-lg rounded-3xl" type="submit">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
       <FAQ title={'FAQs About Workplace Mediation'} buttonText={'Contact Us'} buttonLink={'/contat-us'} faqData={faqData} />
       <div className="bg-[#F9F8FF]">
         <CTA
