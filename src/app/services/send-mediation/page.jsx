@@ -66,7 +66,6 @@ const page = () => {
           <SectionHeading title={'Types of SEND Disputes We Support'} />
         </div>
         <div className="mt-[42px] md:mt-[54px]">
-          {/* Buttons */}
           <div className="flex flex-col w-full">
             <div className=" px-5 md:px-16 ">
               <div className={` transition-opacity duration-300 `}>
@@ -101,13 +100,9 @@ const page = () => {
                           <span>Appeals prior to SEND tribunal</span>
                         </li>
                       </ul>
-                      {/* <div className="mt-9">
-                        <Button title={'Resolve Workplace Disputes Today'} href="#" />
-                      </div> */}
                     </div>
                   </div>
                   <div className="relative  h-[303px] lg:h-[403px]  hidden lg:block col-span-2 md:col-span-1 rounded-3xl overflow-hidden">
-                    {/* <div className={`from-[rgba(0, 164, 159, 0.20)] to-[#006863a3] absolute inset-0 bg-gradient-to-b  z-10`}></div> */}
                     <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={send2} />
                   </div>
                 </div>
@@ -119,7 +114,7 @@ const page = () => {
 
       {/*  */}
 
-      <section className="py-16 md:py-[80px]">
+      {/* <section className="py-16 md:py-[80px]">
         <div className="px-5 md:px-16 mb-[120px] ">
           <SectionHeading
             subTitle={
@@ -129,16 +124,12 @@ const page = () => {
           />
         </div>
         <div className="mt-[42px] md:mt-[54px]">
-          {/* Buttons */}
           <div className="flex flex-col w-full">
             <div className=" px-5 md:px-16 ">
               <div className={` transition-opacity duration-300 `}>
                 <div className=" grid items-center grid-cols-2 gap-[80px]">
                   <div className="col-span-2 lg:col-span-1">
-                    {/* <h1 className="font-medium text-4xl md:text-[42px] leading-[120%]">{title}</h1> */}
-
                     <div className="relative h-[303px] lg:h-[403px] my-10 block md:hidden  rounded-3xl overflow-hidden">
-                      {/* <div className={`from-[rgba(67,0,106,0.1)] to-[#43006aa3] absolute inset-0 bg-gradient-to-b  z-10`}></div> */}
                       <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={send3} />
                     </div>
                     <div>
@@ -174,19 +165,54 @@ const page = () => {
                           </span>
                         </li>
                       </ol>
-                      <div className="mt-9">
-                        <Button title={'Request a SEND Mediation Appointment'} href="/about-us" />
-                      </div>
                     </div>
                   </div>
                   <div className="relative  h-[303px] lg:h-[403px]  hidden lg:block col-span-2 md:col-span-1 rounded-3xl overflow-hidden">
-                    {/* <div className={`from-[rgba(0, 164, 159, 0.20)] to-[#006863a3] absolute inset-0 bg-gradient-to-b  z-10`}></div> */}
                     <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={send3} />
                   </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+      </section> */}
+
+      <section className="py-16 px-5 md:px-16 md:py-[80px]">
+        <SectionHeading
+          title={'Understanding the SEND Mediation Process'}
+          subTitle={
+            'Our role is to support everyone involved in reaching a fair outcome, one that respects the voices of the child, their family, and the professionals supporting them.'
+          }
+          center={true}
+        />
+        <div className="grid grid-cols-3 gap-[18px] md:gap-8 my-10 md:my-[54px]">
+          <div className="bg-[#F3F1FF] rounded-xl py-[37px] md:py-[46px] px-[19px] md:px-6 col-span-3 lg:col-span-1">
+            <p className="font-medium text-2xl leading-[140%] mb-[42px] flex items-center justify-center w-[54px] h-[54px] text-white  bg-secondary rounded-xl">
+              1
+            </p>
+            <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">Contact our team</p>
+            <p>We’ll talk you through the process and your options</p>
+          </div>
+
+          <div className="bg-[#F3F1FF] rounded-xl py-[37px] md:py-[46px] px-[19px] md:px-6 col-span-3 lg:col-span-1">
+            <p className="font-medium text-2xl leading-[140%] mb-[42px] flex items-center justify-center w-[54px] h-[54px] text-white  bg-secondary rounded-xl">
+              2
+            </p>
+            <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">Arrange a mediation session </p>
+            <p>We organise a neutral space (virtual or in-person)</p>
+          </div>
+          <div className="bg-[#F3F1FF] rounded-xl py-[37px] md:py-[46px] px-[19px] md:px-6 col-span-3 lg:col-span-1">
+            <p className="font-medium text-2xl leading-[140%] mb-[42px] flex items-center justify-center w-[54px] h-[54px] text-white  bg-secondary rounded-xl">
+              3
+            </p>
+            <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">Agreement summary</p>
+            <p className="font-normal text-base md:text-lg">
+              <span className="">We provide a written record of outcomes, which can support the formal SEND process</span>
+            </p>
+          </div>
+        </div>
+        <div className="flex justify-center">
+          <Button title={'Request a SEND Mediation Appointment'} href="/about-us" />
         </div>
       </section>
 
