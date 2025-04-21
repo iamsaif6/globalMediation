@@ -32,7 +32,7 @@ export const HeaderTraining = () => {
         backgroundSize: 'cover',
         backgroundPosition: 'top center',
       }}
-      className=" pt-[187px] h-screen relative md:pt-[238px] pb-[176px] md:pb-[203px] px-5 md:px-[60px]"
+      className=" pt-[187px] h-auto lg:h-screen relative md:pt-[238px] pb-[176px] md:pb-[203px] px-5 md:px-[60px]"
     >
       <Image src={overlay} className=" absolute top-0 left-0 w-full h-full object-cover" />
       <div className="w-full relative z-10 lg:max-w-[1318px] mx-auto">

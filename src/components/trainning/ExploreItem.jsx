@@ -53,7 +53,7 @@ const ExploreItem = () => {
       {exlopreItem.map((item, idx) => (
         <div key={idx} className=" grid items-center grid-cols-2 gap-[80px]">
           <div className="col-span-2 lg:col-span-1">
-            <h1 className="font-semibold text-[24px] mb-[37px]  md:text-[32px] leading-[120%]">{idx + 1 + '. ' + item.title}</h1>
+            <h1 className="font-semibold text-[24px] mb-[30px]  md:text-[32px] leading-[120%]">{idx + 1 + '. ' + item.title}</h1>
             <div className="relative h-[303px] lg:h-[403px] my-10 block md:hidden  rounded-3xl overflow-hidden">
               {/* <div className={`from-[rgba(67,0,106,0.1)] to-[#43006aa3] absolute inset-0 bg-gradient-to-b  z-10`}></div> */}
               <Image
@@ -64,7 +64,7 @@ const ExploreItem = () => {
                 src={item.cover.src}
               />
             </div>
-            <p className="text-[#667085] text-base md:text-lg leading-[150%]">{item.description}</p>
+            <p className=" text-base mb-5 md:text-lg leading-[150%]">{item.description}</p>
 
             <div>
               <h3 className="md:text-2xl text-lg font-medium text-secondary my-6 ">Key benefits:</h3>

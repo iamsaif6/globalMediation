@@ -9,7 +9,7 @@ const TimeLine = () => {
         <h1 className="font-medium leading-[120%] tracking-[-4%] text-4xl md:text-[40px] lg:text-5xl mb-5 md:mb-6">
           Trusted, Experienced and <br /> People-First
         </h1>
-        <p className={`text-[#9C9C9C] text-base md:text-lg font-normal`}>
+        <p className={`text-black text-base md:text-lg font-normal`}>
           Global Mediation is an independent provider of professional mediation services, trusted by individuals, families, businesses and
           public bodies across the UK.We create safe, impartial spaces for people to communicate, rebuild trust and find lasting outcomes.
           With over 25 years of experience, our team of accredited mediators and trainers bring deep understanding, sector-specific

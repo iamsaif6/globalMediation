@@ -18,7 +18,7 @@ const TeamMember = () => {
           </button>
         </div>
         <div className="col-span-2 lg:col-span-1">
-          <p className="text-[#667085] text-base md:text-lg leading-[150%]">
+          <p className="text-black text-base md:text-lg leading-[150%]">
             Our team includes accredited, experienced mediators from a wide range of backgrounds. We are committed to building connection,
             understanding and resolution through every conversation we lead.
           </p>

@@ -16,7 +16,7 @@ const Accredited = () => {
         <h1 className="font-medium  leading-[120%] tracking-[-4%] text-4xl md:text-[40px] lg:text-5xl mb-5 md:mb-6">
           Recognised and Trusted <br /> Across the UK
         </h1>
-        <p className={`text-[#9C9C9C] text-base md:text-lg font-normal`}>
+        <p className={`text-black text-base md:text-lg font-normal`}>
           We are proud to be accredited by the Civil Mediation Council, and trusted by leading organisations across the UK, from public
           sector bodies to national charities and corporate clients.
         </p>

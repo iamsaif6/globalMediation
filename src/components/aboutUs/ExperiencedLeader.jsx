@@ -11,7 +11,7 @@ const ExperiencedLeader = () => {
       </div>
       <div className="col-span-2 flex justify-center  flex-col gap-9 lg:col-span-1">
         <h1 className="font-medium text-4xl md:text-5xl leading-[120%]">About Global Mediation</h1>
-        <p className="text-[#667085] text-base md:text-lg leading-[150%] my-6">
+        <p className="text-black text-base md:text-lg leading-[150%] my-6">
           We exist to support people through difficult conversations, with calm, clarity and care. Our mediation services create space for
           progress, helping individuals, families, teams and organisations navigate conflict and reach resolution, without judgment or
           pressure.

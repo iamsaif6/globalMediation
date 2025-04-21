@@ -58,10 +58,12 @@ const AboutUs = () => {
       <TeamMember />
       <Accredited />
       <JoinGlobalTeam />
-      <FeedbackCarousel title={'What Our Clients Say'} />
+      <div className="py-[40px] lg:py-[80px]">
+        <FeedbackCarousel title={'What Our Clients Say'} />
+      </div>
       <CTA
         title={'Let’s find a way forward, together'}
-        subTitle={'For more information about our services, team, training programs, or career opportunities, get in touch with us:'}
+        subTitle={'For more information about our services, team, training programs, or career opportunities, get in touch with us .'}
         Button1Link={'/contact-us'}
         Button1Text={'Contact us'}
       />

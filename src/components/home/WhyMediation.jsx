@@ -11,7 +11,7 @@ const items = [
 
 const WhyMediation = () => {
   return (
-    <section className="py-16 md:py-[80px] mb-16 md:mb-[80px] pr-5 md:pr-16 pl-5 md:pl-[49px] bg-secondary ">
+    <section className="py-16 mt-[40px] lg:mt-[80px] md:py-[80px] mb-16 md:mb-[80px] pr-5 md:pr-16 pl-5 md:pl-[49px] bg-secondary ">
       <div className="grid grid-cols-2 gap-[90px]">
         <div className="relative col-span-2 lg:col-span-1">
           <svg
