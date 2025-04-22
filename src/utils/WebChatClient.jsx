@@ -13,7 +13,7 @@ export default function WebChatClient() {
     script.onload = () => {
       window.botpressWebChat.init({
         composerPlaceholder: 'Chat with bot',
-        botConversationDescription: 'This chatbot was built to help you',
+        botConversationDescription: 'Ask our AI Helper Anything',
         botId: 'acda15fe-2560-4701-b09d-26598492f971',
         clientId: 'd66b7f68-aa97-43d6-89c8-ac18442644e2',
         hostUrl: 'https://cdn.botpress.cloud/webchat/v1',

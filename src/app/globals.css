@@ -11,6 +11,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary-color: #43006a;
 }
 
 @theme inline {
@@ -147,4 +148,15 @@ body {
 }
 .ReactModal__Content::-webkit-scrollbar-thumb {
   background-color: transparent !important;
+}
+
+/* Chat bot */
+.bpw-header-container {
+  background: var(--primary-color) !important;
+  border: none;
+  color: white;
+}
+
+.bp-widget-web:focus-visible {
+  outline: none !important;
 }
