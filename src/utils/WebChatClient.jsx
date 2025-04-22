@@ -5,7 +5,7 @@ export default function WebChatClient() {
   useEffect(() => {
     // Load the Botpress WebChat script
     const script = document.createElement('script');
-    script.src = 'https://cdn.botpress.cloud/webchat/v1/inject.js';
+    script.src = 'https://cdn.botpress.cloud/webchat/v2.3/inject.js';
     script.async = true;
     document.body.appendChild(script);
 
