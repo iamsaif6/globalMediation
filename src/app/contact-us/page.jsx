@@ -27,7 +27,7 @@ const ContactUs = () => {
               <h1 className="leading-[120%] text-5xl md:[55px] lg:text-[65px] capitalize font-semibold mb-4">
                 Let’s Resolve Things – Together
               </h1>
-              <p className="text-base lg:text-lg opacity-70">
+              <p className="text-base text-white lg:text-lg">
                 Get in touch to speak with a specialist about your situation. Whether you're navigating a conflict, booking mediation, or
                 exploring training, we're here to help
               </p>
@@ -84,8 +84,7 @@ const ContactUs = () => {
           <div className="col-span-3 lg:col-span-1 flex gap-5 items-center">
             <Check className="text-primary flex-shrink-0" />
             <p className=" font-normal text-[15px]">
-              <strong> Trusted by Thousands</strong> . We’ve helped resolve over 20,000 disputes across the UK — from families and
-              businesses to government bodies.
+              <strong>Free</strong> , no-obligation consultation to understand your needs and explain how we can help.
             </p>
           </div>
 
@@ -99,7 +98,8 @@ const ContactUs = () => {
           <div className="col-span-3 lg:col-span-1 flex gap-5 items-center">
             <Check className="text-primary flex-shrink-0" />
             <p className=" font-normal text-[15px]">
-              <strong>Free</strong> , no-obligation consultation to understand your needs and explain how we can help.
+              <strong> Trusted by Thousands</strong> . We’ve helped resolve over 20,000 disputes across the UK — from families and
+              businesses to government bodies.
             </p>
           </div>
         </div>
