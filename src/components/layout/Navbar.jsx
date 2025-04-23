@@ -4,10 +4,10 @@ import React, { useState } from 'react';
 import { usePathname } from 'next/navigation';
 
 const resourceSubMenu = [
-  { title: 'Blog', href: '/blogs' },
-  { title: 'FAQ', href: '/faq' },
-  { title: 'Case Studies', href: '/case-studies' },
-  { title: 'Guides', href: '/guides' },
+  { title: 'Blogs', href: '/blogs' },
+  { title: 'FAQ', href: '/blogs' },
+  { title: 'Case Studies', href: '/blogs' },
+  { title: 'Guides', href: '/blogs' },
 ];
 
 const serviceSubmenu = [
