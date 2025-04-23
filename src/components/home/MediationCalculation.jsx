@@ -42,16 +42,13 @@ const MediationCalculation = () => {
 
   function openModal(data) {
     const litigationCost = parseFloat(data.litigationCost.replace(/,/g, ''));
-    console.log(litigationCost);
     const litigationDuration = parseInt(data.litigationDuration);
     const mediationCost = parseFloat(data.mediationCost);
     const mediationDuration = parseInt(data.mediationDuration);
 
     const costSavingsPercentage = (1 - mediationCost / litigationCost) * 100;
     const costSavingsAmount = litigationCost - mediationCost;
-    const timeSavingsPercentage = (1 - mediationDuration / litigationDuration) * 100;
-
-    console.log(litigationCost);
+    const timeSavingsPercentage = Math.floor((1 - mediationDuration / litigationDuration) * 100);
 
     setCalculationResults({
       costSavings: {
@@ -239,8 +236,8 @@ const MediationCalculation = () => {
                     <div>
                       <h3 className="leading-[140%] font-normal text-secondary  text-center text-[25px]  ">
                         {/* {calculationResults.costSavings.percentage.toFixed(2)}% <span className=" text-base">in cost</span> */}
-                        <span className="text-base block">Potential savings:</span>
                         <span className="block"> £ {Number(calculationResults.costSavings.range).toLocaleString()}</span>
+                        <span className="text-base block">Potential savings</span>
                       </h3>
                       {/* <p className=" text-secondary font-normal ">
                         Potential savings: £ {Number(calculationResults.costSavings.range).toLocaleString()}
@@ -251,7 +248,7 @@ const MediationCalculation = () => {
                   <div className="bg-[#EAE8FE] col-span-3 text-center lg:col-span-1 flex flex-col gap-[30px] justify-between items-center  rounded-[20px] px-7 md:px-[35px] p-[29px] ">
                     <p className="font-semibold">Time</p>
                     <h3 className="leading-[140%] text-secondary flex flex-col gap-2.5  text-[25px] font-normal">
-                      {calculationResults.timeSavings.percentage.toFixed(2)}%<span className=" leading-0 text-base ">of your time</span>
+                      {calculationResults.timeSavings.percentage}%<span className=" leading-0 text-base ">of your time</span>
                     </h3>
                     <p className=" font-semibold">
                       Resolving your dispute in just {calculationResults.timeSavings.newDuration} days instead of{' '}
