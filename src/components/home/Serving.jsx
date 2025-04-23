@@ -85,7 +85,7 @@ const Serving = () => {
     slidesToShow: 4,
     slidesToScroll: 2,
     arrows: false,
-    centerMode: true,
+    centerMode: false,
     responsive: [
       {
         breakpoint: 1024,
@@ -189,12 +189,12 @@ const Serving = () => {
           </svg>
         </button>
 
-        <div className="mb-14">
+        <div className="mb-14 max-w-[800px] mx-auto">
           <Slider ref={topSliderRef} {...topSliderSettings}>
             {topRowItems.map((item, index) => (
               <div key={`top-${index}`} className="px-1">
                 <div className="w-full h-24  flex items-center justify-center ">
-                  <img className="w-full max-w-24 h-full object-contain" src={item.src} alt="" />
+                  <img className="w-full max-w-20 h-full object-contain" src={item.src} alt="" />
                 </div>
               </div>
             ))}
@@ -206,7 +206,7 @@ const Serving = () => {
             {bottomRowItems.map((item, index) => (
               <div key={`bottom-${index}`} className="px-1">
                 <div className="w-full h-24  flex items-center justify-center ">
-                  <img className="w-full h-full max-w-24 object-contain object-center" src={item.src} alt="" />
+                  <img className="w-full h-full max-w-20 object-contain object-center" src={item.src} alt="" />
                 </div>
               </div>
             ))}
