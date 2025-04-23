@@ -14,10 +14,8 @@ const MediationCards = () => {
     const checkMobile = () => {
       setIsMobile(window.innerWidth < 768);
     };
-
     checkMobile();
     window.addEventListener('resize', checkMobile);
-
     // Cleanup
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
@@ -86,8 +84,8 @@ const MediationCards = () => {
   }
 
   return (
-    <div ref={sectionRef} className="relative pb-16 h-[400vh]">
-      <div className="sticky -top-[10%] h-screen flex items-center justify-center">
+    <div ref={sectionRef} className="relative pb-16 h-[300vh]">
+      <div className="sticky -top-[10%]  flex items-center justify-center">
         <div className="w-full px-5 lg:px-16">
           <SectionHeading
             title={'Mediation That Works For You'}
