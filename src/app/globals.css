@@ -160,3 +160,7 @@ body {
 .bp-widget-web:focus-visible {
   outline: none !important;
 }
+
+.bpHeaderContainer {
+  background-color: red !important;
+}
