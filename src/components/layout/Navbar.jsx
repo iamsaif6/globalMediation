@@ -234,7 +234,11 @@ const Navbar = () => {
           <div className="flex items-center">
             <div className="hidden lg:flex flex-1 items-center gap-2">
               <button>
-                <Link className={`px-6 py-[20px] text-secondary lg:py-7 text-lg flex items-center`} href="#">
+                <Link
+                  target="_blank"
+                  className={`px-6 py-[20px] text-secondary lg:py-7 text-lg flex items-center`}
+                  href="https://portal.globalmediation.co.uk/login/"
+                >
                   Login
                 </Link>
               </button>
@@ -518,7 +522,11 @@ const Navbar = () => {
               </Link>
             </button>
             <button>
-              <Link className={`px-6 py-[20px] lg:py-7 text-lg text-secondary flex items-center`} href="#">
+              <Link
+                target="_blank"
+                className={`px-6 py-[20px] lg:py-7 text-lg text-secondary flex items-center`}
+                href="https://portal.globalmediation.co.uk/login/"
+              >
                 Login
               </Link>
             </button>
