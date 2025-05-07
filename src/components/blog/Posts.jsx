@@ -50,7 +50,7 @@ const Posts = ({ articles }) => {
     <section className="py-16 bg-[#F9F8FF] about px-5 md:px-16 md:py-[80px] ">
       <div className="mb-12 md:mb-[80px] flex-col gap-8  lg:flex-row flex justify-between items-center lg:items-end">
         <div className="text-center lg:text-left">
-          <h1 className="font-medium mb-[20px] md:mb-6 text-4xl md:text-5xl leading-[120%]">Recent News</h1>
+          <h3 className="font-medium mb-[20px] md:mb-6 text-4xl md:text-5xl leading-[120%]">Recent News</h3>
           <p className="font-normal text-[#667085] text-base md:text-[20px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
         </div>
         <div>
@@ -76,18 +76,19 @@ const Posts = ({ articles }) => {
                           />
                         )}
                       </div>
-                      <h3
+                      <h4
                         title={article?.title}
                         className={`text-black truncate leading-[140%] mt-6 md:mt-6 mb-4 text-lg md:text-[24px] font-semibold`}
                       >
                         {article?.title}
-                      </h3>
+                      </h4>
                       {article?.description && (
                         <p title={article?.description} className={`text-[#667085] leading-[150%] mb-6 text-lg font-normal`}>
                           {article?.description?.slice(0, 80) + '....'}
                         </p>
                       )}
                       <Link
+                        title="Read More"
                         href={`/blogs/blog/${article?.slug || article.id}`}
                         className="flex w-max pb-1 border-b border-secondary gap-1 items-center text-secondary font-medium text-sm"
                       >

@@ -14,7 +14,7 @@ const Header = ({ title, subTitle, Button1Text, Button1Link = '#', Button2Text, 
       }}
       className=" pt-[187px] relative h-screen md:pt-[238px] pb-[176px] md:pb-[203px] px-5 md:px-[60px]"
     >
-      <Image src={overlay} className=" absolute top-0 left-0 w-full h-full object-cover" />
+      <Image alt="Overlay" src={overlay} className=" absolute top-0 left-0 w-full h-full object-cover" />
       {isHomePage && (
         <div>
           <video playsInline autoPlay muted loop className="absolute top-0 left-0 w-full h-full object-cover z-0">

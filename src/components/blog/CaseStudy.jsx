@@ -39,7 +39,7 @@ const CaseStudy = () => {
     <section className="py-16 px-5 md:py-[80px] md:px-[64px] bg-secondary text-white">
       <div className="flex gap-8 flex-col md:flex-row items-start md:items-end justify-between">
         <div className="text-left">
-          <h1 className="font-medium mb-[20px] md:mb-6 text-4xl md:text-5xl leading-[120%]">Case Study</h1>
+          <h3 className="font-medium mb-[20px] md:mb-6 text-4xl md:text-5xl leading-[120%]">Case Study</h3>
           <p className="font-normal text-base md:text-[20px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
         </div>
 

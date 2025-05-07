@@ -31,7 +31,7 @@ const Download = () => {
   return (
     <section className="py-16 px-5 md:py-[80px] md:px-[64px]">
       <div className="text-left mb-[54px]">
-        <h1 className="font-medium mb-[20px] md:mb-6 text-4xl md:text-5xl leading-[120%]">Download Resources</h1>
+        <h4 className="font-medium mb-[20px] md:mb-6 text-4xl md:text-5xl leading-[120%]">Download Resources</h4>
         <p className="font-normal text-base md:text-[20px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
       </div>
       <div>
