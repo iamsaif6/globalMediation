@@ -17,7 +17,7 @@ const TimeLine = () => {
       </div>
 
       <div className="my-[42px] md:my-[80px]">
-        <h1 className="md:text-center text-secondary text-lg md:text-2xl font-semibold mb-10">Key Milestones</h1>
+        <h4 className="md:text-center text-secondary text-lg md:text-2xl font-semibold mb-10">Key Milestones</h4>
 
         <div className="relative gap-[30px] flex flex-col md:flex-row justify-between items-start">
           <div className="w-full md:w-1/3 md:text-center relative z-10 flex md:block gap-8 items-center">

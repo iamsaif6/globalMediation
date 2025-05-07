@@ -85,7 +85,7 @@ const page = () => {
       </div>
       <MediationCalculation />
 
-      <FAQ title={'FAQs About Workplace Mediation'} buttonText={'Contact Us'} buttonLink={'/contat-us'} faqData={faqData} />
+      <FAQ title={'FAQs About Workplace Mediation'} buttonText={'Contact Us'} buttonLink={'/contact-us'} faqData={faqData} />
       <div className="bg-[#F9F8FF]">
         <CTA
           title={'Learn More About Global Mediation'}
