@@ -12,10 +12,10 @@ import Image from 'next/image';
 
 const Marque = () => {
   return (
-    <div className="py-16 lg:mb-[0]  md:mb-[100px]">
+    <section aria-label="Certifications and Partners" className="py-16 lg:mb-[0]  md:mb-[100px]">
       <div className="flex items-center flex-wrap justify-center">
         <div className=" h-24 mx-[30px]   w-24">
-          <Image className="w-full h-full object-contain" src={img7} alt="confident" />
+          <Image className="w-full h-full object-contain" src={img7} alt="Confident" />
         </div>
         <div className=" h-24 mx-[30px]   w-24">
           <Image className="w-full h-full object-contain" src={img1} alt="Living Wadge Company" />
@@ -30,16 +30,16 @@ const Marque = () => {
           <Image className="w-full h-full object-contain" src={img6} alt="CMC" />
         </div>
         <div className="  h-24  mx-[30px]   w-24">
-          <Image className="w-full h-full object-contain" src={img2} alt="ISO" />
+          <Image className="w-full h-full object-contain" src={img2} alt="ISO 27001_2013 1" />
         </div>
         <div className="  h-24  mx-[30px]   w-24">
           <Image className="w-full h-full object-contain" src={img4} alt="Cyber" />
         </div>
         <div className="  h-24  mx-[30px]   w-24">
-          <Image className="w-full h-full object-contain" src={img5} alt="Cyber" />
+          <Image className="w-full h-full object-contain" src={img5} alt="ISO 9001" />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

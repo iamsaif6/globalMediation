@@ -1,5 +1,4 @@
 import React from 'react';
-import Button from './Button';
 import Link from 'next/link';
 
 const CTA = ({ title, subTitle, Button1Text, Button1Link, Button2Text, Button2Link }) => {
@@ -9,20 +8,20 @@ const CTA = ({ title, subTitle, Button1Text, Button1Link, Button2Text, Button2Li
         <div className="z-10 py-10 mx-auto text-white text-center">
           <div className="z-10 relative">
             <div className="max-w-[950px] mx-auto">
-              <h1 className="font-medium text-4xl md:text-[54px] leading-[120%] mb-[20px] md:mb-6">{title}</h1>
+              <h4 className="font-medium text-4xl md:text-[54px] leading-[120%] mb-[20px] md:mb-6">{title}</h4>
               <p className=" text-base md:text-lg">{subTitle}</p>
             </div>
             <div className={`mt-8 md:max-w-[950px] ${Button2Text ? 'grid grid-cols-1 md:grid-cols-2' : 'md:grid-cols-1'}  gap-4  mx-auto`}>
               {Button1Text && (
                 <button className="bg-primary font-normal text-[#FCFCFD] px-10 py-3 rounded-[40px] text-base md:text-lg">
-                  <Link className="block w-full text-center" href={Button1Link}>
+                  <Link title={Button1Text} className="block w-full text-center" href={Button1Link}>
                     {Button1Text}
                   </Link>
                 </button>
               )}
               {Button2Text && (
                 <button className="font-normal border border-white text-base md:text-lg text-white px-6 py-3 rounded-[40px]">
-                  <Link className="block w-full text-center" href={Button2Link}>
+                  <Link title={Button2Text} className="block w-full text-center" href={Button2Link}>
                     {Button2Text}
                   </Link>
                 </button>

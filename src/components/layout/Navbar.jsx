@@ -533,8 +533,6 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-
-      {/* Mobile Menu Overlay */}
     </>
   );
 };

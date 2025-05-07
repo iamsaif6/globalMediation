@@ -35,7 +35,7 @@ const ServiceCarousel = () => {
     customPaging: i => <div className=" w-[50px]  h-1 rounded-xl bg-[#EBEBEB]"></div>,
   };
   return (
-    <section className="slick-bar">
+    <section aria-label="Global Mediation Services" className="slick-bar">
       <div className="max-w-[800px] mx-auto text-center md:text-center mb-[70px]">
         <h1 className="font-medium text-4xl md:text-5xl mb-5 md:mb-6">Global Mediation Services</h1>
         <p className=" leading-[150%] text-base md:text-lg font-normal">
@@ -62,6 +62,7 @@ const ServiceCarousel = () => {
                   Resolve team conflict, grievances and workplace challenges.
                 </p>
                 <Link
+                  title="Learn more"
                   className="text-sm md:text-lg duration-300 hover:gap-4 border-b-[2px] pb-1.5 w-max flex items-center gap-2 font-semibold mt-auto"
                   href={'/services/Workplace-and-Employment-Mediation'}
                 >
@@ -88,6 +89,7 @@ const ServiceCarousel = () => {
                   Addressing disputes over contracts, partnerships, and more
                 </p>
                 <Link
+                  title="Learn more"
                   className="text-sm md:text-lg duration-300 hover:gap-4 border-b-[2px] pb-1.5 w-max flex items-center gap-2 font-semibold mt-auto"
                   href={'/services/Business-and-Commercial-Mediation'}
                 >
@@ -114,6 +116,7 @@ const ServiceCarousel = () => {
                   Support for families, schools and authorities navigating special educational needs.
                 </p>
                 <Link
+                  title="Learn more"
                   className="text-sm md:text-lg duration-300 hover:gap-4 border-b-[2px] pb-1.5 w-max flex items-center gap-2 font-semibold mt-auto"
                   href={'/services/send-mediation'}
                 >
@@ -141,6 +144,7 @@ const ServiceCarousel = () => {
                   A calmer alternative to court in a wide range of legal matters.
                 </p>
                 <Link
+                  title="Learn more"
                   className="text-sm md:text-lg duration-300 hover:gap-4 border-b-[2px] pb-1.5 w-max flex items-center gap-2 font-semibold mt-auto"
                   href={'/services/Civil-and-Legal-Dispute-Mediation'}
                 >

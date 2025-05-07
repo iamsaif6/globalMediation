@@ -1,6 +1,6 @@
 'use client';
 import React, { useState, useEffect } from 'react';
-import { motion, useScroll } from 'framer-motion';
+import { useScroll } from 'framer-motion';
 import SectionHeading from '../shared/SectionHeading';
 import MediationCard from './MediationCard';
 import { VoluntaryIcon } from './Mediation Icon/Voluntary';

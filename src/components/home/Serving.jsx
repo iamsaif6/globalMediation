@@ -194,7 +194,7 @@ const Serving = () => {
             {topRowItems.map((item, index) => (
               <div key={`top-${index}`} className="px-1">
                 <div className="w-full h-24  flex items-center justify-center ">
-                  <img className="w-full max-w-20 h-full object-contain" src={item.src} alt="" />
+                  <img className="w-full max-w-20 h-full object-contain" src={item.src} alt="Company Logo" />
                 </div>
               </div>
             ))}
@@ -206,7 +206,7 @@ const Serving = () => {
             {bottomRowItems.map((item, index) => (
               <div key={`bottom-${index}`} className="px-1">
                 <div className="w-full h-24  flex items-center justify-center ">
-                  <img className="w-full h-full max-w-20 object-contain object-center" src={item.src} alt="" />
+                  <img className="w-full h-full max-w-20 object-contain object-center" src={item.src} alt="Company Logo" />
                 </div>
               </div>
             ))}

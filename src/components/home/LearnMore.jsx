@@ -6,7 +6,7 @@ import Button from '../shared/Button';
 
 const LearnMore = () => {
   return (
-    <section className="md:px-[64px] px-5 py-16 md:py-[80px]">
+    <section aria-label="Learn More About Mediation" className="md:px-[64px] px-5 py-16 md:py-[80px]">
       <SectionHeading
         title={'Learn More About Mediation'}
         subTitle={'Explore resources to help you prepare for mediation or learn more about how it works:'}
@@ -55,6 +55,7 @@ const LearnMore = () => {
               <p className="text-[#101828] text-lg font-normal">Find answers to common questions</p>
             </div>
             <Link
+              title="Read more"
               className="text-sm text-secondary md:text-lg duration-300 hover:gap-4 border-b-[2px] pb-1.5 w-max flex items-center gap-2 font-semibold mt-auto"
               href={'/faq'}
             >
@@ -109,6 +110,7 @@ const LearnMore = () => {
               <p className="text-[#101828] text-lg font-normal">Real examples of successful mediation</p>
             </div>
             <Link
+              title="Read more"
               className="text-sm text-secondary md:text-lg duration-300 hover:gap-4 border-b-[2px] pb-1.5 w-max flex items-center gap-2 font-semibold mt-auto"
               href={'/case-studies'}
             >
@@ -162,6 +164,7 @@ const LearnMore = () => {
               <p className="text-[#101828] text-lg font-normal">Downloadable prep and tips</p>
             </div>
             <Link
+              title="Read more"
               className="text-sm text-secondary md:text-lg duration-300 hover:gap-4 border-b-[2px] pb-1.5 w-max flex items-center gap-2 font-semibold mt-auto"
               href={'/guides'}
             >
@@ -184,6 +187,7 @@ const LearnMore = () => {
               <p className="text-[#101828] text-lg font-normal">Insights, advice and real-world stories</p>
             </div>
             <Link
+              title="Read more"
               className="text-sm text-secondary md:text-lg duration-300 hover:gap-4 border-b-[2px] pb-1.5 w-max flex items-center gap-2 font-semibold mt-auto"
               href={'/blogs'}
             >

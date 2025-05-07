@@ -11,7 +11,10 @@ const items = [
 
 const WhyMediation = () => {
   return (
-    <section className="py-16 mt-[40px] lg:mt-[80px] md:py-[80px] mb-16 md:mb-[80px] pr-5 md:pr-16 pl-5 md:pl-[49px] bg-secondary ">
+    <section
+      aria-label="Why Mediation"
+      className="py-16 mt-[40px] lg:mt-[80px] md:py-[80px] mb-16 md:mb-[80px] pr-5 md:pr-16 pl-5 md:pl-[49px] bg-secondary "
+    >
       <div className="grid grid-cols-2 gap-[90px]">
         <div className="relative col-span-2 lg:col-span-1">
           <svg
@@ -51,11 +54,13 @@ const WhyMediation = () => {
         </div>
       </div>
       <div className="flex items-center justify-center">
-        <button className=" bg-white w-full md:w-auto font-normal text-lg text-secondary px-12 py-3 rounded-[40px] ">
-          <Link className="w-full  " href="/about-us">
-            Learn More About Us
-          </Link>
-        </button>
+        <Link
+          title="Learn More About Us"
+          className=" bg-white w-full md:w-auto font-normal text-lg text-secondary px-12 py-3 rounded-[40px] "
+          href="/about-us"
+        >
+          Learn More About Us
+        </Link>
       </div>
     </section>
   );

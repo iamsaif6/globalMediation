@@ -78,7 +78,7 @@ const MediationCalculation = () => {
   }
 
   return (
-    <section className="py-[64px] md:py-[50px] px-5 md:px-[60px]">
+    <section aria-label="Mediation Calculator" className="py-[64px] md:py-[50px] px-5 md:px-[60px]">
       <SectionHeading
         title={'See How Much Mediation Can Save You'}
         subTitle={'Try our Mediation Savings Calculator to discover how much time and cost you could save compared to going to court.'}
@@ -279,7 +279,7 @@ const MediationCalculation = () => {
               <div className="md:flex hidden items-center gap-4 justify-center mt-[60px]">
                 <Button title={'Schedule a Mediation Session'} href="/contact-us" />
                 <button className="font-normal border border-[#393D4E] text-lg text-[#393D4E] px-[24px] py-3 rounded-[40px]">
-                  <Link className="w-full" href="/contact-us">
+                  <Link title=" Speak to a Mediator Today" className="w-full" href="/contact-us">
                     Speak to a Mediator Today
                   </Link>
                 </button>
