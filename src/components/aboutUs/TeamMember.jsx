@@ -1,5 +1,4 @@
 import React from 'react';
-import Button from '../shared/Button';
 import TeamCarousel from '../home/TeamCarousel';
 import Link from 'next/link';
 
@@ -8,7 +7,7 @@ const TeamMember = () => {
     <section className="py-16 about md:py-[80px]">
       <div className="grid px-5 md:px-16 grid-cols-2 gap-7 md:gap-[80px] mb-[80px]">
         <div className="col-span-2 lg:col-span-1">
-          <h1 className="leading-[120%] text-4xl md:text-[40px] lg:text-5xl font-medium mb-8">The People Behind Global Mediation</h1>
+          <h3 className="leading-[120%] text-4xl md:text-[40px] lg:text-5xl font-medium mb-8">The People Behind Global Mediation</h3>
           <button
             className={`bg-primary border border-primary font-normal text-lg text-[#FCFCFD] w-full  md:w-auto px-12 py-3 rounded-[40px]`}
           >

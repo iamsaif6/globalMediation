@@ -4,7 +4,7 @@ const Origins = () => {
   return (
     <div className="bg-[#F9F8FF] relative py-16 px-5 md:px-16 md:py-[80px] grid grid-cols-2 gap-[80px]">
       <div className="col-span-2 lg:col-span-1 relative z-10">
-        <h1 className="leading-[120%] z-20  font-medium text-4xl md:text-4xl lg:text-5xl">The Origins of Global Mediation</h1>
+        <h2 className="leading-[120%] z-20  font-medium text-4xl md:text-4xl lg:text-5xl">The Origins of Global Mediation</h2>
       </div>
       <div className="col-span-2 lg:col-span-1 mt-[0px] lg:mt-[200px]">
         <p className="leading-[150%] text-bas relative z-40">

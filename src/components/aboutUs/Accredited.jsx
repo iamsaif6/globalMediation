@@ -1,21 +1,14 @@
 import React from 'react';
-import SectionHeading from '../shared/SectionHeading';
 import Link from 'next/link';
 import { ArrowUpRight } from 'lucide-react';
-import image1 from '/public/award (1) 1.png';
-import image2 from '/public/award (1) 2.png';
-import image3 from '/public/award (1) 3.png';
-import image4 from '/public/award (1) 4.png';
-import image5 from '/public/award (1) 5.png';
-import Image from 'next/image';
 
 const Accredited = () => {
   return (
     <section className="py-16 px-5 md:px-16 md:py-[80px] ">
       <div className={` max-w-[850px] mx-auto text-center  md:text-center`}>
-        <h1 className="font-medium  leading-[120%] tracking-[-4%] text-4xl md:text-[40px] lg:text-5xl mb-5 md:mb-6">
+        <h3 className="font-medium  leading-[120%] tracking-[-4%] text-4xl md:text-[40px] lg:text-5xl mb-5 md:mb-6">
           Recognised and Trusted <br /> Across the UK
-        </h1>
+        </h3>
         <p className={`text-black text-base md:text-lg font-normal`}>
           We are proud to be accredited by the Civil Mediation Council, and trusted by leading organisations across the UK, from public
           sector bodies to national charities and corporate clients.
@@ -27,6 +20,7 @@ const Accredited = () => {
           <ul className="space-y-3 md:space-y-6">
             <li>
               <Link
+                title="Local authorities across the UK"
                 className="flex duration-200 hover:bg-secondary hover:text-white hover:border-secondary items-center text-black rounded-xl text-base md:text-lg justify-between p-4 md:p-[21px] border border-[#DAD3FF]"
                 href={'#'}
               >
@@ -36,6 +30,7 @@ const Accredited = () => {
             </li>
             <li>
               <Link
+                title="Educational institutions"
                 className="flex duration-200 hover:bg-secondary hover:text-white hover:border-secondary items-center text-black rounded-xl text-base md:text-lg justify-between p-4 md:p-[21px] border border-[#DAD3FF]"
                 href={'#'}
               >
@@ -45,6 +40,7 @@ const Accredited = () => {
             </li>
             <li>
               <Link
+                title="Businesses and community organisations"
                 className="flex duration-200 hover:bg-secondary hover:text-white hover:border-secondary items-center text-black rounded-xl text-base md:text-lg justify-between p-4 md:p-[21px] border border-[#DAD3FF]"
                 href={'#'}
               >
@@ -59,6 +55,7 @@ const Accredited = () => {
           <ul className="space-y-3 md:space-y-6">
             <li>
               <Link
+                title="Civil Mediation Council"
                 className="flex duration-200 hover:bg-secondary hover:text-white hover:border-secondary items-center text-black rounded-xl text-base md:text-lg justify-between p-4 md:p-[21px] border border-[#DAD3FF]"
                 href={'#'}
               >
@@ -68,6 +65,7 @@ const Accredited = () => {
             </li>
             <li>
               <Link
+                title="College of Mediators"
                 className="flex duration-200 hover:bg-secondary hover:text-white hover:border-secondary items-center text-black rounded-xl text-base md:text-lg justify-between p-4 md:p-[21px] border border-[#DAD3FF]"
                 href={'#'}
               >

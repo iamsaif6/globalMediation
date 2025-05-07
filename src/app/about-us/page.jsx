@@ -14,10 +14,59 @@ import Origins from '@/components/aboutUs/Origins';
 import WhatGuides from '@/components/aboutUs/WhatGuides';
 import headerBG from '/public/aboutus_header.jpg';
 import Link from 'next/link';
+import Head from 'next/head';
+
+const metaImg = 'https://globalmediation-cdn-1.s3.eu-west-2.amazonaws.com/wp-content/uploads/2017/08/08144201/About.jpg';
+
+export const metadata = {
+  title: 'About - Global Mediation - Mediation Services UK',
+  description:
+    'Global Mediation was established in 1999. The company offers a wide range of mediation services UK, covering all aspects of personal and professional life.',
+};
 
 const AboutUs = () => {
   return (
     <div className="bg-[#F9F8FF]">
+      <Head>
+        <title>About - Global Mediation - Mediation Services UK</title>
+        <meta
+          name="description"
+          content="Global Mediation was established in 1999. The company offers a wide range of mediation services UK, covering all aspects of personal and professional life."
+        />
+
+        <meta itemprop="name" content="About - Global Mediation - Mediation Services UK" />
+        <meta
+          itemprop="description"
+          content="Global Mediation was established in 1999. The company offers a wide range of mediation services UK, covering all aspects of personal and professional life."
+        />
+        <meta
+          itemprop="image"
+          content="https://globalmediation-cdn-1.s3.eu-west-2.amazonaws.com/wp-content/uploads/2017/08/08144201/About.jpg"
+        />
+
+        <meta property="og:url" content="https://www.globalmediation.co.uk/about/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="About - Global Mediation - Mediation Services UK" />
+        <meta
+          property="og:description"
+          content="Global Mediation was established in 1999. The company offers a wide range of mediation services UK, covering all aspects of personal and professional life."
+        />
+        <meta
+          property="og:image"
+          content="https://globalmediation-cdn-1.s3.eu-west-2.amazonaws.com/wp-content/uploads/2017/08/08144201/About.jpg"
+        />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="About - Global Mediation - Mediation Services UK" />
+        <meta
+          name="twitter:description"
+          content="Global Mediation was established in 1999. The company offers a wide range of mediation services UK, covering all aspects of personal and professional life."
+        />
+        <meta
+          name="twitter:image"
+          content="https://globalmediation-cdn-1.s3.eu-west-2.amazonaws.com/wp-content/uploads/2017/08/08144201/About.jpg"
+        />
+      </Head>
       <header
         style={{
           backgroundImage: `url('${headerBG.src}'), linear-gradient(to right, rgba(62,0,101,0.60) 1.68%, rgba(62,0,101,0.15) 69.4%)`,
