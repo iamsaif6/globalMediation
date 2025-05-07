@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import banner from '/public/Hero Training Page with Layer.png';
 import Link from 'next/link';
 import Modal from 'react-modal';
-// Modal.setAppElement('#root');
 import overlay from '/public/Overlay.png';
 import Image from 'next/image';
 
@@ -34,7 +33,7 @@ export const HeaderTraining = () => {
       }}
       className=" pt-[187px] h-auto lg:h-screen relative md:pt-[238px] pb-[176px] md:pb-[203px] px-5 md:px-[60px]"
     >
-      <Image src={overlay} className=" absolute top-0 left-0 w-full h-full object-cover" />
+      <Image src={overlay} alt="Header Overlay" className=" absolute top-0 left-0 w-full h-full object-cover" />
       <div className="w-full relative z-10 lg:max-w-[1318px] mx-auto">
         <h1 className="font-semibold tracking-[-4%] max-w-[900px] leading-[120%] text-5xl md:[55px] lg:text-[65px] text-white">
           Mediation Training: Learn, Qualify, and Specialise
@@ -45,6 +44,7 @@ export const HeaderTraining = () => {
         </p>
         <div className="flex md:flex-row flex-col items-center gap-4">
           <button
+            title=" Enroll in a Mediation Training Program Today"
             onClick={openModal}
             className={`bg-primary cursor-pointer border w-full md:w-auto border-primary font-normal text-lg text-[#FCFCFD] px-12 py-3 rounded-[40px]`}
           >
@@ -52,7 +52,7 @@ export const HeaderTraining = () => {
           </button>
 
           <button className=" w-full md:w-auto bg-transparent font-normal border border-white text-lg text-[#FCFCFD] px-[48px] py-3 rounded-[40px] ">
-            <Link className="w-full  " href={'/contact-us'}>
+            <Link title="Contact Us for Upcoming Course Dates" className="w-full  " href={'/contact-us'}>
               Contact Us for Upcoming Course Dates
             </Link>
           </button>

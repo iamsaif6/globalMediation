@@ -315,7 +315,10 @@ const Navbar = () => {
                 <ul className="space-y-3 text-sm ">
                   {serviceSubmenu.map(item => {
                     return (
-                      <li className={` ${pathname.includes(item.href) ? 'text-secondary' : 'text-black'} hover:text-secondary `}>
+                      <li
+                        key={item.title}
+                        className={` ${pathname.includes(item.href) ? 'text-secondary' : 'text-black'} hover:text-secondary `}
+                      >
                         <Link title={item.title} href={`/services${item.href}`}>
                           {item.title}
                         </Link>
@@ -325,9 +328,10 @@ const Navbar = () => {
                 </ul>
               ) : (
                 <ul className="space-y-3 text-sm text-[#98A2B3]">
-                  {traiingSubmenu.map(item => {
+                  {traiingSubmenu.map((item, idx) => {
                     return (
                       <li
+                        key={`${item.title} ${idx}`}
                         className={` ${pathname.includes(item.href) ? 'text-secondary' : 'text-black'} hover:text-secondary  duration-200`}
                       >
                         <Link title="Workplace and Employment Mediation" href={`/services${item.href}`}>
@@ -367,10 +371,10 @@ const Navbar = () => {
             <div className="col-span-7 leading-[150%] p-8 bg-[#F3F1FF]">
               {activeSubmenu2 == 'Resources' ? (
                 <ul className="space-y-3 text-sm ">
-                  {resourceSubMenu.map(item => {
+                  {resourceSubMenu.map((item, idx) => {
                     return (
                       <li
-                        key={item.href}
+                        key={`${item.href}${idx}`}
                         className={` ${pathname.includes(item.href) ? ' text-secondary' : 'text-black'}  hover:text-secondary`}
                       >
                         <Link title={item.title} href={`${item.href}`}>
@@ -382,10 +386,10 @@ const Navbar = () => {
                 </ul>
               ) : (
                 <ul className="space-y-3 text-sm text-[#98A2B3]">
-                  {traiingSubmenu.map(item => {
+                  {traiingSubmenu.map((item, idx) => {
                     return (
                       <li
-                        key={item.href}
+                        key={`${item.href} ${idx}`}
                         className={` ${item.href === pathname ? 'text-secondary' : 'text-[#98A2B3]'} hover:text-secondary duration-200`}
                       >
                         <Link title="Workplace and Employment Mediation" href={`${item.href}`}>
@@ -425,10 +429,10 @@ const Navbar = () => {
             <div className="col-span-7 leading-[150%] p-8 bg-[#F3F1FF]">
               <ul className="space-y-3 text-sm ">
                 <ul className="space-y-3 text-sm text-[#98A2B3]">
-                  {traiingSubmenu.map(item => {
+                  {traiingSubmenu.map((item, idx) => {
                     return (
                       <li
-                        key={item.href}
+                        key={`${item.title} ${idx}`}
                         className={` ${item.href === pathname ? 'text-secondary' : 'text-[#98A2B3]'} hover:text-secondary duration-200`}
                       >
                         <Link title="Workplace and Employment Mediation" href={`${item.href}`}>

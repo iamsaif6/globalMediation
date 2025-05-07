@@ -53,14 +53,13 @@ const ExploreItem = () => {
       {exlopreItem.map((item, idx) => (
         <div key={idx} className=" grid items-center grid-cols-2 gap-[80px]">
           <div className="col-span-2 lg:col-span-1">
-            <h1 className="font-semibold text-[24px] mb-[30px]  md:text-[32px] leading-[120%]">{idx + 1 + '. ' + item.title}</h1>
+            <h3 className="font-semibold text-[24px] mb-[30px]  md:text-[32px] leading-[120%]">{idx + 1 + '. ' + item.title}</h3>
             <div className="relative h-[303px] lg:h-[403px] my-10 block md:hidden  rounded-3xl overflow-hidden">
-              {/* <div className={`from-[rgba(67,0,106,0.1)] to-[#43006aa3] absolute inset-0 bg-gradient-to-b  z-10`}></div> */}
               <Image
                 width={900}
                 height={900}
                 className="object-cover w-full h-full relative z-0"
-                alt={'Experienced Leader In Mediation'}
+                alt={`Experienced Leader In Mediation ${idx}`}
                 src={item.cover.src}
               />
             </div>
@@ -86,7 +85,7 @@ const ExploreItem = () => {
                 <button
                   className={`bg-primary w-full md:w-auto border border-primary font-normal text-base md:text-lg text-[#FCFCFD] px-8 py-3 rounded-[40px]`}
                 >
-                  <Link className="w-full" href={item.buttonLink}>
+                  <Link title={item.buttonText} className="w-full" href={item.buttonLink}>
                     {item.buttonText}
                   </Link>
                 </button>
@@ -94,7 +93,6 @@ const ExploreItem = () => {
             </div>
           </div>
           <div className="relative h-[303px] lg:h-[403px]  hidden md:block col-span-2 lg:col-span-1 rounded-3xl overflow-hidden">
-            {/* <div className={`from-[rgba(0, 164, 159, 0.15)] to-[#00a49e8b] absolute inset-0 bg-gradient-to-b  z-10`}></div> */}
             <Image width={900} height={900} className="object-cover w-full h-full relative z-0" alt={item.title} src={item.cover.src} />
           </div>
         </div>

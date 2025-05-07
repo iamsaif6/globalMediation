@@ -2,7 +2,6 @@
 import Image from 'next/image';
 import React, { useState } from 'react';
 import service1 from '/public/training-1.jpg';
-import Button from '../shared/Button';
 import Link from 'next/link';
 import Modal from 'react-modal';
 
@@ -25,7 +24,7 @@ const Introduction = () => {
     <section>
       <div className=" py-16 px-5 md:px-16 md:py-[80px]">
         <div className="text-center mb-10 lg:mb-[80px]">
-          <h1 className="font-medium text-4xl md:text-5xl leading-[120%]">Overview of Mediation Training</h1>
+          <h2 className="font-medium text-4xl md:text-5xl leading-[120%]">Overview of Mediation Training</h2>
           <p className="text-black text-base md:text-lg leading-[150%] my-6">
             Whether you’re starting your mediation journey or expanding into specialist areas like SEND, our training programmes are
             designed to give you the practical tools and confidence to mediate with clarity, care and professionalism. <br /> <br />{' '}
@@ -60,6 +59,7 @@ const Introduction = () => {
 
               <div className="mt-6">
                 <button
+                  title=" Start Your Mediation Journey Today"
                   onClick={openModal}
                   className={`bg-primary border cursor-pointer border-primary font-normal text-lg text-[#FCFCFD] px-[42px] py-3 rounded-[40px]`}
                 >
@@ -149,15 +149,6 @@ const Introduction = () => {
                 </form>
               </div>
             </div>
-            {/* 
-            <div className="md:flex hidden items-center gap-4 justify-center mt-[60px]">
-              <Button title={'Schedule a Mediation Session'} href="/contact-us" />
-              <button className="font-normal border border-[#393D4E] text-lg text-[#393D4E] px-[24px] py-3 rounded-[40px]">
-                <Link className="w-full" href="/contact-us">
-                  Speak to a Mediator Today
-                </Link>
-              </button>
-            </div> */}
           </div>
         </div>
       </Modal>

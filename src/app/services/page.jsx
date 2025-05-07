@@ -3,9 +3,10 @@ import CTA from '@/components/shared/CTA';
 import React from 'react';
 import heaerImage from '/public/services-final-header.png';
 import Link from 'next/link';
+import Head from 'next/head';
 
 export const metadata = {
-  title: 'Global Mediation - Mediation Services in London & Nationwide',
+  title: 'Services - Global Mediation',
   description:
     'Global Mediation offers cost-effective, efficient and confidential mediation services for a broad range of personal or professional disputes.',
 };
@@ -13,6 +14,25 @@ export const metadata = {
 const MainServices = () => {
   return (
     <div>
+      <Head>
+        <title>Services - Global Mediation</title>
+        <meta name="description" content="" />
+
+        <meta itemprop="name" content="Services - Global Mediation" />
+        <meta itemprop="description" content="" />
+        <meta itemprop="image" content="" />
+
+        <meta property="og:url" content="https://www.globalmediation.co.uk/service" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Services - Global Mediation" />
+        <meta property="og:description" content="" />
+        <meta property="og:image" content="" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Services - Global Mediation" />
+        <meta name="twitter:description" content="" />
+        <meta name="twitter:image" content="" />
+      </Head>
       <header
         style={{
           backgroundImage: `url('${heaerImage.src}'), linear-gradient(to right, rgba(62,0,101,0.60) 1.68%, rgba(62,0,101,0.15) 69.4%)`,
