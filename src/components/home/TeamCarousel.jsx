@@ -17,12 +17,18 @@ const members = [
   },
   {
     name: 'Martha Monday',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.,',
+    text: '‘He is committed to delivering first-rate services to clients and his sparkling personality always shines through and brings a smile.’',
     image: martha,
   },
   {
     name: 'Jeff Lermer',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.,',
+    text: '‘He is committed to delivering first-rate services to clients and his sparkling personality always shines through and brings a smile.’',
+    image: jeff,
+  },
+
+  {
+    name: 'Jeff Lermers',
+    text: '‘He is committed to delivering first-rate services to clients and his sparkling personality always shines through and brings a smile.’',
     image: jeff,
   },
 ];

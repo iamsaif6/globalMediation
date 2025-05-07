@@ -21,6 +21,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Head>
+        <link rel="apple-touch-icon" href="/appleTouch.png" />
         {/* Search Engine Meta */}
         <meta name="description" content={metadata.description} />
         <meta itemProp="name" content={metadata.title} />
