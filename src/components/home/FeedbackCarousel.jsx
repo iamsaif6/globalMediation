@@ -63,7 +63,7 @@ const FeedbackCarousel = ({ title, subTitle }) => {
   return (
     <section aria-label="Feedback Carousel" className="py-[40px] slick-bar ">
       <div className="mb-10 px-5 md:px-16 text-center md:mb-[70px] ">
-        <h1 className=" text-4xl md:text-5xl font-medium leading-[120%] ">{title}</h1>
+        <h2 className=" text-4xl md:text-5xl font-medium leading-[120%] ">{title}</h2>
         {subTitle && <p className=" font-normal text-lg mt-6">{subTitle}</p>}
       </div>
       <div className="slider-container">

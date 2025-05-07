@@ -37,7 +37,7 @@ const ServiceCarousel = () => {
   return (
     <section aria-label="Global Mediation Services" className="slick-bar">
       <div className="max-w-[800px] mx-auto text-center md:text-center mb-[70px]">
-        <h1 className="font-medium text-4xl md:text-5xl mb-5 md:mb-6">Global Mediation Services</h1>
+        <h3 className="font-medium text-4xl md:text-5xl mb-5 md:mb-6">Global Mediation Services</h3>
         <p className=" leading-[150%] text-base md:text-lg font-normal">
           Tailored solutions for individuals, families, workplaces and communities.
         </p>

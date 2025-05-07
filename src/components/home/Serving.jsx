@@ -206,7 +206,12 @@ const Serving = () => {
             {bottomRowItems.map((item, index) => (
               <div key={`bottom-${index}`} className="px-1">
                 <div className="w-full h-24  flex items-center justify-center ">
-                  <img className="w-full h-full max-w-20 object-contain object-center" src={item.src} alt="Company Logo" />
+                  <img
+                    title="Company Logo"
+                    className="w-full h-full max-w-20 object-contain object-center"
+                    src={item.src}
+                    alt="Company Logo"
+                  />
                 </div>
               </div>
             ))}

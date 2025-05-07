@@ -33,7 +33,7 @@ const WhyMediation = () => {
           </p>
         </div>
         <div className="text-white col-span-2 lg:col-span-1">
-          <h1 className="leading-[120%] font-medium text-4xl md:text-5xl mb-5 md:mb-8">Why Global Mediation</h1>
+          <h3 className="leading-[120%] font-medium text-4xl md:text-5xl mb-5 md:mb-8">Why Global Mediation</h3>
           <p className="font-normal text-base md:text-lg leading-[150%]">
             Every situation is different. That’s why our mediators bring more than expertise, they bring empathy, curiosity and real-world
             experience. With over 25 years of supporting people through conflict, we’ve helped individuals, families and organisations
