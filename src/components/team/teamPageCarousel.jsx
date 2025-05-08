@@ -5,6 +5,10 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
 import img from '/public/Jeff Lermer.png';
+import Martha from '/public/members/Martha_Monday-Nov13.png';
+import Adam from '/public/members/AG.png';
+import Jeff from '/public/members/Jeff_Lermer-1.png';
+import Karen from '/public/members/Karen_Heenan-1.png';
 import Image from 'next/image';
 
 const member = [
@@ -12,25 +16,25 @@ const member = [
     name: 'Adam Gersch',
     description:
       'He is committed to delivering first-rate services to clients and his sparkling personality always shines through and brings a smile.',
-    img: img,
+    img: Adam,
   },
   {
     name: 'Martha Monday',
     description:
       'Martha is our Senior In-House Mediator.  She has been involved in hundreds of successful mediations and her calm and confident manner puts all participants at ease.',
-    img: img,
+    img: Martha,
   },
   {
     name: 'Jeff Lermer',
     description:
       'After becoming frustrated with our existing advisors, our financial director and I approached Jeff for advice and with complete certainty I can confirm that his professional help was instrumental in navigating our voyage through difficult waters.',
-    img: img,
+    img: Jeff,
   },
   {
     name: 'Karen Heenan',
     description:
       'Karen is an In-House Mediator for Global Mediation and has a depth of knowledge and experience mediating in different cases.',
-    img: img,
+    img: Karen,
   },
   {
     name: 'Charles Horn',
@@ -142,7 +146,7 @@ const TeamPageCarousel = () => {
     <section className="about py-16 md:py-[80px] px-5 md:px-16">
       <div className="mb-12 md:mb-[80px]">
         <h1 className="mb-5 font-semibold text-4xl md:text-5xl">Our team</h1>
-        <p className="text-base md:text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+        {/* <p className="text-base md:text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p> */}
       </div>
       <div>
         <div className="team-caousel">
@@ -153,8 +157,8 @@ const TeamPageCarousel = () => {
                   <div className="grid grid-cols-4 gap-8">
                     {member.map(item => (
                       <div key={item.name} className="col-span-4 md:col-span-2 lg:col-span-1 mb-[30px] md:mb-[60px]">
-                        <div className="w-full h-[290px] bg-gray-600 rounded-xl overflow-hidden">
-                          <Image alt={item.name} src={item.img} className="w-full h-full object-cover" />
+                        <div className="w-full h-[290px]  rounded-xl overflow-hidden">
+                          <Image alt={item.name} src={item.img} className="w-full h-full object-contain" />
                         </div>
                         <h3 className={`text-black mt-6 md:mt-6 mb-4 text-lg md:text-[20px] font-semibold `}>{item.name}</h3>
                         <p className={`text-black leading-[150%] text-[14px] font-normal `}>{item.description}</p>

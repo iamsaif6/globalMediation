@@ -5,31 +5,32 @@ import Slider from 'react-slick';
 import Link from 'next/link';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 import adam from '/public/adam.jpeg';
-import martha from '/public/Martha Monday.png';
-import jeff from '/public/Jeff Lermer.png';
 import Image from 'next/image';
+import Martha from '/public/members/Martha_Monday-Nov13.png';
+import Adam from '/public/members/AG.png';
+import Jeff from '/public/members/Jeff_Lermer-1.png';
+import Karen from '/public/members/Karen_Heenan-1.png';
 
 const members = [
   {
     name: 'Adam Gersch',
     text: '‘He is committed to delivering first-rate services to clients and his sparkling personality always shines through and brings a smile.’',
-    image: adam,
+    image: Adam,
   },
   {
     name: 'Martha Monday',
     text: '‘He is committed to delivering first-rate services to clients and his sparkling personality always shines through and brings a smile.’',
-    image: martha,
+    image: Martha,
   },
   {
     name: 'Jeff Lermer',
     text: '‘He is committed to delivering first-rate services to clients and his sparkling personality always shines through and brings a smile.’',
-    image: jeff,
+    image: Jeff,
   },
-
   {
-    name: 'Jeff Lermers',
-    text: '‘He is committed to delivering first-rate services to clients and his sparkling personality always shines through and brings a smile.’',
-    image: jeff,
+    name: 'Karen Heenan',
+    text: 'Karen is an In-House Mediator for Global Mediation and has a depth of knowledge and experience mediating in different cases.',
+    image: Karen,
   },
 ];
 
@@ -97,8 +98,8 @@ const TeamCarousel = ({ darkText = false }) => {
         <Slider {...settings}>
           {members.map(item => (
             <div className="px-[15px] mb-[80px]">
-              <div className="w-full h-[285px] lg:h-[390px] bg-gray-600 rounded-3xl overflow-hidden">
-                <Image className="w-full h-full object-top object-cover" alt={item.name} src={item.image} />
+              <div className="w-full h-[285px] lg:h-[390px]  rounded-3xl overflow-hidden">
+                <Image className="w-full h-full object-top object-contain" alt={item.name} src={item.image} />
               </div>
               <h3 className={`${darkText ? 'text-black' : 'text-white'} my-3 md:my-6 text-2xl md:text-[32px] font-semibold `}>
                 {item.name}
