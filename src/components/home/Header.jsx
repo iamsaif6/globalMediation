@@ -23,7 +23,7 @@ const Header = () => {
           <div className="flex md:flex-row flex-col  items-center gap-4">
             <Link
               title="Explore Our Services"
-              className={`bg-primary border w-full md:w-auto border-primary font-normal text-lg text-[#FCFCFD] px-12 py-3 rounded-[40px]`}
+              className={`bg-primary flex justify-center border w-full md:w-auto border-primary font-normal text-lg text-[#FCFCFD] px-12 py-3 rounded-[40px]`}
               href="/services"
             >
               Explore Our Services
