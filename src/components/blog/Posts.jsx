@@ -50,8 +50,8 @@ const Posts = ({ articles }) => {
     <section className="py-16 bg-[#F9F8FF] about px-5 md:px-16 md:py-[80px] ">
       <div className="mb-12 md:mb-[80px] flex-col gap-8  lg:flex-row flex justify-between items-center lg:items-end">
         <div className="text-center lg:text-left">
-          <h3 className="font-medium mb-[20px] md:mb-6 text-4xl md:text-5xl leading-[120%]">Recent News</h3>
-          <p className="font-normal text-[#667085] text-base md:text-[20px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+          <h3 className="font-medium mb-[20px]- md:mb-0 text-4xl md:text-5xl leading-[120%]">Recent News</h3>
+          {/* <p className="font-normal text-[#667085] text-base md:text-[20px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p> */}
         </div>
         <div>
           <Button title={'View All'} padding="xlarge" href="/blogs" />
