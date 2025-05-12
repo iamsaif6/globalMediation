@@ -1,4 +1,4 @@
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:1337';
+const API_URL = 'https://trusty-nature-dfe65baab6.strapiapp.com';
 
 // Fetch All Article
 export async function fetchArticles() {

@@ -294,7 +294,7 @@ const page = () => {
           Button1Link={'/contact-us'}
           Button1Text={'Book a Family Mediation Appointment'}
           Button2Text={'Speak to Our Family Mediation Team'}
-          Button2Link={'#'}
+          Button2Link={'/contact-us'}
         />
       </div>
       <FAQ title={'FAQs About Family Mediation'} buttonText={'Ask Us a Question'} buttonLink={'/contact-us'} faqData={faqData} />

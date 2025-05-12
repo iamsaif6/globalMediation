@@ -267,7 +267,7 @@ const page = () => {
           Button1Link={'/contact-us'}
           Button1Text={'Book a Session'}
           Button2Text={'Contact Our SEND Team'}
-          Button2Link={'#'}
+          Button2Link={'/contact-us'}
         />
       </div>
       <FAQ

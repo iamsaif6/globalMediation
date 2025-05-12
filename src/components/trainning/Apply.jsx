@@ -66,7 +66,7 @@ const Apply = () => {
         </div>
       </div>
       <div className="flex justify-center">
-        <Button padding="xxlarge" title={'Contact Us'} href="#" />
+        <Button padding="xxlarge" title={'Contact Us'} href="/contact-us" />
       </div>
     </section>
   );
