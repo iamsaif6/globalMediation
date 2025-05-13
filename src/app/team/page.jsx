@@ -11,7 +11,7 @@ export const metadata = {
 const Team = () => {
   return (
     <div>
-      <Header title={'Meet Our Team'} subTitle={'Direct users to reach out for consultations or general inquiries'} />
+      {/* <Header title={'Meet Our Team'} subTitle={'Direct users to reach out for consultations or general inquiries'} /> */}
       <TeamPageCarousel />
     </div>
   );
