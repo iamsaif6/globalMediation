@@ -8,6 +8,7 @@ import FeedbackCarousel from '@/components/home/FeedbackCarousel';
 import CTA from '@/components/shared/CTA';
 import FAQ from '@/components/service/FAQ';
 import Link from 'next/link';
+import cover from '/public/Business_Header.jpeg';
 
 const faqData = [
   {
@@ -52,6 +53,7 @@ const page = () => {
         Button2Text={'Book a Mediation Session'}
         Button2Link="/contact-us"
         title={'Business and Commercial Mediation'}
+        cover={cover}
       />
       <div className={` py-16 md:py-[80px] px-5 md:px-[60px]`}>
         <div className="text-left md:text-center">
