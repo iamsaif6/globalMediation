@@ -1,6 +1,7 @@
 import React from 'react';
 import SectionHeading from '../shared/SectionHeading';
 import Button from '../shared/Button';
+import Link from 'next/link';
 
 const WhyTrain = () => {
   return (
@@ -11,6 +12,7 @@ const WhyTrain = () => {
           'At Global, training is more than just a course, it’s a step forward in your mediation career.Our programmes are built around your growth as a mediator. We provide expert instruction, supportive environments and practical learning designed to build confidence and clarity.'
         }
         light={true}
+        fullWidth={true}
       />
       <div className="mt-[80px]">
         <h4 className="text-2xl font-medium text-center text-white mb-10">Core Values</h4>
@@ -103,8 +105,12 @@ const WhyTrain = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center mt-16 md:mt-[80px]">
-        <Button title={'Contact Us to Learn More About Our Training Programmes'} href="/contact-us" />
+      <div className="flex md:justify-center mt-16 md:mt-[80px]">
+        <button className={`bg-primary  border border-primary font-normal text-base md:text-lg text-[#FCFCFD] px-8 py-3 rounded-[40px]`}>
+          <Link className="w-full" href="/contact-us">
+            Contact Us to Learn More About Our Training Programmes
+          </Link>
+        </button>
       </div>
     </section>
   );

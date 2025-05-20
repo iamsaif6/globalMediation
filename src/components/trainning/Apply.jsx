@@ -9,7 +9,7 @@ const Apply = () => {
       <SectionHeading
         title={'How to Apply for Our Training Programmes'}
         subTitle={'Ready to take the next step in your mediation career? Applying is simple:'}
-        center={true}
+        fullWidth={true}
       />
       <div className="grid grid-cols-3 gap-[18px] md:gap-8 my-10 md:my-[54px]">
         <div className="bg-[#F3F1FF] rounded-xl py-[37px] md:py-[46px] px-[19px] md:px-6 col-span-3 lg:col-span-1">

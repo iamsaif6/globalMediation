@@ -4,7 +4,7 @@ import React from 'react';
 const KeyFeature = () => {
   return (
     <section className="py-16 px-5 md:px-16 md:py-[80px] bg-secondary">
-      <SectionHeading title={'Key Features of DARS'} light={true} />
+      <SectionHeading title={'Key Features of DARS'} light={true} center fullWidth={true} />
       <div className="mt-[80px]">
         <h4 className="text-2xl font-medium text-center text-white mb-10">Core Values</h4>
         <div className="grid grid-cols-4 gap-6 md:gap-8">

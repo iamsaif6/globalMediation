@@ -61,7 +61,7 @@ const Training = () => {
       <Introduction />
       {/* Explore */}
       <section aria-label=" Explore Our Mediation Training Courses" className="py-16 px-5 md:px-16 md:py-[80px] ">
-        <h3 className="font-medium mb-[40px] lg:mb-[100px]  tracking-[-4%] mx-auto text-center text-4xl md:text-5xl leading-[120%]">
+        <h3 className="font-medium mb-[40px] lg:mb-[100px]  tracking-[-4%] mx-auto text-left md:text-center text-4xl md:text-5xl leading-[120%]">
           Explore Our Mediation Training Courses
         </h3>
         <ExploreItem />

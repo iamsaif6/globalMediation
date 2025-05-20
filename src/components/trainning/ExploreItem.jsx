@@ -83,7 +83,7 @@ const ExploreItem = () => {
               </ul>
               <div className="mt-6">
                 <button
-                  className={`bg-primary w-full md:w-auto border border-primary font-normal text-base md:text-lg text-[#FCFCFD] px-8 py-3 rounded-[40px]`}
+                  className={`bg-primary  border border-primary font-normal text-base md:text-lg text-[#FCFCFD] px-8 py-3 rounded-[40px]`}
                 >
                   <Link title={item.buttonText} className="w-full" href={item.buttonLink}>
                     {item.buttonText}

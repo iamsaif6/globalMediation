@@ -23,7 +23,7 @@ const Introduction = () => {
   return (
     <section>
       <div className=" py-16 px-5 md:px-16 md:py-[80px]">
-        <div className="text-center mb-10 lg:mb-[80px]">
+        <div className="text-left md:text-center mb-10 lg:mb-[80px]">
           <h2 className="font-medium text-4xl md:text-5xl leading-[120%]">Overview of Mediation Training</h2>
           <p className="text-black text-base md:text-lg leading-[150%] my-6">
             Whether you’re starting your mediation journey or expanding into specialist areas like SEND, our training programmes are
@@ -61,7 +61,7 @@ const Introduction = () => {
                 <button
                   title=" Start Your Mediation Journey Today"
                   onClick={openModal}
-                  className={`bg-primary border cursor-pointer border-primary font-normal text-lg text-[#FCFCFD] px-[42px] py-3 rounded-[40px]`}
+                  className={`bg-primary border cursor-pointer border-primary font-normal text-lg text-[#FCFCFD] px-[19px] md:px-[42px] py-3 rounded-[40px]`}
                 >
                   Start Your Mediation Journey Today
                 </button>
