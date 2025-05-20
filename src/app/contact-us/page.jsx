@@ -22,8 +22,8 @@ const ContactUs = () => {
         className="flex text-white pt-[60px] bg-cover bg-no-repeat  flex-col  h-auto lg:h-screen"
       >
         <div className="grid flex-1 grid-cols-12 gap-6 pt-16 px-5 md:px-16 md:pt-[80px]">
-          <div className="col-span-12 lg:col-span-7">
-            <div className="lg:mb-[100px] text-center mb-10">
+          <div className="col-span-12 lg:col-span-7 flex items-center">
+            <div className="text-center mb-10">
               <h1 className="leading-[120%] text-5xl md:[55px] lg:text-[65px] capitalize font-semibold mb-4">
                 Let’s Resolve Things – Together
               </h1>
