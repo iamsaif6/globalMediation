@@ -14,32 +14,7 @@ import Rebecca from '/public/members/Rebecca.jpeg';
 import Suneta from '/public/members/Suneta.jpeg';
 import Vicky from '/public/members/Vicky.jpeg';
 
-const members2 = [
-  {
-    name: 'Laurence Cobb',
-    image: null,
-  },
-  {
-    name: 'Nigel Barr',
-    image: Barr,
-  },
-  {
-    name: 'Nikeisha Beharie-Campbell',
-    image: null,
-  },
-  {
-    name: 'Rebecca Hayward',
-    image: Rebecca,
-  },
-  {
-    name: 'Suneta Bagri',
-    image: Suneta,
-  },
-  {
-    name: 'Vicky Mansell',
-    image: Vicky,
-  },
-];
+const members2 = [];
 
 const members = [
   {
@@ -65,6 +40,31 @@ const members = [
   {
     name: 'Jo Winters',
     image: Jo,
+  },
+
+  {
+    name: 'Laurence Cobb',
+    image: null,
+  },
+  {
+    name: 'Nigel Barr',
+    image: Barr,
+  },
+  {
+    name: 'Nikeisha Beharie-Campbell',
+    image: null,
+  },
+  {
+    name: 'Rebecca Hayward',
+    image: Rebecca,
+  },
+  {
+    name: 'Suneta Bagri',
+    image: Suneta,
+  },
+  {
+    name: 'Vicky Mansell',
+    image: Vicky,
   },
 ];
 
@@ -241,7 +241,7 @@ const TeamCarousel = ({ darkText = false }) => {
         </Slider>
       </div>
 
-      <div className="slider-container mt-[80px]">
+      {/* <div className="slider-container mt-[80px]">
         <Slider {...settings2}>
           {members2.map(item => (
             <div className="px-[15px] mb-[20px]">
@@ -292,7 +292,7 @@ const TeamCarousel = ({ darkText = false }) => {
             </div>
           ))}
         </Slider>
-      </div>
+      </div> */}
     </div>
   );
 };
