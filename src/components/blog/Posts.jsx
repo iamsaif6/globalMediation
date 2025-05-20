@@ -47,7 +47,7 @@ const Posts = ({ articles }) => {
   const articleData = articles?.data || [];
 
   return (
-    <section className="py-16 mt-16 bg-[#F9F8FF] about px-5 md:px-16 md:py-[80px] ">
+    <section className="pb-16 pt-[120px] lg:pt-[150px] bg-[#F9F8FF] about px-5 md:px-16 md:pb-[80px] ">
       <div className="mb-12 md:mb-[80px] flex-col gap-8  lg:flex-row flex justify-between items-center lg:items-end">
         <div className="text-center lg:text-left">
           <h3 className="font-medium mb-[20px]- md:mb-0 text-4xl md:text-5xl leading-[120%]">Blogs</h3>
