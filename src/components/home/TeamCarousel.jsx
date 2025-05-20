@@ -17,19 +17,19 @@ const members = [
     image: Adam,
   },
   {
+    name: 'Emma Gersch',
+    text: '‘He is committed to delivering first-rate services to clients and his sparkling personality always shines through and brings a smile.’',
+    image: null,
+  },
+  {
     name: 'Suraiya Baghdadi',
     text: '‘He is committed to delivering first-rate services to clients and his sparkling personality always shines through and brings a smile.’',
-    image: Suraiya,
+    image: null,
   },
   {
     name: 'Altaf Baghdadi',
-    text: '‘He is committed to delivering first-rate services to clients and his sparkling personality always shines through and brings a smile.’',
-    image: Altaf,
-  },
-  {
-    name: 'Jo Winters',
     text: 'Karen is an In-House Mediator for Global Mediation and has a depth of knowledge and experience mediating in different cases.',
-    image: Jo,
+    image: null,
   },
 ];
 
@@ -97,8 +97,8 @@ const TeamCarousel = ({ darkText = false }) => {
         <Slider {...settings}>
           {members.map(item => (
             <div className="px-[15px] mb-[80px]">
-              <div className="w-full h-[285px] lg:h-[390px]  rounded-3xl overflow-hidden">
-                <Image className="w-full h-full object-top object-cover" alt={item.name} src={item.image} />
+              <div className="w-full bg-gray-400 h-[285px] lg:h-[390px]  rounded-3xl overflow-hidden">
+                {item?.image && <Image className="w-full h-full object-top object-cover" alt={item.name} src={item.image} />}
               </div>
               <h3 className={`${darkText ? 'text-black' : 'text-white'} my-3 md:my-6 text-2xl md:text-[32px] font-semibold `}>
                 {item.name}

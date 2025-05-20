@@ -4,9 +4,11 @@ import Nigel from '/public/members/Nigel Barr.jpeg';
 import Jo from '/public/members/Jo.jpeg';
 import Altaf from '/public/members/Altaf.jpeg';
 import Rebecca from '/public/members/Rebecca.jpeg';
+import Adam from '/public/members/Adam.jpeg';
+import Vicky from '/public/members/Vicky.jpeg';
 
 export const TeamsData = [
-  { name: 'Adam Gersch', image: null },
+  { name: 'Adam Gersch', image: Adam },
   { name: 'Emma Gersch', image: null },
   { name: 'Simon Dryer', image: null },
   { name: 'Suraiya Baghdadi', image: Suraiya },
@@ -73,7 +75,7 @@ export const TeamsData = [
   { name: 'Tabitha Nice', image: null },
   { name: 'Tessa Herman', image: null },
   { name: 'Timea Tallodi', image: null },
-  { name: 'Vicky Mansell', image: null },
+  { name: 'Vicky Mansell', image: Vicky },
   { name: 'Adrian Wilson', image: null },
   { name: 'Martha Monday', image: null },
   { name: 'Polly Walker', image: null },
