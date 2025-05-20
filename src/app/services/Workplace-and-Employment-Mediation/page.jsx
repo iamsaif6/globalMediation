@@ -50,7 +50,7 @@ const page = () => {
 
       <section>
         <div className=" py-16 px-5 md:px-16 md:py-[80px] ">
-          <div className="text-center mx-auto mb-[60px] lg:mb-[100px]">
+          <div className="text-left md:text-center mx-auto mb-[60px] lg:mb-[100px]">
             <h1 className="font-medium max-w-[900px]  mx-auto text-4xl md:text-5xl leading-[120%]">Workplace and Employment Mediation</h1>
             <p className="text-black text-base md:text-lg leading-[150%] my-6">
               Workplace disputes can impact morale, slow productivity, and create a negative atmosphere for teams and individuals.
@@ -100,7 +100,7 @@ const page = () => {
 
       <section className="bg-secondary text-white">
         <div className=" py-16 px-5 md:px-16 md:py-[80px] ">
-          <div className="text-center max-w-[900px] mx-auto mb-[60px] lg:mb-[100px]">
+          <div className="text-left md:text-center max-w-[900px] mx-auto mb-[60px] lg:mb-[100px]">
             <h1 className="font-medium text-4xl md:text-5xl leading-[120%]">Comprehensive Workplace & Employment Mediation Services</h1>
             <p className="  text-base md:text-lg leading-[150%] my-6">
               Our trained mediators support organisations across a wide range of workplace challenges.
@@ -209,6 +209,7 @@ const page = () => {
       <FeedbackCarousel
         title={'What Our Clients Say About Workplace and Employment Mediation?'}
         subTitle={'Real testimonials from clients who benefited from this service.'}
+        fullWidth
       />
 
       <FAQ title={'FAQs About Workplace Mediation'} buttonText={'Contact Us'} buttonLink={'/contact-us'} faqData={faqData} />

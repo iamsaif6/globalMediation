@@ -64,8 +64,8 @@ const page = () => {
       {/*  */}
 
       <section className="py-16 bg-secondary text-white md:py-[80px]">
-        <div className="px-5 md:px-16 mb-[120px] ">
-          <SectionHeading title={'Common Family Disputes We Help With'} />
+        <div className="px-5 md:px-16 md:mb-[120px] ">
+          <SectionHeading fullWidth={true} title={'Common Family Disputes We Help With'} />
         </div>
         <div className="mt-[42px] md:mt-[54px]">
           {/* Buttons */}
@@ -105,7 +105,7 @@ const page = () => {
                         <Button title={'Resolve Workplace Disputes Today'} href="#" />
                       </div> */}
                     </div>
-                    <button className=" bg-white  mt-10 w-full md:w-auto font-normal text-lg text-black px-12 py-3 rounded-[40px] ">
+                    <button className=" bg-white  mt-10  font-normal text-lg text-black px-12 py-3 rounded-[40px] ">
                       <Link className="w-full  " href="/contact-us">
                         Book Family Mediation
                       </Link>
@@ -199,7 +199,7 @@ const page = () => {
           subTitle={
             'Our mediators offer structured, compassionate guidance — helping you have difficult conversations in a safe and supportive way.'
           }
-          center={true}
+          fullWidth={true}
         />
         <div className="grid grid-cols-4 gap-[18px] md:gap-8 my-10 md:my-[54px]">
           <div className="bg-[#F3F1FF] rounded-xl py-[37px] md:py-[46px] px-[19px] md:px-6 col-span-4 lg:col-span-1">
@@ -237,16 +237,20 @@ const page = () => {
             </p>
           </div>
         </div>
-        <div className="flex justify-center">
-          <Button title={'Request a Family Mediation Appointment'} href="/about-us" />
+        <div className="block md:flex md:justify-center">
+          <button className=" bg-primary  mt-10  font-normal text-lg text-white px-12 py-3 rounded-[40px] ">
+            <Link className="w-full  " href="/about-us">
+              Request a Family Mediation Appointment
+            </Link>
+          </button>
         </div>
       </section>
 
       {/* Why Choose */}
 
       <section className="py-16 px-5 md:px-16 md:py-[80px] text-white bg-secondary">
-        <div className="text-center">
-          <h1 className="text-4xl md:text-5xl font-medium text-center max-w-[900px] mx-auto leading-[120%] mb-8 md:mb-[40px]">
+        <div className="text-left md:text-center">
+          <h1 className="text-4xl md:text-5xl font-medium max-w-[900px] mx-auto leading-[120%] mb-8 md:mb-[40px]">
             Why Choose Global Mediation?
           </h1>
           <p className=" text-base md:text-lg leading-[150%] mb-[56px] md:mb-[78px]">
@@ -284,7 +288,7 @@ const page = () => {
       </section>
 
       <MediationCalculation />
-      <FeedbackCarousel title={'Testimonials from Families'} subTitle={null} />
+      <FeedbackCarousel title={'Testimonials from Families'} subTitle={null} fullWidth={true} />
       <div className="bg-[#F9F8FF]">
         <CTA
           title={'Take the First Step'}

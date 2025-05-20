@@ -54,7 +54,7 @@ const page = () => {
         title={'Business and Commercial Mediation'}
       />
       <div className={` py-16 md:py-[80px] px-5 md:px-[60px]`}>
-        <div className="text-center">
+        <div className="text-left md:text-center">
           <h1 className="w-full  mb-10 font-medium text-4xl md:text-5xl leading-[120%] ">{item.title}</h1>
           <p className="mb-[32px] md:mb-[60px] text-black text-base md:text-lg leading-[150%] my-6">{item.subtitle}</p>
         </div>
@@ -77,7 +77,7 @@ const page = () => {
             {item?.image && <Image className="object-cover w-full h-full relative z-0" alt={item.title} src={item?.image} />}
           </div>
         </div>
-        <button className=" bg-primary  mt-10 w-full md:w-auto font-normal text-lg text-white px-12 py-3 rounded-[40px] ">
+        <button className=" bg-primary  mt-10  font-normal text-lg text-white px-12 py-3 rounded-[40px] ">
           <Link className="w-full  " href="/contact-us">
             Book Business and Commercial Mediation
           </Link>

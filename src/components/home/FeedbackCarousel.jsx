@@ -32,7 +32,7 @@ const clientReview = [
   },
 ];
 
-const FeedbackCarousel = ({ title, subTitle }) => {
+const FeedbackCarousel = ({ title, subTitle, fullWidth }) => {
   const settings = {
     dots: true,
     arrows: false,
@@ -62,7 +62,9 @@ const FeedbackCarousel = ({ title, subTitle }) => {
   };
   return (
     <section aria-label="Feedback Carousel" className="py-[40px] slick-bar ">
-      <div className="mb-[30px] max-w-[267px] md:max-w-max mx-auto px-5 md:px-16 text-center md:mb-[70px] ">
+      <div
+        className={`mb-[30px] ${fullWidth ? 'max-w-max' : 'max-w-[267px]'}  md:max-w-max mx-auto px-5 md:px-16 text-center md:mb-[70px]`}
+      >
         <h2 className=" text-4xl md:text-5xl font-medium leading-[120%] ">{title}</h2>
         {subTitle && <p className=" font-normal text-lg mt-6">{subTitle}</p>}
       </div>

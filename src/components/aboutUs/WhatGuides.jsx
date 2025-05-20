@@ -4,10 +4,12 @@ import SectionHeading from '../shared/SectionHeading';
 const WhatGuides = () => {
   return (
     <section className="py-16 px-5 md:px-16 md:py-[80px] ">
-      <SectionHeading
-        title={'What Guides Our Work'}
-        subTitle={'Everything we do is shaped by the values that define our approach, and the way we support people through conflict.'}
-      />
+      <div className={` max-w-[850px] mx-auto text-left  md:text-center`}>
+        <h3 className="font-medium leading-[120%] tracking-[-4%] text-4xl md:text-[40px] lg:text-5xl mb-5 md:mb-6">What Guides Our Work</h3>
+        <p className={`text-black text-base md:text-lg font-normal`}>
+          Everything we do is shaped by the values that define our approach, and the way we support people through conflict.
+        </p>
+      </div>
       <div className="mt-[80px]">
         <h4 className="text-2xl font-medium text-center    mb-10">Core Values</h4>
         <div className="grid grid-cols-3 gap-6 md:gap-8">

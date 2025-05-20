@@ -5,7 +5,7 @@ const Introduction = ({ title, subtitle, image, items }) => {
   return (
     <section>
       <div className=" py-16 px-5 md:px-16 md:py-[80px] ">
-        <div className="text-center mb-[60px] lg:mb-[100px]">
+        <div className="text-left md:text-center mb-[60px] lg:mb-[100px]">
           <h1 className="font-medium text-4xl md:text-5xl leading-[120%]">Overview of {title}</h1>
           <p className="text-black text-base md:text-lg leading-[150%] my-6">{subtitle}</p>
         </div>

@@ -4,7 +4,7 @@ import Button from '../shared/Button';
 const TimeLine = () => {
   return (
     <section className="py-16 bg-[#F9F8FF] px-5 md:px-16 md:py-[80px]">
-      <div className={` max-w-[850px] mx-auto text-center  md:text-center`}>
+      <div className={` max-w-[850px] mx-auto text-left  md:text-center`}>
         <h3 className="font-medium leading-[120%] tracking-[-4%] text-4xl md:text-[40px] lg:text-5xl mb-5 md:mb-6">
           Trusted, Experienced and <br /> People-First
         </h3>
@@ -66,7 +66,7 @@ const TimeLine = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center">
+      <div className="flex md:justify-center">
         <Button title={'Learn about mediation training'} href="/training" padding="large" />
       </div>
     </section>

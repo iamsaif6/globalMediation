@@ -63,8 +63,8 @@ const page = () => {
       {/*  */}
 
       <section className="py-16 md:py-[80px] bg-secondary text-white">
-        <div className="px-5 md:px-16 mb-[120px] ">
-          <SectionHeading title={'Types of SEND Disputes We Support'} />
+        <div className="px-5 md:px-16 lg:mb-[120px] ">
+          <SectionHeading fullWidth title={'Types of SEND Disputes We Support'} />
         </div>
         <div className="mt-[42px] md:mt-[54px]">
           <div className="flex flex-col w-full">
@@ -102,7 +102,7 @@ const page = () => {
                         </li>
                       </ul>
                     </div>
-                    <button className=" bg-white  mt-10 w-full md:w-auto font-normal text-lg text-black px-12 py-3 rounded-[40px] ">
+                    <button className=" bg-white  mt-10  font-normal text-lg text-black px-12 py-3 rounded-[40px] ">
                       <Link className="w-full  " href="/contact-us">
                         Book Send Mediation
                       </Link>
@@ -189,7 +189,8 @@ const page = () => {
           subTitle={
             'Our role is to support everyone involved in reaching a fair outcome, one that respects the voices of the child, their family, and the professionals supporting them.'
           }
-          center={true}
+          center={false}
+          fullWidth={true}
         />
         <div className="grid grid-cols-3 gap-[18px] md:gap-8 my-10 md:my-[54px]">
           <div className="bg-[#F3F1FF] rounded-xl py-[37px] md:py-[46px] px-[19px] md:px-6 col-span-3 lg:col-span-1">
@@ -225,7 +226,7 @@ const page = () => {
       {/* Why Choose */}
 
       <section className="py-16 px-5 md:px-16 md:py-[80px] text-white bg-secondary">
-        <h1 className="text-4xl md:text-5xl font-medium text-center max-w-[760px] mx-auto leading-[120%] mb-8 md:mb-[78px]">
+        <h1 className="text-4xl md:text-5xl font-medium text-left md:text-center max-w-[760px] mx-auto leading-[120%] mb-8 md:mb-[78px]">
           Why Choose Global Mediation for SEND?
         </h1>
         <p className=" text-lg md:text-[20px] leading-[150%] mb-[56px] md:mb-[78px]">
@@ -259,7 +260,7 @@ const page = () => {
       </section>
 
       <MediationCalculation />
-      <FeedbackCarousel title={'What Parents & Young People Say'} subTitle={null} />
+      <FeedbackCarousel title={'What Parents & Young People Say'} subTitle={null} fullWidth={true} />
       <div className="bg-[#F9F8FF]">
         <CTA
           title={'Start Your SEND Mediation Journey'}
