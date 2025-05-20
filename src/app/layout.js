@@ -5,6 +5,7 @@ import Footer from '@/components/shared/Footer';
 import Script from 'next/script';
 import Head from 'next/head';
 import Userback from '@userback/widget';
+import UserbackWidget from '@/components/UserbackWidget';
 
 const poppins = Poppins({
   variable: '--font-poppins',
@@ -43,6 +44,7 @@ export default function RootLayout({ children }) {
         <meta name="twitter:image" content="" />
       </Head>
       <body id="root" className={`${poppins.variable} antialiased`}>
+        <UserbackWidget />
         <Script src="https://cdn.botpress.cloud/webchat/v2.3/inject.js" strategy="afterInteractive" />
         <Script src="https://files.bpcontent.cloud/2025/04/20/21/20250420213141-RFCIFB7R.js" strategy="afterInteractive" />
 
