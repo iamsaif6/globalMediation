@@ -81,16 +81,16 @@ const AboutUs = () => {
             Helping People Find a Way Forward , Together
           </h1>
           {/* <p className="text-white mt-[18px] md:mt-6 mb-[26px] md:mb-8 w-[70%] font-normal text-sm md:text-lg">{subTitle}</p> */}
-          <div className="flex md:flex-row flex-col items-center gap-4">
+          <div className=" block md:flex  md:flex-row flex-col lg:items-center gap-4">
             <button
-              className={`bg-primary border w-full md:w-auto border-primary font-normal text-lg text-[#FCFCFD] px-12 py-3 rounded-[40px]`}
+              className={`bg-primary mb-[18px] md:mb-0 max-w-[292px] lg:max-w-max w-full border block border-primary font-normal text-base lg:text-lg text-[#FCFCFD] lg:px-12 py-3 rounded-[40px]`}
             >
               <Link className="w-full" href={'/contact-us'}>
                 Contact Us Today
               </Link>
             </button>
 
-            <button className=" w-full md:w-auto bg-transparent font-normal border border-white text-lg text-[#FCFCFD] px-[48px] py-3 rounded-[40px] ">
+            <button className=" block max-w-[292px] lg:max-w-max w-full bg-transparent font-normal border border-white text-base lg:text-lg text-[#FCFCFD] lg:px-[48px] py-3 rounded-[40px] ">
               <Link className="w-full  " href={'/training'}>
                 Learn About Mediation Training
               </Link>

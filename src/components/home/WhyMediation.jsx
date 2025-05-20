@@ -33,7 +33,7 @@ const WhyMediation = () => {
           </p>
         </div>
         <div className="text-white col-span-2 lg:col-span-1">
-          <h3 className="leading-[120%] font-medium text-4xl md:text-5xl mb-5 md:mb-8">Why Global Mediation</h3>
+          <h3 className="leading-[120%] w-[90%] md:w-full font-medium text-4xl md:text-5xl mb-5 md:mb-8">Why Global Mediation</h3>
           <p className="font-normal text-base md:text-lg leading-[150%]">
             Every situation is different. That’s why our mediators bring more than expertise, they bring empathy, curiosity and real-world
             experience. With over 25 years of supporting people through conflict, we’ve helped individuals, families and organisations
@@ -46,17 +46,17 @@ const WhyMediation = () => {
                 key={item}
                 className="py-4 md:py-[30px] flex items-center gap-6 px-6 duration-200 hover:text-[#101828] hover:bg-[#F3F1FF] rounded-xl"
               >
-                <span className="h-[10px] rounded-full w-[10px] bg-current inline-block"></span>
+                <span className="h-[10px] flex-shrink-0 rounded-full w-[10px] bg-current inline-block"></span>
                 {item}
               </li>
             ))}
           </ul>
         </div>
       </div>
-      <div className="flex items-center justify-center">
+      <div className="">
         <Link
           title="Learn More About Us"
-          className=" bg-white w-full md:w-auto font-normal text-lg text-secondary px-12 py-3 rounded-[40px] "
+          className=" bg-white w-full md:w-auto font-normal text-lg text-secondary px-[57px] py-3 rounded-3xl lg:rounded-[40px] "
           href="/about-us"
         >
           Learn More About Us

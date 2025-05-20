@@ -4,12 +4,11 @@ import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
 import Link from 'next/link';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
-import adam from '/public/adam.jpeg';
 import Image from 'next/image';
-import Martha from '/public/members/Martha_Monday-Nov13.png';
-import Adam from '/public/members/AG.png';
-import Jeff from '/public/members/Jeff_Lermer-1.png';
-import Karen from '/public/members/Karen_Heenan-1.png';
+import Adam from '/public/members/Adam.jpeg';
+import Suraiya from '/public/members/Suraiya.jpeg';
+import Altaf from '/public/members/Altaf.jpeg';
+import Jo from '/public/members/Jo.jpeg';
 
 const members = [
   {
@@ -18,19 +17,19 @@ const members = [
     image: Adam,
   },
   {
-    name: 'Martha Monday',
+    name: 'Suraiya Baghdadi',
     text: '‘He is committed to delivering first-rate services to clients and his sparkling personality always shines through and brings a smile.’',
-    image: Martha,
+    image: Suraiya,
   },
   {
-    name: 'Jeff Lermer',
+    name: 'Altaf Baghdadi',
     text: '‘He is committed to delivering first-rate services to clients and his sparkling personality always shines through and brings a smile.’',
-    image: Jeff,
+    image: Altaf,
   },
   {
-    name: 'Karen Heenan',
+    name: 'Jo Winters',
     text: 'Karen is an In-House Mediator for Global Mediation and has a depth of knowledge and experience mediating in different cases.',
-    image: Karen,
+    image: Jo,
   },
 ];
 
@@ -99,7 +98,7 @@ const TeamCarousel = ({ darkText = false }) => {
           {members.map(item => (
             <div className="px-[15px] mb-[80px]">
               <div className="w-full h-[285px] lg:h-[390px]  rounded-3xl overflow-hidden">
-                <Image className="w-full h-full object-top object-contain" alt={item.name} src={item.image} />
+                <Image className="w-full h-full object-top object-cover" alt={item.name} src={item.image} />
               </div>
               <h3 className={`${darkText ? 'text-black' : 'text-white'} my-3 md:my-6 text-2xl md:text-[32px] font-semibold `}>
                 {item.name}

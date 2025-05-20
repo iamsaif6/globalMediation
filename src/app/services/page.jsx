@@ -49,9 +49,9 @@ const MainServices = () => {
           <p className="text-white max-w-[700px] mt-[18px] md:mt-6 mb-[26px] md:mb-8 w-[70%] font-normal text-sm md:text-lg">
             Professional mediation services to resolve disputes with empathy, clarity and care.
           </p>
-          <div className="flex md:flex-row flex-col items-center gap-4">
+          <div className="">
             <button
-              className={`bg-primary border w-full md:w-auto border-primary font-normal text-lg text-[#FCFCFD] px-12 py-3 rounded-[40px]`}
+              className={`bg-primary inline-block border-primary font-normal text-lg text-[#FCFCFD] px-[38px] py-3 rounded-3xl lg:rounded-[40px]`}
             >
               <Link className="w-full" href="/contact-us">
                 Contact Us Today

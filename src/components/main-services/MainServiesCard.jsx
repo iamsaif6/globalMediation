@@ -6,6 +6,7 @@ import service4 from '/public/Main Services Community.jpg';
 import service6 from '/public/civil.jpg';
 import Image from 'next/image';
 import Button from '../shared/Button';
+import Link from 'next/link';
 
 const services = [
   {
@@ -118,7 +119,13 @@ const MainServiesCard = () => {
           <div className="grid grid-cols-2 items-center  gap-8 md:gap-[100px]">
             <div className={`${index % 2 != 0 ? 'order-2' : ''} col-span-2 lg:col-span-1`}>
               <div className="mt-10">
-                <Button padding="xlarge" href={item.link} title={'Learn more'} />
+                <button
+                  className={`bg-primary inline-block border-primary font-normal text-lg text-[#FCFCFD] px-[68px] lg:px-[42px]  py-3 rounded-3xl lg:rounded-[40px]`}
+                >
+                  <Link className="w-full" href={item.link}>
+                    Learn more
+                  </Link>
+                </button>
               </div>
             </div>
             <div className="col-span-2 order-1 lg:col-span-1"></div>

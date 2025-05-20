@@ -32,7 +32,7 @@ export default function Home() {
         <MediationCards />
         {/*Start Learn About Mediation */}
         <section aria-label="A Better Way to Resolve Disputes" className="grid grid-cols-2 gap-4 my-[64px] md:my-[80px] px-5 md:px-[60px]">
-          <div className="col-span-2 lg:col-span-1 text-white bg-primary rounded-3xl px-6 lg:px-[58px] py-[34px] lg:py-[121px]">
+          <div className="col-span-2 lg:col-span-1 text-white bg-primary rounded-xl lg:rounded-3xl px-6 lg:px-[58px] py-[34px] lg:py-[121px]">
             <h2 className="font-medium leading-[120%] text-[32px] lg:text-5xl mb-[18px]">A Better Way to Resolve Disputes</h2>
             <p className=" text-[10px] md:text-lg mb-5 md:mb-6">
               Mediation offers a cost-effective, faster alternative to going to court. It gives people a way to move forward without the
@@ -42,13 +42,13 @@ export default function Home() {
 
             <Link
               title="Learn About Mediation"
-              className=" bg-white font-normal text-xs md:text-lg text-black px-6 md:px-[48px] md:py-3 py-2 rounded-[40px] "
+              className=" bg-white font-normal text-xs md:text-lg text-black px-[28px] md:px-[48px] md:py-3 py-[10px] rounded-[20px] lg:rounded-[40px] "
               href="/about-us"
             >
               Learn About Mediation
             </Link>
           </div>
-          <div className="col-span-2  overflow-hidden lg:col-span-1 bg-gray-500 rounded-3xl">
+          <div className="col-span-2  overflow-hidden lg:col-span-1 bg-gray-500 rounded-xl lg:rounded-3xl">
             <Image className="object-cover object-left h-full w-full" alt="A Better Way" src={betterWay} />
           </div>
         </section>

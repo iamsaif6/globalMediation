@@ -10,6 +10,7 @@ const LearnMore = () => {
       <SectionHeading
         title={'Learn More About Mediation'}
         subTitle={'Explore resources to help you prepare for mediation or learn more about how it works:'}
+        center
       />
       <div className="grid grid-cols-4 gap-3 mt-16">
         <div className="border flex flex-col col-span-4 border-[#EBE5E5] md:col-span-2 hover:border-[#DAD3FF] lg:col-span-1  rounded-3xl py-[34px]">

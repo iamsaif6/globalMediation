@@ -13,7 +13,7 @@ import Image from 'next/image';
 const Marque = () => {
   return (
     <section aria-label="Certifications and Partners" className="py-16 lg:mb-[0]  md:mb-[100px]">
-      <div className="flex items-center flex-wrap justify-center">
+      <div className="lg:flex hidden items-center flex-wrap justify-center">
         <div className=" h-24 mx-[30px]   w-24">
           <Image className="w-full h-full object-contain" src={img7} alt="Confident" />
         </div>
@@ -38,6 +38,34 @@ const Marque = () => {
         <div className="  h-24  mx-[30px]   w-24">
           <Image className="w-full h-full object-contain" src={img5} alt="ISO 9001" />
         </div>
+      </div>
+      <div className="block lg:hidden">
+        <Marquee>
+          <div className=" h-24 mx-[30px]   w-24">
+            <Image className="w-full h-full object-contain" src={img7} alt="Confident" />
+          </div>
+          <div className=" h-24 mx-[30px]   w-24">
+            <Image className="w-full h-full object-contain" src={img1} alt="Living Wadge Company" />
+          </div>
+          <div className="  h-24  mx-[30px]   w-24">
+            <Image className="w-full h-full object-contain" src={img2} alt="ISO" />
+          </div>
+          <div className="  h-24  mx-[30px]   w-24">
+            <Image className="w-full h-full object-contain" src={img3} alt="College of mediator" />
+          </div>
+          <div className="  h-24  mx-[30px]   w-24">
+            <Image className="w-full h-full object-contain" src={img6} alt="CMC" />
+          </div>
+          <div className="  h-24  mx-[30px]   w-24">
+            <Image className="w-full h-full object-contain" src={img2} alt="ISO 27001_2013 1" />
+          </div>
+          <div className="  h-24  mx-[30px]   w-24">
+            <Image className="w-full h-full object-contain" src={img4} alt="Cyber" />
+          </div>
+          <div className="  h-24  mx-[30px]   w-24">
+            <Image className="w-full h-full object-contain" src={img5} alt="ISO 9001" />
+          </div>
+        </Marquee>
       </div>
     </section>
   );
