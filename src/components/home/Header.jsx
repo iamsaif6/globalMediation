@@ -8,10 +8,9 @@ const Header = () => {
         style={{
           backgroundImage: ` url('/image.jpg')`,
           backgroundRepeat: 'no-repeat',
-          backgroundSize: 'cover',
-          backgroundPosition: 'top center',
+          // backgroundPosition: 'top center',
         }}
-        className="pt-[187px] h-screen custom-gradient-bg bg-cover bg-top relative md:pt-[238px] pb-[176px] md:pb-[203px] px-5 md:px-[60px]"
+        className="pt-[187px] h-screen custom-gradient-bg bg-[center] sm:bg-[center_top] max-sm:bg-[65%_center] relative md:pt-[238px] pb-[176px] md:pb-[203px] px-5 md:px-[60px]"
       >
         <div className="w-full text-left lg:pl-5 relative z-10 lg:max-w-[1318px] mx-auto ">
           <h1 className="font-semibold tracking-[-4%] max-w-[700px] leading-[120%] text-5xl md:[65px] lg:text-[72px] text-white">

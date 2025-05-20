@@ -3,7 +3,10 @@ import React, { useState, useEffect } from 'react';
 import { useScroll } from 'framer-motion';
 import SectionHeading from '../shared/SectionHeading';
 import MediationCard from './MediationCard';
-import { VoluntaryIcon } from './Mediation Icon/Voluntary';
+import VoluntaryIcon from './Mediation Icon/VoluntaryIcon';
+import Confidential from './Mediation Icon/Confidential';
+import Neutral from './Mediation Icon/Neutral';
+import Efficient from './Mediation Icon/Efficient';
 
 const MediationCards = () => {
   const [activeCardIndex, setActiveCardIndex] = useState(0);
@@ -49,19 +52,22 @@ const MediationCards = () => {
     {
       title: 'Voluntary',
       subTitle: 'Mediation is always by mutual agreement, empowering everyone involved to shape their own outcome.',
-      icon: VoluntaryIcon,
+      icon: props => <VoluntaryIcon {...props} />,
     },
     {
       title: 'Confidential',
       subTitle: 'Conversations are private and protected, creating space for open dialogue and trust.',
+      icon: props => <Confidential {...props} />,
     },
     {
       title: 'Neutral',
       subTitle: 'Our mediators stay impartial, ensuring fairness and respect for all parties.',
+      icon: props => <Neutral {...props} />,
     },
     {
       title: 'Efficient',
       subTitle: 'Mediation helps you resolve disputes faster and more affordably than litigation.',
+      icon: props => <Efficient {...props} />,
     },
   ];
 
@@ -77,7 +83,7 @@ const MediationCards = () => {
         />
         <div className="mt-12 md:mt-20 grid grid-cols-1 md:grid-cols-4 gap-6">
           {mediationCards.map((card, index) => (
-            <MediationCard key={index} title={card.title} subTitle={card.subTitle} icon={card.icon} active={false} />
+            <MediationCard key={index} title={card.title} subTitle={card.subTitle} icon={card?.icon} active={false} />
           ))}
         </div>
       </section>
@@ -97,7 +103,42 @@ const MediationCards = () => {
           />
           <div className="grid grid-cols-1 mt-[80px] md:grid-cols-4 gap-4">
             {mediationCards.map((card, index) => (
-              <MediationCard key={index} title={card.title} subTitle={card.subTitle} icon={null} active={activeCardIndex === index} />
+              // <MediationCard key={index} title={card.title} subTitle={card.subTitle} icon={card?.icon} active={activeCardIndex === index} />
+              <div
+                key={index}
+                className={`
+        px-[25px] 
+        col-span-4 md:col-span-2 lg:col-span-1 
+        group cursor-pointer 
+        pb-12 pt-[40px] md:pt-16 
+        border rounded-3xl
+        transition-all duration-300 ease-in-out
+        ${activeCardIndex === index ? 'border-primary bg-primary text-white  ' : 'border-gray-300 bg-white text-gray-700 '}
+      `}
+              >
+                <div className="text-secondary">
+                  {card?.icon({
+                    fill: ` ${activeCardIndex === index ? '#fff' : '#43006A'}`,
+                    className: 'h-[60px]  w-[60px] ',
+                  })}
+                </div>
+                <h3
+                  className={`
+          font-semibold text-2xl my-16
+          ${activeCardIndex === index ? 'text-white' : 'text-gray-700'}
+        `}
+                >
+                  {card?.title}
+                </h3>
+                <p
+                  className={`
+          font-arial text-base md:text-lg font-normal
+          ${activeCardIndex === index ? 'text-white/80' : 'text-gray-500'}
+        `}
+                >
+                  {card?.subTitle}
+                </p>
+              </div>
             ))}
           </div>
         </div>

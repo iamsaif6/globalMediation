@@ -13,7 +13,12 @@ const MediationCard = ({ title, subTitle, icon, active = false }) => {
         ${active ? 'border-primary bg-primary text-white  ' : 'border-gray-300 bg-white text-gray-700 '}
       `}
     >
-      <div className="text-secondary">{icon}</div>
+      <div className="text-secondary">
+        {icon({
+          fill: ` ${active ? '#fff' : '#43006A'}`,
+          className: 'h-[60px]  w-[60px] ',
+        })}
+      </div>
       <h3
         className={`
           font-semibold text-2xl my-16
