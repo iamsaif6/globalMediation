@@ -68,7 +68,7 @@ export default function Home() {
           title={'Ready to Resolve Your Dispute?'}
           subTitle={'We are here to help. Let’s talk'}
           Button1Text={'Schedule a Free Consultation Today'}
-          Button1Link={'#'}
+          Button1Link={'/contact-us'}
           Button2Text={'Contact us'}
           Button2Link={'/contact-us'}
         />

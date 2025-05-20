@@ -243,7 +243,7 @@ const MediationCalculation = () => {
                         Potential savings: £ {Number(calculationResults.costSavings.range).toLocaleString()}
                       </p> */}
                     </div>
-                    <p className="font-semibold">{calculationResults.costSavings.percentage}% in cost savings</p>
+                    <p className="font-semibold">{Math.round(calculationResults.costSavings.percentage)}% in cost savings</p>
                   </div>
                   <div className="bg-[#EAE8FE] col-span-3 text-center lg:col-span-1 flex flex-col gap-[30px] justify-between items-center  rounded-[20px] px-7 md:px-[35px] p-[29px] ">
                     <p className="font-semibold">Time</p>
