@@ -56,7 +56,7 @@ const WhyMediation = () => {
       <div className="flex md:justify-center">
         <Link
           title="Learn More About Us"
-          className=" bg-white w-full md:w-auto font-normal text-lg text-secondary px-[57px] py-3 rounded-3xl lg:rounded-[40px] "
+          className=" bg-white  font-normal text-lg text-secondary px-[57px] py-3 rounded-3xl lg:rounded-[40px] "
           href="/about-us"
         >
           Learn More About Us

@@ -73,6 +73,7 @@ const MediationCards = () => {
           subTitle={
             'No matter the conflict, resolution starts with listening. At Global Mediation, we believe that understanding and perspective can shift even the most challenging conversations. We do not take sides, we create safe, supportive spaces where every voice is heard and respected. Through open dialogue and impartial guidance, we help people find common ground and work toward outcomes that benefit everyone involved.'
           }
+          fullWidth={true}
         />
         <div className="mt-12 md:mt-20 grid grid-cols-1 md:grid-cols-4 gap-6">
           {mediationCards.map((card, index) => (
