@@ -10,7 +10,6 @@ import Vicky from '/public/members/Vicky.jpeg';
 export const TeamsData = [
   { name: 'Adam Gersch', image: Adam },
   { name: 'Emma Gersch', image: null },
-  { name: 'Simon Dryer', image: null },
   { name: 'Suraiya Baghdadi', image: Suraiya },
   { name: 'Altaf Baghdadi', image: Altaf },
   { name: 'Janet Kenward', image: null },
@@ -22,6 +21,7 @@ export const TeamsData = [
   { name: 'Suneta Bagri', image: Suneta },
   { name: 'Vicky Mansell', image: Vicky },
 
+  { name: 'Simon Dryer', image: null },
   { name: 'Amanda Cowell', image: null },
   { name: 'Amy Bonehill', image: null },
   { name: 'Amymay Bowes', image: null },

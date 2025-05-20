@@ -129,7 +129,7 @@ const Footer = () => {
       </div>
       {/* Before after blob */}
       <svg
-        className=" absolute -translate-y-full md:-translate-y-0 bottom-10 md:top-0 md:bottom-auto left-0 md:right-[15%]"
+        className=" absolute -translate-y-full md:-translate-y-0 bottom-10 md:top-0 md:bottom-auto left-0 md:left-auto md:right-[15%]"
         xmlns="http://www.w3.org/2000/svg"
         width="280"
         height="288"

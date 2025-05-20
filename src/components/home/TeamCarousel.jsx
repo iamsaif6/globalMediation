@@ -8,7 +8,6 @@ import Image from 'next/image';
 import Adam from '/public/members/Adam.jpeg';
 import Suraiya from '/public/members/Suraiya.jpeg';
 import Altaf from '/public/members/Altaf.jpeg';
-import Jo from '/public/members/Jo.jpeg';
 
 const members = [
   {
@@ -24,12 +23,12 @@ const members = [
   {
     name: 'Suraiya Baghdadi',
     text: '‘He is committed to delivering first-rate services to clients and his sparkling personality always shines through and brings a smile.’',
-    image: null,
+    image: Suraiya,
   },
   {
     name: 'Altaf Baghdadi',
     text: 'Karen is an In-House Mediator for Global Mediation and has a depth of knowledge and experience mediating in different cases.',
-    image: null,
+    image: Altaf,
   },
 ];
 

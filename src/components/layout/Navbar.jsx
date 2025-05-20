@@ -31,6 +31,52 @@ const traiingSubmenu = [
   { title: 'SEND Mediation Professional Practice', href: '/training' },
 ];
 
+const navLinksForMobile = [
+  {
+    href: '/',
+    title: 'Home',
+  },
+  {
+    href: '/services',
+    title: 'Services',
+    hasMegaMenu: true,
+    megaMenuItems: [
+      { title: 'Workplace and Employment Mediation', href: '/Workplace-and-Employment-Mediation' },
+      { title: 'Business and Commercial Mediation', href: '/Business-and-Commercial-Mediation' },
+      { title: 'SEND (Special Educational Needs and Disability) Mediation', href: '/send-mediation' },
+      { title: 'Family Mediation', href: '/Family-Mediation' },
+      { title: 'Community Mediation', href: '/Community-Mediation' },
+      { title: 'Civil and Legal Dispute Mediation', href: '/Civil-and-Legal-Dispute-Mediation' },
+    ],
+  },
+  {
+    href: '/training',
+    title: 'Training',
+    hasMegaMenu: true,
+    megaMenuItems: [
+      { title: 'Foundation Course in Mediation', href: '/Foundation-Course-in-Mediation' },
+      { title: 'SEND Mediation Training Course', href: '/SEND-Mediation-Training-Course' },
+      { title: 'SEND Mediation Professional Practice', href: '/SEND-Mediation-Professional-Practice' },
+    ],
+  },
+
+  {
+    href: '/resources',
+    title: 'Resources',
+    hasMegaMenu: true,
+    megaMenuItems: [
+      { title: 'Blog', href: '/blogs' },
+      { title: 'FAQ', href: '/faq' },
+      { title: 'Case Studies', href: '/case-studies' },
+      { title: 'Guides', href: '/guides' },
+    ],
+  },
+  {
+    href: '/about-us',
+    title: 'About us',
+  },
+];
+
 const navLinks = [
   {
     href: '/',
@@ -49,16 +95,6 @@ const navLinks = [
       { title: 'Civil and Legal Dispute Mediation', href: '/Civil-and-Legal-Dispute-Mediation' },
     ],
   },
-  // {
-  //   href: '/training',
-  //   title: 'Training',
-  //   hasMegaMenu: true,
-  //   megaMenuItems: [
-  //     { title: 'Foundation Course in Mediation', href: '/Foundation-Course-in-Mediation' },
-  //     { title: 'SEND Mediation Training Course', href: '/SEND-Mediation-Training-Course' },
-  //     { title: 'SEND Mediation Professional Practice', href: '/SEND-Mediation-Professional-Practice' },
-  //   ],
-  // },
 
   {
     href: '/resources',
@@ -468,18 +504,21 @@ const Navbar = () => {
               Home
             </Link>
 
-            {navLinks
+            {navLinksForMobile
               .filter(link => link.title !== 'Home')
               .map(link => (
                 <div key={link.href} className="flex flex-col">
                   {link.hasMegaMenu ? (
                     <>
-                      <button
-                        onClick={() => toggleMobileSubmenu(link.title)}
-                        className="p-3 text-lg font-normal flex justify-between items-center bg-lavender-50 hover:bg-lavender-100 rounded-lg transition-colors duration-200"
-                      >
-                        {link.title}
+                      <button className="p-3 text-lg font-normal flex justify-between items-center bg-lavender-50 hover:bg-lavender-100 rounded-lg transition-colors duration-200">
+                        <Link onClick={() => toggleMobileMenu(false)} href={link.href}>
+                          {link.title}
+                        </Link>
                         <svg
+                          onClick={e => {
+                            toggleMobileSubmenu(link.title);
+                            e.stopPropagation();
+                          }}
                           xmlns="http://www.w3.org/2000/svg"
                           className={`h-4 w-4 transition-transform duration-300 ${mobileSubmenuOpen === link.title ? 'rotate-180' : ''}`}
                           fill="none"
@@ -497,8 +536,9 @@ const Navbar = () => {
                       >
                         {link.megaMenuItems.map((item, index) => (
                           <Link
+                            onClick={() => setMobileMenuOpen(false)}
                             key={index}
-                            href={item.href}
+                            href={`/services${item.href}`}
                             className="block py-3 px-4 text-gray-600 hover:text-primary border-b border-gray-100 transition-colors duration-200"
                           >
                             {item.title}
@@ -521,7 +561,7 @@ const Navbar = () => {
 
           <div className="p-5 pt-1 flex items-center gap-2">
             <button className={`bg-primary w-full border border-primary font-normal text-lg text-[#FCFCFD] px-6 py-3 rounded-[40px]`}>
-              <Link className="w-full" href="/contact-us">
+              <Link onClick={() => setMobileMenuOpen(false)} className="w-full" href="/contact-us">
                 Contact US
               </Link>
             </button>
