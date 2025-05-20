@@ -8,13 +8,13 @@ const TeamMember = () => {
       <div className="grid px-5 md:px-16 grid-cols-2 gap-7 md:gap-[80px] mb-[80px]">
         <div className="col-span-2 lg:col-span-1">
           <h3 className="leading-[120%] text-4xl md:text-[40px] lg:text-5xl font-medium mb-8">The People Behind Global Mediation</h3>
-          <button
+          {/* <button
             className={`bg-primary border border-primary font-normal text-lg text-[#FCFCFD] w-full  md:w-auto px-12 py-3 rounded-[40px]`}
           >
             <Link className="w-full" href={'/team'}>
               Meet our team
             </Link>
-          </button>
+          </button> */}
         </div>
         <div className="col-span-2 lg:col-span-1">
           <p className="text-black text-base md:text-lg leading-[150%]">
@@ -40,7 +40,7 @@ const TeamMember = () => {
           </div> */}
         </div>
       </div>
-      <TeamCarousel darkText={true} />
+      <TeamCarousel isDouble={true} darkText={true} />
     </section>
   );
 };

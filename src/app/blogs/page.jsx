@@ -13,22 +13,22 @@ const Blog = async () => {
 
   return (
     <div className="">
-      <Header
+      {/* <Header
         title={'What is Mediation? '}
         subTitle={'A Comprehensive Guide to Alternative Dispute Resolution'}
         Button1Text={'Learn More'}
         Button1Link="/about-us"
         cover={banner}
-      />
+      /> */}
       <Posts articles={articles} />
-      <CaseStudy />
-      <Download />
+      {/* <CaseStudy /> */}
+      {/* <Download /> */}
       <CTA
         title={'Start Your Mediation Training Journey Today'}
         subTitle={'Take the first step toward becoming a qualified mediator or enhancing your existing mediation skills.'}
-        Button1Link={'#'}
+        Button1Link={'/contact-us'}
         Button1Text={'Enrol in a Mediation Training Program Today'}
-        Button2Link={'#'}
+        Button2Link={'/contact-us'}
         Button2Text={'Contact Us for Upcoming Course Dates'}
       />
     </div>

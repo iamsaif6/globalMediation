@@ -6,8 +6,8 @@ import { usePathname } from 'next/navigation';
 const resourceSubMenu = [
   { title: 'Blogs', href: '/blogs' },
   { title: 'FAQ', href: '/blogs' },
-  { title: 'Case Studies', href: '/blogs' },
-  { title: 'Guides', href: '/blogs' },
+  { title: 'Case Studies', href: '/case-studies' },
+  { title: 'Guides', href: '/guides' },
 ];
 
 const serviceSubmenu = [

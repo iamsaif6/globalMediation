@@ -3,27 +3,27 @@ import React from 'react';
 const items = [
   {
     name: 'A Simple Guide to Mediation',
-    link: '#',
+    link: 'https://www.globalmediation.co.uk/wp-content/uploads/2017/09/a-simple-guide-to-mediation3.pdf',
   },
   {
     name: 'Child Friendly Safeguarding Policy – Updated',
-    link: '#',
+    link: 'https://www.globalmediation.co.uk/wp-content/uploads/2017/09/Child-Friendly-Safeguarding-Policy-Updated.pdf',
   },
   {
     name: 'Global Mediation – Mediator Code of Conduct',
-    link: '#',
+    link: 'https://www.globalmediation.co.uk/wp-content/uploads/2020/05/GlobalMediation_Code_of_Conduct_Final.pdf',
   },
   {
     name: 'Global Mediation Safeguarding Policy 2020',
-    link: '#',
+    link: 'https://www.globalmediation.co.uk/wp-content/uploads/2020/05/GlobalMediation_Safeguarding-Policy_2020.pdf',
   },
   {
     name: 'Global Mediation Data Protection Policy 2020',
-    link: '#',
+    link: 'https://www.globalmediation.co.uk/wp-content/uploads/2020/05/GlobalMediation_Data_Protection_Policy-25.02.20.pdf',
   },
   {
     name: 'Global Mediation Privacy Statement 2020',
-    link: '#',
+    link: 'https://www.globalmediation.co.uk/wp-content/uploads/2020/05/GlobalMediation_Privacy_Statement-25.02.20.pdf',
   },
 ];
 
@@ -31,17 +31,17 @@ const Download = () => {
   return (
     <section className="py-16 px-5 md:py-[80px] md:px-[64px]">
       <div className="text-left mb-[54px]">
-        <h4 className="font-medium mb-[20px] md:mb-6 text-4xl md:text-5xl leading-[120%]">Download Resources</h4>
-        <p className="font-normal text-base md:text-[20px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+        <h4 className="font-medium mb-[20px] md:mb-6 text-4xl md:text-5xl leading-[120%]">Download Guides</h4>
       </div>
       <div>
         <ul className="text-sm md:text-lg font-normal text-secondary">
+          {/* ${
+                idx % 2 != 1 ? 'bg-[#F3F1FF]' : ''
+              } */}
           {items.map((item, idx) => (
             <li
               key={idx}
-              className={`${
-                idx % 2 != 1 ? 'bg-[#F3F1FF]' : ''
-              } md:py-6 last:border-b-[0.5px] gap-4 border-t-[0.5px] p-3 md:px-8 flex items-center justify-between`}
+              className={`bg-[#F3F1FF] md:py-6 last:border-b-[0.5px] gap-4 border-t-[0.5px] p-3 md:px-8 flex items-center justify-between`}
             >
               <p className="flex items-center gap-6">
                 <svg className="w-5 h-[24px] md:w-[30px] md:h-[36px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 36" fill="none">
@@ -60,7 +60,7 @@ const Download = () => {
                 </svg>
                 <span>{item.name}</span>
               </p>
-              <a href="#">
+              <a target="_blank" download={'PDF'} href={item.link}>
                 <svg
                   className="md:w-[42px] w-[24px] h-[24px] md:h-[42px]"
                   xmlns="http://www.w3.org/2000/svg"

@@ -7,7 +7,7 @@ const Origins = () => {
         <h2 className="leading-[120%] z-20  font-medium text-4xl md:text-4xl lg:text-5xl">The Origins of Global Mediation</h2>
       </div>
       <div className="col-span-2 lg:col-span-1 mt-[0px] lg:mt-[200px]">
-        <p className="leading-[150%] text-bas relative z-40">
+        <p className="leading-[150%] text-base md:text-lg relative z-40">
           Founded by barrister and mediator Adam Gersch, Global Mediation began with a simple idea: that people deserve better ways to
           resolve conflict. Over two decades later, we have grown into a national team working across sectors, from education to healthcare,
           workplaces to families, still driven by that same purpose.
