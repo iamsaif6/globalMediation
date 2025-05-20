@@ -16,17 +16,10 @@ import Vicky from '/public/members/Vicky.jpeg';
 
 const members2 = [
   {
-    name: 'Laurence Cobb',
-    image: null,
-  },
-  {
     name: 'Nigel Barr',
     image: Barr,
   },
-  {
-    name: 'Nikeisha Beharie-Campbell',
-    image: null,
-  },
+
   {
     name: 'Rebecca Hayward',
     image: Rebecca,
@@ -39,6 +32,14 @@ const members2 = [
     name: 'Vicky Mansell',
     image: Vicky,
   },
+  {
+    name: 'Laurence Cobb',
+    image: null,
+  },
+  {
+    name: 'Nikeisha Beharie-Campbell',
+    image: null,
+  },
 ];
 
 const members = [
@@ -46,10 +47,7 @@ const members = [
     name: 'Adam Gersch',
     image: Adam,
   },
-  {
-    name: 'Emma Gersch',
-    image: null,
-  },
+
   {
     name: 'Suraiya Baghdadi',
     image: Suraiya,
@@ -59,12 +57,17 @@ const members = [
     image: Altaf,
   },
   {
+    name: 'Jo Winters',
+    image: Jo,
+  },
+  {
     name: 'Janet Kenward',
     image: null,
   },
+
   {
-    name: 'Jo Winters',
-    image: Jo,
+    name: 'Emma Gersch',
+    image: null,
   },
 
   {
