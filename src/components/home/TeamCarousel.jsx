@@ -86,10 +86,11 @@ const TeamCarousel = ({ darkText = false }) => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          centerMode: true,
         },
       },
     ],
-    customPaging: i => <div className=" w-2  h-2 rounded-full bg-[#F3F1FF]"></div>,
+    customPaging: i => <div className="w-2  h-2 rounded-full bg-[#F3F1FF]"></div>,
   };
   return (
     <div className="team-caousel">

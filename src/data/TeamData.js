@@ -13,6 +13,15 @@ export const TeamsData = [
   { name: 'Simon Dryer', image: null },
   { name: 'Suraiya Baghdadi', image: Suraiya },
   { name: 'Altaf Baghdadi', image: Altaf },
+  { name: 'Janet Kenward', image: null },
+  { name: 'Jo Winters', image: Jo },
+  { name: 'Laurence Cobb', image: null },
+  { name: 'Nigel Barr', image: Nigel },
+  { name: 'Nikeisha Beharie-Campbell', image: null },
+  { name: 'Rebecca Hayward', image: Rebecca },
+  { name: 'Suneta Bagri', image: Suneta },
+  { name: 'Vicky Mansell', image: Vicky },
+
   { name: 'Amanda Cowell', image: null },
   { name: 'Amy Bonehill', image: null },
   { name: 'Amymay Bowes', image: null },
@@ -33,11 +42,11 @@ export const TeamsData = [
   { name: 'Helen Shea', image: null },
   { name: 'Henry Minto', image: null },
   { name: 'Jane Elias', image: null },
-  { name: 'Janet Kenward', image: null },
+
   { name: 'Janick Fielding', image: null },
   { name: 'Jennifer Connell-Waite', image: null },
   { name: 'Jeremy Connell', image: null },
-  { name: 'Jo Winters', image: Jo },
+
   { name: 'John Quigley', image: null },
   { name: 'Joseline Porter', image: null },
   { name: 'Julia Smart', image: null },
@@ -45,7 +54,7 @@ export const TeamsData = [
   { name: 'Kellie Millard', image: null },
   { name: 'Kyle Francis', image: null },
   { name: 'Laura Coulter', image: null },
-  { name: 'Laurence Cobb', image: null },
+
   { name: 'Laurie Randall', image: null },
   { name: 'Lise Seager', image: null },
   { name: 'Lizzie Lister', image: null },
@@ -55,13 +64,12 @@ export const TeamsData = [
   { name: 'Mia Forbes-Pirie', image: null },
   { name: 'Michelle Mendall', image: null },
   { name: 'Miranda Runnalls', image: null },
-  { name: 'Nigel Barr', image: Nigel },
-  { name: 'Nikeisha Beharie-Campbell', image: null },
+
   { name: 'Nikki Lindsay', image: null },
   { name: 'Nikki Trayman', image: null },
   { name: 'Peter Phillips', image: null },
   { name: 'Peter Shaw', image: null },
-  { name: 'Rebecca Hayward', image: Rebecca },
+
   { name: 'Rosalind Dunlop', image: null },
   { name: 'Roy Poyntz', image: null },
   { name: 'Sally Ruthen', image: null },
@@ -71,11 +79,11 @@ export const TeamsData = [
   { name: 'Sayka Hussain', image: null },
   { name: 'Steve Saunders', image: null },
   { name: 'Steven Mills', image: null },
-  { name: 'Suneta Bagri', image: Suneta },
+
   { name: 'Tabitha Nice', image: null },
   { name: 'Tessa Herman', image: null },
   { name: 'Timea Tallodi', image: null },
-  { name: 'Vicky Mansell', image: Vicky },
+
   { name: 'Adrian Wilson', image: null },
   { name: 'Martha Monday', image: null },
   { name: 'Polly Walker', image: null },

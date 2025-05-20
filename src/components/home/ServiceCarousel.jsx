@@ -29,6 +29,7 @@ const ServiceCarousel = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          centerMode: false,
         },
       },
     ],
@@ -44,7 +45,7 @@ const ServiceCarousel = () => {
       </div>
       <div className="slider-container">
         <Slider {...settings}>
-          <div className="px-[1px] mb-[90px] h-[400px] md:h-[400px]">
+          <div className="px-[15px] mb-[90px] h-[400px] md:h-[400px]">
             <div className="rounded-[20px]  group hover:bg-secondary hover:text-white duration-200 md:rounded-3xl border bg-[#F3F1FF] border-[#D4DBEA] my-9 py-10 md:py-[49px] px-5 md:px-6 h-full flex flex-col">
               <div className="mb-[54px] group-hover:text-white text-secondary">
                 <svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43" fill="none">

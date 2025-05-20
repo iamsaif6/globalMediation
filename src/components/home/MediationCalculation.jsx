@@ -88,9 +88,9 @@ const MediationCalculation = () => {
         <form onSubmit={handleSubmit(openModal)}>
           <div className="max-w-[850px] mx-auto mt-[60px]">
             <div className="bg-[#efedfc] rounded-[20px] p-8">
-              <h3 className="text-sm md:text-[27px] text-[#393D4E] font-semibold leading-[140%]">User Inputs</h3>
+              <h3 className="text-base md:text-[27px] text-[#393D4E] font-semibold leading-[140%]">User Inputs</h3>
               <div className="mt-5 space-y-[10px]">
-                <div className="grid grid-cols-2 text-[10px] md:text-[20px] items-center gap-2">
+                <div className="grid grid-cols-2 text-[14px] md:text-[20px] items-center gap-2">
                   <label className="text-[#393D4E]">Type of Dispute</label>
                   <div>
                     <select
@@ -109,7 +109,7 @@ const MediationCalculation = () => {
                 </div>
 
                 {/* Litigation Duration */}
-                <div className="grid grid-cols-2 text-[10px] md:text-[20px] items-center gap-2">
+                <div className="grid grid-cols-2 text-[14px] md:text-[20px] items-center gap-2">
                   <p className="text-[#393D4E]">Estimated Litigation Duration (days)</p>
                   <div>
                     <input
@@ -130,7 +130,7 @@ const MediationCalculation = () => {
                 </div>
 
                 {/* Litigation Cost */}
-                <div className="grid grid-cols-2 text-[10px] md:text-[20px] items-center gap-2">
+                <div className="grid grid-cols-2 text-[14px] md:text-[20px] items-center gap-2">
                   <p className="text-[#393D4E]">Estimated Litigation Cost (£)</p>
                   <div>
                     <input
@@ -147,7 +147,7 @@ const MediationCalculation = () => {
                 </div>
 
                 {/* Mediation Duration  */}
-                <div className=" hidden grid-cols-2 text-[10px] md:text-[20px] items-center gap-2">
+                <div className=" hidden grid-cols-2 text-[14px] md:text-[20px] items-center gap-2">
                   <p className="text-[#393D4E]">Estimated Mediation Duration (days)</p>
                   <div>
                     <input
@@ -170,7 +170,7 @@ const MediationCalculation = () => {
                 </div>
 
                 {/* Mediation Cost  */}
-                <div className=" hidden grid-cols-2 text-[10px] md:text-[20px] items-center gap-2">
+                <div className=" hidden grid-cols-2 text-[14px] md:text-[20px] items-center gap-2">
                   <p className="text-[#393D4E]">Estimated Mediation Cost (£)</p>
                   <div>
                     <input
