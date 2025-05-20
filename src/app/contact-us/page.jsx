@@ -105,21 +105,7 @@ const ContactUs = () => {
         </div>
       </div>
 
-      <div className="mb-10">
-        <div className="overflow-hidden">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2478.296628053736!2d-0.1977913882050758!3d51.599453303857395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487617534e13e1fb%3A0xf4f8bfe7deeed958!2sMolteno%20House%2C%20302%20Regents%20Park%20Rd%2C%20London%20N3%202JX%2C%20UK!5e0!3m2!1sen!2sbd!4v1742977399771!5m2!1sen!2sbd"
-            className="w-full h-[350px] lg:h-[500px]"
-            style={{ border: 0 }}
-            allowFullScreen=""
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
-      </div>
-      {/* Custom CTA */}
-
-      <div className="md:px-16 px-5">
+      <div className="md:px-16 mt-10 px-5">
         <div className="py-[84px] overflow-hidden px-8 relative md:p-16 bg-secondary rounded-3xl">
           <div className="z-10 py-10 mx-auto text-white text-center">
             <div className="z-10 relative">
@@ -174,6 +160,20 @@ const ContactUs = () => {
           </div>
         </div>
       </div>
+
+      <div className="mt-10">
+        <div className="overflow-hidden">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2478.296628053736!2d-0.1977913882050758!3d51.599453303857395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487617534e13e1fb%3A0xf4f8bfe7deeed958!2sMolteno%20House%2C%20302%20Regents%20Park%20Rd%2C%20London%20N3%202JX%2C%20UK!5e0!3m2!1sen!2sbd!4v1742977399771!5m2!1sen!2sbd"
+            className="w-full h-[350px] lg:h-[500px]"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+      {/* Custom CTA */}
     </div>
   );
 };
