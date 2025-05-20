@@ -185,7 +185,7 @@ const Navbar = () => {
           <div className="flex items-center gap-10 relative">
             <Link href="/" className="flex items-center">
               <svg
-                className="w-[56px] h-[26px] md:w-[80px] md:h-auto lg:w-[132px] lg:h-[59px]"
+                className="w-[76px] h-[46px] md:w-[80px] md:h-auto lg:w-[132px] lg:h-[59px]"
                 xmlns="http://www.w3.org/2000/svg"
                 width="132"
                 height="59"
