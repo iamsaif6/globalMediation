@@ -49,19 +49,19 @@ const page = () => {
           <h1 className="font-semibold tracking-[-4%] max-w-[900px] leading-[120%] text-5xl md:[55px] lg:text-[65px] text-white">
             Community Mediation
           </h1>
-          <p className="text-white mt-[18px] max-w-[700px] md:mt-6 mb-[26px] md:mb-8 w-[70%] font-normal text-sm md:text-lg">
+          <p className="text-white mt-[18px] max-w-[700px] md:mt-6 mb-[26px] md:mb-8 w-[70%] font-normal text-base md:text-lg">
             Supportive, impartial mediation to help neighbours and local residents resolve disputes fairly, calmly and constructively —
             before things escalate.
           </p>
-          <div className="flex md:flex-row flex-col items-center gap-4">
+          <div className="block md:flex md:flex-row flex-col gap-4">
             <button
-              className={`bg-primary border w-full md:w-auto border-primary font-normal text-lg text-[#FCFCFD] px-12 py-3 rounded-[40px]`}
+              className={`bg-primary mb-4 md:mb-0 border inline-block  border-primary font-normal text-lg text-[#FCFCFD] px-6 py-3 rounded-[40px]`}
             >
               <Link className="w-full" href={'/contact-us'}>
                 Speak to a Community Mediator
               </Link>
             </button>
-            <button className=" w-full md:w-auto bg-transparent font-normal border border-white text-lg text-[#FCFCFD] px-[48px] py-3 rounded-[40px] ">
+            <button className=" bg-transparent inline-block font-normal border border-white text-lg text-[#FCFCFD] px-[38px] py-3 rounded-[40px] ">
               <Link className="w-full  " href={'/contact-us'}>
                 Book a Mediation Session
               </Link>
@@ -85,10 +85,10 @@ const page = () => {
       {/*  */}
 
       <section className="py-16 md:py-[80px] bg-secondary text-white">
-        <div className="px-5 md:px-16 mb-[120px] ">
-          <SectionHeading title={'Common Community Disputes'} />
+        <div className="px-5 md:px-16 mb-10 md:mb-[120px] ">
+          <SectionHeading fullWidth={true} title={'Common Community Disputes'} />
         </div>
-        <div className="mt-[42px] md:mt-[54px]">
+        <div className="mt-[0px] md:mt-[54px]">
           {/* Buttons */}
           <div className="flex flex-col w-full">
             <div className=" px-5 md:px-16 ">
@@ -125,7 +125,7 @@ const page = () => {
                         </li>
                       </ul>
                     </div>
-                    <button className=" bg-white  mt-10 w-full md:w-auto font-normal text-lg text-black px-12 py-3 rounded-[40px] ">
+                    <button className=" bg-white  mt-10  font-normal text-lg text-black px-12 py-3 rounded-[40px] ">
                       <Link className="w-full  " href="/contact-us">
                         Book Community Mediation
                       </Link>
@@ -253,9 +253,11 @@ const page = () => {
             </p>
           </div>
         </div>
-        <div className="flex justify-center">
-          <Button title={'Request a Community Mediation Appointment'} href="/about-us" />
-        </div>
+        <button className=" bg-primary  mt-10  font-normal text-lg text-white px-12 py-3 rounded-[40px] ">
+          <Link className="w-full  " href="/about-us">
+            Request a Community Mediation Appointment
+          </Link>
+        </button>
       </section>
 
       {/* Why Choose */}
@@ -278,19 +280,21 @@ const page = () => {
             <ul className="space-y-6 text-base md:text-[20px]">
               <li className="flex items-center gap-6 py-4 px-[18px] md:px-6 rounded-xl border border-[#624A70]">
                 <span className="w-[10px] flex-shrink-0 h-[10px] rounded-full group-hover:bg-primary  bg-white block"></span>
-                <p className=" font-normal leading-[140%]">Approachable mediators who understand local issues</p>
+                <p className="text-base md:text-lg font-normal leading-[140%]">Approachable mediators who understand local issues</p>
               </li>
               <li className="flex items-center gap-6 py-4 px-[18px] md:px-6 rounded-xl border border-[#624A70]">
                 <span className="w-[10px] flex-shrink-0 h-[10px] rounded-full group-hover:bg-primary  bg-white block"></span>
-                <p className="font-normal leading-[140%]">Supportive, down-to-earth approach</p>
+                <p className="text-base md:text-lg font-normal leading-[140%]">Supportive, down-to-earth approach</p>
               </li>
               <li className="flex items-center gap-6 py-4 px-[18px] md:px-6 rounded-xl border border-[#624A70]">
                 <span className="w-[10px] flex-shrink-0 h-[10px] rounded-full group-hover:bg-primary  bg-white block"></span>
-                <p className=" font-normal leading-[140%]">Trusted by housing associations and councils across the UK</p>
+                <p className="text-base md:text-lg font-normal leading-[140%]">
+                  Trusted by housing associations and councils across the UK
+                </p>
               </li>
               <li className="flex items-center gap-6 py-4 px-[18px] md:px-6 rounded-xl border border-[#624A70]">
                 <span className="w-[10px] flex-shrink-0 h-[10px] rounded-full bg-primary block"></span>
-                <p className=" font-normal leading-[140%]">Focused on helping people live together more peacefully</p>
+                <p className="text-base md:text-lg font-normal leading-[140%]">Focused on helping people live together more peacefully</p>
               </li>
             </ul>
           </div>

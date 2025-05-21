@@ -59,7 +59,7 @@ const ServiceCarousel = () => {
                 <h3 className="text-lg lg:text-2xl group-hover:text-white duration-200 leading-[140%] mb-[6px] md:mb-2 font-semibold text-secondary">
                   Workplace & Employment Mediation
                 </h3>
-                <p className="text-sm md:text-lg duration-200 leading-[150%] font-normal mb-[26px] flex-grow">
+                <p className="text-base md:text-lg duration-200 leading-[150%] font-normal mb-[26px] flex-grow">
                   Resolve team conflict, grievances and workplace challenges.
                 </p>
                 <Link
@@ -86,7 +86,7 @@ const ServiceCarousel = () => {
                 <h3 className="text-lg lg:text-2xl group-hover:text-white duration-200 leading-[140%] mb-[6px] md:mb-2 font-semibold text-secondary">
                   Business and Commercial Mediation
                 </h3>
-                <p className="text-sm md:text-lg duration-200 leading-[150%] font-normal mb-[26px] flex-grow">
+                <p className="text-base md:text-lg duration-200 leading-[150%] font-normal mb-[26px] flex-grow">
                   Addressing disputes over contracts, partnerships, and more
                 </p>
                 <Link
@@ -113,7 +113,7 @@ const ServiceCarousel = () => {
                 <h3 className="text-lg lg:text-2xl group-hover:text-white duration-200 leading-[140%] mb-[6px] md:mb-2 font-semibold text-secondary">
                   Send Mediation
                 </h3>
-                <p className="text-sm md:text-lg duration-200 leading-[150%] font-normal mb-[26px] flex-grow">
+                <p className="text-base md:text-lg duration-200 leading-[150%] font-normal mb-[26px] flex-grow">
                   Support for families, schools and authorities navigating special educational needs.
                 </p>
                 <Link
@@ -141,7 +141,7 @@ const ServiceCarousel = () => {
                 <h3 className="text-lg lg:text-2xl group-hover:text-white duration-200 leading-[140%] mb-[6px] md:mb-2 font-semibold text-secondary">
                   Civil & Legal Dispute Mediation
                 </h3>
-                <p className="text-sm md:text-lg duration-200 leading-[150%] font-normal mb-[26px] flex-grow">
+                <p className="text-base md:text-lg duration-200 leading-[150%] font-normal mb-[26px] flex-grow">
                   A calmer alternative to court in a wide range of legal matters.
                 </p>
                 <Link

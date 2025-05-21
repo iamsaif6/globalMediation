@@ -53,18 +53,16 @@ const page = () => {
           <h1 className="font-semibold tracking-[-4%] max-w-[900px] leading-[120%] text-5xl md:[55px] lg:text-[65px] text-white">
             Civil & Legal Dispute Mediation
           </h1>
-          <p className="text-white mt-[18px] max-w-[700px] md:mt-6 mb-[26px] md:mb-8 w-[70%] font-normal text-sm md:text-lg">
+          <p className="text-white mt-[18px] max-w-[700px] md:mt-6 mb-[26px] md:mb-8 w-[70%] font-normal text-base md:text-lg">
             A practical, impartial way to resolve legal disagreements without the time, stress, and cost of going to court.
           </p>
-          <div className="flex md:flex-row flex-col items-center gap-4">
-            <button
-              className={`bg-primary border w-full md:w-auto border-primary font-normal text-lg text-[#FCFCFD] px-12 py-3 rounded-[40px]`}
-            >
+          <div className="block md:flex md:flex-row flex-col items-center gap-4">
+            <button className={`bg-primary mb-4 md:mb-0 border border-primary font-normal text-lg text-[#FCFCFD] px-6 py-3 rounded-[40px]`}>
               <Link className="w-full" href={'/contact-us'}>
                 Speak to a Civil Mediation Specialist
               </Link>
             </button>
-            <button className=" w-full md:w-auto bg-transparent font-normal border border-white text-lg text-[#FCFCFD] px-[48px] py-3 rounded-[40px] ">
+            <button className="  bg-transparent font-normal border border-white text-lg text-[#FCFCFD] px-[48px] py-3 rounded-[40px] ">
               <Link className="w-full  " href={'/contact-us'}>
                 Book a Mediation Session
               </Link>
@@ -89,8 +87,8 @@ const page = () => {
       {/*  */}
 
       <section className="py-16 md:py-[80px] bg-secondary text-white">
-        <div className="px-5 md:px-16 mb-[120px] ">
-          <SectionHeading title={'Types of Civil Disputes We Support'} />
+        <div className="px-5 md:px-16 mb-10 md:mb-[120px] ">
+          <SectionHeading fullWidth={true} title={'Types of Civil Disputes We Support'} />
         </div>
         <div className="mt-[42px] md:mt-[54px]">
           {/* Buttons */}
@@ -132,7 +130,7 @@ const page = () => {
                         <Button title={'Resolve Workplace Disputes Today'} href="#" />
                       </div> */}
                     </div>
-                    <button className=" bg-white  mt-10 w-full md:w-auto font-normal text-lg text-black px-12 py-3 rounded-[40px] ">
+                    <button className=" bg-white  mt-10  font-normal text-lg text-black px-12 py-3 rounded-[40px] ">
                       <Link className="w-full  " href="/contact-us">
                         Book Civil Mediation
                       </Link>
@@ -234,7 +232,7 @@ const page = () => {
               1
             </p>
             <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">Contact us </p>
-            <p>We’ll help determine if mediation is suitable for your situation</p>
+            <p className="text-base md:text-lg">We’ll help determine if mediation is suitable for your situation</p>
           </div>
 
           <div className="bg-[#F3F1FF] rounded-xl py-[37px] md:py-[46px] px-[19px] md:px-6 col-span-4 lg:col-span-1">
@@ -242,7 +240,7 @@ const page = () => {
               2
             </p>
             <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">Prepare for your session</p>
-            <p>Each party shares their side of the story, supported if needed</p>
+            <p className="text-base md:text-lg">Each party shares their side of the story, supported if needed</p>
           </div>
           <div className="bg-[#F3F1FF] rounded-xl py-[37px] md:py-[46px] px-[19px] md:px-6 col-span-4 lg:col-span-1">
             <p className="font-medium text-2xl leading-[140%] mb-[42px] flex items-center justify-center w-[54px] h-[54px] text-white  bg-secondary rounded-xl">
@@ -276,7 +274,7 @@ const page = () => {
           <h1 className="text-4xl md:text-5xl font-medium text-center max-w-[760px] mx-auto leading-[120%] mb-8 md:mb-[40px]">
             Why Choose Global Mediation?
           </h1>
-          <p className=" text-lg md:text-[20px] leading-[150%] mb-[56px] md:mb-[78px]">
+          <p className=" text-base md:text-lg leading-[150%] mb-[56px] md:mb-[78px]">
             We’ve helped resolve thousands of civil and legal disputes, with a calm, professional approach that saves time, reduces stress,
             and restores control.
           </p>
@@ -290,19 +288,23 @@ const page = () => {
             <ul className="space-y-6 text-base md:text-[20px]">
               <li className="flex items-center gap-6 py-4 px-[18px] md:px-6 rounded-xl border border-[#624A70]">
                 <span className="w-[10px] flex-shrink-0 h-[10px] rounded-full bg-primary block"></span>
-                <p className=" font-normal leading-[140%]">Highly experienced civil dispute mediators</p>
+                <p className="text-base md:text-lg font-normal leading-[140%]">Highly experienced civil dispute mediators</p>
               </li>
               <li className="flex items-center gap-6 py-4 px-[18px] md:px-6 rounded-xl border border-[#624A70]">
                 <span className="w-[10px] flex-shrink-0 h-[10px] rounded-full bg-primary block"></span>
-                <p className="font-normal leading-[140%]">Trusted by individuals, legal professionals, and local authorities</p>
+                <p className="text-base md:text-lg font-normal leading-[140%]">
+                  Trusted by individuals, legal professionals, and local authorities
+                </p>
               </li>
               <li className="flex items-center gap-6 py-4 px-[18px] md:px-6 rounded-xl border border-[#624A70]">
                 <span className="w-[10px] flex-shrink-0 h-[10px] rounded-full bg-primary block"></span>
-                <p className=" font-normal leading-[140%]">Tailored support that reflects the complexity of your case</p>
+                <p className="text-base md:text-lg font-normal leading-[140%]">
+                  Tailored support that reflects the complexity of your case
+                </p>
               </li>
               <li className="flex items-center gap-6 py-4 px-[18px] md:px-6 rounded-xl border border-[#624A70]">
                 <span className="w-[10px] flex-shrink-0 h-[10px] rounded-full bg-primary block"></span>
-                <p className=" font-normal leading-[140%]">Clear, impartial guidance every step of the way</p>
+                <p className="text-base md:text-lg font-normal leading-[140%]">Clear, impartial guidance every step of the way</p>
               </li>
             </ul>
           </div>

@@ -33,7 +33,7 @@ const FaqItem = ({ question, answer, isActive, onClick }) => {
       } mb-[19px] md:mb-3 p-[22px] md:py-6 md:px-6 rounded-xl border `}
     >
       <div onClick={onClick} className="flex justify-between items-center cursor-pointer rounded-md">
-        <div className={`${isActive ? 'font-medium  ' : 'font-normal'} text-[15px] md:text-lg `}>
+        <div className={`${isActive ? 'font-medium  ' : 'font-normal'} text-lg `}>
           <h3>{question}</h3>
         </div>
         {isActive ? (
@@ -50,7 +50,7 @@ const FaqItem = ({ question, answer, isActive, onClick }) => {
         )}
       </div>
       {isActive && (
-        <div className="mt-2 w-full md:w-[90%] text-[#656565] text-xs md:text-lg leading-[150%]">
+        <div className="mt-2 w-full md:w-[90%] text-black text-base md:text-lg leading-[150%]">
           <p>{answer}</p>
         </div>
       )}

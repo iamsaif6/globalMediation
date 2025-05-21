@@ -30,7 +30,7 @@ const MediationCard = ({ title, subTitle, icon, active = false }) => {
       <p
         className={`
           font-arial text-base md:text-lg font-normal
-          ${active ? 'text-white/80' : 'text-gray-500'}
+          ${active ? 'text-white/80' : 'text-black'}
         `}
       >
         {subTitle}

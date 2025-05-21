@@ -38,20 +38,20 @@ export const HeaderTraining = () => {
         <h1 className="font-semibold tracking-[-4%] max-w-[900px] leading-[120%] text-5xl md:[55px] lg:text-[65px] text-white">
           Mediation Training: Learn, Qualify, and Specialise
         </h1>
-        <p className="text-white mt-[18px] max-w-[700px] md:mt-6 mb-[26px] md:mb-8 w-[70%] font-normal text-sm md:text-lg">
+        <p className="text-white mt-[18px] max-w-[700px] md:mt-6 mb-[26px] md:mb-8 w-[70%] font-normal text-base md:text-lg">
           Explore accredited mediation training programmes designed for aspiring mediators and professionals looking to build their skills
           in conflict resolution.Our hands-on courses help you grow with confidence, guided by expert trainers and real-world practice.
         </p>
-        <div className="flex md:flex-row flex-col items-center gap-4">
+        <div className="block md:flex md:flex-row flex-col items-center gap-4">
           <button
             title=" Enroll in a Mediation Training Program Today"
             onClick={openModal}
-            className={`bg-primary cursor-pointer border w-full md:w-auto border-primary font-normal text-lg text-[#FCFCFD] px-2 md:px-12 py-3 rounded-[40px]`}
+            className={`bg-primary mb-4 md:mb-0 cursor-pointer border  border-primary font-normal text-lg text-[#FCFCFD] px-2 md:px-12 py-3 rounded-[40px]`}
           >
             Enroll in a Mediation Training Program Today
           </button>
 
-          <button className=" w-full md:w-auto bg-transparent font-normal border border-white text-lg text-[#FCFCFD] px-2 md:px-[48px] py-3 rounded-[40px] ">
+          <button className="  bg-transparent font-normal border border-white text-lg text-[#FCFCFD] px-3 md:px-[48px] py-3 rounded-[40px] ">
             <Link title="Contact Us for Upcoming Course Dates" className="w-full  " href={'/contact-us'}>
               Contact Us for Upcoming Course Dates
             </Link>

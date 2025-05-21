@@ -106,7 +106,7 @@ const WhyTrain = () => {
         </div>
       </div>
       <div className="flex md:justify-center mt-16 md:mt-[80px]">
-        <button className={`bg-primary  border border-primary font-normal text-base md:text-lg text-[#FCFCFD] px-8 py-3 rounded-[40px]`}>
+        <button className={`bg-primary  border border-primary font-normal text-lg text-[#FCFCFD] px-3 md:px-8 py-3 rounded-[40px]`}>
           <Link className="w-full" href="/contact-us">
             Contact Us to Learn More About Our Training Programmes
           </Link>

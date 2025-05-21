@@ -28,7 +28,7 @@ const TimeLine = () => {
                 <circle cx="22.667" cy="22.5" r="22.5" fill="#43006A" fillOpacity="0.17" />
               </svg>
             </div>
-            <p className="md:mt-6 text-[#667085] text-xs md:text-lg leading-[150%]">
+            <p className="md:mt-6 text-base md:text-lg leading-[150%]">
               Established in 1999 to address gaps in accessible mediation services
             </p>
           </div>
@@ -41,7 +41,7 @@ const TimeLine = () => {
                 <circle cx="22.667" cy="22.5" r="22.5" fill="#43006A" fillOpacity="0.17" />
               </svg>
             </div>
-            <p className="md:mt-6 text-[#667085] text-xs md:text-lg leading-[150%]">
+            <p className="md:mt-6  text-base md:text-lg leading-[150%]">
               Expanded services to include specialised areas like SEND and community mediation
             </p>
           </div>
@@ -53,7 +53,7 @@ const TimeLine = () => {
                 <circle cx="22.667" cy="22.5" r="22.5" fill="#43006A" fillOpacity="0.17" />
               </svg>
             </div>
-            <p className="md:mt-6 text-[#667085] text-xs md:text-lg leading-[150%]">
+            <p className="md:mt-6  text-base md:text-lg leading-[150%]">
               Launched accredited training programs to develop the next generation of mediators
             </p>
           </div>

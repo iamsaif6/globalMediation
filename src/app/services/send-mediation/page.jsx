@@ -229,7 +229,7 @@ const page = () => {
         <h1 className="text-4xl md:text-5xl font-medium text-left md:text-center max-w-[760px] mx-auto leading-[120%] mb-8 md:mb-[78px]">
           Why Choose Global Mediation for SEND?
         </h1>
-        <p className=" text-lg md:text-[20px] leading-[150%] mb-[56px] md:mb-[78px]">
+        <p className="text-base md:text-lg  leading-[150%] mb-[56px] md:mb-[78px]">
           We’ve helped thousands of families and local authorities resolve complex, emotionally sensitive disputes, with empathy,
           impartiality, and professionalism. <br /> <br />
           Our SEND mediation team includes experienced specialists with lived experience of the education system, disability, and youth
@@ -244,15 +244,19 @@ const page = () => {
             <ul className="space-y-6 text-base md:text-[20px]">
               <li className="flex items-center gap-6 py-4 px-[18px] md:px-6 rounded-xl border border-[#624A70]">
                 <span className="w-[10px] flex-shrink-0 h-[10px] rounded-full bg-primary block"></span>
-                <p className=" font-normal leading-[140%]">SEND-accredited mediators with deep understanding of legislation</p>
+                <p className="text-base md:text-lg font-normal leading-[140%]">
+                  SEND-accredited mediators with deep understanding of legislation
+                </p>
               </li>
               <li className="flex items-center gap-6 py-4 px-[18px] md:px-6 rounded-xl border border-[#624A70]">
                 <span className="w-[10px] flex-shrink-0 h-[10px] rounded-full bg-primary block"></span>
-                <p className="font-normal leading-[140%]">Trusted by families, councils, and legal professionals</p>
+                <p className="text-base md:text-lg font-normal leading-[140%]">Trusted by families, councils, and legal professionals</p>
               </li>
               <li className="flex items-center gap-6 py-4 px-[18px] md:px-6 rounded-xl border border-[#624A70]">
                 <span className="w-[10px] flex-shrink-0 h-[10px] rounded-full bg-primary block"></span>
-                <p className=" font-normal leading-[140%]">Calm, inclusive approach that supports better long-term relationships</p>
+                <p className="text-base md:text-lg font-normal leading-[140%]">
+                  Calm, inclusive approach that supports better long-term relationships
+                </p>
               </li>
             </ul>
           </div>

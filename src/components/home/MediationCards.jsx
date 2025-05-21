@@ -133,7 +133,7 @@ const MediationCards = () => {
                 <p
                   className={`
           font-arial text-base md:text-lg font-normal
-          ${activeCardIndex === index ? 'text-white/80' : 'text-gray-500'}
+          ${activeCardIndex === index ? 'text-white/80' : 'text-black'}
         `}
                 >
                   {card?.subTitle}

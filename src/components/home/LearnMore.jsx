@@ -53,7 +53,7 @@ const LearnMore = () => {
           <div className="p-6 flex-grow flex flex-col">
             <div className="flex flex-col flex-grow mb-8">
               <h4 className="text-[#101828] font-medium mb-2 text-2xl">FAQ</h4>
-              <p className="text-[#101828] text-lg font-normal">Find answers to common questions</p>
+              <p className="text-[#101828] text-base md:text-lg font-normal">Find answers to common questions</p>
             </div>
             <Link
               title="Read more"
@@ -108,7 +108,7 @@ const LearnMore = () => {
           <div className="p-6 flex-grow flex flex-col">
             <div className="flex flex-col flex-grow mb-8">
               <h4 className="text-[#101828] font-medium mb-2 text-2xl">Case Studies</h4>
-              <p className="text-[#101828] text-lg font-normal">Real examples of successful mediation</p>
+              <p className="text-[#101828] text-base md:text-lg font-normal">Real examples of successful mediation</p>
             </div>
             <Link
               title="Read more"
@@ -162,7 +162,7 @@ const LearnMore = () => {
           <div className="p-6 flex-grow flex flex-col">
             <div className="flex flex-col flex-grow mb-8">
               <h4 className="text-[#101828] font-medium mb-2 text-2xl">Guides</h4>
-              <p className="text-[#101828] text-lg font-normal">Downloadable prep and tips</p>
+              <p className="text-[#101828] text-base md:text-lg font-normal">Downloadable prep and tips</p>
             </div>
             <Link
               title="Read more"
@@ -185,7 +185,7 @@ const LearnMore = () => {
           <div className="p-6 flex-grow flex flex-col">
             <div className="flex flex-col flex-grow mb-8">
               <h4 className="text-[#101828] font-medium mb-2 text-2xl">Blog</h4>
-              <p className="text-[#101828] text-lg font-normal">Insights, advice and real-world stories</p>
+              <p className="text-[#101828] text-base md:text-lg font-normal">Insights, advice and real-world stories</p>
             </div>
             <Link
               title="Read more"
