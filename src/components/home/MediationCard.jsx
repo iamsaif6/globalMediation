@@ -21,7 +21,7 @@ const MediationCard = ({ title, subTitle, icon, active = false }) => {
       </div>
       <h3
         className={`
-          font-semibold text-2xl my-16
+          font-semibold text-2xl my-8
           ${active ? 'text-white' : 'text-gray-700'}
         `}
       >
