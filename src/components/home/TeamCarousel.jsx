@@ -159,10 +159,10 @@ const TeamCarousel = ({ darkText = false, isDouble }) => {
     dots: true,
     infinite: true,
     speed: 500,
-    centerMode: true,
+    centerMode: false,
     slidesToShow: 3,
     slidesToScroll: 1,
-    initialSlide: 2,
+    initialSlide: 1,
 
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
@@ -172,7 +172,6 @@ const TeamCarousel = ({ darkText = false, isDouble }) => {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          initialSlide: 2,
         },
       },
       {
@@ -182,7 +181,6 @@ const TeamCarousel = ({ darkText = false, isDouble }) => {
           slidesToScroll: 1,
           centerMode: true,
           dots: false,
-          initialSlide: 1,
         },
       },
     ],
