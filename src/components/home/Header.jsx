@@ -14,7 +14,9 @@ const Header = () => {
       >
         <div className="w-full text-left lg:pl-5 relative z-10 lg:max-w-[1318px] mx-auto ">
           <h1 className="font-semibold tracking-[-4%] max-w-[700px] leading-[120%] text-5xl md:[65px] lg:text-[72px] text-white">
-            Helping People Move Forward
+            Every Voice Matters.
+            <br />
+            Every Story Counts
           </h1>
           <p className="text-white mt-[18px] md:mt-4 mb-[20px] mr-auto max-w-[700px] md:mb-10 w-[100%] font-normal text-sm md:text-lg">
             Impartial, professional mediation that helps you resolve disputes and rebuild trust, at your pace, on your terms.
