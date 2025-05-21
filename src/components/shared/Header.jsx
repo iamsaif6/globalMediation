@@ -27,10 +27,10 @@ const Header = ({ title, subTitle, Button1Text, Button1Link = '#', Button2Text, 
       <div className="w-full relative z-10 lg:max-w-[1318px] mx-auto">
         <h1 className="font-semibold tracking-[-4%] max-w-[900px] leading-[120%] text-5xl md:[55px] lg:text-[65px] text-white">{title}</h1>
         <p className="text-white mt-[18px] max-w-[700px] md:mt-6 mb-[26px] md:mb-8 w-[70%] font-normal text-base md:text-lg">{subTitle}</p>
-        <div className="block md:flex  md:flex-row flex-col lg:items-center gap-4">
+        <div className=" flex md:flex-row flex-col items-center gap-4">
           {Button1Text && (
             <button
-              className={`bg-primary mb-[18px] md:mb-0 max-w-[292px] lg:max-w-max w-full border block border-primary font-normal text-base lg:text-lg text-[#FCFCFD] lg:px-12 py-3 rounded-[40px]`}
+              className={`bg-primary px-5 lg:max-w-max  border block border-primary font-semibold text-base lg:text-lg text-[#FCFCFD] lg:px-12 py-3 rounded-[40px]`}
             >
               <Link className="w-full" href={Button1Link}>
                 {Button1Text}
@@ -38,7 +38,7 @@ const Header = ({ title, subTitle, Button1Text, Button1Link = '#', Button2Text, 
             </button>
           )}
           {Button2Text && (
-            <button className=" mb-[18px] md:mb-0 max-w-[292px] lg:max-w-max w-full border block border-white font-normal text-base lg:text-lg text-[#FCFCFD] lg:px-12 py-3 rounded-[40px] ">
+            <button className=" mb-[18px] md:mb-0 px-5 lg:max-w-max  border block border-white font-semibold text-base lg:text-lg text-[#FCFCFD] lg:px-12 py-3 rounded-[40px] ">
               <Link className="w-full  " href={Button2Link}>
                 {Button2Text}
               </Link>

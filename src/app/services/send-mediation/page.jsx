@@ -102,11 +102,13 @@ const page = () => {
                         </li>
                       </ul>
                     </div>
-                    <button className=" bg-white  mt-10  font-normal text-lg text-black px-12 py-3 rounded-[40px] ">
-                      <Link className="w-full  " href="/contact-us">
-                        Book Send Mediation
-                      </Link>
-                    </button>
+                    <div className="flex justify-center md:block">
+                      <button className=" bg-white  mt-10  font-semibold text-lg text-black px-12 py-3 rounded-[40px] ">
+                        <Link className="w-full  " href="/contact-us">
+                          Book Send Mediation
+                        </Link>
+                      </button>
+                    </div>
                   </div>
                   <div className="relative  h-[303px] lg:h-[403px]  hidden lg:block col-span-2 md:col-span-1 rounded-3xl overflow-hidden">
                     <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={send2} />
@@ -219,7 +221,7 @@ const page = () => {
           </div>
         </div>
         <div className="flex justify-center">
-          <Button title={'Request a SEND Mediation Appointment'} href="/about-us" />
+          <Button padding="small" title={'Request a SEND Mediation Appointment'} href="/about-us" />
         </div>
       </section>
 

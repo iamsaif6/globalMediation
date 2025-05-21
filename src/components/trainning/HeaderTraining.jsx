@@ -42,16 +42,23 @@ export const HeaderTraining = () => {
           Explore accredited mediation training programmes designed for aspiring mediators and professionals looking to build their skills
           in conflict resolution.Our hands-on courses help you grow with confidence, guided by expert trainers and real-world practice.
         </p>
-        <div className="block md:flex md:flex-row flex-col items-center gap-4">
+        <div className="flex md:flex-row flex-col items-center gap-4">
           <button
             title=" Enroll in a Mediation Training Program Today"
             onClick={openModal}
-            className={`bg-primary mb-4 md:mb-0 cursor-pointer border  border-primary font-normal text-lg text-[#FCFCFD] px-2 md:px-12 py-3 rounded-[40px]`}
+            className={`bg-primary md:block hidden  cursor-pointer border  border-primary font-semibold text-lg text-[#FCFCFD] px-2 md:px-12 py-3 rounded-[40px]`}
           >
             Enroll in a Mediation Training Program Today
           </button>
+          <button
+            title=" Enroll in a Mediation Training Program Today"
+            onClick={openModal}
+            className={`bg-primary block md:hidden  cursor-pointer border  border-primary font-semibold text-lg text-[#FCFCFD] px-5 py-3 rounded-[40px]`}
+          >
+            Enquire Today
+          </button>
 
-          <button className="  bg-transparent font-normal border border-white text-lg text-[#FCFCFD] px-3 md:px-[48px] py-3 rounded-[40px] ">
+          <button className="  bg-transparent font-semibold border border-white text-lg text-[#FCFCFD] px-3 md:px-[48px] py-3 rounded-[40px] ">
             <Link title="Contact Us for Upcoming Course Dates" className="w-full  " href={'/contact-us'}>
               Contact Us for Upcoming Course Dates
             </Link>

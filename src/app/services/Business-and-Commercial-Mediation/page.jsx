@@ -79,7 +79,7 @@ const page = () => {
             {item?.image && <Image className="object-cover w-full h-full relative z-0" alt={item.title} src={item?.image} />}
           </div>
         </div>
-        <button className=" bg-primary  mt-10  font-normal text-lg text-white px-12 py-3 rounded-[40px] ">
+        <button className=" bg-primary  mt-10  font-semibold text-lg text-white px-3 md:px-12 py-3 rounded-[40px] ">
           <Link className="w-full  " href="/contact-us">
             Book Business and Commercial Mediation
           </Link>

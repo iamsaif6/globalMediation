@@ -105,11 +105,13 @@ const page = () => {
                         <Button title={'Resolve Workplace Disputes Today'} href="#" />
                       </div> */}
                     </div>
-                    <button className=" bg-white  mt-10  font-normal text-lg text-black px-12 py-3 rounded-[40px] ">
-                      <Link className="w-full  " href="/contact-us">
-                        Book Family Mediation
-                      </Link>
-                    </button>
+                    <div className="flex justify-center md:block">
+                      <button className=" bg-white  mt-10  font-semibold text-lg text-black px-12 py-3 rounded-[40px] ">
+                        <Link className="w-full  " href="/contact-us">
+                          Book Family Mediation
+                        </Link>
+                      </button>
+                    </div>
                   </div>
                   <div className="relative  h-[303px] lg:h-[403px]  hidden lg:block col-span-2 md:col-span-1 rounded-3xl overflow-hidden">
                     {/* <div className={`from-[rgba(0, 164, 159, 0.20)] to-[#006863a3] absolute inset-0 bg-gradient-to-b  z-10`}></div> */}
@@ -237,8 +239,8 @@ const page = () => {
             </p>
           </div>
         </div>
-        <div className="block md:flex md:justify-center">
-          <button className=" bg-primary  mt-10  font-normal text-lg text-white px-12 py-3 rounded-[40px] ">
+        <div className="flex justify-center">
+          <button className=" bg-primary  mt-10  font-semibold text-lg text-white px-3 lg:px-12 py-3 rounded-[40px] ">
             <Link className="w-full  " href="/about-us">
               Request a Family Mediation Appointment
             </Link>

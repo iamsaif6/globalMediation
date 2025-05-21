@@ -53,15 +53,13 @@ const page = () => {
             Supportive, impartial mediation to help neighbours and local residents resolve disputes fairly, calmly and constructively —
             before things escalate.
           </p>
-          <div className="block md:flex md:flex-row flex-col gap-4">
-            <button
-              className={`bg-primary mb-4 md:mb-0 border inline-block  border-primary font-normal text-lg text-[#FCFCFD] px-6 py-3 rounded-[40px]`}
-            >
+          <div className="flex md:flex-row items-center flex-col gap-4">
+            <button className={`bg-primary  border   border-primary font-semibold text-lg text-[#FCFCFD] px-6 py-3 rounded-[40px]`}>
               <Link className="w-full" href={'/contact-us'}>
                 Speak to a Community Mediator
               </Link>
             </button>
-            <button className=" bg-transparent inline-block font-normal border border-white text-lg text-[#FCFCFD] px-[38px] py-3 rounded-[40px] ">
+            <button className=" bg-transparent  font-semibold border border-white text-lg text-[#FCFCFD] px-[38px] py-3 rounded-[40px] ">
               <Link className="w-full  " href={'/contact-us'}>
                 Book a Mediation Session
               </Link>
@@ -125,11 +123,13 @@ const page = () => {
                         </li>
                       </ul>
                     </div>
-                    <button className=" bg-white  mt-10  font-normal text-lg text-black px-12 py-3 rounded-[40px] ">
-                      <Link className="w-full  " href="/contact-us">
-                        Book Community Mediation
-                      </Link>
-                    </button>
+                    <div className="flex md:block justify-center">
+                      <button className=" bg-white  mt-10  font-semibold text-lg text-black px-12 py-3 rounded-[40px] ">
+                        <Link className="w-full  " href="/contact-us">
+                          Book Community Mediation
+                        </Link>
+                      </button>
+                    </div>
                   </div>
                   <div className="relative  h-[303px] lg:h-[403px]  hidden lg:block col-span-2 md:col-span-1 rounded-3xl overflow-hidden">
                     {/* <div className={`from-[rgba(0, 164, 159, 0.20)] to-[#006863a3] absolute inset-0 bg-gradient-to-b  z-10`}></div> */}
@@ -253,11 +253,13 @@ const page = () => {
             </p>
           </div>
         </div>
-        <button className=" bg-primary  mt-10  font-normal text-lg text-white px-12 py-3 rounded-[40px] ">
-          <Link className="w-full  " href="/about-us">
-            Request a Community Mediation Appointment
-          </Link>
-        </button>
+        <div className="flex justify-center">
+          <button className=" bg-primary  mt-10  font-semibold text-lg text-white px-12 py-3 rounded-[40px] ">
+            <Link className="w-full  " href="/about-us">
+              Request a Community Mediation Appointment
+            </Link>
+          </button>
+        </div>
       </section>
 
       {/* Why Choose */}

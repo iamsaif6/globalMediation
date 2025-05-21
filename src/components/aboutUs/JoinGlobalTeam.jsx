@@ -45,8 +45,10 @@ const JoinGlobalTeam = () => {
               </Link>
             </li>
           </ul>
-          <div className="mt-10">
-            <button className={`bg-primary border border-primary font-normal text-lg text-[#FCFCFD] px-12  md:w-auto py-3 rounded-[40px]`}>
+          <div className="mt-10 flex justify-center md:block">
+            <button
+              className={`bg-primary border border-primary font-semibold text-lg text-[#FCFCFD] px-12  md:w-auto py-3 rounded-[40px]`}
+            >
               <Link className="w-full" href={'#'}>
                 Explore Career Opportunities
               </Link>

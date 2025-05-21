@@ -81,9 +81,9 @@ const ExploreItem = () => {
                   <span>Comprehensive support, including individual tutorials and coaching.</span>
                 </li>
               </ul>
-              <div className="mt-6">
+              <div className="mt-6 flex justify-center md:block">
                 <button
-                  className={`bg-primary  border border-primary font-normal text-base md:text-lg text-[#FCFCFD] px-8 py-3 rounded-[40px]`}
+                  className={`bg-primary  border border-primary font-semibold text-base md:text-lg text-[#FCFCFD] px-8 py-3 rounded-[40px]`}
                 >
                   <Link title={item.buttonText} className="w-full" href={item.buttonLink}>
                     {item.buttonText}

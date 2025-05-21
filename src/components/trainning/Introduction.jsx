@@ -57,11 +57,11 @@ const Introduction = () => {
                 </li>
               </ul>
 
-              <div className="mt-6">
+              <div className="mt-6 flex justify-center md:block">
                 <button
                   title=" Start Your Mediation Journey Today"
                   onClick={openModal}
-                  className={`bg-primary border cursor-pointer border-primary font-normal text-lg text-[#FCFCFD] px-[19px] md:px-[42px] py-3 rounded-[40px]`}
+                  className={`bg-primary border cursor-pointer border-primary font-semibold text-lg text-[#FCFCFD] px-[19px] md:px-[42px] py-3 rounded-[40px]`}
                 >
                   Start Your Mediation Journey Today
                 </button>

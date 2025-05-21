@@ -66,7 +66,7 @@ const TimeLine = () => {
           </div>
         </div>
       </div>
-      <div className="flex md:justify-center">
+      <div className="flex justify-center">
         <Button title={'Learn about mediation training'} href="/training" padding="large" />
       </div>
     </section>

@@ -73,7 +73,10 @@ const ContactUs = () => {
                   id="conflict"
                 />
               </div>
-              <button className="bg-primary w-full cursor-pointer mt-1 py-2 px-8 text-white font-normal text-lg rounded-3xl" type="submit">
+              <button
+                className="bg-primary w-full cursor-pointer mt-1 py-2 px-8 text-white font-semibold text-lg rounded-3xl"
+                type="submit"
+              >
                 Submit
               </button>
             </form>
@@ -116,13 +119,13 @@ const ContactUs = () => {
                 </p>
               </div>
               <div className={`mt-8 md:max-w-[950px] grid grid-cols-1 md:grid-cols-2  gap-4  mx-auto`}>
-                <button className="bg-primary font-normal text-[#FCFCFD] px-10 py-3 rounded-[40px] text-base md:text-lg">
+                <button className="bg-primary font-semibold text-[#FCFCFD] px-10 py-3 rounded-[40px] text-base md:text-lg">
                   <Link className="flex items-center justify-center gap-2 w-full text-center" href="mailto:sen@globalmediaiton.co.uk">
                     <Mail size={20} />
                     sen@globalmediaiton.co.uk
                   </Link>
                 </button>
-                <button className="font-normal border border-white text-base md:text-lg text-white px-6 py-3 rounded-[40px]">
+                <button className="font-semibold border border-white text-base md:text-lg text-white px-6 py-3 rounded-[40px]">
                   <Link className=" w-full text-center flex items-center gap-2 justify-center" href="tel:020 8441 1355">
                     <Phone size={20} />
                     020 8441 1355

@@ -105,10 +105,20 @@ const WhyTrain = () => {
           </div>
         </div>
       </div>
-      <div className="flex md:justify-center mt-16 md:mt-[80px]">
-        <button className={`bg-primary  border border-primary font-normal text-lg text-[#FCFCFD] px-3 md:px-8 py-3 rounded-[40px]`}>
+      <div className="flex justify-center mt-16 md:mt-[80px]">
+        <button
+          className={`bg-primary hidden lg:block  border border-primary font-semibold text-lg text-[#FCFCFD] px-3 md:px-8 py-3 rounded-[40px]`}
+        >
           <Link className="w-full" href="/contact-us">
             Contact Us to Learn More About Our Training Programmes
+          </Link>
+        </button>
+
+        <button
+          className={`bg-primary block lg:hidden  border border-primary font-semibold text-lg text-[#FCFCFD] px-8 py-3 rounded-[40px]`}
+        >
+          <Link className="w-full" href="/contact-us">
+            Learn More
           </Link>
         </button>
       </div>

@@ -49,9 +49,9 @@ const MainServices = () => {
           <p className="text-white max-w-[700px] mt-[18px] md:mt-6 mb-[26px] md:mb-8 w-[70%] font-normal text-sm md:text-lg">
             Professional mediation services to resolve disputes with empathy, clarity and care.
           </p>
-          <div className="">
+          <div className="flex md:block justify-center">
             <button
-              className={`bg-primary inline-block border-primary font-normal text-lg text-[#FCFCFD] px-[38px] py-3 rounded-3xl lg:rounded-[40px]`}
+              className={`bg-primary inline-block border-primary font-semibold text-lg text-[#FCFCFD] px-[38px] py-3 rounded-3xl lg:rounded-[40px]`}
             >
               <Link className="w-full" href="/contact-us">
                 Contact Us Today
@@ -65,7 +65,7 @@ const MainServices = () => {
       <CTA
         title={'Ready to Resolve Your Dispute?'}
         subTitle={'Your trusted partner in conflict resolution'}
-        Button1Text={'Schedule a Free Consultation Today'}
+        Button1Text={'Schedule Consultation'}
         Button1Link={'#'}
         Button2Text={'Contact us'}
         Button2Link={'/contact-us'}

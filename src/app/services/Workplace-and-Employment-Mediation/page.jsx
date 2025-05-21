@@ -142,11 +142,13 @@ const page = () => {
                     <span>Redundancy-related concerns</span>
                   </li>
                 </ul>
-                <button className=" bg-white mt-10 w-full md:w-auto font-normal text-lg text-secondary px-12 py-3 rounded-[40px] ">
-                  <Link className="w-full  " href="/contact-us">
-                    Book Workplace Mediation
-                  </Link>
-                </button>
+                <div className="flex justify-center md:block">
+                  <button className=" bg-white mt-10  font-semibold text-lg text-secondary px-12 py-3 rounded-[40px] ">
+                    <Link className="w-full  " href="/contact-us">
+                      Book Workplace Mediation
+                    </Link>
+                  </button>
+                </div>
               </div>
             </div>
             <div className="relative   lg:max-h-[403px] max-h-[353px]  h-[600px] mx-auto w-full lg:max-w-auto max-w-[600px] hidden md:block col-span-2 lg:col-span-1 rounded-3xl overflow-hidden">
