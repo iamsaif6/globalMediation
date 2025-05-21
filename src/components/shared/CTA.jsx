@@ -13,14 +13,14 @@ const CTA = ({ title, subTitle, Button1Text, Button1Link, Button2Text, Button2Li
             </div>
             <div className={`mt-8 md:max-w-[950px] ${Button2Text ? 'grid grid-cols-1 md:grid-cols-2' : 'md:grid-cols-1'}  gap-4  mx-auto`}>
               {Button1Text && (
-                <button className="bg-primary  font-normal text-[#FCFCFD] px-6 py-3 rounded-[40px] text-lg">
+                <button className="bg-primary  font-semibold text-[#FCFCFD] px-6 py-3 rounded-[40px] text-lg">
                   <Link title={Button1Text} className="block w-full text-center" href={Button1Link}>
                     {Button1Text}
                   </Link>
                 </button>
               )}
               {Button2Text && (
-                <button className="font-normal border border-white text-lg text-white px-6 py-3 rounded-[40px]">
+                <button className="font-semibold border border-white text-lg text-white px-6 py-3 rounded-[40px]">
                   <Link title={Button2Text} className="block w-full text-center" href={Button2Link}>
                     {Button2Text}
                   </Link>

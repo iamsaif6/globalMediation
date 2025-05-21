@@ -68,7 +68,7 @@ export default function Home() {
         <CTA
           title={'Ready to Resolve Your Dispute?'}
           subTitle={'We are here to help. Let’s talk'}
-          Button1Text={'Schedule a Free Consultation Today'}
+          Button1Text={'Schedule Consultation'}
           Button1Link={'/contact-us'}
           Button2Text={'Contact us'}
           Button2Link={'/contact-us'}

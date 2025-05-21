@@ -194,7 +194,7 @@ const MediationCalculation = () => {
             </div>
           </div>
           <div className="flex items-center justify-center mt-16">
-            <button type="submit" className="bg-primary  font-normal text-lg text-white px-[57px] py-3 rounded-3xl lg:rounded-[40px]">
+            <button type="submit" className="bg-primary  font-semibold text-lg text-white px-[57px] py-3 rounded-3xl lg:rounded-[40px]">
               Calculate
             </button>
           </div>

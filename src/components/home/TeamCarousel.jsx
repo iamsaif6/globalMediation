@@ -44,14 +44,14 @@ const members2 = [
 
 const members = [
   {
+    name: 'Suraiya Baghdadi',
+    image: Suraiya,
+  },
+  {
     name: 'Adam Gersch',
     image: Adam,
   },
 
-  {
-    name: 'Suraiya Baghdadi',
-    image: Suraiya,
-  },
   {
     name: 'Altaf Baghdadi',
     image: Altaf,
@@ -59,6 +59,24 @@ const members = [
   {
     name: 'Jo Winters',
     image: Jo,
+  },
+
+  {
+    name: 'Nigel Barr',
+    image: Barr,
+  },
+
+  {
+    name: 'Rebecca Hayward',
+    image: Rebecca,
+  },
+  {
+    name: 'Suneta Bagri',
+    image: Suneta,
+  },
+  {
+    name: 'Vicky Mansell',
+    image: Vicky,
   },
   {
     name: 'Janet Kenward',
@@ -75,24 +93,8 @@ const members = [
     image: null,
   },
   {
-    name: 'Nigel Barr',
-    image: Barr,
-  },
-  {
     name: 'Nikeisha Beharie-Campbell',
     image: null,
-  },
-  {
-    name: 'Rebecca Hayward',
-    image: Rebecca,
-  },
-  {
-    name: 'Suneta Bagri',
-    image: Suneta,
-  },
-  {
-    name: 'Vicky Mansell',
-    image: Vicky,
   },
 ];
 
@@ -155,12 +157,12 @@ const TeamCarousel = ({ darkText = false, isDouble }) => {
 
   const settings = {
     dots: true,
-    infinite: true,
+    infinite: false,
     speed: 500,
-    centerMode: false,
+    centerMode: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    initialSlide: 0,
+    initialSlide: 1,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
     responsive: [
