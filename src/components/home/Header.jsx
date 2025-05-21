@@ -22,7 +22,7 @@ const Header = () => {
           <p className="text-white mt-[18px] md:mt-4 mb-[20px] mr-auto max-w-[700px] md:mb-10 w-[100%] font-normal text-base md:text-lg">
             Impartial, professional mediation that helps you resolve disputes and rebuild trust, at your pace, on your terms.
           </p>
-          <div className="">
+          <div className="flex md:block justify-center">
             <Link
               title="Explore Our Services"
               className={`bg-primary inline-block  border md:w-auto border-primary font-semibold text-lg text-[#FCFCFD] px-[37px] py-3 rounded-[40px]`}

@@ -39,14 +39,15 @@ export default function Home() {
               emotional and financial strain of litigation. Whether you’re navigating a workplace issue, family disagreement or commercial
               dispute, mediation brings clarity, structure and a chance to be heard.
             </p>
-
-            <Link
-              title="Learn About Mediation"
-              className=" bg-white mt-3 inline-block  font-normal text-lg text-secondary px-6 md:px-[57px] py-3 rounded-3xl lg:rounded-[40px] "
-              href="/about-us"
-            >
-              Learn About Mediation
-            </Link>
+            <div className="flex justify-center md:block">
+              <Link
+                title="Learn About Mediation"
+                className=" bg-white mt-3 inline-block  font-semibold text-lg text-secondary px-6 md:px-[57px] py-3 rounded-3xl lg:rounded-[40px] "
+                href="/about-us"
+              >
+                Learn About Mediation
+              </Link>
+            </div>
           </div>
           <div className="col-span-2  overflow-hidden lg:col-span-1 bg-gray-500 rounded-xl lg:rounded-3xl">
             <Image className="object-cover object-left h-full w-full" alt="A Better Way" src={betterWay} />
