@@ -157,12 +157,13 @@ const TeamCarousel = ({ darkText = false, isDouble }) => {
 
   const settings = {
     dots: true,
-    infinite: false,
+    infinite: true,
     speed: 500,
     centerMode: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    initialSlide: 1,
+    initialSlide: 2,
+
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
     responsive: [
@@ -171,7 +172,7 @@ const TeamCarousel = ({ darkText = false, isDouble }) => {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          initialSlide: 1,
+          initialSlide: 2,
         },
       },
       {
@@ -181,6 +182,7 @@ const TeamCarousel = ({ darkText = false, isDouble }) => {
           slidesToScroll: 1,
           centerMode: true,
           dots: false,
+          initialSlide: 1,
         },
       },
     ],
