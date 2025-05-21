@@ -178,6 +178,7 @@ const TeamCarousel = ({ darkText = false, isDouble }) => {
           slidesToShow: 1,
           slidesToScroll: 1,
           centerMode: true,
+          dots: false,
         },
       },
     ],
