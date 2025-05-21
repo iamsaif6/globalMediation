@@ -42,7 +42,7 @@ export default function Home() {
 
             <Link
               title="Learn About Mediation"
-              className=" bg-white mt-3 inline-block  font-normal text-lg text-secondary px-[57px] py-3 rounded-3xl lg:rounded-[40px] "
+              className=" bg-white mt-3 inline-block  font-normal text-lg text-secondary px-6 md:px-[57px] py-3 rounded-3xl lg:rounded-[40px] "
               href="/about-us"
             >
               Learn About Mediation
