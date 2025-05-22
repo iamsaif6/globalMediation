@@ -204,12 +204,12 @@ const MediationCalculation = () => {
       {/* Modal */}
       <Modal isOpen={modalOpen} onRequestClose={afterCloseModal} contentLabel="Mediation Savings Results">
         <div className="p-0 border-0">
-          <div className="navbar flex items-center justify-end flex-wrap">
+          <div className="navbar sticky top-0 flex items-center justify-end flex-wrap">
             {/* Delete and Close Modal Section */}
             <div className="buttons flex items-center gap-3 !mt-0 px-2">
               <button
                 onClick={() => closeModal()}
-                className="close cursor-pointer text-sm text-[#17181B] bg-transparent h-7 w-7 flex items-center justify-center rounded-full transition-all hover:bg-gray-200"
+                className="close cursor-pointer text-sm text-[#17181B]  h-9 w-9 flex items-center justify-center rounded-full bg-white border-black/15 transition-all hover:bg-gray-200"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 24 24">
                   <path

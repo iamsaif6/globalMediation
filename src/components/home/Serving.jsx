@@ -96,7 +96,7 @@ const Serving = () => {
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
         },
       },
       {
@@ -171,7 +171,7 @@ const Serving = () => {
 
         <button
           onClick={goPrev}
-          className="bg-gray-200 hover:bg-primary hover:text-white p-3 rounded-full shadow-md transition-colors cursor-pointer absolute left-0 top-1/2 -translate-y-1/2"
+          className="bg-gray-200 hover:bg-primary hover:text-white p-2 md:p-3 rounded-full shadow-md transition-colors cursor-pointer z-10 absolute mt-3 md:mt-0 left-0 top-1/2 -translate-y-1/2"
           aria-label="Previous slide"
         >
           <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -181,7 +181,7 @@ const Serving = () => {
 
         <button
           onClick={goNext}
-          className="bg-gray-200 hover:bg-primary hover:text-white p-3 rounded-full shadow-md transition-colors cursor-pointer absolute right-0 top-1/2 -translate-y-1/2"
+          className="bg-gray-200 hover:bg-primary hover:text-white p-2 md:p-3 rounded-full shadow-md transition-colors z-10 cursor-pointer absolute right-0 mt-3 md:mt-0 top-1/2 -translate-y-1/2"
           aria-label="Next slide"
         >
           <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -189,11 +189,11 @@ const Serving = () => {
           </svg>
         </button>
 
-        <div className="mb-14 max-w-[800px] mx-auto">
+        <div className="mb-6 md:mb-12 max-w-[300px] w-full md:max-w-[800px] mx-auto">
           <Slider ref={topSliderRef} {...topSliderSettings}>
             {topRowItems.map((item, index) => (
               <div key={`top-${index}`} className="px-1">
-                <div className="w-full h-24  flex items-center justify-center ">
+                <div className="w-full h-16 md:h-24  flex items-center justify-center ">
                   <img className="w-full max-w-20 h-full object-contain" src={item.src} alt="Company Logo" />
                 </div>
               </div>
@@ -201,11 +201,11 @@ const Serving = () => {
           </Slider>
         </div>
 
-        <div>
+        <div className=" max-w-[300px] w-full md:max-w-[1100px] mx-auto">
           <Slider ref={bottomSliderRef} {...bottomSliderSettings}>
             {bottomRowItems.map((item, index) => (
-              <div key={`bottom-${index}`} className="px-1">
-                <div className="w-full h-24  flex items-center justify-center ">
+              <div key={`bottom-${index}`} className="px-1 ">
+                <div className="w-full h-16 md:h-24 flex items-center justify-center ">
                   <img
                     title="Company Logo"
                     className="w-full h-full max-w-20 object-contain object-center"
