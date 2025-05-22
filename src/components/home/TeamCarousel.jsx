@@ -74,7 +74,7 @@ const members = [
   {
     name: 'Jo Winters',
     image: Jo,
-    position: 'Senior Mediators',
+    position: 'Senior Mediator',
     details:
       'Jo brings warmth, empathy, and strong communication skills to every mediation. She’s passionate about helping participants reach the best possible outcomes through understanding and collaboration.',
   },
@@ -104,6 +104,7 @@ const members = [
   {
     name: 'Vicky Mansell',
     image: Vicky,
+    position: 'Senior Mediator',
   },
   {
     name: 'Janet Kenward',
@@ -124,6 +125,7 @@ const members = [
   {
     name: 'Laurence Cobb',
     image: null,
+    position: 'Senior Mediator',
   },
   {
     name: 'Nikeisha Campbell',
