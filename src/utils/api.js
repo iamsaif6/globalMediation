@@ -1,4 +1,4 @@
-const API_URL = 'https://trusty-nature-dfe65baab6.strapiapp.com';
+const API_URL = 'https://lovable-fireworks-b08e821c72.strapiapp.com';
 
 // Fetch All Article
 export async function fetchArticles() {
