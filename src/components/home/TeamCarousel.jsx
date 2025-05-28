@@ -125,7 +125,7 @@ const members = [
   {
     name: 'Laurence Cobb',
     image: null,
-    position: 'Senior Mediator',
+    position: 'Panel Member',
   },
   {
     name: 'Nikeisha Campbell',

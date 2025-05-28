@@ -9,7 +9,7 @@ const WhyTrain = () => {
       <SectionHeading
         title={'Why Train with Global Mediation?'}
         subTitle={
-          'At Global, training is more than just a course, it’s a step forward in your mediation career.Our programmes are built around your growth as a mediator. We provide expert instruction, supportive environments and practical learning designed to build confidence and clarity.'
+          'At Global, training is more than just a course, it’s a step forward in your mediation career. Our programmes are built around your growth as a mediator. We provide expert instruction, supportive environments and practical learning designed to build confidence and clarity.'
         }
         light={true}
         fullWidth={true}
