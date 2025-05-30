@@ -1,10 +1,10 @@
 import React from 'react';
 import Marquee from 'react-fast-marquee';
 import img1 from '/public/Layer_2.png';
-import img2 from '/public/ISO 27001_2013 1.png';
+import img2 from '/public/confident.png';
 import img3 from '/public/image 15.png';
 import img4 from '/public/cyber.png';
-import img5 from '/public/ISO 9001.png';
+import img5 from '/public/Layer_2.png';
 import img6 from '/public/cmc.png';
 import img7 from '/public/confident.png';
 

@@ -52,7 +52,7 @@ const page = () => {
         title={'of Family Mediation'}
         image={overview}
         subtitle={
-          'Family mediation provides a safe, structured space for people to talk through difficult issues and reach a positive way forward.Whether you’re navigating separation, working out parenting arrangements or resolving a financial disagreement, we’re here to help.Mediation avoids the stress and cost of going to court, offering families a better way to move forward with dignity, understanding and care.'
+          'Family mediation provides a safe, structured space for people to talk through difficult issues and reach a positive way forward. Whether you’re navigating separation, working out parenting arrangements or resolving a financial disagreement, we’re here to help. Mediation avoids the stress and cost of going to court, offering families a better way to move forward with dignity, understanding and care.'
         }
         items={[
           'Focuses on the child’s needs and wellbeing',
