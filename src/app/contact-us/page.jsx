@@ -19,7 +19,7 @@ const ContactUs = () => {
           backgroundSize: 'cover',
           backgroundPosition: 'top center',
         }}
-        className="flex text-white pt-[60px] bg-cover bg-no-repeat  flex-col  h-auto lg:h-screen"
+        className="flex text-white pt-[60px] bg-cover bg-no-repeat  flex-col  h-auto lg:min-h-screen"
       >
         <div className="grid flex-1 grid-cols-12 gap-6 pt-16 px-5 md:px-16 md:pt-[80px]">
           <div className="col-span-12 lg:col-span-7 flex items-center">
@@ -83,7 +83,7 @@ const ContactUs = () => {
           </div>
         </div>
 
-        <div className="grid text-white mt-7 mb-10  grid-cols-3 gap-6 pb-16 px-5 md:px-16 md:pb-[80px] ">
+        <div className="grid text-white mt-10 mb-10  grid-cols-3 gap-10 pb-16 px-5 md:px-16 md:pb-[20px] ">
           <div className="col-span-3 lg:col-span-1 flex gap-5 items-center">
             <Check className="text-primary flex-shrink-0" />
             <p className=" font-normal text-[15px]">
