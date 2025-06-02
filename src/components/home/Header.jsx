@@ -16,8 +16,8 @@ const Header = () => {
           {/* <h1 className="hidden md:block font-semibold tracking-[-4%] max-w-[700px] leading-[120%] text-5xl md:[65px] lg:text-[72px] text-white">
             Helping People Move Forward
           </h1> */}
-          <h1 className=" font-semibold tracking-[-4%] max-w-[700px] leading-[120%] text-5xl md:[65px] lg:text-[72px] text-white">
-            Every Voice Matters. <br /> Every Story Counts .
+          <h1 className=" font-semibold tracking-[-4%] max-w-[900px] leading-[120%] text-5xl md:[65px] lg:text-[72px] text-white">
+            Every Voice Matters. <br /> Every Story Counts.
           </h1>
           <p className="text-white mt-[25px] md:mt-4 mb-[25px] mr-auto max-w-[700px] md:mb-10 w-[100%] font-normal text-base md:text-lg">
             Impartial, professional mediation that helps you resolve disputes and rebuild trust, at your pace, on your terms.
