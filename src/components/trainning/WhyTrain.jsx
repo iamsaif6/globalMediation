@@ -54,7 +54,7 @@ const WhyTrain = () => {
               </svg>
             </div>
             <p className="font-medium text-white text-2xl">Expert Trainers</p>
-            <p className=" text-lg text-white capitalize  mt-9 font-normal">learn from real-world mediators</p>
+            <p className=" text-lg text-white capitalize  mt-9 font-normal">With contributions from award winning mediation trainers</p>
           </div>
           <div className="p-6 col-span-4 md:col-span-2 lg:col-span-1 border duration-200 hover:bg-primary hover:border-primary border-[#624A70] rounded-3xl">
             <div className="mt-3 mb-4">
