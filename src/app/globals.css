@@ -164,3 +164,7 @@ body {
 .bpHeaderContainer {
   background-color: red !important;
 }
+
+/* Header image */
+@media screen and (min-width: 1200px) {
+}
