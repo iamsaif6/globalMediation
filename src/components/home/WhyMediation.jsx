@@ -15,10 +15,10 @@ const WhyMediation = () => {
       aria-label="Why Mediation"
       className="py-16 mt-[40px] lg:mt-[80px] md:py-[80px] mb-16 md:mb-[80px] pr-5 md:pr-16 pl-5 md:pl-[49px] bg-secondary "
     >
-      <div className="grid grid-cols-2 gap-[90px]">
+      <div className="grid grid-cols-2 gap-[90px] lg:max-w-[1318px] mx-auto">
         <div className="relative col-span-2 lg:col-span-1">
           <svg
-            className=" w-full max-w-[300px] md:max-w-[500px] mx-auto h-full"
+            className=" w-full max-w-[300px] md:max-w-[450px] mx-auto h-full"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 594 610"
             fill="none"
@@ -28,23 +28,23 @@ const WhyMediation = () => {
               fill="#00A49F"
             />
           </svg>
-          <p className="font-semibold leading-[60%] text-[103px] md:text-[183px] text-white absolute top-1/2 left-1/2 -translate-1/2">
-            25 <span className="block text-[41px] md:text-[73px]">years</span>
+          <p className="font-semibold leading-[60%] text-[103px] md:text-[163px] text-white absolute top-1/2 left-1/2 -translate-1/2">
+            25 <span className="block text-[41px] md:text-[67px]">years</span>
           </p>
         </div>
         <div className="text-white col-span-2 lg:col-span-1">
-          <h3 className="leading-[120%] w-[90%] md:w-full font-medium text-4xl md:text-5xl mb-5 md:mb-8">Why Global Mediation</h3>
+          <h3 className="leading-[120%] w-[90%] md:w-full font-medium text-4xl md:text-5xl mb-5 md:mb-5">Why Global Mediation</h3>
           <p className="font-normal text-base md:text-lg leading-[150%]">
             Every situation is different. That’s why our mediators bring more than expertise, they bring empathy, curiosity and real-world
             experience. With over 25 years of supporting people through conflict, we’ve helped individuals, families and organisations
             navigate difficult conversations and reach lasting outcomes. Our diverse team creates a sense of belonging, ensuring that every
             voice is heard, valued and respected.
           </p>
-          <ul className="mt-6 mb-[42px] md:my-8 text-lg font-normal">
+          <ul className="mt-6 mb-[42px] md:my-6 text-lg font-normal">
             {items.map(item => (
               <li
                 key={item}
-                className="py-4 md:py-[30px] flex items-center gap-6 px-6 duration-200 hover:text-[#101828] hover:bg-[#F3F1FF] rounded-xl"
+                className="py-4 md:py-[10px] flex items-center gap-6 px-6 duration-200 hover:text-[#101828] hover:bg-[#F3F1FF] rounded-xl"
               >
                 <span className="h-[10px] flex-shrink-0 rounded-full w-[10px] bg-current inline-block"></span>
                 {item}
