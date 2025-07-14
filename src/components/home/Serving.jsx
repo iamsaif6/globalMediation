@@ -189,26 +189,26 @@ const Serving = () => {
           </svg>
         </button>
 
-        <div className="mb-6 md:mb-12 max-w-[300px] w-full md:max-w-[800px] mx-auto">
+        <div className="mb-6 md:mb-12 max-w-[300px] w-full md:max-w-[900px] mx-auto">
           <Slider ref={topSliderRef} {...topSliderSettings}>
             {topRowItems.map((item, index) => (
               <div key={`top-${index}`} className="px-1">
                 <div className="w-full h-16 md:h-24  flex items-center justify-center ">
-                  <img className="w-full max-w-20 h-full object-contain" src={item.src} alt="Company Logo" />
+                  <img className="w-full 2xl:max-w-[160px] max-w-[120px] h-full object-contain" src={item.src} alt="Company Logo" />
                 </div>
               </div>
             ))}
           </Slider>
         </div>
 
-        <div className=" max-w-[300px] w-full md:max-w-[1100px] mx-auto">
+        <div className=" max-w-[300px] w-full lg:max-w-[1100px] 2xl:max-w-[1400px] mx-auto">
           <Slider ref={bottomSliderRef} {...bottomSliderSettings}>
             {bottomRowItems.map((item, index) => (
               <div key={`bottom-${index}`} className="px-1 ">
                 <div className="w-full h-16 md:h-24 flex items-center justify-center ">
                   <img
                     title="Company Logo"
-                    className="w-full h-full max-w-20 object-contain object-center"
+                    className="w-full h-full 2xl:max-w-[160px] max-w-[120px] object-contain object-center"
                     src={item.src}
                     alt="Company Logo"
                   />
