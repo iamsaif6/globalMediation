@@ -19,17 +19,17 @@ const faqData = [
   {
     key: 1,
     question: 'Is mediation confidential?',
-    answer: 'Yes. What’s said in the session stays private unless everyone agrees to share it.',
+    answer: 'Yes — what’s said in the session stays private unless everyone agrees to share it.',
   },
   {
     key: 2,
     question: 'Do we have to meet face-to-face?',
-    answer: 'No — we offer online, phone or separate meetings if that’s more comfortable.',
+    answer: 'No — we offer online, phone, or separate meetings if that’s more comfortable.',
   },
   {
     key: 3,
     question: 'What if the other person won’t take part?',
-    answer: 'We’ll reach out to them and explain how it works. Mediation is voluntary, but we encourage people to give it a try.',
+    answer: 'We’ll reach out and explain the process. Mediation is voluntary, but we encourage everyone to give it a try.',
   },
 ];
 

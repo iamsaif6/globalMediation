@@ -12,7 +12,7 @@ const Colabration = () => {
         </p>
       </div>
       <div className="mt-[80px]">
-        <h4 className="text-2xl font-medium text-center text-white mb-10">Core Values</h4>
+        <h4 className="text-2xl font-medium text-center text-white mb-10">We do this through:</h4>
         <div className="grid grid-cols-3 gap-6 md:gap-8">
           <div className="p-6 col-span-3   lg:col-span-1 border duration-200 hover:bg-primary hover:border-primary border-[#624A70] rounded-3xl">
             <div className="mt-3 mb-4">
@@ -112,7 +112,7 @@ const Colabration = () => {
                 </defs>
               </svg>
             </div>
-            <p className="font-medium text-white text-2xl">Expert-Led Mediation</p>
+            <p className="font-medium text-white text-2xl">Experienced Mediators</p>
             <p className=" text-lg text-white mb-[25px] mt-9 font-normal">
               Matching people with the right mediator for their needs and situation.
             </p>

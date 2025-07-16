@@ -19,7 +19,7 @@ const faqData = [
   {
     key: 1,
     question: 'How long does workplace mediation take?',
-    answer: 'Typically a one-day process, depending on the complexity of the dispute. Preparation and follow-up are included.',
+    answer: 'Typically a one-day process, including preparation and follow-up. Some more complex issues may take longer.',
   },
   {
     key: 2,
@@ -29,7 +29,7 @@ const faqData = [
   {
     key: 3,
     question: 'What types of conflicts are best suited?',
-    answer: 'Interpersonal disputes, communication breakdowns, or early-stage grievances are most suitable for mediation.',
+    answer: 'Interpersonal issues, communication breakdowns, and early-stage grievances are well suited to mediation.',
   },
 ];
 

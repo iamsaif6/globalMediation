@@ -13,8 +13,8 @@ const ExperiencedLeader = () => {
         <h2 className="font-medium text-4xl md:text-5xl leading-[120%]">About Global Mediation</h2>
         <p className="text-black text-base md:text-lg leading-[150%] my-6">
           We exist to support people through difficult conversations, with calm, clarity and care. Our mediation services create space for
-          progress, helping individuals, families, teams and organisations navigate conflict and reach resolution, without judgment or
-          pressure.
+          progress, helping organisations, teams, communities, families and individuals navigate conflict and reach resolution, without
+          judgment or pressure.
         </p>
         <div className="relative my-10 block md:hidden  rounded-3xl overflow-hidden">
           <div className={`from-[rgba(67,0,106,0.1)] to-[#43006aa3] absolute inset-0 bg-gradient-to-b  z-10`}></div>

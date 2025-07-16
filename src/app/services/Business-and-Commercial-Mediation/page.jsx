@@ -13,18 +13,25 @@ import cover from '/public/Business_Header.jpeg';
 const faqData = [
   {
     key: 1,
-    question: 'Is family mediation legally binding?',
-    answer: 'No, but written agreements can be made into formal court orders if both parties agree.',
+    question: 'How long does commercial mediation take?',
+    answer: 'Most sessions last a full day, depending on the complexity of the dispute. Preparation and follow-up are included.',
   },
   {
     key: 2,
-    question: 'Can children be involved in the mediation?',
-    answer: 'Yes — with parental agreement, older children can be consulted as part of the process.',
+    question: 'Is the outcome legally binding?',
+    answer:
+      'No — agreements are not automatically legally binding, but they can be formalised into contracts or legal documents if both parties agree.',
   },
   {
     key: 3,
-    question: 'How many sessions will we need?',
-    answer: 'Most disputes can be addressed in one to three sessions, depending on complexity.',
+    question: 'Do I need a lawyer to attend mediation?',
+    answer: 'No, but legal advisors can be included if you prefer. The process is designed to be flexible, accessible and collaborative.',
+  },
+  {
+    key: 4,
+    question: 'What types of disputes can you help with?',
+    answer:
+      'We support a wide range — including contract, partnership, client-supplier and IP-related disputes. If you’re unsure, we’re happy to advise.',
   },
 ];
 
@@ -87,7 +94,7 @@ const page = () => {
       </div>
       <MediationCalculation />
 
-      {/* <FAQ title={'FAQs About Business and Commercial Mediation'} buttonText={'Contact Us'} buttonLink={'/contact-us'} faqData={faqData} /> */}
+      <FAQ title={'FAQs About Business and Commercial Mediation'} buttonText={'Contact Us'} buttonLink={'/contact-us'} faqData={faqData} />
       <div className="bg-[#F9F8FF]">
         <CTA
           title={'Learn More About Global Mediation'}

@@ -26,7 +26,7 @@ const services = [
   {
     title: 'Business and Commercial Mediation',
     subtitle:
-      'Disputes in business can damage relationships, stall progress and increase costs. Our mediation service supports companies and professionals to resolve commercial disagreements quickly and confidentially, protecting reputations and preserving working relationships wherever possible.',
+      'Disputes in business can damage relationships, stall progress and increase costs. Our mediation service supports companies and professionals to resolve commercial disagreements quickly and confidentially, protecting reputations and preserving working relationships.',
     service: [
       'Contract Dispute',
       'Shareholder and Partnership Conflicts',

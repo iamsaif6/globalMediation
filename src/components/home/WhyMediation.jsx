@@ -35,10 +35,10 @@ const WhyMediation = () => {
         <div className="text-white col-span-2 lg:col-span-1">
           <h3 className="leading-[120%] w-[90%] md:w-full font-medium text-4xl md:text-5xl mb-5 md:mb-5">Why Global Mediation</h3>
           <p className="font-normal text-base md:text-lg leading-[150%]">
-            Every situation is different. That’s why our mediators bring more than expertise, they bring empathy, curiosity and real-world
-            experience. With over 25 years of supporting people through conflict, we’ve helped individuals, families and organisations
-            navigate difficult conversations and reach lasting outcomes. Our diverse team creates a sense of belonging, ensuring that every
-            voice is heard, valued and respected.
+            Every situation is different. That’s why our trained mediators bring empathy, curiosity and real-world experience. With over 25
+            years of supporting people through conflict, we’re trusted by leading organisations across sectors, from SMEs to national
+            bodies, to deliver consistent and effective mediation, navigate difficult conversations, and support lasting outcomes. Our
+            diverse team fosters a sense of belonging, ensuring every voice is heard, valued and respected.
           </p>
           <ul className="mt-6 mb-[42px] md:my-6 text-lg font-normal">
             {items.map(item => (

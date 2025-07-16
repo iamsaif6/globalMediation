@@ -24,12 +24,17 @@ const faqData = [
   {
     key: 2,
     question: 'Is it required before a tribunal?',
-    answer: 'Yes, you’ll need to consider mediation before progressing to tribunal.',
+    answer: 'Yes — you’ll need to consider mediation before progressing to tribunal, though you’re not obligated to take part.',
   },
   {
     key: 3,
     question: 'Can a young person request mediation?',
-    answer: 'Yes, anyone aged 16–25 can initiate or attend SEND mediation directly.',
+    answer: 'Yes — anyone aged 16 to 25 can request or attend SEND mediation directly.',
+  },
+  {
+    key: 4,
+    question: 'Can parents and young people both be involved?',
+    answer: 'Yes — mediation can include both, depending on the issue and who the dispute involves.',
   },
 ];
 
@@ -51,7 +56,7 @@ const page = () => {
         title={'of SEND Mediation'}
         image={service1}
         subtitle={
-          'SEND disputes can be stressful and emotionally overwhelming, especially when they involve the wellbeing or education of a child or young person.Global Mediation provides impartial, trusted support through every stage of the SEND process.Our experienced mediators help families, young people, and local authorities work together to find respectful, balanced outcomes, with the child’s needs always at the centre.'
+          'SEND disputes can be stressful and emotionally overwhelming, especially when they involve the wellbeing or education of a child or young person. Whether the situation involves formal EHCP decisions, appeals, or long-standing breakdowns in communication, our experienced mediators offer impartial, trusted support every step of the way.  Our experienced mediators help families, young people, and local authorities work together to find respectful, balanced outcomes, with the child’s needs always at the centre.'
         }
         items={[
           'Encourages understanding and cooperation',

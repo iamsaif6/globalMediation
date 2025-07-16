@@ -67,7 +67,7 @@ const ServiceCarousel = () => {
       <div className="max-w-[800px] px-5 mx-auto lg:text-center md:text-center mb-[20px] lg:mb-[70px]">
         <h3 className="font-medium text-4xl md:text-5xl mb-5 md:mb-6">Global Mediation Services</h3>
         <p className=" leading-[150%] text-base md:text-lg font-normal">
-          Tailored solutions for individuals, families, workplaces and communities.
+          Tailored solutions for workplaces, communities, families and individuals.
         </p>
       </div>
 
@@ -140,7 +140,7 @@ const ServiceCarousel = () => {
                 </div>
                 <div className="flex flex-col flex-grow">
                   <h3 className="text-lg lg:text-2xl group-hover:text-white duration-200 leading-[140%] mb-[6px] md:mb-2 font-semibold text-secondary">
-                    Send Mediation
+                    SEND Mediation
                   </h3>
                   <p className="text-base md:text-lg duration-200 leading-[150%] font-normal mb-[26px] flex-grow">
                     Support for families, schools and authorities navigating special educational needs.

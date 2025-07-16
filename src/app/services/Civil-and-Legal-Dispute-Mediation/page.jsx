@@ -27,12 +27,12 @@ const faqData = [
   {
     key: 2,
     question: 'Can I use mediation instead of going to court?',
-    answer: 'Yes — mediation is a recognised alternative to litigation in many civil cases',
+    answer: 'Yes — mediation is a recognised alternative to litigation in many civil cases.',
   },
   {
     key: 3,
     question: 'Do I need a solicitor to take part?',
-    answer: 'No, but you’re welcome to involve legal representation if you prefer.',
+    answer: 'No — but you’re welcome to involve legal representation if you prefer.',
   },
 ];
 

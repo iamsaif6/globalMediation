@@ -20,7 +20,7 @@ const faqData = [
   {
     key: 1,
     question: 'Is family mediation legally binding?',
-    answer: 'No, but written agreements can be made into formal court orders if both parties agree.',
+    answer: 'No — but written agreements can be made into formal court orders if both parties agree.',
   },
   {
     key: 2,
@@ -30,7 +30,7 @@ const faqData = [
   {
     key: 3,
     question: 'How many sessions will we need?',
-    answer: 'Most disputes can be addressed in one to three sessions, depending on complexity.',
+    answer: 'Most disputes are resolved within one to three sessions, depending on complexity.',
   },
 ];
 
@@ -40,7 +40,7 @@ const page = () => {
       <Header
         title={'Family Mediation'}
         subTitle={
-          'Calm, impartial support to help you resolve family issues around parenting, separation or finances — with everyone’s voice heard and the child’s needs at the centre.'
+          'Calm, impartial support to help you resolve family issues around parenting, separation or finances, with everyone’s voice heard.'
         }
         Button1Text={'Speak to a Family Mediator'}
         Button1Link="/contact-us"
@@ -52,7 +52,7 @@ const page = () => {
         title={'of Family Mediation'}
         image={overview}
         subtitle={
-          'Family mediation provides a safe, structured space for people to talk through difficult issues and reach a positive way forward. Whether you’re navigating separation, working out parenting arrangements or resolving a financial disagreement, we’re here to help. Mediation avoids the stress and cost of going to court, offering families a better way to move forward with dignity, understanding and care.'
+          'Family mediation offers a safe, supportive space to work through difficult issues and find a way forward together.Whether you’re separating, making parenting arrangements or resolving financial matters, we help families navigate change with clarity and care.It’s a calmer, more constructive alternative to court, focused on communication, mutual understanding and long-term wellbeing.'
         }
         items={[
           'Focuses on the child’s needs and wellbeing',
