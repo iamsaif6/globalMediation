@@ -270,7 +270,7 @@ const TeamCarousel = ({ darkText = false, isDouble }) => {
                   </div>
 
                   {/* Back Side */}
-                  <div className="absolute w-full h-full backface-hidden rotate-y-180 bg-gray-50 flex items-center justify-center p-4 rounded-3xl">
+                  <div className="absolute w-full h-full backface-hidden rotate-y-180 bg-gray-200 flex items-center justify-center p-4 rounded-3xl">
                     <p className="text-center text-gray-800">{item?.details}</p>
                   </div>
                 </div>
@@ -329,8 +329,18 @@ const TeamCarousel = ({ darkText = false, isDouble }) => {
           <Slider {...settings2}>
             {members.slice(6, 12).map(item => (
               <div className="px-[15px] mb-[20px]">
-                <div className="w-full bg-gray-400 h-[285px] lg:h-[390px]  rounded-3xl overflow-hidden">
-                  {item?.image && <Image className="w-full h-full object-top object-cover" alt={item.name} src={item.image} />}
+                <div className="w-full h-[285px] lg:h-[390px] perspective rounded-3xl">
+                  <div className="relative w-full h-full transition-transform duration-700 transform-style preserve-3d hover:rotate-y-180 rounded-3xl">
+                    {/* Front Side */}
+                    <div className="absolute w-full h-full backface-hidden rounded-3xl overflow-hidden">
+                      {item?.image && <Image className="w-full h-full object-top object-cover" alt={item.name} src={item.image} />}
+                    </div>
+
+                    {/* Back Side */}
+                    <div className="absolute w-full h-full backface-hidden rotate-y-180 bg-gray-200 flex items-center justify-center p-4 rounded-3xl">
+                      <p className="text-center text-gray-800">{item?.details}</p>
+                    </div>
+                  </div>
                 </div>
                 <h3 className={`${darkText ? 'text-black' : 'text-white'} mt-3 md:mt-6 text-2xl md:text-[32px] font-semibold `}>
                   {item.name}

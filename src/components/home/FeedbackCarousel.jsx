@@ -35,6 +35,8 @@ const clientReview = [
 const FeedbackCarousel = ({ title, subTitle, fullWidth }) => {
   const settings = {
     dots: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
     arrows: false,
     infinite: true,
     speed: 500,
@@ -61,7 +63,7 @@ const FeedbackCarousel = ({ title, subTitle, fullWidth }) => {
     customPaging: i => <div className=" w-[50px]  h-1 rounded-xl bg-[#EBEBEB]"></div>,
   };
   return (
-    <section aria-label="Feedback Carousel" className="py-[40px] lg:max-w-[1318px] mx-auto slick-bar ">
+    <section aria-label="Feedback Carousel" className="py-[40px] lg:max-w-[1518px] mx-auto slick-bar ">
       <div
         className={`mb-[30px] ${fullWidth ? 'max-w-max' : 'max-w-[267px]'}  md:max-w-max mx-auto px-5 md:px-16 text-center md:mb-[70px]`}
       >
