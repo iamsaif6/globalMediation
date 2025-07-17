@@ -2,6 +2,8 @@
 import Link from 'next/link';
 import React, { useState } from 'react';
 import { usePathname } from 'next/navigation';
+import logo from '/public/newlogo.png';
+import Image from 'next/image';
 
 const resourceSubMenu = [
   { title: 'Blogs', href: '/blogs' },
@@ -184,7 +186,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between  lg:pl-9 px-[18px] lg:px-3">
           <div className="flex items-center gap-10 relative">
             <Link href="/" className="flex items-center">
-              <svg
+              {/* <svg
                 className="w-[86px] h-[56px] md:w-[80px] md:h-auto lg:w-[132px] lg:h-[59px]"
                 xmlns="http://www.w3.org/2000/svg"
                 width="132"
@@ -225,7 +227,8 @@ const Navbar = () => {
                     <rect width="132" height="58.1695" fill="white" />
                   </clipPath>
                 </defs>
-              </svg>
+              </svg> */}
+              <Image className="max-w-[150px] w-full md:max-w-[250px]" alt="Mediation Logo" width={250} height={250} src={logo} />
             </Link>
             <ul className="lg:flex relative hidden gap-6 text-secondary font-normal text-lg items-center">
               {navLinks.map(link => {
