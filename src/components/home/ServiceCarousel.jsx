@@ -13,7 +13,7 @@ const ServiceCarousel = () => {
     const { onClick } = props;
     return (
       <div
-        className={`flex justify-center -translate-y-1/2  absolute top-1/2 border border-[#9C9C9C] left-0 md:left-[20px] z-20 items-center text-[#9C9C9C] bg-white  rounded-full hover:bg-primary hover:border-primary hover:text-white  cursor-pointer w-[35px] h-[35px] md:w-12 md:h-12`}
+        className={`flex justify-center -translate-y-1/2  absolute top-1/2 border border-[#9C9C9C] left-0 md:-left-[60px] z-20 items-center text-[#9C9C9C] bg-white  rounded-full hover:bg-primary hover:border-primary hover:text-white  cursor-pointer w-[35px] h-[35px] md:w-12 md:h-12`}
         onClick={onClick}
       >
         <ArrowLeft />
@@ -25,7 +25,7 @@ const ServiceCarousel = () => {
     const { onClick } = props;
     return (
       <div
-        className={`flex justify-center bg-white -translate-y-1/2 absolute top-1/2 border border-[#9C9C9C] right-0 md:right-[20px] z-20   items-center text-[#9C9C9C]  rounded-full hover:bg-primary hover:border-primary hover:text-white  cursor-pointer w-[35px] h-[35px] md:w-12 md:h-12`}
+        className={`flex justify-center bg-white -translate-y-1/2 absolute top-1/2 border border-[#9C9C9C] right-0 md:-right-[60px] z-20   items-center text-[#9C9C9C]  rounded-full hover:bg-primary hover:border-primary hover:text-white  cursor-pointer w-[35px] h-[35px] md:w-12 md:h-12`}
         onClick={onClick}
       >
         <ArrowRight />
@@ -63,7 +63,7 @@ const ServiceCarousel = () => {
   };
 
   return (
-    <section aria-label="Global Mediation Services" className="slick-bar">
+    <section aria-label="Global Mediation Services" className="py-[40px] lg:max-w-[1318px] px-5 md:px-[60px] mx-auto slick-bar ">
       <div className="max-w-[800px] px-5 mx-auto lg:text-center md:text-center mb-[20px] lg:mb-[70px]">
         <h3 className="font-medium text-4xl md:text-5xl mb-5 md:mb-6">Global Mediation Services</h3>
         <p className=" leading-[150%] text-base md:text-lg font-normal">
