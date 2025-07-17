@@ -11,7 +11,7 @@ const Header = () => {
           backgroundImage: ` url('/image.jpg')`,
           backgroundRepeat: 'no-repeat',
         }}
-        className="pt-[187px] max-h-[750px] h-screen custom-gradient-bg bg-[center] sm:bg-[center_top] lg:bg-bottom max-sm:bg-[65%_center] relative md:pt-[238px] pb-[176px] md:pb-[203px] px-5 md:px-[60px]"
+        className="pt-[187px] max-h-[1050px] h-screen custom-gradient-bg bg-[center] sm:bg-[center_top] lg:bg-bottom max-sm:bg-[65%_center] relative md:pt-[238px] pb-[176px] md:pb-[203px] px-5 md:px-[60px]"
       >
         <Image src={overlay} alt="Header Overlay" className=" absolute top-0 left-0 w-full h-full object-cover" />
         <div className="w-full text-left lg:pl-5 relative z-10 lg:max-w-[1318px] mx-auto ">
