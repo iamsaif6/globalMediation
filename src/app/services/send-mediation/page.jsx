@@ -12,7 +12,7 @@ import Map from '@/components/service/Map';
 import FAQ from '@/components/service/FAQ';
 import CTA from '@/components/shared/CTA';
 import SectionHeading from '@/components/shared/SectionHeading';
-import wayChoose from '/public/Training 1.png';
+import wayChoose from '/public/Why Choose Global Mediation for SEND.jpg';
 import Link from 'next/link';
 
 const faqData = [
@@ -236,7 +236,7 @@ const page = () => {
         <h1 className="text-4xl md:text-5xl font-medium text-left md:text-center max-w-[760px] mx-auto leading-[120%] mb-8 md:mb-[78px]">
           Why Choose Global Mediation for SEND?
         </h1>
-        <p className="text-base md:text-lg  leading-[150%] mb-[56px] md:mb-[78px]">
+        <p className="text-base md:text-lg md:text-center  leading-[150%] mb-[56px] md:mb-[78px]">
           We’ve helped thousands of families and local authorities resolve complex, emotionally sensitive disputes, with empathy,
           impartiality, and professionalism. <br /> <br />
           Our SEND mediation team includes experienced specialists with lived experience of the education system, disability, and youth
