@@ -75,7 +75,7 @@ const MediationCards = () => {
     return (
       <section className="px-5 pb-10 lg:px-16">
         <SectionHeading
-          title={'Mediation That Works For You'}
+          title={'Mediation that works for you'}
           subTitle={
             'No matter the conflict, resolution starts with listening. At Global Mediation, we believe that  understanding, reframing and altering perspectives can shift even the most challenging conversations. We do not take sides, we create safe, supportive spaces where every voice is heard and respected. Through open dialogue and impartial guidance, we help people and organisations work toward outcomes that benefit everyone involved.'
           }
@@ -95,7 +95,7 @@ const MediationCards = () => {
       <div className="sticky -top-[10%]  flex items-center justify-center">
         <div className="w-full px-5 lg:px-16">
           <SectionHeading
-            title={'Mediation That Works For You'}
+            title={'Mediation that works for you'}
             subTitle={
               'No matter the conflict, resolution starts with listening. At Global Mediation, we believe that understanding and perspective can shift even the most challenging conversations. We do not take sides, we create safe, supportive spaces where every voice is heard and respected. Through open dialogue and impartial guidance, we help people find common ground and work toward outcomes that benefit everyone involved.'
             }

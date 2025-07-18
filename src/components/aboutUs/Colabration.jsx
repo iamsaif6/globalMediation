@@ -4,7 +4,7 @@ const Colabration = () => {
     <section className="py-16 px-5 md:px-16 md:py-[80px] bg-secondary">
       <div className={` max-w-[850px] mx-auto text-center  md:text-center`}>
         <h5 className="font-medium text-white leading-[120%] tracking-[-4%] text-4xl md:text-[40px] lg:text-5xl mb-5 md:mb-6">
-          How Mediation With Global <br /> Supports You
+          How mediation with global <br /> supports you
         </h5>
         <p className={`text-[#fff] text-base md:text-lg font-normal`}>
           We are here to guide, not to judge. Mediation is always voluntary and confidential, and designed to give everyone a voice. <br />{' '}
@@ -91,7 +91,7 @@ const Colabration = () => {
                 />
               </svg>
             </div>
-            <p className="font-medium text-white text-2xl">Guided Conversations</p>
+            <p className="font-medium text-white text-2xl">Guided conversations</p>
             <p className=" text-lg text-white mb-[25px] mt-9 font-normal">
               Structured, impartial discussions led by experienced mediators.
             </p>
@@ -112,7 +112,7 @@ const Colabration = () => {
                 </defs>
               </svg>
             </div>
-            <p className="font-medium text-white text-2xl">Experienced Mediators</p>
+            <p className="font-medium text-white text-2xl">Experienced mediators</p>
             <p className=" text-lg text-white mb-[25px] mt-9 font-normal">
               Matching people with the right mediator for their needs and situation.
             </p>
@@ -128,7 +128,7 @@ const Colabration = () => {
                 />
               </svg>
             </div>
-            <p className="font-medium text-white text-2xl">Transformational Training</p>
+            <p className="font-medium text-white text-2xl">Transformational training</p>
             <p className=" text-lg text-white mb-[25px] mt-9 font-normal">
               Helping professionals and organisations learn how to manage conflict constructively.
             </p>

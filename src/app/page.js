@@ -36,7 +36,7 @@ export default function Home() {
           className="grid grid-cols-2 lg:max-w-[1318px] mx-auto gap-4 my-[64px] md:my-[80px] px-5 md:px-[60px]"
         >
           <div className="col-span-2 lg:col-span-1 text-white bg-primary rounded-xl lg:rounded-3xl px-6 lg:px-[58px] py-[34px] lg:py-[61px]">
-            <h2 className="font-medium leading-[120%] text-[32px] lg:text-5xl mb-[18px]">A Better Way to Resolve Disputes</h2>
+            <h2 className="font-medium leading-[120%] text-[32px] lg:text-5xl mb-[18px]">A better way to resolve disputes</h2>
             <p className=" text-base md:text-lg mb-5 md:mb-6">
               Mediation offers a cost-effective, faster alternative to going to court. It gives people a way to move forward without the
               emotional and financial strain of litigation. Whether you’re navigating a workplace issue, family disagreement or commercial
@@ -57,7 +57,7 @@ export default function Home() {
           </div>
         </section>
         {/*End Learn About Mediation */}
-        <FeedbackCarousel title={'What Our Clients Say'} />
+        <FeedbackCarousel title={'What our clients say'} />
         <WhyMediation />
         <ServiceCarousel />
         {/* Team Carousel */}
@@ -69,7 +69,7 @@ export default function Home() {
         <MediationCalculation />
         <LearnMore />
         <CTA
-          title={'Ready to Resolve Your Dispute?'}
+          title={'Ready to resolve your dispute?'}
           subTitle={'We are here to help. Let’s talk'}
           Button1Text={'Schedule consultation'}
           Button1Link={'/contact-us'}

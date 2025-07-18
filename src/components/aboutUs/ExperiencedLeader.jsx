@@ -10,7 +10,7 @@ const ExperiencedLeader = () => {
         <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={service1} />
       </div>
       <div className="col-span-2 flex justify-center  flex-col gap-9 lg:col-span-1">
-        <h2 className="font-medium text-4xl md:text-5xl leading-[120%]">About Global Mediation</h2>
+        <h2 className="font-medium text-4xl md:text-5xl leading-[120%]">About global mediation</h2>
         <p className="text-black text-base md:text-lg leading-[150%] my-6">
           We exist to support people through difficult conversations, with calm, clarity and care. Our mediation services create space for
           progress, helping organisations, teams, communities, families and individuals navigate conflict and reach resolution, without

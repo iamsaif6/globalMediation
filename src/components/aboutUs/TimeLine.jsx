@@ -5,9 +5,9 @@ const TimeLine = () => {
   return (
     <section className="py-16 bg-[#F9F8FF] px-5 md:px-16 md:py-[80px]">
       <div className={` max-w-[850px] mx-auto text-left  md:text-center`}>
-        <h3 className="font-medium leading-[120%] tracking-[-4%] text-4xl md:text-[40px] lg:text-5xl mb-5 md:mb-6">
-          Trusted, Experienced and People-First
-        </h3>
+        <h2 className="font-medium leading-[120%] tracking-[-4%] text-4xl md:text-[40px] lg:text-5xl mb-5 md:mb-6">
+          Trusted, experienced and people-first
+        </h2>
         <p className={`text-black text-base md:text-lg font-normal`}>
           Global Mediation is an independent provider of professional mediation services, trusted by individuals, families, businesses and
           public bodies across the UK.We create safe, impartial spaces for people to communicate, rebuild trust and find lasting outcomes.
@@ -17,7 +17,7 @@ const TimeLine = () => {
       </div>
 
       <div className="my-[42px] md:my-[80px]">
-        <h4 className="md:text-center text-secondary text-lg md:text-2xl font-semibold mb-10">Key Milestones</h4>
+        <h4 className="md:text-center text-secondary text-lg md:text-2xl font-semibold mb-10">Key milestones</h4>
 
         <div className="relative gap-[30px] flex flex-col md:flex-row justify-between items-start">
           <div className="w-full md:w-1/3 md:text-center relative z-10 flex md:block gap-8 items-center">

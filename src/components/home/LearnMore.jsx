@@ -6,9 +6,9 @@ import Button from '../shared/Button';
 
 const LearnMore = () => {
   return (
-    <section aria-label="Learn More About Mediation" className="md:px-[64px] px-5 py-16 md:py-[80px]">
+    <section aria-label="Learn more about mediation" className="md:px-[64px] px-5 py-16 md:py-[80px]">
       <SectionHeading
-        title={'Learn More About Mediation'}
+        title={'Learn more about mediation'}
         subTitle={'Explore resources to help you prepare for mediation or learn more about how it works:'}
         center
       />
@@ -107,7 +107,7 @@ const LearnMore = () => {
           </div>
           <div className="p-6 flex-grow flex flex-col">
             <div className="flex flex-col flex-grow mb-8">
-              <h4 className="text-[#101828] font-medium mb-2 text-2xl">Case Studies</h4>
+              <h4 className="text-[#101828] font-medium mb-2 text-2xl">Case studies</h4>
               <p className="text-[#101828] text-base md:text-lg font-normal">Real examples of successful mediation</p>
             </div>
             <Link

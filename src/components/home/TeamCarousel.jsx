@@ -276,9 +276,9 @@ const TeamCarousel = ({ darkText = false, isDouble }) => {
                 </div>
               </div>
 
-              <h3 className={`${darkText ? 'text-black' : 'text-white'} mt-3 md:mt-6 text-2xl md:text-[32px] font-semibold `}>
+              <h4 className={`${darkText ? 'text-black' : 'text-white'} mt-3 md:mt-6 text-2xl md:text-[32px] font-semibold `}>
                 {item.name}
-              </h3>
+              </h4>
               <p className={`${darkText ? 'text-black' : 'text-white'} font-medium mt-1`}>{item?.position}</p>
               {isDouble && <p className="mt-3">{item?.details}</p>}
               {darkText && (

@@ -78,7 +78,7 @@ const AboutUs = () => {
       >
         <div className="w-full  lg:max-w-[1318px] mx-auto relative z-10 ">
           <h1 className="font-semibold tracking-[-4%] max-w-[900px] 2xl:max-w-[90%] leading-[120%] text-5xl md:text-[65px] xl:text-[4vw] text-white">
-            Helping People Find a Way Forward, Together.
+            Helping people find a way forward, together.
           </h1>
           {/* <p className="text-white mt-[18px] md:mt-6 mb-[26px] md:mb-8 w-[70%] font-normal text-sm md:text-lg">{subTitle}</p> */}
           <div className=" flex mt-8 md:flex-row flex-col items-center gap-4">

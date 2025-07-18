@@ -6,7 +6,7 @@ const Progress = () => {
   return (
     <div className="bg-[#F9F8FF] relative py-16 px-5 md:px-16 md:py-[80px] grid grid-cols-2 gap-[80px]">
       <div className="col-span-2 flex justify-center relative z-2 flex-col gap-9 lg:col-span-1">
-        <h4 className="font-medium text-4xl md:text-5xl leading-[120%]">Progress Through Understanding</h4>
+        <h4 className="font-medium text-4xl md:text-5xl leading-[120%]">Progress through understanding</h4>
         <p className="text-[#000] text-base md:text-lg leading-[150%] my-6">
           When communication breaks down, misunderstandings and conflict can quickly follow. But through listening, reframing and altering
           perspectives, we help people break through those barriers and find their way back to a place of clarity, understanding and
