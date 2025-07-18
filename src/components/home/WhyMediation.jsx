@@ -6,7 +6,7 @@ const items = [
   'Accessible services throughout the UK',
   'Personalised support from a dedicated case manager',
   'Accredited mediators with real-world experience',
-  '95% success rate in achieving full or partial resolution',
+  '95 per cent success rate in achieving full or partial resolution',
 ];
 
 const WhyMediation = () => {

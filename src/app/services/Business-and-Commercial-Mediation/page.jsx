@@ -91,7 +91,7 @@ const page = () => {
       {/* Why Choose */}
       <div className={` py-16 md:py-[80px] px-5 md:px-[60px]`}>
         <div className="text-left md:text-center">
-          <h1 className="w-full  mb-10 font-medium text-4xl md:text-5xl leading-[120%] ">{item.title}</h1>
+          <h2 className="w-full  mb-10 font-medium text-4xl md:text-5xl leading-[120%] ">{item.title}</h2>
           <p className="mb-[32px] md:mb-[60px] text-black text-base md:text-lg leading-[150%] my-6">{item.subtitle}</p>
         </div>
         <div className="grid grid-cols-2 items-center  gap-8 md:gap-[100px]">
@@ -131,7 +131,7 @@ const page = () => {
       {/* What we help */}
       <div className={` py-16 md:py-[80px] px-5 md:px-[60px]`}>
         <div className="text-left md:text-center">
-          <h1 className="w-full  mb-10 font-medium text-4xl md:text-5xl leading-[120%] ">{item2.title}</h1>
+          <h2 className="w-full  mb-10 font-medium text-4xl md:text-5xl leading-[120%] ">{item2.title}</h2>
           <p className="mb-[32px] md:mb-[60px] text-black text-base md:text-lg leading-[150%] my-6">{item2.subtitle}</p>
         </div>
         <div className="grid grid-cols-2 items-center  gap-8 md:gap-[100px]">
@@ -167,7 +167,7 @@ const page = () => {
       {/* Example */}
       <div className={` py-16 md:py-[80px] px-5 md:px-[60px]`}>
         <div className="text-left md:text-center">
-          <h1 className="w-full  mb-14 font-medium text-4xl md:text-5xl leading-[120%] ">{item3.title}</h1>
+          <h2 className="w-full  mb-14 font-medium text-4xl md:text-5xl leading-[120%] ">{item3.title}</h2>
           {/* <p className="mb-[32px] md:mb-[60px] text-black text-base md:text-lg leading-[150%] my-6">{item2.subtitle}</p> */}
         </div>
         <div className="grid grid-cols-2 items-center  gap-8 md:gap-[100px]">

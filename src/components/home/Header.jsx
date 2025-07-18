@@ -25,7 +25,7 @@ const Header = () => {
               className={`bg-primary inline-block  border md:w-auto border-primary font-semibold text-lg text-[#FCFCFD] px-[37px] py-3 rounded-[40px]`}
               href="/services"
             >
-              Explore Our Services
+              Explore our services
             </Link>
           </div>
         </div>

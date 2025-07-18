@@ -4,7 +4,6 @@ import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/shared/Footer';
 import Script from 'next/script';
 import Head from 'next/head';
-import Userback from '@userback/widget';
 import UserbackWidget from '@/components/UserbackWidget';
 
 const poppins = Poppins({
