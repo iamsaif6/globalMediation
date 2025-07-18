@@ -16,7 +16,7 @@ const Apply = () => {
           <p className="font-medium text-2xl leading-[140%] mb-[42px] flex items-center justify-center w-[54px] h-[54px] text-white  bg-secondary rounded-xl">
             1
           </p>
-          <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">Contact Us</p>
+          <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">Contact us</p>
           <p className="font-normal text-base md:text-lg">
             <span className="">Email us at</span> <br />
             <span className="flex items-center gap-1 mt-0.5">
@@ -50,7 +50,7 @@ const Apply = () => {
           <p className="font-medium text-2xl leading-[140%] mb-[42px] flex items-center justify-center w-[54px] h-[54px] text-white  bg-secondary rounded-xl">
             2
           </p>
-          <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">Submit Your Application</p>
+          <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">Submit your application</p>
           <p className="font-normal text-base md:text-lg">
             <span className="">Complete the application form provided by our team</span>
           </p>
@@ -59,14 +59,14 @@ const Apply = () => {
           <p className="font-medium text-2xl leading-[140%] mb-[42px] flex items-center justify-center w-[54px] h-[54px] text-white  bg-secondary rounded-xl">
             3
           </p>
-          <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">Select Your Course</p>
+          <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">Select your course</p>
           <p className="font-normal text-base md:text-lg">
             <span className="">Choose from our available courses and confirm your enrollment</span>
           </p>
         </div>
       </div>
       <div className="flex md:justify-center">
-        <Button padding="xxlarge" title={'Contact Us'} href="/contact-us" />
+        <Button padding="xxlarge" title={'Contact us'} href="/contact-us" />
       </div>
     </section>
   );

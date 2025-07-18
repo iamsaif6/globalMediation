@@ -7,7 +7,7 @@ const WhyTrain = () => {
   return (
     <section className="py-16 px-5 md:px-16 md:py-[80px] bg-secondary">
       <SectionHeading
-        title={'Why Train with Global Mediation?'}
+        title={'Why train with global mediation?'}
         subTitle={
           'At Global, training is more than just a course, it’s a step forward in your mediation career. Our programmes are built around your growth as a mediator. We provide expert instruction, supportive environments and practical learning designed to build confidence and clarity.'
         }
@@ -33,8 +33,8 @@ const WhyTrain = () => {
                 </defs>
               </svg>
             </div>
-            <p className="font-medium text-white text-2xl">Accredited Courses</p>
-            <p className=" text-lg text-white   mt-9 font-normal">Recognised by the Civil Mediation Council and the College of Mediators</p>
+            <p className="font-medium text-white text-2xl">Accredited courses</p>
+            <p className=" text-lg text-white   mt-9 font-normal">Recognised by the civil mediation Council and the college of mediators</p>
           </div>
           <div className="p-6 col-span-4 md:col-span-2 lg:col-span-1 border duration-200 hover:bg-primary hover:border-primary border-[#624A70] rounded-3xl">
             <div className="mt-3 mb-4">
@@ -53,7 +53,7 @@ const WhyTrain = () => {
                 />
               </svg>
             </div>
-            <p className="font-medium text-white text-2xl">Expert Trainers</p>
+            <p className="font-medium text-white text-2xl">Expert trainers</p>
             <p className=" text-lg text-white capitalize  mt-9 font-normal">With contributions from award winning mediation trainers</p>
           </div>
           <div className="p-6 col-span-4 md:col-span-2 lg:col-span-1 border duration-200 hover:bg-primary hover:border-primary border-[#624A70] rounded-3xl">
@@ -73,7 +73,7 @@ const WhyTrain = () => {
                 />
               </svg>
             </div>
-            <p className="font-medium text-white text-2xl">Practical Learning</p>
+            <p className="font-medium text-white text-2xl">Practical learning</p>
             <p className=" text-lg text-white capitalize   mt-9 font-normal">interactive sessions and role plays</p>
           </div>
           <div className="p-6 col-span-4 md:col-span-2 lg:col-span-1 border duration-200 hover:bg-primary hover:border-primary border-[#624A70] rounded-3xl">
@@ -100,7 +100,7 @@ const WhyTrain = () => {
                 </defs>
               </svg>
             </div>
-            <p className="font-medium text-white text-2xl">Comprehensive Support</p>
+            <p className="font-medium text-white text-2xl">Comprehensive support</p>
             <p className=" text-lg text-white capitalize mt-9 font-normal">coaching, feedback and one-to-one guidance</p>
           </div>
         </div>

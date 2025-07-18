@@ -9,40 +9,40 @@ const exlopreItem = [
   {
     title: 'Foundation Course in Mediation',
     description:
-      'A six-day course designed to equip you with the knowledge and skills to qualify as an accredited mediator.This programme blends theory with live practice, from the core stages of mediation to professional ethics and resolution strategies.',
+      'A six-day course designed to equip you with the knowledge and skills to qualify as an accredited mediator. This programme blends theory with live practice, from the core stages of mediation to professional ethics and resolution strategies.',
     key: [
       'Practical exercises, role plays and guided discussion',
-      'Certification to apply for Civil Mediation Council membership',
+      'Certification to apply for civil mediation council membership',
       'Ideal for professionals entering the field of mediation',
     ],
     cover: service2,
-    buttonText: 'Enrol in the Foundation Course Today',
+    buttonText: 'Enrol in the foundation course today',
     buttonLink: '/contact-us',
   },
   {
     title: 'SEND Mediation Training Course',
     description:
-      'An advanced course for accredited mediators looking to specialise in Special Educational Needs and Disability (SEND).You’ll explore legal frameworks, local authority processes and SEND-specific mediation approaches.',
+      'An advanced course for accredited mediators looking to specialise in special educational needs and disability (SEND). You’ll explore legal frameworks, local authority processes and SEND-specific mediation approaches.',
     key: [
       'Deep understanding of SEND law and systems',
       'Specialist certification as a SEND mediator',
-      'Approved by the Civil Mediation Council and the College of Mediators',
+      'Approved by the civil mediation council and the college of mediators',
     ],
     cover: service3,
-    buttonText: 'Specialise in SEND Mediation.',
+    buttonText: 'Specialise in SEND mediation',
     buttonLink: '/contact-us',
   },
   {
     title: 'SEND Mediation: Professional Practice Day',
     description:
-      'Designed for practising SEND mediators who want to grow their skills.Engage in live role plays, structured feedback and peer discussion — all led by experienced trainers.',
+      'Designed for practising SEND mediators who want to grow their skills. Engage in live role plays, structured feedback and peer discussion — all led by experienced trainers.',
     key: [
       'Real-world scenarios and supervised practise',
       'Personalised coaching and feedback',
       'Advanced development for experienced mediators',
     ],
     cover: service4,
-    buttonText: 'Advance Your SEND Skills Today',
+    buttonText: 'Advance your SEND skills today',
     buttonLink: '/contact-us',
   },
 ];

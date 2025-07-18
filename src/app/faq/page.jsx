@@ -114,7 +114,7 @@ const faqData = [
 const page = () => {
   return (
     <div className="pt-[120px] bg-[#F9F8FF]">
-      <FAQ title={'FAQs About Global Mediation'} buttonText={'Contact Us'} buttonLink={'/contact-us'} faqData={faqData} />
+      <FAQ title={'FAQs about global mediation'} buttonText={'Contact us'} buttonLink={'/contact-us'} faqData={faqData} />
     </div>
   );
 };

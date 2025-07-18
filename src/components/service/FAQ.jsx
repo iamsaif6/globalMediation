@@ -44,7 +44,7 @@ const FAQ = ({ faqData, buttonText, buttonLink, title }) => {
   };
   return (
     <section className="py-16 bg-[#F9F8FF] px-5 items-center md:px-16 md:py-[80px]">
-      <SectionHeading center={true} title={title} />
+      <h2 className={`font-medium text-center   mx-auto leading-[120%] tracking-[-4%] text-4xl  md:text-5xl mb-5 md:mb-6`}>{title}</h2>
       <div className=" mt-[80px] md:my-10">
         {faqData.map(faq => (
           <FaqItem

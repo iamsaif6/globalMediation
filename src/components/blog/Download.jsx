@@ -2,27 +2,27 @@ import React from 'react';
 
 const items = [
   {
-    name: 'A Simple Guide to Mediation',
+    name: 'A simple guide to mediation',
     link: 'https://www.globalmediation.co.uk/wp-content/uploads/2017/09/a-simple-guide-to-mediation3.pdf',
   },
   {
-    name: 'Child Friendly Safeguarding Policy – Updated',
+    name: 'Child friendly safeguarding policy – updated',
     link: 'https://www.globalmediation.co.uk/wp-content/uploads/2017/09/Child-Friendly-Safeguarding-Policy-Updated.pdf',
   },
   {
-    name: 'Global Mediation – Mediator Code of Conduct',
+    name: 'Global mediation – mediator code of conduct',
     link: 'https://www.globalmediation.co.uk/wp-content/uploads/2020/05/GlobalMediation_Code_of_Conduct_Final.pdf',
   },
   {
-    name: 'Global Mediation Safeguarding Policy 2020',
+    name: 'Global mediation safeguarding policy 2020',
     link: 'https://www.globalmediation.co.uk/wp-content/uploads/2020/05/GlobalMediation_Safeguarding-Policy_2020.pdf',
   },
   {
-    name: 'Global Mediation Data Protection Policy 2020',
+    name: 'Global mediation data protection policy 2020',
     link: 'https://www.globalmediation.co.uk/wp-content/uploads/2020/05/GlobalMediation_Data_Protection_Policy-25.02.20.pdf',
   },
   {
-    name: 'Global Mediation Privacy Statement 2020',
+    name: 'Global mediation privacy statement 2020',
     link: 'https://www.globalmediation.co.uk/wp-content/uploads/2020/05/GlobalMediation_Privacy_Statement-25.02.20.pdf',
   },
 ];
@@ -31,7 +31,7 @@ const Download = () => {
   return (
     <section className="py-16 px-5 md:py-[80px] md:px-[64px]">
       <div className="text-left mb-[54px]">
-        <h4 className="font-medium mb-[20px] md:mb-6 text-4xl md:text-5xl leading-[120%]">Download Guides</h4>
+        <h4 className="font-medium mb-[20px] md:mb-6 text-4xl md:text-5xl leading-[120%]">Download guides</h4>
       </div>
       <div>
         <ul className="text-sm md:text-lg font-normal text-secondary">

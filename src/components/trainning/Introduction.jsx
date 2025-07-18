@@ -45,7 +45,7 @@ const Introduction = () => {
               <ul className="text-[#667085] text-lg">
                 <li className="flex items-center py-6 pl-[7px] gap-[26px] border-t-[0.5px] border-[#DAD3FF]">
                   <span className="inline-block flex-shrink-0 h-[10px] w-[10px] bg-primary rounded-full"></span>
-                  <span>Accredited by the Civil Mediation Council and the College of Mediators</span>
+                  <span>Accredited by the civil mediation Council and the college of mediators</span>
                 </li>
                 <li className="flex items-center py-6 pl-[7px] gap-[26px] border-t-[0.5px] border-[#DAD3FF]">
                   <span className="inline-block flex-shrink-0 h-[10px] w-[10px] bg-primary rounded-full"></span>

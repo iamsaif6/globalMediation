@@ -24,9 +24,7 @@ const ContactUs = () => {
         <div className="grid flex-1 grid-cols-12 gap-6 pt-16 px-5 md:px-16 md:pt-[80px]">
           <div className="col-span-12 lg:col-span-7 flex items-center">
             <div className="text-center mb-10">
-              <h1 className="leading-[120%] text-5xl md:[55px] lg:text-[65px] capitalize font-semibold mb-4">
-                Let’s Resolve Things – Together
-              </h1>
+              <h1 className="leading-[120%] text-5xl md:[55px] lg:text-[65px] font-semibold mb-4">Let’s resolve things – together</h1>
               <p className="text-base text-white lg:text-lg">
                 Get in touch to speak with a specialist about your situation. Whether you're navigating a conflict, booking mediation, or
                 exploring training, we're here to help
@@ -35,7 +33,7 @@ const ContactUs = () => {
           </div>
           <div className="col-span-12 lg:col-span-5">
             <form className="md:space-y-4 text-black  rounded-3xl border-2 border-[#E7E7F1] py-5 px-4 lg:px-8 bg-white space-y-3 ">
-              <h2 className="text-3xl text-center font-semibold mb-6 opacity-80">Get in Touch</h2>
+              <h2 className="text-3xl text-center font-semibold mb-6 opacity-80">Get in touch</h2>
               <div>
                 <input
                   placeholder="Full Name"
@@ -47,7 +45,7 @@ const ContactUs = () => {
               </div>
               <div>
                 <input
-                  placeholder="Email Address"
+                  placeholder="Email address"
                   required
                   className="w-full outline-0  py-3 px-6 rounded-4xl  border border-[#E7E7F1] bg-[#F8F9FD]"
                   type="email"
@@ -57,7 +55,7 @@ const ContactUs = () => {
               </div>
               <div>
                 <input
-                  placeholder="Company Name"
+                  placeholder="Company name"
                   className="w-full outline-0  py-3 px-6 rounded-4xl  border border-[#E7E7F1] bg-[#F8F9FD]"
                   type="text"
                   name="company"
@@ -66,7 +64,7 @@ const ContactUs = () => {
               </div>
               <div>
                 <input
-                  placeholder=" Type of Conflict"
+                  placeholder=" Type of conflict"
                   className="w-full outline-0  py-3 px-6 rounded-4xl  border border-[#E7E7F1] bg-[#F8F9FD]"
                   type="text"
                   name="conflict"
