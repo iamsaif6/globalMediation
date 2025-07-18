@@ -63,7 +63,7 @@ const Introduction = () => {
                   onClick={openModal}
                   className={`bg-primary border cursor-pointer border-primary font-semibold text-lg text-[#FCFCFD] px-[19px] md:px-[42px] py-3 rounded-[40px]`}
                 >
-                  Start Your Mediation Journey Today
+                  Start your mediation journey today
                 </button>
               </div>
             </div>

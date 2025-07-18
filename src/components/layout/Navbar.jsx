@@ -285,7 +285,7 @@ const Navbar = () => {
                 className={`bg-primary  border leading-[140%] border-primary font-medium text-lg text-[#FCFCFD] px-6 py-3 rounded-[40px]`}
               >
                 <Link className="w-full" href="/contact-us">
-                  Contact Us
+                  Contact us
                 </Link>
               </button>
             </div>

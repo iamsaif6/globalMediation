@@ -65,7 +65,7 @@ const MainServices = () => {
       <CTA
         title={'Ready to Resolve Your Dispute?'}
         subTitle={'Your trusted partner in conflict resolution'}
-        Button1Text={'Schedule Consultation'}
+        Button1Text={'Schedule consultation'}
         Button1Link={'/contact-us'}
         Button2Text={'Contact us'}
         Button2Link={'/contact-us'}

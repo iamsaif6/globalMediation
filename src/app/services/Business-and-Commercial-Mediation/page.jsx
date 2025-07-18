@@ -203,9 +203,9 @@ const page = () => {
           title={'Start the Conversation'}
           subTitle={'You don’t need to know exactly what you’re asking for.Just tell us what’s going on, and we’ll talk you through it.'}
           Button1Link={'/contact-us'}
-          Button1Text={'Book Business Mediation'}
+          Button1Text={'Book business mediation'}
           Button2Link={'/contact-us'}
-          Button2Text={'Contact Us'}
+          Button2Text={'Contact us'}
         />
       </div>
     </div>

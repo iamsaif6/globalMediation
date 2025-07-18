@@ -56,12 +56,12 @@ const page = () => {
           <div className="flex md:flex-row items-center flex-col gap-4">
             <button className={`bg-primary  border   border-primary font-semibold text-lg text-[#FCFCFD] px-6 py-3 rounded-[40px]`}>
               <Link className="w-full" href={'/contact-us'}>
-                Speak to a Community Mediator
+                Speak to a community mediator
               </Link>
             </button>
             <button className=" bg-transparent  font-semibold border border-white text-lg text-[#FCFCFD] px-[38px] py-3 rounded-[40px] ">
               <Link className="w-full  " href={'/contact-us'}>
-                Book a Mediation Session
+                Book a mediation session
               </Link>
             </button>
           </div>
@@ -126,7 +126,7 @@ const page = () => {
                     <div className="flex md:block justify-center">
                       <button className=" bg-white  mt-10  font-semibold text-lg text-black px-12 py-3 rounded-[40px] ">
                         <Link className="w-full  " href="/contact-us">
-                          Book Community Mediation
+                          Book community mediation
                         </Link>
                       </button>
                     </div>
@@ -256,7 +256,7 @@ const page = () => {
         <div className="flex justify-center">
           <button className=" bg-primary  mt-10  font-semibold text-lg text-white px-12 py-3 rounded-[40px] ">
             <Link className="w-full  " href="/about-us">
-              Request a Community Mediation Appointment
+              Request a community mediation appointment
             </Link>
           </button>
         </div>
@@ -310,12 +310,12 @@ const page = () => {
           title={'Ready to Resolve a Dispute?'}
           subTitle={'We’re here to help you sort things out — before it goes any further.You don’t need to face it alone.'}
           Button1Link={'/contact-us'}
-          Button1Text={'Speak to a Mediator'}
-          Button2Text={'Get Support Now'}
+          Button1Text={'Speak to a mediator'}
+          Button2Text={'Get support now'}
           Button2Link={'/contact-us'}
         />
       </div>
-      <FAQ title={'FAQs About Community Mediation'} buttonText={'Ask Us a Question'} buttonLink={'/contact-us'} faqData={faqData} />
+      <FAQ title={'FAQs About Community Mediation'} buttonText={'Ask us a question'} buttonLink={'/contact-us'} faqData={faqData} />
     </div>
   );
 };

@@ -42,9 +42,9 @@ const page = () => {
         subTitle={
           'Calm, impartial support to help you resolve family issues around parenting, separation or finances, with everyone’s voice heard.'
         }
-        Button1Text={'Speak to a Family Mediator'}
+        Button1Text={'Speak to a family mediator'}
         Button1Link="/contact-us"
-        Button2Text={'Book a Confidential Mediation Session'}
+        Button2Text={'Book a confidential mediation session'}
         Button2Link="/contact-us"
         cover={banner}
       />

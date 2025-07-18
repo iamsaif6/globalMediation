@@ -48,19 +48,19 @@ export const HeaderTraining = () => {
             onClick={openModal}
             className={`bg-primary md:block hidden  cursor-pointer border  border-primary font-semibold text-lg text-[#FCFCFD] px-2 md:px-12 py-3 rounded-[40px]`}
           >
-            Enroll in a Mediation Training Program Today
+            Enroll in a mediation training program today
           </button>
           <button
             title=" Enroll in a Mediation Training Program Today"
             onClick={openModal}
             className={`bg-primary block md:hidden  cursor-pointer border  border-primary font-semibold text-lg text-[#FCFCFD] px-5 py-3 rounded-[40px]`}
           >
-            Enquire Today
+            Enquire today
           </button>
 
           <button className="  bg-transparent font-semibold border border-white text-lg text-[#FCFCFD] px-3 md:px-[48px] py-3 rounded-[40px] ">
             <Link title="Contact Us for Upcoming Course Dates" className="w-full  " href={'/contact-us'}>
-              Contact Us for Upcoming Course Dates
+              Contact us for upcoming course dates
             </Link>
           </button>
         </div>
