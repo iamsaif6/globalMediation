@@ -6,7 +6,15 @@ import Image from 'next/image';
 const Header = ({ title, subTitle, Button1Text, Button1Link = '#', Button2Text, Button2Link = '#', cover, isHomePage = false }) => {
   function normalizeTitleCase(text) {
     if (!text) return '';
-    return text.charAt(0).toUpperCase() + text.slice(1).toLowerCase();
+
+    // Find text before the first parenthesis
+    const match = text.match(/^([^(]*)/);
+    const prefix = match ? match[1] : '';
+    const suffix = text.slice(prefix.length); // Keep content inside and after parentheses untouched
+
+    const normalizedPrefix = prefix.charAt(0).toUpperCase() + prefix.slice(1).toLowerCase();
+
+    return normalizedPrefix + suffix;
   }
 
   // Usage
