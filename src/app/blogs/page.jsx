@@ -27,9 +27,9 @@ const Blog = async () => {
         title={'Start Your Mediation Training Journey Today'}
         subTitle={'Take the first step toward becoming a qualified mediator or enhancing your existing mediation skills.'}
         Button1Link={'/contact-us'}
-        Button1Text={'Enrol in a Mediation Training Program Today'}
+        Button1Text={'Enrol in a mediation training program today'}
         Button2Link={'/contact-us'}
-        Button2Text={'Contact Us for Upcoming Course Dates'}
+        Button2Text={'Contact us for upcoming course dates'}
       />
     </div>
   );

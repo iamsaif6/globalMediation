@@ -48,7 +48,7 @@ export default function Home() {
                 className=" bg-white mt-3 inline-block  font-semibold text-lg text-secondary px-6 md:px-[57px] py-3 rounded-3xl lg:rounded-[40px] "
                 href="/about-us"
               >
-                Learn About Mediation
+                Learn about mediation
               </Link>
             </div>
           </div>
@@ -71,7 +71,7 @@ export default function Home() {
         <CTA
           title={'Ready to Resolve Your Dispute?'}
           subTitle={'We are here to help. Let’s talk'}
-          Button1Text={'Schedule Consultation'}
+          Button1Text={'Schedule consultation'}
           Button1Link={'/contact-us'}
           Button2Text={'Contact us'}
           Button2Link={'/contact-us'}

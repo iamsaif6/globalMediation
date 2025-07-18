@@ -86,13 +86,13 @@ const AboutUs = () => {
               className={`bg-primary  max-w-[292px] lg:max-w-max w-full border block border-primary font-semibold text-lg text-[#FCFCFD] lg:px-12 py-3 rounded-[40px]`}
             >
               <Link className="w-full" href={'/contact-us'}>
-                Contact Us Today
+                Contact us today
               </Link>
             </button>
 
             <button className=" block  lg:max-w-max bg-transparent font-semibold border border-white text-lg text-[#FCFCFD] lg:px-[48px] px-5 py-3 rounded-[40px] ">
               <Link className="w-full  " href={'/training'}>
-                Learn About Mediation Training
+                Learn about mediation training
               </Link>
             </button>
           </div>

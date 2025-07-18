@@ -54,7 +54,7 @@ const MainServices = () => {
               className={`bg-primary inline-block border-primary font-semibold text-lg text-[#FCFCFD] px-[38px] py-3 rounded-3xl lg:rounded-[40px]`}
             >
               <Link className="w-full" href="/contact-us">
-                Contact Us Today
+                Contact us today
               </Link>
             </button>
           </div>
