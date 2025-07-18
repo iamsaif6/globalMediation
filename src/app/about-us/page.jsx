@@ -108,7 +108,7 @@ const AboutUs = () => {
       <Accredited />
       <JoinGlobalTeam />
       <div className="py-[40px] lg:py-[80px]">
-        <FeedbackCarousel title={'What Our Clients Say'} />
+        <FeedbackCarousel title={'What our clients say'} />
       </div>
       <CTA
         title={'Let’s find a way forward, together'}

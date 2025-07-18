@@ -2,27 +2,37 @@ import React from 'react';
 import Link from 'next/link';
 
 const CTA = ({ title, subTitle, Button1Text, Button1Link, Button2Text, Button2Link }) => {
+  function normalizeTitleCase(text) {
+    if (!text) return '';
+    return text.charAt(0).toUpperCase() + text.slice(1).toLowerCase();
+  }
+
+  const ctaTitle = normalizeTitleCase(title);
+  const ctaSubtitle = normalizeTitleCase(subTitle);
+  const ctaButton1Text = normalizeTitleCase(Button1Text);
+  const ctaButton2Text = normalizeTitleCase(Button2Text);
+
   return (
     <div className="md:px-16 px-5">
       <div className="py-[84px] overflow-hidden px-8 relative md:p-16 bg-secondary rounded-3xl">
         <div className="z-10 py-10 mx-auto text-white text-center">
           <div className="z-10 relative">
             <div className="max-w-[950px] mx-auto">
-              <h4 className="font-medium text-4xl md:text-[54px] leading-[120%] mb-[20px] md:mb-6">{title}</h4>
-              <p className=" text-base md:text-lg">{subTitle}</p>
+              <h4 className="font-medium text-4xl md:text-[54px] leading-[120%] mb-[20px] md:mb-6">{ctaTitle}</h4>
+              <p className=" text-base md:text-lg">{ctaSubtitle}</p>
             </div>
             <div className={`mt-8 md:max-w-[950px] ${Button2Text ? 'grid grid-cols-1 md:grid-cols-2' : 'md:grid-cols-1'}  gap-4  mx-auto`}>
-              {Button1Text && (
+              {ctaButton1Text && (
                 <button className="bg-primary   font-semibold text-[#FCFCFD] px-6 py-3 rounded-[40px] text-lg">
-                  <Link title={Button1Text} className="block w-full text-center" href={Button1Link}>
-                    {Button1Text}
+                  <Link title={ctaButton1Text} className="block w-full text-center" href={Button1Link}>
+                    {ctaButton1Text}
                   </Link>
                 </button>
               )}
-              {Button2Text && (
+              {ctaButton2Text && (
                 <button className="font-semibold  border border-white text-lg text-white px-6 py-3 rounded-[40px]">
-                  <Link title={Button2Text} className="block w-full text-center" href={Button2Link}>
-                    {Button2Text}
+                  <Link title={ctaButton2Text} className="block w-full text-center" href={Button2Link}>
+                    {ctaButton2Text}
                   </Link>
                 </button>
               )}

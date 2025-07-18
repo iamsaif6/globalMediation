@@ -34,7 +34,7 @@ const Header = ({ title, subTitle, Button1Text, Button1Link = '#', Button2Text, 
         <div className=" flex md:flex-row flex-col items-center gap-4">
           {Button1Text && (
             <button
-              className={`bg-primary px-5 lg:max-w-max capitalize border block border-primary font-semibold text-base lg:text-lg text-[#FCFCFD] lg:px-12 py-3 rounded-[40px]`}
+              className={`bg-primary px-5 lg:max-w-max  border block border-primary font-semibold text-base lg:text-lg text-[#FCFCFD] lg:px-12 py-3 rounded-[40px]`}
             >
               <Link className="w-full" href={Button1Link}>
                 {Button1Text}
@@ -42,7 +42,7 @@ const Header = ({ title, subTitle, Button1Text, Button1Link = '#', Button2Text, 
             </button>
           )}
           {Button2Text && (
-            <button className=" mb-[18px] md:mb-0 capitalize px-5 lg:max-w-max  border block border-white font-semibold text-base lg:text-lg text-[#FCFCFD] lg:px-12 py-3 rounded-[40px] ">
+            <button className=" mb-[18px] md:mb-0  px-5 lg:max-w-max  border block border-white font-semibold text-base lg:text-lg text-[#FCFCFD] lg:px-12 py-3 rounded-[40px] ">
               <Link className="w-full  " href={Button2Link}>
                 {Button2Text}
               </Link>

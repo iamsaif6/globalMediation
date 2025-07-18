@@ -51,7 +51,7 @@ const page = () => {
         <Image src={overlay} className=" absolute top-0 left-0 w-full h-full object-cover" />
         <div className="w-full relative z-10 lg:max-w-[1318px] mx-auto">
           <h1 className="font-semibold tracking-[-4%] max-w-[900px] 2xl:max-w-[90%] leading-[120%] text-5xl md:text-[65px] xl:text-[4vw] text-white">
-            Civil & Legal Dispute Mediation
+            Civil & legal dispute mediation
           </h1>
           <p className="text-white mt-[25px] md:mt-4 mb-[25px] mr-auto max-w-[700px] md:mb-10 w-[100%] font-normal text-base md:text-lg xl:text-xl">
             A practical, impartial way to resolve legal disagreements without the time, stress, and cost of going to court.
@@ -72,7 +72,7 @@ const page = () => {
       </header>
 
       <Introduction
-        title={'of Civil & Legal Disputes'}
+        title={'of civil & legal disputes'}
         image={overview}
         subtitle={
           'Legal disputes can be stressful, expensive, and time-consuming. Mediation offers a simpler route, one that puts you in control, avoids the courtroom, and supports better outcomes for all involved. Whether you’re facing a financial, property, or personal disagreement, civil mediation helps you reach a fair agreement, quickly and with less conflict.'
@@ -88,7 +88,7 @@ const page = () => {
 
       <section className="py-16 md:py-[80px] bg-secondary text-white">
         <div className="px-5 md:px-16 mb-10 md:mb-[120px] ">
-          <SectionHeading fullWidth={true} title={'Types of Civil Disputes We Support'} />
+          <SectionHeading fullWidth={true} title={'Types of civil disputes we support'} />
         </div>
         <div className="mt-[42px] md:mt-[54px]">
           {/* Buttons */}

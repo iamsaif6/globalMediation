@@ -62,7 +62,7 @@ export default function Home() {
         <ServiceCarousel />
         {/* Team Carousel */}
         <section className="bg-secondary py-16 md:py-[80px] mt-[60px] md:mt-[80px]">
-          <h4 className="text-4xl md:text-5xl mb-12 md:mb-[70px] text-white text-center px-4 font-medium">Meet Our Team</h4>
+          <h4 className="text-4xl md:text-5xl mb-12 md:mb-[70px] text-white text-center px-4 font-medium">Meet our team</h4>
           <TeamCarousel />
         </section>
         <Serving />

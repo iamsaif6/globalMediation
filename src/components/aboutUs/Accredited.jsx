@@ -6,9 +6,9 @@ const Accredited = () => {
   return (
     <section className="py-16 px-5 md:px-16 md:py-[80px] ">
       <div className={` max-w-[850px] mx-auto text-left  md:text-center`}>
-        <h3 className="font-medium  leading-[120%] tracking-[-4%] text-4xl md:text-[40px] lg:text-5xl mb-5 md:mb-6">
-          Recognised and Trusted <br /> Across The UK
-        </h3>
+        <h2 className="font-medium  leading-[120%] tracking-[-4%] text-4xl md:text-[40px] lg:text-5xl mb-5 md:mb-6">
+          Recognised and trusted <br /> across the UK
+        </h2>
         <p className={`text-black text-base md:text-lg font-normal`}>
           We are proud to be accredited by the Civil Mediation Council, and trusted by leading organisations across the UK, from public
           sector bodies to national charities and corporate clients.
@@ -16,7 +16,7 @@ const Accredited = () => {
       </div>
       <div className="grid gap-[30px] mt-8 mb-16  md:my-[80px] grid-cols-2">
         <div className="col-span-2 md:col-span-1">
-          <h2 className="text-[20px] md:text-[32px] font-medium mb-6 md:mb-8">Partners Include:</h2>
+          <h2 className="text-[20px] md:text-[32px] font-medium mb-6 md:mb-8">Partners include:</h2>
           <ul className="space-y-3 md:space-y-6">
             <li>
               <Link
@@ -59,7 +59,7 @@ const Accredited = () => {
                 className="flex duration-200 hover:bg-secondary hover:text-white hover:border-secondary items-center text-black rounded-xl text-base md:text-lg justify-between p-4 md:p-[21px] border border-[#DAD3FF]"
                 href={'#'}
               >
-                <span>Civil Mediation Council</span>
+                <span>Civil mediation council</span>
                 <ArrowUpRight strokeWidth={1.3} />
               </Link>
             </li>
@@ -69,7 +69,7 @@ const Accredited = () => {
                 className="flex duration-200 hover:bg-secondary hover:text-white hover:border-secondary items-center text-black rounded-xl text-base md:text-lg justify-between p-4 md:p-[21px] border border-[#DAD3FF]"
                 href={'#'}
               >
-                <span>College of Mediators</span>
+                <span>College of mediators</span>
                 <ArrowUpRight strokeWidth={1.3} />
               </Link>
             </li>

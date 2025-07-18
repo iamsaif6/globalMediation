@@ -37,7 +37,7 @@ const faqData = [
 ];
 
 const item2 = {
-  title: 'What We Help Resolve',
+  title: 'What we help resolve',
   subtitle: 'We work with individuals, teams and organisations to resolve disputes such as:',
   service: [
     'Partnership and shareholder breakdowns',
@@ -51,7 +51,7 @@ const item2 = {
   image: service1,
 };
 const item3 = {
-  title: 'Examples of What We’ve Mediated',
+  title: 'Examples of what we’ve mediated',
   subtitle: 'We work with individuals, teams and organisations to resolve disputes such as:',
   service: [
     'A complex software licensing dispute between two technology providers',
@@ -64,7 +64,7 @@ const item3 = {
 };
 
 const item = {
-  title: 'Why Choose Global Mediation',
+  title: 'Why choose global mediation',
   subtitle:
     'At Global Mediation, our experienced mediators bring commercial awareness, emotional intelligence and sensitivity to every case. We help companies avoid court, protect relationships and co-create outcomes that work — for today and the long term.',
   service: [
@@ -81,7 +81,7 @@ const page = () => {
       <Header
         Button1Text={'Book a mediation session'}
         Button1Link="/contact-us"
-        title={'Business and Commercial Mediation'}
+        title={'Business and commercial mediation'}
         subTitle={
           'Business disputes can stall progress, damage relationships and drain time and energy. Whether high-value, high-stakes or emotionally charged, we help untangle complex disagreements through structured dialogue and impartial support — rebuilding trust and moving forward with clarity, care and shared understanding.'
         }
@@ -200,7 +200,7 @@ const page = () => {
       <FAQ title={'FAQs About Business and Commercial Mediation'} buttonText={'Contact Us'} buttonLink={'/contact-us'} faqData={faqData} />
       <div className="bg-[#F9F8FF]">
         <CTA
-          title={'Start the Conversation'}
+          title={'Start the conversation'}
           subTitle={'You don’t need to know exactly what you’re asking for.Just tell us what’s going on, and we’ll talk you through it.'}
           Button1Link={'/contact-us'}
           Button1Text={'Book business mediation'}
