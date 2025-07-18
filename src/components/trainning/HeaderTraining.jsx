@@ -36,7 +36,7 @@ export const HeaderTraining = () => {
       <Image src={overlay} alt="Header Overlay" className=" absolute top-0 left-0 w-full h-full object-cover" />
       <div className="w-full relative z-10 lg:max-w-[1318px] mx-auto">
         <h1 className="font-semibold tracking-[-4%] max-w-[900px] leading-[120%] text-5xl md:[55px] lg:text-[65px] text-white">
-          Mediation Training: Learn, Qualify, and Specialise
+          Mediation training: learn, qualify, and specialise
         </h1>
         <p className="text-white mt-[18px] max-w-[700px] md:mt-6 mb-[26px] md:mb-8 w-[70%] font-normal text-base md:text-lg">
           Explore accredited mediation training programmes designed for aspiring mediators and professionals looking to build their skills
@@ -89,7 +89,7 @@ export const HeaderTraining = () => {
 
           <div>
             <div className="mt-8">
-              <h2 className="text-4xl text-center font-semibold mb-5 opacity-80">Get in Touch</h2>
+              <h2 className="text-4xl text-center font-semibold mb-5 opacity-80">Get in touch</h2>
               <div className=" leading-[140%]">
                 <form className="md:space-y-4  rounded-3xl py-10 px-8 space-y-6 ">
                   {/* <div className="grid grid-cols-2 gap-5"></div> */}
@@ -135,7 +135,7 @@ export const HeaderTraining = () => {
                     <label className="text-base font-normal md:text-[16px] block  text-[#393D4E]" htmlFor="conflict">
                       I accept the{' '}
                       <Link href={'#'} className="underline">
-                        Terms
+                        terms
                       </Link>
                     </label>
                   </div>

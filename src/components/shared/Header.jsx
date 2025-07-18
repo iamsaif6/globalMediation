@@ -4,6 +4,17 @@ import overlay from '/public/Overlay.png';
 import Image from 'next/image';
 // , linear-gradient(to right, rgba(62,0,101,0.80) 15.68%, rgba(62,0,101,0.15) 69.4%)
 const Header = ({ title, subTitle, Button1Text, Button1Link = '#', Button2Text, Button2Link = '#', cover, isHomePage = false }) => {
+  function normalizeTitleCase(text) {
+    if (!text) return '';
+    return text.charAt(0).toUpperCase() + text.slice(1).toLowerCase();
+  }
+
+  // Usage
+  const headerTitle = normalizeTitleCase(title);
+  const headerSubtitle = normalizeTitleCase(subTitle);
+  const headerButton1Text = normalizeTitleCase(Button1Text);
+  const headerButton2Text = normalizeTitleCase(Button2Text);
+
   return (
     <header
       style={{
@@ -26,25 +37,25 @@ const Header = ({ title, subTitle, Button1Text, Button1Link = '#', Button2Text, 
       )}
       <div className="w-full relative z-10 lg:max-w-[1318px] mx-auto">
         <h1 className="font-semibold tracking-[-4%] max-w-[900px] 2xl:max-w-[90%] leading-[120%] text-5xl md:text-[65px] xl:text-[4vw] text-white">
-          {title}
+          {headerTitle}
         </h1>
         <p className="text-white mt-[25px] md:mt-4 mb-[25px] mr-auto max-w-[700px] md:mb-10 w-[100%] font-normal text-base md:text-lg xl:text-xl">
-          {subTitle}
+          {headerSubtitle}
         </p>
         <div className=" flex md:flex-row flex-col items-center gap-4">
-          {Button1Text && (
+          {headerButton1Text && (
             <button
               className={`bg-primary px-5 lg:max-w-max  border block border-primary font-semibold text-base lg:text-lg text-[#FCFCFD] lg:px-12 py-3 rounded-[40px]`}
             >
               <Link className="w-full" href={Button1Link}>
-                {Button1Text}
+                {headerButton1Text}
               </Link>
             </button>
           )}
-          {Button2Text && (
+          {headerButton2Text && (
             <button className=" mb-[18px] md:mb-0  px-5 lg:max-w-max  border block border-white font-semibold text-base lg:text-lg text-[#FCFCFD] lg:px-12 py-3 rounded-[40px] ">
               <Link className="w-full  " href={Button2Link}>
-                {Button2Text}
+                {headerButton2Text}
               </Link>
             </button>
           )}

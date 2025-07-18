@@ -8,7 +8,7 @@ const WhyChoose = () => {
     <section className="my-0  mx-0 md:mx-16 md:my-[80px]">
       <div className="bg-primary text-white md:rounded-3xl px-5 md:px-[49px] py-[50px] md:py-[46px] grid grid-cols-2 gap-[30px]">
         <div className="col-span-2 lg:col-span-1">
-          <h1 className="text-4xl md:text-5xl font-medium leading-[120%] mb-8">Why Choose DARS?</h1>
+          <h2 className="text-4xl md:text-5xl font-medium leading-[120%] mb-8">Why choose DARS?</h2>
           <p className="pb-8 text-base md:text-lg border-b-[0.5px] border-white">
             DARS offers a calm, independent space for people to resolve disputes when other options haven’t worked.
             <br className="mb-3" />
@@ -52,7 +52,7 @@ const WhyChoose = () => {
           <div className="">
             <button className={`bg-white  font-normal text-lg text-black px-12 py-2 rounded-[40px]`}>
               <Link className="w-full" href={'/contact-us'}>
-                Contact US
+                Contact us
               </Link>
             </button>
           </div>

@@ -6,7 +6,7 @@ const items = [
   'Accessible services throughout the UK',
   'Personalised support from a dedicated case manager',
   'Accredited mediators with real-world experience',
-  '95 per cent success rate in achieving full or partial resolution',
+  '95% success rate in achieving full or partial resolution',
 ];
 
 const WhyMediation = () => {
@@ -33,7 +33,9 @@ const WhyMediation = () => {
           </p>
         </div>
         <div className="text-white col-span-2 lg:col-span-1">
-          <h3 className="leading-[120%] w-[90%] md:w-full font-medium text-4xl md:text-5xl mb-5 md:mb-5">Why Global Mediation</h3>
+          <h2 className="leading-[120%] w-[90%] md:w-full font-medium text-4xl md:text-5xl mb-5 md:mb-5 !text-white">
+            Why Global Mediation
+          </h2>
           <p className="font-normal text-base md:text-lg leading-[150%]">
             Every situation is different. That’s why our trained mediators bring empathy, curiosity and real-world experience. With over 25
             years of supporting people through conflict, we’re trusted by leading organisations across sectors, from SMEs to national

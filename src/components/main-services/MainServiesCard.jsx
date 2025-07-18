@@ -56,7 +56,7 @@ const services = [
     link: '/services/send-mediation',
   },
   {
-    title: 'Community and Family Mediation',
+    title: 'Community and family mediation',
     subtitle:
       'Conflict in personal or community relationships can feel deeply personal and emotionally draining. Our mediators help individuals, neighbours and families navigate difficult conversations with empathy, impartiality and care. We provide a safe, neutral space to rebuild trust, improve communication and move forward with dignity and mutual understanding.',
     service: [

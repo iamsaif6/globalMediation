@@ -24,7 +24,7 @@ const Introduction = () => {
     <section>
       <div className=" py-16 px-5 md:px-16 md:py-[80px]">
         <div className="text-left md:text-center mb-10 lg:mb-[80px]">
-          <h2 className="font-medium text-4xl md:text-5xl leading-[120%]">Overview of Mediation Training</h2>
+          <h2 className="font-medium text-4xl md:text-5xl leading-[120%]">Overview of mediation training</h2>
           <p className="text-black text-base md:text-lg leading-[150%] my-6">
             Whether you’re starting your mediation journey or expanding into specialist areas like SEND, our training programmes are
             designed to give you the practical tools and confidence to mediate with clarity, care and professionalism. <br /> <br />{' '}

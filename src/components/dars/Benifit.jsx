@@ -4,7 +4,7 @@ import SectionHeading from '../shared/SectionHeading';
 const Benifit = () => {
   return (
     <section className="py-16 px-5 md:px-16 md:py-[80px]">
-      <SectionHeading title={'Benefits of Using DARS'} fullWidth={true} />
+      <SectionHeading title={'Benefits of using DARS'} fullWidth={true} />
       <div className="grid grid-cols-2 gap-[54px] mt-[80px]">
         <div className="gap-6 flex col-span-2 md:col-span-1">
           <div className="h-11 flex-shrink-0 flex items-center justify-center w-11 rounded-full border-[0.8px] border-secondary">
@@ -18,7 +18,7 @@ const Benifit = () => {
             </svg>
           </div>
           <div>
-            <h3 className="leading-[140%] text-secondary text-[20px] md:text-[32px] font-semibold mb-4">Efficient Resolution</h3>
+            <h2 className="leading-[140%] text-secondary text-[20px] md:text-[32px] font-semibold mb-4">Efficient resolution</h2>
             <p className="leading-[150%] text-base md:text-lg text-[#667085]">
               Achieve timely outcomes without the delays of formal legal routes.
             </p>
@@ -46,7 +46,7 @@ const Benifit = () => {
             </svg>
           </div>
           <div>
-            <h3 className="leading-[140%] text-secondary text-[20px] md:text-[32px] font-semibold mb-4">Flexibility</h3>
+            <h2 className="leading-[140%] text-secondary text-[20px] md:text-[32px] font-semibold mb-4">Flexibility</h2>
             <p className="leading-[150%] text-base md:text-lg text-[#667085]">
               Adaptable to different situations and needs, with clear communication throughout.
             </p>
@@ -76,7 +76,7 @@ const Benifit = () => {
             </svg>
           </div>
           <div>
-            <h3 className="leading-[140%] text-secondary text-[20px] md:text-[32px] font-semibold mb-4">Preserves Relationships</h3>
+            <h2 className="leading-[140%] text-secondary text-[20px] md:text-[32px] font-semibold mb-4">Preserves relationships</h2>
             <p className="leading-[150%] text-base md:text-lg text-[#667085]">Reduces hostility and supports respectful outcomes.</p>
           </div>
         </div>
@@ -104,7 +104,7 @@ const Benifit = () => {
             </svg>
           </div>
           <div>
-            <h3 className="leading-[140%] text-secondary text-[20px] md:text-[32px] font-semibold mb-4">Neutral Expertise</h3>
+            <h2 className="leading-[140%] text-secondary text-[20px] md:text-[32px] font-semibold mb-4">Neutral expertise</h2>
             <p className="leading-[150%] text-base md:text-lg text-[#667085]">
               Decisions made by experienced adjudicators, not influenced by either party.
             </p>

@@ -121,7 +121,7 @@ const LearnMore = () => {
         </div>
         <div className="border flex flex-col col-span-4 border-[#EBE5E5] hover:border-[#DAD3FF] md:col-span-2 hover:border-[#DAD3F lg:col-span-1  rounded-3xl py-[34px]">
           <div className="p-[38px] pt-0 flex justify-end">
-            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+            <svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" viewBox="0 0 66 66" fill="none">
               <g clipPath="url(#clip0_6164_8220)">
                 <path
                   d="M36.4587 50.0003C28.992 50.0003 22.917 43.9253 22.917 36.4587C22.917 28.992 28.992 22.917 36.4587 22.917C43.9253 22.917 50.0003 28.992 50.0003 36.4587C50.0003 43.9253 43.9253 50.0003 36.4587 50.0003ZM36.4587 25.0003C30.1399 25.0003 25.0003 30.1399 25.0003 36.4587C25.0003 42.7774 30.1399 47.917 36.4587 47.917C42.7774 47.917 47.917 42.7774 47.917 36.4587C47.917 30.1399 42.7774 25.0003 36.4587 25.0003Z"
