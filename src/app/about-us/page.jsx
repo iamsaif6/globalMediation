@@ -74,14 +74,14 @@ const AboutUs = () => {
           backgroundSize: 'cover',
           backgroundPosition: 'center right',
         }}
-        className=" pt-[187px] h-screen bg-no-repeat relative md:pt-[238px] pb-[176px] md:pb-[203px] px-5 md:px-[60px]"
+        className=" pt-[187px] max-h-[1050px] h-screen bg-no-repeat relative md:pt-[238px] pb-[176px] md:pb-[203px] px-5 md:px-[60px]"
       >
         <div className="w-full  lg:max-w-[1318px] mx-auto relative z-10 ">
-          <h1 className="font-semibold mb-8 max-w-[800px] tracking-[-4%] leading-[120%] text-5xl md:[55px] lg:text-[65px] text-white">
+          <h1 className="font-semibold tracking-[-4%] max-w-[900px] 2xl:max-w-[90%] leading-[120%] text-5xl md:text-[65px] xl:text-[4vw] text-white">
             Helping People Find a Way Forward, Together.
           </h1>
           {/* <p className="text-white mt-[18px] md:mt-6 mb-[26px] md:mb-8 w-[70%] font-normal text-sm md:text-lg">{subTitle}</p> */}
-          <div className=" flex  md:flex-row flex-col items-center gap-4">
+          <div className=" flex mt-8 md:flex-row flex-col items-center gap-4">
             <button
               className={`bg-primary  max-w-[292px] lg:max-w-max w-full border block border-primary font-semibold text-lg text-[#FCFCFD] lg:px-12 py-3 rounded-[40px]`}
             >

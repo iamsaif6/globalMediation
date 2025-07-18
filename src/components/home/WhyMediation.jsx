@@ -15,10 +15,10 @@ const WhyMediation = () => {
       aria-label="Why Mediation"
       className="py-16 mt-[40px] lg:mt-[80px] md:py-[80px] mb-16 md:mb-[80px] pr-5 md:pr-16 pl-5 md:pl-[49px] bg-secondary "
     >
-      <div className="grid grid-cols-2 gap-[90px] lg:max-w-[1318px] mx-auto">
-        <div className="relative col-span-2 lg:col-span-1">
+      <div className="grid grid-cols-2  gap-[90px] lg:max-w-[1318px] mx-auto">
+        <div className="relative  col-span-2 lg:col-span-1">
           <svg
-            className=" w-full max-w-[300px] md:max-w-[450px] mx-auto h-full"
+            className=" w-full max-w-[300px] md:max-w-[400px] relative mx-auto h-full"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 594 610"
             fill="none"
@@ -28,8 +28,8 @@ const WhyMediation = () => {
               fill="#00A49F"
             />
           </svg>
-          <p className="font-semibold leading-[60%] text-[103px] md:text-[163px] text-white absolute top-1/2 left-1/2 -translate-1/2">
-            25 <span className="block text-[41px] md:text-[67px]">years</span>
+          <p className="font-semibold leading-[60%] text-[103px] md:text-[153px] text-white absolute top-1/2 left-1/2 -translate-1/2">
+            25 <span className="block text-[41px] md:text-[60px]">years</span>
           </p>
         </div>
         <div className="text-white col-span-2 lg:col-span-1">

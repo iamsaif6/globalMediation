@@ -15,7 +15,7 @@ const Button = ({ title, href = '#', padding = 'default' }) => {
   return (
     <button>
       <Link
-        className={`bg-primary border border-primary font-semibold text-lg text-[#FCFCFD] ${paddingClass} py-3 rounded-[40px]`}
+        className={`bg-primary capitalize border border-primary font-semibold text-lg text-[#FCFCFD] ${paddingClass} py-3 rounded-[40px]`}
         href={href}
       >
         {title}

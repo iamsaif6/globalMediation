@@ -60,7 +60,7 @@ const members = [
   {
     name: 'Adam Gersch',
     image: Adam,
-    position: 'CEO',
+    position: 'Founder & CEO',
     details:
       'Adam is a practising criminal barrister and CEDR-accredited mediator who founded Global Mediation in 1999. He oversees the organisation’s strategic direction and brings decades of legal and mediation experience from the UK and US.',
   },
@@ -141,7 +141,7 @@ const TeamCarousel = ({ darkText = false, isDouble }) => {
     const { onClick } = props;
     return (
       <div
-        className={`flex justify-center translate-y-1/2 -translate-x-full absolute -bottom-[12.5px] border border-[#9C9C9C] right-[50px] md:right-[75px] z-20 items-center text-[#9C9C9C]  rounded-full ${
+        className={`flex justify-center translate-y-1/2 mr-5 -translate-x-1/2 absolute -bottom-[30px] border border-[#9C9C9C] right-1/2 md:right-1/2 z-20 items-center text-[#9C9C9C]  rounded-full ${
           darkText ? 'hover:bg-secondary hover:border-secondary' : 'hover:bg-primary hover:border-primary'
         }  hover:text-white  cursor-pointer w-[35px] h-[35px] md:w-12 md:h-12`}
         onClick={onClick}
@@ -155,7 +155,7 @@ const TeamCarousel = ({ darkText = false, isDouble }) => {
     const { onClick } = props;
     return (
       <div
-        className={`flex justify-center translate-y-1/2 absolute -bottom-[12.5px] border border-[#9C9C9C] right-10 md:right-[60px] z-20   items-center text-[#9C9C9C]  rounded-full ${
+        className={`flex justify-center translate-y-1/2 translate-x-1/2 absolute -bottom-[30px] border border-[#9C9C9C] right-1/2 md:right-1/2 z-20   items-center text-[#9C9C9C]  rounded-full ${
           darkText ? 'hover:bg-secondary hover:border-secondary' : 'hover:bg-primary hover:border-primary'
         } hover:text-white  cursor-pointer w-[35px] h-[35px] md:w-12 md:h-12`}
         onClick={onClick}
@@ -169,7 +169,7 @@ const TeamCarousel = ({ darkText = false, isDouble }) => {
     const { onClick } = props;
     return (
       <div
-        className={`flex justify-center translate-y-1/2 -translate-x-full absolute -bottom-[12.5px] border border-[#9C9C9C] right-[50px] md:right-[75px] z-20 items-center text-[#9C9C9C]  rounded-full ${
+        className={`flex justify-center translate-y-1/2 mr-5 -translate-x-1/2 absolute -bottom-[30px] border border-[#9C9C9C] right-1/2 md:right-1/2 z-20 items-center text-[#9C9C9C]  rounded-full ${
           darkText ? 'hover:bg-secondary hover:border-secondary' : 'hover:bg-primary hover:border-primary'
         }  hover:text-white  cursor-pointer w-[35px] h-[35px] md:w-12 md:h-12`}
         onClick={onClick}
@@ -183,7 +183,7 @@ const TeamCarousel = ({ darkText = false, isDouble }) => {
     const { onClick } = props;
     return (
       <div
-        className={`flex justify-center translate-y-1/2 absolute -bottom-[12.5px] border border-[#9C9C9C] right-10 md:right-[60px] z-20   items-center text-[#9C9C9C]  rounded-full ${
+        className={`flex justify-center translate-y-1/2 translate-x-1/2 absolute -bottom-[30px] border border-[#9C9C9C] right-1/2 md:right-1/2 z-20   items-center text-[#9C9C9C]  rounded-full ${
           darkText ? 'hover:bg-secondary hover:border-secondary' : 'hover:bg-primary hover:border-primary'
         } hover:text-white  cursor-pointer w-[35px] h-[35px] md:w-12 md:h-12`}
         onClick={onClick}
@@ -194,7 +194,7 @@ const TeamCarousel = ({ darkText = false, isDouble }) => {
   }
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     centerMode: false,
@@ -226,7 +226,7 @@ const TeamCarousel = ({ darkText = false, isDouble }) => {
   };
 
   const settings2 = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     centerMode: false,

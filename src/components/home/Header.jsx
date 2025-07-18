@@ -1,7 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import overlay from '/public/Overlay.png';
-import Image from 'next/image';
 
 const Header = () => {
   return (
@@ -13,7 +11,7 @@ const Header = () => {
         }}
         className="pt-[187px] max-h-[1050px] h-screen custom-gradient-bg bg-[center] sm:bg-[center_top] lg:bg-bottom max-sm:bg-[65%_center] relative md:pt-[238px] pb-[176px] md:pb-[203px] px-5 md:px-[60px]"
       >
-        <Image src={overlay} alt="Header Overlay" className=" absolute top-0 left-0 w-full h-full object-cover" />
+        {/* <Image src={overlay} alt="Header Overlay" className=" absolute top-0 left-0 w-full h-full object-cover" /> */}
         <div className="w-full text-left lg:pl-5 relative z-10 lg:max-w-[1318px] mx-auto ">
           <h1 className=" font-semibold tracking-[-4%] max-w-[900px] 2xl:max-w-[90%] leading-[120%] text-5xl md:text-[65px] xl:text-[4vw] text-white">
             Every Voice Matters. <br /> Every Story Counts.

@@ -6,7 +6,7 @@ const TimeLine = () => {
     <section className="py-16 bg-[#F9F8FF] px-5 md:px-16 md:py-[80px]">
       <div className={` max-w-[850px] mx-auto text-left  md:text-center`}>
         <h3 className="font-medium leading-[120%] tracking-[-4%] text-4xl md:text-[40px] lg:text-5xl mb-5 md:mb-6">
-          Trusted, Experienced and <br /> People-First
+          Trusted, Experienced and People-First
         </h3>
         <p className={`text-black text-base md:text-lg font-normal`}>
           Global Mediation is an independent provider of professional mediation services, trusted by individuals, families, businesses and

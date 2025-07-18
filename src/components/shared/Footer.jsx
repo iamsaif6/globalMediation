@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 const Footer = () => {
   return (
-    <footer className="bg-[#0E0C0C] relative text-white py-12 md:py-[80px] mt-10  px-5 md:px-16 ">
+    <footer className="bg-[#0E0C0C] relative text-white py-12 md:py-[100px] mt-10  px-5 md:px-16 ">
       <div className="flex flex-col md:flex-row gap-12 relative z-10 justify-between pb-[70px] border-b">
         <div>
           {/* <svg className="w-[96px] h-[42px] md:w-[196px] md:h-[89px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 196 89" fill="none">

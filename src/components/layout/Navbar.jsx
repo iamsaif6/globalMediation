@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 const resourceSubMenu = [
   { title: 'Blogs', href: '/blogs' },
-  { title: 'FAQ', href: '/blogs' },
+  { title: 'FAQ', href: '/faq' },
   { title: 'Case Studies', href: '/case-studies' },
   { title: 'Guides', href: '/guides' },
 ];
@@ -28,9 +28,9 @@ const serviceSubmenu = [
 // ];
 
 const traiingSubmenu = [
-  { title: 'Foundation Course in Mediation', href: '/training' },
-  { title: 'SEND Mediation Training Course', href: '/training' },
-  { title: 'SEND Mediation Professional Practice', href: '/training' },
+  { title: 'Foundation Course in Mediation', href: 'https://globaltraning.vercel.app/' },
+  { title: 'SEND Mediation Training Course', href: 'https://globaltraning.vercel.app/' },
+  { title: 'SEND Mediation Professional Practice', href: 'https://globaltraning.vercel.app/' },
 ];
 
 const navLinksForMobile = [
@@ -56,9 +56,9 @@ const navLinksForMobile = [
     title: 'Training',
     hasMegaMenu: true,
     megaMenuItems: [
-      { title: 'Foundation Course in Mediation', href: '/Foundation-Course-in-Mediation' },
-      { title: 'SEND Mediation Training Course', href: '/SEND-Mediation-Training-Course' },
-      { title: 'SEND Mediation Professional Practice', href: '/SEND-Mediation-Professional-Practice' },
+      { title: 'Foundation Course in Mediation', href: 'https://globaltraning.vercel.app/' },
+      { title: 'SEND Mediation Training Course', href: 'https://globaltraning.vercel.app/' },
+      { title: 'SEND Mediation Professional Practice', href: 'https://globaltraning.vercel.app/' },
     ],
   },
 
@@ -373,7 +373,7 @@ const Navbar = () => {
                         key={`${item.title} ${idx}`}
                         className={` ${pathname.includes(item.href) ? 'text-secondary' : 'text-black'} hover:text-secondary  duration-200`}
                       >
-                        <Link title="Workplace and Employment Mediation" href={`/services${item.href}`}>
+                        <Link target="_blank" title="Workplace and Employment Mediation" href={`${item.href}`}>
                           {item.title}
                         </Link>
                       </li>
@@ -541,7 +541,7 @@ const Navbar = () => {
                           <Link
                             onClick={() => setMobileMenuOpen(false)}
                             key={index}
-                            href={`/services${item.href}`}
+                            href={link.title === 'Training' ? item.href : `/services${item.href}`}
                             className="block py-3 px-4 text-gray-600 hover:text-primary border-b border-gray-100 transition-colors duration-200"
                           >
                             {item.title}

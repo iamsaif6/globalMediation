@@ -1,8 +1,8 @@
 import React from 'react';
 import service1 from '/public/main-service-block-2.jpg';
 import service2 from '/public/workspace.jpeg';
-import service3 from '/public/send.jpg';
-import service4 from '/public/Main Services Community.jpg';
+import service4 from '/public/send.jpg';
+import service3 from '/public/Main Services Community.jpg';
 import service6 from '/public/civil.jpg';
 import Image from 'next/image';
 import Button from '../shared/Button';
@@ -113,14 +113,16 @@ const MainServiesCard = () => {
               ))}
             </div>
             <div className="col-span-2 order-1 lg:col-span-1 overflow-hidden   h-[353px] lg:h-[403px] rounded-[40px] relative">
-              {item?.image && <Image className="object-cover w-full h-full relative z-0" alt={item.title} src={item?.image} />}
+              {item?.image && (
+                <Image className="object-cover object-center w-full h-full relative z-0" alt={item.title} src={item?.image} />
+              )}
             </div>
           </div>
           <div className="grid grid-cols-2 items-center  gap-8 md:gap-[100px]">
             <div className={`${index % 2 != 0 ? 'order-2' : ''} col-span-2 lg:col-span-1`}>
               <div className="flex justify-center md:block mt-10">
                 <button
-                  className={`bg-primary inline-block border-primary font-semibold text-lg text-[#FCFCFD] px-[68px] lg:px-[42px]  py-3 rounded-3xl lg:rounded-[40px]`}
+                  className={`bg-primary capitalize inline-block border-primary font-semibold text-lg text-[#FCFCFD] px-[68px] lg:px-[42px]  py-3 rounded-3xl lg:rounded-[40px]`}
                 >
                   <Link className="w-full" href={item.link}>
                     Learn more

@@ -35,7 +35,7 @@ export default function Home() {
           aria-label="A Better Way to Resolve Disputes"
           className="grid grid-cols-2 lg:max-w-[1318px] mx-auto gap-4 my-[64px] md:my-[80px] px-5 md:px-[60px]"
         >
-          <div className="col-span-2 lg:col-span-1 text-white bg-primary rounded-xl lg:rounded-3xl px-6 lg:px-[58px] py-[34px] lg:py-[121px]">
+          <div className="col-span-2 lg:col-span-1 text-white bg-primary rounded-xl lg:rounded-3xl px-6 lg:px-[58px] py-[34px] lg:py-[61px]">
             <h2 className="font-medium leading-[120%] text-[32px] lg:text-5xl mb-[18px]">A Better Way to Resolve Disputes</h2>
             <p className=" text-base md:text-lg mb-5 md:mb-6">
               Mediation offers a cost-effective, faster alternative to going to court. It gives people a way to move forward without the

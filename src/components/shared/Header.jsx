@@ -12,7 +12,7 @@ const Header = ({ title, subTitle, Button1Text, Button1Link = '#', Button2Text, 
         backgroundSize: 'cover',
         backgroundPosition: 'top center',
       }}
-      className=" pt-[187px] relative h-screen md:pt-[238px] pb-[176px] md:pb-[203px] px-5 md:px-[60px]"
+      className=" pt-[187px] relative max-h-[1050px] h-screen md:pt-[238px] pb-[176px] md:pb-[203px] px-5 md:px-[60px]"
     >
       <Image alt="Overlay" src={overlay} className=" absolute top-0 left-0 w-full h-full object-cover" />
       {isHomePage && (
@@ -25,12 +25,16 @@ const Header = ({ title, subTitle, Button1Text, Button1Link = '#', Button2Text, 
         </div>
       )}
       <div className="w-full relative z-10 lg:max-w-[1318px] mx-auto">
-        <h1 className="font-semibold tracking-[-4%] max-w-[900px] leading-[120%] text-5xl md:[55px] lg:text-[65px] text-white">{title}</h1>
-        <p className="text-white mt-[18px] max-w-[700px] md:mt-6 mb-[26px] md:mb-8 w-[70%] font-normal text-base md:text-lg">{subTitle}</p>
+        <h1 className="font-semibold tracking-[-4%] max-w-[900px] 2xl:max-w-[90%] leading-[120%] text-5xl md:text-[65px] xl:text-[4vw] text-white">
+          {title}
+        </h1>
+        <p className="text-white mt-[25px] md:mt-4 mb-[25px] mr-auto max-w-[700px] md:mb-10 w-[100%] font-normal text-base md:text-lg xl:text-xl">
+          {subTitle}
+        </p>
         <div className=" flex md:flex-row flex-col items-center gap-4">
           {Button1Text && (
             <button
-              className={`bg-primary px-5 lg:max-w-max  border block border-primary font-semibold text-base lg:text-lg text-[#FCFCFD] lg:px-12 py-3 rounded-[40px]`}
+              className={`bg-primary px-5 lg:max-w-max capitalize border block border-primary font-semibold text-base lg:text-lg text-[#FCFCFD] lg:px-12 py-3 rounded-[40px]`}
             >
               <Link className="w-full" href={Button1Link}>
                 {Button1Text}
@@ -38,7 +42,7 @@ const Header = ({ title, subTitle, Button1Text, Button1Link = '#', Button2Text, 
             </button>
           )}
           {Button2Text && (
-            <button className=" mb-[18px] md:mb-0 px-5 lg:max-w-max  border block border-white font-semibold text-base lg:text-lg text-[#FCFCFD] lg:px-12 py-3 rounded-[40px] ">
+            <button className=" mb-[18px] md:mb-0 capitalize px-5 lg:max-w-max  border block border-white font-semibold text-base lg:text-lg text-[#FCFCFD] lg:px-12 py-3 rounded-[40px] ">
               <Link className="w-full  " href={Button2Link}>
                 {Button2Text}
               </Link>

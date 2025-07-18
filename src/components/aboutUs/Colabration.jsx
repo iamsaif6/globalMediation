@@ -7,12 +7,12 @@ const Colabration = () => {
           How Mediation With Global <br /> Supports You
         </h5>
         <p className={`text-[#fff] text-base md:text-lg font-normal`}>
-          We are here to guide, not to judge. Mediation is always voluntary and confidential, and designed to give everyone a voice.We do
-          this through:
+          We are here to guide, not to judge. Mediation is always voluntary and confidential, and designed to give everyone a voice. <br />{' '}
+          We do this through:
         </p>
       </div>
-      <div className="mt-[80px]">
-        <h4 className="text-2xl font-medium text-center text-white mb-10">We do this through:</h4>
+      <div className="mt-[50px]">
+        {/* <h4 className="text-2xl font-medium text-center text-white mb-10">We do this through:</h4> */}
         <div className="grid grid-cols-3 gap-6 md:gap-8">
           <div className="p-6 col-span-3   lg:col-span-1 border duration-200 hover:bg-primary hover:border-primary border-[#624A70] rounded-3xl">
             <div className="mt-3 mb-4">
