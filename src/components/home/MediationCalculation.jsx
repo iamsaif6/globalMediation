@@ -240,12 +240,12 @@ const MediationCalculation = () => {
                         Potential savings: £ {Number(calculationResults.costSavings.range).toLocaleString()}
                       </p> */}
                     </div>
-                    <p className="font-semibold">{Math.round(calculationResults.costSavings.percentage)}% in cost savings</p>
+                    <p className="font-semibold">{Math.round(calculationResults.costSavings.percentage)} per cent in cost savings</p>
                   </div>
                   <div className="bg-[#EAE8FE] col-span-3 text-center lg:col-span-1 flex flex-col gap-[30px] justify-between items-center  rounded-[20px] px-7 md:px-[35px] p-[29px] ">
                     <p className="font-semibold">Time</p>
                     <h3 className="leading-[140%] text-secondary flex flex-col gap-2.5  text-[25px] font-normal">
-                      {calculationResults.timeSavings.percentage}%<span className=" leading-0 text-base ">of your time</span>
+                      {calculationResults.timeSavings.percentage} per cent <span className=" leading-0 text-base ">of your time</span>
                     </h3>
                     <p className=" font-semibold">
                       Resolving your dispute in just {calculationResults.timeSavings.newDuration} days instead of{' '}
@@ -256,19 +256,19 @@ const MediationCalculation = () => {
                     <p className="font-semibold">Success Rate</p>
                     <div className="flex flex-col gap-4 items-center justify-center">
                       <h3 className=" text-secondary flex items-center gap-6 md:gap-2">
-                        <span className="text-[25px] inline-block">{calculationResults.successRates.mediation}%</span>
+                        <span className="text-[25px] inline-block">{calculationResults.successRates.mediation}per cent</span>
                         <span className="  font-normal">Mediation</span>
                         <span className=" font-normal">Success Rate</span>
                       </h3>
                       <p className=" text-secondary text-[18px] ">VS</p>
                       <h3 className=" text-secondary  flex items-center gap-6 md:gap-2">
-                        <span className="text-[25px]  inline-block">{calculationResults.successRates.litigation}%</span>
+                        <span className="text-[25px]  inline-block">{calculationResults.successRates.litigation}per cent</span>
                         <span className="  font-normal ">Litigation</span>
 
                         <span className="  font-normal">Success Rate</span>
                       </h3>
                     </div>
-                    <p className="font-semibold">36% success rate increase</p>
+                    <p className="font-semibold">36 per cent success rate increase</p>
                   </div>
                 </div>
               </div>
@@ -277,7 +277,7 @@ const MediationCalculation = () => {
                 <Button title={'Schedule a Mediation Session'} href="/contact-us" />
                 <button className="font-normal border border-[#393D4E] text-lg text-[#393D4E] px-[24px] py-3 rounded-[40px]">
                   <Link title=" Speak to a Mediator Today" className="w-full" href="/contact-us">
-                    Speak to a Mediator Today
+                    Speak to a mediator today
                   </Link>
                 </button>
               </div>

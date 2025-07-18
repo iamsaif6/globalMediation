@@ -122,7 +122,7 @@ const MainServiesCard = () => {
             <div className={`${index % 2 != 0 ? 'order-2' : ''} col-span-2 lg:col-span-1`}>
               <div className="flex justify-center md:block mt-10">
                 <button
-                  className={`bg-primary capitalize inline-block border-primary font-semibold text-lg text-[#FCFCFD] px-[68px] lg:px-[42px]  py-3 rounded-3xl lg:rounded-[40px]`}
+                  className={`bg-primary  inline-block border-primary font-semibold text-lg text-[#FCFCFD] px-[68px] lg:px-[42px]  py-3 rounded-3xl lg:rounded-[40px]`}
                 >
                   <Link className="w-full" href={item.link}>
                     Learn more

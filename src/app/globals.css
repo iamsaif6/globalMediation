@@ -38,6 +38,9 @@ h1 {
 h2 {
   color: #43006a !important;
 }
+h3 {
+  color: #43006aa6 !important;
+}
 
 .custom-gradient-bg {
   @apply bg-no-repeat bg-cover;

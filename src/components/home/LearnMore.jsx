@@ -198,7 +198,7 @@ const LearnMore = () => {
         </div>
       </div>
       <div className="flex mt-16 items-center justify-center">
-        <Button title={'Visit the Resource Hub'} href="/blogs" />
+        <Button title={'Visit the resource hub'} href="/blogs" />
       </div>
     </section>
   );
