@@ -2,7 +2,7 @@ import React from 'react';
 import service1 from '/public/main-service-block-2.jpg';
 import service2 from '/public/workspace.jpeg';
 import service4 from '/public/send.jpg';
-import service3 from '/public/Main Services Community.jpg';
+import service3 from '/public/catia-dombaxe-yNg0Ky-zZ9U-unsplash.jpg';
 import service6 from '/public/civil.jpg';
 import Image from 'next/image';
 import Button from '../shared/Button';

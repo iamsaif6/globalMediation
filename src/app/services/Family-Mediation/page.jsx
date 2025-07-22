@@ -1,6 +1,5 @@
 import Header from '@/components/shared/Header';
 import React from 'react';
-import Button from '@/components/shared/Button';
 import Image from 'next/image';
 import Introduction from '@/components/service/Introduction';
 import MediationCalculation from '@/components/home/MediationCalculation';
@@ -9,7 +8,7 @@ import Map from '@/components/service/Map';
 import FAQ from '@/components/service/FAQ';
 import CTA from '@/components/shared/CTA';
 import SectionHeading from '@/components/shared/SectionHeading';
-import wayChoose from '/public/Training 1.png';
+import wayChoose from '/public/musemind-ux-agency-9tn3JFeAc08-unsplash.jpg';
 import banner from '/public/family-banner2.jpg';
 import overview from '/public/family-overview.jpg';
 import dispute from '/public/family-dispute.jpg';
@@ -65,7 +64,7 @@ const page = () => {
 
       <section className="py-16 bg-secondary text-white md:py-[80px]">
         <div className="px-5 md:px-16 md:mb-[120px] ">
-          <SectionHeading fullWidth={true} title={'Common Family Disputes We Help With'} />
+          <SectionHeading className={'!text-white'} fullWidth={true} title={'Common Family Disputes We Help With'} />
         </div>
         <div className="mt-[42px] md:mt-[54px]">
           {/* Buttons */}
@@ -78,7 +77,7 @@ const page = () => {
                       <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={dispute} />
                     </div>
                     <div>
-                      <h3 className="md:text-2xl text-lg font-medium  mb-8 md:mb-6">Family mediation can support you with:</h3>
+                      <h3 className="md:text-2xl text-lg font-medium  mb-8 md:mb-6 !text-white">Family mediation can support you with:</h3>
                       <ul className=" text-lg">
                         <li className="flex items-center hover:text-black hover:bg-white hover:rounded-2xl group py-6 pl-[20px] gap-[26px] border-t-[0.5px] border-[#DAD3FF]">
                           <span className="inline-block flex-shrink-0 h-[10px] group-hover:bg-primary w-[10px]  bg-white rounded-full"></span>
@@ -252,9 +251,9 @@ const page = () => {
 
       <section className="py-16 px-5 md:px-16 md:py-[80px] text-white bg-secondary">
         <div className="text-left md:text-center">
-          <h1 className="text-4xl md:text-5xl font-medium max-w-[900px] mx-auto leading-[120%] mb-8 md:mb-[40px]">
+          <h2 className="text-4xl md:text-5xl font-medium max-w-[900px] mx-auto leading-[120%] mb-8 md:mb-[40px] !text-white">
             Why Choose Global Mediation?
-          </h1>
+          </h2>
           <p className=" text-base md:text-lg leading-[150%] mb-[56px] md:mb-[78px]">
             We’ve worked with families across the UK for more than 25 years, supporting them through some of life’s most complex and
             emotionally charged moments . Whether you’re dealing with parenting, financial, or communication breakdowns, our mediators offer

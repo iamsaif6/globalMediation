@@ -14,6 +14,7 @@ import CTA from '@/components/shared/CTA';
 import SectionHeading from '@/components/shared/SectionHeading';
 import wayChoose from '/public/Why Choose Global Mediation for SEND.jpg';
 import Link from 'next/link';
+import overlay from '/public/Overlay.png';
 
 const faqData = [
   {
@@ -41,17 +42,41 @@ const faqData = [
 const page = () => {
   return (
     <div>
-      <Header
-        title={'SEND Mediation'}
-        subTitle={
-          'Specialist mediation to help resolve disagreements around Special Educational Needs and Disabilities (SEND), including EHCPs, school placements, and support provision.'
-        }
-        Button1Text={'Speak to a SEND Mediation Specialist'}
-        Button1Link="/contact-us"
-        Button2Text={'Book a Mediation Session'}
-        Button2Link="/contact-us"
-        cover={null}
-      />
+      <header
+        style={{
+          // backgroundImage: `url('${typeof cover === 'string' ? cover : cover?.src}')`,
+          backgroundBlendMode: 'overlay',
+          backgroundSize: 'cover',
+          backgroundPosition: 'top center',
+        }}
+        className=" pt-[187px] relative max-h-[1050px] h-screen md:pt-[238px] pb-[176px] md:pb-[203px] px-5 md:px-[60px]"
+      >
+        <Image alt="Overlay" src={overlay} className=" absolute top-0 left-0 w-full h-full object-cover" />
+        <div className="w-full relative z-10 lg:max-w-[1318px] mx-auto">
+          <h1 className="font-semibold tracking-[-4%] max-w-[900px] 2xl:max-w-[90%] leading-[120%] text-5xl md:text-[65px] xl:text-[4vw] text-white">
+            SEND Mediation
+          </h1>
+          <p className="text-white mt-[25px] md:mt-4 mb-[25px] mr-auto max-w-[700px] md:mb-10 w-[100%] font-normal text-base md:text-lg xl:text-xl">
+            Specialist mediation to help resolve disagreements around Special Educational Needs and Disabilities (SEND), including EHCPs,
+            school placements, and support provision.
+          </p>
+          <div className=" flex md:flex-row flex-col items-center gap-4">
+            <button
+              className={`bg-primary px-5 lg:max-w-max  border block border-primary font-semibold text-base lg:text-lg text-[#FCFCFD] lg:px-12 py-3 rounded-[40px]`}
+            >
+              <Link className="w-full" href={'/contact-us'}>
+                Speak to a SEND mediation specialist
+              </Link>
+            </button>
+            <button className=" mb-[18px] md:mb-0  px-5 lg:max-w-max  border block border-white font-semibold text-base lg:text-lg text-[#FCFCFD] lg:px-12 py-3 rounded-[40px] ">
+              <Link className="w-full " href={'/contact-us'}>
+                Book a mediation session
+              </Link>
+            </button>
+          </div>
+        </div>
+      </header>
+
       <Introduction
         title={'of SEND Mediation'}
         image={service1}
@@ -69,7 +94,7 @@ const page = () => {
 
       <section className="py-16 md:py-[80px] bg-secondary text-white">
         <div className="px-5 md:px-16 lg:mb-[120px] ">
-          <SectionHeading fullWidth title={'Types of SEND Disputes We Support'} />
+          <SectionHeading className={'!text-white'} fullWidth title={'Types of SEND Disputes We Support'} />
         </div>
         <div className="mt-[42px] md:mt-[54px]">
           <div className="flex flex-col w-full">
@@ -81,7 +106,7 @@ const page = () => {
                       <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={send2} />
                     </div>
                     <div>
-                      <h3 className="md:text-2xl text-lg font-medium  mb-8 md:mb-6">
+                      <h3 className="md:text-2xl text-lg font-medium  mb-8 md:mb-6 !text-white">
                         SEND mediation can help resolve disagreements around:
                       </h3>
                       <ul className=" text-lg">
@@ -233,9 +258,9 @@ const page = () => {
       {/* Why Choose */}
 
       <section className="py-16 px-5 md:px-16 md:py-[80px] text-white bg-secondary">
-        <h1 className="text-4xl md:text-5xl font-medium text-left md:text-center max-w-[760px] mx-auto leading-[120%] mb-8 md:mb-[78px]">
+        <h2 className="text-4xl md:text-5xl font-medium text-left md:text-center max-w-[760px] mx-auto leading-[120%] mb-8 md:mb-[78px] !text-white">
           Why Choose Global Mediation for SEND?
-        </h1>
+        </h2>
         <p className="text-base md:text-lg md:text-center  leading-[150%] mb-[56px] md:mb-[78px]">
           We’ve helped thousands of families and local authorities resolve complex, emotionally sensitive disputes, with empathy,
           impartiality, and professionalism. <br /> <br />

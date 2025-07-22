@@ -7,7 +7,7 @@ import Map from '@/components/service/Map';
 import FAQ from '@/components/service/FAQ';
 import CTA from '@/components/shared/CTA';
 import SectionHeading from '@/components/shared/SectionHeading';
-import wayChoose from '/public/Training 1.png';
+import wayChoose from '/public/ninthgrid-wCfWNod54JU-unsplash.jpg';
 import headerImage from '/public/community-banner.jpg';
 import Link from 'next/link';
 import overview from '/public/community-Overview.jpg';
@@ -47,7 +47,7 @@ const page = () => {
       >
         <div className="w-full relative z-10 lg:max-w-[1318px] mx-auto">
           <h1 className="font-semibold tracking-[-4%] max-w-[900px] 2xl:max-w-[90%] leading-[120%] text-5xl md:text-[65px] xl:text-[4vw] text-white">
-            Community Mediation
+            Community mediation
           </h1>
           <p className="text-white mt-[25px] md:mt-4 mb-[25px] mr-auto max-w-[700px] md:mb-10 w-[100%] font-normal text-base md:text-lg xl:text-xl">
             Supportive, impartial mediation to help neighbours and local residents resolve disputes fairly, calmly and constructively —
@@ -84,7 +84,7 @@ const page = () => {
 
       <section className="py-16 md:py-[80px] bg-secondary text-white">
         <div className="px-5 md:px-16 mb-10 md:mb-[120px] ">
-          <SectionHeading fullWidth={true} title={'Common Community Disputes'} />
+          <SectionHeading className={'!text-white'} fullWidth={true} title={'Common Community Disputes'} />
         </div>
         <div className="mt-[0px] md:mt-[54px]">
           {/* Buttons */}
@@ -97,9 +97,9 @@ const page = () => {
                       <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={dispute} />
                     </div>
                     <div>
-                      <h3 className="md:text-2xl text-lg font-medium  mb-8 md:mb-6">
+                      <h2 className="md:text-2xl text-lg font-medium  mb-8 md:mb-6 !text-white">
                         We work with individuals, landlords, housing providers and councils to resolve:
-                      </h3>
+                      </h2>
                       <ul className=" text-lg">
                         <li className="flex items-center py-6 hover:text-black hover:bg-white hover:rounded-2xl group pl-[20px]  gap-[26px] border-t-[0.5px] border-[#DAD3FF]">
                           <span className="inline-block flex-shrink-0 h-[10px] group-hover:bg-primary w-[10px]  bg-white rounded-full"></span>
@@ -265,9 +265,9 @@ const page = () => {
       {/* Why Choose */}
       <section className="py-16 px-5 md:px-16 md:py-[80px] text-white bg-secondary">
         <div className="text-center">
-          <h1 className="text-4xl md:text-5xl font-medium text-center max-w-[760px] mx-auto leading-[120%] mb-8 md:mb-[40px]">
+          <h2 className="text-4xl md:text-5xl font-medium text-center max-w-[760px] mx-auto leading-[120%] mb-8 md:mb-[40px] !text-white">
             Why Choose Global Mediation?
-          </h1>
+          </h2>
           <p className=" text-base md:text-lg leading-[150%] mb-[56px] md:mb-[78px]">
             We’ve helped thousands of people resolve conflicts with neighbours, landlords and community members — in ways that feel fair,
             respectful and lasting.

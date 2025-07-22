@@ -1,6 +1,8 @@
 import Header from '@/components/shared/Header';
 import React from 'react';
 import service1 from '/public/business-1.jpg';
+import service2 from '/public/redd-francisco-5U_28ojjgms-unsplash.jpg';
+import service3 from '/public/dylan-gillis-KdeqA3aTnBY-unsplash.jpg';
 import Button from '@/components/shared/Button';
 import Image from 'next/image';
 import MediationCalculation from '@/components/home/MediationCalculation';
@@ -60,7 +62,7 @@ const item3 = {
     'Multi-party insurance liability across regional teams',
     'A professional disagreement within a family-run operation',
   ],
-  image: service1,
+  image: service2,
 };
 
 const item = {
@@ -72,7 +74,7 @@ const item = {
     'Solutions tailored to your culture, your people and your goals',
     'A track record of helping people move from deadlock to direction',
   ],
-  image: service1,
+  image: service3,
 };
 
 const page = () => {

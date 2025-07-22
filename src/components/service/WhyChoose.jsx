@@ -1,5 +1,5 @@
 import React from 'react';
-import wayChoose from '/public/Training 1.png';
+import wayChoose from '/public/jud-mackrill-Of_m3hMsoAA-unsplash.jpg';
 import Image from 'next/image';
 
 const WhyChoose = () => {

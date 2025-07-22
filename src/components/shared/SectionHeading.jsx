@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SectionHeading = ({ title, subTitle, center = false, light = false, fullWidth }) => {
+const SectionHeading = ({ title, subTitle, center = false, light = false, fullWidth, className }) => {
   function normalizeTitleCase(text) {
     if (!text) return '';
     return text.charAt(0).toUpperCase() + text.slice(1).toLowerCase();
@@ -10,11 +10,11 @@ const SectionHeading = ({ title, subTitle, center = false, light = false, fullWi
   const sectionSubtitle = normalizeTitleCase(subTitle);
 
   return (
-    <div className={`${light ? 'text-white' : ''} max-w-[1200px] mx-auto ${center ? 'text-center' : 'text-left'}  md:text-center`}>
+    <div className={`  ${light ? 'text-white' : ''} max-w-[1200px] mx-auto ${center ? 'text-center' : 'text-left'}  md:text-center `}>
       <h2
         className={`font-medium ${
           fullWidth ? 'w-full' : 'w-[80%] md:w-full'
-        }   mx-auto leading-[120%] tracking-[-4%] text-4xl  md:text-5xl mb-5 md:mb-6`}
+        }   mx-auto leading-[120%] tracking-[-4%] text-4xl  md:text-5xl mb-5 md:mb-6 ${className}`}
       >
         {sectionTitle}
       </h2>

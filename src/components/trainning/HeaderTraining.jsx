@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import banner from '/public/Hero Training Page with Layer.png';
+import banner from '/public/carl-tronders--xOA4sXtq0w-unsplash.jpg';
 import Link from 'next/link';
 import Modal from 'react-modal';
 import overlay from '/public/Overlay.png';
@@ -29,7 +29,7 @@ export const HeaderTraining = () => {
         backgroundImage: `url('${banner.src}')`,
         backgroundBlendMode: 'overlay',
         backgroundSize: 'cover',
-        backgroundPosition: 'top center',
+        backgroundPosition: 'center center',
       }}
       className=" pt-[187px] h-auto lg:h-screen relative md:pt-[238px] pb-[176px] md:pb-[203px] px-5 md:px-[60px]"
     >

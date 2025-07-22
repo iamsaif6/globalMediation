@@ -9,7 +9,7 @@ import Map from '@/components/service/Map';
 import FAQ from '@/components/service/FAQ';
 import CTA from '@/components/shared/CTA';
 import SectionHeading from '@/components/shared/SectionHeading';
-import wayChoose from '/public/Training 1.png';
+import wayChoose from '/public/vitaly-gariev-8eqP4PekHNk-unsplash.jpg';
 import banner from '/public/civil-banner.jpg';
 import Link from 'next/link';
 import overview from '/public/civil-overview.jpg';
@@ -88,7 +88,7 @@ const page = () => {
 
       <section className="py-16 md:py-[80px] bg-secondary text-white">
         <div className="px-5 md:px-16 mb-10 md:mb-[120px] ">
-          <SectionHeading fullWidth={true} title={'Types of civil disputes we support'} />
+          <SectionHeading className={'!text-white'} fullWidth={true} title={'Types of civil disputes we support'} />
         </div>
         <div className="mt-[42px] md:mt-[54px]">
           {/* Buttons */}
@@ -101,7 +101,7 @@ const page = () => {
                       <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={support} />
                     </div>
                     <div>
-                      <h3 className="md:text-2xl text-lg font-medium mb-8 md:mb-6">
+                      <h3 className="md:text-2xl text-lg font-medium mb-8 md:mb-6 !text-white">
                         Our trained mediators help resolve a wide range of civil and legal disputes, including:
                       </h3>
                       <ul className=" text-lg">
@@ -273,9 +273,9 @@ const page = () => {
 
       <section className="py-16 px-5 md:px-16 md:py-[80px] text-white bg-secondary">
         <div className="text-center">
-          <h1 className="text-4xl md:text-5xl font-medium text-center max-w-[760px] mx-auto leading-[120%] mb-8 md:mb-[40px]">
+          <h2 className="text-4xl md:text-5xl font-medium text-center max-w-[760px] mx-auto leading-[120%] mb-8 md:mb-[40px] !text-white">
             Why Choose Global Mediation?
-          </h1>
+          </h2>
           <p className=" text-base md:text-lg leading-[150%] mb-[56px] md:mb-[78px]">
             We’ve helped resolve thousands of civil and legal disputes, with a calm, professional approach that saves time, reduces stress,
             and restores control.
