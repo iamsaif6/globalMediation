@@ -49,7 +49,7 @@ const page = () => {
       />
 
       <section>
-        <div className=" py-16 px-5 md:px-16 md:py-[80px] ">
+        <div className=" py-10 px-5 md:px-16 md:py-[80px] ">
           <div className="text-left md:text-center mx-auto mb-[60px] lg:mb-[100px]">
             <h1 className="font-medium max-w-[900px]  mx-auto text-4xl md:text-5xl leading-[120%]">Workplace and employment mediation</h1>
             <p className="text-black text-base md:text-lg leading-[150%] my-6">
@@ -99,7 +99,7 @@ const page = () => {
       </section>
 
       <section className="bg-secondary text-white">
-        <div className=" py-16 px-5 md:px-16 md:py-[80px] ">
+        <div className=" py-10 px-5 md:px-16 md:py-[80px] ">
           <div className="text-left md:text-center max-w-[900px] mx-auto mb-[60px] lg:mb-[100px]">
             <h1 className="font-medium text-4xl md:text-5xl leading-[120%]">Comprehensive workplace and employment mediation services</h1>
             <p className="  text-base md:text-lg leading-[150%] my-6">
@@ -159,7 +159,7 @@ const page = () => {
       </section>
 
       <section>
-        <div className=" py-16 px-5 md:px-16 md:py-[80px] ">
+        <div className=" py-10 px-5 md:px-16 md:py-[80px] ">
           <div className="text-center  mx-auto mb-[60px] lg:mb-[100px]">
             <h1 className="font-medium text-4xl md:text-5xl leading-[120%]">Workplace and employment disputes</h1>
             <p className="text-black  text-base md:text-lg leading-[150%] my-6">

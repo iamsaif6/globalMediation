@@ -14,7 +14,7 @@ const Header = () => {
         {/* <Image src={overlay} alt="Header Overlay" className=" absolute top-0 left-0 w-full h-full object-cover" /> */}
         <div className="w-full  flex items-center  text-left lg:pl-5 relative z-10 lg:max-w-[90vw] mx-auto ">
           <div className="w-full">
-            <h1 className=" font-semibold tracking-[-4%] max-w-[900px] 2xl:max-w-[90%] leading-[120%] text-5xl md:text-[65px] xl:text-[4vw] text-white">
+            <h1 className=" font-semibold tracking-[-4%] max-w-[900px] 2xl:max-w-[90%] leading-[120%] text-5xl md:text-[65px] xl:text-[4vw] !text-white md:!text-primary">
               Every voice matters. <br /> Every story counts.
             </h1>
             <p className="text-white mt-[25px] md:mt-4 mb-[25px] mr-auto max-w-[700px] md:mb-10 w-[100%] font-normal text-base md:text-lg xl:text-xl">

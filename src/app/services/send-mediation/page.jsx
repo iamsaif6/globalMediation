@@ -92,11 +92,11 @@ const page = () => {
       />
       {/*  */}
 
-      <section className="py-16 md:py-[80px] bg-secondary text-white">
+      <section className="py-10 md:py-[80px] bg-secondary text-white">
         <div className="px-5 md:px-16 lg:mb-[120px] ">
           <SectionHeading className={'!text-white'} fullWidth title={'Types of SEND Disputes We Support'} />
         </div>
-        <div className="mt-[42px] md:mt-[54px]">
+        <div className="mt-[12px] md:mt-[54px]">
           <div className="flex flex-col w-full">
             <div className=" px-5 md:px-16 ">
               <div className={` transition-opacity duration-300 `}>
@@ -215,7 +215,7 @@ const page = () => {
         </div>
       </section> */}
 
-      <section className="py-16 px-5 md:px-16 md:py-[80px]">
+      <section className="py-10 px-5 md:px-16 md:py-[80px]">
         <SectionHeading
           title={'Understanding the SEND Mediation Process'}
           subTitle={

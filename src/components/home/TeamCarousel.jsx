@@ -141,9 +141,10 @@ const TeamCarousel = ({ darkText = false, isDouble }) => {
     const { onClick } = props;
     return (
       <div
-        className={`flex justify-center translate-y-1/2 mr-5 -translate-x-1/2 absolute -bottom-[30px] border border-[#9C9C9C] right-1/2 md:right-1/2 z-20 items-center text-[#9C9C9C]  rounded-full ${
-          darkText ? 'hover:bg-secondary hover:border-secondary' : 'hover:bg-primary hover:border-primary'
-        }  hover:text-white  cursor-pointer w-[35px] h-[35px] md:w-12 md:h-12`}
+        className={`flex justify-center translate-y-1/2 mr-2  absolute -bottom-[30px] border border-[#9C9C9C] right-1/2
+           md:right-1/2 z-20 items-center text-[#9C9C9C]  rounded-full ${
+             darkText ? 'hover:bg-secondary hover:border-secondary' : 'hover:bg-primary hover:border-primary'
+           }  hover:text-white  cursor-pointer w-[35px] h-[35px] md:w-12 md:h-12`}
         onClick={onClick}
       >
         <ArrowLeft />
@@ -155,7 +156,7 @@ const TeamCarousel = ({ darkText = false, isDouble }) => {
     const { onClick } = props;
     return (
       <div
-        className={`flex justify-center translate-y-1/2 translate-x-1/2 absolute -bottom-[30px] border border-[#9C9C9C] right-1/2 md:right-1/2 z-20   items-center text-[#9C9C9C]  rounded-full ${
+        className={`flex justify-center translate-y-1/2 ml-2  absolute -bottom-[30px] border border-[#9C9C9C] left-1/2 md:right-1/2 z-20   items-center text-[#9C9C9C]  rounded-full ${
           darkText ? 'hover:bg-secondary hover:border-secondary' : 'hover:bg-primary hover:border-primary'
         } hover:text-white  cursor-pointer w-[35px] h-[35px] md:w-12 md:h-12`}
         onClick={onClick}

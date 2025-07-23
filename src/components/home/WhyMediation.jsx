@@ -33,7 +33,7 @@ const WhyMediation = () => {
           </p>
         </div>
         <div className="text-white col-span-2 lg:col-span-1">
-          <h2 className="leading-[120%] w-[90%] md:w-full font-medium text-4xl md:text-5xl mb-5 md:mb-5 !text-white">
+          <h2 className="leading-[120%] w-full lg:w-[90%] md:w-full font-medium text-[32px] md:text-5xl mb-5 md:mb-5 !text-white">
             Why global mediation
           </h2>
           <p className="font-normal text-base md:text-lg leading-[150%]">

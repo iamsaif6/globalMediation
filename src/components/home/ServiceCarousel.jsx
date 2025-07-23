@@ -63,7 +63,7 @@ const ServiceCarousel = () => {
   };
 
   return (
-    <section aria-label="Global Mediation Services" className="py-[40px] lg:max-w-[1318px] px-5 md:px-[60px] mx-auto slick-bar ">
+    <section aria-label="Global Mediation Services" className="py-[0px] lg:max-w-[1318px] px-5 md:px-[60px] mx-auto slick-bar ">
       <div className="max-w-[800px] px-5 mx-auto lg:text-center md:text-center mb-[20px] lg:mb-[70px]">
         <h2 className="font-medium text-4xl md:text-5xl mb-5 md:mb-6">Global mediation services</h2>
         <p className=" leading-[150%] text-base md:text-lg font-normal">
@@ -74,7 +74,7 @@ const ServiceCarousel = () => {
       <div className="relative">
         <div className="slider-container">
           <Slider ref={sliderRef} {...settings}>
-            <div className="px-[15px] mb-[90px] h-[300px] md:h-[350px]">
+            <div className="px-[45px] lg:px-[15px]  mb-[90px] h-[300px] md:h-[350px]">
               <div className="rounded-[20px]  group hover:bg-secondary hover:text-white duration-200 md:rounded-3xl border bg-[#F3F1FF] border-[#D4DBEA] my-9 py-10 md:py-[49px] px-5 md:px-6 h-full flex flex-col">
                 {/* <div className="mb-[54px] group-hover:text-white text-secondary">
                   <svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43" fill="none">
@@ -101,7 +101,7 @@ const ServiceCarousel = () => {
                 </div>
               </div>
             </div>
-            <div className="px-[15px] mb-[90px] h-[300px] md:h-[350px]">
+            <div className="px-[45px] lg:px-[15px] mb-[90px] h-[300px] md:h-[350px]">
               <div className="rounded-[20px] group hover:bg-secondary hover:text-white duration-200 md:rounded-3xl border bg-[#F3F1FF] border-[#D4DBEA] my-9 py-10 md:py-[49px] px-5 md:px-6 h-full flex flex-col">
                 <div className="flex flex-col flex-grow">
                   <h3 className="text-lg lg:text-2xl group-hover:!text-white duration-200 leading-[140%] mb-[6px] md:mb-2 font-semibold text-secondary">
@@ -120,7 +120,7 @@ const ServiceCarousel = () => {
                 </div>
               </div>
             </div>
-            <div className="px-[15px] mb-[90px] h-[300px] md:h-[350px]">
+            <div className="px-[45px] lg:px-[15px] mb-[90px] h-[300px] md:h-[350px]">
               <div className="rounded-[20px] group hover:bg-secondary hover:text-white duration-200 md:rounded-3xl border bg-[#F3F1FF] border-[#D4DBEA] my-9 py-10 md:py-[49px] px-5 md:px-6 h-full flex flex-col">
                 <div className="flex flex-col flex-grow">
                   <h3 className="text-lg lg:text-2xl group-hover:!text-white duration-200 leading-[140%] mb-[6px] md:mb-2 font-semibold text-secondary">
@@ -140,7 +140,7 @@ const ServiceCarousel = () => {
               </div>
             </div>
 
-            <div className="px-[15px] mb-[90px] h-[300px] md:h-[350px]">
+            <div className="px-[45px] lg:px-[15px] mb-[90px] h-[300px] md:h-[350px]">
               <div className="rounded-[20px] group hover:bg-secondary hover:text-white duration-200 md:rounded-3xl border bg-[#F3F1FF] border-[#D4DBEA] my-9 py-10 md:py-[49px] px-5 md:px-6 h-full flex flex-col">
                 <div className="flex flex-col flex-grow">
                   <h3 className="text-lg lg:text-2xl group-hover:!text-white duration-200 leading-[140%] mb-[6px] md:mb-2 font-semibold text-secondary">
@@ -160,7 +160,7 @@ const ServiceCarousel = () => {
               </div>
             </div>
 
-            <div className="px-[15px] mb-[90px] h-[300px] md:h-[350px]">
+            <div className="px-[45px] lg:px-[15px] mb-[90px] h-[300px] md:h-[350px]">
               <div className="rounded-[20px] group hover:bg-secondary hover:text-white duration-200 md:rounded-3xl border bg-[#F3F1FF] border-[#D4DBEA] my-9 py-10 md:py-[49px] px-5 md:px-6 h-full flex flex-col">
                 <div className="flex flex-col flex-grow">
                   <h3 className="text-lg lg:text-2xl group-hover:!text-white duration-200 leading-[140%] mb-[6px] md:mb-2 font-semibold text-secondary">
@@ -179,7 +179,7 @@ const ServiceCarousel = () => {
                 </div>
               </div>
             </div>
-            <div className="px-[15px] mb-[90px] h-[300px] md:h-[350px]">
+            <div className="px-[45px] lg:px-[15px] mb-[90px] h-[300px] md:h-[350px]">
               <div className="rounded-[20px] group hover:bg-secondary hover:text-white duration-200 md:rounded-3xl border bg-[#F3F1FF] border-[#D4DBEA] my-9 py-10 md:py-[49px] px-5 md:px-6 h-full flex flex-col">
                 <div className="flex flex-col flex-grow">
                   <h3 className="text-lg lg:text-2xl group-hover:!text-white duration-200 leading-[140%] mb-[6px] md:mb-2 font-semibold text-secondary">

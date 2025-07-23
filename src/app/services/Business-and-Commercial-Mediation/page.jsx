@@ -91,7 +91,7 @@ const page = () => {
       />
 
       {/* Why Choose */}
-      <div className={` py-16 md:py-[80px] px-5 md:px-[60px]`}>
+      <div className={` py-10 md:py-[80px] px-5 md:px-[60px]`}>
         <div className="text-left md:text-center">
           <h2 className="w-full  mb-10 font-medium text-4xl md:text-5xl leading-[120%] ">{item.title}</h2>
           <p className="mb-[32px] md:mb-[60px] text-black text-base md:text-lg leading-[150%] my-6">{item.subtitle}</p>
@@ -130,7 +130,7 @@ const page = () => {
       </div>
 
       {/* What we help */}
-      <div className={` py-16 md:py-[80px] px-5 md:px-[60px]`}>
+      <div className={` py-10 md:py-[80px] px-5 md:px-[60px]`}>
         <div className="text-left md:text-center">
           <h2 className="w-full  mb-10 font-medium text-4xl md:text-5xl leading-[120%] ">{item2.title}</h2>
           <p className="mb-[32px] md:mb-[60px] text-black text-base md:text-lg leading-[150%] my-6">{item2.subtitle}</p>
@@ -170,7 +170,7 @@ const page = () => {
       <HowWeWork />
 
       {/* Example */}
-      <div className={` py-16 md:py-[80px] px-5 md:px-[60px]`}>
+      <div className={` py-10 md:py-[80px] px-5 md:px-[60px]`}>
         <div className="text-left md:text-center">
           <h2 className="w-full  mb-14 font-medium text-4xl md:text-5xl leading-[120%] ">{item3.title}</h2>
         </div>
