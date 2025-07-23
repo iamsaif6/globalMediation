@@ -145,7 +145,7 @@ const page = () => {
                 <div className="flex justify-center md:block">
                   <button className=" bg-white mt-10  font-semibold text-lg text-secondary px-12 py-3 rounded-[40px] ">
                     <Link className="w-full  " href="/contact-us">
-                      Book Workplace Mediation
+                      Book workplace mediation
                     </Link>
                   </button>
                 </div>
