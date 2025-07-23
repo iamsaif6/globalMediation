@@ -264,16 +264,17 @@ const TeamCarousel = ({ darkText = false, isDouble }) => {
           {(isDouble ? members.slice(0, 6) : members).map(item => (
             <div className="px-[15px] mb-[20px]">
               <div className="group w-full h-[285px] lg:h-[390px] [perspective:1000px] rounded-3xl">
-                <div className="relative w-full h-full duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] rounded-3xl">
+                <div className="relative w-full h-full duration-700 rounded-3xl">
                   {/* Front Side */}
+                  {/* [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] */}
                   <div className="absolute w-full h-full backface-hidden rounded-3xl overflow-hidden">
                     {item?.image && <Image className="w-full h-full object-cover object-top" alt={item.name} src={item.image} />}
                   </div>
 
                   {/* Back Side */}
-                  <div className="absolute w-full h-full backface-hidden [transform:rotateY(180deg)] bg-gray-200 flex items-center justify-center p-4 rounded-3xl">
+                  {/* <div className="absolute w-full h-full backface-hidden [transform:rotateY(180deg)] bg-gray-200 flex items-center justify-center p-4 rounded-3xl">
                     <p className="text-center text-gray-800">{item?.details}</p>
-                  </div>
+                  </div> */}
                 </div>
               </div>
 
@@ -331,16 +332,17 @@ const TeamCarousel = ({ darkText = false, isDouble }) => {
             {members.slice(6, 12).map(item => (
               <div className="px-[15px] mb-[20px]">
                 <div className="group w-full h-[285px] lg:h-[390px] [perspective:1000px] rounded-3xl">
-                  <div className="relative w-full h-full duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] rounded-3xl">
+                  <div className="relative w-full h-full duration-700 ] rounded-3xl">
                     {/* Front Side */}
+                    {/* [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg) */}
                     <div className="absolute w-full h-full backface-hidden rounded-3xl overflow-hidden">
                       {item?.image && <Image className="w-full h-full object-cover object-top" alt={item.name} src={item.image} />}
                     </div>
 
                     {/* Back Side */}
-                    <div className="absolute w-full h-full backface-hidden [transform:rotateY(180deg)] bg-gray-200 flex items-center justify-center p-4 rounded-3xl">
+                    {/* <div className="absolute w-full h-full backface-hidden [transform:rotateY(180deg)] bg-gray-200 flex items-center justify-center p-4 rounded-3xl">
                       <p className="text-center text-gray-800">{item?.details}</p>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
 

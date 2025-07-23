@@ -13,6 +13,7 @@ import CTA from '@/components/shared/CTA';
 import WhyMediation from '@/components/home/WhyMediation';
 import Header from '@/components/home/Header';
 import Head from 'next/head';
+import MeetOurFounder from '@/components/home/MeetOurFounder';
 
 export default function Home() {
   return (
@@ -62,8 +63,9 @@ export default function Home() {
         <ServiceCarousel />
         {/* Team Carousel */}
         <section className="bg-secondary py-16 md:py-[80px] mt-[10px] md:mt-[80px]">
-          <h4 className="text-4xl md:text-5xl mb-12 md:mb-[70px] text-white text-center px-4 font-medium">Meet our team</h4>
-          <TeamCarousel />
+          <h4 className="text-4xl md:text-5xl mb-12 md:mb-[70px] text-white text-center px-4 font-medium">Meet our founder</h4>
+          <MeetOurFounder />
+          {/* <TeamCarousel /> */}
         </section>
         <Serving />
         <MediationCalculation />

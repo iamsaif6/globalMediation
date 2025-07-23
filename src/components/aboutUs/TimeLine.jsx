@@ -4,7 +4,7 @@ import Button from '../shared/Button';
 const TimeLine = () => {
   return (
     <section className="py-16 bg-[#F9F8FF] px-5 md:px-16 md:py-[80px]">
-      <div className={` max-w-[850px] mx-auto text-left  md:text-center`}>
+      <div className={` max-w-[950px] mx-auto text-left  md:text-center`}>
         <h2 className="font-medium leading-[120%] tracking-[-4%] text-4xl md:text-[40px] lg:text-5xl mb-5 md:mb-6">
           Trusted, experienced and people-first
         </h2>
