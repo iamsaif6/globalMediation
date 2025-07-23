@@ -541,7 +541,7 @@ const Navbar = () => {
                           <Link
                             onClick={() => setMobileMenuOpen(false)}
                             key={index}
-                            href={link.title === 'Training' ? item.href : `/services${item.href}`}
+                            href={link.title === 'Training' || link.title === 'Resources' ? item.href : `/services${item.href}`}
                             className="block py-3 px-4 text-gray-600 hover:text-primary border-b border-gray-100 transition-colors duration-200"
                           >
                             {item.title}
