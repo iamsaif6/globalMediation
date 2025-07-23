@@ -4,7 +4,7 @@ import React from 'react';
 
 const Guides = () => {
   return (
-    <section className="pb-16 pt-[100px] px-5 md:pb-[80px] md:px-[64px] bg-secondary text-white">
+    <section className="pb-16 pt-[100px] px-0 md:pb-[80px] md:px-[64px] bg-secondary text-white">
       <Download />
       <CTA
         title={'Start Your Mediation Training Journey Today'}
@@ -13,6 +13,7 @@ const Guides = () => {
         Button1Text={'Enrol in a mediation training program today'}
         Button2Link={'/contact-us'}
         Button2Text={'Contact us for upcoming course dates'}
+        className={'-mt-10'}
       />
     </section>
   );

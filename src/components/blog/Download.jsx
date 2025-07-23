@@ -29,19 +29,19 @@ const items = [
 
 const Download = () => {
   return (
-    <section className="py-16 px-5 md:py-[80px] md:pb-[30px] md:px-[64px]">
-      <div className="text-left mb-[54px]">
+    <section className="py-16  px-0 md:py-[80px] md:pb-[30px] md:px-[64px]">
+      <div className="text-left mb-[54px] px-5">
         <h4 className="font-medium mb-[20px] md:mb-6 text-4xl md:text-5xl leading-[120%]">Download guides</h4>
       </div>
-      <div>
-        <ul className="text-sm md:text-lg font-normal text-secondary">
+      <div className="w-full">
+        <ul className="text-sm md:text-lg  font-normal text-secondary">
           {/* ${
                 idx % 2 != 1 ? 'bg-[#F3F1FF]' : ''
               } */}
           {items.map((item, idx) => (
             <li
               key={idx}
-              className={`bg-[#F3F1FF] md:py-6 last:border-b-[0.5px] gap-4 border-t-[0.5px] p-3 md:px-8 flex items-center justify-between`}
+              className={`bg-[#F3F1FF] w-full md:py-6 last:border-b-[0.5px] gap-4 border-t-[0.5px] p-3 md:px-8 flex items-center justify-between`}
             >
               <p className="flex items-center gap-6">
                 <svg className="w-5 h-[24px] md:w-[30px] md:h-[36px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 36" fill="none">
