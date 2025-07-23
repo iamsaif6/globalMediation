@@ -40,7 +40,7 @@ const MainServices = () => {
           backgroundSize: 'cover',
           backgroundPosition: 'center top',
         }}
-        className=" pt-[187px] max-h-[1050px] h-screen relative md:pt-[238px] pb-[176px] md:pb-[203px] px-5 md:px-[60px]"
+        className=" pt-[187px] max-h-[700px] lg:max-h-[1050px] h-screen relative md:pt-[238px] pb-[176px] md:pb-[203px] px-5 md:px-[60px]"
       >
         <div className="w-full relative z-10 lg:max-w-[1318px] mx-auto">
           <h1 className="font-semibold tracking-[-4%] max-w-[900px] 2xl:max-w-[90%] leading-[120%] text-5xl md:text-[65px] xl:text-[4vw] !text-white">
