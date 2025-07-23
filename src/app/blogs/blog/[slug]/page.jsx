@@ -5,7 +5,7 @@ import React from 'react';
 import SectionHeading from '@/components/shared/SectionHeading';
 import Button from '@/components/shared/Button';
 import CTA from '@/components/shared/CTA';
-import { fetchArticleBySlug, fetchAuthors } from '@/utils/api';
+import { fetchArticleBySlug, fetchArticles, fetchAuthors } from '@/utils/api';
 import { notFound } from 'next/navigation';
 import BLockWrapper from '@/components/blocks/BlockWrapper';
 import CopyButton from '@/components/blog/CopyButton';
@@ -27,6 +27,9 @@ export async function generateMetadata({ params }) {
     description: article?.description,
   };
 }
+
+const articles = await fetchArticles();
+const articleData = articles?.data?.slice(0, 3) || [];
 
 const SingleBlogPost = async ({ params }) => {
   const article = await fetchArticleBySlug(params.slug);
@@ -107,10 +110,10 @@ const SingleBlogPost = async ({ params }) => {
             </figure>
           )}
           <BLockWrapper article={article} />
-          <div className="flex pb-12 border-b-[0.5px] border-secondary mb-12 items-center flex-col mt-16">
+          <div className="flex pb-8 border-b-[0.5px] border-secondary mb-8 items-center flex-col mt-8">
             <p className="font-semibold text-lg mb-4">Share this post</p>
 
-            <ul className="flex mb-12 items-center gap-2">
+            <ul className="flex items-center gap-2">
               <li title="Copy">
                 <CopyButton />
               </li>
@@ -151,19 +154,30 @@ const SingleBlogPost = async ({ params }) => {
         </article>
       </section>
       {/* Related Post */}
-      <section className="py-16 px-5 md:py-[80px] md:px-[64px]">
-        <SectionHeading center={true} title={'Related Posts'} subTitle={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '} />
+      <section className="py-16 px-5 md:py-[30px] md:px-[64px]">
+        <SectionHeading center={true} title={'Related Posts'} subTitle={''} />
         <div className="grid my-12 md:my-[80px] grid-cols-3 gap-8">
-          {[1, 2, 3].map(item => (
+          {articleData?.map(item => (
             <div key={item} className="col-span-4  lg:col-span-1 mb-[48px] md:mb-[60px]">
-              <div className="w-full min-h-[300px] max-h-[290px] bg-gray-600 rounded-xl"></div>
-              <h3 className={`text-black leading-[140%] mt-6 md:mt-6 mb-4 text-lg md:text-[24px] font-semibold `}>
-                Can my child have a voice in Family Mediation
-              </h3>
-              <p className={`text-[#667085] leading-[150%] mb-6 text-lg font-normal`}>
+              <div className="w-full min-h-[300px] overflow-hidden max-h-[290px] bg-gray-600 rounded-xl">
+                {item?.cover?.formats?.small?.url && (
+                  <Image
+                    className="h-full w-full object-cover"
+                    alt={item.title}
+                    width={400}
+                    height={400}
+                    src={`${item?.cover?.formats?.small?.url}`}
+                  />
+                )}
+              </div>
+              <h3 className={`text-black leading-[140%] mt-6 md:mt-6 mb-4 text-lg md:text-[24px] font-semibold `}>{item?.title}</h3>
+              {/* <p className={`text-[#667085] leading-[150%] mb-6 text-lg font-normal`}>
                 Can my child have a voice in Family Mediation? Whether your child has the opportunity to have their say in…
-              </p>
-              <Link href={'#'} className="flex w-max pb-1 border-b border-secondary  gap-1 items-center text-secondary font-medium text-sm">
+              </p> */}
+              <Link
+                href={`/blogs/blog/${item?.slug || item.id}`}
+                className="flex w-max pb-1 border-b border-secondary  gap-1 items-center text-secondary font-medium text-sm"
+              >
                 <span>Read more</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                   <path
@@ -174,9 +188,6 @@ const SingleBlogPost = async ({ params }) => {
               </Link>
             </div>
           ))}
-        </div>
-        <div className="flex justify-center">
-          <Button title={'View all'} href="/blogs" />
         </div>
       </section>
       <CTA

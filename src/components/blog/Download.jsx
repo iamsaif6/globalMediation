@@ -29,7 +29,7 @@ const items = [
 
 const Download = () => {
   return (
-    <section className="py-16 px-5 md:py-[80px] md:px-[64px]">
+    <section className="py-16 px-5 md:py-[80px] md:pb-[30px] md:px-[64px]">
       <div className="text-left mb-[54px]">
         <h4 className="font-medium mb-[20px] md:mb-6 text-4xl md:text-5xl leading-[120%]">Download guides</h4>
       </div>
