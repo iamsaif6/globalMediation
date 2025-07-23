@@ -119,7 +119,7 @@ const ContactUs = () => {
               <div className={`mt-8 md:max-w-[950px] grid grid-cols-1 md:grid-cols-2  gap-4  mx-auto`}>
                 <button className="bg-primary font-semibold text-[#FCFCFD] px-10 py-3 rounded-[40px] text-base md:text-lg">
                   <Link className="flex items-center justify-center gap-2 w-full text-center" href="mailto:sen@globalmediaiton.co.uk">
-                    <Mail size={20} />
+                    <Mail className="flex-shrink-0" size={20} />
                     sen@globalmediaiton.co.uk
                   </Link>
                 </button>
