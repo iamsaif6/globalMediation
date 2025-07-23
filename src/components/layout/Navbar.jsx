@@ -8,7 +8,7 @@ import Image from 'next/image';
 const resourceSubMenu = [
   { title: 'Blogs', href: '/blogs' },
   { title: 'FAQ', href: '/faq' },
-  { title: 'Case Studies', href: '/case-studies' },
+  { title: 'Case studies', href: '/case-studies' },
   { title: 'Guides', href: '/guides' },
 ];
 
@@ -403,8 +403,8 @@ const Navbar = () => {
                   activeSubmenu2 == 'Resources' ? 'bg-[#DAD3FF]' : ''
                 } flex cursor-pointer items-start flex-col w-full p-6 rounded-xl text-secondary transition-colors duration-200`}
               >
-                <span className="text-lg block font-semibold">Our Resources</span>
-                <span className="text-sm">A Comprehensive Guide to Alternative Dispute Resolution</span>
+                <span className="text-lg block font-semibold">Our resources</span>
+                <span className="text-sm">A comprehensive guide to alternative dispute resolution</span>
               </button>
             </div>
             <div className="col-span-7 leading-[150%] p-8 bg-[#F3F1FF]">
