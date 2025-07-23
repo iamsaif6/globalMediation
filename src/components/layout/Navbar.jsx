@@ -13,12 +13,12 @@ const resourceSubMenu = [
 ];
 
 const serviceSubmenu = [
-  { title: 'Workplace and Employment Mediation', href: '/Workplace-and-Employment-Mediation' },
-  { title: 'Business and Commercial Mediation', href: '/Business-and-Commercial-Mediation' },
-  { title: 'SEND (Special Educational Needs and Disability) Mediation', href: '/send-mediation' },
-  { title: 'Family Mediation', href: '/Family-Mediation' },
-  { title: 'Community Mediation', href: '/Community-Mediation' },
-  { title: 'Civil and Legal Dispute Mediation', href: '/Civil-and-Legal-Dispute-Mediation' },
+  { title: 'Workplace and employment mediation', href: '/Workplace-and-Employment-Mediation' },
+  { title: 'Business and commercial mediation', href: '/Business-and-Commercial-Mediation' },
+  { title: 'SEND (Special Educational Needs and Disability) mediation', href: '/send-mediation' },
+  { title: 'Family mediation', href: '/Family-Mediation' },
+  { title: 'Community mediation', href: '/Community-Mediation' },
+  { title: 'Civil and legal dispute mediation', href: '/Civil-and-Legal-Dispute-Mediation' },
 ];
 
 // const traiingSubmenu = [
@@ -28,9 +28,9 @@ const serviceSubmenu = [
 // ];
 
 const traiingSubmenu = [
-  { title: 'Foundation Course in Mediation', href: 'https://globaltraning.vercel.app/' },
-  { title: 'SEND Mediation Training Course', href: 'https://globaltraning.vercel.app/' },
-  { title: 'SEND Mediation Professional Practice', href: 'https://globaltraning.vercel.app/' },
+  { title: 'Foundation course in mediation', href: 'https://globaltraning.vercel.app/' },
+  { title: 'SEND mediation training course', href: 'https://globaltraning.vercel.app/' },
+  { title: 'SEND mediation professional practice', href: 'https://globaltraning.vercel.app/' },
 ];
 
 const navLinksForMobile = [
@@ -43,12 +43,12 @@ const navLinksForMobile = [
     title: 'Services',
     hasMegaMenu: true,
     megaMenuItems: [
-      { title: 'Workplace and Employment Mediation', href: '/Workplace-and-Employment-Mediation' },
-      { title: 'Business and Commercial Mediation', href: '/Business-and-Commercial-Mediation' },
-      { title: 'SEND (Special Educational Needs and Disability) Mediation', href: '/send-mediation' },
-      { title: 'Family Mediation', href: '/Family-Mediation' },
-      { title: 'Community Mediation', href: '/Community-Mediation' },
-      { title: 'Civil and Legal Dispute Mediation', href: '/Civil-and-Legal-Dispute-Mediation' },
+      { title: 'Workplace and employment mediation', href: '/Workplace-and-Employment-Mediation' },
+      { title: 'Business and commercial mediation', href: '/Business-and-Commercial-Mediation' },
+      { title: 'SEND (Special Educational Needs and Disability) mediation', href: '/send-mediation' },
+      { title: 'Family mediation', href: '/Family-Mediation' },
+      { title: 'Community mediation', href: '/Community-Mediation' },
+      { title: 'Civil and legal dispute mediation', href: '/Civil-and-Legal-Dispute-Mediation' },
     ],
   },
   {
@@ -56,9 +56,9 @@ const navLinksForMobile = [
     title: 'Training',
     hasMegaMenu: true,
     megaMenuItems: [
-      { title: 'Foundation Course in Mediation', href: 'https://globaltraning.vercel.app/' },
-      { title: 'SEND Mediation Training Course', href: 'https://globaltraning.vercel.app/' },
-      { title: 'SEND Mediation Professional Practice', href: 'https://globaltraning.vercel.app/' },
+      { title: 'Foundation course in mediation', href: 'https://globaltraning.vercel.app/' },
+      { title: 'SEND mediation training course', href: 'https://globaltraning.vercel.app/' },
+      { title: 'SEND mediation professional practice', href: 'https://globaltraning.vercel.app/' },
     ],
   },
 
@@ -69,7 +69,7 @@ const navLinksForMobile = [
     megaMenuItems: [
       { title: 'Blog', href: '/blogs' },
       { title: 'FAQ', href: '/faq' },
-      { title: 'Case Studies', href: '/case-studies' },
+      { title: 'Case studies', href: '/case-studies' },
       { title: 'Guides', href: '/guides' },
     ],
   },
@@ -89,12 +89,12 @@ const navLinks = [
     title: 'Services',
     hasMegaMenu: true,
     megaMenuItems: [
-      { title: 'Workplace and Employment Mediation', href: '/Workplace-and-Employment-Mediation' },
-      { title: 'Business and Commercial Mediation', href: '/Business-and-Commercial-Mediation' },
-      { title: 'SEND (Special Educational Needs and Disability) Mediation', href: '/send-mediation' },
-      { title: 'Family Mediation', href: '/Family-Mediation' },
-      { title: 'Community Mediation', href: '/Community-Mediation' },
-      { title: 'Civil and Legal Dispute Mediation', href: '/Civil-and-Legal-Dispute-Mediation' },
+      { title: 'Workplace and employment mediation', href: '/Workplace-and-Employment-Mediation' },
+      { title: 'Business and commercial mediation', href: '/Business-and-Commercial-Mediation' },
+      { title: 'SEND (Special Educational Needs and Disability) mediation', href: '/send-mediation' },
+      { title: 'Family mediation', href: '/Family-Mediation' },
+      { title: 'Community mediation', href: '/Community-Mediation' },
+      { title: 'Civil and legal dispute mediation', href: '/Civil-and-Legal-Dispute-Mediation' },
     ],
   },
 
@@ -105,7 +105,7 @@ const navLinks = [
     megaMenuItems: [
       { title: 'Blog', href: '/blogs' },
       { title: 'FAQ', href: '/faq' },
-      { title: 'Case Studies', href: '/case-studies' },
+      { title: 'Case studies', href: '/case-studies' },
       { title: 'Guides', href: '/guides' },
     ],
   },
@@ -332,7 +332,7 @@ const Navbar = () => {
                 } flex cursor-pointer items-start flex-col w-full p-6 rounded-xl text-secondary transition-colors duration-200`}
               >
                 <span className="text-lg block font-semibold">Services</span>
-                <span className="text-sm">A Comprehensive Guide to Alternative Dispute Resolution</span>
+                <span className="text-sm">A comprehensive guide to alternative dispute resolution</span>
               </Link>
 
               <Link
@@ -343,12 +343,12 @@ const Navbar = () => {
                 } flex cursor-pointer items-start flex-col w-full p-6 rounded-xl text-secondary transition-colors duration-200`}
               >
                 <span className="text-lg block font-semibold">Training</span>
-                <span className="text-sm">A Comprehensive Guide to Alternative Dispute Resolution</span>
+                <span className="text-sm">A comprehensive guide to alternative dispute resolution</span>
               </Link>
             </div>
             <div className="col-span-7 leading-[150%] p-8 bg-[#F3F1FF]">
               <h3 className="text-[20px] text-[#330051] font-semibold mb-4">
-                {activeSubmenu == 'Service' ? 'Mediation Services' : 'Mediation Training'}
+                {activeSubmenu == 'Service' ? 'Mediation services' : 'Mediation training'}
               </h3>
               {activeSubmenu == 'Service' ? (
                 <ul className="space-y-3 text-sm ">

@@ -16,7 +16,7 @@ const WhyTrain = () => {
         fullWidth={true}
       />
       <div className="mt-[80px]">
-        <h4 className="text-2xl font-medium text-center text-white mb-10">Core Values</h4>
+        <h4 className="text-2xl font-medium text-center text-white mb-10">Core values</h4>
         <div className="grid grid-cols-4 gap-6 md:gap-8">
           <div className="p-6 col-span-4 md:col-span-2 lg:col-span-1 border duration-200 hover:bg-primary hover:border-primary border-[#624A70] rounded-3xl">
             <div className="mt-3 mb-4">

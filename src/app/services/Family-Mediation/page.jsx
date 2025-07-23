@@ -48,7 +48,7 @@ const page = () => {
         cover={banner}
       />
       <Introduction
-        title={'of Family Mediation'}
+        title={'family mediation'}
         image={overview}
         subtitle={
           'Family mediation offers a safe, supportive space to work through difficult issues and find a way forward together.Whether you’re separating, making parenting arrangements or resolving financial matters, we help families navigate change with clarity and care.It’s a calmer, more constructive alternative to court, focused on communication, mutual understanding and long-term wellbeing.'
@@ -107,7 +107,7 @@ const page = () => {
                     <div className="flex justify-center md:block">
                       <button className=" bg-white  mt-10  font-semibold text-lg text-black px-12 py-3 rounded-[40px] ">
                         <Link className="w-full  " href="/contact-us">
-                          Book Family Mediation
+                          Book family mediation
                         </Link>
                       </button>
                     </div>
@@ -241,7 +241,7 @@ const page = () => {
         <div className="flex justify-center">
           <button className=" bg-primary  mt-10  font-semibold text-lg text-white px-3 lg:px-12 py-3 rounded-[40px] ">
             <Link className="w-full  " href="/about-us">
-              Request a Family Mediation Appointment
+              Request a family mediation appointment
             </Link>
           </button>
         </div>
@@ -252,7 +252,7 @@ const page = () => {
       <section className="py-16 px-5 md:px-16 md:py-[80px] text-white bg-secondary">
         <div className="text-left md:text-center">
           <h2 className="text-4xl md:text-5xl font-medium max-w-[900px] mx-auto leading-[120%] mb-8 md:mb-[40px] !text-white">
-            Why Choose Global Mediation?
+            Why choose global mediation?
           </h2>
           <p className=" text-base md:text-lg leading-[150%] mb-[56px] md:mb-[78px]">
             We’ve worked with families across the UK for more than 25 years, supporting them through some of life’s most complex and
@@ -261,8 +261,16 @@ const page = () => {
           </p>
         </div>
         <div className="grid grid-cols-2 gap-8">
-          <div className="hidden md:block md:col-span-2 lg:col-span-1 rounded-3xl overflow-hidden h-[303px] lg:h-[403px] w-full  lg:max-w-[420px] bg-blue-900">
-            <Image alt="Why Choose Global Mediation for Workplace Conflicts" className="object-cover h-full w-full" src={wayChoose} />
+          <div className="relative h-[303px] mb-8 mt-4 lg:h-[403px]  block md:hidden col-span-2 md:col-span-1 rounded-3xl overflow-hidden">
+            <Image
+              className="object-cover object-bottom  w-full h-full relative z-0"
+              alt={'Experienced Leader In Mediation'}
+              src={wayChoose}
+            />
+          </div>
+
+          <div className="relative   lg:max-h-[403px] max-h-[353px]  h-[600px] mx-auto w-full lg:max-w-auto max-w-[600px] hidden md:block col-span-2 lg:col-span-1 rounded-3xl overflow-hidden">
+            <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={wayChoose} />
           </div>
           <div className="col-span-2 lg:col-span-1">
             <p className="mb-6 font-semibold text-lg md:text-2xl">Why families trust us:</p>
@@ -289,7 +297,7 @@ const page = () => {
       </section>
 
       <MediationCalculation />
-      <FeedbackCarousel title={'Testimonials from Families'} subTitle={null} fullWidth={true} />
+      <FeedbackCarousel title={'Testimonials from families'} subTitle={null} fullWidth={true} />
       <div className="bg-[#F9F8FF]">
         <CTA
           title={'Take the First Step'}
@@ -302,7 +310,7 @@ const page = () => {
           Button2Link={'/contact-us'}
         />
       </div>
-      <FAQ title={'FAQs About Family Mediation'} buttonText={'Ask Us a Question'} buttonLink={'/contact-us'} faqData={faqData} />
+      <FAQ title={'FAQs about family mediation'} buttonText={'Ask us a question'} buttonLink={'/contact-us'} faqData={faqData} />
     </div>
   );
 };

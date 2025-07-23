@@ -51,7 +51,7 @@ const page = () => {
         <Image src={overlay} className=" absolute top-0 left-0 w-full h-full object-cover" />
         <div className="w-full relative z-10 lg:max-w-[1318px] mx-auto">
           <h1 className="font-semibold tracking-[-4%] max-w-[900px] 2xl:max-w-[90%] leading-[120%] text-5xl md:text-[65px] xl:text-[4vw] text-white">
-            Civil & legal dispute mediation
+            Civil and legal dispute mediation
           </h1>
           <p className="text-white mt-[25px] md:mt-4 mb-[25px] mr-auto max-w-[700px] md:mb-10 w-[100%] font-normal text-base md:text-lg xl:text-xl">
             A practical, impartial way to resolve legal disagreements without the time, stress, and cost of going to court.
@@ -72,7 +72,7 @@ const page = () => {
       </header>
 
       <Introduction
-        title={'of civil & legal disputes'}
+        title={'civil & legal disputes'}
         image={overview}
         subtitle={
           'Legal disputes can be stressful, expensive, and time-consuming. Mediation offers a simpler route, one that puts you in control, avoids the courtroom, and supports better outcomes for all involved. Whether you’re facing a financial, property, or personal disagreement, civil mediation helps you reach a fair agreement, quickly and with less conflict.'
@@ -274,7 +274,7 @@ const page = () => {
       <section className="py-16 px-5 md:px-16 md:py-[80px] text-white bg-secondary">
         <div className="text-center">
           <h2 className="text-4xl md:text-5xl font-medium text-center max-w-[760px] mx-auto leading-[120%] mb-8 md:mb-[40px] !text-white">
-            Why Choose Global Mediation?
+            Why choose global mediation?
           </h2>
           <p className=" text-base md:text-lg leading-[150%] mb-[56px] md:mb-[78px]">
             We’ve helped resolve thousands of civil and legal disputes, with a calm, professional approach that saves time, reduces stress,
@@ -282,8 +282,16 @@ const page = () => {
           </p>
         </div>
         <div className="grid grid-cols-2 items-center gap-8">
-          <div className="hidden md:block md:col-span-2 lg:col-span-1 rounded-3xl overflow-hidden h-[303px] lg:h-[403px] w-full  lg:max-w-[420px] bg-blue-900">
-            <Image alt="Why Choose Global Mediation for Workplace Conflicts" className="object-cover h-full w-full" src={wayChoose} />
+          <div className="relative h-[303px] mb-8 mt-4 lg:h-[403px]  block md:hidden col-span-2 md:col-span-1 rounded-3xl overflow-hidden">
+            <Image
+              className="object-cover object-bottom  w-full h-full relative z-0"
+              alt={'Experienced Leader In Mediation'}
+              src={wayChoose}
+            />
+          </div>
+
+          <div className="relative   lg:max-h-[403px] max-h-[353px]  h-[600px] mx-auto w-full lg:max-w-auto max-w-[600px] hidden md:block col-span-2 lg:col-span-1 rounded-3xl overflow-hidden">
+            <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={wayChoose} />
           </div>
           <div className="col-span-2 lg:col-span-1">
             <p className="mb-6 font-semibold text-lg md:text-2xl">What sets us apart:</p>
@@ -314,7 +322,7 @@ const page = () => {
       </section>
 
       <MediationCalculation />
-      <FeedbackCarousel title={'What Clients Say'} subTitle={null} />
+      <FeedbackCarousel title={'What clients say'} subTitle={null} />
       {/* <Map /> */}
       <div className="bg-[#F9F8FF]">
         <CTA
@@ -328,7 +336,7 @@ const page = () => {
           Button2Link={'/contact-us'}
         />
       </div>
-      <FAQ title={'FAQs About Civil & Legal Mediation'} buttonText={'Ask us a question'} buttonLink={'/contact-us'} faqData={faqData} />
+      <FAQ title={'FAQs about civil and legal mediation'} buttonText={'Ask us a question'} buttonLink={'/contact-us'} faqData={faqData} />
     </div>
   );
 };

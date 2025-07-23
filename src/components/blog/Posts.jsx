@@ -53,9 +53,9 @@ const Posts = ({ articles }) => {
           <h3 className="font-medium mb-[20px]- md:mb-0 text-4xl md:text-5xl leading-[120%]">Blogs</h3>
           {/* <p className="font-normal text-[#667085] text-base md:text-[20px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p> */}
         </div>
-        <div>
+        {/* <div>
           <Button title={'View All'} padding="xlarge" href="/blogs" />
-        </div>
+        </div> */}
       </div>
       <div className="team-caousel">
         <div className="slider-container">
@@ -82,11 +82,11 @@ const Posts = ({ articles }) => {
                       >
                         {article?.title}
                       </h4>
-                      {article?.description && (
+                      {/* {article?.description && (
                         <p title={article?.description} className={`text-[#667085] leading-[150%] mb-6 text-lg font-normal`}>
                           {article?.description?.slice(0, 80) + '....'}
                         </p>
-                      )}
+                      )} */}
                       <Link
                         title="Read More"
                         href={`/blogs/blog/${article?.slug || article.id}`}

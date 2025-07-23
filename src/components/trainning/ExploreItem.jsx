@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 const exlopreItem = [
   {
-    title: 'Foundation Course in Mediation',
+    title: 'Foundation course in mediation',
     description:
       'A six-day course designed to equip you with the knowledge and skills to qualify as an accredited mediator. This programme blends theory with live practice, from the core stages of mediation to professional ethics and resolution strategies.',
     key: [
@@ -20,7 +20,7 @@ const exlopreItem = [
     buttonLink: '/contact-us',
   },
   {
-    title: 'SEND Mediation Training Course',
+    title: 'SEND mediation training course',
     description:
       'An advanced course for accredited mediators looking to specialise in special educational needs and disability (SEND). You’ll explore legal frameworks, local authority processes and SEND-specific mediation approaches.',
     key: [
@@ -33,7 +33,7 @@ const exlopreItem = [
     buttonLink: '/contact-us',
   },
   {
-    title: 'SEND Mediation: Professional Practice Day',
+    title: 'SEND mediation: Professional practice day',
     description:
       'Designed for practising SEND mediators who want to grow their skills. Engage in live role plays, structured feedback and peer discussion — all led by experienced trainers.',
     key: [

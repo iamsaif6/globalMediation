@@ -68,7 +68,7 @@ const page = () => {
         </div>
       </header>
       <Introduction
-        title={'of Community Disputes & Mediation'}
+        title={'community disputes and mediation'}
         image={overview}
         subtitle={
           'Disagreements in our communities can have a big impact — on wellbeing, relationships and daily life.Global Mediation provides a calm, neutral space to talk things through and find a positive way forward.Whether you’re dealing with a neighbour issue, noise complaint or local dispute, we’ll support you with care, fairness and respect.'
@@ -274,8 +274,16 @@ const page = () => {
           </p>
         </div>
         <div className="grid grid-cols-2 items-center gap-8">
-          <div className="hidden md:block md:col-span-2 lg:col-span-1 rounded-3xl overflow-hidden h-[303px] lg:h-[403px] w-full  lg:max-w-[420px] bg-blue-900">
-            <Image alt="Why Choose Global Mediation for Workplace Conflicts" className="object-cover h-full w-full" src={wayChoose} />
+          <div className="relative h-[303px] mb-8 mt-4 lg:h-[403px]  block md:hidden col-span-2 md:col-span-1 rounded-3xl overflow-hidden">
+            <Image
+              className="object-cover object-bottom  w-full h-full relative z-0"
+              alt={'Experienced Leader In Mediation'}
+              src={wayChoose}
+            />
+          </div>
+
+          <div className="relative   lg:max-h-[403px] max-h-[353px]  h-[600px] mx-auto w-full lg:max-w-auto max-w-[600px] hidden md:block col-span-2 lg:col-span-1 rounded-3xl overflow-hidden">
+            <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={wayChoose} />
           </div>
           <div className="col-span-2 lg:col-span-1">
             <p className="mb-6 font-semibold text-lg md:text-2xl">Why people trust us:</p>
@@ -304,7 +312,7 @@ const page = () => {
       </section>
 
       <MediationCalculation />
-      <FeedbackCarousel title={'What People Say'} subTitle={null} />
+      <FeedbackCarousel title={'What people say'} subTitle={null} />
       <div className="bg-[#F9F8FF]">
         <CTA
           title={'Ready to Resolve a Dispute?'}
@@ -315,7 +323,7 @@ const page = () => {
           Button2Link={'/contact-us'}
         />
       </div>
-      <FAQ title={'FAQs About Community Mediation'} buttonText={'Ask us a question'} buttonLink={'/contact-us'} faqData={faqData} />
+      <FAQ title={'FAQs about community mediation'} buttonText={'Ask us a question'} buttonLink={'/contact-us'} faqData={faqData} />
     </div>
   );
 };

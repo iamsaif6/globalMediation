@@ -15,9 +15,18 @@ const WhyChoose = () => {
         We work neutrally, respectfully, and professionally, to help your team move forward.
       </p>
       <div className="grid grid-cols-2 gap-8 items-center">
-        <div className="hidden md:block md:col-span-2 lg:col-span-1 rounded-3xl overflow-hidden h-[327px] w-full  lg:max-w-[420px] bg-blue-900">
-          <Image alt="Why Choose Global Mediation for Workplace Conflicts" className="object-cover h-full w-full" src={wayChoose} />
+        <div className="relative h-[303px] mb-8 mt-4 lg:h-[403px]  block md:hidden col-span-2 md:col-span-1 rounded-3xl overflow-hidden">
+          <Image
+            className="object-cover object-bottom  w-full h-full relative z-0"
+            alt={'Experienced Leader In Mediation'}
+            src={wayChoose}
+          />
         </div>
+
+        <div className="relative   lg:max-h-[403px] max-h-[353px]  h-[600px] mx-auto w-full lg:max-w-auto max-w-[600px] hidden md:block col-span-2 lg:col-span-1 rounded-3xl overflow-hidden">
+          <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={wayChoose} />
+        </div>
+
         <div className="col-span-2 lg:col-span-1">
           <p className="mb-6 font-semibold text-lg md:text-2xl">Key advantages:</p>
           <ul className="space-y-6 text-base md:text-[20px]">

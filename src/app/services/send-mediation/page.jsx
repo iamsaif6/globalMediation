@@ -54,7 +54,7 @@ const page = () => {
         <Image alt="Overlay" src={overlay} className=" absolute top-0 left-0 w-full h-full object-cover" />
         <div className="w-full relative z-10 lg:max-w-[1318px] mx-auto">
           <h1 className="font-semibold tracking-[-4%] max-w-[900px] 2xl:max-w-[90%] leading-[120%] text-5xl md:text-[65px] xl:text-[4vw] text-white">
-            SEND Mediation
+            SEND mediation
           </h1>
           <p className="text-white mt-[25px] md:mt-4 mb-[25px] mr-auto max-w-[700px] md:mb-10 w-[100%] font-normal text-base md:text-lg xl:text-xl">
             Specialist mediation to help resolve disagreements around Special Educational Needs and Disabilities (SEND), including EHCPs,
@@ -78,7 +78,7 @@ const page = () => {
       </header>
 
       <Introduction
-        title={'of SEND Mediation'}
+        title={'SEND mediation'}
         image={service1}
         subtitle={
           'SEND disputes can be stressful and emotionally overwhelming, especially when they involve the wellbeing or education of a child or young person. Whether the situation involves formal EHCP decisions, appeals, or long-standing breakdowns in communication, our experienced mediators offer impartial, trusted support every step of the way.  Our experienced mediators help families, young people, and local authorities work together to find respectful, balanced outcomes, with the child’s needs always at the centre.'
@@ -135,7 +135,7 @@ const page = () => {
                     <div className="flex justify-center md:block">
                       <button className=" bg-white  mt-10  font-semibold text-lg text-black px-12 py-3 rounded-[40px] ">
                         <Link className="w-full  " href="/contact-us">
-                          Book Send Mediation
+                          Book send mediation
                         </Link>
                       </button>
                     </div>
@@ -251,7 +251,7 @@ const page = () => {
           </div>
         </div>
         <div className="flex justify-center">
-          <Button padding="small" title={'Request a SEND Mediation Appointment'} href="/about-us" />
+          <Button padding="small" title={'Request a SEND mediation appointment'} href="/about-us" />
         </div>
       </section>
 
@@ -259,7 +259,7 @@ const page = () => {
 
       <section className="py-16 px-5 md:px-16 md:py-[80px] text-white bg-secondary">
         <h2 className="text-4xl md:text-5xl font-medium text-left md:text-center max-w-[760px] mx-auto leading-[120%] mb-8 md:mb-[78px] !text-white">
-          Why Choose Global Mediation for SEND?
+          Why choose global mediation for SEND?
         </h2>
         <p className="text-base md:text-lg md:text-center  leading-[150%] mb-[56px] md:mb-[78px]">
           We’ve helped thousands of families and local authorities resolve complex, emotionally sensitive disputes, with empathy,
@@ -267,9 +267,17 @@ const page = () => {
           Our SEND mediation team includes experienced specialists with lived experience of the education system, disability, and youth
           support services.
         </p>
-        <div className="grid grid-cols-2 gap-8">
-          <div className="hidden md:block md:col-span-2 lg:col-span-1 rounded-3xl overflow-hidden h-[327px] w-full  lg:max-w-[420px] bg-blue-900">
-            <Image alt="Why Choose Global Mediation for Workplace Conflicts" className="object-cover h-full w-full" src={wayChoose} />
+        <div className="grid grid-cols-2 gap-8 items-center">
+          <div className="relative h-[303px] mb-8 mt-4 lg:h-[403px]  block md:hidden col-span-2 md:col-span-1 rounded-3xl overflow-hidden">
+            <Image
+              className="object-cover object-bottom  w-full h-full relative z-0"
+              alt={'Experienced Leader In Mediation'}
+              src={wayChoose}
+            />
+          </div>
+
+          <div className="relative  lg:max-h-[403px] max-h-[353px]  h-[600px] mx-auto w-full lg:max-w-auto max-w-[600px] hidden md:block col-span-2 lg:col-span-1 rounded-3xl overflow-hidden">
+            <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={wayChoose} />
           </div>
           <div className="col-span-2 lg:col-span-1">
             <p className="mb-6 font-semibold text-lg md:text-2xl">Why people trust us:</p>
@@ -296,7 +304,7 @@ const page = () => {
       </section>
 
       <MediationCalculation />
-      <FeedbackCarousel title={'What Parents & Young People Say'} subTitle={null} fullWidth={true} />
+      <FeedbackCarousel title={'What parents and young people say'} subTitle={null} fullWidth={true} />
       <div className="bg-[#F9F8FF]">
         <CTA
           title={'Start Your SEND Mediation Journey'}
@@ -308,8 +316,8 @@ const page = () => {
         />
       </div>
       <FAQ
-        title={'FAQs About SEND Mediation'}
-        buttonText={'Speak to a SEND Mediation Specialist'}
+        title={'FAQs about SEND mediation'}
+        buttonText={'Speak to a SEND mediation specialist'}
         buttonLink={'/contact-us'}
         faqData={faqData}
       />

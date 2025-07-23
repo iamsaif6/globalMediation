@@ -111,7 +111,6 @@ const page = () => {
             ))}
           </div>
           <div className="col-span-2 order-1 lg:col-span-1 overflow-hidden   max-h-[303px] lg:max-h-[403px] rounded-[40px] relative">
-            <div className={`absolute inset-0  z-10`}></div>
             {item?.image && <Image className="object-cover w-full h-full relative z-0" alt={item.title} src={item?.image} />}
           </div>
         </div>
@@ -137,10 +136,14 @@ const page = () => {
           <p className="mb-[32px] md:mb-[60px] text-black text-base md:text-lg leading-[150%] my-6">{item2.subtitle}</p>
         </div>
         <div className="grid grid-cols-2 items-center  gap-8 md:gap-[100px]">
-          <div className="col-span-2 order-0 lg:col-span-1 overflow-hidden   max-h-[303px] lg:max-h-[403px] rounded-[40px] relative">
-            <div className={`absolute inset-0  z-10`}></div>
+          <div className="relative lg:max-h-[403px] max-h-[353px]  h-[600px] mx-auto w-full lg:max-w-auto max-w-[600px] hidden md:block col-span-2 lg:col-span-1 rounded-3xl overflow-hidden">
             {item2?.image && <Image className="object-cover w-full h-full relative z-0" alt={item2.title} src={item2?.image} />}
           </div>
+
+          <div className="relative h-[303px] mb-8 mt-4 lg:h-[403px]  block md:hidden col-span-2 md:col-span-1 rounded-3xl overflow-hidden">
+            {item2?.image && <Image className="object-cover w-full h-full relative z-0" alt={item2.title} src={item2?.image} />}
+          </div>
+
           <div className={` col-span-2 lg:col-span-1`}>
             {item2.service.map(li => (
               <div
@@ -170,13 +173,16 @@ const page = () => {
       <div className={` py-16 md:py-[80px] px-5 md:px-[60px]`}>
         <div className="text-left md:text-center">
           <h2 className="w-full  mb-14 font-medium text-4xl md:text-5xl leading-[120%] ">{item3.title}</h2>
-          {/* <p className="mb-[32px] md:mb-[60px] text-black text-base md:text-lg leading-[150%] my-6">{item2.subtitle}</p> */}
         </div>
         <div className="grid grid-cols-2 items-center  gap-8 md:gap-[100px]">
-          <div className="col-span-2 order-1 lg:col-span-1 overflow-hidden   max-h-[303px] lg:max-h-[403px] rounded-[40px] relative">
-            <div className={`absolute inset-0  z-10`}></div>
+          <div className="relative   lg:max-h-[403px] max-h-[353px]  h-[600px] mx-auto w-full lg:max-w-auto max-w-[600px] hidden md:block col-span-2 lg:col-span-1 rounded-3xl overflow-hidden">
             {item3?.image && <Image className="object-cover w-full h-full relative z-0" alt={item3.title} src={item3?.image} />}
           </div>
+
+          <div className="relative h-[303px] mb-8 mt-4 lg:h-[403px]  block md:hidden col-span-2 md:col-span-1 rounded-3xl overflow-hidden">
+            {item3?.image && <Image className="object-cover w-full h-full relative z-0" alt={item3.title} src={item3?.image} />}
+          </div>
+
           <div className={` col-span-2 lg:col-span-1`}>
             {item3.service.map(li => (
               <div
@@ -199,7 +205,7 @@ const page = () => {
       </div>
       <MediationCalculation />
 
-      <FAQ title={'FAQs About Business and Commercial Mediation'} buttonText={'Contact Us'} buttonLink={'/contact-us'} faqData={faqData} />
+      <FAQ title={'FAQs about business and commercial mediation'} buttonText={'Contact us'} buttonLink={'/contact-us'} faqData={faqData} />
       <div className="bg-[#F9F8FF]">
         <CTA
           title={'Start the conversation'}

@@ -34,7 +34,7 @@ const WhyMediation = () => {
         </div>
         <div className="text-white col-span-2 lg:col-span-1">
           <h2 className="leading-[120%] w-[90%] md:w-full font-medium text-4xl md:text-5xl mb-5 md:mb-5 !text-white">
-            Why Global Mediation
+            Why global mediation
           </h2>
           <p className="font-normal text-base md:text-lg leading-[150%]">
             Every situation is different. That’s why our trained mediators bring empathy, curiosity and real-world experience. With over 25
