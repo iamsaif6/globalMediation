@@ -1,7 +1,8 @@
 import React from 'react';
 
-const SectionHeading = ({ title, subTitle, center = false, light = false, fullWidth, className }) => {
+const SectionHeading = ({ title, subTitle, center = false, light = false, fullWidth, className, capitalize }) => {
   function normalizeTitleCase(text) {
+    if (!capitalize) return text;
     if (!text) return '';
     return text.charAt(0).toUpperCase() + text.slice(1).toLowerCase();
   }

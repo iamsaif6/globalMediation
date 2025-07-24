@@ -4,7 +4,14 @@ import SectionHeading from '../shared/SectionHeading';
 const Benifit = () => {
   return (
     <section className="py-16 px-5 md:px-16 md:py-[80px]">
-      <SectionHeading title={'Benefits of using DARS'} fullWidth={true} />
+      {/* <SectionHeading title={'Benefits of using DARS'} fullWidth={true} /> */}
+
+      <div className={`  max-w-[1200px] mx-auto   md:text-center `}>
+        <h2 className={`font-medium w-full   mx-auto leading-[120%] tracking-[-4%] text-4xl text-center  md:text-5xl mb-5 md:mb-6 `}>
+          Benefits of using DARS
+        </h2>
+      </div>
+
       <div className="grid grid-cols-2 gap-[54px] mt-[80px]">
         <div className="gap-6 flex col-span-2 md:col-span-1">
           <div className="h-11 flex-shrink-0 flex items-center justify-center w-11 rounded-full border-[0.8px] border-secondary">

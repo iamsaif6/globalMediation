@@ -66,7 +66,7 @@ const item3 = {
 };
 
 const item = {
-  title: 'Why choose global mediation',
+  title: 'Why choose Global Mediation',
   subtitle:
     'At Global Mediation, our experienced mediators bring commercial awareness, emotional intelligence and sensitivity to every case. We help companies avoid court, protect relationships and co-create outcomes that work — for today and the long term.',
   service: [

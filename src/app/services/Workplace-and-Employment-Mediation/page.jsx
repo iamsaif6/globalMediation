@@ -164,7 +164,7 @@ const page = () => {
             <h1 className="font-medium text-4xl md:text-5xl leading-[120%]">Workplace and employment disputes</h1>
             <p className="text-black  text-base md:text-lg leading-[150%] my-6">
               Conflicts at work can arise for many reasons — between colleagues, teams, or management. Left unresolved, they can lead to
-              formal complaints, lost productivity, and long-term relationship breakdowns.Workplace mediation offers a way to address those
+              formal complaints, lost productivity, and long-term relationship breakdowns. Workplace mediation offers a way to address those
               issues quickly and constructively.
               <br /> <br />
               It provides a neutral, confidential setting for all parties to feel heard, explore options, and agree on a way forward.
@@ -217,10 +217,11 @@ const page = () => {
       <FAQ title={'FAQs about workplace mediation'} buttonText={'Contact us'} buttonLink={'/contact-us'} faqData={faqData} />
       <div className="bg-[#F9F8FF]">
         <CTA
-          title={'Learn More About Global Mediation'}
+          title={'Learn more about Global Mediation'}
           subTitle={'For more information about our services, team, training programs, or career opportunities, get in touch with us:'}
           Button1Link={'/contact-us'}
           Button1Text={'Contact us today'}
+          capitalize={false}
         />
       </div>
     </div>

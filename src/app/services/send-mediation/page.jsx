@@ -94,7 +94,7 @@ const page = () => {
 
       <section className="py-10 md:py-[80px] bg-secondary text-white">
         <div className="px-5 md:px-16 lg:mb-[120px] ">
-          <SectionHeading className={'!text-white'} fullWidth title={'Types of SEND Disputes We Support'} />
+          <SectionHeading className={'!text-white'} fullWidth title={'Types of SEND disputes we support'} />
         </div>
         <div className="mt-[12px] md:mt-[54px]">
           <div className="flex flex-col w-full">
@@ -135,7 +135,7 @@ const page = () => {
                     <div className="flex justify-center md:block">
                       <button className=" bg-white  mt-10  font-semibold text-lg text-black px-12 py-3 rounded-[40px] ">
                         <Link className="w-full  " href="/contact-us">
-                          Book send mediation
+                          Book SEND mediation
                         </Link>
                       </button>
                     </div>
@@ -217,7 +217,7 @@ const page = () => {
 
       <section className="py-10 px-5 md:px-16 md:py-[80px]">
         <SectionHeading
-          title={'Understanding the SEND Mediation Process'}
+          title={'Understanding the SEND mediation process'}
           subTitle={
             'Our role is to support everyone involved in reaching a fair outcome, one that respects the voices of the child, their family, and the professionals supporting them.'
           }
@@ -259,7 +259,7 @@ const page = () => {
 
       <section className="py-16 px-5 md:px-16 md:py-[80px] text-white bg-secondary">
         <h2 className="text-4xl md:text-5xl font-medium text-left md:text-center max-w-[760px] mx-auto leading-[120%] mb-8 md:mb-[78px] !text-white">
-          Why choose global mediation for SEND?
+          Why choose Global Mediation for SEND?
         </h2>
         <p className="text-base md:text-lg md:text-center  leading-[150%] mb-[56px] md:mb-[78px]">
           We’ve helped thousands of families and local authorities resolve complex, emotionally sensitive disputes, with empathy,
@@ -307,12 +307,13 @@ const page = () => {
       <FeedbackCarousel title={'What parents and young people say'} subTitle={null} fullWidth={true} />
       <div className="bg-[#F9F8FF]">
         <CTA
-          title={'Start Your SEND Mediation Journey'}
+          title={'Start your SEND mediation journey'}
           subTitle={'If you’re a parent, carer, young person or professional needing support with a SEND disagreement, we’re here to help.'}
           Button1Link={'/contact-us'}
           Button1Text={'Book a Session'}
           Button2Text={'Contact Our SEND Team'}
           Button2Link={'/contact-us'}
+          capitalize={false}
         />
       </div>
       <FAQ

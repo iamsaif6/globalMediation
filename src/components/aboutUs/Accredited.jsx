@@ -59,7 +59,7 @@ const Accredited = () => {
                 className="flex duration-200 hover:bg-secondary hover:text-white hover:border-secondary items-center text-black rounded-xl text-base md:text-lg justify-between p-4 md:p-[21px] border border-[#DAD3FF]"
                 href={'#'}
               >
-                <span>Civil mediation council</span>
+                <span>Civil Mediation Council</span>
                 <ArrowUpRight strokeWidth={1.3} />
               </Link>
             </li>
@@ -69,7 +69,7 @@ const Accredited = () => {
                 className="flex duration-200 hover:bg-secondary hover:text-white hover:border-secondary items-center text-black rounded-xl text-base md:text-lg justify-between p-4 md:p-[21px] border border-[#DAD3FF]"
                 href={'#'}
               >
-                <span>College of mediators</span>
+                <span>College of Mediators</span>
                 <ArrowUpRight strokeWidth={1.3} />
               </Link>
             </li>

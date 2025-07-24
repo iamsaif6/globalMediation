@@ -44,7 +44,7 @@ const MainServices = () => {
       >
         <div className="w-full relative z-10 lg:max-w-[1318px] mx-auto">
           <h1 className="font-semibold tracking-[-4%] max-w-[900px] 2xl:max-w-[90%] leading-[120%] text-5xl md:text-[65px] xl:text-[4vw] !text-white">
-            Global mediation services
+            Global Mediation services
           </h1>
           <p className="text-white mt-[25px] md:mt-4 mb-[25px] mr-auto max-w-[700px] md:mb-10 w-[100%] font-normal text-base md:text-lg xl:text-xl">
             Professional mediation services to resolve disputes with empathy, clarity and care.

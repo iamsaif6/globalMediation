@@ -10,7 +10,7 @@ const OverView = () => {
           <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={service1} />
         </div>
         <div className="col-span-2 lg:col-span-1">
-          <h2 className="font-medium text-4xl md:text-5xl leading-[120%]">Overview : Dispute adjudication and resolution service (DARS)</h2>
+          <h2 className="font-medium text-4xl md:text-5xl leading-[120%]">Dispute adjudication and resolution service (DARS)</h2>
           <p className="text-[#667085] text-base md:text-lg leading-[150%] my-6">
             The Dispute Adjudication and Resolution Service (DARS) is a formal process designed to help people resolve complex
             disagreements, particularly where mediation hasn’t been possible or successful. <br /> <br /> DARS offers a structured,

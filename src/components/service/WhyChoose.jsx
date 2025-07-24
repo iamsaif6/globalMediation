@@ -6,7 +6,7 @@ const WhyChoose = () => {
   return (
     <section className="py-16 px-5 md:px-16 md:py-[80px] text-white bg-secondary">
       <h1 className="text-4xl md:text-5xl font-medium text-center max-w-[760px] mx-auto leading-[120%] mb-8 md:mb-[38px]">
-        Why choose global mediation for workplace conflicts?
+        Why choose Global Mediation for workplace conflicts?
       </h1>
       <p className=" text-lg text-center md:text-[20px] leading-[150%] mb-[56px] md:mb-[78px]">
         At Global Mediation, we understand the pressures and sensitivities involved in workplace dynamics. <br />

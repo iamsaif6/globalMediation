@@ -1,5 +1,5 @@
 import React from 'react';
-import teamBG from '/public/65.png';
+import teamBG from '/public/65.jpg';
 import Link from 'next/link';
 import { ArrowUpRight } from 'lucide-react';
 
@@ -17,7 +17,7 @@ const JoinGlobalTeam = () => {
       <div className="grid grid-cols-2 text-white gap-[80px]">
         <div className="col-span-2 lg:col-span-1">
           <p className="text-base  font-medium">Careers</p>
-          <h2 className="text-4xl md:text-5xl font-medium my-4 !text-white">Careers at global mediation</h2>
+          <h2 className="text-4xl md:text-5xl font-medium my-4 !text-white">Careers at Global Mediation</h2>
           <p className="text-base md:text-lg leading-[150%]">
             Want to help people navigate conflict with confidence and compassion? We are always looking for skilled, empathetic
             professionals to join our growing team of mediators and trainers.

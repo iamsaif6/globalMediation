@@ -4,9 +4,16 @@ import React from 'react';
 const KeyFeature = () => {
   return (
     <section className="py-16 px-5 md:px-16 md:py-[80px] bg-secondary">
-      <SectionHeading title={'Key Features of DARS'} light={true} center fullWidth={true} />
+      {/* <SectionHeading title={'Key Features of DARS'} light={true} center fullWidth={true} /> */}
+      <div className={`  max-w-[1200px] mx-auto   md:text-center `}>
+        <h2
+          className={`font-medium w-full !text-white   mx-auto leading-[120%] tracking-[-4%] text-4xl text-center  md:text-5xl mb-5 md:mb-6 `}
+        >
+          Key features of DARS
+        </h2>
+      </div>
       <div className="mt-[80px]">
-        <h4 className="text-2xl font-medium text-center text-white mb-10">Core values</h4>
+        <h4 className="text-2xl font-medium text-center text-white mb-10">Key information</h4>
         <div className="grid grid-cols-4 gap-6 md:gap-8">
           <div className="p-6 col-span-4 md:col-span-2 lg:col-span-1 border duration-200 hover:bg-primary hover:border-primary border-[#624A70] rounded-3xl">
             <div className="mt-3 mb-4">
@@ -17,7 +24,7 @@ const KeyFeature = () => {
                 />
               </svg>
             </div>
-            <p className="font-medium text-white text-2xl">Exclusive to northern Ireland</p>
+            <p className="font-medium text-white text-2xl">Exclusive to Northern Ireland</p>
             <p className=" text-lg text-white   mt-6 font-normal">Tailored to the specific needs and frameworks of the region.</p>
           </div>
           <div className="p-6 col-span-4 md:col-span-2 lg:col-span-1 border duration-200 hover:bg-primary hover:border-primary border-[#624A70] rounded-3xl">

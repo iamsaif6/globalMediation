@@ -7,7 +7,7 @@ const HowWeWork = () => {
   return (
     <section className="py-10 px-5 md:px-16 md:py-[80px]">
       <SectionHeading
-        title={'How to apply for Our training programmes'}
+        title={'How we work'}
         // subTitle={'Ready to take the next step in your mediation career? Applying is simple:'}
         fullWidth={true}
       />

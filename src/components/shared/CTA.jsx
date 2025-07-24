@@ -1,8 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
 
-const CTA = ({ title, subTitle, Button1Text, Button1Link, Button2Text, Button2Link, className }) => {
+const CTA = ({ title, subTitle, Button1Text, Button1Link, Button2Text, Button2Link, className, capitalize }) => {
   function normalizeTitleCase(text) {
+    if (!capitalize) return text;
     if (!text) return '';
     return text.charAt(0).toUpperCase() + text.slice(1).toLowerCase();
   }
