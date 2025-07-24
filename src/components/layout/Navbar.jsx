@@ -244,7 +244,7 @@ const Navbar = () => {
                   </clipPath>
                 </defs>
               </svg> */}
-                <Image className="max-w-[150px] w-full md:max-w-[250px]" alt="Mediation Logo" width={250} height={250} src={logo} />
+                <Image className="max-w-[150px] w-full md:max-w-[220px]" alt="Mediation Logo" width={250} height={250} src={logo} />
               </Link>
               <ul className="lg:flex relative hidden gap-6 text-secondary font-normal text-lg items-center">
                 {navLinks.map(link => {
