@@ -9,10 +9,9 @@ const WhyChoose = () => {
         Why choose Global Mediation for workplace conflicts?
       </h1>
       <p className=" text-lg text-center md:text-[20px] leading-[150%] mb-[56px] md:mb-[78px]">
-        At Global Mediation, we understand the pressures and sensitivities involved in workplace dynamics. <br />
-        Our accredited mediators bring a wealth of experience working across organisations of all sizes and sectors, supporting positive,
-        lasting change. <br />
-        We work neutrally, respectfully, and professionally, to help your team move forward.
+        At Global Mediation, we understand the pressures and sensitivities involved in workplace dynamics. Our accredited mediators bring a
+        wealth of experience working across organisations of all sizes and sectors, supporting positive, lasting change. We work neutrally,
+        respectfully, and professionally, to help your team move forward.
       </p>
       <div className="grid grid-cols-2 gap-8 items-center">
         <div className="relative h-[303px] mb-8 mt-4 lg:h-[403px]  block md:hidden col-span-2 md:col-span-1 rounded-3xl overflow-hidden">

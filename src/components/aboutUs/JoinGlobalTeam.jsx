@@ -27,20 +27,29 @@ const JoinGlobalTeam = () => {
           <h3 className="text-2xl font-medium mb-8 !text-white">Current opportunities:</h3>
           <ul className="text-white text-base md:text-lg">
             <li>
-              <Link href={'#'} className="flex border-t border-[#B4ABAB] py-[18px] pr-[13px] items-center justify-between">
+              <Link
+                href="mailto:sen@globalmediaiton.co.uk?subject=Accredited%20mediators%20opportunity"
+                className="flex border-t border-[#B4ABAB] py-[18px] pr-[13px] items-center justify-between"
+              >
                 <span>Accredited mediators</span>
                 <ArrowUpRight strokeWidth={1.3} />
               </Link>
             </li>
             <li>
-              <Link href={'#'} className="flex border-t border-[#B4ABAB] py-[18px] pr-[13px] items-center justify-between">
+              <Link
+                href="mailto:sen@globalmediaiton.co.uk?subject=Mediation%20trainers%20opportunity"
+                className="flex border-t border-[#B4ABAB] py-[18px] pr-[13px] items-center justify-between"
+              >
                 <span>Mediation trainers</span>
                 <ArrowUpRight strokeWidth={1.3} />
               </Link>
             </li>
             <li>
-              <Link href={'#'} className="flex border-t border-b border-[#B4ABAB] py-[18px] pr-[13px] items-center justify-between">
-                <span>Accredited mediators</span>
+              <Link
+                href="mailto:sen@globalmediaiton.co.uk?subject=Administration%20opportunity"
+                className="flex border-t border-b border-[#B4ABAB] py-[18px] pr-[13px] items-center justify-between"
+              >
+                <span>Administration</span>
                 <ArrowUpRight strokeWidth={1.3} />
               </Link>
             </li>

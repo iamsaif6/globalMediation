@@ -303,7 +303,7 @@ const page = () => {
                 </p>
               </li>
               <li className="flex items-center gap-6 py-4 px-[18px] md:px-6 rounded-xl border border-[#624A70]">
-                <span className="w-[10px] flex-shrink-0 h-[10px] rounded-full bg-primary block"></span>
+                <span className="w-[10px] flex-shrink-0 h-[10px] rounded-full group-hover:bg-primary  bg-white block"></span>
                 <p className="text-base md:text-lg font-normal leading-[140%]">Focused on helping people live together more peacefully</p>
               </li>
             </ul>
