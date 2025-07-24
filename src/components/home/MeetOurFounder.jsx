@@ -9,11 +9,12 @@ const MeetOurFounder = () => {
         <Image src={Adam} className="w-full h-full object-cover object-center" />
       </div>
       <div className="text-white">
+        <p className="font-semibold text-2xl mb-5">Adam Gersch</p>
         <p className="text-xl lg::text-2xl">
           Adam is a practising criminal barrister and CEDR-accredited mediator who founded Global Mediation in 1999. He oversees the
           organisation’s strategic direction and brings decades of legal and mediation experience from the UK and US.
         </p>
-        <p className="font-bold text-2xl mt-10"> Founder & CEO</p>
+        <p className="font-semibold text-xl mt-10"> Founder & CEO</p>
       </div>
     </div>
   );

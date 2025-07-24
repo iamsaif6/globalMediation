@@ -8,7 +8,7 @@ import Image from 'next/image';
 const resourceSubMenu = [
   { title: 'Blogs', href: '/blogs' },
   { title: 'FAQ', href: '/faq' },
-  { title: 'Case studies', href: '/case-studies' },
+  // { title: 'Case studies', href: '/case-studies' },
   { title: 'Guides', href: '/guides' },
 ];
 
@@ -69,7 +69,7 @@ const navLinksForMobile = [
     megaMenuItems: [
       { title: 'Blog', href: '/blogs' },
       { title: 'FAQ', href: '/faq' },
-      { title: 'Case studies', href: '/case-studies' },
+      // { title: 'Case studies', href: '/case-studies' },
       { title: 'Guides', href: '/guides' },
     ],
   },
