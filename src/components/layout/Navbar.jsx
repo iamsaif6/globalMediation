@@ -193,11 +193,11 @@ const Navbar = () => {
 
   return (
     <>
-      <div className={` ${scrolled ? 'bg-white' : 'bg-transparent'} fixed z-[50] pb-5 left-0 top-0 w-full`}>
+      <div className={` ${scrolled ? 'bg-white top-0' : 'bg-transparent top-5'} fixed z-[50] duration-200  left-0 top-0 w-full`}>
         <nav
           className={`${
             scrolled ? 'border-transparent' : 'bg-transparent'
-          } lg:max-w-[1318px] rounded-[20px] border-[0.5px] border-primary  w-full bg-white max-w-[90%] mx-auto mt-5 lg:rounded-4xl overflow-hidden`}
+          } lg:max-w-[1318px] sticky top-0 rounded-[20px] border-[0.5px] border-primary duration-200  w-full bg-white max-w-[90%] mx-auto lg:rounded-4xl overflow-hidden`}
         >
           <div className="flex items-center justify-between  lg:pl-9 px-[18px] lg:px-3">
             <div className="flex items-center gap-10 relative">
