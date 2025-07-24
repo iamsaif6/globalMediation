@@ -252,7 +252,7 @@ const Navbar = () => {
                     <li key={link.href}>
                       <Link
                         href={link?.href}
-                        className={`px-2 py-[20px] lg:py-7 flex items-center ${link?.hasMegaMenu ? 'gap-1' : ''}`}
+                        className={`px-2 py-[20px] lg:py-6 flex items-center ${link?.hasMegaMenu ? 'gap-1' : ''}`}
                         onMouseEnter={() =>
                           (link?.hasMegaMenu && link.title == 'Resources' && setActiveMenu2(true)) ||
                           (link.title == 'Services' && setActiveMenu(true)) ||
@@ -291,7 +291,7 @@ const Navbar = () => {
                 <button>
                   <Link
                     target="_blank"
-                    className={`px-6 py-[20px] text-secondary lg:py-7 text-lg flex items-center`}
+                    className={`px-6 py-[20px] text-secondary lg:py-6 text-lg flex items-center`}
                     href="https://portal.globalmediation.co.uk/login/"
                   >
                     Login
