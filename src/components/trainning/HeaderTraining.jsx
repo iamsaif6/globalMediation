@@ -58,7 +58,7 @@ export const HeaderTraining = () => {
             Enquire today
           </button>
 
-          <button className="  bg-transparent font-semibold border border-white text-lg text-[#FCFCFD] px-3 md:px-[48px] py-3 rounded-[40px] ">
+          <button className="bg-secondary font-semibold border border-secondary text-lg text-[#FCFCFD] px-3 md:px-[48px] py-3 rounded-[40px] ">
             <Link title="Contact Us for Upcoming Course Dates" className="w-full  " href={'/contact-us'}>
               Contact us for upcoming course dates
             </Link>

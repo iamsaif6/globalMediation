@@ -14,7 +14,7 @@ const LearnMore = () => {
       />
       <div className="grid grid-cols-4 gap-3 mt-16">
         <div className="border flex flex-col col-span-4 border-[#EBE5E5] md:col-span-2 hover:border-[#DAD3FF] lg:col-span-1  rounded-3xl py-[34px]">
-          <div className="p-[38px] pb-0 pt-0 flex justify-end">
+          <div className="p-[20px] pb-0 pt-0 flex gap-4 lg:gap-0 items-center lg:justify-end">
             <svg xmlns="http://www.w3.org/2000/svg" width="69" height="69" viewBox="0 0 69 69" fill="none">
               <path
                 d="M43.7891 41.1523C43.2498 41.1523 42.8125 41.5896 42.8125 42.1289V48.8672C42.8125 51.5596 40.6221 53.75 37.9297 53.75H27.3859C26.8468 53.75 26.4098 54.1868 26.4094 54.7259L26.408 56.6675L24.0771 54.3367C23.9263 53.9903 23.581 53.75 23.1815 53.75H16.8359C14.1436 53.75 11.9531 51.5596 11.9531 48.8672V33.8281C11.9531 31.1357 14.1436 28.9453 16.8359 28.9453H26.6992C27.2385 28.9453 27.6758 28.5081 27.6758 27.9688C27.6758 27.4294 27.2385 26.9922 26.6992 26.9922H16.8359C13.0666 26.9922 10 30.0588 10 33.8281V48.8672C10 52.6365 13.0666 55.7031 16.8359 55.7031H22.6814L26.6923 59.714C26.8791 59.9008 27.1288 60 27.383 60C27.5087 60 27.6355 59.9757 27.7562 59.9258C28.1211 59.7748 28.3591 59.4189 28.3594 59.0241L28.3617 55.7031H37.9297C41.699 55.7031 44.7656 52.6365 44.7656 48.8672V42.1289C44.7656 41.5896 44.3283 41.1523 43.7891 41.1523Z"
@@ -49,10 +49,11 @@ const LearnMore = () => {
                 fill="#43006A"
               />
             </svg>
+            <h4 className="text-[#101828] block lg:hidden font-medium  text-2xl">FAQ</h4>
           </div>
           <div className="p-6 flex-grow flex flex-col">
             <div className="flex flex-col flex-grow mb-8">
-              <h4 className="text-[#101828] font-medium mb-2 text-2xl">FAQ</h4>
+              <h4 className="text-[#101828] hidden lg:block font-medium mb-2 text-2xl">FAQ</h4>
               <p className="text-[#101828] text-base md:text-lg font-normal">Find answers to common questions</p>
             </div>
             <Link
@@ -65,7 +66,7 @@ const LearnMore = () => {
           </div>
         </div>
         <div className="border flex flex-col col-span-4 border-[#EBE5E5] hover:border-[#DAD3FF] md:col-span-2 hover:border-[#DAD3F lg:col-span-1  rounded-3xl py-[34px]">
-          <div className="p-[38px] pb-0 pt-0 flex justify-end">
+          <div className="p-[20px] pb-0 pt-0 flex gap-4 lg:gap-0 items-center lg:justify-end">
             <svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" viewBox="0 0 66 66" fill="none">
               <path
                 d="M33.0102 4.4698C33.4802 4.4698 33.8602 4.0898 33.8602 3.6198V1.8998C33.8602 1.4298 33.4802 1.0498 33.0102 1.0498C32.5402 1.0498 32.1602 1.4298 32.1602 1.8998V3.6198C32.1602 4.0898 32.5402 4.4698 33.0102 4.4698Z"
@@ -104,10 +105,11 @@ const LearnMore = () => {
                 fill="#43006A"
               />
             </svg>
+            <h4 className="text-[#101828] block lg:hidden font-medium mb-2 text-2xl">Case studies</h4>
           </div>
           <div className="p-6 flex-grow flex flex-col">
             <div className="flex flex-col flex-grow mb-8">
-              <h4 className="text-[#101828] font-medium mb-2 text-2xl">Case studies</h4>
+              <h4 className="text-[#101828] hidden lg:block font-medium mb-2 text-2xl">Case studies</h4>
               <p className="text-[#101828] text-base md:text-lg font-normal">Real examples of successful mediation</p>
             </div>
             <Link
@@ -120,7 +122,7 @@ const LearnMore = () => {
           </div>
         </div>
         <div className="border flex flex-col col-span-4 border-[#EBE5E5] hover:border-[#DAD3FF] md:col-span-2 hover:border-[#DAD3F lg:col-span-1  rounded-3xl py-[34px]">
-          <div className="p-[38px] pb-0 pt-0 flex justify-end">
+          <div className="p-[20px] pb-0 pt-0 flex gap-4 lg:gap-0 items-center lg:justify-end">
             <svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" viewBox="0 0 66 66" fill="none">
               <g clipPath="url(#clip0_6164_8220)">
                 <path
@@ -158,10 +160,11 @@ const LearnMore = () => {
                 </clipPath>
               </defs>
             </svg>
+            <h4 className="text-[#101828] block lg:hidden font-medium mb-2 text-2xl">Guides</h4>
           </div>
           <div className="p-6 flex-grow flex flex-col">
             <div className="flex flex-col flex-grow mb-8">
-              <h4 className="text-[#101828] font-medium mb-2 text-2xl">Guides</h4>
+              <h4 className="text-[#101828] hidden lg:block font-medium mb-2 text-2xl">Guides</h4>
               <p className="text-[#101828] text-base md:text-lg font-normal">Downloadable prep and tips</p>
             </div>
             <Link
@@ -174,17 +177,18 @@ const LearnMore = () => {
           </div>
         </div>
         <div className="border flex flex-col col-span-4 border-[#EBE5E5] hover:border-[#DAD3FF] md:col-span-2 hover:border-[#DAD3F lg:col-span-1  rounded-3xl py-[34px]">
-          <div className="p-[38px] pb-0 pt-0 flex justify-end">
+          <div className="p-[20px] pb-0 pt-0 flex gap-4 lg:gap-0 items-center lg:justify-end">
             <svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" viewBox="0 0 66 66" fill="none">
               <path
                 d="M50.6471 11H15.3529C13.4028 11 11.5326 11.7747 10.1536 13.1536C8.77468 14.5326 8 16.4028 8 18.3529V47.7647C8 49.7148 8.77468 51.5851 10.1536 52.964C11.5326 54.343 13.4028 55.1176 15.3529 55.1176H50.6471C52.5972 55.1176 54.4674 54.343 55.8464 52.964C57.2253 51.5851 58 49.7148 58 47.7647V38.9412C58 38.5512 57.8451 38.1771 57.5693 37.9013C57.2935 37.6255 56.9194 37.4706 56.5294 37.4706C56.1394 37.4706 55.7653 37.6255 55.4895 37.9013C55.2138 38.1771 55.0588 38.5512 55.0588 38.9412V47.7647C55.0588 48.9348 54.594 50.0569 53.7666 50.8843C52.9393 51.7117 51.8171 52.1765 50.6471 52.1765H15.3529C14.1829 52.1765 13.0607 51.7117 12.2334 50.8843C11.406 50.0569 10.9412 48.9348 10.9412 47.7647V19.8235H55.0588V22.7647C55.0588 23.1547 55.2138 23.5288 55.4895 23.8046C55.7653 24.0804 56.1394 24.2353 56.5294 24.2353C56.9194 24.2353 57.2935 24.0804 57.5693 23.8046C57.8451 23.5288 58 23.1547 58 22.7647V18.3529C58 16.4028 57.2253 14.5326 55.8464 13.1536C54.4674 11.7747 52.5972 11 50.6471 11ZM15.3529 13.9412H50.6471C51.5563 13.9449 52.4421 14.2295 53.1834 14.756C53.9247 15.2825 54.4852 16.0251 54.7882 16.8824H11.2118C11.5148 16.0251 12.0753 15.2825 12.8166 14.756C13.5579 14.2295 14.4437 13.9449 15.3529 13.9412ZM33 49.2353H38.8824C39.0756 49.2356 39.267 49.1979 39.4457 49.1242C39.6243 49.0505 39.7867 48.9424 39.9235 48.8059L55.4882 33.2382C55.8982 32.8285 56.2234 32.3421 56.4453 31.8066C56.6672 31.2712 56.7814 30.6972 56.7814 30.1176C56.7814 29.538 56.6672 28.9641 56.4453 28.4287C56.2234 27.8932 55.8982 27.4068 55.4882 26.9971L53.7676 25.2765C53.3579 24.8665 52.8715 24.5413 52.336 24.3194C51.8006 24.0975 51.2267 23.9833 50.6471 23.9833C50.0675 23.9833 49.4935 24.0975 48.9581 24.3194C48.4226 24.5413 47.9362 24.8665 47.5265 25.2765L31.9588 40.8412C31.8223 40.978 31.7142 41.1404 31.6405 41.319C31.5668 41.4977 31.5291 41.6891 31.5294 41.8824V47.7647C31.5294 48.1547 31.6843 48.5288 31.9601 48.8046C32.2359 49.0804 32.61 49.2353 33 49.2353ZM51.6882 27.3559L53.4088 29.0765C53.5458 29.2131 53.6544 29.3754 53.7286 29.554C53.8027 29.7327 53.8409 29.9242 53.8409 30.1176C53.8409 30.3111 53.8027 30.5026 53.7286 30.6813C53.6544 30.8599 53.5458 31.0222 53.4088 31.1588L52.1176 32.45L48.3147 28.6471L49.6059 27.3559C49.7425 27.2189 49.9048 27.1103 50.0834 27.0361C50.2621 26.962 50.4536 26.9238 50.6471 26.9238C50.8405 26.9238 51.032 26.962 51.2107 27.0361C51.3893 27.1103 51.5516 27.2189 51.6882 27.3559ZM34.4706 42.4912L46.2353 30.7265L50.0382 34.5294L38.2735 46.2941H34.4706V42.4912ZM13.8824 27.1765C13.8824 26.7864 14.0373 26.4124 14.3131 26.1366C14.5889 25.8608 14.9629 25.7059 15.3529 25.7059H38.8824C39.2724 25.7059 39.6464 25.8608 39.9222 26.1366C40.198 26.4124 40.3529 26.7864 40.3529 27.1765C40.3529 27.5665 40.198 27.9405 39.9222 28.2163C39.6464 28.4921 39.2724 28.6471 38.8824 28.6471H15.3529C14.9629 28.6471 14.5889 28.4921 14.3131 28.2163C14.0373 27.9405 13.8824 27.5665 13.8824 27.1765ZM30.0588 37.4706H15.3529C14.9629 37.4706 14.5889 37.3157 14.3131 37.0399C14.0373 36.7641 13.8824 36.39 13.8824 36C13.8824 35.61 14.0373 35.2359 14.3131 34.9601C14.5889 34.6843 14.9629 34.5294 15.3529 34.5294H30.0588C30.4488 34.5294 30.8229 34.6843 31.0987 34.9601C31.3745 35.2359 31.5294 35.61 31.5294 36C31.5294 36.39 31.3745 36.7641 31.0987 37.0399C30.8229 37.3157 30.4488 37.4706 30.0588 37.4706ZM27.1176 43.3529C27.5077 43.3529 27.8817 43.5079 28.1575 43.7837C28.4333 44.0595 28.5882 44.4335 28.5882 44.8235C28.5882 45.2136 28.4333 45.5876 28.1575 45.8634C27.8817 46.1392 27.5077 46.2941 27.1176 46.2941H15.3529C14.9629 46.2941 14.5889 46.1392 14.3131 45.8634C14.0373 45.5876 13.8824 45.2136 13.8824 44.8235C13.8824 44.4335 14.0373 44.0595 14.3131 43.7837C14.5889 43.5079 14.9629 43.3529 15.3529 43.3529H27.1176Z"
                 fill="#43006A"
               />
             </svg>
+            <h4 className="text-[#101828] block lg:hidden font-medium mb-2 text-2xl">Blog</h4>
           </div>
           <div className="p-6 flex-grow flex flex-col">
             <div className="flex flex-col flex-grow mb-8">
-              <h4 className="text-[#101828] font-medium mb-2 text-2xl">Blog</h4>
+              <h4 className="text-[#101828] hidden lg:block font-medium mb-2 text-2xl">Blog</h4>
               <p className="text-[#101828] text-base md:text-lg font-normal">Insights, advice and real-world stories</p>
             </div>
             <Link
