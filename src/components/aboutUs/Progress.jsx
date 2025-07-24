@@ -8,9 +8,9 @@ const Progress = () => {
       <div className="col-span-2 flex justify-center relative z-2 flex-col gap-9 lg:col-span-1">
         <h2 className="font-medium text-4xl md:text-5xl leading-[120%]">Progress through understanding</h2>
         <p className="text-[#000] text-base md:text-lg leading-[150%] my-6">
-          When communication breaks down, misunderstandings and conflict can quickly follow. But through listening, reframing and altering
-          perspectives, we help people break through those barriers and find their way back to a place of clarity, understanding and
-          belonging.
+          When communication breaks down, misunderstandings and conflict can quickly follow. However, through listening, reframing and
+          altering perspectives, we help people break through those barriers and find their way back to a place of clarity, understanding
+          and belonging.
         </p>
         <div className="relative my-10 block md:hidden  rounded-3xl overflow-hidden">
           <div className={`from-[rgba(67,0,106,0.1)] to-[#43006aa3] absolute inset-0 bg-gradient-to-b  z-10`}></div>

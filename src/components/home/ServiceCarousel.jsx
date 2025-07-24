@@ -65,7 +65,7 @@ const ServiceCarousel = () => {
   return (
     <section aria-label="Global Mediation Services" className="py-[0px] lg:max-w-[1318px] px-5 md:px-[60px] mx-auto slick-bar ">
       <div className="max-w-[800px] px-5 mx-auto lg:text-center md:text-center mb-[20px] lg:mb-[70px]">
-        <h2 className="font-medium text-4xl md:text-5xl mb-5 md:mb-6">Global mediation services</h2>
+        <h2 className="font-medium text-4xl md:text-5xl mb-5 md:mb-6">Global Mediation services</h2>
         <p className=" leading-[150%] text-base md:text-lg font-normal">
           Tailored solutions for workplaces, communities, families and individuals.
         </p>

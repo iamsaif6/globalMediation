@@ -84,7 +84,7 @@ const page = () => {
 
       <section className="py-16 md:py-[80px] bg-secondary text-white">
         <div className="px-5 md:px-16 mb-10 md:mb-[120px] ">
-          <SectionHeading className={'!text-white'} fullWidth={true} title={'Common Community Disputes'} />
+          <SectionHeading className={'!text-white'} fullWidth={true} title={'Common community disputes'} />
         </div>
         <div className="mt-[0px] md:mt-[54px]">
           {/* Buttons */}
@@ -211,7 +211,7 @@ const page = () => {
 
       <section className="py-16 px-5 md:px-16 md:py-[80px]">
         <SectionHeading
-          title={'How Community Mediation Works'}
+          title={'How community mediation works'}
           subTitle={
             'Our process gives everyone a chance to be heard, without judgement. It’s about finding common ground and working toward respectful solutions.'
           }
@@ -266,7 +266,7 @@ const page = () => {
       <section className="py-16 px-5 md:px-16 md:py-[80px] text-white bg-secondary">
         <div className="text-center">
           <h2 className="text-4xl md:text-5xl font-medium text-center max-w-[760px] mx-auto leading-[120%] mb-8 md:mb-[40px] !text-white">
-            Why choose global mediation?
+            Why choose Global Mediation?
           </h2>
           <p className=" text-base md:text-lg leading-[150%] mb-[56px] md:mb-[78px]">
             We’ve helped thousands of people resolve conflicts with neighbours, landlords and community members — in ways that feel fair,

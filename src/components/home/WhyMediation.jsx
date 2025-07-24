@@ -3,7 +3,7 @@ import React from 'react';
 
 const items = [
   'Expertise across a wide range of disputes',
-  'Accessible services throughout the UK',
+  'Accessible services throughout the UK. We work',
   'Personalised support from a dedicated case manager',
   'Accredited mediators with real-world experience',
   '95% success rate in achieving full or partial resolution',
@@ -34,7 +34,7 @@ const WhyMediation = () => {
         </div>
         <div className="text-white col-span-2 lg:col-span-1">
           <h2 className="leading-[120%] w-full lg:w-[90%] md:w-full font-medium text-[32px] md:text-5xl mb-5 md:mb-5 !text-white">
-            Why global mediation
+            Why Global Mediation
           </h2>
           <p className="font-normal text-base md:text-lg leading-[150%]">
             Every situation is different. That’s why our trained mediators bring empathy, curiosity and real-world experience. With over 25

@@ -274,7 +274,7 @@ const page = () => {
       <section className="py-16 px-5 md:px-16 md:py-[80px] text-white bg-secondary">
         <div className="text-center">
           <h2 className="text-4xl md:text-5xl font-medium text-center max-w-[760px] mx-auto leading-[120%] mb-8 md:mb-[40px] !text-white">
-            Why choose global mediation?
+            Why choose Global Mediation?
           </h2>
           <p className=" text-base md:text-lg leading-[150%] mb-[56px] md:mb-[78px]">
             We’ve helped resolve thousands of civil and legal disputes, with a calm, professional approach that saves time, reduces stress,

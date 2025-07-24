@@ -64,7 +64,7 @@ const page = () => {
 
       <section className="py-16 bg-secondary text-white md:py-[80px]">
         <div className="px-5 md:px-16 md:mb-[120px] ">
-          <SectionHeading className={'!text-white'} fullWidth={true} title={'Common Family Disputes We Help With'} />
+          <SectionHeading className={'!text-white'} fullWidth={true} title={'Common family disputes we help with'} />
         </div>
         <div className="mt-[42px] md:mt-[54px]">
           {/* Buttons */}
@@ -196,7 +196,7 @@ const page = () => {
 
       <section className="py-16 px-5 md:px-16 md:py-[80px]">
         <SectionHeading
-          title={'How Family Mediation Works'}
+          title={'How family mediation works'}
           subTitle={
             'Our mediators offer structured, compassionate guidance — helping you have difficult conversations in a safe and supportive way.'
           }
@@ -232,7 +232,7 @@ const page = () => {
             <p className="font-medium text-2xl leading-[140%] mb-[42px] flex items-center justify-center w-[54px] h-[54px] text-white  bg-secondary rounded-xl">
               4
             </p>
-            <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">Work toward an agreement</p>
+            <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">Work towards an agreement</p>
             <p className="font-normal text-base md:text-lg">
               <span className="">Our mediator helps guide the conversation toward solutions</span>
             </p>
@@ -252,7 +252,7 @@ const page = () => {
       <section className="py-16 px-5 md:px-16 md:py-[80px] text-white bg-secondary">
         <div className="text-left md:text-center">
           <h2 className="text-4xl md:text-5xl font-medium max-w-[900px] mx-auto leading-[120%] mb-8 md:mb-[40px] !text-white">
-            Why choose global mediation?
+            Why choose Global Mediation?
           </h2>
           <p className=" text-base md:text-lg leading-[150%] mb-[56px] md:mb-[78px]">
             We’ve worked with families across the UK for more than 25 years, supporting them through some of life’s most complex and
@@ -300,7 +300,7 @@ const page = () => {
       <FeedbackCarousel title={'Testimonials from families'} subTitle={null} fullWidth={true} />
       <div className="bg-[#F9F8FF]">
         <CTA
-          title={'Take the First Step'}
+          title={'Take the first step'}
           subTitle={
             'Whether you’re in the early stages of separation or struggling to co-parent, we’re here to help you take the next step with clarity and care.'
           }

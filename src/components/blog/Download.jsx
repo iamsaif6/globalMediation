@@ -10,19 +10,19 @@ const items = [
     link: 'https://www.globalmediation.co.uk/wp-content/uploads/2017/09/Child-Friendly-Safeguarding-Policy-Updated.pdf',
   },
   {
-    name: 'Global mediation – mediator code of conduct',
+    name: 'Global Mediation – mediator code of conduct',
     link: 'https://www.globalmediation.co.uk/wp-content/uploads/2020/05/GlobalMediation_Code_of_Conduct_Final.pdf',
   },
   {
-    name: 'Global mediation safeguarding policy 2020',
+    name: 'Global Mediation safeguarding policy 2020',
     link: 'https://www.globalmediation.co.uk/wp-content/uploads/2020/05/GlobalMediation_Safeguarding-Policy_2020.pdf',
   },
   {
-    name: 'Global mediation data protection policy 2020',
+    name: 'Global Mediation data protection policy 2020',
     link: 'https://www.globalmediation.co.uk/wp-content/uploads/2020/05/GlobalMediation_Data_Protection_Policy-25.02.20.pdf',
   },
   {
-    name: 'Global mediation privacy statement 2020',
+    name: 'Global Mediation privacy statement 2020',
     link: 'https://www.globalmediation.co.uk/wp-content/uploads/2020/05/GlobalMediation_Privacy_Statement-25.02.20.pdf',
   },
 ];

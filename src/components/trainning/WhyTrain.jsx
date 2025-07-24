@@ -8,7 +8,7 @@ const WhyTrain = () => {
     <section className="py-16 px-5 md:px-16 md:py-[80px] bg-secondary">
       <SectionHeading
         className={'!text-white'}
-        title={'Why train with global mediation?'}
+        title={'Why train with global Mediation?'}
         subTitle={
           'At Global, training is more than just a course, it’s a step forward in your mediation career. Our programmes are built around your growth as a mediator. We provide expert instruction, supportive environments and practical learning designed to build confidence and clarity.'
         }
