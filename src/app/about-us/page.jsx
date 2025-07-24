@@ -104,7 +104,7 @@ const AboutUs = () => {
       <Colabration />
       <Origins />
       <WhatGuides />
-      {/* <TeamMember /> */}
+      <TeamMember />
       <Accredited />
       <JoinGlobalTeam />
       <div className="py-[40px] lg:py-[80px]">

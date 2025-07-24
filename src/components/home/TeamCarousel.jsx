@@ -51,7 +51,7 @@ const members2 = [
 const members = [
   {
     name: 'Altaf Baghdadi',
-    image: Altaf,
+    // image: Altaf,
     position: 'Senior Mediator',
     details:
       'Altaf is an experienced SEND, community, and workplace mediator known for his calm, impartial presence. He quickly builds trust and helps parties feel heard with empathy and respect.',
@@ -59,21 +59,21 @@ const members = [
 
   {
     name: 'Adam Gersch',
-    image: Adam,
+    // image: Adam,
     position: 'Founder & CEO',
     details:
       'Adam is a practising criminal barrister and CEDR-accredited mediator who founded Global Mediation in 1999. He oversees the organisation’s strategic direction and brings decades of legal and mediation experience from the UK and US.',
   },
   {
     name: 'Suraiya Baghdadi',
-    image: Suraiya,
+    // image: Suraiya,
     position: 'Mediation Director ',
     details:
       'Suraiya leads Global Mediation’s team of mediators, ensuring high standards across all services. With over 25 years in education and leadership, she brings deep expertise to SEND mediation.',
   },
   {
     name: 'Jo Winters',
-    image: Jo,
+    // image: Jo,
     position: 'Senior Mediator',
     details:
       'Jo brings warmth, empathy, and strong communication skills to every mediation. She’s passionate about helping participants reach the best possible outcomes through understanding and collaboration.',
@@ -81,7 +81,7 @@ const members = [
 
   {
     name: 'Nigel Barr',
-    image: Barr,
+    // image: Barr,
     position: 'Senior Mediator',
     details:
       'Nigel has been a SEND mediator since 2013 and has led over 1,000 mediations. He brings extensive experience and continues to support families and professionals through the mediation process.',
@@ -89,21 +89,21 @@ const members = [
 
   {
     name: 'Rebecca Hayward',
-    image: Rebecca,
+    // image: Rebecca,
     position: 'Senior Mediator',
     details:
       'Rebecca brings a calm, supportive presence and clear professional guidance to each SEND mediation. She ensures all voices are heard while keeping the focus firmly on the child or young person.',
   },
   {
     name: 'Suneta Bagri',
-    image: Suneta,
+    // image: Suneta,
     position: 'Course Director',
     details:
       'Suneta is an experienced mediator specialising in SEND and workplace resolution, particularly in education. She’s committed to helping individuals and teams reach clear, lasting solutions through collaboration and understanding.',
   },
   {
     name: 'Vicky Mansell',
-    image: Vicky,
+    // image: Vicky,
     position: 'Senior Mediator',
   },
   {
@@ -278,9 +278,9 @@ const TeamCarousel = ({ darkText = false, isDouble }) => {
                 </div>
               </div>
 
-              <h4 className={`${darkText ? 'text-black' : 'text-white'} mt-3 md:mt-6 text-2xl md:text-[32px] font-semibold `}>
+              <h3 className={`${darkText ? 'text-black' : 'text-white'} mt-3 md:mt-6 text-2xl md:text-[32px] font-semibold `}>
                 {item.name}
-              </h4>
+              </h3>
               <p className={`${darkText ? 'text-black' : 'text-white'} font-medium mt-1`}>{item?.position}</p>
               {isDouble && <p className="mt-3">{item?.details}</p>}
               {darkText && (
