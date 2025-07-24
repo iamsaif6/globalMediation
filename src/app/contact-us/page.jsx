@@ -25,7 +25,7 @@ const ContactUs = () => {
           <div className="col-span-12 lg:col-span-7 flex items-center">
             <div className="text-center mb-10">
               <h1 className="leading-[120%] text-5xl md:[55px] lg:text-[65px] font-semibold mb-4">Let’s resolve things – together</h1>
-              <p className="text-base text-white lg:text-lg">
+              <p className="text-base text-white lg:text-lg text-left lg:text-center">
                 Get in touch to speak with a specialist about your situation. Whether you're navigating a conflict, booking mediation, or
                 exploring training, we're here to help
               </p>

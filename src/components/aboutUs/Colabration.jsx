@@ -6,7 +6,7 @@ const Colabration = () => {
         <h5 className="font-medium text-white leading-[120%] tracking-[-4%] text-4xl md:text-[40px] lg:text-5xl mb-5 md:mb-6">
           How mediation with global <br /> supports you
         </h5>
-        <p className={`text-[#fff] text-base md:text-lg font-normal`}>
+        <p className={`text-[#fff] text-left lg:text-center text-base md:text-lg font-normal`}>
           We are here to guide, not to judge. Mediation is always voluntary and confidential, and designed to give everyone a voice. <br />{' '}
           We do this through:
         </p>
