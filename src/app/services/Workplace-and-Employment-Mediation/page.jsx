@@ -53,13 +53,10 @@ const page = () => {
           <div className="text-left md:text-center mx-auto mb-[60px] lg:mb-[100px]">
             <h1 className="font-medium max-w-[900px]  mx-auto text-4xl md:text-5xl leading-[120%]">Workplace and employment mediation</h1>
             <p className="text-black text-base md:text-lg leading-[150%] my-6">
-              Workplace disputes can impact morale, slow productivity, and create a negative atmosphere for teams and individuals.
-              {/* <br className="mb-3" /> */}
-              Global Mediation provides a supportive and impartial route to resolving these challenges, helping people move forward with
-              confidence.
-              <br className="mb-3" />
-              Our workplace mediators work sensitively with everyone involved, creating a safe space for honest conversation, rebuilding
-              communication, and reaching outcomes that benefit employees, teams, and organisations.
+              Workplace disputes can impact morale, slow productivity, and create a negative atmosphere for teams and individuals. Global
+              Mediation provides a supportive and impartial route to resolving these challenges, helping people move forward with
+              confidence. Our workplace mediators work sensitively with everyone involved, creating a safe space for honest conversation,
+              rebuilding communication, and reaching outcomes that benefit employees, teams, and organisations.
             </p>
           </div>
           <div className=" items-center grid grid-cols-2 gap-[80px]">
@@ -165,9 +162,8 @@ const page = () => {
             <p className="text-black  text-base md:text-lg leading-[150%] my-6">
               Conflicts at work can arise for many reasons — between colleagues, teams, or management. Left unresolved, they can lead to
               formal complaints, lost productivity, and long-term relationship breakdowns. Workplace mediation offers a way to address those
-              issues quickly and constructively.
-              <br /> <br />
-              It provides a neutral, confidential setting for all parties to feel heard, explore options, and agree on a way forward.
+              issues quickly and constructively. It provides a neutral, confidential setting for all parties to feel heard, explore options,
+              and agree on a way forward.
             </p>
           </div>
           <div className=" items-center grid grid-cols-2 gap-[80px]">

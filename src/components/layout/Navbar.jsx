@@ -28,9 +28,9 @@ const serviceSubmenu = [
 // ];
 
 const traiingSubmenu = [
-  { title: 'Foundation course in mediation', href: 'https://globaltraning.vercel.app/' },
-  { title: 'SEND mediation training course', href: 'https://globaltraning.vercel.app/' },
-  { title: 'SEND mediation professional practice', href: 'https://globaltraning.vercel.app/' },
+  { title: 'Learn more about Global Training', href: 'https://globaltraning.vercel.app/' },
+  // { title: 'SEND mediation training course', href: 'https://globaltraning.vercel.app/' },
+  // { title: 'SEND mediation professional practice', href: 'https://globaltraning.vercel.app/' },
 ];
 
 const navLinksForMobile = [
@@ -56,9 +56,9 @@ const navLinksForMobile = [
     title: 'Training',
     hasMegaMenu: true,
     megaMenuItems: [
-      { title: 'Foundation course in mediation', href: 'https://globaltraning.vercel.app/' },
-      { title: 'SEND mediation training course', href: 'https://globaltraning.vercel.app/' },
-      { title: 'SEND mediation professional practice', href: 'https://globaltraning.vercel.app/' },
+      { title: 'Learn more about Global Training', href: 'https://globaltraning.vercel.app/' },
+      // { title: 'SEND mediation training course', href: 'https://globaltraning.vercel.app/' },
+      // { title: 'SEND mediation professional practice', href: 'https://globaltraning.vercel.app/' },
     ],
   },
 
@@ -364,7 +364,7 @@ const Navbar = () => {
               </div>
               <div className="col-span-7 leading-[150%] p-8 bg-[#F3F1FF]">
                 <h3 className="text-[20px] text-[#330051] font-semibold mb-4">
-                  {activeSubmenu == 'Service' ? 'Mediation services' : 'Mediation training'}
+                  {activeSubmenu == 'Service' ? 'Mediation services' : 'Global Training'}
                 </h3>
                 {activeSubmenu == 'Service' ? (
                   <ul className="space-y-3 text-sm ">

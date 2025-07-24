@@ -40,7 +40,8 @@ const faqData = [
 
 const item2 = {
   title: 'What we help resolve',
-  subtitle: 'We work with individuals, teams and organisations to resolve disputes such as:',
+  subtitle:
+    'If it’s causing friction, slowing progress or damaging relationships — we’ll help you navigate it. We work with individuals, teams and organisations to resolve disputes such as:',
   service: [
     'Partnership and shareholder breakdowns',
     'Supplier, client or investor disagreements',
@@ -68,7 +69,7 @@ const item3 = {
 const item = {
   title: 'Why choose Global Mediation',
   subtitle:
-    'At Global Mediation, our experienced mediators bring commercial awareness, emotional intelligence and sensitivity to every case. We help companies avoid court, protect relationships and co-create outcomes that work — for today and the long term.',
+    'At Global Mediation, our experienced mediators bring commercial awareness, emotional intelligence and sensitivity to every case. We help companies avoid court, protect relationships and co-create outcomes that work — for today and the long term. Our mediators blend empathy with business sense — supporting people to reach agreements that work, built on understanding, not winning. With over 95% of cases settled — many on the day — you can trust our process to guide you towards resolution.',
   service: [
     'Independent, impartial mediators with real-world business experience',
     'Solutions tailored to your culture, your people and your goals',
@@ -119,14 +120,6 @@ const page = () => {
             Book Business and Commercial Mediation
           </Link>
         </button> */}
-        <div className="mt-10 text-center">
-          <p>
-            Our mediators blend empathy with business sense — supporting people to reach agreements that work, built on understanding, not
-            winning.
-            <br />
-            With over 95% of cases settled — many on the day — you can trust our process to guide you towards resolution.
-          </p>
-        </div>
       </div>
 
       {/* What we help */}
@@ -163,9 +156,6 @@ const page = () => {
             Book Business and Commercial Mediation
           </Link>
         </button> */}
-        <div className="mt-10 text-center">
-          <p>If it’s causing friction, slowing progress or damaging relationships — we’ll help you navigate it.</p>
-        </div>
       </div>
       <HowWeWork />
 

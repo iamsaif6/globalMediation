@@ -71,7 +71,7 @@ const page = () => {
         title={'community disputes and mediation'}
         image={overview}
         subtitle={
-          'Disagreements in our communities can have a big impact — on wellbeing, relationships and daily life.Global Mediation provides a calm, neutral space to talk things through and find a positive way forward.Whether you’re dealing with a neighbour issue, noise complaint or local dispute, we’ll support you with care, fairness and respect.'
+          'Disagreements in our communities can have a big impact — on wellbeing, relationships and daily life. Global Mediation provides a calm, neutral space to talk things through and find a positive way forward. Whether you’re dealing with a neighbour issue, noise complaint or local dispute, we’ll support you with care, fairness and respect.'
         }
         items={[
           'Encourages understanding and better communication',

@@ -7,7 +7,7 @@ const JoinGlobalTeam = () => {
   return (
     <section
       style={{
-        backgroundImage: `url('${teamBG.src}'), linear-gradient(66deg, rgba(22, 163, 158, 0.94) -2.09%, rgba(100, 110, 110, 0.28) 58.06%)`,
+        backgroundImage: `url('${teamBG.src}'), linear-gradient(66deg, rgba(62,0,101,0.60) -2.09%, rgba(100, 110, 110, 0.28) 58.06%)`,
         backgroundBlendMode: 'overlay',
         backgroundSize: 'cover',
         backgroundPosition: 'center',

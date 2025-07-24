@@ -170,9 +170,10 @@ const TeamCarousel = ({ darkText = false, isDouble }) => {
     const { onClick } = props;
     return (
       <div
-        className={`flex justify-center translate-y-1/2 mr-5 -translate-x-1/2 absolute -bottom-[30px] border border-[#9C9C9C] right-1/2 md:right-1/2 z-20 items-center text-[#9C9C9C]  rounded-full ${
-          darkText ? 'hover:bg-secondary hover:border-secondary' : 'hover:bg-primary hover:border-primary'
-        }  hover:text-white  cursor-pointer w-[35px] h-[35px] md:w-12 md:h-12`}
+        className={`flex justify-center translate-y-1/2 mr-2  absolute -bottom-[30px] border border-[#9C9C9C] right-1/2
+           md:right-1/2 z-20 items-center text-[#9C9C9C]  rounded-full ${
+             darkText ? 'hover:bg-secondary hover:border-secondary' : 'hover:bg-primary hover:border-primary'
+           }  hover:text-white  cursor-pointer w-[35px] h-[35px] md:w-12 md:h-12`}
         onClick={onClick}
       >
         <ArrowLeft />
@@ -184,7 +185,7 @@ const TeamCarousel = ({ darkText = false, isDouble }) => {
     const { onClick } = props;
     return (
       <div
-        className={`flex justify-center translate-y-1/2 translate-x-1/2 absolute -bottom-[30px] border border-[#9C9C9C] right-1/2 md:right-1/2 z-20   items-center text-[#9C9C9C]  rounded-full ${
+        className={`flex justify-center translate-y-1/2 ml-2  absolute -bottom-[30px] border border-[#9C9C9C] left-1/2 md:right-1/2 z-20   items-center text-[#9C9C9C]  rounded-full ${
           darkText ? 'hover:bg-secondary hover:border-secondary' : 'hover:bg-primary hover:border-primary'
         } hover:text-white  cursor-pointer w-[35px] h-[35px] md:w-12 md:h-12`}
         onClick={onClick}
@@ -263,27 +264,27 @@ const TeamCarousel = ({ darkText = false, isDouble }) => {
         <Slider {...settings}>
           {(isDouble ? members.slice(0, 6) : members).map(item => (
             <div className="px-[15px] mb-[20px]">
-              <div className="group w-full h-[285px] lg:h-[390px] [perspective:1000px] rounded-3xl">
-                <div className="relative w-full h-full duration-700 rounded-3xl">
-                  {/* Front Side */}
-                  {/* [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] */}
-                  <div className="absolute w-full h-full backface-hidden rounded-3xl overflow-hidden">
+              {/* <div className="group w-full h-[285px] lg:h-[390px] [perspective:1000px] rounded-3xl"> */}
+              {/* <div className="relative w-full h-full duration-700 rounded-3xl"> */}
+              {/* Front Side */}
+              {/* [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] */}
+              {/* <div className="absolute w-full h-full backface-hidden rounded-3xl overflow-hidden">
                     {item?.image && <Image className="w-full h-full object-cover object-top" alt={item.name} src={item.image} />}
-                  </div>
+                  </div> */}
 
-                  {/* Back Side */}
-                  {/* <div className="absolute w-full h-full backface-hidden [transform:rotateY(180deg)] bg-gray-200 flex items-center justify-center p-4 rounded-3xl">
+              {/* Back Side */}
+              {/* <div className="absolute w-full h-full backface-hidden [transform:rotateY(180deg)] bg-gray-200 flex items-center justify-center p-4 rounded-3xl">
                     <p className="text-center text-gray-800">{item?.details}</p>
                   </div> */}
-                </div>
-              </div>
+              {/* </div> */}
+              {/* </div> */}
 
               <h3 className={`${darkText ? 'text-black' : 'text-white'} mt-3 md:mt-6 text-2xl md:text-[32px] font-semibold `}>
                 {item.name}
               </h3>
               <p className={`${darkText ? 'text-black' : 'text-white'} font-medium mt-1`}>{item?.position}</p>
               {isDouble && <p className="mt-3">{item?.details}</p>}
-              {darkText && (
+              {/* {darkText && (
                 <ul className="mt-6 flex items-center gap-[14px]">
                   <li>
                     <Link href={'#'}>
@@ -320,7 +321,7 @@ const TeamCarousel = ({ darkText = false, isDouble }) => {
                     </Link>
                   </li>
                 </ul>
-              )}
+              )} */}
             </div>
           ))}
         </Slider>
@@ -331,27 +332,27 @@ const TeamCarousel = ({ darkText = false, isDouble }) => {
           <Slider {...settings2}>
             {members.slice(6, 12).map(item => (
               <div className="px-[15px] mb-[20px]">
-                <div className="group w-full h-[285px] lg:h-[390px] [perspective:1000px] rounded-3xl">
-                  <div className="relative w-full h-full duration-700 ] rounded-3xl">
-                    {/* Front Side */}
-                    {/* [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg) */}
-                    <div className="absolute w-full h-full backface-hidden rounded-3xl overflow-hidden">
+                {/* <div className="group w-full h-[285px] lg:h-[390px] [perspective:1000px] rounded-3xl"> */}
+                {/* <div className="relative w-full h-full duration-700 ] rounded-3xl"> */}
+                {/* Front Side */}
+                {/* [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg) */}
+                {/* <div className="absolute w-full h-full backface-hidden rounded-3xl overflow-hidden">
                       {item?.image && <Image className="w-full h-full object-cover object-top" alt={item.name} src={item.image} />}
-                    </div>
+                    </div> */}
 
-                    {/* Back Side */}
-                    {/* <div className="absolute w-full h-full backface-hidden [transform:rotateY(180deg)] bg-gray-200 flex items-center justify-center p-4 rounded-3xl">
+                {/* Back Side */}
+                {/* <div className="absolute w-full h-full backface-hidden [transform:rotateY(180deg)] bg-gray-200 flex items-center justify-center p-4 rounded-3xl">
                       <p className="text-center text-gray-800">{item?.details}</p>
                     </div> */}
-                  </div>
-                </div>
+                {/* </div>
+                </div> */}
 
                 <h3 className={`${darkText ? 'text-black' : 'text-white'} mt-3 md:mt-6 text-2xl md:text-[32px] font-semibold `}>
                   {item.name}
                 </h3>
                 <p className={`${darkText ? 'text-black' : 'text-white'} font-medium mt-1`}>{item?.position}</p>
                 {isDouble && <p className="mt-3">{item?.details}</p>}
-                {darkText && (
+                {/* {darkText && (
                   <ul className="mt-6 flex items-center gap-[14px]">
                     <li>
                       <Link href={'#'}>
@@ -388,7 +389,7 @@ const TeamCarousel = ({ darkText = false, isDouble }) => {
                       </Link>
                     </li>
                   </ul>
-                )}
+                )} */}
               </div>
             ))}
           </Slider>

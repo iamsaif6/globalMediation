@@ -12,8 +12,8 @@ const LearnMore = () => {
         subTitle={'Explore resources to help you prepare for mediation or learn more about how it works:'}
         center
       />
-      <div className="grid grid-cols-4 gap-3 mt-16">
-        <div className="border flex flex-col col-span-4 border-[#EBE5E5] md:col-span-2 hover:border-[#DAD3FF] lg:col-span-1  rounded-3xl py-[34px]">
+      <div className="grid grid-cols-3 gap-3 mt-16">
+        <div className="border flex flex-col col-span-3 border-[#EBE5E5] md:col-span-2 hover:border-[#DAD3FF] lg:col-span-1  rounded-3xl py-[34px]">
           <div className="p-[20px] pb-0 pt-0 flex gap-4 lg:gap-0 items-center lg:justify-end">
             <svg xmlns="http://www.w3.org/2000/svg" width="69" height="69" viewBox="0 0 69 69" fill="none">
               <path
@@ -65,7 +65,7 @@ const LearnMore = () => {
             </Link>
           </div>
         </div>
-        <div className="border flex flex-col col-span-4 border-[#EBE5E5] hover:border-[#DAD3FF] md:col-span-2 hover:border-[#DAD3F lg:col-span-1  rounded-3xl py-[34px]">
+        {/* <div className="border flex flex-col col-span-3 border-[#EBE5E5] hover:border-[#DAD3FF] md:col-span-2 hover:border-[#DAD3F lg:col-span-1  rounded-3xl py-[34px]">
           <div className="p-[20px] pb-0 pt-0 flex gap-4 lg:gap-0 items-center lg:justify-end">
             <svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" viewBox="0 0 66 66" fill="none">
               <path
@@ -120,8 +120,8 @@ const LearnMore = () => {
               <span>Read more</span> <ArrowRight strokeWidth={1.5} size={20} />
             </Link>
           </div>
-        </div>
-        <div className="border flex flex-col col-span-4 border-[#EBE5E5] hover:border-[#DAD3FF] md:col-span-2 hover:border-[#DAD3F lg:col-span-1  rounded-3xl py-[34px]">
+        </div> */}
+        <div className="border flex flex-col col-span-3 border-[#EBE5E5] hover:border-[#DAD3FF] md:col-span-2 hover:border-[#DAD3F lg:col-span-1  rounded-3xl py-[34px]">
           <div className="p-[20px] pb-0 pt-0 flex gap-4 lg:gap-0 items-center lg:justify-end">
             <svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" viewBox="0 0 66 66" fill="none">
               <g clipPath="url(#clip0_6164_8220)">
@@ -176,7 +176,7 @@ const LearnMore = () => {
             </Link>
           </div>
         </div>
-        <div className="border flex flex-col col-span-4 border-[#EBE5E5] hover:border-[#DAD3FF] md:col-span-2 hover:border-[#DAD3F lg:col-span-1  rounded-3xl py-[34px]">
+        <div className="border flex flex-col col-span-3 border-[#EBE5E5] hover:border-[#DAD3FF] md:col-span-2 hover:border-[#DAD3F lg:col-span-1  rounded-3xl py-[34px]">
           <div className="p-[20px] pb-0 pt-0 flex gap-4 lg:gap-0 items-center lg:justify-end">
             <svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" viewBox="0 0 66 66" fill="none">
               <path

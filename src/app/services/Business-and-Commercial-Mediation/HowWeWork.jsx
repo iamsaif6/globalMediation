@@ -8,13 +8,26 @@ const HowWeWork = () => {
     <section className="py-10 px-5 md:px-16 md:py-[80px]">
       <SectionHeading
         title={'How we work'}
-        // subTitle={'Ready to take the next step in your mediation career? Applying is simple:'}
+        subTitle={'Our process is voluntary, confidential and designed to minimise disruption — keeping you focused on what matters.'}
         fullWidth={true}
       />
       <div className="grid grid-cols-3 gap-[18px] md:gap-8 my-10 md:my-[54px]">
         <div className="bg-[#F3F1FF] rounded-xl py-[37px] md:py-[46px] px-[19px] md:px-6 col-span-3 lg:col-span-1">
           <p className="font-medium text-2xl leading-[140%] mb-[42px] flex items-center justify-center w-[54px] h-[54px] text-white  bg-secondary rounded-xl">
             1
+          </p>
+          <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">Contact us</p>
+          <p className="font-normal text-base md:text-lg">
+            <span className="">
+              We're here to help. Reach out to discuss your situation confidentially and explore how mediation can support you.
+            </span>{' '}
+            <br />
+          </p>
+        </div>
+
+        <div className="bg-[#F3F1FF] rounded-xl py-[37px] md:py-[46px] px-[19px] md:px-6 col-span-3 lg:col-span-1">
+          <p className="font-medium text-2xl leading-[140%] mb-[42px] flex items-center justify-center w-[54px] h-[54px] text-white  bg-secondary rounded-xl">
+            2
           </p>
           <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">Start with a conversation</p>
           <p className="font-normal text-base md:text-lg">
@@ -24,7 +37,7 @@ const HowWeWork = () => {
 
         <div className="bg-[#F3F1FF] rounded-xl py-[37px] md:py-[46px] px-[19px] md:px-6 col-span-3 lg:col-span-1">
           <p className="font-medium text-2xl leading-[140%] mb-[42px] flex items-center justify-center w-[54px] h-[54px] text-white  bg-secondary rounded-xl">
-            2
+            3
           </p>
           <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">Prepare and clarify</p>
           <p className="font-normal text-base md:text-lg">
@@ -35,7 +48,7 @@ const HowWeWork = () => {
         </div>
         <div className="bg-[#F3F1FF] rounded-xl py-[37px] md:py-[46px] px-[19px] md:px-6 col-span-3 lg:col-span-1">
           <p className="font-medium text-2xl leading-[140%] mb-[42px] flex items-center justify-center w-[54px] h-[54px] text-white  bg-secondary rounded-xl">
-            3
+            4
           </p>
           <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">Facilitate safe, structured dialogue</p>
           <p className="font-normal text-base md:text-lg">
@@ -44,7 +57,7 @@ const HowWeWork = () => {
         </div>
         <div className="bg-[#F3F1FF] rounded-xl py-[37px] md:py-[46px] px-[19px] md:px-6 col-span-3 lg:col-span-1">
           <p className="font-medium text-2xl leading-[140%] mb-[42px] flex items-center justify-center w-[54px] h-[54px] text-white  bg-secondary rounded-xl">
-            4
+            5
           </p>
           <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">Co-create outcomes that work</p>
           <p className="font-normal text-base md:text-lg">
@@ -54,16 +67,13 @@ const HowWeWork = () => {
 
         <div className="bg-[#F3F1FF] rounded-xl py-[37px] md:py-[46px] px-[19px] md:px-6 col-span-3 lg:col-span-1">
           <p className="font-medium text-2xl leading-[140%] mb-[42px] flex items-center justify-center w-[54px] h-[54px] text-white  bg-secondary rounded-xl">
-            5
+            6
           </p>
           <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">Reflect and follow up</p>
           <p className="font-normal text-base md:text-lg">
             <span className="">We check in post-mediation to support implementation and rebuild trust.</span>
           </p>
         </div>
-      </div>
-      <div className="flex md:justify-center">
-        <p>Our process is voluntary, confidential and designed to minimise disruption — keeping you focused on what matters.</p>
       </div>
     </section>
   );

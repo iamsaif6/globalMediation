@@ -15,6 +15,7 @@ import SectionHeading from '@/components/shared/SectionHeading';
 import wayChoose from '/public/Why Choose Global Mediation for SEND.jpg';
 import Link from 'next/link';
 import overlay from '/public/Overlay.png';
+import cover from '/public/sendMediationHeader.jpg';
 
 const faqData = [
   {
@@ -44,7 +45,7 @@ const page = () => {
     <div>
       <header
         style={{
-          // backgroundImage: `url('${typeof cover === 'string' ? cover : cover?.src}')`,
+          backgroundImage: `url('${typeof cover === 'string' ? cover : cover?.src}')`,
           backgroundBlendMode: 'overlay',
           backgroundSize: 'cover',
           backgroundPosition: 'top center',
@@ -258,14 +259,13 @@ const page = () => {
       {/* Why Choose */}
 
       <section className="py-16 px-5 md:px-16 md:py-[80px] text-white bg-secondary">
-        <h2 className="text-4xl md:text-5xl font-medium text-left md:text-center max-w-[760px] mx-auto leading-[120%] mb-8 md:mb-[78px] !text-white">
+        <h2 className="text-4xl md:text-5xl font-medium text-left md:text-center max-w-[760px] mx-auto leading-[120%] mb-5 md:mb-6 !text-white">
           Why choose Global Mediation for SEND?
         </h2>
         <p className="text-base md:text-lg md:text-center  leading-[150%] mb-[56px] md:mb-[78px]">
           We’ve helped thousands of families and local authorities resolve complex, emotionally sensitive disputes, with empathy,
-          impartiality, and professionalism. <br /> <br />
-          Our SEND mediation team includes experienced specialists with lived experience of the education system, disability, and youth
-          support services.
+          impartiality, and professionalism. Our SEND mediation team includes experienced specialists with lived experience of the education
+          system, disability, and youth support services.
         </p>
         <div className="grid grid-cols-2 gap-8 items-center">
           <div className="relative h-[303px] mb-8 mt-4 lg:h-[403px]  block md:hidden col-span-2 md:col-span-1 rounded-3xl overflow-hidden">

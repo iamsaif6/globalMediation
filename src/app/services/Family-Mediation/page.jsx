@@ -51,7 +51,7 @@ const page = () => {
         title={'family mediation'}
         image={overview}
         subtitle={
-          'Family mediation offers a safe, supportive space to work through difficult issues and find a way forward together.Whether you’re separating, making parenting arrangements or resolving financial matters, we help families navigate change with clarity and care.It’s a calmer, more constructive alternative to court, focused on communication, mutual understanding and long-term wellbeing.'
+          'Family mediation offers a safe, supportive space to work through difficult issues and find a way forward together. Whether you’re separating, making parenting arrangements or resolving financial matters, we help families navigate change with clarity and care. It’s a calmer, more constructive alternative to court, focused on communication, mutual understanding and long-term wellbeing.'
         }
         items={[
           'Focuses on the child’s needs and wellbeing',
@@ -204,7 +204,7 @@ const page = () => {
         />
         <div className="grid grid-cols-4 gap-[18px] md:gap-8 my-10 md:my-[54px]">
           <div className="bg-[#F3F1FF] rounded-xl py-[37px] md:py-[46px] px-[19px] md:px-6 col-span-4 lg:col-span-1">
-            <p className="font-medium text-2xl leading-[140%] mb-[42px] flex items-center justify-center w-[54px] h-[54px] text-white  bg-secondary rounded-xl">
+            <p className="font-medium text-2xl leading-[140%] mb-[22px] flex items-center justify-center w-[54px] h-[54px] text-white  bg-secondary rounded-xl">
               1
             </p>
             <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">Get in touch </p>
@@ -212,28 +212,28 @@ const page = () => {
           </div>
 
           <div className="bg-[#F3F1FF] rounded-xl py-[37px] md:py-[46px] px-[19px] md:px-6 col-span-4 lg:col-span-1">
-            <p className="font-medium text-2xl leading-[140%] mb-[42px] flex items-center justify-center w-[54px] h-[54px] text-white  bg-secondary rounded-xl">
+            <p className="font-medium text-2xl leading-[140%] mb-[22px] flex items-center justify-center w-[54px] h-[54px] text-white  bg-secondary rounded-xl">
               2
             </p>
             <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">Schedule a session</p>
             <p>Meet online or in person with a trained family mediator</p>
           </div>
           <div className="bg-[#F3F1FF] rounded-xl py-[37px] md:py-[46px] px-[19px] md:px-6 col-span-4 lg:col-span-1">
-            <p className="font-medium text-2xl leading-[140%] mb-[42px] flex items-center justify-center w-[54px] h-[54px] text-white  bg-secondary rounded-xl">
+            <p className="font-medium text-2xl leading-[140%] mb-[22px] flex items-center justify-center w-[54px] h-[54px] text-white  bg-secondary rounded-xl">
               3
             </p>
             <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">Share your views</p>
-            <p className="font-normal text-base md:text-lg">
+            <p className="">
               <span className="">Each person has space to speak openly and be heard</span>
             </p>
           </div>
 
           <div className="bg-[#F3F1FF] rounded-xl py-[37px] md:py-[46px] px-[19px] md:px-6 col-span-4 lg:col-span-1">
-            <p className="font-medium text-2xl leading-[140%] mb-[42px] flex items-center justify-center w-[54px] h-[54px] text-white  bg-secondary rounded-xl">
+            <p className="font-medium text-2xl leading-[140%] mb-[22px] flex items-center justify-center w-[54px] h-[54px] text-white  bg-secondary rounded-xl">
               4
             </p>
-            <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">Work towards an agreement</p>
-            <p className="font-normal text-base md:text-lg">
+            <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[0px] ">Work towards an agreement</p>
+            <p className="">
               <span className="">Our mediator helps guide the conversation toward solutions</span>
             </p>
           </div>

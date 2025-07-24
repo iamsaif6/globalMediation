@@ -107,9 +107,9 @@ const Footer = () => {
           <Link className="py-[6px] block" href="/training">
             Training
           </Link>
-          <Link className="py-[6px] block" href="/dars">
+          {/* <Link className="py-[6px] block" href="/dars">
             DARS
-          </Link>
+          </Link> */}
           <Link className="py-[6px] block" href="/blogs">
             Resources
           </Link>
