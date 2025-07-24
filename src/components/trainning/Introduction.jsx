@@ -27,8 +27,8 @@ const Introduction = () => {
           <h2 className="font-medium text-4xl md:text-5xl leading-[120%]">Overview of mediation training</h2>
           <p className="text-black text-base md:text-lg leading-[150%] my-6">
             Whether you’re starting your mediation journey or expanding into specialist areas like SEND, our training programmes are
-            designed to give you the practical tools and confidence to mediate with clarity, care and professionalism. <br /> <br />{' '}
-            Delivered by experienced trainers, each course offers expert insight, immersive practice, and tailored support.
+            designed to give you the practical tools and confidence to mediate with clarity, care and professionalism. Delivered by
+            experienced trainers, each course offers expert insight, immersive practice, and tailored support.
           </p>
         </div>
         <div className="items-center grid grid-cols-2 gap-[80px]">
