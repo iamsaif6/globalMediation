@@ -126,7 +126,7 @@ const MediationCards = () => {
                 <h2
                   className={`
           font-semibold text-2xl my-16
-          ${activeCardIndex === index ? 'text-white' : 'text-gray-700'}
+          ${activeCardIndex === index ? 'text-white' : '!text-[#43006aa6]'}
         `}
                 >
                   {card?.title}

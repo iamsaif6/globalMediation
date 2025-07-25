@@ -1,28 +1,15 @@
 // Blog.jsx - Server Component
-import CaseStudy from '@/components/blog/CaseStudy';
-import Download from '@/components/blog/Download';
 import Posts from '@/components/blog/Posts';
 import CTA from '@/components/shared/CTA';
-import Header from '@/components/shared/Header';
 import { fetchArticles } from '@/utils/api';
 import React from 'react';
-import banner from '/public/trainning_banner.jpeg';
 
 const Blog = async () => {
   const articles = await fetchArticles();
 
   return (
     <div className="">
-      {/* <Header
-        title={'What is Mediation? '}
-        subTitle={'A Comprehensive Guide to Alternative Dispute Resolution'}
-        Button1Text={'Learn More'}
-        Button1Link="/about-us"
-        cover={banner}
-      /> */}
       <Posts articles={articles} />
-      {/* <CaseStudy /> */}
-      {/* <Download /> */}
       <CTA
         title={'Start Your Mediation Training Journey Today'}
         subTitle={'Take the first step toward becoming a qualified mediator or enhancing your existing mediation skills.'}

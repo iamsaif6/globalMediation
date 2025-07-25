@@ -19,14 +19,14 @@ const MediationCard = ({ title, subTitle, icon, active = false }) => {
           className: 'h-[60px]  w-[60px] ',
         })}
 
-        <h2
+        <h3
           className={`
           font-semibold text-2xl my-8
           ${active ? 'text-white' : 'text-gray-700'}
         `}
         >
           {title}
-        </h2>
+        </h3>
       </div>
 
       <p

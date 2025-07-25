@@ -3,8 +3,6 @@ import React, { useState } from 'react';
 import banner from '/public/weichao-deng-qWjbu8n0xLI-unsplash.jpg';
 import Link from 'next/link';
 import Modal from 'react-modal';
-import overlay from '/public/Overlay.png';
-import Image from 'next/image';
 
 export const HeaderTraining = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -21,8 +19,6 @@ export const HeaderTraining = () => {
     closeModal();
   }
 
-  // linear-gradient(to right, rgba(62, 0, 101, 0.9) 1.68%, rgba(62,0,101,0.15) 69.4%)
-
   return (
     <header
       style={{
@@ -33,7 +29,6 @@ export const HeaderTraining = () => {
       }}
       className=" pt-[187px] h-auto lg:h-screen relative md:pt-[238px] pb-[176px] md:pb-[203px] px-5 md:px-[60px]"
     >
-      <Image src={overlay} alt="Header Overlay" className=" absolute top-0 left-0 w-full h-full object-cover" />
       <div className="w-full relative z-10 lg:max-w-[1318px] mx-auto">
         <h1 className="font-semibold tracking-[-4%] max-w-[900px] leading-[120%] text-5xl md:[55px] lg:text-[65px] !text-white">
           Mediation training: learn, qualify, and specialise
@@ -164,15 +159,6 @@ export const HeaderTraining = () => {
                 </form>
               </div>
             </div>
-            {/* 
-            <div className="md:flex hidden items-center gap-4 justify-center mt-[60px]">
-              <Button title={'Schedule a Mediation Session'} href="/contact-us" />
-              <button className="font-normal border border-[#393D4E] text-lg text-[#393D4E] px-[24px] py-3 rounded-[40px]">
-                <Link className="w-full" href="/contact-us">
-                  Speak to a Mediator Today
-                </Link>
-              </button>
-            </div> */}
           </div>
         </div>
       </Modal>

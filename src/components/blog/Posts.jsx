@@ -1,6 +1,5 @@
 'use client';
 import React from 'react';
-import Button from '../shared/Button';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
@@ -49,22 +48,18 @@ const Posts = ({ articles }) => {
   return (
     <section className="pb-16 mb-10 pt-[120px] lg:pt-[150px] bg-[#F9F8FF] about px-5 md:px-16 md:pb-[80px] ">
       <div className="mb-12 md:mb-[80px] flex-col gap-8  lg:flex-row flex justify-between items-center lg:items-end">
-        <div className="text-center lg:text-left">
+        <div className="text-center  w-full mx-auto lg:text-left max-w-[1200px]">
           <h3 className="font-medium mb-[20px]- md:mb-0 text-4xl md:text-5xl leading-[120%]">Blogs</h3>
-          {/* <p className="font-normal text-[#667085] text-base md:text-[20px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p> */}
         </div>
-        {/* <div>
-          <Button title={'View All'} padding="xlarge" href="/blogs" />
-        </div> */}
       </div>
       <div className="team-caousel">
         <div className="slider-container">
           <Slider {...settings}>
             {Array.from({ length: Math.ceil(articleData.length / 8) }).map((_, slideIndex) => (
               <div key={slideIndex}>
-                <div className="grid grid-cols-4 gap-8">
+                <div className="grid grid-cols-2 max-w-[1200px] mx-auto gap-8">
                   {articleData.slice(slideIndex * 8, (slideIndex + 1) * 8).map((article, index) => (
-                    <div key={article.id || index} className="col-span-4 md:col-span-2 lg:col-span-1 mb-[48px] md:mb-[60px]">
+                    <div key={article.id || index} className="col-span-2 md:col-span-2 lg:col-span-1 mb-[28px] md:mb-[30px]">
                       <div className="w-full overflow-hidden h-[300px] max-h-[290px] bg-gray-600 rounded-xl">
                         {article?.cover?.formats?.small?.url && (
                           <Image
@@ -82,11 +77,6 @@ const Posts = ({ articles }) => {
                       >
                         {article?.title}
                       </h4>
-                      {/* {article?.description && (
-                        <p title={article?.description} className={`text-[#667085] leading-[150%] mb-6 text-lg font-normal`}>
-                          {article?.description?.slice(0, 80) + '....'}
-                        </p>
-                      )} */}
                       <Link
                         title="Read More"
                         href={`/blogs/blog/${article?.slug || article.id}`}

@@ -24,33 +24,35 @@ const members = [
   },
 
   {
+    name: 'Jo Winters',
+    // image: Jo,
+    position: 'Senior Mediator',
+    details:
+      'Jo brings warmth, empathy, and strong communication skills to every mediation. She’s passionate about helping participants reach the best possible outcomes through understanding and collaboration.',
+  },
+
+  {
     name: 'Adam Gersch',
     // image: Adam,
     position: 'Founder & CEO',
     details:
       'Adam is a practising criminal barrister and CEDR-accredited mediator who founded Global Mediation in 1999. He oversees the organisation’s strategic direction and brings decades of legal and mediation experience from the UK and US.',
   },
+
+  {
+    name: 'Rebecca Hayward',
+    // image: Rebecca,
+    position: 'Senior Mediator',
+    details:
+      'Rebecca brings a calm, supportive presence and clear professional guidance to each SEND mediation. She ensures all voices are heard while keeping the focus firmly on the child or young person.',
+  },
+
   {
     name: 'Suraiya Baghdadi',
     // image: Suraiya,
     position: 'Mediation Director ',
     details:
       'Suraiya leads Global Mediation’s team of mediators, ensuring high standards across all services. With over 25 years in education and leadership, she brings deep expertise to SEND mediation.',
-  },
-
-  {
-    name: 'Emma Gersch',
-    image: null,
-    position: 'Specialist Mediator',
-    details:
-      'With a background in theatre and coaching, Emma brings over 20 years’ experience in communication and interpersonal skills training. Now a SEND mediator, she combines her expertise to support clients with empathy, clarity, and a deep belief in the power of listening.',
-  },
-  {
-    name: 'Jo Winters',
-    // image: Jo,
-    position: 'Senior Mediator',
-    details:
-      'Jo brings warmth, empathy, and strong communication skills to every mediation. She’s passionate about helping participants reach the best possible outcomes through understanding and collaboration.',
   },
 
   {
@@ -62,12 +64,13 @@ const members = [
   },
 
   {
-    name: 'Rebecca Hayward',
-    // image: Rebecca,
-    position: 'Senior Mediator',
+    name: 'Emma Gersch',
+    image: null,
+    position: 'Specialist Mediator',
     details:
-      'Rebecca brings a calm, supportive presence and clear professional guidance to each SEND mediation. She ensures all voices are heard while keeping the focus firmly on the child or young person.',
+      'With a background in theatre and coaching, Emma brings over 20 years’ experience in communication and interpersonal skills training. Now a SEND mediator, she combines her expertise to support clients with empathy, clarity, and a deep belief in the power of listening.',
   },
+
   {
     name: 'Suneta Bagri',
     // image: Suneta,
