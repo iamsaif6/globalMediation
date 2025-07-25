@@ -55,11 +55,24 @@ const Posts = ({ articles }) => {
       <div className="team-caousel">
         <div className="slider-container">
           <Slider {...settings}>
-            {Array.from({ length: Math.ceil(articleData.length / 8) }).map((_, slideIndex) => (
+            {Array.from({ length: Math.round(articleData.length / 8) }).map((_, slideIndex) => (
               <div key={slideIndex}>
-                <div className="grid grid-cols-2 max-w-[1200px] mx-auto gap-8">
+                <div
+                  className={`${
+                    slideIndex === Math.ceil(articleData.length / 8) - 1 && articleData.length % 8 !== 0
+                      ? 'flex flex-wrap justify-start gap-8'
+                      : 'grid grid-cols-2 max-w-[1200px] mx-auto gap-8'
+                  }`}
+                >
                   {articleData.slice(slideIndex * 8, (slideIndex + 1) * 8).map((article, index) => (
-                    <div key={article.id || index} className="col-span-2 md:col-span-2 lg:col-span-1 mb-[28px] md:mb-[30px]">
+                    <div
+                      key={article.id || index}
+                      className={`mb-[28px] md:mb-[30px] ${
+                        slideIndex === Math.ceil(articleData.length / 8) - 1 && articleData.length % 8 !== 0
+                          ? 'w-full sm:w-[48%] lg:w-[48%]'
+                          : 'col-span-2 md:col-span-2 lg:col-span-1'
+                      }`}
+                    >
                       <div className="w-full overflow-hidden h-[300px] max-h-[290px] bg-gray-600 rounded-xl">
                         {article?.cover?.formats?.small?.url && (
                           <Image

@@ -43,8 +43,8 @@ const page = () => {
         }
         Button1Text={'Speak to a family mediator'}
         Button1Link="/contact-us"
-        Button2Text={'Book a confidential mediation session'}
-        Button2Link="/contact-us"
+        // Button2Text={'Book a confidential mediation session'}
+        // Button2Link="/contact-us"
         cover={banner}
       />
       <Introduction

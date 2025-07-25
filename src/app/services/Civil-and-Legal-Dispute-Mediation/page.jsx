@@ -62,11 +62,11 @@ const page = () => {
                 Speak to a civil mediation specialist
               </Link>
             </button>
-            <button className="  bg-transparent font-semibold border border-white text-lg text-[#FCFCFD] px-[48px] py-3 rounded-[40px] ">
+            {/* <button className="  bg-transparent font-semibold border border-white text-lg text-[#FCFCFD] px-[48px] py-3 rounded-[40px] ">
               <Link className="w-full  " href={'/contact-us'}>
                 Book a mediation session
               </Link>
-            </button>
+            </button> */}
           </div>
         </div>
       </header>

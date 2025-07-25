@@ -170,10 +170,10 @@ const TeamCarousel = ({ darkText = false, isDouble }) => {
 
   return (
     <div className="team-caousel">
-      <div className="slider-container">
+      <div className="slider-container lg:px-[50px]">
         <Slider {...settings}>
           {members.map(item => (
-            <div className=" px-6 lg:px-[65px]  mb-[20px]">
+            <div className="px-5 min-h-[250px] lg:px-[25px]   mb-[20px]">
               <h3 className={`${darkText ? 'text-black' : 'text-white'} mt-3 md:mt-6 text-2xl md:text-[32px] font-semibold `}>
                 {item.name}
               </h3>

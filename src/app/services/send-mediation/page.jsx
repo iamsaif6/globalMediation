@@ -69,11 +69,11 @@ const page = () => {
                 Speak to a SEND mediation specialist
               </Link>
             </button>
-            <button className=" mb-[18px] md:mb-0  px-5 lg:max-w-max  border block border-white font-semibold text-base lg:text-lg text-[#FCFCFD] lg:px-12 py-3 rounded-[40px] ">
+            {/* <button className=" mb-[18px] md:mb-0  px-5 lg:max-w-max  border block border-white font-semibold text-base lg:text-lg text-[#FCFCFD] lg:px-12 py-3 rounded-[40px] ">
               <Link className="w-full " href={'/contact-us'}>
                 Book a mediation session
               </Link>
-            </button>
+            </button> */}
           </div>
         </div>
       </header>

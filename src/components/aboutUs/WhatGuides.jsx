@@ -12,7 +12,7 @@ const WhatGuides = () => {
         </p>
       </div>
       <div className="mt-[80px]">
-        <h4 className="text-2xl font-medium text-center    mb-10">Our core values</h4>
+        {/* <h4 className="text-2xl font-medium text-center    mb-10">Our core values</h4> */}
         <div className="grid grid-cols-3 gap-6 md:gap-8">
           <div className="p-6 col-span-3   lg:col-span-1 bg-[#F3F1FF] rounded-3xl">
             <div className="mt-3">

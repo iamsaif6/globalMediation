@@ -43,8 +43,8 @@ const page = () => {
         }
         Button1Text={'Book a mediation session'}
         Button1Link="/contact-us"
-        Button2Text={'Learn About Mediation Training'}
-        Button2Link="/training"
+        // Button2Text={'Learn About Mediation Training'}
+        // Button2Link="/training"
         cover={banner}
       />
 

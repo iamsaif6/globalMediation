@@ -15,7 +15,7 @@ const CTA = ({ title, subTitle, Button1Text, Button1Link, Button2Text, Button2Li
 
   return (
     <div className="md:px-16 px-5">
-      <div className="py-[84px] overflow-hidden px-8 relative -mt-10 md:p-16 bg-secondary rounded-3xl">
+      <div className="py-[84px]  overflow-hidden px-8 relative  md:p-16 bg-secondary rounded-3xl">
         <div className="z-10 py-10 mx-auto text-white text-center">
           <div className="z-10 relative">
             <div className="max-w-[950px] mx-auto">
