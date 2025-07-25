@@ -1,5 +1,5 @@
 import React from 'react';
-import teamBG from '/public/65.jpg';
+import teamBG from '/public/65.png';
 import Link from 'next/link';
 import { ArrowUpRight } from 'lucide-react';
 
@@ -28,7 +28,7 @@ const JoinGlobalTeam = () => {
           <ul className="text-white text-base md:text-lg">
             <li>
               <Link
-                href="mailto:sen@globalmediaiton.co.uk?subject=Accredited%20mediators%20opportunity"
+                href="mailto:anniw@globalmediation.co.uk?subject=Accredited%20mediators%20opportunity"
                 className="flex border-t border-[#B4ABAB] py-[18px] pr-[13px] items-center justify-between"
               >
                 <span>Accredited mediators</span>
@@ -37,7 +37,7 @@ const JoinGlobalTeam = () => {
             </li>
             <li>
               <Link
-                href="mailto:sen@globalmediaiton.co.uk?subject=Mediation%20trainers%20opportunity"
+                href="mailto:anniw@globalmediation.co.uk?subject=Mediation%20trainers%20opportunity"
                 className="flex border-t border-[#B4ABAB] py-[18px] pr-[13px] items-center justify-between"
               >
                 <span>Mediation trainers</span>
@@ -46,7 +46,7 @@ const JoinGlobalTeam = () => {
             </li>
             <li>
               <Link
-                href="mailto:sen@globalmediaiton.co.uk?subject=Administration%20opportunity"
+                href="mailto:anniw@globalmediation.co.uk?subject=Administration%20opportunity"
                 className="flex border-t border-b border-[#B4ABAB] py-[18px] pr-[13px] items-center justify-between"
               >
                 <span>Administration</span>

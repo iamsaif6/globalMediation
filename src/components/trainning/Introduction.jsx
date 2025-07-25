@@ -56,18 +56,17 @@ const Introduction = () => {
                   <span>Comprehensive support, including tutorials, coaching and feedback</span>
                 </li>
               </ul>
-
-              <div className="mt-6 flex justify-center md:block">
-                <button
-                  title=" Start Your Mediation Journey Today"
-                  onClick={openModal}
-                  className={`bg-primary border cursor-pointer border-primary font-semibold text-lg text-[#FCFCFD] px-[19px] md:px-[42px] py-3 rounded-[40px]`}
-                >
-                  Start your mediation journey today
-                </button>
-              </div>
             </div>
           </div>
+        </div>
+        <div className="mt-16  flex items-center justify-center ">
+          <button
+            title="Start Your Mediation Journey Today"
+            onClick={openModal}
+            className={`bg-primary border cursor-pointer border-primary font-semibold text-lg text-[#FCFCFD] px-[19px] md:px-[42px] py-3 rounded-[40px]`}
+          >
+            Start your mediation journey today
+          </button>
         </div>
       </div>
 

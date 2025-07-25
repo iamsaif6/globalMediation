@@ -123,14 +123,14 @@ const MediationCards = () => {
                     className: 'h-[60px]  w-[60px] ',
                   })}
                 </div>
-                <h3
+                <h2
                   className={`
           font-semibold text-2xl my-16
           ${activeCardIndex === index ? 'text-white' : 'text-gray-700'}
         `}
                 >
                   {card?.title}
-                </h3>
+                </h2>
                 <p
                   className={`
           font-arial text-base md:text-lg font-normal

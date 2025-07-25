@@ -5,7 +5,7 @@ import Image from 'next/image';
 const MeetOurFounder = () => {
   return (
     <div className="grid grid-cols-1 px-5 lg:grid-cols-2 items-center  gap-[90px] lg:max-w-[1318px] mx-auto">
-      <div className="max-h-[600px] rounded-2xl overflow-hidden">
+      <div className="max-h-[500px] max-w-[500px] mx-auto rounded-2xl overflow-hidden">
         <Image src={Adam} className="w-full h-full object-cover object-center" />
       </div>
       <div className="text-white">

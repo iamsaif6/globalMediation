@@ -7,8 +7,8 @@ const Colabration = () => {
           How mediation with global <br /> supports you
         </h5>
         <p className={`text-[#fff] text-left lg:text-center text-base md:text-lg font-normal`}>
-          We are here to guide, not to judge. Mediation is always voluntary and confidential, and designed to give everyone a voice. <br />{' '}
-          We do this through:
+          We are here to guide, not to judge. Mediation is always voluntary and confidential, and designed to give everyone a voice. We do
+          this through:
         </p>
       </div>
       <div className="mt-[50px]">

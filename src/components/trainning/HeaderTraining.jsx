@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import banner from '/public/carl-tronders--xOA4sXtq0w-unsplash.jpg';
+import banner from '/public/weichao-deng-qWjbu8n0xLI-unsplash.jpg';
 import Link from 'next/link';
 import Modal from 'react-modal';
 import overlay from '/public/Overlay.png';
@@ -35,7 +35,7 @@ export const HeaderTraining = () => {
     >
       <Image src={overlay} alt="Header Overlay" className=" absolute top-0 left-0 w-full h-full object-cover" />
       <div className="w-full relative z-10 lg:max-w-[1318px] mx-auto">
-        <h1 className="font-semibold tracking-[-4%] max-w-[900px] leading-[120%] text-5xl md:[55px] lg:text-[65px] text-white">
+        <h1 className="font-semibold tracking-[-4%] max-w-[900px] leading-[120%] text-5xl md:[55px] lg:text-[65px] !text-white">
           Mediation training: learn, qualify, and specialise
         </h1>
         <p className="text-white mt-[18px] max-w-[700px] md:mt-6 mb-[26px] md:mb-8 w-[70%] font-normal text-base md:text-lg">
@@ -45,21 +45,40 @@ export const HeaderTraining = () => {
         <div className="flex md:flex-row flex-col items-center gap-4">
           <button
             title=" Enroll in a Mediation Training Program Today"
-            onClick={openModal}
+            // onClick={openModal}
             className={`bg-primary md:block hidden  cursor-pointer border  border-primary font-semibold text-lg text-[#FCFCFD] px-2 md:px-12 py-3 rounded-[40px]`}
           >
-            Enroll in a mediation training program today
+            <Link
+              title="Contact Us for Upcoming Course Dates"
+              className="w-full"
+              target="_blank"
+              href={'https://globaltraning.vercel.app/'}
+            >
+              Enroll in a mediation training program today
+            </Link>
           </button>
           <button
             title=" Enroll in a Mediation Training Program Today"
-            onClick={openModal}
+            // onClick={openModal}
             className={`bg-primary block md:hidden  cursor-pointer border  border-primary font-semibold text-lg text-[#FCFCFD] px-5 py-3 rounded-[40px]`}
           >
-            Enquire today
+            <Link
+              title="Contact Us for Upcoming Course Dates"
+              className="w-full"
+              target="_blank"
+              href={'https://globaltraning.vercel.app/'}
+            >
+              Enquire today
+            </Link>
           </button>
 
           <button className="bg-secondary font-semibold border border-secondary text-lg text-[#FCFCFD] px-3 md:px-[48px] py-3 rounded-[40px] ">
-            <Link title="Contact Us for Upcoming Course Dates" className="w-full  " href={'/contact-us'}>
+            <Link
+              title="Contact Us for Upcoming Course Dates"
+              className="w-full"
+              target="_blank"
+              href={'https://globaltraning.vercel.app/contact-us'}
+            >
               Contact us for upcoming course dates
             </Link>
           </button>

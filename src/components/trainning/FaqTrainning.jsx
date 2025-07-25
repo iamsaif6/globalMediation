@@ -65,7 +65,7 @@ const FaqTrainning = () => {
   };
   return (
     <section className="py-16 bg-[#F9F8FF] px-5 items-center md:px-16 md:py-[80px]">
-      <SectionHeading center={true} title={'Common Questions About Mediation Training'} />
+      <SectionHeading center={true} title={'Common questions about Mediation Training'} />
       <div className=" mt-[80px] md:my-10">
         {faqData.map(faq => (
           <FaqItem
