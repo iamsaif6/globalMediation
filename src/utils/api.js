@@ -3,7 +3,7 @@ const API_URL = 'https://lovable-fireworks-b08e821c72.strapiapp.com';
 // Fetch All Article
 export async function fetchArticles() {
   try {
-    const response = await fetch(`${API_URL}/api/articles?populate=*&pagination[page]=1&pagination[pageSize]=100`, {
+    const response = await fetch(`${API_URL}/api/articles?populate=*&filters[Site][$eq]=Mediation&pagination[pageSize]=100`, {
       next: { revalidate: 300 },
     });
 
