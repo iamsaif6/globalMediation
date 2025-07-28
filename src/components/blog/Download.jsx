@@ -19,11 +19,11 @@ const items = [
   },
   {
     name: 'Global Mediation data protection policy 2020',
-    link: 'https://www.globalmediation.co.uk/wp-content/uploads/2020/05/GlobalMediation_Data_Protection_Policy-25.02.20.pdf',
+    link: '/PDF/V2 GM_Data protection policy.pdf',
   },
   {
     name: 'Global Mediation privacy statement 2020',
-    link: 'https://www.globalmediation.co.uk/wp-content/uploads/2020/05/GlobalMediation_Privacy_Statement-25.02.20.pdf',
+    link: '/PDF/V3_GM_privacy statement.pdf',
   },
 ];
 
@@ -35,9 +35,6 @@ const Download = () => {
       </div>
       <div className="w-full">
         <ul className="text-sm md:text-lg  font-normal text-secondary">
-          {/* ${
-                idx % 2 != 1 ? 'bg-[#F3F1FF]' : ''
-              } */}
           {items.map((item, idx) => (
             <li
               key={idx}
@@ -60,7 +57,7 @@ const Download = () => {
                 </svg>
                 <span>{item.name}</span>
               </p>
-              <a target="_blank" download={'PDF'} href={item.link}>
+              <a target="_blank" download={item.name} href={item.link}>
                 <svg
                   className="md:w-[42px] w-[24px] h-[24px] md:h-[42px]"
                   xmlns="http://www.w3.org/2000/svg"
