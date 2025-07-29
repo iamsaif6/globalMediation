@@ -89,7 +89,7 @@ const Footer = () => {
           <Link className="underline" href={'/privacy-policy'}>
             Privacy Policy
           </Link>
-          <Link className="underline" href={'/Compliment-Policy'}>
+          <Link className="underline" href={'/complaints-comments-compliments-policy-2015'}>
             Complaints, Comments & Compliments Policy
           </Link>
           <Link className="underline" href={'/data-protection-policy'}>

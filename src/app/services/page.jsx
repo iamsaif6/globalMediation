@@ -63,7 +63,7 @@ const MainServices = () => {
 
       <MainServiesCard />
       <CTA
-        title={'Ready to Resolve Your Dispute?'}
+        title={'Ready to resolve your dispute?'}
         subTitle={'Your trusted partner in conflict resolution'}
         Button1Text={'Schedule consultation'}
         Button1Link={'/contact-us'}

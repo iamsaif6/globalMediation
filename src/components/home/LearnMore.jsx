@@ -59,7 +59,7 @@ const LearnMore = () => {
             <Link
               title="Read more"
               className="text-sm text-secondary md:text-lg duration-300 hover:gap-4 border-b-[2px] pb-1.5 w-max flex items-center gap-2 font-semibold mt-auto"
-              href={'/faq'}
+              href={'/faqs'}
             >
               <span>Read more</span> <ArrowRight strokeWidth={1.5} size={20} />
             </Link>

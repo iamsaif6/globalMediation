@@ -16,7 +16,7 @@ const DataProtection = () => {
           </a>
         </div>
         <div>
-          <h3 className=" font-semibold text-4xl mb-6 text-secondary">Data Protection Policy</h3>
+          <h3 className=" font-semibold text-4xl mb-6 text-secondary">Data protection policy</h3>
           <p className=" text-[15px]">
             The Organisation needs to collect and use certain types of information about staff, clients and other individuals who come into
             contact with the company in order to operate. In addition, it may be required by law to collect and use certain types of
@@ -141,7 +141,7 @@ const DataProtection = () => {
           </p>
         </div>
         <div className="my-16">
-          <h3 className="font-semibold text-4xl mb-6 text-secondary">Key Definitions</h3>
+          <h3 className="font-semibold text-4xl mb-6 text-secondary">Key definitions</h3>
           <div className="space-y-6">
             <p>
               <span className="font-semibold">Personal data —</span> this is defined as any information relating to an identified or
@@ -208,7 +208,7 @@ const DataProtection = () => {
           </div>
         </div>
         <div className="mt-16">
-          <h3 className="font-semibold mb-2 text-4xl text-secondary">Company Responsibilities</h3>
+          <h3 className="font-semibold mb-2 text-4xl text-secondary">Company responsibilities</h3>
           <span>Global Mediation Limited is a data processor as defined under the GDPR.</span>
           <p className="mt-6">
             Senior Management and all those in managerial or supervisory roles throughout Global Mediation Limited are responsible for
@@ -235,7 +235,7 @@ const DataProtection = () => {
         </div>
 
         <div className="mt-16">
-          <h3 className="font-semibold mb-2 text-4xl text-secondary">Risk Assessment in relation to GDPR</h3>
+          <h3 className="font-semibold mb-2 text-4xl text-secondary">Risk assessment in relation to GDPR</h3>
 
           <p className="mt-6">
             Global Mediation Limited needs to ensure that it is aware of any risks associated with the processing of all types of personal
@@ -261,7 +261,7 @@ const DataProtection = () => {
         </div>
 
         <div className="mt-16">
-          <h3 className="font-semibold mb-2 text-4xl text-secondary">Principles of Data Protection</h3>
+          <h3 className="font-semibold mb-2 text-4xl text-secondary">Principles of data protection</h3>
 
           <p className="mt-6">
             Any processing of personal data must be conducted in accordance with the following data protection principles of the Regulation,
@@ -313,7 +313,7 @@ const DataProtection = () => {
         </div>
 
         <div className="mt-16">
-          <h3 className="font-semibold mb-2 text-4xl text-secondary">Other Considerations</h3>
+          <h3 className="font-semibold mb-2 text-4xl text-secondary">Other considerations</h3>
           <span>Personal data must be accurate and kept up to date.</span>
           <p className="mt-6">
             Data that is kept for a long time must be reviewed and updated as necessary. Any data that is considered to be inaccurate or
@@ -345,7 +345,7 @@ const DataProtection = () => {
         </div>
 
         <div className="mt-16">
-          <h3 className="font-semibold mb-2 text-4xl text-secondary">Personal Data Considerations</h3>
+          <h3 className="font-semibold mb-2 text-4xl text-secondary">Personal data considerations</h3>
           <span>
             Personal data must be kept in a form such that the data subject can be identified only as long as is necessary for processing.
           </span>
@@ -400,7 +400,7 @@ const DataProtection = () => {
         </div>
 
         <div className="mt-16">
-          <h3 className="font-semibold mb-2 text-4xl text-secondary">Binding Corporate Rules</h3>
+          <h3 className="font-semibold mb-2 text-4xl text-secondary">Binding corporate rules</h3>
           <span>
             Global Mediation Limited may adopt approved Binding Corporate Rules for the transfer of data outside the EU Member States. This
             requires submission to the relevant Supervisory Authority for approval of the rules that Global Mediation Limited is seeking to
@@ -409,7 +409,7 @@ const DataProtection = () => {
         </div>
 
         <div className="mt-16">
-          <h3 className="font-semibold mb-2 text-4xl text-secondary">Model Contract Clauses</h3>
+          <h3 className="font-semibold mb-2 text-4xl text-secondary">Model contract clauses</h3>
           <span>
             Global Mediation Limited may adopt approved model contract clauses for the transfer of data outside of the EU Member States. If
             Global Mediation Limited adopts the model contract clauses approved by the relevant Supervisory Authority, there is an automatic
@@ -470,7 +470,7 @@ const DataProtection = () => {
         </div>
 
         <div className="mt-16">
-          <h3 className="font-semibold mb-2 text-4xl text-secondary">Data Subjects’ Rights</h3>
+          <h3 className="font-semibold mb-2 text-4xl text-secondary">Data subjects rights</h3>
           <span>Data subjects have the following rights regarding data processing, and the data that is recorded about them:</span>
           <div className="my-6">
             <ol className="list-decimal pl-10 my-6 space-y-1 capitalize">
@@ -534,7 +534,7 @@ const DataProtection = () => {
         </div>
 
         <div className="mt-16">
-          <h3 className="font-semibold mb-2 text-4xl text-secondary">Data Security</h3>
+          <h3 className="font-semibold mb-2 text-4xl text-secondary">Data security</h3>
           <span>
             All Global Mediation Limited Staff that are responsible for any personal data which Global Mediation Limited holds must keep it
             securely and ensure that it is not disclosed under any conditions to any third party unless that third party has been
@@ -571,7 +571,7 @@ const DataProtection = () => {
         </div>
 
         <div className="mt-16">
-          <h3 className="font-semibold mb-2 text-4xl text-secondary">Rights of Access to Data</h3>
+          <h3 className="font-semibold mb-2 text-4xl text-secondary">Rights of access to data</h3>
           <span>
             Data subjects have the right to access any personal data (i.e. data about them) which is held by Global Mediation Limited in
             electronic format and manual records which form part of a relevant filing system. This includes the right to inspect
@@ -581,7 +581,7 @@ const DataProtection = () => {
         </div>
 
         <div className="mt-16">
-          <h3 className="font-semibold mb-2 text-4xl text-secondary">Disclosure of Data</h3>
+          <h3 className="font-semibold mb-2 text-4xl text-secondary">Disclosure of data</h3>
           <span>
             Global Mediation Limited must ensure that personal data is not disclosed to unauthorised third parties which includes family
             members, friends, government bodies, and in certain circumstances, the Police. All Employees/Staff should exercise caution when
@@ -609,7 +609,7 @@ const DataProtection = () => {
         </div>
 
         <div className="mt-16">
-          <h3 className="font-semibold mb-2 text-4xl text-secondary">Retention and Disposal of Data</h3>
+          <h3 className="font-semibold mb-2 text-4xl text-secondary">Retention and disposal of data</h3>
           <span>
             Personal data may not be retained for longer than it is required. Once a member of staff has left Global Mediation Limited, it
             may not be necessary to retain all the information held on them. Some data will be kept for longer periods than others. Global
@@ -618,7 +618,7 @@ const DataProtection = () => {
         </div>
 
         <div className="mt-16">
-          <h3 className="font-semibold mb-2 text-4xl text-secondary">Disposal of Records</h3>
+          <h3 className="font-semibold mb-2 text-4xl text-secondary">Disposal of records</h3>
           <span>
             Personal data must be disposed of in a way that protects the “rights and freedoms” of data subjects (e.g. shredding, disposal as
             confidential waste, secure electronic deletion) (see A.8.3.2 and A.11.2.7).
@@ -626,7 +626,7 @@ const DataProtection = () => {
         </div>
 
         <div className="mt-16">
-          <h3 className="font-semibold mb-2 text-4xl text-secondary">E-mail and Internet Privacy</h3>
+          <h3 className="font-semibold mb-2 text-4xl text-secondary">E-mail and internet privacy</h3>
           <span>
             The inappropriate use of e-mail and the Internet by employees, e.g. using the Internet for non-work purposes, can have
             significant consequences for our Organisation. This can be in terms of:
@@ -649,7 +649,7 @@ const DataProtection = () => {
         </div>
 
         <div className="mt-16">
-          <h3 className="font-semibold mb-2 text-4xl text-secondary">Acceptable use of E-mail and the Internet</h3>
+          <h3 className="font-semibold mb-2 text-4xl text-secondary">Acceptable use of E-mail and the internet</h3>
           <span>
             Please see the E-mail and Internet Acceptable Usage Policy. <br /> <br />
             In addition, the Organisation’s employees will be kept fully informed about overall information security procedures and the

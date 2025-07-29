@@ -7,7 +7,7 @@ const Guides = () => {
     <section className="pb-16 pt-[100px] px-0 md:pb-[80px] md:px-[64px] bg-secondary text-white">
       <Download />
       <CTA
-        title={'Start Your Mediation Training Journey Today'}
+        title={'Start your mediation training journey today'}
         subTitle={'Take the first step toward becoming a qualified mediator or enhancing your existing mediation skills.'}
         Button1Link={'/contact-us'}
         Button1Text={'Enrol in a mediation training program today'}

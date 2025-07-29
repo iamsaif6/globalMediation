@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 const resourceSubMenu = [
   { title: 'Blogs', href: '/blogs' },
-  { title: 'FAQ', href: '/faq' },
+  { title: 'FAQ', href: '/faqs' },
   // { title: 'Case studies', href: '/case-studies' },
   { title: 'Guides', href: '/guides' },
 ];
@@ -16,7 +16,7 @@ const serviceSubmenu = [
   { title: 'Workplace and employment mediation', href: '/Workplace-and-Employment-Mediation' },
   { title: 'Business and commercial mediation', href: '/Business-and-Commercial-Mediation' },
   { title: 'SEND (Special Educational Needs and Disability) mediation', href: '/send-mediation' },
-  { title: 'Family mediation', href: '/Family-Mediation' },
+  { title: 'Family mediation', href: '/family-mediation' },
   { title: 'Community mediation', href: '/Community-Mediation' },
   { title: 'Civil and legal dispute mediation', href: '/Civil-and-Legal-Dispute-Mediation' },
 ];
@@ -46,7 +46,7 @@ const navLinksForMobile = [
       { title: 'Workplace and employment mediation', href: '/Workplace-and-Employment-Mediation' },
       { title: 'Business and commercial mediation', href: '/Business-and-Commercial-Mediation' },
       { title: 'SEND (Special Educational Needs and Disability) mediation', href: '/send-mediation' },
-      { title: 'Family mediation', href: '/Family-Mediation' },
+      { title: 'Family mediation', href: '/family-mediation' },
       { title: 'Community mediation', href: '/Community-Mediation' },
       { title: 'Civil and legal dispute mediation', href: '/Civil-and-Legal-Dispute-Mediation' },
     ],
@@ -68,7 +68,7 @@ const navLinksForMobile = [
     hasMegaMenu: true,
     megaMenuItems: [
       { title: 'Blog', href: '/blogs' },
-      { title: 'FAQ', href: '/faq' },
+      { title: 'FAQ', href: '/faqs' },
       // { title: 'Case studies', href: '/case-studies' },
       { title: 'Guides', href: '/guides' },
     ],
@@ -92,7 +92,7 @@ const navLinks = [
       { title: 'Workplace and employment mediation', href: '/Workplace-and-Employment-Mediation' },
       { title: 'Business and commercial mediation', href: '/Business-and-Commercial-Mediation' },
       { title: 'SEND (Special Educational Needs and Disability) mediation', href: '/send-mediation' },
-      { title: 'Family mediation', href: '/Family-Mediation' },
+      { title: 'Family mediation', href: '/family-mediation' },
       { title: 'Community mediation', href: '/Community-Mediation' },
       { title: 'Civil and legal dispute mediation', href: '/Civil-and-Legal-Dispute-Mediation' },
     ],
@@ -104,7 +104,7 @@ const navLinks = [
     hasMegaMenu: true,
     megaMenuItems: [
       { title: 'Blog', href: '/blogs' },
-      { title: 'FAQ', href: '/faq' },
+      { title: 'FAQ', href: '/faqs' },
       { title: 'Case studies', href: '/case-studies' },
       { title: 'Guides', href: '/guides' },
     ],

@@ -126,9 +126,6 @@ const page = () => {
                           <span>Will, trust, or inheritance disagreements</span>
                         </li>
                       </ul>
-                      {/* <div className="mt-9">
-                        <Button title={'Resolve Workplace Disputes Today'} href="#" />
-                      </div> */}
                     </div>
                     <div className="flex justify-center md:block">
                       <button className=" bg-white  mt-10  font-semibold text-lg text-black px-12 py-3 rounded-[40px] ">
@@ -326,7 +323,7 @@ const page = () => {
       {/* <Map /> */}
       <div className="bg-[#F9F8FF]">
         <CTA
-          title={'Ready to Resolve Your Dispute?'}
+          title={'Ready to resolve your dispute?'}
           subTitle={
             'Whether you’re navigating a legal disagreement, or advising someone who is, we’re here to help you find a fair way forward.'
           }
