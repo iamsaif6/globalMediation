@@ -17,7 +17,7 @@ const exlopreItem = [
     ],
     cover: service2,
     buttonText: 'Enrol in the foundation course today',
-    buttonLink: '/contact-us',
+    buttonLink: '/contact',
   },
   {
     title: 'SEND mediation training course',
@@ -30,7 +30,7 @@ const exlopreItem = [
     ],
     cover: service3,
     buttonText: 'Specialise in SEND mediation',
-    buttonLink: '/contact-us',
+    buttonLink: '/contact',
   },
   {
     title: 'SEND mediation: Professional practice day',
@@ -43,7 +43,7 @@ const exlopreItem = [
     ],
     cover: service4,
     buttonText: 'Advance your SEND skills today',
-    buttonLink: '/contact-us',
+    buttonLink: '/contact',
   },
 ];
 

@@ -62,7 +62,7 @@ const page = () => {
             <button
               className={`bg-primary px-5 lg:max-w-max  border block border-primary font-semibold text-base lg:text-lg text-[#FCFCFD] lg:px-12 py-3 rounded-[40px]`}
             >
-              <Link className="w-full" href={'/contact-us'}>
+              <Link className="w-full" href={'/contact'}>
                 Speak to a SEND mediation specialist
               </Link>
             </button>
@@ -127,7 +127,7 @@ const page = () => {
                     </div>
                     <div className="flex justify-center md:block">
                       <button className=" bg-white  mt-10  font-semibold text-lg text-black px-12 py-3 rounded-[40px] ">
-                        <Link className="w-full  " href="/contact-us">
+                        <Link className="w-full  " href="/contact">
                           Book SEND mediation
                         </Link>
                       </button>
@@ -179,7 +179,7 @@ const page = () => {
           </div>
         </div>
         <div className="flex justify-center">
-          <Button padding="small" title={'Request a SEND mediation appointment'} href="/about-us" />
+          <Button padding="small" title={'Request a SEND mediation appointment'} href="/about" />
         </div>
       </section>
 
@@ -236,17 +236,17 @@ const page = () => {
         <CTA
           title={'Start your SEND mediation journey'}
           subTitle={'If you’re a parent, carer, young person or professional needing support with a SEND disagreement, we’re here to help.'}
-          Button1Link={'/contact-us'}
+          Button1Link={'/contact'}
           Button1Text={'Book a session'}
           Button2Text={'Contact our SEND team'}
-          Button2Link={'/contact-us'}
+          Button2Link={'/contact'}
           capitalize={false}
         />
       </div>
       <FAQ
         title={'FAQs about SEND mediation'}
         buttonText={'Speak to a SEND mediation specialist'}
-        buttonLink={'/contact-us'}
+        buttonLink={'/contact'}
         faqData={faqData}
       />
     </div>

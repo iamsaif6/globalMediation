@@ -80,7 +80,7 @@ const AboutUs = () => {
             <button
               className={`bg-primary  max-w-[292px] lg:max-w-max w-full border block border-primary font-semibold text-lg text-[#FCFCFD] lg:px-12 py-3 rounded-[40px]`}
             >
-              <Link className="w-full" href={'/contact-us'}>
+              <Link className="w-full" href={'/contact'}>
                 Contact us today
               </Link>
             </button>
@@ -108,7 +108,7 @@ const AboutUs = () => {
       <CTA
         title={'Let’s find a way forward, together'}
         subTitle={'For more information about our services, team, training programs, or career opportunities, get in touch with us .'}
-        Button1Link={'/contact-us'}
+        Button1Link={'/contact'}
         Button1Text={'Contact us'}
       />
     </div>

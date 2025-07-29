@@ -80,7 +80,7 @@ const page = () => {
     <div>
       <Header
         Button1Text={'Book a mediation session'}
-        Button1Link="/contact-us"
+        Button1Link="/contact"
         title={'Business and commercial mediation'}
         subTitle={
           'Business disputes can stall progress, damage relationships and drain time and energy. Whether high-value, high-stakes or emotionally charged, we help untangle complex disagreements through structured dialogue and impartial support — rebuilding trust and moving forward with clarity, care and shared understanding.'
@@ -177,14 +177,14 @@ const page = () => {
       </div>
       <MediationCalculation />
 
-      <FAQ title={'FAQs about business and commercial mediation'} buttonText={'Contact us'} buttonLink={'/contact-us'} faqData={faqData} />
+      <FAQ title={'FAQs about business and commercial mediation'} buttonText={'Contact us'} buttonLink={'/contact'} faqData={faqData} />
       <div className="bg-[#F9F8FF]">
         <CTA
           title={'Start the conversation'}
           subTitle={'You don’t need to know exactly what you’re asking for.Just tell us what’s going on, and we’ll talk you through it.'}
-          Button1Link={'/contact-us'}
+          Button1Link={'/contact'}
           Button1Text={'Book business mediation'}
-          Button2Link={'/contact-us'}
+          Button2Link={'/contact'}
           Button2Text={'Contact us'}
         />
       </div>

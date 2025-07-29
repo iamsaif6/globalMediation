@@ -7,11 +7,11 @@ const items = [
   },
   {
     name: 'Child friendly safeguarding policy – updated',
-    link: 'https://www.globalmediation.co.uk/wp-content/uploads/2017/09/Child-Friendly-Safeguarding-Policy-Updated.pdf',
+    link: '/PDF/V1 Child friendly safeguarding.pdf',
   },
   {
     name: 'Global Mediation – mediator code of conduct',
-    link: 'https://www.globalmediation.co.uk/wp-content/uploads/2020/05/GlobalMediation_Code_of_Conduct_Final.pdf',
+    link: '/PDF/V1 GM_code of conduct.pdf',
   },
   {
     name: 'Global Mediation safeguarding policy 2020',

@@ -46,7 +46,7 @@ export default function Home() {
               <Link
                 title="Learn About Mediation"
                 className=" bg-white mt-3 inline-block  font-semibold text-lg text-secondary px-6 md:px-[57px] py-3 rounded-3xl lg:rounded-[40px] "
-                href="/about-us"
+                href="/about"
               >
                 Learn about mediation
               </Link>
@@ -74,9 +74,9 @@ export default function Home() {
           title={'Ready to resolve your dispute?'}
           subTitle={'We are here to help. Let’s talk'}
           Button1Text={'Schedule consultation'}
-          Button1Link={'/contact-us'}
+          Button1Link={'/contact'}
           Button2Text={'Contact us'}
-          Button2Link={'/contact-us'}
+          Button2Link={'/contact'}
         />
       </div>
     </>

@@ -54,12 +54,12 @@ const page = () => {
           </p>
           <div className="flex md:flex-row flex-col items-center gap-4">
             <button className={`bg-primary  border border-primary font-semibold text-lg text-[#FCFCFD] px-6 py-3 rounded-[40px]`}>
-              <Link className="w-full" href={'/contact-us'}>
+              <Link className="w-full" href={'/contact'}>
                 Speak to a civil mediation specialist
               </Link>
             </button>
             {/* <button className="  bg-transparent font-semibold border border-white text-lg text-[#FCFCFD] px-[48px] py-3 rounded-[40px] ">
-              <Link className="w-full  " href={'/contact-us'}>
+              <Link className="w-full  " href={'/contact'}>
                 Book a mediation session
               </Link>
             </button> */}
@@ -125,7 +125,7 @@ const page = () => {
                     </div>
                     <div className="flex justify-center md:block">
                       <button className=" bg-white  mt-10  font-semibold text-lg text-black px-12 py-3 rounded-[40px] ">
-                        <Link className="w-full  " href="/contact-us">
+                        <Link className="w-full  " href="/contact">
                           Book civil mediation
                         </Link>
                       </button>
@@ -186,7 +186,7 @@ const page = () => {
           </div>
         </div>
         <div className="hidden lg:flex justify-center">
-          <Button title={'Request a civil and legal dispute mediation appointment'} href="/about-us" />
+          <Button title={'Request a civil and legal dispute mediation appointment'} href="/about" />
         </div>
       </section>
 
@@ -251,13 +251,13 @@ const page = () => {
           subTitle={
             'Whether you’re navigating a legal disagreement, or advising someone who is, we’re here to help you find a fair way forward.'
           }
-          Button1Link={'/contact-us'}
+          Button1Link={'/contact'}
           Button1Text={'Book a civil mediation session'}
           Button2Text={'Speak to our mediation team'}
-          Button2Link={'/contact-us'}
+          Button2Link={'/contact'}
         />
       </div>
-      <FAQ title={'FAQs about civil and legal mediation'} buttonText={'Ask us a question'} buttonLink={'/contact-us'} faqData={faqData} />
+      <FAQ title={'FAQs about civil and legal mediation'} buttonText={'Ask us a question'} buttonLink={'/contact'} faqData={faqData} />
     </div>
   );
 };

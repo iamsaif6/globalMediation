@@ -74,7 +74,7 @@ const navLinksForMobile = [
     ],
   },
   {
-    href: '/about-us',
+    href: '/about',
     title: 'About us',
   },
 ];
@@ -110,7 +110,7 @@ const navLinks = [
     ],
   },
   {
-    href: '/about-us',
+    href: '/about',
     title: 'About us',
   },
 ];
@@ -258,7 +258,7 @@ const Navbar = () => {
                 <button
                   className={`bg-primary  border leading-[140%] border-primary font-medium text-lg text-[#FCFCFD] px-6 py-3 rounded-[40px]`}
                 >
-                  <Link className="w-full" href="/contact-us">
+                  <Link className="w-full" href="/contact">
                     Contact us
                   </Link>
                 </button>
@@ -540,7 +540,7 @@ const Navbar = () => {
 
             <div className="p-5 pt-1 flex items-center gap-2">
               <button className={`bg-primary w-full border border-primary font-semibold text-lg text-[#FCFCFD] px-6 py-3 rounded-[40px]`}>
-                <Link onClick={() => setMobileMenuOpen(false)} className="w-full" href="/contact-us">
+                <Link onClick={() => setMobileMenuOpen(false)} className="w-full" href="/contact">
                   Contact US
                 </Link>
               </button>

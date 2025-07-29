@@ -72,7 +72,7 @@ export const HeaderTraining = () => {
               title="Contact Us for Upcoming Course Dates"
               className="w-full"
               target="_blank"
-              href={'https://globaltraning.vercel.app/contact-us'}
+              href={'https://globaltraning.vercel.app/contact'}
             >
               Contact us for upcoming course dates
             </Link>

@@ -77,7 +77,7 @@ const Footer = () => {
           <Link className="py-[6px] block" href="/blog">
             Resources
           </Link>
-          <Link className="py-[6px] block" href="/about-us">
+          <Link className="py-[6px] block" href="/about">
             About us
           </Link>
         </div>

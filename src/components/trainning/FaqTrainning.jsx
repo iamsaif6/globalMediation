@@ -81,7 +81,7 @@ const FaqTrainning = () => {
         <Link href={'#'} className="text-lg mb-[30px]">
           Have more questions?
         </Link>
-        <Button title={'Contact'} href="/contact-us" padding="xxlarge" />
+        <Button title={'Contact'} href="/contact" padding="xxlarge" />
       </div>
     </section>
   );

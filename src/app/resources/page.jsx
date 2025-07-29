@@ -9,9 +9,9 @@ const Guides = () => {
       <CTA
         title={'Start your mediation training journey today'}
         subTitle={'Take the first step toward becoming a qualified mediator or enhancing your existing mediation skills.'}
-        Button1Link={'/contact-us'}
+        Button1Link={'/contact'}
         Button1Text={'Enrol in a mediation training program today'}
-        Button2Link={'/contact-us'}
+        Button2Link={'/contact'}
         Button2Text={'Contact us for upcoming course dates'}
         className={'-mt-10'}
       />

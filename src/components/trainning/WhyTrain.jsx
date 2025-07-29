@@ -110,7 +110,7 @@ const WhyTrain = () => {
         <button
           className={`bg-primary hidden lg:block  border border-primary font-semibold text-lg text-[#FCFCFD] px-3 md:px-8 py-3 rounded-[40px]`}
         >
-          <Link className="w-full" href="/contact-us">
+          <Link className="w-full" href="/contact">
             Contact us to learn more about our training programmes
           </Link>
         </button>
@@ -118,7 +118,7 @@ const WhyTrain = () => {
         <button
           className={`bg-primary block lg:hidden  border border-primary font-semibold text-lg text-[#FCFCFD] px-8 py-3 rounded-[40px]`}
         >
-          <Link className="w-full" href="/contact-us">
+          <Link className="w-full" href="/contact">
             Learn more
           </Link>
         </button>

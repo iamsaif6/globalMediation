@@ -39,7 +39,7 @@ const page = () => {
           'Specialised mediation services designed to resolve workplace conflicts and foster collaboration, trust, and a more positive work environment.'
         }
         Button1Text={'Book a mediation session'}
-        Button1Link="/contact-us"
+        Button1Link="/contact"
         cover={banner}
       />
 
@@ -136,7 +136,7 @@ const page = () => {
                 </ul>
                 <div className="flex justify-center md:block">
                   <button className=" bg-white mt-10  font-semibold text-lg text-secondary px-12 py-3 rounded-[40px] ">
-                    <Link className="w-full  " href="/contact-us">
+                    <Link className="w-full  " href="/contact">
                       Book workplace mediation
                     </Link>
                   </button>
@@ -205,12 +205,12 @@ const page = () => {
         fullWidth
       />
 
-      <FAQ title={'FAQs about workplace mediation'} buttonText={'Contact us'} buttonLink={'/contact-us'} faqData={faqData} />
+      <FAQ title={'FAQs about workplace mediation'} buttonText={'Contact us'} buttonLink={'/contact'} faqData={faqData} />
       <div className="bg-[#F9F8FF]">
         <CTA
           title={'Learn more about Global Mediation'}
           subTitle={'For more information about our services, team, training programs, or career opportunities, get in touch with us:'}
-          Button1Link={'/contact-us'}
+          Button1Link={'/contact'}
           Button1Text={'Contact us today'}
           capitalize={false}
         />

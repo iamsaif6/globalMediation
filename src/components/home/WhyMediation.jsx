@@ -59,7 +59,7 @@ const WhyMediation = () => {
         <Link
           title="Learn more about us"
           className=" bg-white  font-semibold text-lg text-secondary px-[57px] py-3 rounded-3xl lg:rounded-[40px] "
-          href="/about-us"
+          href="/about"
         >
           Learn more about us
         </Link>

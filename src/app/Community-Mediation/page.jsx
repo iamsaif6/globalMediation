@@ -52,7 +52,7 @@ const page = () => {
           </p>
           <div className="flex md:flex-row items-center flex-col gap-4">
             <button className={`bg-primary  border   border-primary font-semibold text-lg text-[#FCFCFD] px-6 py-3 rounded-[40px]`}>
-              <Link className="w-full" href={'/contact-us'}>
+              <Link className="w-full" href={'/contact'}>
                 Speak to a community mediator
               </Link>
             </button>
@@ -117,7 +117,7 @@ const page = () => {
                     </div>
                     <div className="flex md:block justify-center">
                       <button className=" bg-white  mt-10  font-semibold text-lg text-black px-12 py-3 rounded-[40px] ">
-                        <Link className="w-full  " href="/contact-us">
+                        <Link className="w-full  " href="/contact">
                           Book community mediation
                         </Link>
                       </button>
@@ -180,7 +180,7 @@ const page = () => {
         </div>
         <div className="flex justify-center">
           <button className=" bg-primary  mt-10  font-semibold text-lg text-white px-12 py-3 rounded-[40px] ">
-            <Link className="w-full  " href="/about-us">
+            <Link className="w-full  " href="/about">
               Request a community mediation appointment
             </Link>
           </button>
@@ -242,13 +242,13 @@ const page = () => {
         <CTA
           title={'Ready to resolve a dispute?'}
           subTitle={'We’re here to help you sort things out — before it goes any further.You don’t need to face it alone.'}
-          Button1Link={'/contact-us'}
+          Button1Link={'/contact'}
           Button1Text={'Speak to a mediator'}
           Button2Text={'Get support now'}
-          Button2Link={'/contact-us'}
+          Button2Link={'/contact'}
         />
       </div>
-      <FAQ title={'FAQs about community mediation'} buttonText={'Ask us a question'} buttonLink={'/contact-us'} faqData={faqData} />
+      <FAQ title={'FAQs about community mediation'} buttonText={'Ask us a question'} buttonLink={'/contact'} faqData={faqData} />
     </div>
   );
 };

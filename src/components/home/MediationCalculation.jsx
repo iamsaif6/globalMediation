@@ -274,9 +274,9 @@ const MediationCalculation = () => {
               </div>
               {/* Buttons */}
               <div className="md:flex hidden items-center gap-4 justify-center mt-[60px]">
-                <Button title={'Schedule a Mediation Session'} href="/contact-us" />
+                <Button title={'Schedule a Mediation Session'} href="/contact" />
                 <button className="font-normal border border-[#393D4E] text-lg text-[#393D4E] px-[24px] py-3 rounded-[40px]">
-                  <Link title=" Speak to a Mediator Today" className="w-full" href="/contact-us">
+                  <Link title=" Speak to a Mediator Today" className="w-full" href="/contact">
                     Speak to a mediator today
                   </Link>
                 </button>

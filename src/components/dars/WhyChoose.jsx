@@ -51,7 +51,7 @@ const WhyChoose = () => {
           </div>
           <div className="">
             <button className={`bg-white  font-normal text-lg text-black px-12 py-2 rounded-[40px]`}>
-              <Link className="w-full" href={'/contact-us'}>
+              <Link className="w-full" href={'/contact'}>
                 Contact us
               </Link>
             </button>

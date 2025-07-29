@@ -237,7 +237,7 @@ const nextConfig = {
       },
       {
         source: '/trainner/:slug',
-        destination: '/about-us',
+        destination: '/about',
         permanent: true,
       },
       {
@@ -455,14 +455,10 @@ const nextConfig = {
         destination: '/services/send-mediation',
         permanent: true,
       },
-      {
-        source: '/contact',
-        destination: '/contact-us',
-        permanent: true,
-      },
+
       {
         source: '/opportunities-with-global-mediation',
-        destination: '/about-us',
+        destination: '/about',
         permanent: true,
       },
       {
@@ -470,55 +466,51 @@ const nextConfig = {
         destination: '/services/send-mediation',
         permanent: true,
       },
-      {
-        source: '/about',
-        destination: '/about-us',
-        permanent: true,
-      },
+
       {
         source: '/send-training-course-eval-form',
-        destination: '/contact-us',
+        destination: '/contact',
         permanent: true,
       },
       {
         source: '/dars-facilitator-evaluation-form',
-        destination: '/contact-us',
+        destination: '/contact',
         permanent: true,
       },
       {
         source: '/mediator-evaluation-form',
-        destination: '/contact-us',
+        destination: '/contact',
         permanent: true,
       },
       {
         source: '/diversity-mon-form',
-        destination: '/contact-us',
+        destination: '/contact',
         permanent: true,
       },
 
       {
         source: '/why-choose-mediation',
-        destination: '/contact-us',
+        destination: '/contact',
         permanent: true,
       },
       {
         source: '/csq',
-        destination: '/contact-us',
+        destination: '/contact',
         permanent: true,
       },
       {
         source: '/online-booking',
-        destination: '/contact-us',
+        destination: '/contact',
         permanent: true,
       },
       {
         source: '/what-is-mediation',
-        destination: '/about-us',
+        destination: '/about',
         permanent: true,
       },
       {
         source: '/work-for-us',
-        destination: '/about-us',
+        destination: '/about',
         permanent: true,
       },
       {

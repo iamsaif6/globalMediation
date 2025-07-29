@@ -40,7 +40,7 @@ const page = () => {
           'Calm, impartial support to help you resolve family issues around parenting, separation or finances, with everyone’s voice heard.'
         }
         Button1Text={'Speak to a family mediator'}
-        Button1Link="/contact-us"
+        Button1Link="/contact"
         cover={banner}
       />
       <Introduction
@@ -99,7 +99,7 @@ const page = () => {
                     </div>
                     <div className="flex justify-center md:block">
                       <button className=" bg-white  mt-10  font-semibold text-lg text-black px-12 py-3 rounded-[40px] ">
-                        <Link className="w-full  " href="/contact-us">
+                        <Link className="w-full  " href="/contact">
                           Book family mediation
                         </Link>
                       </button>
@@ -162,7 +162,7 @@ const page = () => {
         </div>
         <div className="flex justify-center">
           <button className=" bg-primary  mt-10  font-semibold text-lg text-white px-3 lg:px-12 py-3 rounded-[40px] ">
-            <Link className="w-full  " href="/about-us">
+            <Link className="w-full  " href="/about">
               Request a family mediation appointment
             </Link>
           </button>
@@ -226,13 +226,13 @@ const page = () => {
           subTitle={
             'Whether you’re in the early stages of separation or struggling to co-parent, we’re here to help you take the next step with clarity and care.'
           }
-          Button1Link={'/contact-us'}
+          Button1Link={'/contact'}
           Button1Text={'Book a family mediation appointment'}
           Button2Text={'Speak to our family mediation team'}
-          Button2Link={'/contact-us'}
+          Button2Link={'/contact'}
         />
       </div>
-      <FAQ title={'FAQs about family mediation'} buttonText={'Ask us a question'} buttonLink={'/contact-us'} faqData={faqData} />
+      <FAQ title={'FAQs about family mediation'} buttonText={'Ask us a question'} buttonLink={'/contact'} faqData={faqData} />
     </div>
   );
 };

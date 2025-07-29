@@ -53,7 +53,7 @@ const MainServices = () => {
             <button
               className={`bg-primary inline-block border-primary font-semibold text-lg text-[#FCFCFD] px-[38px] py-3 rounded-3xl lg:rounded-[40px]`}
             >
-              <Link className="w-full" href="/contact-us">
+              <Link className="w-full" href="/contact">
                 Contact us today
               </Link>
             </button>
@@ -66,9 +66,9 @@ const MainServices = () => {
         title={'Ready to resolve your dispute?'}
         subTitle={'Your trusted partner in conflict resolution'}
         Button1Text={'Schedule consultation'}
-        Button1Link={'/contact-us'}
+        Button1Link={'/contact'}
         Button2Text={'Contact us'}
-        Button2Link={'/contact-us'}
+        Button2Link={'/contact'}
       />
     </div>
   );

@@ -72,9 +72,9 @@ const Training = () => {
       <CTA
         title={'Start your mediation training journey today'}
         subTitle={'Whether you’re qualifying for the first time or building on existing experience, we’re here to support your growth.'}
-        Button1Link={'/contact-us'}
+        Button1Link={'/contact'}
         Button1Text={'Enrol in a Mediation Training programme'}
-        Button2Link={'/contact-us'}
+        Button2Link={'/contact'}
         Button2Text={'Contact Us for upcoming course dates'}
       />
     </div>
