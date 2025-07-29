@@ -37,7 +37,7 @@ const services = [
       'Tax and accounting disputes',
     ],
     image: service1,
-    link: '/services/Business-and-Commercial-Mediation',
+    link: '/business',
   },
   {
     title: 'SEND mediation',

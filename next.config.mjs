@@ -17,7 +17,7 @@ const nextConfig = {
       },
       {
         source: '/service_categories/family',
-        destination: '/services/family-mediation',
+        destination: '/family-mediation',
         permanent: true,
       },
       {
@@ -27,7 +27,7 @@ const nextConfig = {
       },
       {
         source: '/service_categories/commercial',
-        destination: '/services/Business-and-Commercial-Mediation',
+        destination: '/business',
         permanent: true,
       },
       {
@@ -37,7 +37,7 @@ const nextConfig = {
       },
       {
         source: '/service_categories/business',
-        destination: '/services/Business-and-Commercial-Mediation',
+        destination: '/business',
         permanent: true,
       },
       {
@@ -87,7 +87,7 @@ const nextConfig = {
       },
       {
         source: '/service/family-divorce',
-        destination: '/services/family-mediation',
+        destination: '/family-mediation',
         permanent: true,
       },
       {
@@ -182,7 +182,7 @@ const nextConfig = {
       },
       {
         source: '/service/business-commercial-contracts',
-        destination: '/services/Business-and-Commercial-Mediation',
+        destination: '/business',
         permanent: true,
       },
       {
@@ -547,22 +547,22 @@ const nextConfig = {
       },
       {
         source: '/commercial-mediation',
-        destination: '/services/Business-and-Commercial-Mediation',
+        destination: '/business',
         permanent: true,
       },
       {
         source: '/commercial',
-        destination: '/services/Business-and-Commercial-Mediation',
+        destination: '/business',
         permanent: true,
       },
       {
         source: '/family',
-        destination: '/services/Family-Mediation',
+        destination: '/family-mediation',
         permanent: true,
       },
       {
         source: '/business',
-        destination: '/services/Business-and-Commercial-Mediation',
+        destination: '/business',
         permanent: true,
       },
     ];

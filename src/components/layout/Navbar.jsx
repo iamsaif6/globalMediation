@@ -14,7 +14,7 @@ const resourceSubMenu = [
 
 const serviceSubmenu = [
   { title: 'Workplace and employment mediation', href: '/Workplace-and-Employment-Mediation' },
-  { title: 'Business and commercial mediation', href: '/Business-and-Commercial-Mediation' },
+  { title: 'Business and commercial mediation', href: '/business' },
   { title: 'SEND (Special Educational Needs and Disability) mediation', href: '/send-mediation' },
   { title: 'Family mediation', href: '/family-mediation' },
   { title: 'Community mediation', href: '/Community-Mediation' },
@@ -44,7 +44,7 @@ const navLinksForMobile = [
     hasMegaMenu: true,
     megaMenuItems: [
       { title: 'Workplace and employment mediation', href: '/Workplace-and-Employment-Mediation' },
-      { title: 'Business and commercial mediation', href: '/Business-and-Commercial-Mediation' },
+      { title: 'Business and commercial mediation', href: '/business' },
       { title: 'SEND (Special Educational Needs and Disability) mediation', href: '/send-mediation' },
       { title: 'Family mediation', href: '/family-mediation' },
       { title: 'Community mediation', href: '/Community-Mediation' },
@@ -90,7 +90,7 @@ const navLinks = [
     hasMegaMenu: true,
     megaMenuItems: [
       { title: 'Workplace and employment mediation', href: '/Workplace-and-Employment-Mediation' },
-      { title: 'Business and commercial mediation', href: '/Business-and-Commercial-Mediation' },
+      { title: 'Business and commercial mediation', href: '/business' },
       { title: 'SEND (Special Educational Needs and Disability) mediation', href: '/send-mediation' },
       { title: 'Family mediation', href: '/family-mediation' },
       { title: 'Community mediation', href: '/Community-Mediation' },
@@ -374,7 +374,7 @@ const Navbar = () => {
                           key={item.title}
                           className={` ${pathname.includes(item.href) ? 'text-secondary' : 'text-black'} hover:text-secondary `}
                         >
-                          <Link title={item.title} href={`/services${item.href}`}>
+                          <Link title={item.title} href={`${item.href}`}>
                             {item.title}
                           </Link>
                         </li>
@@ -559,7 +559,7 @@ const Navbar = () => {
                             <Link
                               onClick={() => setMobileMenuOpen(false)}
                               key={index}
-                              href={link.title === 'Training' || link.title === 'Resources' ? item.href : `/services${item.href}`}
+                              href={link.title === 'Training' || link.title === 'Resources' ? item.href : `${item.href}`}
                               className="block py-3 px-4 text-gray-600 hover:text-primary border-b border-gray-100 transition-colors duration-200"
                             >
                               {item.title}
