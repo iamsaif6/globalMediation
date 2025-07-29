@@ -71,10 +71,10 @@ const Footer = () => {
           <Link className="py-[6px] block" href="/training">
             Training
           </Link>
-          {/* <Link className="py-[6px] block" href="/dars">
+          {/* <Link className="py-[6px] block" href="/dars-csq">
             DARS
           </Link> */}
-          <Link className="py-[6px] block" href="/blogs">
+          <Link className="py-[6px] block" href="/blog">
             Resources
           </Link>
           <Link className="py-[6px] block" href="/about-us">
@@ -86,7 +86,7 @@ const Footer = () => {
       <div className="mt-8 font-normal relative z-10 gap-8  text-sm flex flex-col-reverse md:flex-row md:items-center justify-between">
         <p>© 2025 Global Mediation. All rights reserved.</p>
         <div className="flex flex-col md:flex-row  gap-4 md:gap-6">
-          <Link className="underline" href={'/privacy-policy'}>
+          <Link className="underline" href={'/privacy-statement'}>
             Privacy Policy
           </Link>
           <Link className="underline" href={'/complaints-comments-compliments-policy-2015'}>

@@ -92,7 +92,7 @@ const CaseStudies = () => {
         </div>
       </div>
       <div className="flex mt-10 mb-10 justify-center md:mt-[50px]">
-        <Button title={'Read more case studies'} href="/blogs" />
+        <Button title={'Read more case studies'} href="/blog" />
       </div>
 
       <CTA

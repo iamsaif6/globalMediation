@@ -170,7 +170,7 @@ const LearnMore = () => {
             <Link
               title="Read more"
               className="text-sm text-secondary md:text-lg duration-300 hover:gap-4 border-b-[2px] pb-1.5 w-max flex items-center gap-2 font-semibold mt-auto"
-              href={'/guides'}
+              href={'/resources'}
             >
               <span>Read more</span> <ArrowRight strokeWidth={1.5} size={20} />
             </Link>
@@ -194,7 +194,7 @@ const LearnMore = () => {
             <Link
               title="Read more"
               className="text-sm text-secondary md:text-lg duration-300 hover:gap-4 border-b-[2px] pb-1.5 w-max flex items-center gap-2 font-semibold mt-auto"
-              href={'/blogs'}
+              href={'/blog'}
             >
               <span>Read more</span> <ArrowRight strokeWidth={1.5} size={20} />
             </Link>
@@ -202,7 +202,7 @@ const LearnMore = () => {
         </div>
       </div>
       <div className="flex mt-16 items-center justify-center">
-        <Button title={'Visit the resource hub'} href="/blogs" />
+        <Button title={'Visit the resource hub'} href="/blog" />
       </div>
     </section>
   );

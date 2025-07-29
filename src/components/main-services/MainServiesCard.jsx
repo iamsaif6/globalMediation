@@ -85,7 +85,7 @@ const services = [
       'Contract disputes',
     ],
     image: service6,
-    link: '/services/Civil-and-Legal-Dispute-Mediation',
+    link: '/civil',
   },
 ];
 

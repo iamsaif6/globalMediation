@@ -92,7 +92,7 @@ const Posts = ({ articles }) => {
                       </h4>
                       <Link
                         title="Read More"
-                        href={`/blogs/blog/${article?.slug || article.id}`}
+                        href={`/blog/${article?.slug || article.id}`}
                         className="flex w-max pb-1 border-b border-secondary gap-1 items-center text-secondary font-medium text-sm"
                       >
                         <span>Read more</span>

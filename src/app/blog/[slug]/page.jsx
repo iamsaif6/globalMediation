@@ -48,7 +48,7 @@ const SingleBlogPost = async ({ params }) => {
       <section className="py-16 px-5 md:py-[80px] md:px-[144px]">
         <div className="flex flex-col md:flex-row mb-[68px] gap-6 md:items-center justify-between">
           <div className=" text-base font-normal flex items-center gap-2">
-            <Link className="text-secondary" href={'/blogs'}>
+            <Link className="text-secondary" href={'/blog'}>
               Blogs
             </Link>
             {article?.category?.name && (
@@ -171,7 +171,7 @@ const SingleBlogPost = async ({ params }) => {
               </div>
               <h3 className={`text-black leading-[140%] mt-6 md:mt-6 mb-4 text-lg md:text-[24px] font-semibold `}>{item?.title}</h3>
               <Link
-                href={`/blogs/blog/${item?.slug || item.id}`}
+                href={`/blog/${item?.slug || item.id}`}
                 className="flex w-max pb-1 border-b border-secondary  gap-1 items-center text-secondary font-medium text-sm"
               >
                 <span>Read more</span>
