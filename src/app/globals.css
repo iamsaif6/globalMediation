@@ -195,3 +195,9 @@ body {
 .rotate-y-180 {
   transform: rotateY(180deg);
 }
+
+/* Custom CSS For Botpress */
+
+.bpComposerPoweredBy {
+  display: none !important;
+}
