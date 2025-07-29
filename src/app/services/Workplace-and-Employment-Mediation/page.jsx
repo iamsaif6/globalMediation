@@ -1,19 +1,16 @@
 import Header from '@/components/shared/Header';
 import React from 'react';
-import Button from '@/components/shared/Button';
 import Image from 'next/image';
 import banner from '/public/workspace-hero.jpg';
 import WhyChoose from '@/components/service/WhyChoose';
 import MediationCalculation from '@/components/home/MediationCalculation';
 import FeedbackCarousel from '@/components/home/FeedbackCarousel';
-import Map from '@/components/service/Map';
 import FAQ from '@/components/service/FAQ';
 import CTA from '@/components/shared/CTA';
 import service1 from '/public/workspace-service.jpg';
 import service2 from '/public/mediation-service-2.jpg';
 import service3 from '/public/workspace-intro.jpg';
 import Link from 'next/link';
-import overlay from '/public/Overlay.png';
 
 const faqData = [
   {
@@ -43,8 +40,6 @@ const page = () => {
         }
         Button1Text={'Book a mediation session'}
         Button1Link="/contact-us"
-        // Button2Text={'Learn About Mediation Training'}
-        // Button2Link="/training"
         cover={banner}
       />
 

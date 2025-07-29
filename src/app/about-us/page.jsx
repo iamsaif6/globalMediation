@@ -1,6 +1,4 @@
-import Header from '@/components/shared/Header';
 import React from 'react';
-import aboutUSHeader from '/public/aboutUsHeader.png';
 import ExperiencedLeader from '@/components/aboutUs/ExperiencedLeader';
 import TimeLine from '@/components/aboutUs/TimeLine';
 import Colabration from '@/components/aboutUs/Colabration';
@@ -15,8 +13,6 @@ import WhatGuides from '@/components/aboutUs/WhatGuides';
 import headerBG from '/public/aboutus_header.jpg';
 import Link from 'next/link';
 import Head from 'next/head';
-
-const metaImg = 'https://globalmediation-cdn-1.s3.eu-west-2.amazonaws.com/wp-content/uploads/2017/08/08144201/About.jpg';
 
 export const metadata = {
   title: 'About - Global Mediation - Mediation Services UK',
@@ -80,7 +76,6 @@ const AboutUs = () => {
           <h1 className="font-semibold tracking-[-4%] max-w-[900px] 2xl:max-w-[90%] leading-[120%] text-5xl md:text-[65px] xl:text-[4vw] text-white">
             Helping people find a way forward, together.
           </h1>
-          {/* <p className="text-white mt-[18px] md:mt-6 mb-[26px] md:mb-8 w-[70%] font-normal text-sm md:text-lg">{subTitle}</p> */}
           <div className=" flex mt-8 md:flex-row flex-col items-center gap-4">
             <button
               className={`bg-primary  max-w-[292px] lg:max-w-max w-full border block border-primary font-semibold text-lg text-[#FCFCFD] lg:px-12 py-3 rounded-[40px]`}

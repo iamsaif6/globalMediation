@@ -1,6 +1,5 @@
 import Header from '@/components/shared/Header';
 import React from 'react';
-import dars from '/public/dars.png';
 import KeyFeature from '../../components/dars/KeyFeature';
 import OverView from '../../components/dars/OverView';
 import HowDarsWork from '../../components/dars/HowDarsWork';

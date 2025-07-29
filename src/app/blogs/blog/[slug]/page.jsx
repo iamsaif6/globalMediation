@@ -3,7 +3,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import SectionHeading from '@/components/shared/SectionHeading';
-import Button from '@/components/shared/Button';
 import CTA from '@/components/shared/CTA';
 import { fetchArticleBySlug, fetchArticles, fetchAuthors } from '@/utils/api';
 import { notFound } from 'next/navigation';
@@ -171,9 +170,6 @@ const SingleBlogPost = async ({ params }) => {
                 )}
               </div>
               <h3 className={`text-black leading-[140%] mt-6 md:mt-6 mb-4 text-lg md:text-[24px] font-semibold `}>{item?.title}</h3>
-              {/* <p className={`text-[#667085] leading-[150%] mb-6 text-lg font-normal`}>
-                Can my child have a voice in Family Mediation? Whether your child has the opportunity to have their say in…
-              </p> */}
               <Link
                 href={`/blogs/blog/${item?.slug || item.id}`}
                 className="flex w-max pb-1 border-b border-secondary  gap-1 items-center text-secondary font-medium text-sm"

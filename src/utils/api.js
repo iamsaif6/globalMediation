@@ -62,7 +62,6 @@ export async function fetchAuthors() {
       throw new Error(`Failed to fetch articles: ${response.status}`);
     }
     const result = await response.json();
-    console.log('API response structure:', Object.keys(result));
 
     return result;
   } catch (error) {

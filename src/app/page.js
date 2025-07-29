@@ -3,7 +3,6 @@ import MediationCards from '@/components/home/MediationCards';
 import Link from 'next/link';
 import FeedbackCarousel from '@/components/home/FeedbackCarousel';
 import ServiceCarousel from '@/components/home/ServiceCarousel';
-import TeamCarousel from '@/components/home/TeamCarousel';
 import Serving from '@/components/home/Serving';
 import MediationCalculation from '@/components/home/MediationCalculation';
 import betterWay from '/public/a betterway 2.jpeg';

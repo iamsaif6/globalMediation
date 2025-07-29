@@ -1,17 +1,11 @@
-import Header from '@/components/shared/Header';
 import React from 'react';
-import contactUsCover from '/public/contactUSCover.png';
-import Map from '@/components/service/Map';
-import CTA from '@/components/shared/CTA';
 import Link from 'next/link';
 import { Check, Mail, Phone } from 'lucide-react';
-import Image from 'next/image';
 import overlay from '/public/Overlay.png';
 
 const ContactUs = () => {
   return (
     <div className=" bg-gray-100">
-      {/* Contact us steps */}
       <div
         style={{
           backgroundImage: `url('${overlay.src}')`,

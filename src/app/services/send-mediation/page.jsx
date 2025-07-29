@@ -1,14 +1,11 @@
-import Header from '@/components/shared/Header';
 import React from 'react';
 import service1 from '/public/send-1.jpg';
 import send2 from '/public/send-2.jpg';
-import send3 from '/public/send3.jpg';
 import Button from '@/components/shared/Button';
 import Image from 'next/image';
 import Introduction from '@/components/service/Introduction';
 import MediationCalculation from '@/components/home/MediationCalculation';
 import FeedbackCarousel from '@/components/home/FeedbackCarousel';
-import Map from '@/components/service/Map';
 import FAQ from '@/components/service/FAQ';
 import CTA from '@/components/shared/CTA';
 import SectionHeading from '@/components/shared/SectionHeading';
@@ -69,11 +66,6 @@ const page = () => {
                 Speak to a SEND mediation specialist
               </Link>
             </button>
-            {/* <button className=" mb-[18px] md:mb-0  px-5 lg:max-w-max  border block border-white font-semibold text-base lg:text-lg text-[#FCFCFD] lg:px-12 py-3 rounded-[40px] ">
-              <Link className="w-full " href={'/contact-us'}>
-                Book a mediation session
-              </Link>
-            </button> */}
           </div>
         </div>
       </header>
@@ -150,71 +142,6 @@ const page = () => {
           </div>
         </div>
       </section>
-
-      {/*  */}
-
-      {/* <section className="py-16 md:py-[80px]">
-        <div className="px-5 md:px-16 mb-[120px] ">
-          <SectionHeading
-            subTitle={
-              'Our role is to support everyone involved in reaching a fair outcome, one that respects the voices of the child, their family, and the professionals supporting them.'
-            }
-            title={'Understanding the SEND Mediation Process'}
-          />
-        </div>
-        <div className="mt-[42px] md:mt-[54px]">
-          <div className="flex flex-col w-full">
-            <div className=" px-5 md:px-16 ">
-              <div className={` transition-opacity duration-300 `}>
-                <div className=" grid items-center grid-cols-2 gap-[80px]">
-                  <div className="col-span-2 lg:col-span-1">
-                    <div className="relative h-[303px] lg:h-[403px] my-10 block md:hidden  rounded-3xl overflow-hidden">
-                      <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={send3} />
-                    </div>
-                    <div>
-                      <h3 className="md:text-2xl text-lg font-medium text-black mb-8 md:mb-6">How SEND mediation works:</h3>
-                      <ol className="text-[#667085] text-lg">
-                        <li className="flex items-center py-6 pl-[7px] gap-[26px] border-t-[0.5px] border-[#DAD3FF]">
-                          <span className="inline-block flex-shrink-0 h-[10px] w-[10px] bg-primary rounded-full"></span>
-                          <span>
-                            Contact our team <br />
-                            We’ll talk you through the process and your options
-                          </span>
-                        </li>
-                        <li className="flex items-center py-6 pl-[7px] gap-[26px] border-t-[0.5px] border-[#DAD3FF]">
-                          <span className="inline-block flex-shrink-0 h-[10px] w-[10px] bg-primary rounded-full"></span>
-                          <span>
-                            Arrange a mediation session <br />
-                            We organise a neutral space (virtual or in-person)
-                          </span>
-                        </li>
-                        <li className="flex items-center py-6 pl-[7px] gap-[26px] border-t-[0.5px] border-[#DAD3FF]">
-                          <span className="inline-block flex-shrink-0 h-[10px] w-[10px] bg-primary rounded-full"></span>
-                          <span>
-                            Mediation session <br />
-                            All parties are supported to share their views, explore options, and agree a way forward
-                          </span>
-                        </li>
-                        <li className="flex items-center py-6 pl-[7px] gap-[26px] border-t-[0.5px] border-[#DAD3FF]">
-                          <span className="inline-block flex-shrink-0 h-[10px] w-[10px] bg-primary rounded-full"></span>
-                          <span>
-                            Agreement summary
-                            <br />
-                            We provide a written record of outcomes, which can support the formal SEND process
-                          </span>
-                        </li>
-                      </ol>
-                    </div>
-                  </div>
-                  <div className="relative  h-[303px] lg:h-[403px]  hidden lg:block col-span-2 md:col-span-1 rounded-3xl overflow-hidden">
-                    <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={send3} />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
 
       <section className="py-10 px-5 md:px-16 md:py-[80px]">
         <SectionHeading
@@ -310,8 +237,8 @@ const page = () => {
           title={'Start your SEND mediation journey'}
           subTitle={'If you’re a parent, carer, young person or professional needing support with a SEND disagreement, we’re here to help.'}
           Button1Link={'/contact-us'}
-          Button1Text={'Book a Session'}
-          Button2Text={'Contact Our SEND Team'}
+          Button1Text={'Book a session'}
+          Button2Text={'Contact our SEND team'}
           Button2Link={'/contact-us'}
           capitalize={false}
         />

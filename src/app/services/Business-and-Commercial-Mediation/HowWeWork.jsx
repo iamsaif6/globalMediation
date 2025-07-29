@@ -1,7 +1,5 @@
 import React from 'react';
-import Link from 'next/link';
 import SectionHeading from '@/components/shared/SectionHeading';
-import Button from '@/components/shared/Button';
 
 const HowWeWork = () => {
   return (

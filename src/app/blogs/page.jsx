@@ -8,7 +8,7 @@ const Blog = async () => {
   const articles = await fetchArticles();
 
   return (
-    <div className="">
+    <div>
       <Posts articles={articles} />
       <CTA
         title={'Start your Mediation Training journey today'}

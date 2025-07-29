@@ -4,7 +4,6 @@ import Image from 'next/image';
 import Introduction from '@/components/service/Introduction';
 import MediationCalculation from '@/components/home/MediationCalculation';
 import FeedbackCarousel from '@/components/home/FeedbackCarousel';
-import Map from '@/components/service/Map';
 import FAQ from '@/components/service/FAQ';
 import CTA from '@/components/shared/CTA';
 import SectionHeading from '@/components/shared/SectionHeading';
@@ -12,7 +11,6 @@ import wayChoose from '/public/musemind-ux-agency-9tn3JFeAc08-unsplash.jpg';
 import banner from '/public/family-banner2.jpg';
 import overview from '/public/family-overview.jpg';
 import dispute from '/public/family-dispute.jpg';
-import works from '/public/family-works.jpg';
 import Link from 'next/link';
 
 const faqData = [

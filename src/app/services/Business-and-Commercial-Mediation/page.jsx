@@ -3,13 +3,10 @@ import React from 'react';
 import service1 from '/public/business-1.jpg';
 import service2 from '/public/redd-francisco-5U_28ojjgms-unsplash.jpg';
 import service3 from '/public/dylan-gillis-KdeqA3aTnBY-unsplash.jpg';
-import Button from '@/components/shared/Button';
 import Image from 'next/image';
 import MediationCalculation from '@/components/home/MediationCalculation';
-import FeedbackCarousel from '@/components/home/FeedbackCarousel';
 import CTA from '@/components/shared/CTA';
 import FAQ from '@/components/service/FAQ';
-import Link from 'next/link';
 import cover from '/public/Business_Header.jpeg';
 import HowWeWork from './HowWeWork';
 
@@ -115,11 +112,6 @@ const page = () => {
             {item?.image && <Image className="object-cover w-full h-full relative z-0" alt={item.title} src={item?.image} />}
           </div>
         </div>
-        {/* <button className=" bg-primary  mt-10  font-semibold text-lg text-white px-3 md:px-12 py-3 rounded-[40px] ">
-          <Link className="w-full  " href="/contact-us">
-            Book Business and Commercial Mediation
-          </Link>
-        </button> */}
       </div>
 
       {/* What we help */}
@@ -151,11 +143,6 @@ const page = () => {
             ))}
           </div>
         </div>
-        {/* <button className=" bg-primary  mt-10  font-semibold text-lg text-white px-3 md:px-12 py-3 rounded-[40px] ">
-          <Link className="w-full  " href="/contact-us">
-            Book Business and Commercial Mediation
-          </Link>
-        </button> */}
       </div>
       <HowWeWork />
 
@@ -187,11 +174,6 @@ const page = () => {
             ))}
           </div>
         </div>
-        {/* <button className=" bg-primary  mt-10  font-semibold text-lg text-white px-3 md:px-12 py-3 rounded-[40px] ">
-          <Link className="w-full  " href="/contact-us">
-            Book Business and Commercial Mediation
-          </Link>
-        </button> */}
       </div>
       <MediationCalculation />
 

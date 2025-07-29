@@ -3,7 +3,6 @@ import Image from 'next/image';
 import Introduction from '@/components/service/Introduction';
 import MediationCalculation from '@/components/home/MediationCalculation';
 import FeedbackCarousel from '@/components/home/FeedbackCarousel';
-import Map from '@/components/service/Map';
 import FAQ from '@/components/service/FAQ';
 import CTA from '@/components/shared/CTA';
 import SectionHeading from '@/components/shared/SectionHeading';
@@ -12,8 +11,6 @@ import headerImage from '/public/community-banner.jpg';
 import Link from 'next/link';
 import overview from '/public/community-Overview.jpg';
 import dispute from '/public/community-dispute.jpeg';
-import works from '/public/community-works.jpg';
-import Button from '@/components/shared/Button';
 
 const faqData = [
   {
@@ -59,11 +56,6 @@ const page = () => {
                 Speak to a community mediator
               </Link>
             </button>
-            {/* <button className=" bg-transparent  font-semibold border border-white text-lg text-[#FCFCFD] px-[38px] py-3 rounded-[40px] ">
-              <Link className="w-full  " href={'/contact-us'}>
-                Book a mediation session
-              </Link>
-            </button> */}
           </div>
         </div>
       </header>
@@ -141,73 +133,6 @@ const page = () => {
           </div>
         </div>
       </section>
-
-      {/*  */}
-      {/* 
-      <section className="py-16 md:py-[80px]">
-        <div className="px-5 md:px-16 mb-[120px] ">
-          <SectionHeading
-            subTitle={
-              ' Our process gives everyone a chance to be heard, without judgement. It’s about finding common ground and working toward respectful solutions.'
-            }
-            title={'How Community Mediation Works'}
-          />
-        </div>
-        <div className="mt-[42px] md:mt-[54px]">
-          <div className="flex flex-col w-full">
-            <div className=" px-5 md:px-16 ">
-              <div className={` transition-opacity duration-300 `}>
-                <div className=" grid grid-cols-2 items-center gap-[80px]">
-                  <div className="col-span-2 lg:col-span-1">
-                    <div className="relative h-[303px] lg:h-[403px] my-10 block md:hidden  rounded-3xl overflow-hidden">
-                      <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={works} />
-                    </div>
-                    <div>
-                      <h3 className="md:text-2xl text-lg font-medium text-black mb-8 md:mb-6">The process:</h3>
-                      <ol className="text-[#667085] text-lg">
-                        <li className="flex items-center py-6 pl-[7px] gap-[26px] border-t-[0.5px] border-[#DAD3FF]">
-                          <span className="inline-block flex-shrink-0 h-[10px] w-[10px] bg-primary rounded-full"></span>
-                          <span>
-                            Contact us <br />
-                            We’ll talk you through the process and check if mediation is right for you
-                          </span>
-                        </li>
-                        <li className="flex items-center py-6 pl-[7px] gap-[26px] border-t-[0.5px] border-[#DAD3FF]">
-                          <span className="inline-block flex-shrink-0 h-[10px] w-[10px] bg-primary rounded-full"></span>
-                          <span>
-                            Arrange a session
-                            <br />
-                            You’ll meet with one of our trained community mediators, together or separately
-                          </span>
-                        </li>
-                        <li className="flex items-center py-6 pl-[7px] gap-[26px] border-t-[0.5px] border-[#DAD3FF]">
-                          <span className="inline-block flex-shrink-0 h-[10px] w-[10px] bg-primary rounded-full"></span>
-                          <span>
-                            Talk through the issue
-                            <br />
-                            Each person can explain how they see things and what matters to them
-                          </span>
-                        </li>
-                        <li className="flex items-center py-6 pl-[7px] gap-[26px] border-t-[0.5px] border-[#DAD3FF]">
-                          <span className="inline-block flex-shrink-0 h-[10px] w-[10px] bg-primary rounded-full"></span>
-                          <span>
-                            Agree a way forward
-                            <br />
-                            We’ll help you reach an outcome that works for everyone involved
-                          </span>
-                        </li>
-                      </ol>
-                    </div>
-                  </div>
-                  <div className="relative  h-[303px] lg:h-[403px]  hidden lg:block col-span-2 md:col-span-1 rounded-3xl overflow-hidden">
-                    <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={works} />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
 
       <section className="py-16 px-5 md:px-16 md:py-[80px]">
         <SectionHeading
@@ -315,7 +240,7 @@ const page = () => {
       <FeedbackCarousel title={'What people say'} subTitle={null} />
       <div className="bg-[#F9F8FF]">
         <CTA
-          title={'Ready to Resolve a Dispute?'}
+          title={'Ready to resolve a dispute?'}
           subTitle={'We’re here to help you sort things out — before it goes any further.You don’t need to face it alone.'}
           Button1Link={'/contact-us'}
           Button1Text={'Speak to a mediator'}

@@ -16,9 +16,7 @@ const UserbackWidget = () => {
       },
     };
 
-    Userback(token, options).then(userback_instance => {
-      console.log('Userback widget loaded');
-    });
+    Userback(token, options).then(userback_instance => {});
   }, []);
 
   return null;

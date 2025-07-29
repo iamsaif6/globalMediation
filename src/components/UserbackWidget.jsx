@@ -5,7 +5,7 @@ import Userback from '@userback/widget';
 
 const UserbackWidget = () => {
   useEffect(() => {
-    const token = 'A-toB4qf6TlycGzt55mrEgeMRHe'; // Replace with your actual token
+    const token = 'A-toB4qf6TlycGzt55mrEgeMRHe';
     const options = {
       user_data: {
         id: '123456',
@@ -16,9 +16,7 @@ const UserbackWidget = () => {
       },
     };
 
-    Userback(token, options).then(userback_instance => {
-      console.log('Userback widget loaded');
-    });
+    Userback(token, options).then(userback_instance => {});
   }, []);
 
   return null;
