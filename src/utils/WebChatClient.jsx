@@ -18,18 +18,16 @@ export default function WebChatClient() {
         clientId: 'd66b7f68-aa97-43d6-89c8-ac18442644e2',
         hostUrl: 'https://cdn.botpress.cloud/webchat/v1',
         botName: 'Mediation Training Bot',
-        // stylesheet: 'https://webchat-styling-css.botpress.app/base.css',
         useSessionStorage: true,
         disableWebsockets: true,
 
         avatarUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqqinZ4zpaXzMpNsJ6Y4KWdXy6ZG_t-LCqlg&s',
 
         // Color and font
-        stylesheet: 'https://globalmediation.vercel.app/custom-widget.css',
         themeName: 'prism',
         theme: {
           primaryColor: '#1a73e8',
-          backgroundColor: '#ffffff',
+          backgroundColor: '#000',
           textColorOnBackground: '#000000',
         },
       });
