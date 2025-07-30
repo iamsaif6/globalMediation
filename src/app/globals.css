@@ -200,3 +200,7 @@ body {
 .cky-consent-container {
   font-family: 'Poppins', sans-serif !important;
 }
+
+.cky-btn-revisit-wrapper {
+  display: none !important;
+}
