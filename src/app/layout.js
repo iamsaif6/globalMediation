@@ -22,6 +22,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        {/* Cookie Consent */}
+        <Script src={`https://cdn-cookieyes.com/client_data/6eb6d458f1c3a1f004dc5fa2/script.js`} strategy="beforeInteractive"></Script>
         <link rel="apple-touch-icon" href="/appleTouch.png" />
         {/* Search Engine Meta */}
         <meta name="description" content={metadata.description} />
