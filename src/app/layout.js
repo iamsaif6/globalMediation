@@ -3,8 +3,8 @@ import './globals.css';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/shared/Footer';
 import Script from 'next/script';
-import Head from 'next/head';
 import UserbackWidget from '@/components/UserbackWidget';
+import Analytics from './analytics';
 
 const poppins = Poppins({
   variable: '--font-poppins',
@@ -21,7 +21,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Head>
+      <head>
         <link rel="apple-touch-icon" href="/appleTouch.png" />
         {/* Search Engine Meta */}
         <meta name="description" content={metadata.description} />
@@ -41,8 +41,20 @@ export default function RootLayout({ children }) {
         <meta name="twitter:title" content={metadata.title} />
         <meta name="twitter:description" content={metadata.description} />
         <meta name="twitter:image" content="" />
-      </Head>
+
+        {/* Google Anlytics */}
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-4EDYXWBRCY" strategy="afterInteractive" />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-4EDYXWBRCY');
+          `}
+        </Script>
+      </head>
       <body id="root" className={`${poppins.variable} antialiased`}>
+        <Analytics />
         <UserbackWidget />
         <Script src="https://cdn.botpress.cloud/webchat/v2.3/inject.js" strategy="afterInteractive" />
         <Script src="https://files.bpcontent.cloud/2025/04/20/21/20250420213141-RFCIFB7R.js" strategy="afterInteractive" />

@@ -44,7 +44,7 @@ const SingleBlogPost = async ({ params }) => {
         title={'Can my child have a voice in Family Mediation'}
         subTitle={'Direct users to reach out for consultations or general inquiries'}
       />
-      {/* Top bar */}
+
       <section className="py-16 px-5 md:py-[80px] md:px-[144px]">
         <div className="flex flex-col md:flex-row mb-[68px] gap-6 md:items-center justify-between">
           <div className=" text-base font-normal flex items-center gap-2">
