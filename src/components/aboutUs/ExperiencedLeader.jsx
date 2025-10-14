@@ -1,0 +1,56 @@
+import React from 'react';
+import Image from 'next/image';
+
+const service1 = 'https://global-mediation.s3.eu-west-2.amazonaws.com/large-files/about-global.jpeg';
+
+const ExperiencedLeader = () => {
+  return (
+    <div className="">
+      <div className={` max-w-[950px] mx-auto text-left  md:text-center pt-16 pb-0 px-5 md:px-16 md:py-[80px]`}>
+        <h2 className="font-medium leading-[120%] tracking-[-4%] text-4xl md:text-[40px] lg:text-5xl mb-5 md:mb-6">
+          About Global Mediation
+        </h2>
+        <p className="text-black text-base md:text-lg  leading-[150%]">
+          We exist to support people through difficult conversations, with calm, clarity and care. Our mediation services create space for
+          progress, helping organisations, teams, communities, families and individuals navigate conflict, find common ground and reach
+          resolution, without judgment or pressure.
+        </p>
+      </div>
+      <div className="bg-[#F9F8FF] pt-16 pb-12 px-5 md:px-16 md:py-[80px] grid grid-cols-2 gap-[80px]">
+        <div className="relative  hidden md:block col-span-2 lg:col-span-1 rounded-3xl overflow-hidden">
+          {/* <div className={`from-[rgba(67,0,106,0.1)] to-[#43006aa3] absolute inset-0 bg-gradient-to-b  z-10`}></div> */}
+          <Image
+            width={1200}
+            height={1200}
+            className="object-cover w-full  h-full relative z-0"
+            alt={'Experienced Leader In Mediation'}
+            src={service1}
+          />
+        </div>
+        <div className="col-span-2 flex justify-center  flex-col gap-9 lg:col-span-1">
+          <div className="relative my-0 block md:hidden  rounded-3xl overflow-hidden">
+            <div className={`from-[rgba(67,0,106,0.1)] to-[#43006aa3] absolute inset-0 bg-gradient-to-b  z-10`}></div>
+            <Image
+              width={1200}
+              height={1200}
+              className="object-cover w-full h-full relative z-0"
+              alt={'Experienced Leader In Mediation'}
+              src={service1}
+            />
+          </div>
+          <h2 className="font-medium leading-[120%] tracking-[-4%] text-4xl md:text-[40px] lg:text-5xl mb-5 md:mb-0">
+            Trusted, experienced and people-first
+          </h2>
+          <p className={`text-black text-base md:text-lg font-normal`}>
+            Global Mediation is an independent provider of professional mediation services, trusted by individuals, families, businesses and
+            public bodies across the UK. We create safe, impartial spaces for people to communicate, rebuild trust and find lasting
+            outcomes. With over 25 years of experience, our team of accredited mediators and trainers bring deep understanding,
+            sector-specific knowledge and a commitment to fairness, accessibility and respect.
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default ExperiencedLeader;

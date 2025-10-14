@@ -1,0 +1,20 @@
+/* Example: make the chat bubble circular with shadow */
+.bp-widget {
+  border-radius: 50% !important;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Change header style */
+.bp-header {
+  background-color: #123456 !important;
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.bpComposerPoweredBy {
+  display: none !important;
+  opacity: 0 !important;
+}
+
+.bpContainer {
+  padding: 80px !important;
+}
