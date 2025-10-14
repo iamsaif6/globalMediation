@@ -1,11 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: [
-      'localhost',
-      'complete-addition-236de36f0b.media.strapiapp.com',
-      'lovable-fireworks-b08e821c72.media.strapiapp.com',
-      'global-mediation.s3.eu-west-2.amazonaws.com',
+    unoptimized: true,
+    remotePatterns: [
+      { protocol: 'http', hostname: 'localhost' },
+      { protocol: 'https', hostname: 'complete-addition-236de36f0b.media.strapiapp.com' },
+      { protocol: 'https', hostname: 'lovable-fireworks-b08e821c72.media.strapiapp.com' },
+      { protocol: 'https', hostname: 'global-mediation.s3.eu-west-2.amazonaws.com' },
     ],
   },
   async redirects() {

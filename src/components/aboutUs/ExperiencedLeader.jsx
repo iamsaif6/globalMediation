@@ -20,8 +20,8 @@ const ExperiencedLeader = () => {
         <div className="relative  hidden md:block col-span-2 lg:col-span-1 rounded-3xl overflow-hidden">
           {/* <div className={`from-[rgba(67,0,106,0.1)] to-[#43006aa3] absolute inset-0 bg-gradient-to-b  z-10`}></div> */}
           <Image
-            width={1200}
-            height={1200}
+            width={800}
+            height={800}
             className="object-cover w-full  h-full relative z-0"
             alt={'Experienced Leader In Mediation'}
             src={service1}
@@ -31,8 +31,8 @@ const ExperiencedLeader = () => {
           <div className="relative my-0 block md:hidden  rounded-3xl overflow-hidden">
             <div className={`from-[rgba(67,0,106,0.1)] to-[#43006aa3] absolute inset-0 bg-gradient-to-b  z-10`}></div>
             <Image
-              width={1200}
-              height={1200}
+              width={800}
+              height={800}
               className="object-cover w-full h-full relative z-0"
               alt={'Experienced Leader In Mediation'}
               src={service1}
