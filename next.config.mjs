@@ -502,12 +502,6 @@ const nextConfig = {
       },
 
       {
-        source: '/diversity-mon-form',
-        destination: '/contact',
-        permanent: true,
-      },
-
-      {
         source: '/why-choose-mediation',
         destination: '/about-us',
         permanent: true,
