@@ -1,7 +1,5 @@
-'use client';
-import MainServiesCard from '@/components/main-services/MainServiesCard';
 import CTA from '@/components/shared/CTA';
-import React, { useState } from 'react';
+import React from 'react';
 import heaerImage from '/public/nhs-logo-880x4951.png';
 import Link from 'next/link';
 import Head from 'next/head';
@@ -9,13 +7,13 @@ import about from '/public/nhs-about.jpg';
 import further from '/public/further-info.jpg';
 import panel from '/public/mediation_panel.jpg';
 import Image from 'next/image';
-import { FileText, Users, Calendar, MessageCircle, CheckCircle, ChevronDown, ChevronUp, Download, ArrowDown } from 'lucide-react';
+import { ArrowDown } from 'lucide-react';
 
-// export const metadata = {
-//   title: 'NHS Mediation Scheme',
-//   description:
-//     'Global Mediation offers cost-effective, efficient and confidential mediation services for a broad range of personal or professional disputes.',
-// };
+export const metadata = {
+  title: 'NHS Mediation Scheme',
+  description:
+    'Global Mediation offers cost-effective, efficient and confidential mediation services for a broad range of personal or professional disputes.',
+};
 
 const mediators = [
   'Heather Allen',
@@ -30,6 +28,14 @@ const mediators = [
   'Patricia Hitchcock KC',
   'Alan Jacobs',
   'Muiris Lyons',
+  'Caroline Lowe ',
+  'Erica Power ',
+  'Gareth Thompson',
+  'Henry Minto',
+  'Laura Elfield',
+  'Martin Forde KC',
+  'Tabitha Nice',
+  'Tessa Herman',
 ];
 
 const steps = [
@@ -82,8 +88,6 @@ const documents = [
 ];
 
 const MainServices = () => {
-  const [isExpanded, setIsExpanded] = useState(true);
-
   return (
     <div>
       <Head>
@@ -295,7 +299,7 @@ const MainServices = () => {
                       {/* {isExpanded ? <ChevronUp className="w-5 h-5 " /> : <ChevronDown className="w-5 h-5 " />} */}
                     </button>
 
-                    {isExpanded && (
+                    {true && (
                       <div className="px-6 pb-6 border-t border-gray-100">
                         <div className="grid grid-cols-2 gap-3 mt-4">
                           {mediators.map((name, index) => (
