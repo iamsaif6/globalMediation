@@ -202,7 +202,7 @@ const LearnMore = () => {
         </div>
 
         <div className="border flex flex-col col-span-4 border-[#EBE5E5] hover:border-[#DAD3FF] md:col-span-2 hover:border-[#DAD3F lg:col-span-1  rounded-3xl py-[34px]">
-          <div className="p-[20px] pb-0 pt-0 flex gap-4 lg:gap-0 items-center lg:justify-end">
+          <div className="p-[20px]  text-[#43006A] pb-0 pt-0 flex gap-4 lg:gap-0 items-center lg:justify-end">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="66"
