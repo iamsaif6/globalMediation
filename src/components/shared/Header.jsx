@@ -31,7 +31,7 @@ const Header = ({ title, subTitle, Button1Text, Button1Link = '#', Button2Text, 
         backgroundSize: 'cover',
         backgroundPosition: 'top center',
       }}
-      className=" pt-[187px] relative max-h-[1050px] h-screen md:pt-[238px] pb-[176px] md:pb-[203px] px-5 md:px-[60px]"
+      className=" pt-[187px] relative flex items-center max-h-[1050px] h-screen md:pt-[238px] pb-[176px] md:pb-[203px] px-5 md:px-[60px]"
     >
       <Image alt="Overlay" src={overlay} className=" absolute top-0 left-0 w-full h-full object-cover" />
       {isHomePage && (

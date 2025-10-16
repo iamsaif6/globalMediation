@@ -10,11 +10,11 @@ export const HeaderTraining = () => {
         backgroundSize: 'cover',
         backgroundPosition: 'center top',
       }}
-      className=" pt-[187px] h-auto lg:h-screen relative md:pt-[238px] pb-[176px] md:pb-[203px] px-5 md:px-[60px]"
+      className=" pt-[187px] h-auto lg:h-screen relative flex items-center md:pt-[238px] pb-[176px] md:pb-[203px] px-5 md:px-[60px]"
     >
       <div className="w-full relative z-10 lg:max-w-[1318px] mx-auto">
         <h1 className="font-semibold tracking-[-4%] max-w-[900px] leading-[120%] text-5xl md:[55px] lg:text-[65px] !text-white">
-          Mediation Training: learn, qualify and specialise
+          Mediation Training: <br /> learn, qualify <br /> and specialise
         </h1>
         <p className="text-white mt-[18px] max-w-[700px] md:mt-6 mb-[26px] md:mb-8 w-[70%] font-normal text-base md:text-lg">
           Explore accredited mediation training programmes designed for aspiring mediators and professionals looking to build their skills

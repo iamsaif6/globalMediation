@@ -43,7 +43,7 @@ const page = () => {
           backgroundSize: 'cover',
           backgroundPosition: 'center center',
         }}
-        className=" pt-[187px] h-screen max-h-[950px] relative md:pt-[238px] pb-[176px] md:pb-[203px] px-5 md:px-[60px]"
+        className=" pt-[187px] h-screen flex items-center max-h-[950px] relative md:pt-[238px] pb-[176px] md:pb-[203px] px-5 md:px-[60px]"
       >
         <Image width={1200} height={1200} src={overlay} alt="Overlay" className=" absolute top-0 left-0 w-full h-full object-cover" />
         <div className="w-full relative z-10 lg:max-w-[1318px] mx-auto">

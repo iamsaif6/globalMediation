@@ -49,7 +49,7 @@ const Page = () => {
           backgroundSize: 'cover',
           backgroundPosition: 'center top',
         }}
-        className="pt-[180px] pb-[140px] h-[70vh] md:h-[65vh] flex justify-center items-center text-center px-5 md:px-[60px]"
+        className="pt-[187px] max-h-[1050px]  h-screen custom-gradient-bg bg-[center] sm:bg-[center_top] lg:bg-bottom max-sm:bg-[35%_center] relative md:pt-[238px] flex items-center pb-[176px] md:pb-[203px] px-5 md:px-[60px]"
       >
         <div>
           <h1 className="font-semibold tracking-[-2%] max-w-[900px] leading-[120%] text-4xl md:text-[60px] xl:text-[4vw] text-white">
