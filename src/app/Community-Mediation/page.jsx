@@ -1,7 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
 import Introduction from '@/components/service/Introduction';
-import MediationCalculation from '@/components/home/MediationCalculation';
 import FeedbackCarousel from '@/components/home/FeedbackCarousel';
 import FAQ from '@/components/service/FAQ';
 import CTA from '@/components/shared/CTA';
@@ -37,14 +36,14 @@ const page = () => {
       <header
         style={{
           backgroundImage: `url('${headerImage.src}'), linear-gradient(to right, rgba(62,0,101,0.60) 1.68%, rgba(62,0,101,0.25) 69.4%)`,
-          backgroundBlendMode: 'overlay',
+          backgroundBlendMode: 'multiply',
           backgroundSize: 'cover',
           backgroundPosition: 'left bottom',
         }}
         className=" pt-[187px] max-h-[1050px] h-screen relative md:pt-[238px] pb-[176px] md:pb-[203px] px-5 md:px-[60px]"
       >
         <div className="w-full relative z-10 lg:max-w-[1318px] mx-auto">
-          <h1 className="font-semibold tracking-[-4%] max-w-[900px] 2xl:max-w-[90%] leading-[120%] text-5xl md:text-[65px] xl:text-[4vw] text-white">
+          <h1 className="font-semibold tracking-[-4%] max-w-[900px] 2xl:max-w-[90%] leading-[120%] text-5xl md:text-[65px] xl:text-[4vw] !text-white">
             Community mediation
           </h1>
           <p className="text-white mt-[25px] md:mt-4 mb-[25px] mr-auto max-w-[700px] md:mb-10 w-[100%] font-normal text-base md:text-lg xl:text-xl">

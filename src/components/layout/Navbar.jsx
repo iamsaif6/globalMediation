@@ -12,7 +12,7 @@ const resourceSubMenu = [
   // { title: 'Case studies', href: '/case-studies' },
   { title: 'Guides', href: '/resources' },
   { title: 'Savings calculator', href: '/savings-calculator' },
-  { title: 'Mediation matters podcast', href: 'https://podcasts.apple.com/gb/podcast/mediation-matters/id1602971487' },
+  { title: 'Mediation Matters podcast', href: 'https://podcasts.apple.com/gb/podcast/mediation-matters/id1602971487', isNewTab: true },
   { title: 'Brand values', href: '/global-brand-value' },
 ];
 
@@ -77,7 +77,7 @@ const navLinksForMobile = [
       // { title: 'Case studies', href: '/case-studies' },
       { title: 'Guides', href: '/resources' },
       { title: 'Savings calculator', href: '/savings-calculator' },
-      { title: 'Mediation Matters Podcast', href: 'https://podcasts.apple.com/gb/podcast/mediation-matters/id1602971487' },
+      { title: 'Mediation Matters podcast', href: 'https://podcasts.apple.com/gb/podcast/mediation-matters/id1602971487', isNewTab: true },
       { title: 'Brand values', href: '/global-brand-value' },
     ],
   },
@@ -117,7 +117,7 @@ const navLinks = [
       // { title: 'Case studies', href: '/case-studies' },
       { title: 'Guides', href: '/resources' },
       { title: 'Savings calculator', href: '/savings-calculator' },
-      { title: 'Mediation Matters Podcast', href: 'https://podcasts.apple.com/gb/podcast/mediation-matters/id1602971487' },
+      { title: 'Mediation Matters podcast', href: 'https://podcasts.apple.com/gb/podcast/mediation-matters/id1602971487', isNewTab: true },
     ],
   },
   {
@@ -404,7 +404,7 @@ const Navbar = () => {
                           key={`${item.href}${idx}`}
                           className={` ${pathname.includes(item.href) ? ' text-secondary' : 'text-black'}  hover:text-secondary`}
                         >
-                          <Link title={item.title} href={`${item.href}`}>
+                          <Link target={item?.isNewTab ? '_blank' : '_self'} title={item.title} href={`${item.href}`}>
                             {item.title}
                           </Link>
                         </li>
@@ -527,6 +527,7 @@ const Navbar = () => {
                         >
                           {link.megaMenuItems.map((item, index) => (
                             <Link
+                              target={item?.isNewTab ? '_blank' : '_self'}
                               onClick={() => setMobileMenuOpen(false)}
                               key={index}
                               href={link.title === 'Training' || link.title === 'Resources' ? item.href : `${item.href}`}

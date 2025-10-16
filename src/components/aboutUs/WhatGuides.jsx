@@ -1,46 +1,62 @@
 import React from 'react';
-import SectionHeading from '../shared/SectionHeading';
-import { HeartHandshake, IdCard, Puzzle, ShieldCheck } from 'lucide-react';
+import { BicepsFlexed, HeartHandshake, IdCard, Puzzle, ShieldCheck } from 'lucide-react';
+
+const values = [
+  {
+    icon: IdCard,
+    title: 'Quality',
+    description: 'We listen and learn and go the extra mile to provide outstanding service to our clients.',
+  },
+  {
+    icon: ShieldCheck,
+    title: 'Impact',
+    description: 'We make the world a better place by resolving harmful conflict and improving relationships.',
+  },
+  {
+    icon: HeartHandshake,
+    title: 'Inclusion',
+    description: 'We celebrate difference and encourage inclusivity.',
+  },
+  {
+    icon: Puzzle,
+    title: 'Teamwork',
+    description: 'We create strong healthy relationships and work together to encourage each other’s growth.',
+  },
+  {
+    icon: BicepsFlexed,
+    title: 'Integrity',
+    description: 'We do what we say we will do and act ethically and honestly.',
+  },
+];
 
 const WhatGuides = () => {
   return (
-    <section className="py-16 px-5 md:px-16 md:py-[80px] ">
-      <div className={` max-w-[850px] mx-auto text-left  md:text-center`}>
-        <h2 className="font-medium leading-[120%] tracking-[-4%] text-4xl md:text-[40px] lg:text-5xl mb-5 md:mb-6">What guides our work</h2>
-        <p className={`text-black text-base md:text-lg font-normal`}>
+    <section className="py-16 px-5 md:px-16 md:py-[80px]">
+      <div className="max-w-[850px] mx-auto text-left md:text-center">
+        <h2 className="font-medium leading-[120%] tracking-[-0.04em] text-4xl md:text-[40px] lg:text-5xl mb-5 md:mb-6">
+          What guides our work
+        </h2>
+        <p className="text-black text-base md:text-lg font-normal">
           Founded by barrister and mediator Adam Gersch, Global Mediation began with a simple idea: that people deserve better ways to
           resolve conflict. Over two decades later, we have grown into a national team working across sectors, from education to healthcare,
           workplaces to families, still driven by that same purpose. Everything we do is shaped by the values that define our approach, and
           the way we support people through conflict.
         </p>
       </div>
-      <div className="mt-[80px]">
-        {/* <h4 className="text-2xl font-medium text-center    mb-10">Our core values</h4> */}
-        <div className="grid grid-cols-3 gap-6 md:gap-8">
-          <div className="p-6 col-span-3   lg:col-span-1 bg-[#F3F1FF] rounded-3xl">
+
+      <div className="mt-[80px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 md:gap-8">
+        {values.map(({ icon: Icon, title, description }, index) => (
+          <div
+            key={index}
+            className="p-6 bg-[#F3F1FF] rounded-3xl text-left flex flex-col justify-between hover:shadow-md transition-shadow"
+          >
             <div className="mt-3">
-              <IdCard className="text-secondary" strokeWidth={1.2} size={45} />
+              <Icon className="text-secondary" strokeWidth={1.2} size={45} />
             </div>
-            <p className="font-medium my-[30px] lg:my-[40px] text-secondary   text-2xl">Authenticity</p>
-            <p className=" text-lg    mb-[25px]  font-normal">We act with honesty and integrity in every conversation</p>
+            <p className="font-medium text-secondary text-2xl my-[30px] lg:my-[40px]">{title}</p>
+            <p className="text-lg font-normal mb-[25px]">{description}</p>
           </div>
-          <div className="p-6 col-span-3   lg:col-span-1 bg-[#F3F1FF] rounded-3xl">
-            <div className="mt-3">
-              <ShieldCheck className="text-secondary" strokeWidth={1.2} size={45} />
-            </div>
-            <p className="font-medium my-[30px] lg:my-[40px] text-secondary   text-2xl">Dependability</p>
-            <p className=" text-lg    mb-[25px] font-normal">We bring consistency, calm and clarity to challenging situations.</p>
-          </div>
-          <div className="p-6 col-span-3   lg:col-span-1 bg-[#F3F1FF] rounded-3xl">
-            <div className="mt-3 ">
-              <HeartHandshake className="text-secondary" strokeWidth={1.2} size={45} />
-            </div>
-            <p className="font-medium  text-secondary my-[30px] lg:my-[40px] text-2xl">Belonging</p>
-            <p className=" text-lg  mb-[25px]  font-normal">
-              We create safe, inclusive spaces where people feel heard, respected and supported.
-            </p>
-          </div>
-        </div>
+        ))}
       </div>
     </section>
   );

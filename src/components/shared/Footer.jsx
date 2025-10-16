@@ -23,7 +23,7 @@ const Footer = () => {
               <a href="tel:020 8441 1355" className="block mt-1 leading-[140%] text-sm md:text-lg">
                 020 8441 1355
               </a>
-              <a href="mailto:sen@globalmediation.co.uk">sen@globalmediation.co.uk</a>
+              <a href="mailto:send@globalmediation.co.uk">send@globalmediation.co.uk</a>
             </p>
             <ul className="flex items-center gap-3">
               <li>

@@ -1,4 +1,4 @@
-import banner from '/public/weichao-deng-qWjbu8n0xLI-unsplash.jpg';
+import banner from '/public/global_2025-88.jpg';
 import Link from 'next/link';
 
 export const HeaderTraining = () => {
@@ -8,7 +8,7 @@ export const HeaderTraining = () => {
         backgroundImage: `url('${banner.src}')`,
         backgroundBlendMode: 'overlay',
         backgroundSize: 'cover',
-        backgroundPosition: 'center center',
+        backgroundPosition: 'center top',
       }}
       className=" pt-[187px] h-auto lg:h-screen relative md:pt-[238px] pb-[176px] md:pb-[203px] px-5 md:px-[60px]"
     >

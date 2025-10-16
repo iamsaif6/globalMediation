@@ -114,9 +114,9 @@ const ContactUs = () => {
               </div>
               <div className={`mt-8 md:max-w-[950px] grid grid-cols-1 md:grid-cols-2  gap-4  mx-auto`}>
                 <button className="bg-primary font-semibold text-[#FCFCFD] px-10 py-3 rounded-[40px] text-base md:text-lg">
-                  <Link className="flex items-center justify-center gap-2 w-full text-center" href="mailto:sen@globalmediation.co.uk">
+                  <Link className="flex items-center justify-center gap-2 w-full text-center" href="mailto:send@globalmediation.co.uk">
                     <Mail className="flex-shrink-0" size={20} />
-                    sen@globalmediation.co.uk
+                    send@globalmediation.co.uk
                   </Link>
                 </button>
                 <button className="font-semibold border border-white text-base md:text-lg text-white px-6 py-3 rounded-[40px]">

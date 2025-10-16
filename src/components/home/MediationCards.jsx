@@ -7,6 +7,7 @@ import VoluntaryIcon from './Mediation Icon/VoluntaryIcon';
 import Confidential from './Mediation Icon/Confidential';
 import Neutral from './Mediation Icon/Neutral';
 import Efficient from './Mediation Icon/Efficient';
+import Professional from './Mediation Icon/Professional';
 
 const MediationCards = () => {
   const [activeCardIndex, setActiveCardIndex] = useState(0);
@@ -73,7 +74,7 @@ const MediationCards = () => {
       title: 'Professional',
       subTitle:
         'Our mediators are fully qualified, accredited professionals, and members of the College of Mediators. Every case is handled with the highest standards of care, skill and integrity.',
-      icon: props => <Efficient {...props} />,
+      icon: props => <Professional {...props} />,
     },
   ];
 
