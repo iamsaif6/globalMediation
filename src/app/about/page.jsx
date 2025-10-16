@@ -67,7 +67,7 @@ const AboutUs = () => {
           backgroundImage: `url('https://global-mediation.s3.eu-west-2.amazonaws.com/large-files/aboutus_header.jpg'), linear-gradient(to right, rgba(62,0,101,0.60) 1.68%, rgba(62,0,101,0.15) 69.4%)`,
           backgroundBlendMode: 'overlay',
           backgroundSize: 'cover',
-          backgroundPosition: 'center top',
+          backgroundPosition: 'right top',
         }}
         className=" pt-[187px] max-h-[1050px] h-screen bg-no-repeat relative md:pt-[238px] pb-[176px] md:pb-[203px] px-5 md:px-[60px]"
       >

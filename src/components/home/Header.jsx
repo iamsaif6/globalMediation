@@ -18,7 +18,8 @@ const Header = () => {
               Every voice matters. <br /> Every story counts.
             </h1>
             <p className="text-white mt-[25px] md:mt-4 mb-[25px] mr-auto max-w-[700px] md:mb-10 w-[100%] font-normal text-base md:text-lg xl:text-xl">
-              Impartial, professional mediation that helps you resolve disputes, rebuild trust, and find common ground.
+              We offer impartial, professional and accredited mediation services that help you resolve disputes, rebuild trust, and find
+              common ground, with a success rate of over 95%.
             </p>
             <div className="flex md:block  justify-center">
               <Link

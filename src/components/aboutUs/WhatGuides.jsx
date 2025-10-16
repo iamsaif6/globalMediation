@@ -46,15 +46,19 @@ const WhatGuides = () => {
 
       <div className="mt-[80px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 md:gap-8">
         {values.map(({ icon: Icon, title, description }, index) => (
-          <div
-            key={index}
-            className="p-6 bg-[#F3F1FF] rounded-3xl text-left flex flex-col justify-between hover:shadow-md transition-shadow"
-          >
-            <div className="mt-3">
-              <Icon className="text-secondary" strokeWidth={1.2} size={45} />
+          <div key={index} className="p-6 bg-[#F3F1FF] rounded-3xl flex flex-col hover:shadow-md transition-shadow h-full">
+            <div className="flex flex-col flex-1">
+              {/* Icon */}
+              <div className="mt-3">
+                <Icon className="text-secondary" strokeWidth={1.2} size={45} />
+              </div>
+
+              {/* Title */}
+              <p className="font-medium text-secondary text-2xl my-[30px] lg:my-[30px]">{title}</p>
+
+              {/* Description */}
+              <p className="text-lg font-normal">{description}</p>
             </div>
-            <p className="font-medium text-secondary text-2xl my-[30px] lg:my-[40px]">{title}</p>
-            <p className="text-lg font-normal mb-[25px]">{description}</p>
           </div>
         ))}
       </div>

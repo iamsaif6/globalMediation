@@ -3,117 +3,108 @@ import CTA from '@/components/shared/CTA';
 import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import inclusion from '/public/global_2025-76.jpg';
 
 const headerBG = 'https://global-mediation.s3.eu-west-2.amazonaws.com/large-files/global_2025-38.jpg';
-const service1 = 'https://global-mediation.s3.eu-west-2.amazonaws.com/large-files/global_2025-33.jpg';
-const impact = 'https://global-mediation.s3.eu-west-2.amazonaws.com/large-files/global_2025-26.jpg';
-const Inclusion = 'https://global-mediation.s3.eu-west-2.amazonaws.com/large-files/global_2025-16.jpg';
-const Teamwork = 'https://global-mediation.s3.eu-west-2.amazonaws.com/large-files/global_2025-44.jpg';
-const Integrity = 'https://global-mediation.s3.eu-west-2.amazonaws.com/large-files/global_2025-63.jpg';
-
 const values = [
   {
     title: 'Quality',
     text: 'We listen and learn and go the extra mile to provide outstanding service to our clients.',
-    img: service1,
-    reverse: false,
+    img: 'https://global-mediation.s3.eu-west-2.amazonaws.com/large-files/global_2025-33.jpg',
   },
   {
     title: 'Impact',
     text: 'We make the world a better place by resolving harmful conflict and improving relationships.',
-    img: impact,
-    reverse: true,
+    img: 'https://global-mediation.s3.eu-west-2.amazonaws.com/large-files/global_2025-26.jpg',
   },
   {
     title: 'Inclusion',
     text: 'We celebrate difference and encourage inclusivity.',
-    img: Inclusion,
-    reverse: false,
+    img: inclusion,
   },
   {
     title: 'Teamwork',
     text: 'We create strong healthy relationships and work together to encourage each other’s growth.',
-    img: Teamwork,
-    reverse: true,
+    img: 'https://global-mediation.s3.eu-west-2.amazonaws.com/large-files/global_2025-44.jpg',
   },
   {
     title: 'Integrity',
     text: 'We do what we say we will do and act ethically and honestly.',
-    img: Integrity,
-    reverse: false,
+    img: 'https://global-mediation.s3.eu-west-2.amazonaws.com/large-files/global_2025-63.jpg',
   },
 ];
 
 const fadeIn = {
-  hidden: { opacity: 0, y: 40 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } },
+  hidden: { opacity: 0, y: 30 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut' } },
 };
 
-const page = () => {
+const Page = () => {
   return (
     <div className="bg-[#F9F8FF]">
-      {/* ==== HEADER (Unchanged) ==== */}
+      {/* ==== HEADER ==== */}
       <header
         style={{
-          backgroundImage: `url('${headerBG}'), linear-gradient(to right, rgba(62,0,101,0.60) 1.68%, rgba(62,0,101,0.15) 69.4%)`,
-          backgroundBlendMode: 'overlay',
+          backgroundImage: `linear-gradient(to right, rgba(62,0,101,0.65), rgba(62,0,101,0.15)), url('${headerBG}')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center top',
         }}
-        className="pt-[187px] max-h-[850px] h-screen bg-no-repeat flex justify-center relative md:pt-[238px] pb-[176px] md:pb-[203px] px-5 md:px-[60px]"
+        className="pt-[180px] pb-[140px] h-[70vh] md:h-[65vh] flex justify-center items-center text-center px-5 md:px-[60px]"
       >
-        <div className="w-full lg:max-w-[1318px] mx-auto relative z-10 flex items-center">
-          <h1 className="font-semibold tracking-[-4%] max-w-[900px] 2xl:max-w-[90%] leading-[120%] text-5xl md:text-[65px] xl:text-[4vw] text-white">
-            Global's Brand Values
+        <div>
+          <h1 className="font-semibold tracking-[-2%] max-w-[900px] leading-[120%] text-4xl md:text-[60px] xl:text-[4vw] text-white">
+            Global’s Brand Values
           </h1>
+          <p className="text-white mt-[25px] md:mt-4 mb-[25px] mr-auto max-w-[700px] md:mb-10 w-[100%] font-normal text-base md:text-lg xl:text-xl">
+            At Global Mediation, our values guide everything we do, from how we support people through challenging situations, to the care
+            and commitment we bring to every conversation. They reflect the service we aim to deliver, and the impact we hope to have.
+          </p>
         </div>
       </header>
 
-      {/* ==== VALUE SECTIONS ==== */}
-      {values.map((item, idx) => (
-        <section key={idx} className={`${idx % 2 === 0 ? 'bg-[#F9F8FF]' : 'bg-white'} py-20 md:py-28 px-5 md:px-16`}>
-          <div
-            className={`max-w-[1318px] mx-auto flex flex-col ${
-              item.reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'
-            } items-center gap-12 md:gap-20`}
-          >
-            {/* Image */}
+      {/* ==== GRID SECTION ==== */}
+      <section className="py-20 px-5 md:px-16 bg-white">
+        <div className="max-w-[1300px] mx-auto grid gap-12 md:gap-16 md:grid-cols-2 lg:grid-cols-3">
+          {values.map((item, idx) => (
             <motion.div
+              key={idx}
               variants={fadeIn}
               initial="hidden"
               whileInView="show"
               viewport={{ once: true }}
-              className="w-full lg:w-1/2 rounded-3xl overflow-hidden shadow-lg"
+              className="rounded-3xl bg-[#F9F8FF] overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col"
             >
-              <Image width={1200} height={1200} src={item.img} alt={item.title} className="object-cover w-full h-[300px] md:h-[480px]" />
-            </motion.div>
+              <div className="h-[220px] w-full relative">
+                <Image
+                  src={item.img}
+                  alt={item.title}
+                  fill
+                  className={`object-cover w-full h-full absolute rounded-tl-3xl rounded-tr-3xl ${
+                    values?.length === idx + 1 ? '-top-12' : 'top-0'
+                  }`}
+                />
+              </div>
 
-            {/* Content */}
-            <motion.div
-              variants={fadeIn}
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: true }}
-              className="w-full lg:w-1/2 flex flex-col justify-center text-center lg:text-left"
-            >
-              <h2 className="font-semibold text-[#43006A] leading-[120%] tracking-[-2%] text-4xl md:text-[42px] mb-6">{item.title}</h2>
-              <p className="text-gray-700 text-base md:text-lg leading-relaxed font-normal">{item.text}</p>
+              <div className="p-6 flex flex-col flex-grow text-center">
+                <h3 className="font-semibold text-[#43006A] text-2xl mb-3">{item.title}</h3>
+                <p className="text-gray-700 text-base leading-relaxed">{item.text}</p>
+              </div>
             </motion.div>
-          </div>
-        </section>
-      ))}
+          ))}
+        </div>
+      </section>
 
       {/* ==== CTA ==== */}
       <div className="bg-gradient-to-b from-[#F3EEFF] to-[#ffffff]">
         <CTA
-          title={'Let’s find a way forward, together'}
-          subTitle={'For more information about our services, team, training programmes, or career opportunities, get in touch with us.'}
-          Button1Link={'/contact'}
-          Button1Text={'Contact us'}
+          title="Let’s find a way forward, together"
+          subTitle="For more information about our services, team, training programmes, or career opportunities, get in touch with us."
+          Button1Link="/contact"
+          Button1Text="Contact us"
         />
       </div>
     </div>
   );
 };
 
-export default page;
+export default Page;

@@ -38,7 +38,7 @@ const MainServices = () => {
           backgroundImage: `url('${heaerImage.src}'), linear-gradient(to right, rgba(62,0,101,0.60) 1.68%, rgba(62,0,101,0.15) 69.4%)`,
           backgroundBlendMode: 'overlay',
           backgroundSize: 'cover',
-          backgroundPosition: 'center top',
+          backgroundPosition: 'left top',
         }}
         className=" pt-[187px] max-h-[700px] lg:max-h-[1050px] h-screen relative md:pt-[238px] pb-[176px] md:pb-[203px] px-5 md:px-[60px]"
       >
