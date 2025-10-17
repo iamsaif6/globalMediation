@@ -40,8 +40,8 @@ export default function Home() {
             <h2 className="font-medium leading-[120%] text-[32px] lg:text-5xl mb-[18px]">A better way to resolve disputes</h2>
             <p className=" text-base md:text-lg mb-5 md:mb-6">
               Mediation offers a cost-effective, faster alternative to going to court or tribunal. It gives people a way to move forward
-              without the emotional and financial strain of litigation. Whether you’re navigating a workplace issue, family disagreement or
-              commercial dispute, mediation brings clarity, structure and a chance to be heard.
+              without the emotional and financial strain of litigation. Whether you’re navigating a workplace issue, special education needs
+              disagreements, family disagreement or commercial dispute, mediation brings clarity, structure and a chance to be heard.
             </p>
             <div className="flex justify-center md:block">
               <Link
