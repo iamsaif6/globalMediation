@@ -62,7 +62,7 @@ const Training = () => {
       {/* Explore */}
       <section aria-label=" Explore Our Mediation Training Courses" className="py-16 px-5 md:px-16 md:py-[80px] ">
         <h2 className="font-medium mb-[40px] lg:mb-[100px]  tracking-[-4%] mx-auto text-left md:text-center text-4xl md:text-5xl leading-[120%]">
-          Explore our mediation training courses
+          Explore Our Mediation Training Courses
         </h2>
         <ExploreItem />
       </section>
@@ -70,12 +70,12 @@ const Training = () => {
       <Apply />
       <FaqTrainning />
       <CTA
-        title={'Start your mediation training journey today'}
+        title={'Start Your Mediation Training Journey Today'}
         subTitle={'Whether you’re qualifying for the first time or building on existing experience, we’re here to support your growth.'}
         Button1Link={'/contact'}
-        Button1Text={'Enrol in a Mediation Training programme'}
+        Button1Text={'Enrol in a Mediation Training Programme'}
         Button2Link={'/contact'}
-        Button2Text={'Contact Us for upcoming course dates'}
+        Button2Text={'Contact Us for Upcoming Course Dates'}
       />
     </div>
   );

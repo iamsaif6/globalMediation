@@ -58,7 +58,7 @@ const FAQ = ({ faqData, buttonText, buttonLink, title }) => {
       </div>
       <div className="flex mt-[43px] md:mt-0 flex-col items-center">
         <Link href={'#'} className="text-lg mb-[30px]">
-          Have more questions?
+          Have More Questions?
         </Link>
         <Button title={buttonText} href={buttonLink} />
       </div>

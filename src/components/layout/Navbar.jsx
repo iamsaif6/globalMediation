@@ -17,12 +17,12 @@ const resourceSubMenu = [
 ];
 
 const serviceSubmenu = [
-  { title: 'SEND (Special Educational Needs and Disability) mediation', href: '/send-mediation' },
-  { title: 'Workplace and employment mediation', href: '/Workplace-and-Employment-Mediation' },
-  { title: 'Business and commercial mediation', href: '/business' },
-  { title: 'Family mediation', href: '/family-mediation' },
-  { title: 'Community mediation', href: '/Community-Mediation' },
-  { title: 'Civil and legal dispute mediation', href: '/civil' },
+  { title: 'SEND (Special Educational Needs and Disability) Mediation', href: '/send-mediation' },
+  { title: 'Workplace and Employment Mediation', href: '/Workplace-and-Employment-Mediation' },
+  { title: 'Business and Commercial Mediation', href: '/business' },
+  { title: 'Family Mediation', href: '/family-mediation' },
+  { title: 'Community Mediation', href: '/Community-Mediation' },
+  { title: 'Civil and Legal Dispute Mediation', href: '/civil' },
 ];
 
 // const traiingSubmenu = [
@@ -47,13 +47,13 @@ const navLinksForMobile = [
     title: 'Services',
     hasMegaMenu: true,
     megaMenuItems: [
-      { title: 'SEND (Special Educational Needs and Disability) mediation', href: '/send-mediation' },
-      { title: 'Workplace and employment mediation', href: '/Workplace-and-Employment-Mediation' },
-      { title: 'Business and commercial mediation', href: '/business' },
+      { title: 'SEND (Special Educational Needs and Disability) Mediation', href: '/send-mediation' },
+      { title: 'Workplace and Employment Mediation', href: '/Workplace-and-Employment-Mediation' },
+      { title: 'Business and Commercial Mediation', href: '/business' },
 
-      { title: 'Family mediation', href: '/family-mediation' },
-      { title: 'Community mediation', href: '/Community-Mediation' },
-      { title: 'Civil and legal dispute mediation', href: '/civil' },
+      { title: 'Family Mediation', href: '/family-mediation' },
+      { title: 'Community Mediation', href: '/Community-Mediation' },
+      { title: 'Civil and Legal Dispute Mediation', href: '/civil' },
     ],
   },
   {
@@ -83,7 +83,7 @@ const navLinksForMobile = [
   },
   {
     href: '/about',
-    title: 'About us',
+    title: 'About Us',
   },
 ];
 
@@ -97,13 +97,13 @@ const navLinks = [
     title: 'Services',
     hasMegaMenu: true,
     megaMenuItems: [
-      { title: 'SEND (Special Educational Needs and Disability) mediation', href: '/send-mediation' },
-      { title: 'Workplace and employment mediation', href: '/Workplace-and-Employment-Mediation' },
-      { title: 'Business and commercial mediation', href: '/business' },
+      { title: 'SEND (Special Educational Needs and Disability) Mediation', href: '/send-mediation' },
+      { title: 'Workplace and Employment Mediation', href: '/Workplace-and-Employment-Mediation' },
+      { title: 'Business and Commercial Mediation', href: '/business' },
 
-      { title: 'Family mediation', href: '/family-mediation' },
-      { title: 'Community mediation', href: '/Community-Mediation' },
-      { title: 'Civil and legal dispute mediation', href: '/civil' },
+      { title: 'Family Mediation', href: '/family-mediation' },
+      { title: 'Community Mediation', href: '/Community-Mediation' },
+      { title: 'Civil and Legal Dispute Mediation', href: '/civil' },
     ],
   },
 
@@ -122,7 +122,7 @@ const navLinks = [
   },
   {
     href: '/about',
-    title: 'About us',
+    title: 'About Us',
   },
 ];
 
@@ -270,7 +270,7 @@ const Navbar = () => {
                   className={`bg-primary  border leading-[140%] border-primary font-medium text-lg text-[#FCFCFD] px-6 py-3 rounded-[40px]`}
                 >
                   <Link className="w-full" href="/contact">
-                    Contact us
+                    Contact Us
                   </Link>
                 </button>
               </div>
@@ -554,7 +554,7 @@ const Navbar = () => {
             <div className="p-5 pt-1 flex items-center gap-2">
               <button className={`bg-primary w-full border border-primary font-semibold text-lg text-[#FCFCFD] px-6 py-3 rounded-[40px]`}>
                 <Link onClick={() => setMobileMenuOpen(false)} className="w-full" href="/contact">
-                  Contact US
+                  Contact Us
                 </Link>
               </button>
               <button>

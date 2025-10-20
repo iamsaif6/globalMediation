@@ -14,7 +14,7 @@ export const HeaderTraining = () => {
     >
       <div className="w-full relative z-10 lg:max-w-[1318px] mx-auto">
         <h1 className="font-semibold tracking-[-4%] max-w-[900px] leading-[120%] text-5xl md:[55px] lg:text-[65px] !text-white">
-          Mediation Training: <br /> learn, qualify <br /> and specialise
+          Mediation Training: <br /> Learn, Qualify <br /> and Specialise
         </h1>
         <p className="text-white mt-[18px] max-w-[700px] md:mt-6 mb-[26px] md:mb-8 w-[70%] font-normal text-base md:text-lg">
           Explore accredited mediation training programmes designed for aspiring mediators and professionals looking to build their skills
@@ -26,7 +26,7 @@ export const HeaderTraining = () => {
             className={`bg-primary md:block hidden  cursor-pointer border  border-primary font-semibold text-lg text-[#FCFCFD] px-2 md:px-12 py-3 rounded-[40px]`}
           >
             <Link title="Contact Us for Upcoming Course Dates" className="w-full" target="_blank" href={'https://www.globaltraining.uk/'}>
-              Enroll in a mediation training program today
+              Enroll in a Mediation Training Program Today
             </Link>
           </button>
           <button
@@ -45,7 +45,7 @@ export const HeaderTraining = () => {
               target="_blank"
               href={'https://www.globaltraining.uk/contact-us'}
             >
-              Contact us for upcoming course dates
+              Contact Us for Upcoming Course Dates
             </Link>
           </button>
         </div>

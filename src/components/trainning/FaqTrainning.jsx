@@ -7,19 +7,19 @@ import Button from '../shared/Button';
 const faqData = [
   {
     key: 1,
-    question: 'Who can enrol in mediation training?',
+    question: 'Who Can Enrol in Mediation Training?',
     answer:
       'Anyone with an interest in helping people resolve disputes calmly and fairly. Whether you’re a professional looking to expand your skills or brand new to mediation, our courses are open, practical and supportive.',
   },
   {
     key: 2,
-    question: 'Are the courses accredited?',
+    question: 'Are the Courses Accredited?',
     answer:
       'The potential for success is high. Mediation provides an opportunity for cases to be looked at in detail and considered with greater care than usual. Face to face meetings provide the opportunity to clarify positions and understand other points of view; to explore creative and imaginative solutions that may not have been considered previously. It gives parties the opportunity to rebuild trust and re-establish a working relationship.',
   },
   {
     key: 3,
-    question: 'Do you offer online training?',
+    question: 'Do You Offer Online Training?',
     answer:
       'The potential for success is high. Mediation provides an opportunity for cases to be looked at in detail and considered with greater care than usual. Face to face meetings provide the opportunity to clarify positions and understand other points of view; to explore creative and imaginative solutions that may not have been considered previously. It gives parties the opportunity to rebuild trust and re-establish a working relationship.',
   },
@@ -34,7 +34,7 @@ const FaqItem = ({ question, answer, isActive, onClick }) => {
     >
       <div onClick={onClick} className="flex justify-between items-center cursor-pointer rounded-md">
         <div className={`${isActive ? 'font-medium  ' : 'font-normal'} text-lg `}>
-          <h3>{question}</h3>
+          <h3 className="">{question}</h3>
         </div>
         {isActive ? (
           <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
@@ -65,7 +65,7 @@ const FaqTrainning = () => {
   };
   return (
     <section className="py-16 bg-[#F9F8FF] px-5 items-center md:px-16 md:py-[80px]">
-      <SectionHeading center={true} title={'Common questions about Mediation Training'} />
+      <SectionHeading center={true} title={'Common Questions About Mediation Training'} />
       <div className=" mt-[80px] md:my-10">
         {faqData.map(faq => (
           <FaqItem

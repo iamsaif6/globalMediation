@@ -1,42 +1,43 @@
 import Header from '@/components/shared/Header';
 import React from 'react';
 import service1 from '/public/business-1.jpg';
+import service3 from '/public/global_2025-6.jpg';
 import Image from 'next/image';
 import CTA from '@/components/shared/CTA';
 import FAQ from '@/components/service/FAQ';
 import HowWeWork from './HowWeWork';
 
 const service2 = 'https://global-mediation.s3.eu-west-2.amazonaws.com/large-files/redd-francisco-5U_28ojjgms-unsplash.jpg';
-const service3 = 'https://global-mediation.s3.eu-west-2.amazonaws.com/large-files/dylan-gillis-KdeqA3aTnBY-unsplash.jpg';
+// const service3 = 'https://global-mediation.s3.eu-west-2.amazonaws.com/large-files/dylan-gillis-KdeqA3aTnBY-unsplash.jpg';
 const cover = 'https://global-mediation.s3.eu-west-2.amazonaws.com/large-files/Business_Header.jpeg';
 
 const faqData = [
   {
     key: 1,
-    question: 'How long does commercial mediation take?',
+    question: 'How Long Does Commercial Mediation Take?',
     answer: 'Most sessions last a full day, depending on the complexity of the dispute. Preparation and follow-up are included.',
   },
   {
     key: 2,
-    question: 'Is the outcome legally binding?',
+    question: 'Is the Outcome Legally Binding?',
     answer:
       'No — agreements are not automatically legally binding, but they can be formalised into contracts or legal documents if both parties agree.',
   },
   {
     key: 3,
-    question: 'Do I need a lawyer to attend mediation?',
+    question: 'Do I Need a Lawyer to Attend Mediation?',
     answer: 'No, but legal advisors can be included if you prefer. The process is designed to be flexible, accessible and collaborative.',
   },
   {
     key: 4,
-    question: 'What types of disputes can you help with?',
+    question: 'What Types of Disputes Can You Help With?',
     answer:
       'We support a wide range — including contract, partnership, client-supplier and IP-related disputes. If you’re unsure, we’re happy to advise.',
   },
 ];
 
 const item2 = {
-  title: 'What we help resolve',
+  title: 'What We Help Resolve',
   subtitle:
     'If it’s causing friction, slowing progress or damaging relationships — we’ll help you navigate it. We work with individuals, teams and organisations to resolve disputes such as:',
   service: [
@@ -51,20 +52,20 @@ const item2 = {
   image: service1,
 };
 const item3 = {
-  title: 'Examples of what we’ve mediated',
+  title: 'Examples of What We’ve Mediated',
   subtitle: 'We work with individuals, teams and organisations to resolve disputes such as:',
   service: [
-    'A complex software licensing dispute between two technology providers',
-    'A shareholder breakdown threatening business continuity',
-    'Supply chain tensions between a developer and contractor',
-    'Multi-party insurance liability across regional teams',
-    'A professional disagreement within a family-run operation',
+    'A Complex Software Licensing Dispute Between Two Technology Providers',
+    'A Shareholder Breakdown Threatening Business Continuity',
+    'Supply Chain Tensions Between a Developer and Contractor',
+    'Multi-Party Insurance Liability Across Regional Teams',
+    'A Professional Disagreement Within a Family-Run Operation',
   ],
   image: service2,
 };
 
 const item = {
-  title: 'Why choose Global Mediation',
+  title: 'Why Choose Global Mediation',
   subtitle:
     'At Global Mediation, our experienced mediators bring commercial awareness, emotional intelligence and sensitivity to every case. We help companies avoid court, protect relationships and co-create outcomes that work — for today and the long term. Our mediators blend empathy with business sense — supporting people to reach agreements that work, built on understanding, not winning. With over 95% of cases settled — many on the day — you can trust our process to guide you towards resolution.',
   service: [
@@ -79,9 +80,9 @@ const page = () => {
   return (
     <div>
       <Header
-        Button1Text={'Book a mediation session'}
+        Button1Text={'Book a Mediation Session'}
         Button1Link="/contact"
-        title={'Business and commercial mediation'}
+        title={'Business and Commercial Mediation'}
         subTitle={
           'Business disputes can stall progress, damage relationships and drain time and energy. Whether high-value, high-stakes or emotionally charged, we help untangle complex disagreements through structured dialogue and impartial support — rebuilding trust and moving forward with clarity, care and shared understanding.'
         }
@@ -187,15 +188,15 @@ const page = () => {
       </div>
       {/* <MediationCalculation /> */}
 
-      <FAQ title={'FAQs about business and commercial mediation'} buttonText={'Contact us'} buttonLink={'/contact'} faqData={faqData} />
+      <FAQ title={'FAQs About Business and Commercial Mediation'} buttonText={'Contact Us'} buttonLink={'/contact'} faqData={faqData} />
       <div className="bg-[#F9F8FF]">
         <CTA
-          title={'Start the conversation'}
+          title={'Start the Conversation'}
           subTitle={'You don’t need to know exactly what you’re asking for.Just tell us what’s going on, and we’ll talk you through it.'}
           Button1Link={'/contact'}
-          Button1Text={'Book business mediation'}
+          Button1Text={'Book Business Mediation'}
           Button2Link={'/contact'}
-          Button2Text={'Contact us'}
+          Button2Text={'Contact Us'}
         />
       </div>
     </div>

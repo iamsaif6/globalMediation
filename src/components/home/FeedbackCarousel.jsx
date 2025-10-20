@@ -7,29 +7,30 @@ import { ArrowLeft, ArrowRight } from 'lucide-react';
 
 const clientReview = [
   {
-    review: 'Extremely useful, impartial and a calm environment in which to discuss concerns',
-    name: '',
-  },
-  {
     review: 'Absolutely essential! Supports positive relationships. Thank you – very approachable and efficient. Impartial and fair.',
     name: '',
   },
   {
     review:
-      'Very helpful and explained all that we needed to know, very well. We also felt that we were listened too throughout this process. Extremely well managed meeting.',
+      'Very helpful and explained everything we needed to know, very well. We also felt that we were truly listened to throughout the process. Extremely well-managed meeting.',
     name: '',
   },
   {
     review:
-      'Informal and easy talk to clarify issues. A good chance to discuss and clarify issues face to face and also to put a plan together that might not have been available to do in the first place',
+      'Informal and easy conversation to clarify issues. A great chance to talk face-to-face and put a plan together that might not have been available otherwise.',
     name: '',
   },
   {
-    review: 'Meeting was very easy going. Mediator made it simple and welcome. Kept my nerves calm at all times.',
+    review: 'Meeting was very easy-going. The mediator made it simple and welcoming, and helped keep my nerves calm throughout.',
     name: '',
   },
   {
-    review: 'This was really useful to identify gaps information and find out what information was needed. Very professional and impartial',
+    review:
+      'This was really useful to identify gaps in our information and understand what was still needed. Very professional and impartial.',
+    name: '',
+  },
+  {
+    review: 'Extremely useful, impartial, and a calm environment in which to discuss concerns.',
     name: '',
   },
 ];
@@ -93,7 +94,7 @@ const FeedbackCarousel = ({ title, subTitle, fullWidth }) => {
     customPaging: i => <div className=" w-2  h-2 rounded-full bg-[#EBEBEB]"></div>,
   };
   return (
-    <section aria-label="Feedback Carousel" className="py-[40px] lg:max-w-[1318px] px-5 md:px-[60px] mx-auto slick-bar ">
+    <section aria-label="Feedback Carousel" className="py-[80px] lg:max-w-[1318px] px-5 md:px-[60px] mx-auto slick-bar ">
       <div
         className={`mb-[30px] ${fullWidth ? 'max-w-max' : 'max-w-[267px]'}  md:max-w-max mx-auto px-5 md:px-16 text-center md:mb-[70px]`}
       >
@@ -126,7 +127,7 @@ const FeedbackCarousel = ({ title, subTitle, fullWidth }) => {
                       </defs>
                     </svg>
                     <div className="mt-3 md:mt-[38px] pl-3 md:pl-10 md:pr-5">
-                      <p className="leading-[150%] text-base lg:text-lg mb-5">{item.review}</p>
+                      <p className="leading-[150%] text-base lg:text-lg mb-5">" {item.review}"</p>
                       {item.name && <p className="text-sm lg:text-2xl font-semibold text-[#1C1C1C]"> - {item.name}</p>}
                     </div>
                   </div>

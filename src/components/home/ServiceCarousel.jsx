@@ -65,7 +65,7 @@ const ServiceCarousel = () => {
   return (
     <section aria-label="Global Mediation Services" className="py-[0px] lg:max-w-[1318px] px-5 md:px-[60px] mx-auto slick-bar ">
       <div className="max-w-[800px] px-5 mx-auto lg:text-center md:text-center mb-[20px] lg:mb-[70px]">
-        <h2 className="font-medium text-4xl md:text-5xl mb-5 md:mb-6">Global Mediation services</h2>
+        <h2 className="font-medium text-4xl md:text-5xl mb-5 md:mb-6">Global Mediation Services</h2>
         <p className=" leading-[150%] text-base md:text-lg font-normal">
           Tailored solutions for workplaces, communities, families and individuals.
         </p>
@@ -86,7 +86,7 @@ const ServiceCarousel = () => {
                 </div> */}
                 <div className="flex flex-col flex-grow">
                   <h3 className="text-lg lg:text-2xl group-hover:!text-white duration-200 leading-[140%] mb-[6px] md:mb-2 font-semibold text-secondary">
-                    Workplace and employment mediation
+                    Workplace and Employment Mediation
                   </h3>
                   <p className="text-base md:text-lg duration-200 leading-[150%] font-normal mb-[26px] flex-grow">
                     Resolve team conflict, grievances and workplace challenges.
@@ -105,7 +105,7 @@ const ServiceCarousel = () => {
               <div className="rounded-[20px] group hover:bg-secondary hover:text-white duration-200 md:rounded-3xl border bg-[#F3F1FF] border-[#D4DBEA] my-9 py-10 md:py-[49px] px-5 md:px-6 h-full flex flex-col">
                 <div className="flex flex-col flex-grow">
                   <h3 className="text-lg lg:text-2xl group-hover:!text-white duration-200 leading-[140%] mb-[6px] md:mb-2 font-semibold text-secondary">
-                    Business and commercial mediation
+                    Business and Commercial Mediation
                   </h3>
                   <p className="text-base md:text-lg duration-200 leading-[150%] font-normal mb-[26px] flex-grow">
                     Addressing disputes over contracts, partnerships, and more
@@ -124,7 +124,7 @@ const ServiceCarousel = () => {
               <div className="rounded-[20px] group hover:bg-secondary hover:text-white duration-200 md:rounded-3xl border bg-[#F3F1FF] border-[#D4DBEA] my-9 py-10 md:py-[49px] px-5 md:px-6 h-full flex flex-col">
                 <div className="flex flex-col flex-grow">
                   <h3 className="text-lg lg:text-2xl group-hover:!text-white duration-200 leading-[140%] mb-[6px] md:mb-2 font-semibold text-secondary">
-                    SEND mediation
+                    SEND Mediation
                   </h3>
                   <p className="text-base md:text-lg duration-200 leading-[150%] font-normal mb-[26px] flex-grow">
                     Support for families, schools and authorities navigating special educational needs.
@@ -144,7 +144,7 @@ const ServiceCarousel = () => {
               <div className="rounded-[20px] group hover:bg-secondary hover:text-white duration-200 md:rounded-3xl border bg-[#F3F1FF] border-[#D4DBEA] my-9 py-10 md:py-[49px] px-5 md:px-6 h-full flex flex-col">
                 <div className="flex flex-col flex-grow">
                   <h3 className="text-lg lg:text-2xl group-hover:!text-white duration-200 leading-[140%] mb-[6px] md:mb-2 font-semibold text-secondary">
-                    Family mediation
+                    Family Mediation
                   </h3>
                   <p className="text-base md:text-lg duration-200 leading-[150%] font-normal mb-[26px] flex-grow">
                     Calm, impartial support to help you resolve family issues around parenting.
@@ -164,7 +164,7 @@ const ServiceCarousel = () => {
               <div className="rounded-[20px] group hover:bg-secondary hover:text-white duration-200 md:rounded-3xl border bg-[#F3F1FF] border-[#D4DBEA] my-9 py-10 md:py-[49px] px-5 md:px-6 h-full flex flex-col">
                 <div className="flex flex-col flex-grow">
                   <h3 className="text-lg lg:text-2xl group-hover:!text-white duration-200 leading-[140%] mb-[6px] md:mb-2 font-semibold text-secondary">
-                    Community mediation
+                    Community Mediation
                   </h3>
                   <p className="text-base md:text-lg duration-200 leading-[150%] font-normal mb-[26px] flex-grow">
                     Supportive, impartial mediation to help neighbours
@@ -183,7 +183,7 @@ const ServiceCarousel = () => {
               <div className="rounded-[20px] group hover:bg-secondary hover:text-white duration-200 md:rounded-3xl border bg-[#F3F1FF] border-[#D4DBEA] my-9 py-10 md:py-[49px] px-5 md:px-6 h-full flex flex-col">
                 <div className="flex flex-col flex-grow">
                   <h3 className="text-lg lg:text-2xl group-hover:!text-white duration-200 leading-[140%] mb-[6px] md:mb-2 font-semibold text-secondary">
-                    Civil and legal dispute mediation
+                    Civil and Legal Dispute Mediation
                   </h3>
                   <p className="text-base md:text-lg duration-200 leading-[150%] font-normal mb-[26px] flex-grow">
                     A calmer alternative to court in a wide range of legal matters.

@@ -8,42 +8,39 @@ const service4 = 'https://global-mediation.s3.eu-west-2.amazonaws.com/large-file
 
 const exlopreItem = [
   {
-    title: 'Foundation course in mediation',
+    title: 'Foundation Course in Mediation',
     description:
       'A six-day course designed to equip you with the knowledge and skills to qualify as an accredited mediator. This programme blends theory with live practice, from the core stages of mediation to professional ethics and resolution strategies.',
     key: [
-      'Practical exercises, role plays and guided discussion',
-      'Certification to apply for civil mediation council membership',
-      'Ideal for professionals entering the field of mediation',
+      'Hands-On Learning Through Role Plays, Exercises, and Reflective Sessions',
+      'Comprehensive Support, Including Individual Tutorials and Coaching',
     ],
     cover: service2,
-    buttonText: 'Enrol in the foundation course today',
+    buttonText: 'Enrol in the Foundation Course Today',
     buttonLink: '/contact',
   },
   {
-    title: 'SEND mediation training course',
+    title: 'SEND Mediation Training Course',
     description:
       'An advanced course for accredited mediators looking to specialise in special educational needs and disability (SEND). You’ll explore legal frameworks, local authority processes and SEND-specific mediation approaches.',
     key: [
-      'Deep understanding of SEND law and systems',
-      'Specialist certification as a SEND mediator',
-      'Approved by the civil mediation council and the college of mediators',
+      'Hands-On Learning Through Role Plays, Exercises, and Reflective Sessions',
+      'Comprehensive Support, Including Individual Tutorials and Coaching',
     ],
     cover: service3,
-    buttonText: 'Specialise in SEND mediation',
+    buttonText: 'Specialise in SEND Mediation',
     buttonLink: '/contact',
   },
   {
-    title: 'SEND mediation: Professional practice days',
+    title: 'SEND Mediation: Professional Practice Days',
     description:
       'Designed for practising SEND mediators who want to grow their skills. Engage in live role plays, structured feedback and peer discussion — all led by experienced trainers.',
     key: [
-      'Real-world scenarios and supervised practise',
-      'Personalised coaching and feedback',
-      'Advanced development for experienced mediators',
+      'Hands-On Learning Through Role Plays, Exercises, and Reflective Sessions',
+      'Comprehensive Support, Including Individual Tutorials and Coaching',
     ],
     cover: service4,
-    buttonText: 'Advance your SEND skills today',
+    buttonText: 'Advance Your SEND Skills Today',
     buttonLink: '/contact',
   },
 ];
@@ -68,20 +65,23 @@ const ExploreItem = () => {
               <p className=" text-base mb-5 md:text-lg leading-[150%]">{item.description}</p>
 
               <div>
-                <h3 className="md:text-2xl text-lg font-medium text-secondary my-6 ">Key benefits:</h3>
+                <h3 className="md:text-2xl text-lg font-medium text-secondary my-6 ">Key Benefits:</h3>
                 <ul className="text-[#667085] text-base md:text-lg">
-                  <li className="flex items-center py-6 pl-[7px] gap-[26px] border-t-[0.5px] border-[#DAD3FF]">
-                    <span className="inline-block flex-shrink-0 h-[10px] w-[10px] bg-primary rounded-full"></span>
-                    <span>Accredited by the Civil Mediation Council and the College of Mediators.</span>
-                  </li>
-                  <li className="flex items-center py-6 pl-[7px] gap-[26px] border-t-[0.5px] border-[#DAD3FF]">
-                    <span className="inline-block flex-shrink-0 h-[10px] w-[10px] bg-primary rounded-full"></span>
-                    <span>Hands-on learning through role plays, exercises, and reflective sessions.</span>
-                  </li>
-                  <li className="flex items-center py-6 pl-[7px] gap-[26px] border-b-[0.5px] border-t-[0.5px] border-[#DAD3FF]">
-                    <span className="inline-block flex-shrink-0 h-[10px] w-[10px] bg-primary rounded-full"></span>
-                    <span>Comprehensive support, including individual tutorials and coaching.</span>
-                  </li>
+                  {item.key.map((point, index) => (
+                    <li
+                      key={index}
+                      className={`flex items-center py-6 pl-[7px] gap-[26px] ${
+                        index === 0
+                          ? 'border-b-[0.5px] border-[#DAD3FF]'
+                          : index === item.key.length - 1
+                          ? ''
+                          : 'border-b-[0.5px] border-[#DAD3FF]'
+                      }`}
+                    >
+                      <span className="inline-block flex-shrink-0 h-[10px] w-[10px] bg-primary rounded-full"></span>
+                      <span>{point}</span>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>

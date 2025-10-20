@@ -4,13 +4,15 @@ import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import inclusion from '/public/global_2025-76.jpg';
+import Quality from '/public/global_2025-113.jpg';
+import Integrity from '/public/global_2025-63.jpg';
 
 const headerBG = 'https://global-mediation.s3.eu-west-2.amazonaws.com/large-files/global_2025-38.jpg';
 const values = [
   {
     title: 'Quality',
     text: 'We listen and learn and go the extra mile to provide outstanding service to our clients.',
-    img: 'https://global-mediation.s3.eu-west-2.amazonaws.com/large-files/global_2025-33.jpg',
+    img: Quality,
   },
   {
     title: 'Impact',
@@ -30,7 +32,7 @@ const values = [
   {
     title: 'Integrity',
     text: 'We do what we say we will do and act ethically and honestly.',
-    img: 'https://global-mediation.s3.eu-west-2.amazonaws.com/large-files/global_2025-63.jpg',
+    img: Integrity,
   },
 ];
 
@@ -64,7 +66,7 @@ const Page = () => {
 
       {/* ==== GRID SECTION ==== */}
       <section className="py-20 px-5 md:px-16 bg-white">
-        <div className="max-w-[1300px] mx-auto grid gap-12 md:gap-16 md:grid-cols-2 lg:grid-cols-3">
+        <div className="max-w-[1300px] mx-auto grid gap-12 md:gap-16 md:grid-cols-2 lg:flex lg:flex-wrap lg:justify-center lg:gap-16">
           {values.map((item, idx) => (
             <motion.div
               key={idx}
@@ -72,7 +74,7 @@ const Page = () => {
               initial="hidden"
               whileInView="show"
               viewport={{ once: true }}
-              className="rounded-3xl bg-[#F9F8FF] overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col"
+              className="rounded-3xl bg-[#F9F8FF] overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col lg:basis-1/3 lg:max-w-[430px]"
             >
               <div className="h-[220px] w-full relative">
                 <Image

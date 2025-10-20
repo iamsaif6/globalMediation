@@ -34,7 +34,7 @@ const WhatGuides = () => {
     <section className="py-16 px-5 md:px-16 md:py-[80px]">
       <div className="max-w-[850px] mx-auto text-left md:text-center">
         <h2 className="font-medium leading-[120%] tracking-[-0.04em] text-4xl md:text-[40px] lg:text-5xl mb-5 md:mb-6">
-          What guides our work
+          What Guides Our Work
         </h2>
         <p className="text-black text-base md:text-lg font-normal">
           Founded by barrister and mediator Adam Gersch, Global Mediation began with a simple idea: that people deserve better ways to

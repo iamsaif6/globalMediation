@@ -73,7 +73,7 @@ const AboutUs = () => {
       >
         <div className="w-full  lg:max-w-[1318px] mx-auto relative z-10 ">
           <h1 className="font-semibold tracking-[-4%] max-w-[900px] 2xl:max-w-[90%] leading-[120%] text-5xl md:text-[65px] xl:text-[4vw] text-white">
-            Helping people find a way forward, together.
+            Helping People Find a Way Forward, Together
           </h1>
           <div className=" flex mt-8 md:flex-row flex-col items-center gap-4">
             <button
@@ -105,7 +105,7 @@ const AboutUs = () => {
         <FeedbackCarousel title={'What our clients say'} />
       </div>
       <CTA
-        title={'Let’s find a way forward, together'}
+        title={'Let’s Find a Way Forward, Together'}
         subTitle={'For more information about our services, team, training programmes, or career opportunities, get in touch with us.'}
         Button1Link={'/contact'}
         Button1Text={'Contact us'}

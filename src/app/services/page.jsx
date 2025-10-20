@@ -1,7 +1,7 @@
 import MainServiesCard from '@/components/main-services/MainServiesCard';
 import CTA from '@/components/shared/CTA';
 import React from 'react';
-import heaerImage from '/public/services-final-header.png';
+import heaerImage from '/public/vitaly-gariev-ordRm3twjOg-unsplash.jpg';
 import Link from 'next/link';
 import Head from 'next/head';
 
@@ -38,9 +38,9 @@ const MainServices = () => {
           backgroundImage: `url('${heaerImage.src}'), linear-gradient(to right, rgba(62,0,101,0.60) 1.68%, rgba(62,0,101,0.15) 69.4%)`,
           backgroundBlendMode: 'overlay',
           backgroundSize: 'cover',
-          backgroundPosition: 'left top',
+          // backgroundPosition: 'left top',
         }}
-        className=" pt-[187px] max-h-[700px] lg:max-h-[1050px] flex items-center h-screen relative md:pt-[238px] pb-[176px] md:pb-[203px] px-5 md:px-[60px]"
+        className=" pt-[187px] max-h-[700px] bg-center lg:bg-left-top lg:max-h-[1050px] flex items-center h-screen relative md:pt-[238px] pb-[176px] md:pb-[203px] px-5 md:px-[60px]"
       >
         <div className="w-full relative z-10 lg:max-w-[1318px] mx-auto">
           <h1 className="font-semibold tracking-[-4%] max-w-[900px] 2xl:max-w-[90%] leading-[120%] text-5xl md:text-[65px] xl:text-[4vw] !text-white">

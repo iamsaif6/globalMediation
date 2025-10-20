@@ -16,17 +16,17 @@ const wayChoose = 'https://global-mediation.s3.eu-west-2.amazonaws.com/large-fil
 const faqData = [
   {
     key: 1,
-    question: 'Is family mediation legally binding?',
+    question: 'Is Family Mediation Legally Binding?',
     answer: 'No — but written agreements can be made into formal court orders if both parties agree.',
   },
   {
     key: 2,
-    question: 'Can children be involved in the mediation?',
+    question: 'Can Children Be Involved in the Mediation?',
     answer: 'Yes — with parental agreement, older children can be consulted as part of the process.',
   },
   {
     key: 3,
-    question: 'How many sessions will we need?',
+    question: 'How Many Sessions Will We Need?',
     answer: 'Most disputes are resolved within one to three sessions, depending on complexity.',
   },
 ];
@@ -39,28 +39,28 @@ const page = () => {
         subTitle={
           'Calm, impartial support to help you resolve family issues around parenting, separation or finances, with everyone’s voice heard.'
         }
-        Button1Text={'Speak to a family mediator'}
+        Button1Text={'Speak to a Family Mediator'}
         Button1Link="/contact"
         cover={banner}
       />
       <Introduction
-        title={'family mediation'}
+        title={'Family Mediation'}
         image={overview}
         subtitle={
           'Family mediation offers a safe, supportive space to work through difficult issues and find a way forward together. Whether you’re separating, making parenting arrangements or resolving financial matters, we help families navigate change with clarity and care. It’s a calmer, more constructive alternative to court, focused on communication, mutual understanding and long-term wellbeing.'
         }
         items={[
-          'Focuses on the child’s needs and wellbeing',
-          'Encourages better communication between family members',
-          'Helps reach practical, lasting agreements',
-          'Quicker, more affordable than court',
+          'Focuses on the Child’s Needs and Wellbeing',
+          'Encourages Better Communication Between Family Members',
+          'Helps Reach Practical, Lasting Agreements',
+          'Quicker, More Affordable Than Court',
         ]}
       />
       {/*  */}
 
       <section className="py-16 bg-secondary text-white md:py-[80px]">
         <div className="px-5 md:px-16 md:mb-[120px] ">
-          <SectionHeading className={'!text-white'} fullWidth={true} title={'Common family disputes we help with'} />
+          <SectionHeading className={'!text-white'} fullWidth={true} title={'Common Family Disputes We Help With'} />
         </div>
         <div className="mt-[42px] md:mt-[54px]">
           {/* Buttons */}
@@ -79,34 +79,34 @@ const page = () => {
                       />
                     </div>
                     <div>
-                      <h3 className="md:text-2xl text-lg font-medium  mb-8 md:mb-6 !text-white">Family mediation can support you with:</h3>
+                      <h3 className="md:text-2xl text-lg font-medium  mb-8 md:mb-6 !text-white">Family Mediation Can Support You With:</h3>
                       <ul className=" text-lg">
                         <li className="flex items-center hover:text-black hover:bg-white hover:rounded-2xl group py-6 pl-[20px] gap-[26px] border-t-[0.5px] border-[#DAD3FF]">
                           <span className="inline-block flex-shrink-0 h-[10px] group-hover:bg-primary w-[10px]  bg-white rounded-full"></span>
-                          <span>Child contact and living arrangements</span>
+                          <span>Child Contact and Living Arrangements</span>
                         </li>
                         <li className="flex items-center hover:text-black hover:bg-white hover:rounded-2xl group py-6 pl-[20px] gap-[26px] border-t-[0.5px] border-[#DAD3FF]">
                           <span className="inline-block flex-shrink-0 h-[10px] group-hover:bg-primary w-[10px]  bg-white rounded-full"></span>
-                          <span>Parenting plans and co-parenting decisions</span>
+                          <span>Parenting Plans and Co-Parenting Decisions</span>
                         </li>
                         <li className="flex items-center hover:text-black hover:bg-white hover:rounded-2xl group py-6 pl-[20px] gap-[26px] border-t-[0.5px] border-[#DAD3FF]">
                           <span className="inline-block flex-shrink-0 h-[10px] group-hover:bg-primary w-[10px]  bg-white rounded-full"></span>
-                          <span>Separation or divorce-related disputes</span>
+                          <span>Separation or Divorce‑Related Disputes</span>
                         </li>
                         <li className="flex items-center hover:text-black hover:bg-white hover:rounded-2xl group py-6 pl-[20px] gap-[26px] border-t-[0.5px] border-[#DAD3FF]">
                           <span className="inline-block flex-shrink-0 h-[10px] group-hover:bg-primary w-[10px]  bg-white rounded-full"></span>
-                          <span>Financial agreements after relationship breakdown</span>
+                          <span>Financial Agreements After Relationship Breakdown</span>
                         </li>
                         <li className="flex items-center hover:text-black hover:bg-white hover:rounded-2xl group py-6 pl-[20px] gap-[26px] border-t-[0.5px] border-[#DAD3FF]">
                           <span className="inline-block flex-shrink-0 h-[10px] group-hover:bg-primary w-[10px]  bg-white rounded-full"></span>
-                          <span>Disagreements involving extended family or guardianship</span>
+                          <span>Disagreements Involving Extended Family or Guardianship</span>
                         </li>
                       </ul>
                     </div>
                     <div className="flex justify-center md:block">
                       <button className=" bg-white  mt-10  font-semibold text-lg text-black px-12 py-3 rounded-[40px] ">
                         <Link className="w-full  " href="/contact">
-                          Book family mediation
+                          Book Family Mediation
                         </Link>
                       </button>
                     </div>
@@ -130,7 +130,7 @@ const page = () => {
 
       <section className="py-16 px-5 md:px-16 md:py-[80px]">
         <SectionHeading
-          title={'How family mediation works'}
+          title={'How Family Mediation Works'}
           subTitle={
             'Our mediators offer structured, compassionate guidance — helping you have difficult conversations in a safe and supportive way.'
           }
@@ -175,7 +175,7 @@ const page = () => {
         <div className="flex justify-center">
           <button className=" bg-primary  mt-10  font-semibold text-lg text-white px-3 lg:px-12 py-3 rounded-[40px] ">
             <Link className="w-full  " href="/about">
-              Request a family mediation appointment
+              Request a Family Mediation Appointment
             </Link>
           </button>
         </div>
@@ -186,7 +186,7 @@ const page = () => {
       <section className="py-16 px-5 md:px-16 md:py-[80px] text-white bg-secondary">
         <div className="text-left md:text-center">
           <h2 className="text-4xl md:text-5xl font-medium max-w-[900px] mx-auto leading-[120%] mb-8 md:mb-[40px] !text-white">
-            Why choose Global Mediation?
+            Why Choose Global Mediation?
           </h2>
           <p className=" text-base md:text-lg leading-[150%] mb-[56px] md:mb-[78px]">
             We’ve worked with families across the UK for more than 25 years, supporting them through some of life’s most complex and
@@ -215,23 +215,23 @@ const page = () => {
             />
           </div>
           <div className="col-span-2 lg:col-span-1">
-            <p className="mb-6 font-semibold text-lg md:text-2xl">Why families trust us:</p>
+            <p className="mb-6 font-semibold text-lg md:text-2xl">Why Families Trust Us:</p>
             <ul className="space-y-6 text-base md:text-[20px]">
               <li className="flex items-center gap-6 py-4 px-[18px] md:px-6 rounded-xl border border-[#624A70]">
                 <span className="w-[10px] flex-shrink-0 h-[10px] rounded-full bg-primary block"></span>
-                <p className=" font-normal leading-[140%]">Accredited family mediation specialists</p>
+                <p className=" font-normal leading-[140%]"> Accredited Family Mediation Specialists</p>
               </li>
               <li className="flex items-center gap-6 py-4 px-[18px] md:px-6 rounded-xl border border-[#624A70]">
                 <span className="w-[10px] flex-shrink-0 h-[10px] rounded-full bg-primary block"></span>
-                <p className="font-normal leading-[140%]">Inclusive, accessible and trauma-informed</p>
+                <p className="font-normal leading-[140%]">Inclusive, Accessible and Trauma‑Informed</p>
               </li>
               <li className="flex items-center gap-6 py-4 px-[18px] md:px-6 rounded-xl border border-[#624A70]">
                 <span className="w-[10px] flex-shrink-0 h-[10px] rounded-full bg-primary block"></span>
-                <p className=" font-normal leading-[140%]">Trusted by individuals, legal teams and local authorities</p>
+                <p className=" font-normal leading-[140%]">Trusted by Individuals, Legal Teams and Local Authorities</p>
               </li>
               <li className="flex items-center gap-6 py-4 px-[18px] md:px-6 rounded-xl border border-[#624A70]">
                 <span className="w-[10px] flex-shrink-0 h-[10px] rounded-full bg-primary block"></span>
-                <p className=" font-normal leading-[140%]">Proven to reduce conflict and improve outcomes for families</p>
+                <p className=" font-normal leading-[140%]">Proven to Reduce Conflict and Improve Outcomes for Families</p>
               </li>
             </ul>
           </div>
@@ -242,17 +242,17 @@ const page = () => {
       <FeedbackCarousel title={'Testimonials from families'} subTitle={null} fullWidth={true} />
       <div className="bg-[#F9F8FF]">
         <CTA
-          title={'Take the first step'}
+          title={'Take the First Step'}
           subTitle={
             'Whether you’re in the early stages of separation or struggling to co-parent, we’re here to help you take the next step with clarity and care.'
           }
           Button1Link={'/contact'}
-          Button1Text={'Book a family mediation appointment'}
-          Button2Text={'Speak to our family mediation team'}
+          Button1Text={'Book a Family Mediation Appointment'}
+          Button2Text={'Speak to Our Family Mediation Team'}
           Button2Link={'/contact'}
         />
       </div>
-      <FAQ title={'FAQs about family mediation'} buttonText={'Ask us a question'} buttonLink={'/contact'} faqData={faqData} />
+      <FAQ title={'FAQs About Family Mediation'} buttonText={'Ask Us a Question'} buttonLink={'/contact'} faqData={faqData} />
     </div>
   );
 };

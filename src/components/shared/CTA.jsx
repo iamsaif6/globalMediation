@@ -19,7 +19,7 @@ const CTA = ({ title, subTitle, Button1Text, Button1Link, Button2Text, Button2Li
         <div className="z-10 py-10 mx-auto text-white text-center">
           <div className="z-10 relative">
             <div className="max-w-[950px] mx-auto">
-              <h4 className="font-medium text-4xl md:text-[54px] leading-[120%] mb-[20px] md:mb-6">{ctaTitle}</h4>
+              <h4 className="font-medium text-4xl  md:text-[54px] leading-[120%] mb-[20px] md:mb-6">{ctaTitle}</h4>
               <p className=" text-base md:text-lg  text-center">{ctaSubtitle}</p>
             </div>
             <div className={`mt-8 md:max-w-[950px] ${Button2Text ? 'grid grid-cols-1 md:grid-cols-2' : 'md:grid-cols-1'}  gap-4  mx-auto`}>

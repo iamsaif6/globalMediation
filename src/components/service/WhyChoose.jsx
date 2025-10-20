@@ -1,14 +1,15 @@
 import React from 'react';
 
 import Image from 'next/image';
+import wayChoose from '/public/linkedin-sales-solutions-IjkIOe-2fF4-unsplash.jpg';
 
-const wayChoose = 'https://global-mediation.s3.eu-west-2.amazonaws.com/large-files/jud-mackrill-Of_m3hMsoAA-unsplash.jpg';
+// const wayChoose = 'https://global-mediation.s3.eu-west-2.amazonaws.com/large-files/jud-mackrill-Of_m3hMsoAA-unsplash.jpg';
 
 const WhyChoose = () => {
   return (
     <section className="py-16 px-5 md:px-16 md:py-[80px] text-white bg-secondary">
       <h1 className="text-4xl md:text-5xl font-medium text-center max-w-[760px] mx-auto leading-[120%] mb-8 md:mb-[38px]">
-        Why choose Global Mediation for workplace conflicts?
+        Why Choose Global Mediation for Workplace Conflicts?
       </h1>
       <p className=" text-lg md:text-[20px] leading-[150%] mb-[56px] md:mb-[78px] text-left lg:text-center">
         At Global Mediation, we understand the pressures and sensitivities involved in workplace dynamics. Our accredited mediators bring a

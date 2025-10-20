@@ -8,7 +8,7 @@ const Colabration = () => {
     <section className="py-16 px-5 md:px-16 md:py-[80px] bg-secondary">
       <div className={` max-w-[850px] mx-auto text-center  md:text-center`}>
         <h5 className="font-medium text-white leading-[120%] tracking-[-4%] text-4xl md:text-[40px] lg:text-5xl mb-5 md:mb-6">
-          How mediation with Global <br /> supports you
+          How Mediation With Global <br /> Supports You
         </h5>
         <p className={`text-[#fff] text-left lg:text-center text-base md:text-lg font-normal`}>
           When communication breaks down, misunderstandings and conflict can quickly follow. However, through listening, reframing and
@@ -98,7 +98,7 @@ const Colabration = () => {
                 />
               </svg>
             </div>
-            <p className="font-medium text-white text-2xl">Guided conversations</p>
+            <p className="font-medium text-white text-2xl">Guided Conversations</p>
             <p className=" text-lg text-white mb-[25px] mt-9 font-normal">
               Structured, impartial discussions led by professional, accredited and experienced mediators.
             </p>
@@ -119,7 +119,7 @@ const Colabration = () => {
                 </defs>
               </svg>
             </div>
-            <p className="font-medium text-white text-2xl">Experienced mediators</p>
+            <p className="font-medium text-white text-2xl">Experienced Mediators</p>
             <p className=" text-lg text-white mb-[25px] mt-9 font-normal">
               Matching people with the right mediator for their needs and situation.
             </p>
@@ -138,7 +138,7 @@ const Colabration = () => {
                 />
               </svg>
             </div>
-            <p className="font-medium text-white text-2xl">Transformational training</p>
+            <p className="font-medium text-white text-2xl">Transformational Training</p>
             <p className=" text-lg text-white mb-[25px] mt-9 font-normal">
               Helping professionals and organisations learn how to manage conflict constructively.
             </p>

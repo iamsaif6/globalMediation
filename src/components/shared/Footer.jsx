@@ -78,7 +78,7 @@ const Footer = () => {
             Resources
           </Link> */}
           <Link className="py-[6px]  block" href="/about">
-            About us
+            About Us
           </Link>
         </div>
       </div>

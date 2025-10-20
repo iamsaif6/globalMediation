@@ -10,7 +10,7 @@ import Link from 'next/link';
 
 const services = [
   {
-    title: 'Workplace and employment mediation',
+    title: 'Workplace and Employment Mediation',
     subtitle:
       'Workplace disputes can affect morale, productivity and wellbeing — for teams and individuals alike. Our mediators support both employees and employers to resolve conflict collaboratively and confidentially, creating space for honest conversations and practical solutions.',
     service: [
@@ -24,7 +24,7 @@ const services = [
     link: '/Workplace-and-Employment-Mediation',
   },
   {
-    title: 'Business and commercial mediation',
+    title: 'Business and Commercial Mediation',
     subtitle:
       'Disputes in business can damage relationships, stall progress and increase costs. Our mediation service supports companies and professionals to resolve commercial disagreements quickly and confidentially, protecting reputations and preserving working relationships.',
     service: [
@@ -56,7 +56,7 @@ const services = [
     link: '/send-mediation',
   },
   {
-    title: 'Community and family mediation',
+    title: 'Community and Family Mediation',
     subtitle:
       'Conflict in personal or community relationships can feel deeply personal and emotionally draining. Our mediators help individuals, neighbours and families navigate difficult conversations with empathy, impartiality and care. We provide a safe, neutral space to rebuild trust, improve communication and move forward with dignity and mutual understanding.',
     service: [
@@ -71,7 +71,7 @@ const services = [
     link: '/Community-Mediation',
   },
   {
-    title: 'Civil and legal dispute mediation',
+    title: 'Civil and Legal Dispute Mediation',
     subtitle:
       'Mediation offers a calm, cost-effective alternative to court. We help individuals, professionals and organisations resolve a wide range of civil and legal disputes quickly and fairly. Our impartial mediators guide the process with clarity and respect, helping people reach balanced outcomes without the delays, cost or stress of litigation.',
     service: [

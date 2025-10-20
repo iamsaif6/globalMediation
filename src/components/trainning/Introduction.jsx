@@ -25,7 +25,7 @@ const Introduction = () => {
     <section>
       <div className=" py-16 px-5 md:px-16 md:py-[80px]">
         <div className="text-left md:text-center mb-10 lg:mb-[80px]">
-          <h2 className="font-medium text-4xl md:text-5xl leading-[120%]">Overview of mediation training</h2>
+          <h2 className="font-medium text-4xl md:text-5xl leading-[120%]">Overview of Mediation Training</h2>
           <p className="text-black text-base md:text-lg leading-[150%] my-6">
             Whether you’re starting your mediation journey or expanding into specialist areas like SEND, our training programmes are
             designed to give you the practical tools and confidence to mediate with clarity, care and professionalism. Delivered by
@@ -54,7 +54,7 @@ const Introduction = () => {
               />
             </div>
             <div>
-              <h3 className="md:text-2xl text-lg font-medium text-secondary mb-8 md:mb-6">Key benefits:</h3>
+              <h3 className="md:text-2xl text-lg font-medium text-secondary mb-8 md:mb-6">Key Benefits:</h3>
               <ul className="text-[#667085] text-lg">
                 <li className="flex items-center py-6 pl-[7px] gap-[26px] border-t-[0.5px] border-[#DAD3FF]">
                   <span className="inline-block flex-shrink-0 h-[10px] w-[10px] bg-primary rounded-full"></span>
@@ -62,11 +62,11 @@ const Introduction = () => {
                 </li>
                 <li className="flex items-center py-6 pl-[7px] gap-[26px] border-t-[0.5px] border-[#DAD3FF]">
                   <span className="inline-block flex-shrink-0 h-[10px] w-[10px] bg-primary rounded-full"></span>
-                  <span>Hands-on learning through role plays, exercises and reflection</span>
+                  <span>Hands-On Learning Through Role Plays, Exercises and Reflection</span>
                 </li>
                 <li className="flex items-center py-6 pl-[7px] gap-[26px] border-b-[0.5px] border-t-[0.5px] border-[#DAD3FF]">
                   <span className="inline-block flex-shrink-0 h-[10px] w-[10px] bg-primary rounded-full"></span>
-                  <span>Comprehensive support, including tutorials, coaching and feedback</span>
+                  <span>Comprehensive Support, Including Tutorials, Coaching and Feedback</span>
                 </li>
               </ul>
             </div>
@@ -78,7 +78,7 @@ const Introduction = () => {
             onClick={openModal}
             className={`bg-primary border cursor-pointer border-primary font-semibold text-lg text-[#FCFCFD] px-[19px] md:px-[42px] py-3 rounded-[40px]`}
           >
-            Start your mediation journey today
+            Start Your Mediation Journey Today
           </button>
         </div>
       </div>

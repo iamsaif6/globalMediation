@@ -45,25 +45,25 @@ const Header = ({ title, subTitle, Button1Text, Button1Link = '#', Button2Text, 
       )}
       <div className="w-full relative z-10 lg:max-w-[1318px] mx-auto">
         <h1 className="font-semibold tracking-[-4%] max-w-[900px] 2xl:max-w-[90%] leading-[120%] text-5xl md:text-[65px] xl:text-[4vw] text-white">
-          {headerTitle}
+          {title}
         </h1>
         <p className="text-white mt-[25px] md:mt-4 mb-[25px] mr-auto max-w-[700px] md:mb-10 w-[100%] font-normal text-base md:text-lg xl:text-xl">
           {headerSubtitle}
         </p>
         <div className=" flex md:flex-row flex-col items-center gap-4">
-          {headerButton1Text && (
+          {Button1Text && (
             <button
               className={`bg-primary px-5 lg:max-w-max  border block border-primary font-semibold text-base lg:text-lg text-[#FCFCFD] lg:px-12 py-3 rounded-[40px]`}
             >
               <Link className="w-full" href={Button1Link}>
-                {headerButton1Text}
+                {Button1Text}
               </Link>
             </button>
           )}
-          {headerButton2Text && (
+          {Button2Text && (
             <button className=" mb-[18px] md:mb-0  px-5 lg:max-w-max  border block border-white font-semibold text-base lg:text-lg text-[#FCFCFD] lg:px-12 py-3 rounded-[40px] ">
               <Link className="w-full  " href={Button2Link}>
-                {headerButton2Text}
+                {Button2Text}
               </Link>
             </button>
           )}

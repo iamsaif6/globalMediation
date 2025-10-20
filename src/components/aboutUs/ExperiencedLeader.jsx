@@ -39,7 +39,7 @@ const ExperiencedLeader = () => {
             />
           </div>
           <h2 className="font-medium leading-[120%] tracking-[-4%] text-4xl md:text-[40px] lg:text-5xl mb-5 md:mb-0">
-            Trusted, experienced and people-first
+            Trusted, Experienced and People-First
           </h2>
           <p className={`text-black text-base md:text-lg font-normal`}>
             Global Mediation is an independent provider of professional mediation services, trusted by individuals, families, businesses and

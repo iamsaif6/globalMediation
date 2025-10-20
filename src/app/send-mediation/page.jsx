@@ -78,7 +78,7 @@ const page = () => {
         <Image width={1200} height={1200} alt="Overlay" src={overlay} className=" absolute top-0 left-0 w-full h-full object-cover" />
         <div className="w-full relative z-10 lg:max-w-[1318px] mx-auto">
           <h1 className="font-semibold tracking-[-4%] max-w-[900px] 2xl:max-w-[90%] leading-[120%] text-5xl md:text-[65px] xl:text-[4vw] text-white">
-            SEND mediation
+            SEND Mediation
           </h1>
           <p className="text-white mt-[25px] md:mt-4 mb-[25px] mr-auto max-w-[700px] md:mb-10 w-[100%] font-normal text-base md:text-lg xl:text-xl">
             Specialist mediation to help resolve disagreements around Special Educational Needs and Disabilities (SEND), including EHCPs,
@@ -97,7 +97,7 @@ const page = () => {
       </header>
 
       <Introduction
-        title={'SEND mediation'}
+        title={'SEND Mediation'}
         image={service1}
         subtitle={
           'SEND disputes can be stressful and emotionally overwhelming, since they involve the wellbeing or education of a child or young person. Whether the situation involves formal EHCP decisions, appeals, or long-standing breakdowns in communication, our experienced mediators offer impartial, trusted support every step of the way. Our experienced mediators help families, young people, children, and local authorities work together to find respectful, balanced outcomes, with the child’s needs always at the centre'
@@ -113,7 +113,7 @@ const page = () => {
 
       <section className="py-10 md:py-[80px] bg-secondary text-white">
         <div className="px-5 md:px-16 lg:mb-[120px] ">
-          <SectionHeading className={'!text-white'} fullWidth title={'Types of SEND disputes we support'} />
+          <SectionHeading className={'!text-white'} fullWidth title={'Types of SEND Disputes We Support'} />
         </div>
         <div className="mt-[12px] md:mt-[54px]">
           <div className="flex flex-col w-full">
@@ -183,7 +183,7 @@ const page = () => {
 
       <section className="py-10 px-5 md:px-16 md:py-[80px]">
         <SectionHeading
-          title={'Understanding the SEND mediation process'}
+          title={'Understanding the SEND Mediation Process'}
           subTitle={
             'Our role is to support everyone involved in reaching a fair outcome, one that respects the voices of the child, their family, local authority officers and other professionals.'
           }
@@ -195,7 +195,7 @@ const page = () => {
             <p className="font-medium text-2xl leading-[140%] mb-[42px] flex items-center justify-center w-[54px] h-[54px] text-white  bg-secondary rounded-xl">
               1
             </p>
-            <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">Contact our team</p>
+            <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">Contact Our Team</p>
             <p>We’ll talk you through the process and your options</p>
           </div>
 
@@ -203,14 +203,14 @@ const page = () => {
             <p className="font-medium text-2xl leading-[140%] mb-[42px] flex items-center justify-center w-[54px] h-[54px] text-white  bg-secondary rounded-xl">
               2
             </p>
-            <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">Arrange a mediation session </p>
+            <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">Arrange a Mediation Session</p>
             <p>We organise a neutral space (virtual or in-person)</p>
           </div>
           <div className="bg-[#F3F1FF] rounded-xl py-[37px] md:py-[46px] px-[19px] md:px-6 col-span-4 lg:col-span-1">
             <p className="font-medium text-2xl leading-[140%] mb-[42px] flex items-center justify-center w-[54px] h-[54px] text-white  bg-secondary rounded-xl">
               3
             </p>
-            <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">Take part in the mediation session</p>
+            <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">Take Part in the Mediation Session</p>
             <p className="font-normal text-base md:text-lg">
               <span className="">
                 Guided by a professional, experienced and accredited mediator, all parties are supported to share their views, explore
@@ -223,14 +223,14 @@ const page = () => {
             <p className="font-medium text-2xl leading-[140%] mb-[42px] flex items-center justify-center w-[54px] h-[54px] text-white  bg-secondary rounded-xl">
               4
             </p>
-            <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">Agreement summary</p>
+            <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">Agreement Summary</p>
             <p className="font-normal text-base md:text-lg">
               <span className="">We provide a written record of outcomes, which can support the formal SEND process</span>
             </p>
           </div>
         </div>
         <div className="flex justify-center">
-          <Button padding="small" title={'Request a SEND mediation appointment'} href="/about" />
+          <Button padding="small" title={'Request a SEND Mediation Appointment'} href="/about" />
         </div>
       </section>
 
@@ -266,7 +266,7 @@ const page = () => {
             />
           </div>
           <div className="col-span-2 lg:col-span-1">
-            <p className="mb-6 font-semibold text-lg md:text-2xl">Why people trust us:</p>
+            <p className="mb-6 font-semibold text-lg md:text-2xl">Why People Trust Us:</p>
             <ul className="space-y-6 text-base md:text-[20px]">
               <li className="flex items-center gap-6 py-4 px-[18px] md:px-6 rounded-xl border border-[#624A70]">
                 <span className="w-[10px] flex-shrink-0 h-[10px] rounded-full bg-primary block"></span>
@@ -292,7 +292,7 @@ const page = () => {
       </section>
 
       {/* <MediationCalculation /> */}
-      <FeedbackCarousel title={'What parents and young people say'} subTitle={null} fullWidth={true} />
+      <FeedbackCarousel title={'What Parents and Young People Say'} subTitle={null} fullWidth={true} />
       <div className="bg-[#F9F8FF]">
         <div className="md:px-16 px-5">
           <div className="py-[84px]  overflow-hidden px-8 relative  md:p-16 bg-secondary rounded-3xl">
@@ -300,7 +300,7 @@ const page = () => {
               <div className="z-10 relative">
                 <div className="max-w-[950px] mx-auto">
                   <h4 className="font-medium text-4xl md:text-[54px] leading-[120%] mb-[20px] md:mb-6">
-                    Start your SEND mediation journey
+                    Start Your SEND Mediation Journey
                   </h4>
                   <p className=" text-base md:text-lg  text-center">
                     If you’re a parent, carer, young person or professional needing support with a SEND disagreement, we’re here to help.
@@ -355,7 +355,7 @@ const page = () => {
         </div>
       </div>
       <FAQ
-        title={'FAQs about SEND mediation'}
+        title={'FAQs About SEND Mediation'}
         buttonText={'Speak to a SEND mediation specialist'}
         buttonLink={'/contact'}
         faqData={faqData}

@@ -5,7 +5,7 @@ const HowWeWork = () => {
   return (
     <section className="py-10 px-5 md:px-16 md:py-[80px]">
       <SectionHeading
-        title={'How we work'}
+        title={'How We Work'}
         subTitle={'Our process is voluntary, confidential and designed to minimise disruption — keeping you focused on what matters.'}
         fullWidth={true}
       />
@@ -14,7 +14,7 @@ const HowWeWork = () => {
           <p className="font-medium text-2xl leading-[140%] mb-[42px] flex items-center justify-center w-[54px] h-[54px] text-white  bg-secondary rounded-xl">
             1
           </p>
-          <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">Contact us</p>
+          <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">Contact Us</p>
           <p className="font-normal text-base md:text-lg">
             <span className="">
               We're here to help. Reach out to discuss your situation confidentially and explore how mediation can support you.
@@ -27,7 +27,7 @@ const HowWeWork = () => {
           <p className="font-medium text-2xl leading-[140%] mb-[42px] flex items-center justify-center w-[54px] h-[54px] text-white  bg-secondary rounded-xl">
             2
           </p>
-          <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">Start with a conversation</p>
+          <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">Start With a Conversation</p>
           <p className="font-normal text-base md:text-lg">
             <span className="">We listen, understand the situation and agree if mediation is the right next step.</span> <br />
           </p>
@@ -37,7 +37,7 @@ const HowWeWork = () => {
           <p className="font-medium text-2xl leading-[140%] mb-[42px] flex items-center justify-center w-[54px] h-[54px] text-white  bg-secondary rounded-xl">
             3
           </p>
-          <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">Prepare and clarify</p>
+          <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">Prepare and Clarify</p>
           <p className="font-normal text-base md:text-lg">
             <span className="">
               We make sure everyone knows what to expect — from who will be involved, to what outcomes could look like.
@@ -57,7 +57,7 @@ const HowWeWork = () => {
           <p className="font-medium text-2xl leading-[140%] mb-[42px] flex items-center justify-center w-[54px] h-[54px] text-white  bg-secondary rounded-xl">
             5
           </p>
-          <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">Co-create outcomes that work</p>
+          <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">Co-Create Outcomes That Work</p>
           <p className="font-normal text-base md:text-lg">
             <span className="">We support people to shape agreements that are realistic, clear and future-focused.</span>
           </p>
@@ -67,7 +67,7 @@ const HowWeWork = () => {
           <p className="font-medium text-2xl leading-[140%] mb-[42px] flex items-center justify-center w-[54px] h-[54px] text-white  bg-secondary rounded-xl">
             6
           </p>
-          <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">Reflect and follow up</p>
+          <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">Reflect and Follow Up</p>
           <p className="font-normal text-base md:text-lg">
             <span className="">We check in post-mediation to support implementation and rebuild trust.</span>
           </p>

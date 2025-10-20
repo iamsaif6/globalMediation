@@ -86,7 +86,7 @@ const MediationCalculation = () => {
         }
         center={true}
       />
-      <p className="text-center text-xs mt-3">Note : This calculator is for illustrative purposes only</p>
+      <p className="text-center italic text-xs mt-3">Note : This calculator is for illustrative purposes only</p>
       <div>
         <form onSubmit={handleSubmit(openModal)}>
           <div className="max-w-[850px] mx-auto mt-[60px]">

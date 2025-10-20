@@ -23,7 +23,7 @@ const Introduction = ({ title, subtitle, image, items }) => {
             </div>
             {items && (
               <div>
-                <h3 className="md:text-2xl text-lg font-medium text-secondary mb-8 md:mb-6">Key benefits:</h3>
+                <h3 className="md:text-2xl text-lg font-medium text-secondary mb-8 md:mb-6">Key Benefits:</h3>
                 <ul className="text-[#667085] text-lg">
                   {items.map(item => {
                     return (
