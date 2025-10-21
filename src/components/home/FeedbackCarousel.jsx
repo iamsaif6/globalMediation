@@ -33,6 +33,91 @@ const clientReview = [
     review: 'Extremely useful, impartial, and a calm environment in which to discuss concerns.',
     name: '',
   },
+  {
+    review: 'Altaf was very clear in the process, supportive but impartial to both sides. A good outcome was agreed by all.',
+    name: '',
+  },
+  {
+    review:
+      'Gordon explained the process upfront and ran the meeting well. His manner was also excellent – it put me at ease straight away.',
+    name: '',
+  },
+  {
+    review: 'Jen was very fair, supportive, professional, and thorough.',
+    name: '',
+  },
+  {
+    review: 'Excellent service, with clear communication, advice, and support.',
+    name: '',
+  },
+  {
+    review:
+      'I was very impressed with how well the meeting was conducted – with kindness and professionalism. I cannot speak highly enough of Jen.',
+    name: '',
+  },
+  {
+    review: 'Good mediation – very successfully led, professional, courteous, and friendly.',
+    name: '',
+  },
+  {
+    review:
+      'Everything went smoothly, with lots of reminders for the meeting. The meeting was facilitated well. Everyone had a chance to comment, and everyone’s voice was heard.',
+    name: '',
+  },
+  {
+    review:
+      'Always helpful to have a mediated conversation, as this enables all parties to remain calm and respectful, with clear time for discussion and next steps.',
+    name: '',
+  },
+  {
+    review: 'Very good and professional – always a pleasure to work with Gareth.',
+    name: '',
+  },
+  {
+    review: 'Mediation helped resolve the issue I was having with the LA, and I am very pleased with the outcome.',
+    name: '',
+  },
+  {
+    review: 'Great service – very helpful and professional.',
+    name: '',
+  },
+  {
+    review: 'Kind, compassionate, professional. Spoke clearly and listened well.',
+    name: '',
+  },
+  {
+    review: 'I received prompt, helpful information from the moment I contacted the service.',
+    name: '',
+  },
+  {
+    review: 'Everything went well, from the first contact to arranging the meeting and facilitating it.',
+    name: '',
+  },
+  {
+    review:
+      'I am, on the whole, satisfied with how the meeting went and look forward to hearing back from the school and LA with some suggestions on support going forward.',
+    name: '',
+  },
+  {
+    review: 'All information was given clearly and within the correct time.',
+    name: '',
+  },
+  {
+    review: 'The process was conducted very well.',
+    name: '',
+  },
+  {
+    review: 'Everything was easy to follow.',
+    name: '',
+  },
+  {
+    review: 'Everything was good.',
+    name: '',
+  },
+  {
+    review: 'Clear conclusion on the day.',
+    name: '',
+  },
 ];
 
 const FeedbackCarousel = ({ title, subTitle, fullWidth }) => {
@@ -63,9 +148,9 @@ const FeedbackCarousel = ({ title, subTitle, fullWidth }) => {
   }
 
   const settings = {
-    dots: true,
+    dots: false,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 4000,
     arrows: true,
     infinite: true,
     speed: 500,
