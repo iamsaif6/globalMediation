@@ -10,8 +10,7 @@ import banner from '/public/family-banner2.jpg';
 import overview from '/public/family-overview.jpg';
 import dispute from '/public/family-dispute.jpg';
 import Link from 'next/link';
-
-const wayChoose = 'https://global-mediation.s3.eu-west-2.amazonaws.com/large-files/musemind-ux-agency-9tn3JFeAc08-unsplash.jpg';
+import wayChoose from '/public/why-choose-family.jpg';
 
 const faqData = [
   {
@@ -36,9 +35,7 @@ const page = () => {
     <div>
       <Header
         title={'Family Mediation'}
-        subTitle={
-          'Calm, impartial support to help you resolve family issues around parenting, separation or finances, with everyone’s voice heard.'
-        }
+        subTitle={'Calm, impartial support to help you resolve family issues, separation or finances, with everyone’s voice heard.'}
         Button1Text={'Speak to a Family Mediator'}
         Button1Link="/contact"
         cover={banner}
@@ -141,7 +138,7 @@ const page = () => {
             <p className="font-medium text-2xl leading-[140%] mb-[22px] flex items-center justify-center w-[54px] h-[54px] text-white  bg-secondary rounded-xl">
               1
             </p>
-            <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">Get in touch </p>
+            <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">Get in Touch</p>
             <p>We’ll answer your questions and explain how mediation works</p>
           </div>
 
@@ -149,14 +146,14 @@ const page = () => {
             <p className="font-medium text-2xl leading-[140%] mb-[22px] flex items-center justify-center w-[54px] h-[54px] text-white  bg-secondary rounded-xl">
               2
             </p>
-            <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">Schedule a session</p>
+            <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">Schedule a Session</p>
             <p>Meet online or in person with a trained family mediator</p>
           </div>
           <div className="bg-[#F3F1FF] rounded-xl py-[37px] md:py-[46px] px-[19px] md:px-6 col-span-4 lg:col-span-1">
             <p className="font-medium text-2xl leading-[140%] mb-[22px] flex items-center justify-center w-[54px] h-[54px] text-white  bg-secondary rounded-xl">
               3
             </p>
-            <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">Share your views</p>
+            <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">Mediation Session</p>
             <p className="">
               <span className="">Each person has space to speak openly and be heard</span>
             </p>
@@ -166,7 +163,7 @@ const page = () => {
             <p className="font-medium text-2xl leading-[140%] mb-[22px] flex items-center justify-center w-[54px] h-[54px] text-white  bg-secondary rounded-xl">
               4
             </p>
-            <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[0px] ">Work towards an agreement</p>
+            <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[0px] ">Work Towards an Agreement</p>
             <p className="">
               <span className="">Our mediator helps guide the conversation toward solutions</span>
             </p>
@@ -183,14 +180,14 @@ const page = () => {
 
       {/* Why Choose */}
 
-      <section className="py-16 px-5 md:px-16 md:py-[80px] text-white bg-secondary">
+      <section className="py-16 mb-16 px-5 md:px-16 md:py-[80px] text-white bg-secondary">
         <div className="text-left md:text-center">
           <h2 className="text-4xl md:text-5xl font-medium max-w-[900px] mx-auto leading-[120%] mb-8 md:mb-[40px] !text-white">
             Why Choose Global Mediation?
           </h2>
           <p className=" text-base md:text-lg leading-[150%] mb-[56px] md:mb-[78px]">
             We’ve worked with families across the UK for more than 25 years, supporting them through some of life’s most complex and
-            emotionally charged moments . Whether you’re dealing with parenting, financial, or communication breakdowns, our mediators offer
+            emotionally charged moments. Whether you’re dealing with parenting, financial, or communication breakdowns, our mediators offer
             calm, expert support without judgement.
           </p>
         </div>
@@ -199,7 +196,7 @@ const page = () => {
             <Image
               width={1200}
               height={1200}
-              className="object-cover object-bottom  w-full h-full relative z-0"
+              className="object-cover object-center  w-full h-full relative z-0"
               alt={'Experienced Leader In Mediation'}
               src={wayChoose}
             />
@@ -209,7 +206,7 @@ const page = () => {
             <Image
               width={1200}
               height={1200}
-              className="object-cover w-full h-full relative z-0"
+              className="object-cover object-center w-full h-full relative z-0"
               alt={'Experienced Leader In Mediation'}
               src={wayChoose}
             />
@@ -239,7 +236,7 @@ const page = () => {
       </section>
 
       {/* <MediationCalculation /> */}
-      <FeedbackCarousel title={'Testimonials from families'} subTitle={null} fullWidth={true} />
+      {/* <FeedbackCarousel title={'Testimonials from families'} subTitle={null} fullWidth={true} /> */}
       <div className="bg-[#F9F8FF]">
         <CTA
           title={'Take the First Step'}

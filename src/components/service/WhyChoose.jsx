@@ -7,7 +7,7 @@ import wayChoose from '/public/linkedin-sales-solutions-IjkIOe-2fF4-unsplash.jpg
 
 const WhyChoose = () => {
   return (
-    <section className="py-16 px-5 md:px-16 md:py-[80px] text-white bg-secondary">
+    <section className="py-16 mb-16 px-5 md:px-16 md:py-[80px] text-white bg-secondary">
       <h1 className="text-4xl md:text-5xl font-medium text-center max-w-[760px] mx-auto leading-[120%] mb-8 md:mb-[38px]">
         Why Choose Global Mediation for Workplace Conflicts?
       </h1>

@@ -225,11 +225,11 @@ const page = () => {
 
       <WhyChoose />
       {/* <MediationCalculation /> */}
-      <FeedbackCarousel
+      {/* <FeedbackCarousel
         title={'What Our Clients Say About Workplace and Employment Mediation'}
         subTitle={'Real testimonials from clients who benefited from this service.'}
         fullWidth
-      />
+      /> */}
 
       <FAQ title={'FAQs About Workplace Mediation'} buttonText={'Contact Us'} buttonLink={'/contact'} faqData={faqData} />
       <div className="bg-[#F9F8FF]">

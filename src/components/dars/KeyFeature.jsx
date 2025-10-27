@@ -56,10 +56,8 @@ const KeyFeature = () => {
                 />
               </svg>
             </div>
-            <p className="font-medium text-white text-2xl">Professional adjudicators</p>
-            <p className=" text-lg text-white   mt-6 font-normal">
-              Accredited specialists with experience in complex and sensitive disputes.
-            </p>
+            <p className="font-medium text-white text-2xl">Experienced facilitators</p>
+            <p className=" text-lg text-white   mt-6 font-normal">Specialists with backgrounds in complex and sensitive disputes.</p>
           </div>
           <div className="p-6 col-span-4 md:col-span-2 lg:col-span-1 border duration-200 hover:bg-primary hover:border-primary border-[#624A70] rounded-3xl">
             <div className="mt-3 mb-4">
@@ -71,9 +69,7 @@ const KeyFeature = () => {
               </svg>
             </div>
             <p className="font-medium text-white text-2xl">Impartial and confidential</p>
-            <p className=" text-lg text-white   mt-6 font-normal">
-              Every decision is made independently, based solely on the evidence provided.
-            </p>
+            <p className=" text-lg text-white   mt-6 font-normal">Every outcome is based solely on the information shared.</p>
           </div>
           <div className="p-6 col-span-4 md:col-span-2 lg:col-span-1 border duration-200 hover:bg-primary hover:border-primary border-[#624A70] rounded-3xl">
             <div className="mt-3 mb-4">

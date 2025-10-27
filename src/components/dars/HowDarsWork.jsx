@@ -19,7 +19,7 @@ const HowDarsWork = () => {
           </p>
           <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">Initial contact</p>
           <p className="font-normal text-base md:text-lg">
-            Reach out to our DARS team to discuss your situation and whether adjudication is appropriate.
+            Reach out to our DARS team to discuss your situation and whether the service is right for you.
           </p>
         </div>
 
@@ -30,7 +30,7 @@ const HowDarsWork = () => {
           <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">Assessment</p>
           <p className="font-normal text-base md:text-lg">
             <span className="">
-              Our trained team will review the case and recommend the best resolution route — mediation or adjudication.
+              Our trained team will review the case and recommend the best resolution route — including DARS if appropriate.
             </span>
           </p>
         </div>
@@ -38,11 +38,10 @@ const HowDarsWork = () => {
           <p className="font-medium text-2xl leading-[140%] mb-[42px] flex items-center justify-center w-[54px] h-[54px] text-white  bg-secondary rounded-xl">
             3
           </p>
-          <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">Mediation or adjudication session</p>
+          <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">Facilitated session</p>
           <p className="font-normal text-base md:text-lg">
             <span className="">
-              For adjudication, each party submits a written statement. An impartial adjudicator reviews the submissions and prepares a
-              decision.
+              Each party is invited to share written views. A trained facilitator supports the process and prepares a written summary.
             </span>
           </p>
         </div>
@@ -52,9 +51,7 @@ const HowDarsWork = () => {
           </p>
           <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">Resolution agreement</p>
           <p className="font-normal text-base md:text-lg">
-            <span className="">
-              If appropriate, our team will prepare a formal outcome or agreement, based on the adjudicator’s findings.
-            </span>
+            <span className="">If appropriate, our team will prepare a formal outcome or agreement, based on the information shared.</span>
           </p>
         </div>
       </div>

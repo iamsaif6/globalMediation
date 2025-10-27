@@ -3,7 +3,7 @@ import React from 'react';
 
 const items = [
   'Expertise across a wide range of disputes',
-  'Accessible services throughout the UK.',
+  'Accessible services throughout the UK',
   'Personalised support from a dedicated case manager',
   'Accredited mediators with real-world experience',
   '95% success rate in achieving full or partial resolution',

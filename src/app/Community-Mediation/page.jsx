@@ -197,7 +197,7 @@ const page = () => {
       </section>
 
       {/* Why Choose */}
-      <section className="py-16 px-5 md:px-16 md:py-[80px] text-white bg-secondary">
+      <section className="py-16 mb-16 px-5 md:px-16 md:py-[80px] text-white bg-secondary">
         <div className="text-center">
           <h2 className="text-4xl md:text-5xl font-medium text-center max-w-[760px] mx-auto leading-[120%] mb-8 md:mb-[40px] !text-white">
             Why Choose Global Mediation?
@@ -254,7 +254,7 @@ const page = () => {
       </section>
 
       {/* <MediationCalculation /> */}
-      <FeedbackCarousel title={'What people say'} subTitle={null} />
+      {/* <FeedbackCarousel title={'What people say'} subTitle={null} /> */}
       <div className="bg-[#F9F8FF]">
         <CTA
           title={'Ready to Resolve a Dispute?'}

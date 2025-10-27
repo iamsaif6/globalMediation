@@ -6,18 +6,16 @@ import Image from 'next/image';
 const WhyChoose = () => {
   return (
     <section className="my-0  mx-0 md:mx-16 md:my-[80px]">
-      <div className="bg-primary text-white md:rounded-3xl px-5 md:px-[49px] py-[50px] md:py-[46px] grid grid-cols-2 gap-[30px]">
+      <div className="bg-primary text-white md:rounded-3xl items-center px-5 md:px-[49px] py-[50px] md:py-[46px] grid grid-cols-2 gap-[30px]">
         <div className="col-span-2 lg:col-span-1">
           <h2 className="text-4xl md:text-5xl font-medium leading-[120%] mb-8">Why choose DARS?</h2>
-          <p className="pb-8 text-base md:text-lg border-b-[0.5px] border-white">
-            DARS offers a calm, independent space for people to resolve disputes when other options haven’t worked.
-            <br className="mb-3" />
-            With a strong focus on clarity, confidentiality, and fairness, it’s a trusted alternative to litigation or prolonged conflict.
-            <br className="mb-3" />
-            We’re here to help you move forward — with transparency, professionalism, and care.
+          <p className="pb-8 text-base md:text-lg ">
+            DARS offers a calm, independent space for people to resolve disputes when other options haven’t worked. With a strong focus on
+            clarity, confidentiality and fairness, it’s a trusted alternative to legal processes or prolonged conflict. We’re here to help
+            you move forward — with transparency, professionalism and care.
           </p>
 
-          <div className="my-10 md:my-[21px]">
+          {/* <div className="my-10 md:my-[21px]">
             <h3 className=" text-2xl mb-5">Contact DARS</h3>
             <p className="mb-8 text-lg">For more information or to begin the process:</p>
             <ul className="space-y-3">
@@ -48,17 +46,17 @@ const WhyChoose = () => {
                 </a>
               </li>
             </ul>
-          </div>
-          <div className="">
+          </div> */}
+          {/* <div className="">
             <button className={`bg-white  font-normal text-lg text-black px-12 py-2 rounded-[40px]`}>
               <Link className="w-full" href={'/contact'}>
                 Contact us
               </Link>
             </button>
-          </div>
+          </div> */}
         </div>
         <div className="mt-5 md:mt-0 rounded-[13px] md:rounded-3xl col-span-2 lg:col-span-1 overflow-hidden">
-          <Image className="w-full h-full object-cover" alt="Why choose cover" src={choose} />
+          <Image className="w-full h-full object-top max-h-[300px] md:max-h-[500px] object-cover" alt="Why choose cover" src={choose} />
         </div>
       </div>
     </section>

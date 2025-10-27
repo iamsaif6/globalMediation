@@ -104,7 +104,7 @@ const page = () => {
         }
         items={[
           'Encourages understanding and cooperation',
-          'Avoids lengthy, stressful tribunal processes',
+          'Avoids lengthy, stressful and costly tribunal processes',
           'Promotes child-focused decisions',
           'Always free of charge',
         ]}
@@ -236,7 +236,7 @@ const page = () => {
 
       {/* Why Choose */}
 
-      <section className="py-16 px-5 md:px-16 md:py-[80px] text-white bg-secondary">
+      <section className="py-16 mb-16 px-5 md:px-16 md:py-[80px] text-white bg-secondary">
         <h2 className="text-4xl md:text-5xl font-medium text-left md:text-center max-w-[760px] mx-auto leading-[120%] mb-5 md:mb-6 !text-white">
           Why choose Global Mediation for SEND?
         </h2>
@@ -292,7 +292,7 @@ const page = () => {
       </section>
 
       {/* <MediationCalculation /> */}
-      <FeedbackCarousel title={'What Parents and Young People Say'} subTitle={null} fullWidth={true} />
+      {/* <FeedbackCarousel title={'What Parents and Young People Say'} subTitle={null} fullWidth={true} /> */}
       <div className="bg-[#F9F8FF]">
         <div className="md:px-16 px-5">
           <div className="py-[84px]  overflow-hidden px-8 relative  md:p-16 bg-secondary rounded-3xl">

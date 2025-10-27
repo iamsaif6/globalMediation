@@ -40,9 +40,9 @@ const services = [
     link: '/business',
   },
   {
-    title: 'SEND Mediation',
+    title: 'Special Needs and Disability (SEND) Mediation',
     subtitle:
-      'When disagreements arise around special educational needs or disabilities, emotions can run high. Our SEND mediation service supports families, schools and local authorities to work together in a calm, constructive way. We create space for clear communication, mutual understanding and better outcomes for the children and young people at the heart of every decision.',
+      'When disagreements arise around wellbeing and education, emotions can run high. Our SEND mediation service supports families, schools and local authorities to work together in a calm, constructive way. We create space for clear communication, mutual understanding and better outcomes for the children and young people at the heart of every decision.',
     service: [
       'EHCP needs assessments',
       'EHCP content disputes',

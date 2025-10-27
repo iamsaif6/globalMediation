@@ -212,7 +212,7 @@ const FeedbackCarousel = ({ title, subTitle, fullWidth }) => {
                       </defs>
                     </svg>
                     <div className="mt-3 md:mt-[38px] pl-3 md:pl-10 md:pr-5">
-                      <p className="leading-[150%] text-base lg:text-lg mb-5">" {item.review}"</p>
+                      <p className="leading-[150%] text-base lg:text-lg mb-5">"{item.review}"</p>
                       {item.name && <p className="text-sm lg:text-2xl font-semibold text-[#1C1C1C]"> - {item.name}</p>}
                     </div>
                   </div>

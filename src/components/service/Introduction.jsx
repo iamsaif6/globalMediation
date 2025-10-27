@@ -25,9 +25,9 @@ const Introduction = ({ title, subtitle, image, items }) => {
               <div>
                 <h3 className="md:text-2xl text-lg font-medium text-secondary mb-8 md:mb-6">Key Benefits:</h3>
                 <ul className="text-[#667085] text-lg">
-                  {items.map(item => {
+                  {items.map((item, idx) => {
                     return (
-                      <li className="flex items-center py-6 pl-[7px] gap-[26px] border-t-[0.5px] border-[#DAD3FF]">
+                      <li key={idx} className="flex items-center py-6 pl-[7px] gap-[26px] border-t-[0.5px] border-[#DAD3FF]">
                         <span className="inline-block flex-shrink-0 h-[10px] w-[10px] bg-primary rounded-full"></span>
                         <span>{item}</span>
                       </li>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { BicepsFlexed, HeartHandshake, IdCard, Puzzle, ShieldCheck } from 'lucide-react';
+import { BicepsFlexed, Gem, HeartHandshake, IdCard, Puzzle, ShieldCheck } from 'lucide-react';
 
 const values = [
   {
@@ -23,7 +23,7 @@ const values = [
     description: 'We create strong healthy relationships and work together to encourage each other’s growth.',
   },
   {
-    icon: BicepsFlexed,
+    icon: Gem,
     title: 'Integrity',
     description: 'We do what we say we will do and act ethically and honestly.',
   },

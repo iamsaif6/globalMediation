@@ -205,14 +205,14 @@ const page = () => {
 
       {/* Why Choose */}
 
-      <section className="py-16 px-5 md:px-16 md:py-[80px] text-white bg-secondary">
+      <section className="py-16 mb-16 px-5 md:px-16 md:py-[80px] text-white bg-secondary">
         <div className="text-center">
           <h2 className="text-4xl md:text-5xl font-medium text-center max-w-[760px] mx-auto leading-[120%] mb-8 md:mb-[40px] !text-white">
             Why Choose Global Mediation?
           </h2>
           <p className=" text-base md:text-lg leading-[150%] mb-[56px] md:mb-[78px] text-left md:text-center">
-            We’ve helped resolve thousands of civil and legal disputes, with a calm, professional approach that saves time, reduces stress,
-            and restores control.
+            We’re experienced in resolving civil and legal disputes, with a calm, professional approach that saves time, reduces stress, and
+            restores control.
           </p>
         </div>
         <div className="grid grid-cols-2 items-center gap-8">
@@ -264,7 +264,7 @@ const page = () => {
       </section>
 
       {/* <MediationCalculation /> */}
-      <FeedbackCarousel title={'What clients say'} subTitle={null} />
+      {/* <FeedbackCarousel title={'What clients say'} subTitle={null} /> */}
       {/* <Map /> */}
       <div className="bg-[#F9F8FF]">
         <CTA
