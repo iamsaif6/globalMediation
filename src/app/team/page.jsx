@@ -22,7 +22,7 @@ import adam from '/public/members/Adam.jpeg';
 
 const members = [
   {
-    name: 'Adam Gersch',n
+    name: 'Adam Gersch',
     image: adam,
     position: 'Founder & CEO',
     details: (
