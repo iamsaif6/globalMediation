@@ -12,6 +12,7 @@ import Nikeisha from '/public/members/Nikeisha.jpg';
 import Altaf from '/public/members/Altaf.jpeg';
 import { useState } from 'react';
 import { X } from 'lucide-react';
+import adam from '/public/members/Adam.jpeg';
 
 // export const metadata = {
 //   title: 'Team - Global Mediation - Mediation Services UK',
@@ -22,7 +23,7 @@ import { X } from 'lucide-react';
 const members = [
   {
     name: 'Adam Gersch',
-    image: null,
+    image: adam,
     position: 'Founder & CEO',
     details: (
       <p>

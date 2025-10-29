@@ -9,12 +9,13 @@ import jeff from '/public/members/jeff.jpg';
 import emma from '/public/members/emma.jpg';
 import Irvine from '/public/members/Irvine.jpg';
 import Ashleigh from '/public/members/Ashleigh.jpg';
+import adam from '/public/members/Adam.jpeg';
 import { useState } from 'react';
 
 const members = [
   {
     name: 'Adam Gersch',
-    image: null,
+    image: adam,
     position: 'Founder & CEO',
     details: (
       <p>
@@ -205,11 +206,11 @@ const TeamCarousel = ({ darkText = false, isDouble }) => {
               <div className="h-[300px] w-full rounded-3xl overflow-hidden bg-gray-200">
                 {item?.image && <Image className="object-cover object-center h-full w-full" alt={item.name} src={item.image} />}
               </div>
-              <h3 className={`${darkText ? 'text-black' : 'text-white'} mt-3 truncate md:mt-6 text-2xl md:text-[32px] font-semibold `}>
+              <h3 className={`${darkText ? 'text-black' : '!text-white'} mt-3 truncate md:mt-6 text-2xl md:text-[32px] font-semibold `}>
                 {item.name}
               </h3>
-              <p className={`font-medium mt-1 truncate`}>{item?.position}</p>
-              <div className="mt-3 line-clamp-3">{item?.details}</div>
+              <p className={`font-medium mt-1 truncate ${darkText ? 'text-black' : 'text-white'}`}>{item?.position}</p>
+              <div className={`mt-3 line-clamp-3 ${darkText ? 'text-black' : 'text-white'}`}>{item?.details}</div>
               <button
                 onClick={() => setSelectedMember(item)}
                 className="mt-4 px-4 py-2 rounded-full border border-primary text-primary hover:bg-primary hover:text-white transition-all"
