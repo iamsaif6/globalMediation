@@ -14,6 +14,7 @@ const resourceSubMenu = [
   { title: 'Savings calculator', href: '/savings-calculator' },
   { title: 'Mediation Matters podcast', href: 'https://podcasts.apple.com/gb/podcast/mediation-matters/id1602971487', isNewTab: true },
   { title: 'Brand values', href: '/global-brand-value' },
+  { title: 'Meet the team', href: '/team' },
 ];
 
 const serviceSubmenu = [
@@ -79,6 +80,7 @@ const navLinksForMobile = [
       { title: 'Savings calculator', href: '/savings-calculator' },
       { title: 'Mediation Matters podcast', href: 'https://podcasts.apple.com/gb/podcast/mediation-matters/id1602971487', isNewTab: true },
       { title: 'Brand values', href: '/global-brand-value' },
+      { title: 'Meet the team', href: '/team' },
     ],
   },
   {

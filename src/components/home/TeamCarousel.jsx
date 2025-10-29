@@ -3,117 +3,137 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
 import Link from 'next/link';
-import { ArrowLeft, ArrowRight } from 'lucide-react';
+import { ArrowLeft, ArrowRight, X } from 'lucide-react';
 import Image from 'next/image';
-import Adam from '/public/members/Adam.jpeg';
-import Suraiya from '/public/members/Suraiya.jpeg';
-import Altaf from '/public/members/Altaf.jpeg';
-import Jo from '/public/members/Jo.jpeg';
-import Barr from '/public/members/Nigel Barr.jpeg';
-import Rebecca from '/public/members/Rebecca.jpeg';
-import Suneta from '/public/members/Suneta.jpeg';
-import Vicky from '/public/members/Vicky.jpeg';
+import jeff from '/public/members/jeff.jpg';
+import emma from '/public/members/emma.jpg';
+import Irvine from '/public/members/Irvine.jpg';
+import Ashleigh from '/public/members/Ashleigh.jpg';
+import { useState } from 'react';
 
 const members = [
   {
-    name: 'Altaf Baghdadi',
-    // image: Altaf,
-    position: 'Senior Mediator',
-    details:
-      'Altaf is an experienced SEND, community, and workplace mediator known for his calm, impartial presence. He quickly builds trust and helps parties feel heard with empathy and respect.',
-  },
-
-  {
-    name: 'Jo Winters',
-    // image: Jo,
-    position: 'Senior Mediator',
-    details:
-      'Jo brings warmth, empathy, and strong communication skills to every mediation. She’s passionate about helping participants reach the best possible outcomes through understanding and collaboration.',
-  },
-
-  {
     name: 'Adam Gersch',
-    // image: Adam,
+    image: null,
     position: 'Founder & CEO',
-    details:
-      'Adam is a practising criminal barrister and CEDR-accredited mediator who founded Global Mediation in 1999. He oversees the organisation’s strategic direction and brings decades of legal and mediation experience from the UK and US.',
+    details: (
+      <p>
+        Adam is a practising criminal barrister and a CEDR-accredited mediator with over two decades of legal and mediation experience in
+        both the UK and US. He founded Global Mediation in 1999 and continues to lead the organisation’s strategic direction.
+        <br />
+        Adam’s background in law, coupled with his belief in the power of impartial dialogue, has shaped Global’s reputation for calm,
+        professional and human-centred mediation services.
+      </p>
+    ),
+  },
+
+  {
+    name: 'Jeff Lermer',
+    image: jeff,
+    position: 'Chief Financial Officer & Accredited Mediation',
+    details: (
+      <p>
+        Jeff is an accredited mediator and the Chief Financial Officer of Global Mediation. With over 30 years of commercial and financial
+        experience, he brings a rare blend of analytical insight and human understanding to the organisation. <br />
+        As CFO, Jeff oversees Global’s financial strategy, helping the business deliver thousands of mediations each year for local
+        authorities, businesses and individuals across the UK. A qualified accountant and experienced adviser, he previously ran a
+        successful accountancy firm supporting owner-managed and family-run businesses. <br />
+        Jeff brings this practical, people-focused approach into his work as a mediator — resolving commercial and workplace disputes with
+        calm authority and a focus on lasting outcomes.
+      </p>
+    ),
+  },
+  {
+    name: 'Emma Gersch',
+    image: emma,
+    position: 'Specialist Mediator',
+    details: (
+      <p>
+        Emma is a theatre director, trainer, mediator and coach with over 20 years’ experience designing and delivering training across the
+        NHS, British Red Cross, the legal profession and the education sector. Her expertise lies in positive communication, leadership,
+        team management and courageous conversations.
+        <br />
+        A qualified teacher and member of the Higher Education Faculty at Shakespeare’s Globe, Emma was formerly Senior Teaching Fellow at
+        Bath Spa University. She has taught at leading drama schools including the Royal Central School of Speech and Drama, LAMDA and
+        ArtsEd.
+        <br />
+        Emma is also Artistic Director of Moving Stories Theatre Company, which creates adaptations of Shakespeare and socially engaged work
+        — including recent projects with Women’s Aid and St Martin’s homeless charity.
+      </p>
+    ),
+  },
+  {
+    name: 'Emeritus Professor Irvine Gersch (BA(Hons). PGCE. DipEdPsych. PhD. FBPsS. CPsychol. PostGradDipCoaching. HCPCReg)',
+    image: Irvine,
+    position: 'Non-Executive Director',
+    details: (
+      <p>
+        Irvine is an Emeritus Professor of Educational and Child Psychology with a distinguished career spanning more than four decades
+        across teaching, advising, research, and leadership. He has worked as a teacher, psychologist, and Principal Educational
+        Psychologist, and served as a Government Advisor and University Course Director responsible for training the next generation of
+        educational and child psychologists. <br />
+        A specialist in school leadership and decision-making, Irvine’s doctoral research explored effective leadership in education. His
+        pioneering work on listening to children, school systems, SEND, coaching and mediation has influenced national practice. He is the
+        author of over 100 journal articles, book chapters and books, including The Philosophical Life Compass (2021), The Little Box of Big
+        Questions (2012), and Resolving Disagreement in Special Needs (2003). <br />
+        Irvine is a Fellow of the British Psychological Society and the Higher Education Academy, and has received national recognition for
+        his contributions to psychology and education. As a qualified life coach and mediator, he brings academic rigour, practical insight,
+        and a long-standing commitment to improving outcomes for children and families.
+      </p>
+    ),
+  },
+  {
+    name: 'Les Emery',
+    image: null,
+    position: 'Chief Operating Officer',
+    details: (
+      <p>
+        Les is an experienced organisational leader with a career spanning the UK, Europe and the USA. He has held senior roles across
+        sectors including supply chain, manufacturing, the NHS, and both local and national government. <br />
+        He brings deep expertise in lean leadership, coaching, strategic alignment and policy deployment, and plays a central role in
+        shaping and delivering Global Mediation’s operational strategy.
+      </p>
+    ),
+  },
+  {
+    name: 'Ashleigh Stent',
+    image: Ashleigh,
+    position: 'Fractional Marketing Director',
+    details: (
+      <p>
+        Ashleigh is a board-level marketing leader with over 20 years of experience building high-performing teams, brands and digital
+        ecosystems. She brings a strategic mindset that fuses creativity, data and technology to drive meaningful commercial outcomes.{' '}
+        <br />
+        Her career spans the full spectrum of marketing — from brand and digital to demand generation and commerce — with a proven track
+        record of scaling global teams, shaping strategy, and delivering measurable growth. Known for her clarity, curiosity and commercial
+        focus, Ashleigh leads with energy and purpose, ensuring Global Mediation continues to connect with the people who need us most.
+      </p>
+    ),
   },
 
   {
     name: 'Suraiya Baghdadi',
-    // image: Suraiya,
-    position: 'Mediation Director ',
-    details:
-      'Suraiya leads Global Mediation’s team of mediators, ensuring high standards across all services. With over 25 years in education and leadership, she brings deep expertise to SEND mediation.',
-  },
-
-  {
-    name: 'Professor Irvine Gersch',
-    // image: Suraiya,
-    position: 'Consultant',
-    details:
-      'Irvine is an Emeritus Professor of Educational and Child Psychology with decades of experience in education, psychology and mediation. Twice honoured by the British Psychological Society, he supports Global Mediation with training, safeguarding and quality assurance.',
-  },
-
-  {
-    name: 'Rebecca Hayward',
-    // image: Rebecca,
-    position: 'Senior Mediator',
-    details:
-      'Rebecca brings a calm, supportive presence and clear professional guidance to each SEND mediation. She ensures all voices are heard while keeping the focus firmly on the child or young person.',
-  },
-
-  {
-    name: 'Emma Gersch',
     image: null,
-    position: 'Specialist Mediator',
-    details:
-      'With a background in theatre and coaching, Emma brings over 20 years’ experience in communication and interpersonal skills training. Now a SEND mediator, she combines her expertise to support clients with empathy, clarity, and a deep belief in the power of listening.',
-  },
-
-  {
-    name: 'Nigel Barr',
-    // image: Barr,
-    position: 'Senior Mediator',
-    details:
-      'Nigel has been a SEND mediator since 2013 and has led over 1,000 mediations. He brings extensive experience and continues to support families and professionals through the mediation process.',
-  },
-
-  {
-    name: 'Suneta Bagri',
-    // image: Suneta,
-    position: 'Course Director',
-    details:
-      'Suneta is an experienced mediator specialising in SEND and workplace resolution, particularly in education. She’s committed to helping individuals and teams reach clear, lasting solutions through collaboration and understanding.',
-  },
-  // {
-  //   name: 'Vicky Mansell',
-  //   // image: Vicky,
-  //   position: 'Senior Mediator',
-  // },
-  {
-    name: 'Janet Kenward',
-    image: null,
-    position: 'Senior Mediator',
-    details:
-      'With a background in SEN education, Janet brings deep subject knowledge and a calm, reassuring presence to mediation. She’s known for her listening skills and ability to put families at ease during challenging times.',
-  },
-
-  // {
-  //   name: 'Laurence Cobb',
-  //   image: null,
-  //   position: 'Panel Member',
-  // },
-  {
-    name: 'Nikeisha Campbell',
-    image: null,
-    position: 'Mediator',
-    details:
-      'Nikiesha joined Global Mediation in 2017 and progressed from Case Manager to Area Lead before becoming a mediator. She now supports families with care and commitment throughout the SEND mediation process.',
+    position: 'Mediation Director',
+    details: (
+      <p>
+        Suraiya is the Mediation Director at Global Mediation, where she leads the team of Senior and Associate Mediators and upholds the
+        exceptional standards of practice that define our service. With over 25 years of experience in education, teacher training and
+        leadership, she brings specialist expertise to mediation — particularly in the area of Special Educational Needs and Disabilities
+        (SEND). <br />
+        A CMC-accredited mediator with specialist SEND accreditation, Suraiya is driven by a belief in the power of inclusive communication.
+        She creates safe, respectful spaces for open dialogue, always placing the voices of children and young people at the heart of the
+        process. She is on the panel for the CoM Practice Standards Committee and also for the SEND Mediation Assessors/DfE. <br />
+        Her deep commitment to social inclusion is reflected in her research and leadership. She has led Home Office research into the
+        barriers faced by excluded groups, published work on disability and inclusion, and previously served as a Disability Equality Lead,
+        championing accessibility and equity across her organisation.
+      </p>
+    ),
   },
 ];
 
 const TeamCarousel = ({ darkText = false, isDouble }) => {
+  const [selectedMember, setSelectedMember] = useState(null);
   function SamplePrevArrow(props) {
     const { onClick } = props;
     return (
@@ -145,12 +165,12 @@ const TeamCarousel = ({ darkText = false, isDouble }) => {
 
   const settings = {
     dots: false,
-    infinite: true,
+    infinite: false,
     speed: 500,
     centerMode: false,
     slidesToShow: 3,
     slidesToScroll: 1,
-    initialSlide: 1,
+    initialSlide: 0,
     rows: 2,
 
     nextArrow: <SampleNextArrow />,
@@ -182,15 +202,80 @@ const TeamCarousel = ({ darkText = false, isDouble }) => {
         <Slider {...settings}>
           {members.map(item => (
             <div className="px-5 min-h-[250px] lg:px-[25px]   mb-[20px]">
-              <h3 className={`${darkText ? 'text-black' : 'text-white'} mt-3 md:mt-6 text-2xl md:text-[32px] font-semibold `}>
+              <div className="h-[300px] w-full rounded-3xl overflow-hidden bg-gray-200">
+                {item?.image && <Image className="object-cover object-center h-full w-full" alt={item.name} src={item.image} />}
+              </div>
+              <h3 className={`${darkText ? 'text-black' : 'text-white'} mt-3 truncate md:mt-6 text-2xl md:text-[32px] font-semibold `}>
                 {item.name}
               </h3>
-              <p className={`${darkText ? 'text-black' : 'text-white'} font-medium mt-1`}>{item?.position}</p>
-              {isDouble && <p className="mt-3">{item?.details}</p>}
+              <p className={`font-medium mt-1 truncate`}>{item?.position}</p>
+              <div className="mt-3 line-clamp-3">{item?.details}</div>
+              <button
+                onClick={() => setSelectedMember(item)}
+                className="mt-4 px-4 py-2 rounded-full border border-primary text-primary hover:bg-primary hover:text-white transition-all"
+              >
+                View
+              </button>
             </div>
           ))}
         </Slider>
       </div>
+
+      {/* Modal */}
+      {selectedMember && (
+        <div
+          className="fixed inset-0 z-50 flex  items-center justify-center bg-black/60 backdrop-blur-sm px-4"
+          onClick={e => {
+            if (e.target === e.currentTarget) setSelectedMember(null);
+          }}
+        >
+          <div className="bg-white w-full max-h-[90vh]  max-w-3xl rounded-3xl shadow-2xl relative overflow-scroll animate-fadeIn">
+            {/* Close Button */}
+            <button
+              className="absolute top-4 cursor-pointer right-4 text-gray-400 hover:text-gray-700 transition"
+              onClick={() => setSelectedMember(null)}
+            >
+              <X className="w-6 h-6" />
+            </button>
+
+            {/* Content */}
+            <div className="p-6 sm:p-10 text-center">
+              {/* Image */}
+              {selectedMember.image ? (
+                <div className="flex justify-center mb-6">
+                  <div className="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden shadow-md">
+                    <Image src={selectedMember.image} alt={selectedMember.name} className="w-full h-full object-cover object-center" />
+                  </div>
+                </div>
+              ) : (
+                <div className="flex justify-center mb-6">
+                  <div className="w-40 h-40 md:w-48 md:h-48 flex items-center justify-center rounded-full bg-gray-200 text-gray-500 text-lg">
+                    No Image
+                  </div>
+                </div>
+              )}
+
+              {/* Text */}
+              <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">{selectedMember.name}</h2>
+              <p className="text-primary font-medium mt-2 mb-4 text-base md:text-lg">{selectedMember.position}</p>
+
+              <div className="text-gray-700 text-sm md:text-base leading-relaxed space-y-3 overflow-y-auto text-left">
+                {selectedMember.details}
+              </div>
+
+              {/* Close Button (Mobile-Friendly) */}
+              <div className="mt-6">
+                <button
+                  onClick={() => setSelectedMember(null)}
+                  className="mt-3 px-6 py-2 rounded-full bg-primary text-white hover:bg-primary/90 transition-all duration-200"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
