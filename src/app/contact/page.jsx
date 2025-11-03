@@ -109,7 +109,7 @@ const ContactUs = () => {
               <div className="max-w-[950px] mx-auto">
                 <h1 className="font-medium text-4xl md:text-[54px] leading-[120%] mb-[20px] md:mb-6">Let’s find a way forward, together</h1>
                 <p className=" text-base md:text-lg">
-                  For more information about our services, team, training programs, or career opportunities, get in touch with us.
+                  For more information about our services, team, training programmes, or career opportunities, get in touch with us.
                 </p>
               </div>
               <div className={`mt-8 md:max-w-[950px] grid grid-cols-1 md:grid-cols-2  gap-4  mx-auto`}>

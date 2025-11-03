@@ -54,7 +54,7 @@ const TimeLine = () => {
               </svg>
             </div>
             <p className="md:mt-6  text-base md:text-lg leading-[150%]">
-              Launched accredited training programs to develop the next generation of mediators
+              Launched accredited training programmes to develop the next generation of mediators
             </p>
           </div>
 

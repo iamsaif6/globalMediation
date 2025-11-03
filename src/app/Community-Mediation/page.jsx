@@ -47,8 +47,8 @@ const page = () => {
             Community Mediation
           </h1>
           <p className="text-white mt-[25px] md:mt-4 mb-[25px] mr-auto max-w-[700px] md:mb-10 w-[100%] font-normal text-base md:text-lg xl:text-xl">
-            Supportive, impartial mediation to help neighbours and local residents resolve disputes fairly, calmly and constructively —
-            before things escalate.
+            Supportive, impartial mediation to help resolve neighbourhood disputes and local residents resolve disputes fairly, calmly and
+            constructively — before things escalate.
           </p>
           <div className="flex md:flex-row items-center flex-col gap-4">
             <button className={`bg-primary  border   border-primary font-semibold text-lg text-[#FCFCFD] px-6 py-3 rounded-[40px]`}>

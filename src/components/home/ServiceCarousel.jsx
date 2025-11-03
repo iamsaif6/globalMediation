@@ -147,7 +147,7 @@ const ServiceCarousel = () => {
                     Family Mediation
                   </h3>
                   <p className="text-base md:text-lg duration-200 leading-[150%] font-normal mb-[26px] flex-grow">
-                    Calm, impartial support to help you resolve family issues around parenting.
+                    Calm, impartial support to help you resolve family issues.
                   </p>
                   <Link
                     title="Learn more"
@@ -167,7 +167,7 @@ const ServiceCarousel = () => {
                     Community Mediation
                   </h3>
                   <p className="text-base md:text-lg duration-200 leading-[150%] font-normal mb-[26px] flex-grow">
-                    Supportive, impartial mediation to help neighbours
+                    Supportive, impartial mediation to help resolve neighbourhood disputes
                   </p>
                   <Link
                     title="Learn more"

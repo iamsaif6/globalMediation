@@ -235,7 +235,7 @@ const page = () => {
       <div className="bg-[#F9F8FF]">
         <CTA
           title={'Learn More About Global Mediation'}
-          subTitle={'For more information about our services, team, training programs, or career opportunities, get in touch with us:'}
+          subTitle={'For more information about our services, team, training programmes, or career opportunities, get in touch with us:'}
           Button1Link={'/contact'}
           Button1Text={'Contact Us Today'}
           capitalize={false}

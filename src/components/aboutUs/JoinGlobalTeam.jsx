@@ -22,7 +22,8 @@ const JoinGlobalTeam = () => {
             We’re always on the lookout for thoughtful, talented people who share our values.
             <br />
             <br />
-            While we’re not hiring for specific roles right now, we’d love to hear from you. <br /> Email:
+            Please contact us for the current status of our recruitment cycle.
+            <br /> Email:
             <Link href="mailto:send@globalmediation.co.uk"> send@globalmediation.co.uk</Link> and we’ll get back to you.
           </p>
         </div>

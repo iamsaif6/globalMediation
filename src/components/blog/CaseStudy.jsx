@@ -73,10 +73,11 @@ const CaseStudy = () => {
               <div className="col-span-12  bg-white lg:col-span-7 py-[42px] md:py-[66px] px-6 md:pr-[74px] md:pl-[90px]">
                 <h3 className="mb-8 text-[#1C1C1C] font-normal text-4xl md:text-5xl leading-[120%]">Case study 1</h3>
                 <p className="text-[#667085] mb-12 font-normal text-sm md:text-lg leading-[150%]">
-                  Unlock the skills needed to mediate disputes effectively with Global Mediation’s comprehensive training programs. Whether
-                  you’re new to mediation or looking to specialise in areas like SEND mediation, our accredited courses offer practical
-                  learning opportunities delivered by experienced trainers. Unlock the skills needed to mediate disputes effectively with
-                  Global Mediation’s comprehensive training programs. Whether you’re new to mediation or looking to specialise in areas.
+                  Unlock the skills needed to mediate disputes effectively with Global Mediation’s comprehensive training programmes.
+                  Whether you’re new to mediation or looking to specialise in areas like SEND mediation, our accredited courses offer
+                  practical learning opportunities delivered by experienced trainers. Unlock the skills needed to mediate disputes
+                  effectively with Global Mediation’s comprehensive training programmes. Whether you’re new to mediation or looking to
+                  specialise in areas.
                 </p>
                 <Link
                   href={'#'}

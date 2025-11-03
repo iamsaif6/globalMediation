@@ -166,7 +166,7 @@ const TeamCarousel = ({ darkText = false, isDouble }) => {
 
   const settings = {
     dots: false,
-    infinite: false,
+    infinite: true,
     speed: 500,
     centerMode: false,
     slidesToShow: 3,
