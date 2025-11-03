@@ -203,7 +203,7 @@ const page = () => {
             Why Choose Global Mediation?
           </h2>
           <p className=" text-base md:text-lg leading-[150%] mb-[56px] md:mb-[78px] text-left lg:text-center">
-            We’ve helped thousands of people resolve conflicts with neighbours, landlords and community members — in ways that feel fair,
+            We’ve helped many people of people resolve conflicts with neighbours, landlords and community members — in ways that feel fair,
             respectful and lasting.
           </p>
         </div>

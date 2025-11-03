@@ -78,7 +78,7 @@ const FaqTrainning = () => {
         ))}
       </div>
       <div className="flex mt-[43px] md:mt-0 flex-col items-center">
-        <Link href={'#'} className="text-lg mb-[30px]">
+        <Link href={'/contact'} className="text-lg mb-[30px]">
           Have more questions?
         </Link>
         <Button title={'Contact'} href="/contact" padding="xxlarge" />

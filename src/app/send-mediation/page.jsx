@@ -311,21 +311,21 @@ const page = () => {
                   </p>
                 </div>
                 <div className={`mt-8 md:max-w-[950px] grid grid-cols-1 md:grid-cols-1  gap-4  mx-auto`}>
-                  {/* <button className="bg-primary   font-semibold text-[#FCFCFD] px-6 py-3 rounded-[40px] text-lg">
+                  <button className="bg-primary max-w-[300px] mx-auto   font-semibold text-[#FCFCFD] px-6 py-3 rounded-[40px] text-lg">
                     <Link className="block w-full text-center" href={'/contact'}>
-                      Book a session
+                      Contact our SEND team
                     </Link>
-                  </button> */}
+                  </button>
                   {/* <button className="font-semibold  border border-white text-lg text-white px-6 py-3 rounded-[40px]">
                     <Link className="block w-full text-center" href={'/contact'}>
                       Contact our SEND team
                     </Link>
                   </button> */}
-                  <button className="font-semibold max-w-[300px] mx-auto border border-white text-lg text-white px-6 py-3 rounded-[40px]">
+                  {/* <button className="font-semibold max-w-[300px] mx-auto border border-white text-lg text-white px-6 py-3 rounded-[40px]">
                     <Link title={'Contact our SEND team'} className="block w-full text-center" href={'/contact'}>
                       Contact our SEND team
                     </Link>
-                  </button>
+                  </button> */}
                 </div>
               </div>
             </div>
