@@ -16,14 +16,38 @@ export const metadata = {
 };
 
 const mediators = [
-   'Caroline Lowe ',
-  'Erica Power ',
-  'Gareth Thompson',
-  'Henry Minto',
-  'Laura Elfield',
-  'Martin Forde KC',
-  'Tabitha Nice',
-  'Tessa Herman',
+  {
+    name: 'Caroline Lowe',
+    cv: '/public/Caroline Lowe CV FINAL.pdf',
+  },
+  {
+    name: 'Erica Power',
+    cv: '/public/Erica Power CV FINAL.pdf',
+  },
+  {
+    name: 'Gareth Thompson',
+    cv: '/public/Gareth Thompson CV FINAL.pdf',
+  },
+  {
+    name: 'Henry Minto',
+    cv: '/public/Henry Minto CV FINAL.pdf',
+  },
+  {
+    name: 'Laura Elfield',
+    cv: '/public/Laura Elfield CV FINAL.pdf',
+  },
+  {
+    name: 'Martin Forde KC',
+    cv: '/public/Martin Forde KC CV FINAL.pdf',
+  },
+  {
+    name: 'Tabitha Nice',
+    cv: '/public/Tabitha Nice CV FINAL.pdf',
+  },
+  {
+    name: 'Tessa Herman',
+    cv: '/public/Tessa Herman CV FINAL.pdf',
+  },
 ];
 
 const steps = [
@@ -290,15 +314,20 @@ const MainServices = () => {
                     {true && (
                       <div className="px-6 pb-6 border-t border-gray-100">
                         <div className="grid grid-cols-2 gap-3 mt-4">
-                          {mediators.map((name, index) => (
-                            <div
-                              key={index}
-                              className="flex items-center gap-3 p-3 rounded-lg hover:bg-blue-50 transition-colors duration-200"
-                            >
-                              <div className="w-2 h-2 bg-teal-500 rounded-full flex-shrink-0"></div>
-                              <span className="text-black font-medium">{name}</span>
-                            </div>
-                          ))}
+                          {mediators.map((mediator, index) => (
+  <Link
+    key={index}
+    href={mediator.cv}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center gap-3 p-3 rounded-lg hover:bg-blue-50 transition-colors duration-200"
+  >
+    <div className="w-2 h-2 bg-teal-500 rounded-full flex-shrink-0"></div>
+    <span className="text-black font-medium hover:underline">
+      {mediator.name}
+    </span>
+  </Link>
+))}
                         </div>
                       </div>
                     )}
