@@ -253,9 +253,9 @@ const LearnMore = () => {
           </div>
         </div>
       </div>
-      <div className="flex mt-16 items-center justify-center">
+      {/* <div className="flex mt-16 items-center justify-center">
         <Button title={'Visit the resource hub'} href="/blog" />
-      </div>
+      </div> */}
     </section>
   );
 };

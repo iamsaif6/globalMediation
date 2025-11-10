@@ -192,11 +192,11 @@ const page = () => {
       <div className="bg-[#F9F8FF]">
         <CTA
           title={'Start the Conversation'}
-          subTitle={'You don’t need to know exactly what you’re asking for.Just tell us what’s going on, and we’ll talk you through it.'}
+          subTitle={'You don’t need to know exactly what you’re asking for. Just tell us what’s going on, and we’ll talk you through it.'}
           Button1Link={'/contact'}
           Button1Text={'Book Business Mediation'}
-          Button2Link={'/contact'}
-          Button2Text={'Contact Us'}
+          // Button2Link={'/contact'}
+          // Button2Text={'Contact Us'}
         />
       </div>
     </div>

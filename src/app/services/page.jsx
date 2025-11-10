@@ -67,8 +67,8 @@ const MainServices = () => {
         subTitle={'Your trusted partner in conflict resolution'}
         Button1Text={'Schedule consultation'}
         Button1Link={'/contact'}
-        Button2Text={'Contact us'}
-        Button2Link={'/contact'}
+        // Button2Text={'Contact us'}
+        // Button2Link={'/contact'}
       />
     </div>
   );

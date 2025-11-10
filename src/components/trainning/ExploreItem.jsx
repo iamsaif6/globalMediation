@@ -1,9 +1,10 @@
 import Image from 'next/image';
 import React from 'react';
 import Link from 'next/link';
+import sendCover from '/public/global_2025-76.jpg';
 
 const service2 = 'https://global-mediation.s3.eu-west-2.amazonaws.com/large-files/training-2.jpg';
-const service3 = 'https://global-mediation.s3.eu-west-2.amazonaws.com/large-files/training-3.jpg';
+const service3 = sendCover;
 const service4 = 'https://global-mediation.s3.eu-west-2.amazonaws.com/large-files/priscilla-du-preez-XkKCui44iM0-unsplash.jpg';
 
 const exlopreItem = [

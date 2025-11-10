@@ -273,9 +273,9 @@ const page = () => {
             'Whether you’re navigating a legal disagreement, or advising someone who is, we’re here to help you find a fair way forward.'
           }
           Button1Link={'/contact'}
-          Button1Text={'Book a Civil Mediation Session'}
-          Button2Text={'Speak to Our Mediation Team'}
-          Button2Link={'/contact'}
+          Button1Text={'Speak to Our Mediation Team'}
+          // Button2Text={'Speak to Our Mediation Team'}
+          // Button2Link={'/contact'}
         />
       </div>
       <FAQ title={'FAQs About Civil and Legal Mediation'} buttonText={'Ask Us a Question'} buttonLink={'/contact'} faqData={faqData} />

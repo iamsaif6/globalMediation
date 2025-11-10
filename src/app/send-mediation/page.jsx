@@ -54,7 +54,7 @@ const faqData = [
   {
     key: 3,
     question: 'Can a young person request mediation?',
-    answer: 'Yes — anyone aged 16 to 25 can request or attend SEND mediation directly.',
+    answer: 'Any child or young person can attend the mediation sessions, but ages 16-25 may make a direct request',
   },
   {
     key: 4,

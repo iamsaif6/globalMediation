@@ -13,6 +13,8 @@ import Altaf from '/public/members/Altaf.jpeg';
 import { useState } from 'react';
 import { X } from 'lucide-react';
 import adam from '/public/members/Adam.jpeg';
+import male from '/public/man.jpg';
+import female from '/public/female.png';
 
 // export const metadata = {
 //   title: 'Team - Global Mediation - Mediation Services UK',
@@ -93,7 +95,7 @@ const members = [
   },
   {
     name: 'Les Emery',
-    image: null,
+    image: male,
     position: 'Chief Operating Officer',
     details: (
       <p>
@@ -107,7 +109,7 @@ const members = [
   {
     name: 'Ashleigh Stent',
     image: Ashleigh,
-    position: 'Fractional Marketing Director',
+    position: 'Marketing Director',
     details: (
       <p>
         Ashleigh is a board-level marketing leader with over 20 years of experience building high-performing teams, brands and digital
@@ -122,7 +124,7 @@ const members = [
 
   {
     name: 'Suraiya Baghdadi',
-    image: null,
+    image: female,
     position: 'Mediation Director',
     details: (
       <p>
@@ -144,7 +146,7 @@ const members = [
 const mediator = [
   {
     name: 'Rebecca Hayward',
-    image: null,
+    image: female,
     position: 'Senior Mediator',
     details: (
       <p>
@@ -170,7 +172,7 @@ const mediator = [
   },
   {
     name: 'Suneta Bagri',
-    image: null,
+    image: female,
     position: 'Course Leader & Senior Mediator',
     details: (
       <p>
@@ -225,7 +227,7 @@ const mediator = [
   },
   {
     name: 'Jo Winters',
-    image: null,
+    image: female,
     position: 'Senior Mediator',
     details: (
       <p>
@@ -306,7 +308,7 @@ const Team = () => {
             'Deborah Beharie',
             'Deborah Rix',
             'Dominique Young',
-            'Emma Gersh',
+            'Emma Gersch',
             'Emma Jenkings',
             'Eva Edel',
             'Gareth Thompson',

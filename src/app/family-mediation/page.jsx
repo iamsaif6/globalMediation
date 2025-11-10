@@ -244,9 +244,9 @@ const page = () => {
             'Whether you’re in the early stages of separation or struggling to co-parent, we’re here to help you take the next step with clarity and care.'
           }
           Button1Link={'/contact'}
-          Button1Text={'Book a Family Mediation Appointment'}
-          Button2Text={'Speak to Our Family Mediation Team'}
-          Button2Link={'/contact'}
+          Button1Text={'Speak to Our Family Mediation Team'}
+          // Button2Text={'Speak to Our Family Mediation Team'}
+          // Button2Link={'/contact'}
         />
       </div>
       <FAQ title={'FAQs About Family Mediation'} buttonText={'Ask Us a Question'} buttonLink={'/contact'} faqData={faqData} />

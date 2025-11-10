@@ -21,22 +21,22 @@ export const HeaderTraining = () => {
           in conflict resolution. Our hands-on courses help you grow with confidence, guided by expert trainers and real-world practice.
         </p>
         <div className="flex md:flex-row flex-col items-center gap-4">
-          <button
+          {/* <button
             title=" Enrol in a Mediation Training Programme Today"
             className={`bg-primary md:block hidden  cursor-pointer border  border-primary font-semibold text-lg text-[#FCFCFD] px-2 md:px-12 py-3 rounded-[40px]`}
           >
             <Link title="Contact Us for Upcoming Course Dates" className="w-full" target="_blank" href={'https://www.globaltraining.uk/'}>
               Enrol in a Mediation Training Programme Today
             </Link>
-          </button>
-          <button
+          </button> */}
+          {/* <button
             title=" Enrol in a Mediation Training Programme Today"
             className={`bg-primary block md:hidden  cursor-pointer border  border-primary font-semibold text-lg text-[#FCFCFD] px-5 py-3 rounded-[40px]`}
           >
             <Link title="Contact Us for Upcoming Course Dates" className="w-full" target="_blank" href={'https://www.globaltraining.uk/'}>
               Enquire today
             </Link>
-          </button>
+          </button> */}
 
           <button className="bg-secondary font-semibold border border-secondary text-lg text-[#FCFCFD] px-3 md:px-[48px] py-3 rounded-[40px] ">
             <Link

@@ -1,7 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
+import service1 from '/public/global_2025-478 (1).jpg';
 
-const service1 = 'https://global-mediation.s3.eu-west-2.amazonaws.com/large-files/about-global.jpeg';
+// const service1 = 'https://global-mediation.s3.eu-west-2.amazonaws.com/large-files/about-global.jpeg';
 
 const ExperiencedLeader = () => {
   return (

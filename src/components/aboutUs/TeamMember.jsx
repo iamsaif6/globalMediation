@@ -8,13 +8,6 @@ const TeamMember = () => {
       <div className="grid px-5 md:px-16 grid-cols-2 gap-7 md:gap-[80px] mb-[80px]">
         <div className="col-span-2 lg:col-span-1">
           <h2 className="leading-[120%] text-4xl md:text-[40px] lg:text-5xl font-medium mb-8">The People Behind Global Mediation</h2>
-          {/* <button
-            className={`bg-primary border border-primary font-normal text-lg text-[#FCFCFD] w-full  md:w-auto px-12 py-3 rounded-[40px]`}
-          >
-            <Link className="w-full" href={'/team'}>
-              Meet our team
-            </Link>
-          </button> */}
         </div>
         <div className="col-span-2 lg:col-span-1">
           <p className="text-black text-base md:text-lg leading-[150%] mt-3">
@@ -41,6 +34,15 @@ const TeamMember = () => {
         </div>
       </div>
       <TeamCarousel isDouble={true} darkText={true} />
+      <div className="flex justify-center md:mt-32 mt-24">
+        <button
+          className={`bg-primary  max-w-[292px] lg:max-w-max w-full border block border-primary font-semibold text-lg text-[#FCFCFD]   rounded-[40px]`}
+        >
+          <Link className="w-full block h-full lg:px-12 py-3" href={'/team'}>
+            Meet The Team
+          </Link>
+        </button>
+      </div>
     </section>
   );
 };

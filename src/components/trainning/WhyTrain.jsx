@@ -110,16 +110,16 @@ const WhyTrain = () => {
         <button
           className={`bg-primary hidden lg:block  border border-primary font-semibold text-lg text-[#FCFCFD] px-3 md:px-8 py-3 rounded-[40px]`}
         >
-          <Link className="w-full" href="/contact">
-            Contact Us to Learn More About Our Training Programmes
+          <Link target="_blank" className="w-full" href="https://www.globaltraining.uk/">
+            Find Out More About Global Training
           </Link>
         </button>
 
         <button
           className={`bg-primary block lg:hidden  border border-primary font-semibold text-lg text-[#FCFCFD] px-8 py-3 rounded-[40px]`}
         >
-          <Link className="w-full" href="/contact">
-            Learn more
+          <Link target="_blank" className="w-full" href="https://www.globaltraining.uk/">
+            About Global Training
           </Link>
         </button>
       </div>

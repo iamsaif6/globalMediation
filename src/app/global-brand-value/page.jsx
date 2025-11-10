@@ -3,7 +3,7 @@ import CTA from '@/components/shared/CTA';
 import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import inclusion from '/public/global_2025-76.jpg';
+import inclusion from '/public/global_2025-140.jpg';
 import Quality from '/public/global_2025-113.jpg';
 import Integrity from '/public/global_2025-63.jpg';
 
@@ -47,7 +47,7 @@ const Page = () => {
       {/* ==== HEADER ==== */}
       <header
         style={{
-          backgroundImage: `linear-gradient(to right, rgba(62,0,101,0.65), rgba(62,0,101,0.15)), url('${headerBG}')`,
+          backgroundImage: `linear-gradient(to right, rgba(62,0,101,0.5), rgba(62,0,101,0.045)), url('${headerBG}')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center top',
         }}

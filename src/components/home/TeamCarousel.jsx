@@ -11,6 +11,8 @@ import Irvine from '/public/members/Irvine.jpg';
 import Ashleigh from '/public/members/Ashleigh.jpg';
 import adam from '/public/members/Adam.jpeg';
 import { useState } from 'react';
+import female from '/public/female.png';
+import male from '/public/man.jpg';
 
 const members = [
   {
@@ -85,7 +87,7 @@ const members = [
   },
   {
     name: 'Les Emery',
-    image: null,
+    image: male,
     position: 'Chief Operating Officer',
     details: (
       <p>
@@ -99,7 +101,7 @@ const members = [
   {
     name: 'Ashleigh Stent',
     image: Ashleigh,
-    position: 'Fractional Marketing Director',
+    position: 'Marketing Director',
     details: (
       <p>
         Ashleigh is a board-level marketing leader with over 20 years of experience building high-performing teams, brands and digital
@@ -114,7 +116,7 @@ const members = [
 
   {
     name: 'Suraiya Baghdadi',
-    image: null,
+    image: female,
     position: 'Mediation Director',
     details: (
       <p>

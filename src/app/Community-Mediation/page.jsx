@@ -258,11 +258,11 @@ const page = () => {
       <div className="bg-[#F9F8FF]">
         <CTA
           title={'Ready to Resolve a Dispute?'}
-          subTitle={'We’re here to help you sort things out — before it goes any further.You don’t need to face it alone.'}
+          subTitle={'We’re here to help you sort things out — before it goes any further. You don’t need to face it alone.'}
           Button1Link={'/contact'}
           Button1Text={'Speak to a Mediator'}
-          Button2Text={'Get Support Now'}
-          Button2Link={'/contact'}
+          // Button2Text={'Get Support Now'}
+          // Button2Link={'/contact'}
         />
       </div>
       <FAQ title={'FAQs About Community Mediation'} buttonText={'Ask Us a Question'} buttonLink={'/contact'} faqData={faqData} />
