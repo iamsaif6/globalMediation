@@ -18,35 +18,35 @@ export const metadata = {
 const mediators = [
   {
     name: 'Caroline Lowe',
-    cv: '/public/Caroline Lowe CV FINAL.pdf',
+    cv: '/PDF/Caroline Lowe CV FINAL.pdf',
   },
   {
     name: 'Erica Power',
-    cv: '/public/Erica Power CV FINAL.pdf',
+    cv: '/PDF/Erica Power CV FINAL.pdf',
   },
   {
     name: 'Gareth Thompson',
-    cv: '/public/Gareth Thompson CV FINAL.pdf',
+    cv: '/PDF/Gareth Thompson CV FINAL.pdf',
   },
   {
     name: 'Henry Minto',
-    cv: '/public/Henry Minto CV FINAL.pdf',
+    cv: '/PDF/Henry Minto CV FINAL.pdf',
   },
   {
     name: 'Laura Elfield',
-    cv: '/public/Laura Elfield CV FINAL.pdf',
+    cv: '/PDF/Laura Elfield CV FINAL.pdf',
   },
   {
     name: 'Martin Forde KC',
-    cv: '/public/Martin Forde KC CV FINAL.pdf',
+    cv: '/PDF/Martin Forde KC CV FINAL.pdf',
   },
   {
     name: 'Tabitha Nice',
-    cv: '/public/Tabitha Nice CV FINAL.pdf',
+    cv: '/PDF/Tabitha Nice CV FINAL.pdf',
   },
   {
     name: 'Tessa Herman',
-    cv: '/public/Tessa Herman CV FINAL.pdf',
+    cv: '/PDF/Tessa Herman CV FINAL.pdf',
   },
 ];
 
