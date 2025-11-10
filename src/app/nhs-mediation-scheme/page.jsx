@@ -72,7 +72,7 @@ const steps = [
 const documents = [
   {
     title: 'NHS mediation scheme procedure',
-    description: 'Full procedure including models, packages, fees, cancellations and confidentiality.',
+    description: 'Full procedure including models, packages, cancellations and confidentiality.',
     link: '/PDF/NHS Resolution  Claims Mediation  Service Procedure- 2025.pdf',
   },
   {
