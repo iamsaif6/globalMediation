@@ -16,19 +16,7 @@ export const metadata = {
 };
 
 const mediators = [
-  'Heather Allen',
-  'Jo Cavell',
-  'Gillian Caroe',
-  'Fiona Colquhoun',
-  'Jeremy Connell',
-  'Lisa Drake',
-  'Charles Feeny',
-  'Tracey Fox',
-  'Neil Goodrum',
-  'Patricia Hitchcock KC',
-  'Alan Jacobs',
-  'Muiris Lyons',
-  'Caroline Lowe ',
+   'Caroline Lowe ',
   'Erica Power ',
   'Gareth Thompson',
   'Henry Minto',
