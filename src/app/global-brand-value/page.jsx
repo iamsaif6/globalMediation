@@ -3,7 +3,7 @@ import CTA from '@/components/shared/CTA';
 import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import inclusion from '/public/global_2025-140.jpg';
+import inclusion from '/public/global_2025-86.jpg';
 import Quality from '/public/global_2025-113.jpg';
 import Integrity from '/public/global_2025-63.jpg';
 

@@ -111,6 +111,12 @@ const faqData = [
   },
 ];
 
+export const metadata = {
+  title: 'FAQ | Global Mediation - Mediation Services in London & Nationwide',
+  description:
+    'An advanced course for qualified mediators, wishing to carry out mediations in the field of special educational needs and disability .',
+};
+
 const page = () => {
   return (
     <div className="pt-[120px] bg-[#F9F8FF]">

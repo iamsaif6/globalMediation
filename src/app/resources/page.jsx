@@ -2,6 +2,12 @@ import Download from '@/components/blog/Download';
 import CTA from '@/components/shared/CTA';
 import React from 'react';
 
+export const metadata = {
+  title: 'Guides | Global Mediation - Mediation Services in London & Nationwide',
+  description:
+    'An advanced course for qualified mediators, wishing to carry out mediations in the field of special educational needs and disability .',
+};
+
 const Guides = () => {
   return (
     <section className="pb-16 pt-[100px] px-0 md:pb-[80px] md:px-[64px] bg-secondary text-white">

@@ -7,6 +7,12 @@ import CTA from '@/components/shared/CTA';
 import FAQ from '@/components/service/FAQ';
 import HowWeWork from './HowWeWork';
 
+export const metadata = {
+  title: 'Business and Commercial Mediation | Global Mediation - Mediation Services in London & Nationwide',
+  description:
+    'An advanced course for qualified mediators, wishing to carry out mediations in the field of special educational needs and disability .',
+};
+
 const service2 = 'https://global-mediation.s3.eu-west-2.amazonaws.com/large-files/redd-francisco-5U_28ojjgms-unsplash.jpg';
 // const service3 = 'https://global-mediation.s3.eu-west-2.amazonaws.com/large-files/dylan-gillis-KdeqA3aTnBY-unsplash.jpg';
 const cover = 'https://global-mediation.s3.eu-west-2.amazonaws.com/large-files/Business_Header.jpeg';

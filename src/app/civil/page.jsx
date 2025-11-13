@@ -13,6 +13,12 @@ import support from '/public/civil-support.jpg';
 import overlay from '/public/Overlay.png';
 import Button from '@/components/shared/Button';
 
+export const metadata = {
+  title: 'Civil and Legal Dispute Mediation | Global Mediation - Mediation Services in London & Nationwide',
+  description:
+    'An advanced course for qualified mediators, wishing to carry out mediations in the field of special educational needs and disability .',
+};
+
 const wayChoose = 'https://global-mediation.s3.eu-west-2.amazonaws.com/large-files/vitaly-gariev-8eqP4PekHNk-unsplash.jpg';
 
 const faqData = [

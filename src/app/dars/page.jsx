@@ -9,6 +9,12 @@ import cover from '/public/dars-cover.jpg';
 import ServiceAvailability from '@/components/dars/ServiceAvailability';
 import ContactDars from '@/components/dars/ContactDars';
 
+export const metadata = {
+  title: 'Dispute Avoidance and Resolution Service (DARS) | Global Mediation - Mediation Services in London & Nationwide',
+  description:
+    'An advanced course for qualified mediators, wishing to carry out mediations in the field of special educational needs and disability .',
+};
+
 const Dars = () => {
   return (
     <div>

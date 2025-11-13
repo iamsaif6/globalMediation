@@ -14,7 +14,7 @@ import Link from 'next/link';
 import Head from 'next/head';
 
 export const metadata = {
-  title: 'About - Global Mediation - Mediation Services UK',
+  title: 'About | Global Mediation - Mediation Services in London & Nationwide',
   description:
     'Global Mediation was established in 1999. The company offers a wide range of mediation services UK, covering all aspects of personal and professional life.',
 };

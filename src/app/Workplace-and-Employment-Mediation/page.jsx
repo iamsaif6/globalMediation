@@ -12,6 +12,12 @@ import service2 from '/public/mediation-service-2.jpg';
 import service3 from '/public/timur-shakerzianov-YlPCH249qHE-unsplash.jpg';
 import Link from 'next/link';
 
+export const metadata = {
+  title: 'Workplace and Employment Mediation | Global Mediation - Mediation Services in London & Nationwide',
+  description:
+    'An advanced course for qualified mediators, wishing to carry out mediations in the field of special educational needs and disability .',
+};
+
 // const service3 = 'https://global-mediation.s3.eu-west-2.amazonaws.com/large-files/workspace-intro.jpg';
 
 const faqData = [

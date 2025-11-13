@@ -66,7 +66,7 @@ const members = [
     ),
   },
   {
-    name: 'Emeritus Professor Irvine Gersch (BA(Hons). PGCE. DipEdPsych. PhD. FBPsS. CPsychol. PostGradDipCoaching. HCPCReg)',
+    name: 'Emeritus Professor Irvine Gersch - BA (Hons). PGCE. DipEdPsych. PhD. CPsychol. FBPsS. FHEA. HCPC Reg. PostGradDip.Coaching',
     image: Irvine,
     position: 'Non-Executive Director',
     details: (

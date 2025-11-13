@@ -48,7 +48,7 @@ const services = [
       'EHCP content disputes',
       'School placement disagreements',
       'Tribunal appeals',
-      'Mediation advice certificate appointments',
+      'Mediation advice certificates',
       'Annual review disputes',
       'Preparing for adulthood discussions',
     ],

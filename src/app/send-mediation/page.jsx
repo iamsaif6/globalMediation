@@ -15,7 +15,7 @@ import cover from '/public/sendMediationHeader.jpg';
 const wayChoose = 'https://global-mediation.s3.eu-west-2.amazonaws.com/large-files/Why Choose Global Mediation for SEND.jpg';
 
 export const metadata = {
-  title: 'Send Mediation - Global Mediation',
+  title: 'Send Mediation | Global Mediation - Mediation Services in London & Nationwide',
   description:
     'Submit your mediation requests to Global Mediation. Our professional mediators help resolve disputes efficiently and collaboratively.',
   openGraph: {

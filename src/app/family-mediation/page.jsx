@@ -12,6 +12,12 @@ import dispute from '/public/family-dispute.jpg';
 import Link from 'next/link';
 import wayChoose from '/public/why-choose-family.jpg';
 
+export const metadata = {
+  title: 'Family Mediation | Global Mediation - Mediation Services in London & Nationwide',
+  description:
+    'An advanced course for qualified mediators, wishing to carry out mediations in the field of special educational needs and disability .',
+};
+
 const faqData = [
   {
     key: 1,

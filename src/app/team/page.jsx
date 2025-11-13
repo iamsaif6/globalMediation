@@ -16,6 +16,66 @@ import adam from '/public/members/Adam.jpeg';
 import male from '/public/man.jpg';
 import female from '/public/female.png';
 
+const caseManagment = [
+  { name: 'Anni Williams', title: 'Commercial & Business Development Manager' },
+  {
+    name: 'Karen Morrison',
+    title: 'Operations Manager',
+  },
+  {
+    name: 'Nayara Seibet',
+    title: 'SEN Team Lead',
+  },
+  {
+    name: 'Christina Tsangari',
+    title: 'Client Service Lead',
+  },
+  {
+    name: 'Natalie Gersch',
+    title: 'Safeguarding Lead',
+  },
+  {
+    name: 'Nikki McCartney',
+    title: 'NI Service Coordinator',
+  },
+  {
+    name: 'Flamur',
+    title: 'Case Manager',
+  },
+  {
+    name: 'Emily ',
+    title: 'Case Manager',
+  },
+  {
+    name: 'Emmanuelle',
+    title: 'Case Manager',
+  },
+  {
+    name: 'Gemma ',
+    title: 'Case Manager',
+  },
+  {
+    name: 'George ',
+    title: 'Case Manager',
+  },
+  {
+    name: 'Jordan ',
+    title: 'Case Manager',
+  },
+  {
+    name: 'Samalie ',
+    title: 'Case Manager',
+  },
+  {
+    name: 'Sibyl ',
+    title: 'Case Manager',
+  },
+  {
+    name: 'Regine Cabegin',
+    title: 'Executive Assistant to CEO',
+  },
+];
+
 // export const metadata = {
 //   title: 'Team - Global Mediation - Mediation Services UK',
 //   description:
@@ -74,7 +134,7 @@ const members = [
     ),
   },
   {
-    name: 'Emeritus Professor Irvine Gersch (BA(Hons). PGCE. DipEdPsych. PhD. FBPsS. CPsychol. PostGradDipCoaching. HCPCReg)',
+    name: 'Emeritus Professor Irvine Gersch - BA (Hons). PGCE. DipEdPsych. PhD. CPsychol. FBPsS. FHEA. HCPC Reg. PostGradDip.Coaching',
     image: Irvine,
     position: 'Non-Executive Director',
     details: (
@@ -288,15 +348,29 @@ const Team = () => {
       </div>
 
       <div className="my-16 px-5">
+        <h5 className="text-2xl md:text-xl font-medium text-center mb-16">Case Management & Administrative Team</h5>
+
+        <div className="max-w-5xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 text-center text-gray-700">
+          {caseManagment.map((person, index) => (
+            <div
+              key={index}
+              className="bg-gray-50 hover:bg-gray-100 border border-gray-200 rounded-lg py-3 px-2 text-sm font-medium shadow-sm transition"
+            >
+              <div className="font-semibold">{person.name}</div>
+              <div className="text-xs text-gray-500 mt-1">{person.title}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="my-16 px-5">
         <h5 className="text-2xl md:text-xl font-medium text-center mb-16">
-          Our mediators are further supported by a panel of mediators and our case management team
+          Our In-House mediators are further supported by our panel mediators
         </h5>
 
         <div className="max-w-5xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 text-center text-gray-700">
           {[
             'Adrian Wilson',
-            // 'Altaf Baghdadi',
-            // 'Amanda Cowell',
             'Amy Bonehill',
             'Amymay Bowes',
             'Anita Marsh',
@@ -308,20 +382,17 @@ const Team = () => {
             'Deborah Beharie',
             'Deborah Rix',
             'Dominique Young',
-            'Emma Gersch',
             'Emma Jenkings',
             'Eva Edel',
             'Gareth Thompson',
             'Gordon Douglas',
-            'Grace Sneade',
+            'Grace Snead',
             'Helen Shea',
             'Henry Minto',
             'Jane Elias',
-            // 'Janet Kenward',
             'Janick Fielding',
-            'Jen Connell White',
+            'Jen Connell Waite',
             'Jeremy Connell',
-            // 'Jo Winters',
             'John Keers (NI)',
             'Joseline Porter',
             'Julia Smart',
@@ -330,22 +401,18 @@ const Team = () => {
             'Kyle Francis',
             'Laura Coulter',
             'Laurence Cobb',
-            // 'Laurie Randall',
             'Lise Seager',
             'Loveday Aleksieva-Fox',
-            'Mable Edge',
+            'Mabel Edge',
             'Malki Robinson',
             'Martha Monday',
             'Michelle Mendall',
             'Miranda Runnalls',
-            // 'Nigel Barr',
-            // 'Nikeisha Beharie-Campbell',
             'Nikki Lindsay',
             'Nikki Trayman',
             'Peter Phillips',
             'Peter Shaw',
             'Polly Walker',
-            // 'Rebecca Hayward',
             'Rosalind Dunlop',
             'Roy Poyntz',
             'Sally Ruthen',
@@ -356,12 +423,9 @@ const Team = () => {
             'Simon Dryer',
             'Steve Saunders',
             'Steven Mills',
-            // 'Suneta Bagri',
-            // 'Suraiya Bagdadi',
             'Tabitha Nice',
             'Tessa Herman',
             'Timea Tallodi',
-            'Vicky Mansell',
           ].map((name, index) => (
             <div
               key={index}

@@ -3,6 +3,12 @@ import Link from 'next/link';
 import { Check, Mail, Phone } from 'lucide-react';
 import overlay from '/public/OverlayBottom.png';
 
+export const metadata = {
+  title: 'Contact Us | Global Mediation - Mediation Services in London & Nationwide',
+  description:
+    'Global Mediation was established in 1999. The company offers a wide range of mediation services UK, covering all aspects of personal and professional life.',
+};
+
 const ContactUs = () => {
   return (
     <div className=" bg-gray-100">

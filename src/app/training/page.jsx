@@ -9,7 +9,7 @@ import { HeaderTraining } from '@/components/trainning/HeaderTraining';
 import Head from 'next/head';
 
 export const metadata = {
-  title: 'Mediation Training Course - Global Mediation',
+  title: 'Mediation Training Course | Global Mediation - Mediation Services in London & Nationwide',
   description:
     'An advanced course for qualified mediators, wishing to carry out mediations in the field of special educational needs and disability, […]',
 };

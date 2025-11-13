@@ -10,6 +10,12 @@ import Link from 'next/link';
 import overview from '/public/community-Overview.jpg';
 import dispute from '/public/community-dispute.jpeg';
 
+export const metadata = {
+  title: 'Community Mediation | Global Mediation - Mediation Services in London & Nationwide',
+  description:
+    'An advanced course for qualified mediators, wishing to carry out mediations in the field of special educational needs and disability .',
+};
+
 const wayChoose = 'https://global-mediation.s3.eu-west-2.amazonaws.com/large-files/ninthgrid-wCfWNod54JU-unsplash.jpg';
 
 const faqData = [

@@ -6,7 +6,7 @@ import Link from 'next/link';
 import Head from 'next/head';
 
 export const metadata = {
-  title: 'Services - Global Mediation',
+  title: 'Services | Global Mediation - Mediation Services in London & Nationwide',
   description:
     'Global Mediation offers cost-effective, efficient and confidential mediation services for a broad range of personal or professional disputes.',
 };

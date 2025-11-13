@@ -24,6 +24,7 @@ const serviceSubmenu = [
   { title: 'Family Mediation', href: '/family-mediation' },
   { title: 'Community Mediation', href: '/Community-Mediation' },
   { title: 'Civil and Legal Dispute Mediation', href: '/civil' },
+  { title: 'DARS in Northern Ireland', href: '/dars' },
 ];
 
 // const traiingSubmenu = [
@@ -55,6 +56,7 @@ const navLinksForMobile = [
       { title: 'Family Mediation', href: '/family-mediation' },
       { title: 'Community Mediation', href: '/Community-Mediation' },
       { title: 'Civil and Legal Dispute Mediation', href: '/civil' },
+      { title: 'DARS in Northern Ireland', href: '/dars' },
     ],
   },
   {
