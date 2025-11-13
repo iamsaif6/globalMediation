@@ -68,17 +68,17 @@ const Footer = () => {
           <Link className="py-[6px] block" href="/services">
             Services
           </Link>
-          <Link className="py-[6px] block" href="/training">
-            Training
-          </Link>
-          <Link className="py-[6px] block" href="/dars">
-            DARS
-          </Link>
-          {/* <Link className="py-[6px] block" href="/blog">
+          <Link className="py-[6px] block" href="/resources">
             Resources
-          </Link> */}
-          <Link className="py-[6px]  block" href="/about">
+          </Link>
+          <Link className="py-[6px] block" href="/about">
             About Us
+          </Link>
+          <Link target="_blank" className="py-[6px]  block" href="https://portal.globalmediation.co.uk/login/">
+            Login
+          </Link>
+          <Link className="py-[6px]  block" href="/contact">
+            Contact Us
           </Link>
         </div>
       </div>
