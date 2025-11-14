@@ -15,8 +15,8 @@ const Blog = async () => {
         subTitle={'Take the first step toward becoming a qualified mediator or enhancing your existing mediation skills.'}
         Button1Link={'/contact'}
         Button1Text={'Enrol in a mediation training programme today'}
-        Button2Link={'/contact'}
-        Button2Text={'Contact us for upcoming course dates'}
+        // Button2Link={'/contact'}
+        // Button2Text={'Contact us for upcoming course dates'}
       />
     </div>
   );

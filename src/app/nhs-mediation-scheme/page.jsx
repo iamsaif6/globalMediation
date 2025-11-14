@@ -315,19 +315,17 @@ const MainServices = () => {
                       <div className="px-6 pb-6 border-t border-gray-100">
                         <div className="grid grid-cols-2 gap-3 mt-4">
                           {mediators.map((mediator, index) => (
-  <Link
-    key={index}
-    href={mediator.cv}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="flex items-center gap-3 p-3 rounded-lg hover:bg-blue-50 transition-colors duration-200"
-  >
-    <div className="w-2 h-2 bg-teal-500 rounded-full flex-shrink-0"></div>
-    <span className="text-black font-medium hover:underline">
-      {mediator.name}
-    </span>
-  </Link>
-))}
+                            <Link
+                              key={index}
+                              href={mediator.cv}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="flex items-center gap-3 p-3 rounded-lg hover:bg-blue-50 transition-colors duration-200"
+                            >
+                              <div className="w-2 h-2 bg-teal-500 rounded-full flex-shrink-0"></div>
+                              <span className="text-black font-medium hover:underline">{mediator.name}</span>
+                            </Link>
+                          ))}
                         </div>
                       </div>
                     )}
@@ -369,8 +367,8 @@ const MainServices = () => {
         subTitle={'Your trusted partner in conflict resolution'}
         Button1Text={'Schedule consultation'}
         Button1Link={'/contact'}
-        Button2Text={'Contact us'}
-        Button2Link={'/contact'}
+        // Button2Text={'Contact us'}
+        // Button2Link={'/contact'}
       />
     </div>
   );

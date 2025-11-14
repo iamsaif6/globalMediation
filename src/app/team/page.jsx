@@ -101,7 +101,7 @@ const members = [
   {
     name: 'Jeff Lermer',
     image: jeff,
-    position: 'Chief Financial Officer & Accredited Mediation',
+    position: 'Chief Financial Officer & Accredited Mediator',
     details: (
       <p>
         Jeff is an accredited mediator and the Chief Financial Officer of Global Mediation. With over 30 years of commercial and financial
@@ -117,7 +117,7 @@ const members = [
   {
     name: 'Emma Gersch',
     image: emma,
-    position: 'Specialist Mediator',
+    position: 'Global Training Director',
     details: (
       <p>
         Emma is a theatre director, trainer, mediator and coach with over 20 years’ experience designing and delivering training across the
@@ -302,7 +302,7 @@ const mediator = [
 const Team = () => {
   const [selectedMember, setSelectedMember] = useState(null);
   return (
-    <div className=" py-16 lg:max-w-[1318px] mx-auto md:py-[80px] mt-[10px] md:mt-[80px]">
+    <div className=" py-24 lg:max-w-[1318px] mx-auto md:py-[80px] mt-[10px] md:mt-[80px]">
       <div>
         <h2 className="text-4xl font-medium text-center mb-16">Leadership Team</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -326,7 +326,7 @@ const Team = () => {
       </div>
 
       <div>
-        <h2 className="text-4xl font-medium text-center mb-16">Mediator Team</h2>
+        <h2 className="text-4xl font-medium text-center mb-16">In-House Mediators</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {mediator.map(item => (
             <div className="px-5 min-h-[250px] lg:px-[25px]   mb-[20px]">

@@ -33,7 +33,7 @@ const members = [
   {
     name: 'Jeff Lermer',
     image: jeff,
-    position: 'Chief Financial Officer & Accredited Mediation',
+    position: 'Chief Financial Officer & Accredited Mediator',
     details: (
       <p>
         Jeff is an accredited mediator and the Chief Financial Officer of Global Mediation. With over 30 years of commercial and financial
@@ -49,7 +49,7 @@ const members = [
   {
     name: 'Emma Gersch',
     image: emma,
-    position: 'Specialist Mediator',
+    position: 'Global Training Director',
     details: (
       <p>
         Emma is a theatre director, trainer, mediator and coach with over 20 years’ experience designing and delivering training across the

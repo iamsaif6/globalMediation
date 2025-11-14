@@ -20,7 +20,7 @@ const faqData = [
     key: 3,
     question: 'Do You Offer Online Training?',
     answer:
-      'The Foundation and Advanced SEND Mediation Courses are face to face. . Mediation provides an opportunity for cases to be looked at in detail and considered with greater care than usual. Face to face meetings provide the opportunity to clarify positions and understand other points of view; to explore creative and imaginative solutions that may not have been considered previously. It gives parties the opportunity to rebuild trust and re-establish a working relationship.',
+      'The Foundation and Advanced SEND Mediation Courses are face to face. Mediation provides an opportunity for cases to be looked at in detail and considered with greater care than usual. Face to face meetings provide the opportunity to clarify positions and understand other points of view; to explore creative and imaginative solutions that may not have been considered previously. It gives parties the opportunity to rebuild trust and re-establish a working relationship.',
   },
 ];
 

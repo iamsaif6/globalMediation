@@ -1,10 +1,8 @@
 import Marque from '@/components/home/Marque';
-import MediationCards from '@/components/home/MediationCards';
 import Link from 'next/link';
 import FeedbackCarousel from '@/components/home/FeedbackCarousel';
 import ServiceCarousel from '@/components/home/ServiceCarousel';
 import Serving from '@/components/home/Serving';
-import MediationCalculation from '@/components/home/MediationCalculation';
 import betterWay from '/public/a betterway 2.jpeg';
 import Image from 'next/image';
 import LearnMore from '@/components/home/LearnMore';
@@ -12,7 +10,6 @@ import CTA from '@/components/shared/CTA';
 import WhyMediation from '@/components/home/WhyMediation';
 import Header from '@/components/home/Header';
 import Head from 'next/head';
-import MeetOurFounder from '@/components/home/MeetOurFounder';
 import TeamCarousel from '@/components/home/TeamCarousel';
 
 export default function Home() {
@@ -30,9 +27,6 @@ export default function Home() {
       <div id="root">
         <Header />
         <Marque />
-        {/* <MediationCards /> */}
-        {/*Start Learn About Mediation */}
-        {/* my-[64px] md:my-[80px] */}
         <section
           aria-label="A Better Way to Resolve Disputes"
           className="grid grid-cols-2 lg:max-w-[1318px] mx-auto gap-4 mb-[64px] md:mb-[80px]  px-5 md:px-[60px]"
@@ -58,31 +52,19 @@ export default function Home() {
             <Image className="object-cover object-left h-full w-full" alt="A Better Way" src={betterWay} />
           </div>
         </section>
-        {/*End Learn About Mediation */}
         <FeedbackCarousel title={'What our clients say'} />
         <WhyMediation />
         <ServiceCarousel />
         <Serving />
-        {/* Team Carousel */}
         <section className="bg-secondary pb-[120px] pt-16 md:pt-[80px] md:pb-[130px] mt-[10px] md:mt-[80px]">
-          {/* <h4 className="text-4xl md:text-5xl mb-12 md:mb-[70px] text-white text-center px-4 font-medium">Meet The Founder</h4> */}
-          {/* <MeetOurFounder /> */}
           <TeamCarousel />
         </section>
-
-        {/* <section className=" py-16 lg:max-w-[1318px] mx-auto md:py-[80px] mt-[10px] md:mt-[80px]">
-          <TeamCarousel />
-        </section> */}
-
-        {/* <MediationCalculation /> */}
         <LearnMore />
         <CTA
           title={'Ready to resolve your dispute?'}
           subTitle={'We are here to help.'}
           Button1Text={'Schedule consultation'}
           Button1Link={'/contact'}
-          Button2Text={'Contact us'}
-          Button2Link={'/contact'}
         />
       </div>
     </>

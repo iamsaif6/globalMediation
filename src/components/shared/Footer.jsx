@@ -112,7 +112,7 @@ const Footer = () => {
         />
       </svg>
       <svg
-        className=" absolute bottom-1 right-[5%]"
+        className=" absolute bottom-8 right-[4%]"
         xmlns="http://www.w3.org/2000/svg"
         width="280"
         height="288"
@@ -129,5 +129,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-// Test

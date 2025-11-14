@@ -100,7 +100,7 @@ const page = () => {
         title={'SEND Mediation'}
         image={service1}
         subtitle={
-          'SEND disputes can be stressful and emotionally overwhelming, since they involve the wellbeing or education of a child or young person. Whether the situation involves formal EHCP decisions, appeals, or long-standing breakdowns in communication, our experienced mediators offer impartial, trusted support every step of the way. Our experienced mediators help families, young people, children, and local authorities work together to find respectful, balanced outcomes, with the child’s needs always at the centre'
+          'SEND disputes can be stressful and emotionally overwhelming, since they involve the wellbeing or education of a child or young person. Whether the situation involves formal EHCP decisions, appeals, or long-standing breakdowns in communication, our experienced mediators offer impartial, trusted support every step of the way. Our experienced mediators help families, young people, children, and local authorities work together to find respectful, balanced outcomes, with the child’s needs always at the centre.'
         }
         items={[
           'Encourages understanding and cooperation',

@@ -74,8 +74,8 @@ const Training = () => {
         subTitle={'Whether you’re qualifying for the first time or building on existing experience, we’re here to support your growth.'}
         Button1Link={'/contact'}
         Button1Text={'Enrol in a Mediation Training Programme'}
-        Button2Link={'/contact'}
-        Button2Text={'Contact Us for Upcoming Course Dates'}
+        // Button2Link={'/contact'}
+        // Button2Text={'Contact Us for Upcoming Course Dates'}
       />
     </div>
   );
