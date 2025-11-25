@@ -1,6 +1,7 @@
 import CTA from '@/components/shared/CTA';
 import React from 'react';
-import heaerImage from '/public/nhs-logo-880x4951.png';
+// import heaerImage from '/public/nhs-logo-880x4951.png';
+import heaerImage from '/public/nhs-header.jpg';
 import Link from 'next/link';
 import Head from 'next/head';
 import about from '/public/nhs-about.jpg';
@@ -84,17 +85,17 @@ const steps = [
 const documents = [
   {
     title: 'NHS mediation scheme procedure',
-    description: 'Full procedure including models, packages, cancellations and confidentiality.',
+    description: 'What is mediation, how to prepare, what to expect & confidentiality',
     link: '/PDF/NHS Resolution  Claims Mediation  Service Procedure- 2025.pdf',
   },
   {
-    title: 'Guidance for parties ',
-    description: 'Information on how to prepare, who should attend, and what to expect.',
+    title: 'Draft Mediation Agreement',
+    description: '',
     link: '/PDF/NHS Model Hybrid Mediation Agreement- January 2025.pdf',
   },
   {
     title: 'Post mediation feedback form',
-    description: 'Summary and answers to common questions.',
+    description: '',
     link: '/PDF/Feedback Questionnaire.pdf',
   },
 ];
@@ -131,18 +132,26 @@ const MainServices = () => {
         className="pt-[137px] borer grid gap-[50px] grid-cols-1 lg:grid-cols-2 relative md:pt-[180px] gap-y-12 lg:gap-y-0  md:pb-[70px] px-5 md:px-[60px] items-center"
       >
         <div className="order-2 lg:order-1  ">
-          <div className="min-h-[200px] lg:min-h-[400px] flex items-center justify-center lg:max-w-[1130px] bg-white mx-auto border border-[#D1D1D6] rounded-3xl p-6 w-full ">
-            <Image alt="ZSL" className="max-w-[150px]" src={heaerImage} />
+          <div className="min-h-[200px] lg:min-h-[400px] flex items-center justify-center lg:max-w-[1130px]  mx-auto overflow-hidden  rounded-3xl p-6 w-full ">
+            <Image alt="ZSL" className="object-cover w-full h-full rounded-3xl" src={heaerImage} />
           </div>
         </div>
-        <div className="text-center order-1 lg:order-2 lg:text-left   relative z-10 ">
-          <h2 className="font-medium mb-4 tracking-[-4%] leading-[120%] text-[30px]  lg:text-[50px] text-white">NHS mediation scheme</h2>
-          <p className="flex flex-col md:flex-row  justify-center lg:justify-start  items-center text-sm lg:text-sm text-black">
-            {/* <span> Zoological Society of London (ZSL)</span> */}
-            {/* <span className="w-1.5 h-1.5 hidden md:block rounded-full bg-[#FF634A]  mx-[7px]"></span> */}
-            Independent, professional mediation for resolving NHS disputes – confidential, impartial, and trusted.
+        <div className="text-center order-1 lg:order-2 lg:text-left  relative z-10 ">
+          <h2 className="font-medium mb-4 tracking-[-4%] leading-[120%] text-[30px]  lg:text-[50px] text-white">NHS Mediation Scheme</h2>
+          <p className="  justify-center lg:justify-start  items-center text-sm lg:text-base text-black">
+            Independent mediation support, delivered by Global Mediation on behalf of NHS Resolution <br /> <br />
+            Global Mediation has been appointed by NHS Resolution to deliver workplace and complaint-related mediation services across the
+            NHS.
+            <br /> <br />
+            The service provides impartial, highly structured support for resolving disputes that arise within NHS settings. It offers a
+            calm, confidential space for all parties to be heard, reducing escalation, improving communication, and promoting lasting
+            resolution.
+            <br /> <br />
+            Mediators are accredited, experienced, and approved by NHS Resolution, with specialist expertise in sensitive and complex
+            health-based contexts. Every mediation follows a fair and consistent process, designed specifically with NHS environments in
+            mind.
           </p>
-          <div className="flex md:block mt-10 justify-center">
+          {/* <div className="flex md:block mt-10 justify-center">
             <button
               className={`bg-primary inline-block border-primary font-semibold text-lg text-[#FCFCFD] px-[38px] py-3 rounded-3xl lg:rounded-[40px]`}
             >
@@ -150,12 +159,12 @@ const MainServices = () => {
                 Contact us
               </Link>
             </button>
-          </div>
+          </div> */}
         </div>
       </header>
 
       {/* about */}
-      <div className=" pt-16 pb-0 px-5 md:px-16 md:py-[80px] grid grid-cols-2 gap-[80px]">
+      {/* <div className=" pt-16 pb-0 px-5 md:px-16 md:py-[80px] grid grid-cols-2 gap-[80px]">
         <div className="col-span-2 flex justify-center  flex-col gap-9 lg:col-span-1">
           <h2 className="font-medium text-4xl md:text-5xl  leading-[120%]">About the NHS Mediation Scheme</h2>
           <p className="text-black text-base md:text-lg  leading-[150%]">
@@ -175,16 +184,14 @@ const MainServices = () => {
           </div>
         </div>
         <div className="relative  hidden md:block col-span-2 lg:col-span-1 rounded-3xl overflow-hidden">
-          {/* <div className={`from-[rgba(67,0,106,0.1)] to-[#43006aa3] absolute inset-0 bg-gradient-to-b  z-10`}></div> */}
           <Image className="object-cover w-full max-h-[700px]  h-full relative z-0" alt={'Experienced Leader In Mediation'} src={about} />
         </div>
-      </div>
+      </div> */}
 
       <div className="">
         <div className="bg-white  py-16 lg:py-24">
           <div className="">
-            {/* How it Works Section */}
-            <section className=" bg-[#F9F8FF] pt-16 pb-0 px-5 md:px-16 md:py-[80px]">
+            {/* <section className=" bg-[#F9F8FF] pt-16 pb-0 px-5 md:px-16 md:py-[80px]">
               <div className="lg:text-center mb-16">
                 <h2 className=" lg:text-5xl  text-purple-800 mb-6 font-medium text-4xl md:text-5xl  leading-[120%]">How it works</h2>
                 <p className=" text-black text-base md:text-lg leading-[150%] my-6 max-w-3xl mx-auto">
@@ -192,7 +199,6 @@ const MainServices = () => {
                 </p>
               </div>
 
-              {/* Modern Step Cards */}
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
                 {steps.slice(0, 3).map((step, index) => (
                   <div key={step.number} className="group relative">
@@ -201,21 +207,14 @@ const MainServices = () => {
                         <div className="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center text-white font-bold text-xl shadow-lg">
                           {step.number}
                         </div>
-                        {/* <div className="w-12 h-12 bg-[#F9F8FF] rounded-xl flex items-center justify-center text-teal-600 group-hover:bg-teal-100 transition-colors">
-                          {index === 0 && <FileText className="w-6 h-6" />}
-                          {index === 1 && <Users className="w-6 h-6" />}
-                          {index === 2 && <Calendar className="w-6 h-6" />}
-                        </div> */}
                       </div>
                       <p className="font-medium  text-secondary my-[30px] lg:my-[40px] text-2xl">{step.title}</p>
                       <p className=" text-base lg:text-lg  mb-[25px] font-normal">{step.description}</p>
                     </div>
-                    {/* Connection Line */}
                   </div>
                 ))}
               </div>
 
-              {/* Bottom Row */}
               <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-12">
                 {steps.slice(3).map((step, index) => (
                   <div key={step.number} className="group relative">
@@ -224,10 +223,6 @@ const MainServices = () => {
                         <div className="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center text-white font-bold text-xl shadow-lg">
                           {step.number}
                         </div>
-                        {/* <div className="w-12 h-12 bg-[#F9F8FF] rounded-xl flex items-center justify-center text-teal-600 group-hover:bg-teal-100 transition-colors">
-                          {index === 0 && <MessageCircle className="w-6 h-6" />}
-                          {index === 1 && <CheckCircle className="w-6 h-6" />}
-                        </div> */}
                       </div>
                       <p className="font-medium  text-secondary my-[30px] lg:my-[40px] text-2xl">{step.title}</p>
                       <p className="text-base lg:text-lg  mb-[25px] font-normal">{step.description}</p>
@@ -235,25 +230,18 @@ const MainServices = () => {
                   </div>
                 ))}
               </div>
-
-              {/* CTA Section */}
-              {/* <div className="text-center">
-                <div className="inline-flex items-center gap-4">
-                  <button className="bg-gradient-to-r from-teal-500 to-teal-600 hover:from-teal-600 hover:to-teal-700 text-white px-10 py-4 rounded-2xl font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-                    Start Your Mediation Journey
-                  </button>
-                  <button className="bg-white border-2 border-teal-500 text-teal-600 hover:bg-teal-50 px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300">
-                    Learn More
-                  </button>
-                </div>
-              </div> */}
-            </section>
+            </section> */}
 
             {/* Further Information Section */}
             <section className="mb-10 lg:mb-20 bg-secondary pt-16 pb-10 px-5 md:px-16 md:py-[80px]">
               <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
                 <div>
-                  <h2 className=" lg:text-5xl  !text-white mb-6 font-medium text-4xl md:text-5xl  leading-[120%]">Further information</h2>
+                  <div className="text-left mb-16">
+                    <h2 className=" lg:text-5xl  !text-white mb-6 font-medium text-4xl md:text-5xl  leading-[120%]">How it works</h2>
+                    <p className=" text-white text-base md:text-lg leading-[150%] my-6 max-w-3xl ">
+                      A streamlined process to support you through NHS mediation – from enquiry to resolution.
+                    </p>
+                  </div>
                   <p className="text-white text-base md:text-lg  leading-[150%]">For full guidance on how the scheme works, please see:</p>
 
                   <div className="space-y-4 mt-10 text-white">
@@ -295,11 +283,11 @@ const MainServices = () => {
                   </div>
                 </div>
                 <div>
-                  <h2 className="lg:text-5xl  text-purple-800 mb-6 font-medium text-4xl md:text-5xl  leading-[120%]">Mediators panel</h2>
+                  <h2 className="lg:text-5xl  text-purple-800 mb-6 font-medium text-4xl md:text-5xl  leading-[120%]">Meet the mediators</h2>
                   <p className="text-black text-base md:text-lg  leading-[150%]">
-                    All mediators listed below are approved to deliver support via the NHS Mediation Scheme. <br /> <br />
-                    You can either choose a mediator by name, or ask Global Mediation to appoint someone on your behalf, based on
-                    availability and relevant experience.
+                    Global Mediation works with a trusted panel of accredited mediators, all approved by NHS Resolution. Each brings deep
+                    experience in workplace, clinical and complaint-based mediation, with a focus on empathy, professionalism and
+                    neutrality.
                   </p>
 
                   <div className="border border-gray-200 mt-7 rounded-3xl bg-white">
@@ -338,12 +326,18 @@ const MainServices = () => {
             <section className="pt-16 pb-10 px-5 md:px-16 md:py-[80px] bg-secondary">
               <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
                 <div>
-                  <h2 className="lg:text-5xl !text-white mb-6 font-medium text-4xl md:text-5xl  leading-[120%]">About Global Mediation</h2>
+                  <h2 className="lg:text-5xl !text-white mb-6 font-medium text-4xl md:text-5xl  leading-[120%]">Get in touch</h2>
                   <p className="text-white text-base md:text-lg  leading-[150%]">
-                    We exist to support people through difficult conversations, with calm, clarity and care. Our mediation services create
-                    space for progress, helping organisations, teams, communities, families and individuals navigate conflict, find common
-                    ground and reach resolution, without judgment or pressure.
+                    To refer a case, request further information, or discuss commissioning options, please get in touch using the contact
+                    form. A member of our team will respond promptly.
                   </p>
+                  <button
+                    className={`bg-primary mt-10 inline-block border-primary font-semibold text-lg text-[#FCFCFD] px-[38px] py-3 rounded-3xl lg:rounded-[40px]`}
+                  >
+                    <Link className="w-full" href="/contact">
+                      Contact us
+                    </Link>
+                  </button>
                 </div>
 
                 <div className="lg:pl-8">
