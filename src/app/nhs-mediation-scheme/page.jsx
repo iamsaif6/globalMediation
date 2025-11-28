@@ -255,7 +255,9 @@ const MainServices = () => {
                               <ArrowDown size={12} />
                             </p>
                           </Link>
-                          <p className="text-white  mt-1">— {doc.description}</p>
+                          <p className="text-white  mt-1">
+                            {doc.description && '-'} {doc.description}
+                          </p>
                         </div>
                       </div>
                     ))}
