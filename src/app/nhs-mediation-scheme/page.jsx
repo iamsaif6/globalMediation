@@ -235,6 +235,8 @@ const MainServices = () => {
             <h2 className="lg:text-5xl !text-white mb-6 font-medium text-4xl md:text-5xl leading-[120%]">
               Get in touch
             </h2>
+ <p className="text-white text-base md:text-lg  leading-[150%]">                   To refer a case, request further information, or discuss commissioning options, please get in touch using the contact                   form. A member of our team will respond promptly.                 </p>                 <button                   className={bg-primary mt-10 inline-block border-primary font-semibold text-lg text-[#FCFCFD] px-[38px] py-3 rounded-3xl lg:rounded-[40px]}                 >                   <Link className="w-full" href="/contact">                     Contact us                   </Link>                 </button>               
+
           </div>
 
           <div className="lg:pl-8">
