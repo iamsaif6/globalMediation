@@ -140,8 +140,7 @@ const MainServices = () => {
           <h2 className="font-medium mb-4 tracking-[-4%] leading-[120%] text-[30px]  lg:text-[50px] text-white">NHS Resolution Mediation Service</h2>
           <p className="  justify-center lg:justify-start  items-center text-sm lg:text-base text-black">
             Independent mediation support, delivered by Global Mediation on behalf of NHS Resolution <br /> <br />
-            Global Mediation has been appointed by NHS Resolution to deliver workplace and complaint-related mediation services across the
-            NHS.
+            Global Mediation has been appointed by NHS Resolution to provide independent mediation services to the NHS for the resolution of personal injury and clinical negligence claims.
             <br /> <br />
             The service provides impartial, highly structured support for resolving disputes that arise within NHS settings. It offers a
             calm, confidential space for all parties to be heard, reducing escalation, improving communication, and promoting lasting
