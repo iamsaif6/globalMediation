@@ -137,7 +137,7 @@ const MainServices = () => {
           </div>
         </div>
         <div className="text-center order-1 lg:order-2 lg:text-left  relative z-10 ">
-          <h2 className="font-medium mb-4 tracking-[-4%] leading-[120%] text-[30px]  lg:text-[50px] text-white">NHS Mediation Scheme</h2>
+          <h2 className="font-medium mb-4 tracking-[-4%] leading-[120%] text-[30px]  lg:text-[50px] text-white">NHS Resolution Mediation Service</h2>
           <p className="  justify-center lg:justify-start  items-center text-sm lg:text-base text-black">
             Independent mediation support, delivered by Global Mediation on behalf of NHS Resolution <br /> <br />
             Global Mediation has been appointed by NHS Resolution to deliver workplace and complaint-related mediation services across the
