@@ -265,7 +265,7 @@ const MainServices = () => {
 
                 <div className="lg:pl-8">
                   <div className="relative">
-                    <Image src={further} alt="NHS Documentation" className="w-full h-auto rounded-2xl shadow-lg" />
+                    {* <Image src={further} alt="NHS Documentation" className="w-full h-auto rounded-2xl shadow-lg" /> *}
                   </div>
                 </div>
               </div>
