@@ -89,7 +89,7 @@ const documents = [
     link: '/PDF/NHS Resolution  Claims Mediation  Service Procedure- 2025.pdf',
   },
   {
-    title: 'Draft Mediation Agreement',
+    title: 'Specimen Mediation Agreement',
     description: '',
     link: '/PDF/NHS Model Hybrid Mediation Agreement- January 2025.pdf',
   },
