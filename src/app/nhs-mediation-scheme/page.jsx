@@ -277,15 +277,6 @@ const MainServices = () => {
             {/* Mediators Panel Section */}
             <section className="pt-16 pb-10 px-5 md:px-16 md:py-[80px]">
               <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-                <div className="">
-                  <div className="relative">
-                    {/* <Image
-                      src={panel}
-                      alt="Professional Mediators"
-                      className="w-full max-h-[700px] object-cover h-auto rounded-2xl shadow-lg"
-                    /> */}
-                  </div>
-                </div>
                 <div>
                   <h2 className="lg:text-5xl  text-purple-800 mb-6 font-medium text-4xl md:text-5xl  leading-[120%]">Meet the mediators</h2>
                   <p className="text-black text-base md:text-lg  leading-[150%]">
@@ -321,6 +312,15 @@ const MainServices = () => {
                         </div>
                       </div>
                     )}
+                  </div>
+                </div>
+                <div className="">
+                  <div className="relative">
+                    {/* <Image
+                      src={panel}
+                      alt="Professional Mediators"
+                      className="w-full max-h-[700px] object-cover h-auto rounded-2xl shadow-lg"
+                    /> */}
                   </div>
                 </div>
               </div>
