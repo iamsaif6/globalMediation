@@ -25,6 +25,7 @@ const serviceSubmenu = [
   { title: 'Community Mediation', href: '/Community-Mediation' },
   { title: 'Civil and Legal Dispute Mediation', href: '/civil' },
   { title: 'DARS in Northern Ireland', href: '/dars' },
+  { title: 'NHS Mediation Service', href: '/nhs-mediation-scheme' },
 ];
 
 // const traiingSubmenu = [
@@ -57,6 +58,7 @@ const navLinksForMobile = [
       { title: 'Community Mediation', href: '/Community-Mediation' },
       { title: 'Civil and Legal Dispute Mediation', href: '/civil' },
       { title: 'DARS in Northern Ireland', href: '/dars' },
+      { title: 'NHS Mediation Service', href: '/nhs-mediation-scheme' },
     ],
   },
   {
@@ -108,6 +110,8 @@ const navLinks = [
       { title: 'Family Mediation', href: '/family-mediation' },
       { title: 'Community Mediation', href: '/Community-Mediation' },
       { title: 'Civil and Legal Dispute Mediation', href: '/civil' },
+      { title: 'DARS in Northern Ireland', href: '/dars' },
+      { title: 'NHS Mediation Service', href: '/nhs-mediation-scheme' },
     ],
   },
 
@@ -526,7 +530,7 @@ const Navbar = () => {
 
                         <div
                           className={`mt-2 pl-4 overflow-hidden transition-all duration-300 ease-in-out ${
-                            mobileSubmenuOpen === link.title ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                            mobileSubmenuOpen === link.title ? 'max-h-[420px] opacity-100' : 'max-h-0 opacity-0'
                           }`}
                         >
                           {link.megaMenuItems.map((item, index) => (
