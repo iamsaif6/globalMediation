@@ -67,7 +67,7 @@ const ContactUs = () => {
               <p className="text-base text-white lg:text-lg text-left lg:text-center">
                 Get in touch to speak with a specialist about your situation.
                 Whether you're navigating a conflict, booking mediation, or
-                exploring training, we're here to help
+                exploring training, we're here to help.
               </p>
             </div>
           </div>

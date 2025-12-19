@@ -1,38 +1,42 @@
-import React from 'react';
-import Image from 'next/image';
-import Introduction from '@/components/service/Introduction';
-import FeedbackCarousel from '@/components/home/FeedbackCarousel';
-import FAQ from '@/components/service/FAQ';
-import CTA from '@/components/shared/CTA';
-import SectionHeading from '@/components/shared/SectionHeading';
-import headerImage from '/public/community-banner.jpg';
-import Link from 'next/link';
-import overview from '/public/community-Overview.jpg';
-import dispute from '/public/community-dispute.jpeg';
+import React from "react";
+import Image from "next/image";
+import Introduction from "@/components/service/Introduction";
+import FeedbackCarousel from "@/components/home/FeedbackCarousel";
+import FAQ from "@/components/service/FAQ";
+import CTA from "@/components/shared/CTA";
+import SectionHeading from "@/components/shared/SectionHeading";
+import headerImage from "/public/community-banner.jpg";
+import Link from "next/link";
+import overview from "/public/community-Overview.jpg";
+import dispute from "/public/community-dispute.jpeg";
 
 export const metadata = {
-  title: 'Community Mediation | Global Mediation - Mediation Services in London & Nationwide',
+  title:
+    "Community Mediation | Global Mediation - Mediation Services in London & Nationwide",
   description:
-    'An advanced course for qualified mediators, wishing to carry out mediations in the field of special educational needs and disability .',
+    "An advanced course for qualified mediators, wishing to carry out mediations in the field of special educational needs and disability .",
 };
 
-const wayChoose = 'https://global-mediation.s3.eu-west-2.amazonaws.com/large-files/ninthgrid-wCfWNod54JU-unsplash.jpg';
+const wayChoose = "/why-choose-mediation.jpg";
 
 const faqData = [
   {
     key: 1,
-    question: 'Is Mediation Confidential?',
-    answer: 'Yes — what’s said in the session stays private unless everyone agrees to share it.',
+    question: "Is Mediation Confidential?",
+    answer:
+      "Yes — what’s said in the session stays private unless everyone agrees to share it.",
   },
   {
     key: 2,
-    question: 'Do We Have to Meet Face-to-Face?',
-    answer: 'No — we offer online, phone, or separate meetings if that’s more comfortable.',
+    question: "Do We Have to Meet Face-to-Face?",
+    answer:
+      "No — we offer online, phone, or separate meetings if that’s more comfortable.",
   },
   {
     key: 3,
-    question: 'What if the Other Person Won’t Take Part?',
-    answer: 'We’ll reach out and explain the process. Mediation is voluntary, but we encourage everyone to give it a try.',
+    question: "What if the Other Person Won’t Take Part?",
+    answer:
+      "We’ll reach out and explain the process. Mediation is voluntary, but we encourage everyone to give it a try.",
   },
 ];
 
@@ -42,23 +46,24 @@ const page = () => {
       <header
         style={{
           backgroundImage: `url('${headerImage.src}'), linear-gradient(to right, rgba(62,0,101,0.60) 1.68%, rgba(62,0,101,0.25) 69.4%)`,
-          backgroundBlendMode: 'multiply',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
+          backgroundBlendMode: "multiply",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
         }}
-        className=" pt-[187px] relative max-h-[1050px] flex items-center h-screen md:pt-[238px] pb-[176px] md:pb-[203px] px-5 md:px-[60px]"
-      >
+        className=" pt-[187px] relative max-h-[1050px] flex items-center h-screen md:pt-[238px] pb-[176px] md:pb-[203px] px-5 md:px-[60px]">
         <div className="w-full relative z-10 lg:max-w-[1318px] mx-auto">
           <h1 className="font-semibold tracking-[-4%] max-w-[900px] 2xl:max-w-[90%] leading-[120%] text-5xl md:text-[65px] xl:text-[4vw] !text-white">
             Community Mediation
           </h1>
           <p className="text-white mt-[25px] md:mt-4 mb-[25px] mr-auto max-w-[700px] md:mb-10 w-[100%] font-normal text-base md:text-lg xl:text-xl">
-            Supportive, impartial mediation to help resolve neighbourhood disputes and local residents resolve disputes fairly, calmly and
+            Supportive, impartial mediation to help resolve neighbourhood
+            disputes and local residents resolve disputes fairly, calmly and
             constructively — before things escalate.
           </p>
           <div className="flex md:flex-row items-center flex-col gap-4">
-            <button className={`bg-primary  border   border-primary font-semibold text-lg text-[#FCFCFD] px-6 py-3 rounded-[40px]`}>
-              <Link className="w-full" href={'/contact'}>
+            <button
+              className={`bg-primary  border   border-primary font-semibold text-lg text-[#FCFCFD] px-6 py-3 rounded-[40px]`}>
+              <Link className="w-full" href={"/contact"}>
                 Speak to a Community Mediator
               </Link>
             </button>
@@ -66,23 +71,27 @@ const page = () => {
         </div>
       </header>
       <Introduction
-        title={'Community Disputes and Mediation'}
+        title={"Community Disputes and Mediation"}
         image={overview}
         subtitle={
-          'Disagreements in our communities can have a big impact — on wellbeing, relationships and daily life. Global Mediation provides a calm, neutral space to talk things through and find a positive way forward. Whether you’re dealing with a neighbour issue, noise complaint or local dispute, we’ll support you with care, fairness and respect.'
+          "Disagreements in our communities can have a big impact — on wellbeing, relationships and daily life. Global Mediation provides a calm, neutral space to talk things through and find a positive way forward. Whether you’re dealing with a neighbour issue, noise complaint or local dispute, we’ll support you with care, fairness and respect."
         }
         items={[
-          'Encourages Understanding and Better Communication',
-          'Helps Prevent Problems from Escalating Further',
-          'Restores Peace and Connection in Your Local Area',
-          'Easy to Access and Confidential',
+          "Encourages Understanding and Better Communication",
+          "Helps Prevent Problems from Escalating Further",
+          "Restores Peace and Connection in Your Local Area",
+          "Easy to Access and Confidential",
         ]}
       />
       {/*  */}
 
       <section className="py-16 md:py-[80px] bg-secondary text-white">
         <div className="px-5 md:px-16 mb-10 md:mb-[120px] ">
-          <SectionHeading className={'!text-white'} fullWidth={true} title={'Common Community Disputes'} />
+          <SectionHeading
+            className={"!text-white"}
+            fullWidth={true}
+            title={"Common Community Disputes"}
+          />
         </div>
         <div className="mt-[0px] md:mt-[54px]">
           {/* Buttons */}
@@ -96,13 +105,14 @@ const page = () => {
                         width={1200}
                         height={1200}
                         className="object-cover w-full h-full relative z-0"
-                        alt={'Experienced Leader In Mediation'}
+                        alt={"Experienced Leader In Mediation"}
                         src={dispute}
                       />
                     </div>
                     <div>
                       <h2 className="md:text-2xl text-lg font-medium  mb-8 md:mb-6 !text-white">
-                        We work with individuals, landlords, housing providers and councils to resolve:
+                        We work with individuals, landlords, housing providers
+                        and councils to resolve:
                       </h2>
                       <ul className=" text-lg">
                         <li className="flex items-center py-6 hover:text-black hover:bg-white hover:rounded-2xl group pl-[20px]  gap-[26px] border-t-[0.5px] border-[#DAD3FF]">
@@ -119,11 +129,15 @@ const page = () => {
                         </li>
                         <li className="flex items-center py-6 hover:text-black hover:bg-white hover:rounded-2xl group  pl-[20px]  gap-[26px] border-t-[0.5px] border-[#DAD3FF]">
                           <span className="inline-block flex-shrink-0 h-[10px] group-hover:bg-primary w-[10px]  bg-white rounded-full"></span>
-                          <span>Breakdowns in Community or Resident Relationships</span>
+                          <span>
+                            Breakdowns in Community or Resident Relationships
+                          </span>
                         </li>
                         <li className="flex items-center py-6 hover:text-black hover:bg-white hover:rounded-2xl group  pl-[20px]  gap-[26px] border-t-[0.5px] border-[#DAD3FF]">
                           <span className="inline-block flex-shrink-0 h-[10px] group-hover:bg-primary w-[10px]  bg-white rounded-full"></span>
-                          <span>Conflicts Between Tenants and Housing Services</span>
+                          <span>
+                            Conflicts Between Tenants and Housing Services
+                          </span>
                         </li>
                       </ul>
                     </div>
@@ -137,7 +151,11 @@ const page = () => {
                   </div>
                   <div className="relative  h-[303px] lg:h-[403px]  hidden lg:block col-span-2 md:col-span-1 rounded-3xl overflow-hidden">
                     {/* <div className={`from-[rgba(0, 164, 159, 0.20)] to-[#006863a3] absolute inset-0 bg-gradient-to-b  z-10`}></div> */}
-                    <Image className="object-cover w-full h-full relative z-0" alt={'Experienced Leader In Mediation'} src={dispute} />
+                    <Image
+                      className="object-cover w-full h-full relative z-0"
+                      alt={"Experienced Leader In Mediation"}
+                      src={dispute}
+                    />
                   </div>
                 </div>
               </div>
@@ -148,9 +166,9 @@ const page = () => {
 
       <section className="py-16 px-5 md:px-16 md:py-[80px]">
         <SectionHeading
-          title={'How Community Mediation Works'}
+          title={"How Community Mediation Works"}
           subTitle={
-            'Our process gives everyone a chance to be heard, without judgement. It’s about finding common ground and working toward respectful solutions.'
+            "Our process gives everyone a chance to be heard, without judgement. It’s about finding common ground and working toward respectful solutions."
           }
           center={true}
         />
@@ -159,26 +177,39 @@ const page = () => {
             <p className="font-medium text-2xl leading-[140%] mb-[42px] flex items-center justify-center w-[54px] h-[54px] text-white  bg-secondary rounded-xl">
               1
             </p>
-            <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">Contact us </p>
-            <p>We’ll talk you through the process and check if mediation is right for you</p>
+            <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">
+              Contact us{" "}
+            </p>
+            <p>
+              We’ll talk you through the process and check if mediation is right
+              for you
+            </p>
           </div>
 
           <div className="bg-[#F3F1FF] rounded-xl py-[37px] md:py-[46px] px-[19px] md:px-6 col-span-4 lg:col-span-1">
             <p className="font-medium text-2xl leading-[140%] mb-[42px] flex items-center justify-center w-[54px] h-[54px] text-white  bg-secondary rounded-xl">
               2
             </p>
-            <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">Arrange a session</p>
-            <p>You’ll meet with one of our trained community mediators, together or separately</p>
+            <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">
+              Arrange a session
+            </p>
+            <p>
+              You’ll meet with one of our trained community mediators, together
+              or separately
+            </p>
           </div>
           <div className="bg-[#F3F1FF] rounded-xl py-[37px] md:py-[46px] px-[19px] md:px-6 col-span-4 lg:col-span-1">
             <p className="font-medium text-2xl leading-[140%] mb-[42px] flex items-center justify-center w-[54px] h-[54px] text-white  bg-secondary rounded-xl">
               3
             </p>
-            <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">Mediation Session</p>
+            <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">
+              Mediation Session
+            </p>
             <p className="font-normal text-base md:text-lg">
               <span className="">
-                Guided by a professional, experienced and accredited mediator, all parties are supported to share their views, explore
-                options, and agree a way forward
+                Guided by a professional, experienced and accredited mediator,
+                all parties are supported to share their views, explore options,
+                and agree a way forward
               </span>
             </p>
           </div>
@@ -187,9 +218,13 @@ const page = () => {
             <p className="font-medium text-2xl leading-[140%] mb-[42px] flex items-center justify-center w-[54px] h-[54px] text-white  bg-secondary rounded-xl">
               4
             </p>
-            <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">Agree a way forward</p>
+            <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">
+              Agree a way forward
+            </p>
             <p className="font-normal text-base md:text-lg">
-              <span className="">We’ll help you reach an outcome that works for everyone involved</span>
+              <span className="">
+                We’ll help you reach an outcome that works for everyone involved
+              </span>
             </p>
           </div>
         </div>
@@ -209,8 +244,9 @@ const page = () => {
             Why Choose Global Mediation?
           </h2>
           <p className=" text-base md:text-lg leading-[150%] mb-[56px] md:mb-[78px] text-left lg:text-center">
-            We’ve helped many people of people resolve conflicts with neighbours, landlords and community members — in ways that feel fair,
-            respectful and lasting.
+            We’ve helped many people of people resolve conflicts with
+            neighbours, landlords and community members — in ways that feel
+            fair, respectful and lasting.
           </p>
         </div>
         <div className="grid grid-cols-2 items-center gap-8">
@@ -219,7 +255,7 @@ const page = () => {
               width={1200}
               height={1200}
               className="object-cover object-bottom  w-full h-full relative z-0"
-              alt={'Experienced Leader In Mediation'}
+              alt={"Experienced Leader In Mediation"}
               src={wayChoose}
             />
           </div>
@@ -229,20 +265,26 @@ const page = () => {
               width={1200}
               height={1200}
               className="object-cover w-full h-full relative z-0"
-              alt={'Experienced Leader In Mediation'}
+              alt={"Experienced Leader In Mediation"}
               src={wayChoose}
             />
           </div>
           <div className="col-span-2 lg:col-span-1">
-            <p className="mb-6 font-semibold text-lg md:text-2xl">Why People Trust Us:</p>
+            <p className="mb-6 font-semibold text-lg md:text-2xl">
+              Why People Trust Us:
+            </p>
             <ul className="space-y-6 text-base md:text-[20px]">
               <li className="flex items-center gap-6 py-4 px-[18px] md:px-6 rounded-xl border border-[#624A70]">
                 <span className="w-[10px] flex-shrink-0 h-[10px] rounded-full group-hover:bg-primary  bg-white block"></span>
-                <p className="text-base md:text-lg font-normal leading-[140%]">Approachable Mediators Who Understand Local Issues</p>
+                <p className="text-base md:text-lg font-normal leading-[140%]">
+                  Approachable Mediators Who Understand Local Issues
+                </p>
               </li>
               <li className="flex items-center gap-6 py-4 px-[18px] md:px-6 rounded-xl border border-[#624A70]">
                 <span className="w-[10px] flex-shrink-0 h-[10px] rounded-full group-hover:bg-primary  bg-white block"></span>
-                <p className="text-base md:text-lg font-normal leading-[140%]">Supportive, Down-to-Earth Approach</p>
+                <p className="text-base md:text-lg font-normal leading-[140%]">
+                  Supportive, Down-to-Earth Approach
+                </p>
               </li>
               <li className="flex items-center gap-6 py-4 px-[18px] md:px-6 rounded-xl border border-[#624A70]">
                 <span className="w-[10px] flex-shrink-0 h-[10px] rounded-full group-hover:bg-primary  bg-white block"></span>
@@ -252,7 +294,9 @@ const page = () => {
               </li>
               <li className="flex items-center gap-6 py-4 px-[18px] md:px-6 rounded-xl border border-[#624A70]">
                 <span className="w-[10px] flex-shrink-0 h-[10px] rounded-full group-hover:bg-primary  bg-white block"></span>
-                <p className="text-base md:text-lg font-normal leading-[140%]">Focused on Helping People Live Together More Peacefully</p>
+                <p className="text-base md:text-lg font-normal leading-[140%]">
+                  Focused on Helping People Live Together More Peacefully
+                </p>
               </li>
             </ul>
           </div>
@@ -263,15 +307,22 @@ const page = () => {
       {/* <FeedbackCarousel title={'What people say'} subTitle={null} /> */}
       <div className="bg-[#F9F8FF]">
         <CTA
-          title={'Ready to Resolve a Dispute?'}
-          subTitle={'We’re here to help you sort things out — before it goes any further. You don’t need to face it alone.'}
-          Button1Link={'/contact'}
-          Button1Text={'Speak to a Mediator'}
+          title={"Ready to Resolve a Dispute?"}
+          subTitle={
+            "We’re here to help you sort things out — before it goes any further. You don’t need to face it alone."
+          }
+          Button1Link={"/contact"}
+          Button1Text={"Speak to a Mediator"}
           // Button2Text={'Get Support Now'}
           // Button2Link={'/contact'}
         />
       </div>
-      <FAQ title={'FAQs About Community Mediation'} buttonText={'Ask Us a Question'} buttonLink={'/contact'} faqData={faqData} />
+      <FAQ
+        title={"FAQs About Community Mediation"}
+        buttonText={"Ask Us a Question"}
+        buttonLink={"/contact"}
+        faqData={faqData}
+      />
     </div>
   );
 };

@@ -1,10 +1,10 @@
-'use client';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import Slider from 'react-slick';
-import Link from 'next/link';
-import { ArrowLeft, ArrowRight } from 'lucide-react';
-import { useRef } from 'react';
+"use client";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import Link from "next/link";
+import { ArrowLeft, ArrowRight } from "lucide-react";
+import { useRef } from "react";
 
 const ServiceCarousel = () => {
   const sliderRef = useRef(null);
@@ -14,8 +14,7 @@ const ServiceCarousel = () => {
     return (
       <div
         className={`flex justify-center -translate-y-1/2  absolute top-1/2 border border-[#9C9C9C] left-0 md:-left-[60px] z-20 items-center text-[#9C9C9C] bg-white  rounded-full hover:bg-primary hover:border-primary hover:text-white  cursor-pointer w-[35px] h-[35px] md:w-12 md:h-12`}
-        onClick={onClick}
-      >
+        onClick={onClick}>
         <ArrowLeft />
       </div>
     );
@@ -26,8 +25,7 @@ const ServiceCarousel = () => {
     return (
       <div
         className={`flex justify-center bg-white -translate-y-1/2 absolute top-1/2 border border-[#9C9C9C] right-0 md:-right-[60px] z-20   items-center text-[#9C9C9C]  rounded-full hover:bg-primary hover:border-primary hover:text-white  cursor-pointer w-[35px] h-[35px] md:w-12 md:h-12`}
-        onClick={onClick}
-      >
+        onClick={onClick}>
         <ArrowRight />
       </div>
     );
@@ -63,11 +61,16 @@ const ServiceCarousel = () => {
   };
 
   return (
-    <section aria-label="Global Mediation Services" className="py-[0px] lg:max-w-[1318px] px-5 md:px-[60px] mx-auto slick-bar ">
+    <section
+      aria-label="Global Mediation Services"
+      className="py-[0px] lg:max-w-[1318px] px-5 md:px-[60px] mx-auto slick-bar ">
       <div className="max-w-[800px] px-5 mx-auto lg:text-center md:text-center mb-[20px] lg:mb-[70px]">
-        <h2 className="font-medium text-4xl md:text-5xl mb-5 md:mb-6">Global Mediation Services</h2>
+        <h2 className="font-medium text-4xl md:text-5xl mb-5 md:mb-6">
+          Global Mediation Services & Training
+        </h2>
         <p className=" leading-[150%] text-base md:text-lg font-normal">
-          Tailored solutions for workplaces, communities, families and individuals.
+          Tailored solutions for workplaces, communities, families and
+          individuals.
         </p>
       </div>
 
@@ -94,9 +97,9 @@ const ServiceCarousel = () => {
                   <Link
                     title="Learn more"
                     className="text-sm md:text-lg duration-300 hover:gap-4 border-b-[2px] pb-1.5 w-max flex items-center gap-2 font-semibold mt-auto"
-                    href={'/Workplace-and-Employment-Mediation'}
-                  >
-                    <span>Learn more</span> <ArrowRight strokeWidth={1.5} size={20} />
+                    href={"/Workplace-and-Employment-Mediation"}>
+                    <span>Learn more</span>{" "}
+                    <ArrowRight strokeWidth={1.5} size={20} />
                   </Link>
                 </div>
               </div>
@@ -113,9 +116,9 @@ const ServiceCarousel = () => {
                   <Link
                     title="Learn more"
                     className="text-sm md:text-lg duration-300 hover:gap-4 border-b-[2px] pb-1.5 w-max flex items-center gap-2 font-semibold mt-auto"
-                    href={'/business'}
-                  >
-                    <span>Learn more</span> <ArrowRight strokeWidth={1.5} size={20} />
+                    href={"/business"}>
+                    <span>Learn more</span>{" "}
+                    <ArrowRight strokeWidth={1.5} size={20} />
                   </Link>
                 </div>
               </div>
@@ -127,19 +130,19 @@ const ServiceCarousel = () => {
                     SEND Mediation
                   </h3>
                   <p className="text-base md:text-lg duration-200 leading-[150%] font-normal mb-[26px] flex-grow">
-                    Support for families, schools and authorities navigating special educational needs.
+                    Support for families, schools and authorities navigating
+                    special educational needs.
                   </p>
                   <Link
                     title="Learn more"
                     className="text-sm md:text-lg duration-300 hover:gap-4 border-b-[2px] pb-1.5 w-max flex items-center gap-2 font-semibold mt-auto"
-                    href={'/send-mediation'}
-                  >
-                    <span>Learn more</span> <ArrowRight strokeWidth={1.5} size={20} />
+                    href={"/send-mediation"}>
+                    <span>Learn more</span>{" "}
+                    <ArrowRight strokeWidth={1.5} size={20} />
                   </Link>
                 </div>
               </div>
             </div>
-
             <div className="px-[45px] lg:px-[15px] mb-[90px] h-[300px] md:h-[350px]">
               <div className="rounded-[20px] group hover:bg-secondary hover:text-white duration-200 md:rounded-3xl border bg-[#F3F1FF] border-[#D4DBEA] my-9 py-10 md:py-[49px] px-5 md:px-6 h-full flex flex-col">
                 <div className="flex flex-col flex-grow">
@@ -152,14 +155,13 @@ const ServiceCarousel = () => {
                   <Link
                     title="Learn more"
                     className="text-sm md:text-lg duration-300 hover:gap-4 border-b-[2px] pb-1.5 w-max flex items-center gap-2 font-semibold mt-auto"
-                    href={'/family-mediation'}
-                  >
-                    <span>Learn more</span> <ArrowRight strokeWidth={1.5} size={20} />
+                    href={"/family-mediation"}>
+                    <span>Learn more</span>{" "}
+                    <ArrowRight strokeWidth={1.5} size={20} />
                   </Link>
                 </div>
               </div>
             </div>
-
             <div className="px-[45px] lg:px-[15px] mb-[90px] h-[300px] md:h-[350px]">
               <div className="rounded-[20px] group hover:bg-secondary hover:text-white duration-200 md:rounded-3xl border bg-[#F3F1FF] border-[#D4DBEA] my-9 py-10 md:py-[49px] px-5 md:px-6 h-full flex flex-col">
                 <div className="flex flex-col flex-grow">
@@ -167,14 +169,15 @@ const ServiceCarousel = () => {
                     Community Mediation
                   </h3>
                   <p className="text-base md:text-lg duration-200 leading-[150%] font-normal mb-[26px] flex-grow">
-                    Supportive, impartial mediation to help resolve neighbourhood disputes
+                    Supportive, impartial mediation to help resolve
+                    neighbourhood disputes
                   </p>
                   <Link
                     title="Learn more"
                     className="text-sm md:text-lg duration-300 hover:gap-4 border-b-[2px] pb-1.5 w-max flex items-center gap-2 font-semibold mt-auto"
-                    href={'/Community-Mediation'}
-                  >
-                    <span>Learn more</span> <ArrowRight strokeWidth={1.5} size={20} />
+                    href={"/Community-Mediation"}>
+                    <span>Learn more</span>{" "}
+                    <ArrowRight strokeWidth={1.5} size={20} />
                   </Link>
                 </div>
               </div>
@@ -186,14 +189,37 @@ const ServiceCarousel = () => {
                     Civil and Legal Dispute Mediation
                   </h3>
                   <p className="text-base md:text-lg duration-200 leading-[150%] font-normal mb-[26px] flex-grow">
-                    A calmer alternative to court in a wide range of legal matters.
+                    A calmer alternative to court in a wide range of legal
+                    matters.
                   </p>
                   <Link
                     title="Learn more"
                     className="text-sm md:text-lg duration-300 hover:gap-4 border-b-[2px] pb-1.5 w-max flex items-center gap-2 font-semibold mt-auto"
-                    href={'/civil'}
-                  >
-                    <span>Learn more</span> <ArrowRight strokeWidth={1.5} size={20} />
+                    href={"/civil"}>
+                    <span>Learn more</span>{" "}
+                    <ArrowRight strokeWidth={1.5} size={20} />
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            <div className="px-[45px] lg:px-[15px] mb-[90px] h-[300px] md:h-[350px]">
+              <div className="rounded-[20px] group hover:bg-secondary hover:text-white duration-200 md:rounded-3xl border bg-[#F3F1FF] border-[#D4DBEA] my-9 py-10 md:py-[49px] px-5 md:px-6 h-full flex flex-col">
+                <div className="flex flex-col flex-grow">
+                  <h3 className="text-lg lg:text-2xl group-hover:!text-white duration-200 leading-[140%] mb-[6px] md:mb-2 font-semibold text-secondary">
+                    Global Training
+                  </h3>
+                  <p className="text-base md:text-lg duration-200 leading-[150%] font-normal mb-[26px] flex-grow">
+                    Explore our accredited training programmes designed for
+                    aspiring mediators and professionals looking to build their
+                    skills in conflict resolution.
+                  </p>
+                  <Link
+                    title="Learn more"
+                    className="text-sm md:text-lg duration-300 hover:gap-4 border-b-[2px] pb-1.5 w-max flex items-center gap-2 font-semibold mt-auto"
+                    href={"/training"}>
+                    <span>Learn more</span>{" "}
+                    <ArrowRight strokeWidth={1.5} size={20} />
                   </Link>
                 </div>
               </div>

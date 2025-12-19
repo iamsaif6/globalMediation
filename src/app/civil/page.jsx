@@ -1,41 +1,45 @@
-import React from 'react';
-import Image from 'next/image';
-import Introduction from '@/components/service/Introduction';
-import MediationCalculation from '@/components/home/MediationCalculation';
-import FeedbackCarousel from '@/components/home/FeedbackCarousel';
-import FAQ from '@/components/service/FAQ';
-import CTA from '@/components/shared/CTA';
-import SectionHeading from '@/components/shared/SectionHeading';
-import banner from '/public/civil-banner.jpg';
-import Link from 'next/link';
-import overview from '/public/civil-overview.jpg';
-import support from '/public/civil-support.jpg';
-import overlay from '/public/Overlay.png';
-import Button from '@/components/shared/Button';
+import React from "react";
+import Image from "next/image";
+import Introduction from "@/components/service/Introduction";
+import MediationCalculation from "@/components/home/MediationCalculation";
+import FeedbackCarousel from "@/components/home/FeedbackCarousel";
+import FAQ from "@/components/service/FAQ";
+import CTA from "@/components/shared/CTA";
+import SectionHeading from "@/components/shared/SectionHeading";
+import banner from "/public/civil-banner.jpg";
+import Link from "next/link";
+import overview from "/public/civil-overview.jpg";
+import support from "/public/civil-support.jpg";
+import overlay from "/public/Overlay.png";
+import Button from "@/components/shared/Button";
 
 export const metadata = {
-  title: 'Civil and Legal Dispute Mediation | Global Mediation - Mediation Services in London & Nationwide',
+  title:
+    "Civil and Legal Dispute Mediation | Global Mediation - Mediation Services in London & Nationwide",
   description:
-    'An advanced course for qualified mediators, wishing to carry out mediations in the field of special educational needs and disability .',
+    "An advanced course for qualified mediators, wishing to carry out mediations in the field of special educational needs and disability .",
 };
 
-const wayChoose = 'https://global-mediation.s3.eu-west-2.amazonaws.com/large-files/vitaly-gariev-8eqP4PekHNk-unsplash.jpg';
+const wayChoose = "/why-choose-item.jpg";
 
 const faqData = [
   {
     key: 1,
-    question: 'Is Civil Mediation Legally Binding?',
-    answer: 'The outcome isn’t automatically binding, but it can be formalised through legal agreement if both parties choose.',
+    question: "Is Civil Mediation Legally Binding?",
+    answer:
+      "The outcome isn’t automatically binding, but it can be formalised through legal agreement if both parties choose.",
   },
   {
     key: 2,
-    question: 'Can I Use Mediation Instead of Going to Court?',
-    answer: 'Yes — mediation is a recognised alternative to litigation in many civil cases.',
+    question: "Can I Use Mediation Instead of Going to Court?",
+    answer:
+      "Yes — mediation is a recognised alternative to litigation in many civil cases.",
   },
   {
     key: 3,
-    question: 'Do I Need a Solicitor to Take Part?',
-    answer: 'No — but you’re welcome to involve legal representation if you prefer.',
+    question: "Do I Need a Solicitor to Take Part?",
+    answer:
+      "No — but you’re welcome to involve legal representation if you prefer.",
   },
 ];
 
@@ -45,23 +49,30 @@ const page = () => {
       <header
         style={{
           backgroundImage: `url('${banner.src}'), linear-gradient(to right, rgba(62,0,101,0.60) 1.68%, rgba(62,0,101,0.15) 69.4%)`,
-          backgroundBlendMode: 'overlay',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center center',
+          backgroundBlendMode: "overlay",
+          backgroundSize: "cover",
+          backgroundPosition: "center center",
         }}
-        className=" pt-[187px] h-screen flex items-center max-h-[950px] relative md:pt-[238px] pb-[176px] md:pb-[203px] px-5 md:px-[60px]"
-      >
-        <Image width={1200} height={1200} src={overlay} alt="Overlay" className=" absolute top-0 left-0 w-full h-full object-cover" />
+        className=" pt-[187px] h-screen flex items-center max-h-[950px] relative md:pt-[238px] pb-[176px] md:pb-[203px] px-5 md:px-[60px]">
+        <Image
+          width={1200}
+          height={1200}
+          src={overlay}
+          alt="Overlay"
+          className=" absolute top-0 left-0 w-full h-full object-cover"
+        />
         <div className="w-full relative z-10 lg:max-w-[1318px] mx-auto">
           <h1 className="font-semibold tracking-[-4%] max-w-[900px] 2xl:max-w-[90%] leading-[120%] text-5xl md:text-[65px] xl:text-[4vw] text-white">
             Civil and Legal Dispute Mediation
           </h1>
           <p className="text-white mt-[25px] md:mt-4 mb-[25px] mr-auto max-w-[700px] md:mb-10 w-[100%] font-normal text-base md:text-lg xl:text-xl">
-            A practical, impartial way to resolve legal disagreements without the time, stress, and cost of going to court.
+            A practical, impartial way to resolve legal disagreements without
+            the time, stress, and cost of going to court.
           </p>
           <div className="flex md:flex-row flex-col items-center gap-4">
-            <button className={`bg-primary  border border-primary font-semibold text-lg text-[#FCFCFD] px-6 py-3 rounded-[40px]`}>
-              <Link className="w-full" href={'/contact'}>
+            <button
+              className={`bg-primary  border border-primary font-semibold text-lg text-[#FCFCFD] px-6 py-3 rounded-[40px]`}>
+              <Link className="w-full" href={"/contact"}>
                 Speak to a Civil Mediation Specialist
               </Link>
             </button>
@@ -75,23 +86,27 @@ const page = () => {
       </header>
 
       <Introduction
-        title={'Civil & Legal Disputes'}
+        title={"Civil & Legal Disputes"}
         image={overview}
         subtitle={
-          'Legal disputes can be stressful, expensive, and time-consuming. Mediation offers a simpler route, one that puts you in control, avoids the courtroom, and supports better outcomes for all involved. Whether you’re facing a financial, property, or personal disagreement, civil mediation helps you reach a fair agreement, quickly and with less conflict.'
+          "Legal disputes can be stressful, expensive, and time-consuming. Mediation offers a simpler route, one that puts you in control, avoids the courtroom, and supports better outcomes for all involved. Whether you’re facing a financial, property, or personal disagreement, civil mediation helps you reach a fair agreement, quickly and with less conflict."
         }
         items={[
-          'Reduces Costs Compared to Formal Litigation',
-          'Helps Preserve Relationships and Avoid Escalation',
-          'Neutral, Confidential, and Easy to Arrange',
-          'Keeps the Outcome in Your Hands',
+          "Reduces Costs Compared to Formal Litigation",
+          "Helps Preserve Relationships and Avoid Escalation",
+          "Neutral, Confidential, and Easy to Arrange",
+          "Keeps the Outcome in Your Hands",
         ]}
       />
       {/*  */}
 
       <section className="py-16 md:py-[80px] bg-secondary text-white">
         <div className="px-5 md:px-16 mb-10 md:mb-[120px] ">
-          <SectionHeading className={'!text-white'} fullWidth={true} title={'Types of Civil Disputes We Support'} />
+          <SectionHeading
+            className={"!text-white"}
+            fullWidth={true}
+            title={"Types of Civil Disputes We Support"}
+          />
         </div>
         <div className="mt-[42px] md:mt-[54px]">
           {/* Buttons */}
@@ -105,13 +120,14 @@ const page = () => {
                         width={1200}
                         height={1200}
                         className="object-cover object-top w-full h-full relative z-0"
-                        alt={'Experienced Leader In Mediation'}
+                        alt={"Experienced Leader In Mediation"}
                         src={support}
                       />
                     </div>
                     <div>
                       <h3 className="md:text-2xl text-lg font-medium mb-8 md:mb-6 !text-white">
-                        Our trained mediators help resolve a wide range of civil and legal disputes, including:
+                        Our trained mediators help resolve a wide range of civil
+                        and legal disputes, including:
                       </h3>
                       <ul className=" text-lg">
                         <li className="flex items-center py-6 hover:text-black hover:bg-white hover:rounded-2xl group pl-[20px] gap-[26px] border-t-[0.5px] border-[#DAD3FF]">
@@ -149,7 +165,7 @@ const page = () => {
                       width={1200}
                       height={1200}
                       className="object-cover object-top w-full h-full relative z-0"
-                      alt={'Experienced Leader In Mediation'}
+                      alt={"Experienced Leader In Mediation"}
                       src={support}
                     />
                   </div>
@@ -162,9 +178,9 @@ const page = () => {
 
       <section className="py-16 px-5 md:px-16 md:py-[80px]">
         <SectionHeading
-          title={'How Civil Mediation Works'}
+          title={"How Civil Mediation Works"}
           subTitle={
-            'We provide a fair, impartial process that allows both parties to be heard and work toward a resolution, without going to court.'
+            "We provide a fair, impartial process that allows both parties to be heard and work toward a resolution, without going to court."
           }
           center={true}
         />
@@ -173,24 +189,37 @@ const page = () => {
             <p className="font-medium text-2xl leading-[140%] mb-[42px] flex items-center justify-center w-[54px] h-[54px] text-white  bg-secondary rounded-xl">
               1
             </p>
-            <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">Contact Us</p>
-            <p className="text-base md:text-lg">We’ll help determine if mediation is suitable for your situation.</p>
+            <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">
+              Contact Us
+            </p>
+            <p className="text-base md:text-lg">
+              We’ll help determine if mediation is suitable for your situation.
+            </p>
           </div>
 
           <div className="bg-[#F3F1FF] rounded-xl py-[37px] md:py-[46px] px-[19px] md:px-6 col-span-4 lg:col-span-1">
             <p className="font-medium text-2xl leading-[140%] mb-[42px] flex items-center justify-center w-[54px] h-[54px] text-white  bg-secondary rounded-xl">
               2
             </p>
-            <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">Prepare for Your Session</p>
-            <p className="text-base md:text-lg">Each party shares their side of the story, supported if needed.</p>
+            <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">
+              Prepare for Your Session
+            </p>
+            <p className="text-base md:text-lg">
+              Each party shares their side of the story, supported if needed.
+            </p>
           </div>
           <div className="bg-[#F3F1FF] rounded-xl py-[37px] md:py-[46px] px-[19px] md:px-6 col-span-4 lg:col-span-1">
             <p className="font-medium text-2xl leading-[140%] mb-[42px] flex items-center justify-center w-[54px] h-[54px] text-white  bg-secondary rounded-xl">
               3
             </p>
-            <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">Mediation Session</p>
+            <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">
+              Mediation Session
+            </p>
             <p className="font-normal text-base md:text-lg">
-              <span className="">Our mediator facilitates a structured, confidential conversation.</span>
+              <span className="">
+                Our mediator facilitates a structured, confidential
+                conversation.
+              </span>
             </p>
           </div>
 
@@ -198,14 +227,22 @@ const page = () => {
             <p className="font-medium text-2xl leading-[140%] mb-[42px] flex items-center justify-center w-[54px] h-[54px] text-white  bg-secondary rounded-xl">
               4
             </p>
-            <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">Agreement</p>
+            <p className=" font-medium text-[20px] md:text-2xl leading-[140%] mb-[28px] ">
+              Agreement
+            </p>
             <p className="font-normal text-base md:text-lg">
-              <span className="">If successful, we can document a written agreement for both parties.</span>
+              <span className="">
+                If successful, we can document a written agreement for both
+                parties.
+              </span>
             </p>
           </div>
         </div>
         <div className="hidden lg:flex justify-center">
-          <Button title={'Request a Civil and Legal Dispute Mediation Appointment'} href="/about" />
+          <Button
+            title={"Request a Civil and Legal Dispute Mediation Appointment"}
+            href="/about"
+          />
         </div>
       </section>
 
@@ -217,7 +254,8 @@ const page = () => {
             Why Choose Global Mediation?
           </h2>
           <p className=" text-base md:text-lg leading-[150%] mb-[56px] md:mb-[78px] text-left md:text-center">
-            We’re experienced in resolving civil and legal disputes, with a calm, professional approach that saves time, reduces stress, and
+            We’re experienced in resolving civil and legal disputes, with a
+            calm, professional approach that saves time, reduces stress, and
             restores control.
           </p>
         </div>
@@ -227,7 +265,7 @@ const page = () => {
               width={1200}
               height={1200}
               className="object-cover object-bottom  w-full h-full relative z-0"
-              alt={'Experienced Leader In Mediation'}
+              alt={"Experienced Leader In Mediation"}
               src={wayChoose}
             />
           </div>
@@ -237,21 +275,26 @@ const page = () => {
               width={1200}
               height={1200}
               className="object-cover w-full h-full relative z-0"
-              alt={'Experienced Leader In Mediation'}
+              alt={"Experienced Leader In Mediation"}
               src={wayChoose}
             />
           </div>
           <div className="col-span-2 lg:col-span-1">
-            <p className="mb-6 font-semibold text-lg md:text-2xl">What Sets Us Apart:</p>
+            <p className="mb-6 font-semibold text-lg md:text-2xl">
+              What Sets Us Apart:
+            </p>
             <ul className="space-y-6 text-base md:text-[20px]">
               <li className="flex items-center gap-6 py-4 px-[18px] md:px-6 rounded-xl border border-[#624A70]">
                 <span className="w-[10px] flex-shrink-0 h-[10px] rounded-full bg-primary block"></span>
-                <p className="text-base md:text-lg font-normal leading-[140%]">Highly Experienced Civil Dispute Mediators</p>
+                <p className="text-base md:text-lg font-normal leading-[140%]">
+                  Highly Experienced Civil Dispute Mediators
+                </p>
               </li>
               <li className="flex items-center gap-6 py-4 px-[18px] md:px-6 rounded-xl border border-[#624A70]">
                 <span className="w-[10px] flex-shrink-0 h-[10px] rounded-full bg-primary block"></span>
                 <p className="text-base md:text-lg font-normal leading-[140%]">
-                  Trusted by Individuals, Legal Professionals, and Local Authorities
+                  Trusted by Individuals, Legal Professionals, and Local
+                  Authorities
                 </p>
               </li>
               <li className="flex items-center gap-6 py-4 px-[18px] md:px-6 rounded-xl border border-[#624A70]">
@@ -262,7 +305,9 @@ const page = () => {
               </li>
               <li className="flex items-center gap-6 py-4 px-[18px] md:px-6 rounded-xl border border-[#624A70]">
                 <span className="w-[10px] flex-shrink-0 h-[10px] rounded-full bg-primary block"></span>
-                <p className="text-base md:text-lg font-normal leading-[140%]">Clear, Empathetic Guidance Every Step of the Way</p>
+                <p className="text-base md:text-lg font-normal leading-[140%]">
+                  Clear, Empathetic Guidance Every Step of the Way
+                </p>
               </li>
             </ul>
           </div>
@@ -274,17 +319,22 @@ const page = () => {
       {/* <Map /> */}
       <div className="bg-[#F9F8FF]">
         <CTA
-          title={'Ready to Resolve Your Dispute?'}
+          title={"Ready to Resolve Your Dispute?"}
           subTitle={
-            'Whether you’re navigating a legal disagreement, or advising someone who is, we’re here to help you find a fair way forward.'
+            "Whether you’re navigating a legal disagreement, or advising someone who is, we’re here to help you find a fair way forward."
           }
-          Button1Link={'/contact'}
-          Button1Text={'Speak to Our Mediation Team'}
+          Button1Link={"/contact"}
+          Button1Text={"Speak to Our Mediation Team"}
           // Button2Text={'Speak to Our Mediation Team'}
           // Button2Link={'/contact'}
         />
       </div>
-      <FAQ title={'FAQs About Civil and Legal Mediation'} buttonText={'Ask Us a Question'} buttonLink={'/contact'} faqData={faqData} />
+      <FAQ
+        title={"FAQs About Civil and Legal Mediation"}
+        buttonText={"Ask Us a Question"}
+        buttonLink={"/contact"}
+        faqData={faqData}
+      />
     </div>
   );
 };
