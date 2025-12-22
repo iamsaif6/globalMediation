@@ -11,7 +11,7 @@ import Irvine from "/public/members/Irvine.jpg";
 import Ashleigh from "/public/members/Ashleigh.jpg";
 import adam from "/public/members/Adam.jpeg";
 import { useState } from "react";
-import female from "/public/female.png";
+import female from "/public/female.jpeg";
 import male from "/public/man.jpg";
 import emery from "/public/members/emery.jpg";
 
@@ -248,7 +248,7 @@ const TeamCarousel = ({ darkText = false, isDouble }) => {
               <div className="h-[300px] w-full rounded-3xl overflow-hidden bg-gray-200">
                 {item?.image && (
                   <Image
-                    className="object-cover object-center h-full w-full"
+                    className="object-cover object-top h-full w-full"
                     alt={item.name}
                     src={item.image}
                   />
@@ -306,7 +306,7 @@ const TeamCarousel = ({ darkText = false, isDouble }) => {
                     <Image
                       src={selectedMember.image}
                       alt={selectedMember.name}
-                      className="w-full h-full object-cover object-center"
+                      className="w-full h-full object-cover object-top"
                     />
                   </div>
                 </div>
