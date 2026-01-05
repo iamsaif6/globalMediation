@@ -206,7 +206,7 @@ const TeamCarousel = ({ darkText = false, isDouble }) => {
         <Slider {...settings}>
           {members.map(item => (
             <div className="px-5 min-h-[250px] lg:px-[25px]   mb-[20px]">
-              <div className=" 2xl:h-[400px] h-[300px] w-full rounded-3xl overflow-hidden bg-gray-200">
+              <div className=" 2xl:h-[500px] h-[300px] md:h-[400px] w-full rounded-3xl overflow-hidden bg-gray-200">
                 {item?.image && <Image className="object-cover object-top h-full w-full" alt={item.name} src={item.image} />}
               </div>
               <h3 className={`${darkText ? 'text-black' : '!text-white'} mt-3 truncate md:mt-6 text-2xl md:text-[32px] font-semibold `}>
