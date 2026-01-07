@@ -14,7 +14,7 @@ const ExperiencedLeader = () => {
         <p className="text-black text-base md:text-lg  leading-[150%]">
           We exist to support people through difficult conversations, with calm, clarity and care. Our mediation services create space for
           progress, helping organisations, teams, communities, families and individuals navigate conflict, find common ground and reach
-          resolution, without judgment or pressure.
+          resolution, without judgement or pressure.
         </p>
       </div>
       <div className="bg-[#F9F8FF] pt-16 pb-12 px-5 md:px-16 md:py-[80px] grid grid-cols-2 gap-[80px]">
