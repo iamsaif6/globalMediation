@@ -15,36 +15,81 @@ const poppins = Poppins({
 });
 //TODO : Description
 export const metadata = {
+  metadataBase: new URL('https://www.globalmediation.co.uk'),
   title: 'Global Mediation - Mediation Services in London & Nationwide',
   description:
     'Global Mediation offers cost-effective, efficient and confidential mediation services for a broad range of personal or professional disputes.',
+  icons: {
+    apple: '/appleTouch.png',
+  },
+  openGraph: {
+    title: 'Global Mediation - Mediation Services in London & Nationwide',
+    description:
+      'Global Mediation offers cost-effective, efficient and confidential mediation services for a broad range of personal or professional disputes.',
+    url: 'https://www.globalmediation.co.uk/',
+    siteName: 'Global Mediation',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Global Mediation - Mediation Services in London & Nationwide',
+    description:
+      'Global Mediation offers cost-effective, efficient and confidential mediation services for a broad range of personal or professional disputes.',
+  },
+  alternates: {
+    canonical: './',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 };
 
 export default function RootLayout({ children }) {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'Global Mediation',
+    url: 'https://www.globalmediation.co.uk',
+    logo: 'https://www.globalmediation.co.uk/newlogo.png',
+    contactPoint: {
+      '@type': 'ContactPoint',
+      telephone: '020 8441 1355',
+      contactType: 'customer service',
+      email: 'send@globalmediation.co.uk',
+    },
+    sameAs: [
+      'https://www.facebook.com/GlobalMediation',
+      'https://www.linkedin.com/in/global-mediation-63b4b6136/',
+    ],
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: 'Molteno House, 302 Regents Park Road, Finchley',
+      addressLocality: 'London',
+      postalCode: 'N3 2JX',
+      addressCountry: 'UK',
+    },
+  };
+
   return (
     <html lang="en">
-      <head>
+      <body id="root" className={`${poppins.variable} antialiased`}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         {/* Cookie Consent */}
-        <Script src={`https://cdn-cookieyes.com/client_data/6eb6d458f1c3a1f004dc5fa2/script.js`} strategy="beforeInteractive"></Script>
-        <link rel="apple-touch-icon" href="/appleTouch.png" />
-        {/* Search Engine Meta */}
-        <meta name="description" content={metadata.description} />
-        <meta itemProp="name" content={metadata.title} />
-        <meta itemProp="description" content={metadata.description} />
-        <meta itemProp="image" content="" />
-
-        {/* Open Graph / Facebook */}
-        <meta property="og:url" content="https://www.globalmediation.co.uk/" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content={metadata.title} />
-        <meta property="og:description" content={metadata.description} />
-        <meta property="og:image" content="" />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={metadata.title} />
-        <meta name="twitter:description" content={metadata.description} />
-        <meta name="twitter:image" content="" />
+        <Script
+          src={`https://cdn-cookieyes.com/client_data/6eb6d458f1c3a1f004dc5fa2/script.js`}
+          strategy="beforeInteractive"
+        ></Script>
 
         {/* Google Anlytics */}
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-4EDYXWBRCY" strategy="afterInteractive" />
@@ -56,12 +101,14 @@ export default function RootLayout({ children }) {
             gtag('config', 'G-4EDYXWBRCY');
           `}
         </Script>
-      </head>
-      <body id="root" className={`${poppins.variable} antialiased`}>
+
         <Analytics />
         <UserbackWidget />
         <Script src="https://cdn.botpress.cloud/webchat/v2.3/inject.js" strategy="afterInteractive" />
-        <Script src="https://files.bpcontent.cloud/2025/04/20/21/20250420213141-RFCIFB7R.js" strategy="afterInteractive" />
+        <Script
+          src="https://files.bpcontent.cloud/2025/04/20/21/20250420213141-RFCIFB7R.js"
+          strategy="afterInteractive"
+        />
 
         {/* <Navbar /> */}
         {/* <AuthProvider>{children}</AuthProvider> */}

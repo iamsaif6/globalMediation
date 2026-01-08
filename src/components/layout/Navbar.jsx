@@ -340,10 +340,10 @@ const Navbar = () => {
                 </Link>
               </div>
               <div className="col-span-7 leading-[150%] p-8 bg-[#F3F1FF]">
-                <h3 className="text-[20px] text-[#330051] font-semibold mb-4">
+                <div className="text-[20px] text-[#330051] font-semibold mb-4">
                   {activeSubmenu == 'Service' && 'Mediation services'}
                   {activeSubmenu !== 'Service' && <Image alt="Global Training Logo" src={GtLogo} className="w-36" />}
-                </h3>
+                </div>
                 {activeSubmenu == 'Service' ? (
                   <ul className="space-y-3 text-sm ">
                     {serviceSubmenu.map(item => {
@@ -510,7 +510,7 @@ const Navbar = () => {
                     {link.hasMegaMenu ? (
                       <>
                         <button className="p-3 text-lg font-normal flex justify-between items-center bg-lavender-50 hover:bg-lavender-100 rounded-lg transition-colors duration-200">
-                          <Link onClick={() => toggleMobileMenu(false)} href={link.href}>
+                          <Link onClick={(e) => toggleMobileMenu(e)} href={link.href}>
                             {link.title}
                           </Link>
                           <svg
