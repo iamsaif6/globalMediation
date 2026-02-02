@@ -109,13 +109,23 @@ const ContactUs = () => {
                   id="nature_of_enquiry"
                   className="w-full outline-0 py-3 px-6 rounded-4xl border border-[#E7E7F1] bg-[#F8F9FD] text-gray-500"
                   defaultValue=""
-                  onChange={(e) => e.target.style.color = 'black'}
+                  onChange={e => (e.target.style.color = 'black')}
                 >
-                  <option value="" disabled>Nature of Enquiry</option>
-                  <option value="Training Opportunities" className="text-black">Training Opportunities</option>
-                  <option value="Careers at Global" className="text-black">Careers at Global</option>
-                  <option value="Local Authority Enquiry" className="text-black">Local Authority Enquiry</option>
-                  <option value="Request for Quote (Commercial Mediation)" className="text-black">Request for Quote (Commercial Mediation)</option>
+                  <option value="" disabled>
+                    Nature of Enquiry
+                  </option>
+                  <option value="Training Opportunities" className="text-black">
+                    Training Opportunities
+                  </option>
+                  <option value="Careers at Global" className="text-black">
+                    Careers at Global
+                  </option>
+                  <option value="Local Authority Enquiry" className="text-black">
+                    Local Authority Enquiry
+                  </option>
+                  <option value="Request for Quote (Commercial Mediation)" className="text-black">
+                    Request for Quote (Commercial Mediation)
+                  </option>
                 </select>
               </div>
               <button
@@ -126,11 +136,18 @@ const ContactUs = () => {
               </button>
 
               <div className="mt-6 p-4 bg-blue-50 border border-blue-100 rounded-xl text-sm text-gray-700">
-                <p className="font-semibold mb-2">
-                  Please do not complete the Contact Us form if your enquiry relates to an EHCP.
-                </p>
+                <p className="font-semibold mb-2">Please do not complete the Contact Us form if your enquiry relates to an EHCP.</p>
                 <p>
-                  If you have received a decision letter from the local authority and would like to speak to a Mediation Advisor about your options, please call <a href="tel:02084411355" className="text-primary font-medium hover:underline">020 8441 1355</a> (open 7 days a week from 8am to 10pm) and select Option 1 – New Enquiries, or e-mail <a href="mailto:sen@globalmediation.co.uk" className="text-primary font-medium hover:underline">sen@globalmediation.co.uk</a>.
+                  If you have received a decision letter from the local authority and would like to speak to a Mediation Advisor about your
+                  options, please call{' '}
+                  <a href="tel:02084411355" className="text-primary font-medium hover:underline">
+                    020 8441 1355
+                  </a>{' '}
+                  (open 7 days a week from 8am to 10pm) and select Option 1 – New Enquiries, or e-mail{' '}
+                  <a href="mailto:sen@globalmediation.co.uk" className="text-primary font-medium hover:underline">
+                    sen@globalmediation.co.uk
+                  </a>
+                  .
                 </p>
               </div>
             </form>

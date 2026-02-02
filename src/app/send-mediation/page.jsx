@@ -49,7 +49,8 @@ const faqData = [
   {
     key: 2,
     question: 'Is it required before a tribunal?',
-    answer: 'Yes — you’ll need to consider mediation before progressing to tribunal, though you’re not obligated to take part.',
+    answer:
+      'Yes — except for an EHCP Section I (placement) issue, you’ll need to consider mediation before progressing to tribunal. You’re not obligated to take part, but you do need to contact a mediation adviser to obtain a certificate if you choose not to proceed.',
   },
   {
     key: 3,

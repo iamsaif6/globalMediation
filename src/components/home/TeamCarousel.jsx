@@ -11,7 +11,7 @@ import Irvine from '/public/members/Irvine.jpg';
 import Ashleigh from '/public/members/Ashleigh.jpg';
 import adam from '/public/members/Adam.jpeg';
 import { useState } from 'react';
-import female from '/public/female.jpeg';
+import female from '/public/members/suriya.jpg';
 import male from '/public/man.jpg';
 import emery from '/public/members/emery.jpg';
 

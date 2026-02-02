@@ -5,7 +5,6 @@ import Footer from '@/components/shared/Footer';
 import Script from 'next/script';
 import UserbackWidget from '@/components/UserbackWidget';
 import Analytics from './analytics';
-import { AuthProvider } from '../../context/AuthContext';
 import ClientProviders from '@/utils/ClientProviders';
 
 const poppins = Poppins({
@@ -20,8 +19,10 @@ export const metadata = {
   description:
     'Global Mediation offers cost-effective, efficient and confidential mediation services for a broad range of personal or professional disputes.',
   icons: {
+    icon: '/favicon.ico',
     apple: '/appleTouch.png',
   },
+  manifest: '/site.webmanifest',
   openGraph: {
     title: 'Global Mediation - Mediation Services in London & Nationwide',
     description:
@@ -65,10 +66,7 @@ export default function RootLayout({ children }) {
       contactType: 'customer service',
       email: 'send@globalmediation.co.uk',
     },
-    sameAs: [
-      'https://www.facebook.com/GlobalMediation',
-      'https://www.linkedin.com/in/global-mediation-63b4b6136/',
-    ],
+    sameAs: ['https://www.facebook.com/GlobalMediation', 'https://www.linkedin.com/in/global-mediation-63b4b6136/'],
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'Molteno House, 302 Regents Park Road, Finchley',
@@ -81,15 +79,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body id="root" className={`${poppins.variable} antialiased`}>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
         {/* Cookie Consent */}
-        <Script
-          src={`https://cdn-cookieyes.com/client_data/6eb6d458f1c3a1f004dc5fa2/script.js`}
-          strategy="beforeInteractive"
-        ></Script>
+        <Script src={`https://cdn-cookieyes.com/client_data/6eb6d458f1c3a1f004dc5fa2/script.js`} strategy="beforeInteractive"></Script>
 
         {/* Google Anlytics */}
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-4EDYXWBRCY" strategy="afterInteractive" />
@@ -105,19 +97,12 @@ export default function RootLayout({ children }) {
         <Analytics />
         <UserbackWidget />
         <Script src="https://cdn.botpress.cloud/webchat/v2.3/inject.js" strategy="afterInteractive" />
-        <Script
-          src="https://files.bpcontent.cloud/2025/04/20/21/20250420213141-RFCIFB7R.js"
-          strategy="afterInteractive"
-        />
+        <Script src="https://files.bpcontent.cloud/2025/04/20/21/20250420213141-RFCIFB7R.js" strategy="afterInteractive" />
 
-        {/* <Navbar /> */}
-        {/* <AuthProvider>{children}</AuthProvider> */}
-        <ClientProviders>
-          <Navbar />
-          {children}
-          <Footer />
-        </ClientProviders>
-        {/* <Footer /> */}
+        <Navbar />
+        <ClientProviders>{children}</ClientProviders>
+
+        <Footer />
       </body>
     </html>
   );

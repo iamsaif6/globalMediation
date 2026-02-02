@@ -400,7 +400,7 @@ const Navbar = () => {
                   } flex cursor-pointer items-start flex-col w-full p-6 rounded-xl text-secondary transition-colors duration-200`}
                 >
                   <span className="text-lg block font-semibold">Our resources</span>
-                  <span className="text-sm">A comprehensive guide to alternative dispute resolution</span>
+                  <span className="text-sm text-left">A comprehensive guide to alternative dispute resolution</span>
                 </button>
               </div>
               <div className="col-span-7 leading-[150%] p-8 bg-[#F3F1FF]">
@@ -510,7 +510,7 @@ const Navbar = () => {
                     {link.hasMegaMenu ? (
                       <>
                         <button className="p-3 text-lg font-normal flex justify-between items-center bg-lavender-50 hover:bg-lavender-100 rounded-lg transition-colors duration-200">
-                          <Link onClick={(e) => toggleMobileMenu(e)} href={link.href}>
+                          <Link onClick={e => toggleMobileMenu(e)} href={link.href}>
                             {link.title}
                           </Link>
                           <svg
